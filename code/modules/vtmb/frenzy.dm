@@ -246,7 +246,7 @@
 									if(!H.warrant && !H.ignores_warrant)
 										if(H.killed_count >= 5)
 											H.warrant = TRUE
-											var/reason = ("Multiple Suspicious Activity")
+											var/reason = ("Multiple Suspicious Activity and Murder of multiple people")
 											SEND_SOUND(H, sound('code/modules/wod13/sounds/suspect.ogg', 0, 0, 75))
 											to_chat(H, "<span class='userdanger'><b>POLICE ASSAULT IN PROGRESS</b></span>")
 
@@ -286,7 +286,7 @@
 										if(!H.warrant && !H.ignores_warrant)
 											if(H.killed_count >= 5)
 												H.warrant = TRUE
-												var/reason = ("Multiple Suspicious Activity")
+												var/reason = ("Multiple Suspicious Activity and Murder of multiple people")
 												SEND_SOUND(H, sound('code/modules/wod13/sounds/suspect.ogg', 0, 0, 75))
 												to_chat(H, "<span class='userdanger'><b>POLICE ASSAULT IN PROGRESS</b></span>")
 
