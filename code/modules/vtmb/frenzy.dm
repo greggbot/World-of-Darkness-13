@@ -288,7 +288,7 @@
 												SEND_SOUND(H, sound('code/modules/wod13/sounds/suspect.ogg', 0, 0, 75))
 												to_chat(H, "<span class='userdanger'><b>POLICE ASSAULT IN PROGRESS</b></span>")
 
-													var/list/jobs = list("Police Officer", "Police Chief", "Police Sergeant","Federal Investigator","SWAT","National Guard")
+												var/list/jobs = list("Police Officer", "Police Chief", "Police Sergeant","Federal Investigator","SWAT","National Guard")
 
 												GLOB.SWAT_names += H.true_real_name
 												GLOB.SWAT_reasons += reason
