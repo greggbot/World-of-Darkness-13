@@ -248,6 +248,26 @@
 											H.warrant = TRUE
 											SEND_SOUND(H, sound('code/modules/wod13/sounds/suspect.ogg', 0, 0, 75))
 											to_chat(H, "<span class='userdanger'><b>POLICE ASSAULT IN PROGRESS</b></span>")
+
+
+											var/list/jobs = list("Police Officer", "Police Chief", "Police Sergeant","Federal Investigator","SWAT","National Guard")
+
+											GLOB.SWAT_names += H.true_real_name
+											GLOB.SWAT_reasons += reason
+
+											GLOB.SWAT_names_history += H.true_real_name
+											GLOB.SWAT_reasons_history += reason
+											GLOB.SWAT_who_why_history += ("Added By the Automatic SWAT System, with the reason: [reason]")
+
+
+											for(var/obj/DEVICE in GLOB.police_devices_list)
+												if(istype(DEVICE, /obj/item/vamp/device/police))
+													var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
+													if(L && L.job in jobs)
+														if(L != usr)
+															to_chat(L, "<span class='notice'>[H.true_real_name] has been added to the SWAT list, by the Automatic SWAT System with the reason: [reason].</span>")
+
+
 										else
 											SEND_SOUND(H, sound('code/modules/wod13/sounds/sus.ogg', 0, 0, 75))
 											to_chat(H, "<span class='userdanger'><b>SUSPICIOUS ACTION (corpse)</b></span>")
@@ -267,6 +287,23 @@
 												H.warrant = TRUE
 												SEND_SOUND(H, sound('code/modules/wod13/sounds/suspect.ogg', 0, 0, 75))
 												to_chat(H, "<span class='userdanger'><b>POLICE ASSAULT IN PROGRESS</b></span>")
+
+													var/list/jobs = list("Police Officer", "Police Chief", "Police Sergeant","Federal Investigator","SWAT","National Guard")
+
+												GLOB.SWAT_names += H.true_real_name
+												GLOB.SWAT_reasons += reason
+
+												GLOB.SWAT_names_history += H.true_real_name
+												GLOB.SWAT_reasons_history += reason
+												GLOB.SWAT_who_why_history += ("Added By the Automatic SWAT System, with the reason: [reason]")
+
+												for(var/obj/DEVICE in GLOB.police_devices_list)
+													if(istype(DEVICE, /obj/item/vamp/device/police))
+														var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
+														if(L && L.job in jobs)
+															if(L != usr)
+																to_chat(L, "<span class='notice'>[H.true_real_name] has been added to the SWAT list, by the Automatic SWAT System with the reason: [reason].</span>")
+											
 											else
 												SEND_SOUND(H, sound('code/modules/wod13/sounds/sus.ogg', 0, 0, 75))
 												to_chat(H, "<span class='userdanger'><b>SUSPICIOUS ACTION (equipment)</b></span>")
