@@ -7,6 +7,7 @@ SUBSYSTEM_DEF(masquerade)
 	var/total_level = 1000
 	var/dead_level = 0
 	var/last_level = "stable"
+	var/manual_adjustment = 0 
 	var/once = FALSE
 
 /datum/controller/subsystem/masquerade/proc/get_description()
