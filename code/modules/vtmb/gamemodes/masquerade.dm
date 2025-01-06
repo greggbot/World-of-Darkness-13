@@ -8,7 +8,6 @@ SUBSYSTEM_DEF(masquerade)
 	var/dead_level = 0
 	var/last_level = "stable"
 	var/once = FALSE
-	var/manual_adjustment = 0 
 
 /datum/controller/subsystem/masquerade/proc/get_description()
 	switch(total_level)
@@ -29,7 +28,7 @@ SUBSYSTEM_DEF(masquerade)
 	if(length(GLOB.sabbatites))
 		sabbat = (2000/length(GLOB.player_list))*length(GLOB.sabbatites)
 
-	total_level = max(0, min(1000, 1000 + dead_level + manual_adjustment - masquerade_violators - sabbat))
+	total_level = max(0, 1000+dead_level-masquerade_violators-sabbat)
 
 	var/shit_happens = "stable"
 	switch(total_level)
