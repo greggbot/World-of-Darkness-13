@@ -97,7 +97,7 @@
 					for(var/obj/DEVICE in GLOB.police_devices_list)
 						if(istype(DEVICE, /obj/item/vamp/device/police))
 							var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-							if(L && L.job in jobs)
+							if(L && (L.job in jobs))
 								if(L != usr)
 									to_chat(L, "<span class='notice'>[C.true_real_name] has been removed from the APB list by the Automatic APB System with the reason: [reason_to_remove].</span>")
 
