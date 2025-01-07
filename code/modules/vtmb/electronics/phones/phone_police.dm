@@ -80,7 +80,7 @@
 							for(var/obj/DEVICE in GLOB.police_devices_list)
 								if(istype(DEVICE, /obj/item/vamp/device/police))
 									var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-									if(L && L.job in jobs_notify)
+									if(L && (L.job in jobs_notify))
 										if(L != usr)
 											to_chat(L, "<span class='notice'>[criminal_name] has been added to the APB list with the reason: [reason].</span>")
 
@@ -120,7 +120,7 @@
 					for(var/obj/DEVICE in GLOB.police_devices_list)
 						if(istype(DEVICE, /obj/item/vamp/device/police))
 							var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-							if(L && L.job in jobs_notify)
+							if(L && (L.job in jobs_notify))
 								if(L != usr)
 									to_chat(L, "<span class='notice'>[criminal_name] has been removed from the APB list with the reason: [reason_to_remove].</span>")
 
@@ -220,7 +220,7 @@
 							for(var/obj/DEVICE in GLOB.police_devices_list)
 								if(istype(DEVICE, /obj/item/vamp/device/police))
 									var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-									if(L && L.job in jobs_notify)
+									if(L && (L.job in jobs_notify))
 										if(L != usr)
 											to_chat(L, "<span class='notice'>[criminal_name] has been added to the APB list with the reason: [reason].</span>")
 
@@ -261,7 +261,7 @@
 					for(var/obj/DEVICE in GLOB.police_devices_list)
 						if(istype(DEVICE, /obj/item/vamp/device/police))
 							var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-							if(L && L.job in jobs_notify)
+							if(L && (L.job in jobs_notify))
 								if(L != usr)
 									to_chat(L, "<span class='notice'>[criminal_name] has been removed from the APB list with the reason: [reason_to_remove].</span>")
 
@@ -328,7 +328,7 @@
 							for(var/obj/DEVICE in GLOB.police_devices_list)
 								if(istype(DEVICE, /obj/item/vamp/device/police))
 									var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-									if(L && L.job in jobs_notify)
+									if(L && (L.job in jobs_notify))
 										if(L != usr)
 											to_chat(L, "<span class='notice'>[criminal_name] has been added to the SWAT list with the reason: [reason].</span>")
 
@@ -369,7 +369,7 @@
 					for(var/obj/DEVICE in GLOB.police_devices_list)
 						if(istype(DEVICE, /obj/item/vamp/device/police))
 							var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-							if(L && L.job in jobs_notify)
+							if(L && (L.job in jobs_notify))
 								if(L != usr)
 									to_chat(L, "<span class='notice'>[criminal_name] has been removed from the SWAT list with the reason: [reason_to_remove].</span>")
 
@@ -458,7 +458,7 @@
 							for(var/obj/DEVICE in GLOB.police_devices_list)
 								if(istype(DEVICE, /obj/item/vamp/device/police))
 									var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-									if(L && L.job in jobs_notify)
+									if(L && (L.job in jobs_notify))
 										if(L != usr)
 											to_chat(L, "<span class='notice'>[criminal_name] has been added to the APB list with the reason: [reason].</span>")
 
@@ -499,7 +499,7 @@
 					for(var/obj/DEVICE in GLOB.police_devices_list)
 						if(istype(DEVICE, /obj/item/vamp/device/police))
 							var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-							if(L && L.job in jobs_notify)
+							if(L && (L.job in jobs_notify))
 								if(L != usr)
 									to_chat(L, "<span class='notice'>[criminal_name] has been removed from the APB list with the reason: [reason_to_remove].</span>")
 
@@ -621,7 +621,7 @@
 							for(var/obj/DEVICE in GLOB.police_devices_list)
 								if(istype(DEVICE, /obj/item/vamp/device/police))
 									var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-									if(L && L.job in jobs_notify)
+									if(L && (L.job in jobs_notify))
 										if(L != usr)
 											to_chat(L, "<span class='notice'>[criminal_name] has been added to the APB list with the reason: [reason].</span>")
 
@@ -662,7 +662,7 @@
 					for(var/obj/DEVICE in GLOB.police_devices_list)
 						if(istype(DEVICE, /obj/item/vamp/device/police))
 							var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-							if(L && L.job in jobs_notify)
+							if(L && (L.job in jobs_notify))
 								if(L != usr)
 									to_chat(L, "<span class='notice'>[criminal_name] has been removed from the APB list with the reason: [reason_to_remove].</span>")
 
