@@ -69,7 +69,7 @@
 							for(var/obj/DEVICE in GLOB.police_devices_list)
 								if(istype(DEVICE, /obj/item/vamp/device/police))
 									var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-									if(L && L.job in jobs)
+									if(L && (L.job in jobs))
 										if(L != usr)
 											to_chat(L, "<span class='notice'>[HS.my_creator.true_real_name] has been added to the SWAT list, by the Automatic SWAT System with the reason: [reason].</span>")
 
