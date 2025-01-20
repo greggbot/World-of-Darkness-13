@@ -58,17 +58,7 @@ SUBSYSTEM_DEF(masquerade)
 							to_chat(H, "The Masquerade is about to fall...")
 
 	if(total_level <= 250)
-		if(!once)
-			var/list/jobs = list("Police Officer", "Police Chief", "Police Sergeant","Federal Investigator","SWAT","National Guard")
-			for(var/obj/DEVICE in GLOB.police_devices_list)
-				if(istype(DEVICE, /obj/item/vamp/device/police))
-					var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-					if(L && (L.job in jobs))
-						if(L != usr)
-							to_chat(L, "<span class='warning'>!!! MULTIPLE SUPERNATURAL CREATURES DETECTED, SWAT WAS SENT TO SWARM EVERY SINGLE OF THEM! !!!</span>")
-							to_chat(L, "<span class='warning'>ERROR: AUTOMATIC SWAT SYSTEM COULD NOT HANDLE THE AMOUNT OF VARIABLES HISTORIC IS NOT AVAILABLE.</span>")
-							once = TRUE
-		for(var/mob/living/carbon/human/H in GLOB.player_list)
+		for(var/mob/living/carbon/human/H in GLOB.player_list)	//PSEUDO_M do something here
 			if(H)
 				if(iskindred(H))
 					if(!H.warrant && !H.ignores_warrant)

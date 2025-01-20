@@ -1,4 +1,4 @@
-/datum/outfit/job/swat
+/datum/outfit/job/swat //PSEUDO_M make SWAT an available job once masquerade falls enough
 	name = "Swat Officer"
 	ears = /obj/item/p25radio/police/tactical
 	uniform = /obj/item/clothing/under/vampire/police

@@ -270,7 +270,6 @@
 	plane = HUD_PLANE
 
 /atom/movable/screen/drinkblood/Click()
-//	SEND_SOUND(usr, sound('code/modules/wod13/sounds/highlight.ogg', 0, 0, 50))
 	if(ishuman(usr))
 		var/mob/living/carbon/human/BD = usr
 		BD.update_blood_hud()
@@ -279,10 +278,6 @@
 		if(world.time < BD.last_drinkblood_click+10)
 			return
 		BD.last_drinkblood_click = world.time
-//		if(BD.bloodpool >= BD.maxbloodpool)
-//			SEND_SOUND(BD, sound('code/modules/wod13/need_blood.ogg'))
-//			to_chat(BD, "<span class='warning'>You're full of <b>BLOOD</b>.</span>")
-//			return
 		if(BD.grab_state > GRAB_PASSIVE)
 			if(ishuman(BD.pulling))
 				var/mob/living/carbon/human/PB = BD.pulling
@@ -340,12 +335,13 @@
 				if(!skipface)
 					if(!HAS_TRAIT(BD, TRAIT_BLOODY_LOVER))
 						playsound(BD, 'code/modules/wod13/sounds/drinkblood1.ogg', 50, TRUE)
-					LV.visible_message("<span class='warning'><b>[BD] bites [LV]'s neck!</b></span>", "<span class='warning'><b>[BD] bites your neck!</b></span>")
+						LV.visible_message("<span class='warning'><b>[BD] bites [LV]'s neck!</b></span>", "<span class='warning'><b>[BD] bites your neck!</b></span>")
 					if(!HAS_TRAIT(BD, TRAIT_BLOODY_LOVER))
 						if(BD.CheckEyewitness(LV, BD, 7, FALSE))
 							BD.AdjustMasquerade(-1)
 					else
 						playsound(BD, 'code/modules/wod13/sounds/kiss.ogg', 50, TRUE)
+						LV.visible_message("<span class='italics'><b>[BD] kisses [LV]!</b></span>", "<span class='userlove'><b>[BD] kisses you!</b></span>")
 					if(iskindred(LV))
 						var/mob/living/carbon/human/HV = BD.pulling
 						if(HV.stakeimmune)
@@ -688,63 +684,13 @@
 	update_zone_hud()
 	update_rage_hud()
 	update_shadow()
-	handle_vampire_music()
 	update_auspex_hud()
-	if(warrant)
-		last_nonraid = world.time
-		if(key)
-			if(stat != DEAD)
-				if(istype(get_area(src), /area/vtm))
-					var/area/vtm/V = get_area(src)
-					if(V.upper)
-						last_showed = world.time
-						if(last_raid+600 < world.time)
-							last_raid = world.time
-							for(var/turf/open/O in range(1, src))
-								if(prob(25))
-									new /obj/effect/temp_visual/desant(O)
-							playsound(loc, 'code/modules/wod13/sounds/helicopter.ogg', 50, TRUE)
-				if(last_showed+9000 < world.time)
-					to_chat(src, "<b>POLICE STOPPED SEARCHING</b>")
-					SEND_SOUND(src, sound('code/modules/wod13/sounds/humanity_gain.ogg', 0, 0, 75))
-					killed_count = 0
-					warrant = FALSE
-
-				
-					var/list/jobs = list("Police Officer", "Police Chief", "Police Sergeant","Federal Investigator","SWAT","National Guard")
-
-					var/reason = ("The SWAT could not find the target anymore")
-
-					var/index = GLOB.SWAT_names.Find(true_real_name)
-
-					var/criminal_name_i = GLOB.SWAT_names[index]
-					var/reason_i = (index <= GLOB.SWAT_reasons.len ? GLOB.SWAT_reasons[index] : "No reason provided")
-
-
-					GLOB.SWAT_names -= criminal_name_i
-					GLOB.SWAT_reasons -= reason_i
-
-					GLOB.SWAT_names_history += true_real_name
-					GLOB.SWAT_reasons_history += reason
-					GLOB.SWAT_who_why_history += ("Removed By the Automatic SWAT System, with the reason: [reason]")
-
-
-
-					for(var/obj/DEVICE in GLOB.police_devices_list)
-						if(istype(DEVICE, /obj/item/vamp/device/police))
-							var/mob/living/carbon/human/L = DEVICE.FindUltimateOwner()
-							if(L && (L.job in jobs))
-								if(L != usr)
-									to_chat(L, "<span class='notice'>[true_real_name] has been removed from the SWAT list, by the Automatic SWAT System with the reason: [reason].</span>")
-			else
-				warrant = FALSE
-		else
-			warrant = FALSE
-	else
-		if(last_nonraid+1800 < world.time)
-			last_nonraid = world.time
-			killed_count = max(0, killed_count-1)
-	..()
+	if(warrant) //PSEUDO_M if APB, warrant doesn't expire
+	if(key)
+		var/area/vtm/V = get_area(src)
+		if(V.upper)
+		new /obj/effect/temp_visual/desant(O)
+		playsound(loc, 'code/modules/wod13/sounds/helicopter.ogg', 50, TRUE)
 
 /mob/living/Initialize()
 	. = ..()
