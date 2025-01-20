@@ -9,10 +9,11 @@
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
-	var/music
-	var/upper = TRUE
-	var/zone_type = "masquerade"
-	var/zone_owner
+	var/music						//
+	var/upper = TRUE				//
+	var/zone_type = "masquerade"	//PSEUDO_M these vars' asses are grass and i'm gonna mow it
+	var/zone_owner					//
+	var/police_presence = ACTIVE_POLICE_PRESENCE
 
 /area/vtm/powered(chan)
 	if(!requires_power)

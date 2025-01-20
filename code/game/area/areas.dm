@@ -138,7 +138,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
  *
  * returns INITIALIZE_HINT_LATELOAD
  */
-/area/Initialize(mapload)
+/area/Initialize(mapload)	//PSEUDO_M note here: come back and work here to fix that horrible fucking vamp music loop
 	icon_state = ""
 	if(!ambientsounds)
 		ambientsounds = GLOB.ambience_assoc[ambience_index]
@@ -634,9 +634,6 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	if(!L.ckey)
 		return
 
-	// Ambience goes down here -- make sure to list each area separately for ease of adding things in later, thanks! Note: areas adjacent to each other should have the same sounds to prevent cutoff when possible.- LastyScratch
-//	if(L.client && !L.client.ambience_playing && L.client.prefs.toggles & SOUND_SHIP_AMBIENCE)
-//		L.client.ambience_playing = 1
 	if(L)
 		if(L.client)
 			if(istype(get_area(loc), /area/vtm/northbeach))
