@@ -120,7 +120,7 @@
 		var/mob/living/carbon/human/H = owner
 		if(istype(H.pulling, /mob/living/carbon/human))
 			var/mob/living/carbon/human/VIT = H.pulling
-			if(is_kindred(VIT))
+			if(iskindred(VIT))
 				if(VIT.bloodpool)
 					if(VIT.getBruteLoss() > 30)
 						taking = TRUE

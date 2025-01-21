@@ -754,7 +754,7 @@
 			if(bloodpool < 2)
 				V.visible_message("<span class='warning'>[V] can't find enough blood in [src]!</span>")
 				return
-			if(is_kindred(src))
+			if(iskindred(src))
 				if(bloodpool < 4)
 					V.visible_message("<span class='warning'>[V] can't find enough blood in [src]!</span>")
 					return
@@ -762,7 +762,7 @@
 				V.visible_message("<span class='warning'>[V] isn't ready!</span>")
 				return
 			V.last_extracted = world.time
-			if(!is_kindred(src))
+			if(!iskindred(src))
 				new /obj/item/drinkable_bloodpack(get_step(V, SOUTH))
 				bloodpool = max(0, bloodpool-2)
 			else

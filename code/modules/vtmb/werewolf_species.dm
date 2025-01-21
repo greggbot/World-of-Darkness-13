@@ -143,7 +143,7 @@
 				playsound(get_turf(C), 'code/modules/wod13/sounds/crinos_growl.ogg', 75, FALSE)
 			if(islupus(C))
 				playsound(get_turf(C), 'code/modules/wod13/sounds/lupus_growl.ogg', 75, FALSE)
-			if(is_garou(C))
+			if(isgarou(C))
 				if(C.gender == FEMALE)
 					playsound(get_turf(C), 'code/modules/wod13/sounds/female_growl.ogg', 75, FALSE)
 				else

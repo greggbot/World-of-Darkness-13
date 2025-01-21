@@ -374,7 +374,7 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 	if(isobserver(usr))
 		return
 	var/mob/living/living_owner = owner
-	if (!splatted_kindred(living_owner))
+	if (!iskindred(living_owner))
 		return
 
 	var/mob/living/carbon/human/vampire = living_owner

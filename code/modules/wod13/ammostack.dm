@@ -317,7 +317,7 @@
 
 //obj/item/ammo_casing/vampire/c12g/buck/silver/on_hit(atom/target, blocked = FALSE)
 //	. = ..()
-//	if(iswerewolf(target) || is_garou(target))
+//	if(iswerewolf(target) || isgarou(target))
 //		var/mob/living/carbon/M = target
 //		if(M.auspice.gnosis)
 //			if(prob(40))
@@ -333,7 +333,7 @@
 
 /obj/projectile/beam/beam_rifle/vampire/vamp556mm/silver/on_hit(atom/target, blocked = FALSE)
 	. = ..()
-	if(iswerewolf(target) || is_garou(target))
+	if(iswerewolf(target) || isgarou(target))
 		var/mob/living/carbon/M = target
 		if(M.auspice.gnosis)
 			if(prob(50))
@@ -354,7 +354,7 @@
 
 /obj/projectile/beam/beam_rifle/vampire/vamp9mm/silver/on_hit(atom/target, blocked = FALSE)
 	. = ..()
-	if(iswerewolf(target) || is_garou(target))
+	if(iswerewolf(target) || isgarou(target))
 		var/mob/living/carbon/M = target
 		if(M.auspice.gnosis)
 			if(prob(50))
@@ -374,7 +374,7 @@
 
 /obj/projectile/beam/beam_rifle/vampire/vamp45acp/silver/on_hit(atom/target, blocked = FALSE)
 	. = ..()
-	if(iswerewolf(target) || is_garou(target))
+	if(iswerewolf(target) || isgarou(target))
 		var/mob/living/carbon/M = target
 		if(M.auspice.gnosis)
 			if(prob(50))
@@ -396,7 +396,7 @@
 
 /obj/projectile/beam/beam_rifle/vampire/vamp44/silver/on_hit(atom/target, blocked = FALSE)
 	. = ..()
-	if(iswerewolf(target) || is_garou(target))
+	if(iswerewolf(target) || isgarou(target))
 		var/mob/living/carbon/M = target
 		if(M.auspice.gnosis)
 			if(prob(50))

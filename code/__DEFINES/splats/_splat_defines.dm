@@ -15,11 +15,11 @@ DEFINE_BITFIELD(splat_flags, list(
 
 // what splat are you?
 #define splatted_kindred(A) SEND_SIGNAL(A, COMSIG_SPLAT_SPLAT_CHECKED) & KINDRED_SPLAT
-#define is_kindred(A) splatted_kindred(A)
+#define iskindred(A) splatted_kindred(A)
 #define splatted_ghoul(A) SEND_SIGNAL(A, COMSIG_SPLAT_SPLAT_CHECKED) & GHOUL_SPLAT
-#define is_ghoul(A) splatted_ghoul(A)
+#define isghoul(A) splatted_ghoul(A)
 #define splatted_garou(A) SEND_SIGNAL(A, COMSIG_SPLAT_SPLAT_CHECKED) & GAROU_SPLAT
-#define is_garou(A) splatted_garou(A)
+#define isgarou(A) splatted_garou(A)
 // we wanna account for stuff only humans can do, and also account for things like ghouled pets
 #define splatted_pure_human(A) SEND_SIGNAL(A, COMSIG_SPLAT_SPLAT_CHECKED) & PURE_HUMAN_SPLAT
 

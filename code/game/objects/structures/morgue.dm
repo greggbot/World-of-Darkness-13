@@ -269,7 +269,7 @@ GLOBAL_LIST_EMPTY(crematoriums)
 			if(M.stat != DEAD)
 				M.emote("scream")
 				if(user)
-					if(isnpc(M) && !is_kindred(M)) //PSEUDO_M we need a frenzy signal here, fire scary
+					if(isnpc(M) && !iskindred(M)) //PSEUDO_M we need a frenzy signal here, fire scary
 						var/mob/living/carbon/human/HM = user
 						HM.AdjustHumanity(-1, 0)
 			if(user)

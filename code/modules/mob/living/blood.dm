@@ -89,12 +89,6 @@
 	if(blood_volume >= BLOOD_VOLUME_SAFE)
 		timing = 100
 
-	if(is_kindred(src))
-		timing = 100
-		var/bloodpool = src.splats[SPLAT_KINDRED].power_stat_current
-		if(!bloodpool)
-			return
-
 	//Blood loss still happens in locker, floor stays clean
 	if(isturf(loc) && prob(sqrt(amt)*BLOOD_DRIP_RATE_MOD))
 		add_splatter_floor(loc, (amt >= 10))

@@ -60,11 +60,11 @@ SUBSYSTEM_DEF(bloodhunt)
 			hunted -= L
 	if(length(hunted))
 		for(var/mob/living/carbon/human/H in GLOB.player_list)
-			if(is_kindred(H) || is_ghoul(H))
+			if(iskindred(H) || isghoul(H))
 				H.throw_alert("bloodhunt", /atom/movable/screen/alert/bloodhunt)
 	else
 		for(var/mob/living/carbon/human/H in GLOB.player_list)
-			if(is_kindred(H) || is_ghoul(H))
+			if(iskindred(H) || isghoul(H))
 				H.clear_alert("bloodhunt")
 
 /datum/controller/subsystem/bloodhunt/proc/announce_hunted(var/mob/living/target, var/reason)

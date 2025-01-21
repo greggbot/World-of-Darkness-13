@@ -5,7 +5,7 @@
 
 /mob/living/carbon/Life()
 	. = ..()
-	if(is_garou(src) || iswerewolf(src))
+	if(isgarou(src) || iswerewolf(src))
 		if(key && stat <= HARD_CRIT)
 			var/datum/preferences/P = GLOB.preferences_datums[ckey(key)]
 			if(P)

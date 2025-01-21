@@ -1305,21 +1305,58 @@
 //PSEUDO_M add some shit for malkavian craziness but they don't need to poll the entire
 //clan every time anyone says anything, for god's sake
 
-/datum/splat/supernatural/kindred/signal_for_clans_with_special_petrify_bs()
-	if(is_kindred(src))
-		if(clane_type)
-			if(clane_type == "Serpentis")
-				ADD_TRAIT(src, TRAIT_NOBLEED, MAGIC_TRAIT)
-				var/obj/structure/statue/petrified/S = new(loc, src, statue_timer)
-				S.name = "[name]'s mummy"
-				S.icon_state = "mummy"
-				S.desc = "CURSE OF RA 𓀀 𓀁 𓀂 𓀃 𓀄 𓀅 𓀆 𓀇 𓀈 𓀉 𓀊 𓀋 𓀌 𓀍 𓀎 𓀏 𓀐 𓀑 𓀒 𓀓 𓀔 𓀕 𓀖 𓀗 𓀘 𓀙 𓀚 𓀛 𓀜 𓀝 𓀞 𓀟 𓀠 𓀡 𓀢 𓀣 𓀤 𓀥 𓀦 𓀧 𓀨 𓀩 𓀪 𓀫 𓀬 𓀭 𓀮 𓀯 𓀰 𓀱 𓀲 𓀳 𓀴 𓀵 𓀶 𓀷 𓀸 𓀹 𓀺 𓀻 𓀼 𓀽 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 𓁆 𓁇 𓁈 𓁉 𓁊 𓁋 𓁌 𓁍 𓁎 𓁏 𓁐 𓁑 𓀄 𓀅 𓀆."
-			if(clane_type == "Visceratika")
-				ADD_TRAIT(src, TRAIT_NOBLEED, MAGIC_TRAIT)
-				var/obj/structure/statue/petrified/S = new(loc, src, statue_timer)
-				S.name = "\improper gargoyle"
-				S.desc = "Some kind of gothic architecture."
-				S.icon = 'code/modules/wod13/32x48.dmi'
-				S.icon_state = "gargoyle"
-				S.dir = dir
-				S.pixel_z = -16
+/mob/living/carbon/human/proc/add_bite_animation()
+	remove_overlay(BITE_LAYER)
+	var/mutable_appearance/bite_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "bite", -BITE_LAYER)
+	overlays_standing[BITE_LAYER] = bite_overlay
+	apply_overlay(BITE_LAYER)
+	spawn(15)
+		if(src)
+			remove_overlay(BITE_LAYER)
+
+/mob/living/carbon/human/proc/drinksomeblood(var/mob/living/mob)
+	suckbar = image('code/modules/wod13/bloodcounter.dmi', suckbar_loc, "[round(14*(mob.bloodpool/mob.maxbloodpool))]", HUD_LAYER)
+	playsound_local(src, heartbeat, 75, 0, channel = CHANNEL_BLOOD, use_reverb = FALSE)
+	
+/atom/movable/screen/alert/untorpor
+	name = "Awaken"
+	desc = "Free yourself of your Torpor."
+	icon_state = "awaken"
+
+/atom/movable/screen/alert/untorpor/Click() //PSEUDO_M this needs to call a do_action not do all the actions
+	if(isobserver(usr))
+		return
+	var/mob/living/living_owner = owner
+	if (!iskindred(living_owner))
+		return
+
+	var/mob/living/carbon/human/vampire = living_owner
+	var/datum/splat/supernatural/kindred/kindred_species = vampire.splat_flags & SPLAT_KINDRED
+	if (COOLDOWN_FINISHED(kindred_species, torpor_timer) && (vampire.bloodpool > 0))	//PSEUDO_M_K
+		vampire.untorpor()
+		spawn()
+			vampire.clear_alert("succumb")
+	else
+		to_chat(usr, "<span class='purple'><i>You are in Torpor, the sleep of death that vampires go into when injured, starved, or exhausted.</i></span>")
+		if (vampire.bloodpool > 0)
+			to_chat(usr, "<span class='purple'><i>You will be able to awaken in <b>[DisplayTimeText(COOLDOWN_TIMELEFT(kindred_species, torpor_timer))]</b>.</i></span>")
+			to_chat(usr, "<span class='purple'><i>The time to re-awaken depends on your [(vampire.humanity > 5) ? "high" : "low"] [vampire.client.prefs.enlightenment ? "Enlightenment" : "Humanity"] rating of [vampire.humanity].</i></span>")
+		else
+			to_chat(usr, "<span class='danger'><i>You will not be able to re-awaken, because you have no blood available to do so.</i></span>")
+
+/atom/movable/screen/blood
+	name = "bloodpool"
+	icon = 'code/modules/wod13/UI/bloodpool.dmi'
+	icon_state = "blood0"
+	layer = HUD_LAYER
+	plane = HUD_PLANE
+
+/atom/movable/screen/blood/Click()
+	if(iscarbon(usr))
+		var/mob/living/carbon/human/BD = usr
+		BD.update_blood_hud()
+		if(BD.bloodpool > 0)
+			to_chat(BD, "<span class='notice'>You've got [BD.bloodpool]/[BD.maxbloodpool] blood points.</span>")
+		else
+			to_chat(BD, "<span class='warning'>You've got [BD.bloodpool]/[BD.maxbloodpool] blood points.</span>")
+	..()

@@ -130,5 +130,5 @@ SUBSYSTEM_DEF(city_time)
 		Master.SetRunLevel(RUNLEVEL_POSTGAME)
 		for(var/mob/living/carbon/human/H in GLOB.human_list)
 			var/area/vtm/V = get_area(H)
-			if(is_kindred(H) && V.upper)
+			if(iskindred(H) && V.upper)
 				H.death() // PSEUDO_M_K need a signal here for being hit with sunlight instead
