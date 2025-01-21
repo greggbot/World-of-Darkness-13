@@ -1360,3 +1360,4 @@
 		else
 			to_chat(BD, "<span class='warning'>You've got [BD.bloodpool]/[BD.maxbloodpool] blood points.</span>")
 	..()
+
