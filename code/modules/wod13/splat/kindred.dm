@@ -91,7 +91,7 @@
 			dat += "<BR>"
 			if(host.mind.enslaved_to)
 				dat += "My Regnant is [host.mind.enslaved_to], I should obey their wants.<BR>"
-		if(host.vampire_faction == "Camarilla" || host.vampire_faction == "Anarchs" || host.vampire_faction == "Sabbat")
+		if(host.vampire_faction == FACTION_CAMARILLA || host.vampire_faction == FACTION_ANARCHS || host.vampire_faction == FACTION_SABBAT)
 			dat += "I belong to [host.vampire_faction] faction, I shouldn't disobey their rules.<BR>"
 		if(host.generation)
 			dat += "I'm from [host.generation] generation.<BR>"
@@ -366,10 +366,10 @@
 				var/new_master = FALSE
 				BLOODBONDED.faction |= H.faction
 				if(!istype(BLOODBONDED, /mob/living/carbon/human/npc))
-					if(H.vampire_faction == "Camarilla" || H.vampire_faction == "Anarchs" || H.vampire_faction == "Sabbat")
+					if(H.vampire_faction == FACTION_CAMARILLA || H.vampire_faction == FACTION_ANARCHS || H.vampire_faction == FACTION_SABBAT)
 						if(BLOODBONDED.vampire_faction != H.vampire_faction)
 							BLOODBONDED.vampire_faction = H.vampire_faction
-							if(H.vampire_faction == "Sabbat")
+							if(H.vampire_faction == FACTION_SABBAT)
 								if(BLOODBONDED.mind)
 									BLOODBONDED.mind.add_antag_datum(/datum/antagonist/sabbatist)
 									GLOB.sabbatites += BLOODBONDED
@@ -835,7 +835,9 @@
  * * discipline_checking - The Discipline type that access to is being checked.
  */
 /proc/can_access_discipline(mob/living/carbon/human/vampire_checking, discipline_checking)
-	if (!is_kindred(vampire_checking))
+	if (isghoul(vampire_checking))
+		return TRUE
+	if (!iskindred(vampire_checking))
 		return FALSE
 	if (!vampire_checking.client)
 		return FALSE
