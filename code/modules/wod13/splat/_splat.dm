@@ -1,25 +1,118 @@
+#define SPLATTED(/datum/splat/S) (LAZYADD(SSsplats.applied_splats[S.splat_id], S))
+#define UNSPLATTED(/datum/splat/S) (LAZYREMOVE(SSsplats.applied_splats[S.splat_id], S))
+
 /datum/species
 	var/animation_goes_up = FALSE	//PSEUDO_M i have no idea what this does
 
 /datum/splat
+	///We change this when applied to track people's splat assignments
+	var/name = null
+	///For record keeping and sanity
+	var/splat_id = null
+	/// Pretty much every splat has a power stat; vitae, gnosis, etc
 	var/power_stat_name = null
-	/// Pretty much every splat has a power stat.
 	var/power_stat_max = 0
 	var/power_stat_current = 0
-	/// And they all have special snowflake names.
+	///Traits to apply/remove in their respective instances
 	var/list/splat_traits = null
-	var/integrity_name = "Integrity" //PSEUDO_M move this to minds instead and have splats
-	var/integrity_level = 7			 //or other things modify when necessary
+	///Signals and PROC_REFs to register for, respectively. Defined here for organization
+	var/list/splat_signals = null
+	var/integrity_name = "Integrity"
+	var/integrity_level = 7
+	///A bitflag that this splat will return in response to anything that splat checks us, which will usually be the helpers.
+	var/splat_flag = null
+	///Our very special lady, gentleman, theydie, gentlethem, or horrifying monstrosity that should not be
+	var/mob/living/my_character = null
+	///Artifacts of migrating splats from species, pending a rework of our damage system
+	var/brutemod = null
+	var/burnmod = null
 
+/* Primarily for signal registration and a handle for SSsplats to make and apply a new splat, we want to do most of the effect
+ * work of a splat application using my_character since it SHOULD be getting assigned.
+ * my_character = who or whatever is getting the splat. Note that it is mob/living and not carbon or human; ghoul pets comes to mind.
+ * splat_response is a signal handler for splat checking.
+ * then we do all our important work in on_apply
+*/
+/datum/splat/proc/Apply(mob/living/character)
+	SHOULD_CALL_PARENT(TRUE)
+	my_character = character
+	RegisterSignal(my_character, COMSIG_SPLAT_SPLAT_CHECKED, PROC_REF(splat_response))
+	on_apply(my_character)
 
-/datum/splat/Initialize()
+/* In a perfect world this would have no args and function off of my_character but we want to future proof for whatever circumstance
+ * may call for mass splat removal or something.
+ * Unregisters the signals then does any heavy_lifting in on_remove
+*/
+/datum/splat/proc/Remove(mob/living/character)
+	SHOULD_CALL_PARENT(TRUE)
+	UnregisterSignal(character, COMSIG_SPLAT_SPLAT_CHECKED)
+	on_remove(character)
+
+/* Name the splat helpfully, apply splat inherent effects, signal the character for any possible listeners, then start tracking on the splat
+ * subsystem.
+*/
+/datum/splat/proc/on_apply()
+	SHOULD_CALL_PARENT(TRUE)
+	name = "[my_character]'s [splat_id] splat"
+	for(var/trait in splat_traits)
+		ADD_TRAIT(my_character, trait, [splat_id])
+	SEND_SIGNAL(my_character, COMSIG_SPLAT_SPLAT_APPLIED, src)
+	SPLATTED(src)
+
+/* Signal our removal, null out our character, null out the reference to us in SSsplats, then journey into the void. */
+/datum/splat/proc/on_remove()
+	SHOULD_CALL_PARENT(TRUE)
+	for(var/trait in splat_traits)
+		REMOVE_TRAIT(my_character, trait)
+	SEND_SIGNAL(character, COMSIG_SPLAT_SPLAT_REMOVED, src)
+	my_character = null
+	UNSPLATTED(src)
+	qdel(src)
+
+#undef SPLATTED
+#undef UNSPLATTED
+
+/datum/splat/proc/splat_response(datum/source)
+	SIGNAL_HANDLER
+
+	return splat_flag
+
+/datum/splat/human
+
+/datum/splat/human/on_apply()
 	. = ..()
+	RegisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED, PROC_REF(dehumanize))
 
-/datum/splat/proc/Apply()
-	SHOULD_CALL_PARENT(TRUE)
+/datum/splat/human/proc/dehumanize(datum/source, datum/splat/new_splat)
+	SIGNAL_HANDLER
 
-/datum/splat/proc/Remove()
-	SHOULD_CALL_PARENT(TRUE)
+	if(istype(new_splat, /datum/splat/supernatural))	//you don't belong in this world!
+		log_game("[my_character] is no longer human as a result of gaining the [splat_id] splat.")
+		Remove(my_character)
+
+/datum/splat/human/on_remove()
+	UnregisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED)
+	..()
+
+/// It seems an arbitrary distinction but these will be splats or splat-likes that don't render you technically not human while still giving
+/// more(or less?) than human abilities or characteristics; Hunters, Immortals from CofD, Slashers, etc
+/datum/splat/metahuman
+
+/datum/splat/metahuman/on_apply()
+	. = ..()
+	RegisterSignal(my_character, COMSIG_SPLAT_SPLAT_REMOVED, PROC_REF(exclusive_to_humans))
+
+/datum/splat/metahuman/proc/exclusive_to_humans(datum/source, datum/splat/removing_splat)
+	SIGNAL_HANDLER
+
+	if(istype(removing_splat, /datum/splat/human))
+		log_game("[my_character] lost the [splat_id] splat along with their humanity.")
+		Remove(my_character)
+
+/datum/splat/metahuman/on_remove()
+	UnregisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED)
+	..()
+
 
 /// We'll use this for signals to fuck with supernaturals and whatever else
 /datum/splat/supernatural

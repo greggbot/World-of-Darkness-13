@@ -1,18 +1,3 @@
-
-/**
- * This is the splat (supernatural type, game line in the World of Darkness) container
- * for all vampire-related code. I think this is stupid and I don't want any of this to
- * be the way it is, but if we're going to work with the code that's been written then
- * my advice is to centralise all stuff directly relating to vampires to here if it isn't
- * already in another organisational structure.
- *
- * The same applies to other splats, like /datum/splat/supernatural/garou or /datum/splat/supernatural/ghoul.
- * Halfsplats like ghouls are going to share some code with their fullsplats (vampires).
- * I dunno what to do about this except a reorganisation to make this stuff actually good.
- * The plan right now is to create a /datum/splat parent type and then have everything branch
- * from there, but that's for the future.
- */
-
 /datum/splat/supernatural/kindred
 	name = "Vampire"
 	splat_traits = list(
@@ -23,17 +8,19 @@
 		TRAIT_TOXIMMUNE,
 		TRAIT_NOCRITDAMAGE,
 	)
-	brutemod = 0.5	//PSEUDO_M_K account for dam resist
-	burnmod = 2	//PSEUDO_M_K this needs to be much higher considering fire does aggravated
+	brutemod = 0.5
+	burnmod = 2
 
 	power_stat_name = "Vitae"
-	power_stat_max = 5 //PSEUDO_MX this was moved here from mob/living
+	power_stat_max = 5
 	power_stat_current = 5
 	integrity_name = "Humanity"
 	integrity_level = 7
 
 	var/generation = 13
 	COOLDOWN_DECLARE(torpor_timer)
+	COOLDOWN_DECLARE(violated_masquerade)
+
 
 	var/bloodpower_time_plus = 0					//PSEUDO_M_SR
 	var/thaum_damage_plus = 0						//
@@ -41,14 +28,8 @@
 	var/dust_anim = "dust-h"						//
 	var/datum/vampireclane/clane					//
 	var/list/datum/discipline/disciplines = list()	//
-	var/last_bloodheal_use = 0						//
-	var/last_bloodpower_use = 0						//
-	var/last_drinkblood_use = 0						//
-	var/last_bloodheal_click = 0					//
-	var/last_bloodpower_click = 0					//
 	var/last_drinkblood_click = 0					//
 	var/masquerade = 5								//
-	var/last_masquerade_violation = 0				//
 
 /datum/action/vampireinfo
 	name = "About Me"
@@ -893,3 +874,227 @@
 
 	//nothing found
 	return FALSE
+
+/datum/preferences
+	var/last_torpor = 0
+
+/mob/living/carbon/human/death()
+	. = ..()
+
+	if(iskindred(src))
+		SSmasquerade.dead_level = min(1000, SSmasquerade.dead_level+50)
+	else
+		if(istype(get_area(src), /area/vtm))
+			var/area/vtm/V = get_area(src)
+			if(V.zone_type == "masquerade")
+				SSmasquerade.dead_level = max(0, SSmasquerade.dead_level-25)
+
+	if(bloodhunted)
+		SSbloodhunt.hunted -= src
+		bloodhunted = FALSE
+		SSbloodhunt.update_shit()
+	var/witness_count
+	for(var/mob/living/carbon/human/npc/NEPIC in viewers(7, usr))
+		if(NEPIC && NEPIC.stat != DEAD)
+			witness_count++
+		if(witness_count > 1)
+			for(var/obj/item/police_radio/radio in GLOB.police_radios)
+				radio.announce_crime("murder", get_turf(src))
+			for(var/obj/item/p25radio/police/radio in GLOB.p25_radios)
+				if(radio.linked_network == "police")
+					radio.announce_crime("murder", get_turf(src))
+	GLOB.masquerade_breakers_list -= src
+	GLOB.sabbatites -= src
+
+	//So upon death the corpse is filled with yin chi
+	yin_chi = min(max_yin_chi, yin_chi+yang_chi)
+	yang_chi = 0
+
+	if(iskindred(src) || iscathayan(src))
+		can_be_embraced = FALSE
+		var/obj/item/organ/brain/brain = getorganslot(ORGAN_SLOT_BRAIN) //NO REVIVAL EVER
+		if (brain)
+			brain.organ_flags |= ORGAN_FAILING
+
+		if(in_frenzy)
+			exit_frenzymod()
+		SEND_SOUND(src, sound('code/modules/wod13/sounds/final_death.ogg', 0, 0, 50))
+
+		//annoying code that depends on clan doesn't work for Kuei-jin
+		if (iscathayan(src))
+			return
+
+		var/years_undead = chronological_age - age
+		switch (years_undead)
+			if (-INFINITY to 10) //normal corpse
+				return
+			if (10 to 50)
+				clane.rot_body(1) //skin takes on a weird colouration
+				visible_message("<span class='notice'>[src]'s skin loses some of its colour.</span>")
+				update_body()
+				update_body() //this seems to be necessary due to stuff being set on update_body() and then only refreshing with a new call
+			if (50 to 100)
+				clane.rot_body(2) //looks slightly decayed
+				visible_message("<span class='notice'>[src]'s skin rapidly decays.</span>")
+				update_body()
+				update_body()
+			if (100 to 150)
+				clane.rot_body(3) //looks very decayed
+				visible_message("<span class='warning'>[src]'s body rapidly decomposes!</span>")
+				update_body()
+				update_body()
+			if (150 to 200)
+				clane.rot_body(4) //mummified skeletonised corpse
+				visible_message("<span class='warning'>[src]'s body rapidly skeletonises!</span>")
+				update_body()
+				update_body()
+			if (200 to INFINITY)
+				if (iskindred(src))
+					playsound(src, 'code/modules/wod13/sounds/burning_death.ogg', 80, TRUE)
+				else if (iscathayan(src))
+					playsound(src, 'code/modules/wod13/sounds/vicissitude.ogg', 80, TRUE)
+				lying_fix()
+				dir = SOUTH
+				spawn(1 SECONDS)
+					dust(TRUE, TRUE) //turn to ash
+
+/datum/keybinding/human/bite // PSEUDO_M_K need to add vampire section to controls
+	hotkey_keys = list("F")
+	name = "bite"
+	full_name = "Bite"
+	description = "Bite whoever you're aggressively grabbing, and feed on them if possible."
+	keybind_signal = COMSIG_KB_HUMAN_BITE_DOWN
+
+/datum/keybinding/human/bite/down(client/user)
+	. = ..()
+	if(.)
+		return
+	//the code below is directly imported from onyxcombat.dm's /atom/movable/screen/drinkblood/Click() proc
+	//turning all of this into one centralised proc would be preferable, but it requires more effort than I'm willing to put in right now
+	if(ishuman(user.mob))
+		var/mob/living/carbon/human/BD = user.mob
+		BD.update_blood_hud()
+		if(world.time < BD.last_drinkblood_use+30)
+			return
+		if(world.time < BD.last_drinkblood_click+10)
+			return
+		BD.last_drinkblood_click = world.time
+		if(BD.grab_state > GRAB_PASSIVE)
+			if(ishuman(BD.pulling))
+				var/mob/living/carbon/human/PB = BD.pulling
+				if(isghoul(user.mob))
+					if(!iskindred(PB))
+						SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
+						to_chat(BD, "<span class='warning'>Eww, that is <b>GROSS</b>.</span>")
+						return
+				if(!isghoul(user.mob) && !iskindred(user.mob) && !iscathayan(user.mob))
+					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
+					to_chat(BD, "<span class='warning'>Eww, that is <b>GROSS</b>.</span>")
+					return
+				if(PB.stat == DEAD && !HAS_TRAIT(BD, TRAIT_GULLET) && !iscathayan(user.mob))
+					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
+					to_chat(BD, "<span class='warning'>This creature is <b>DEAD</b>.</span>")
+					return
+				if(PB.bloodpool <= 0 && (!iskindred(BD.pulling) || !iskindred(BD)))
+					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
+					to_chat(BD, "<span class='warning'>There is no <b>BLOOD</b> in this creature.</span>")
+					return
+				if(BD.clane)
+					var/special_clan = FALSE
+					if(BD.clane.name == "Salubri")
+						if(!PB.IsSleeping())
+							to_chat(BD, "<span class='warning'>You can't drink from aware targets!</span>")
+							return
+						special_clan = TRUE
+						PB.emote("moan")
+					if(BD.clane.name == "Giovanni")
+						PB.emote("scream")
+						special_clan = TRUE
+					if(!special_clan)
+						PB.emote("groan")
+				PB.add_bite_animation()
+			if(isliving(BD.pulling))
+				if(!iskindred(BD) && !iscathayan(BD))
+					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
+					to_chat(BD, "<span class='warning'>Eww, that is <b>GROSS</b>.</span>")
+					return
+				var/mob/living/LV = BD.pulling
+				if(LV.bloodpool <= 0 && (!iskindred(BD.pulling) || !iskindred(BD)))
+					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
+					to_chat(BD, "<span class='warning'>There is no <b>BLOOD</b> in this creature.</span>")
+					return
+				if(LV.stat == DEAD && !HAS_TRAIT(BD, TRAIT_GULLET) && !iscathayan(user.mob))
+					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
+					to_chat(BD, "<span class='warning'>This creature is <b>DEAD</b>.</span>")
+					return
+				var/skipface = (BD.wear_mask && (BD.wear_mask.flags_inv & HIDEFACE)) || (BD.head && (BD.head.flags_inv & HIDEFACE))
+				if(!skipface)
+					if(!HAS_TRAIT(BD, TRAIT_BLOODY_LOVER))
+						playsound(BD, 'code/modules/wod13/sounds/drinkblood1.ogg', 50, TRUE)
+						LV.visible_message("<span class='warning'><b>[BD] bites [LV]'s neck!</b></span>", "<span class='warning'><b>[BD] bites your neck!</b></span>")
+					if(!HAS_TRAIT(BD, TRAIT_BLOODY_LOVER))
+						if(BD.CheckEyewitness(LV, BD, 7, FALSE))
+							BD.AdjustMasquerade(-1)
+					else
+						playsound(BD, 'code/modules/wod13/sounds/kiss.ogg', 50, TRUE)
+						LV.visible_message("<span class='italics'><b>[BD] kisses [LV]!</b></span>", "<span class='userlove'><b>[BD] kisses you!</b></span>")
+					if(iskindred(LV))
+						var/mob/living/carbon/human/HV = BD.pulling
+						if(HV.stakeimmune)
+							to_chat(BD, "<span class='warning'>There is no <b>HEART</b> in this creature.</span>")
+							return
+					BD.drinksomeblood(LV)
+	return TRUE
+
+/mob/living/carbon/human/Life()
+	if(!iskindred(src) && !iscathayan(src))
+		if(prob(5))
+			adjustCloneLoss(-5, TRUE)
+	update_blood_hud()
+	update_zone_hud()
+	update_rage_hud()
+	update_shadow()
+	handle_vampire_music()
+	update_auspex_hud()
+	if(warrant)
+		last_nonraid = world.time
+		if(key)
+			if(stat != DEAD)
+				if(istype(get_area(src), /area/vtm))
+					var/area/vtm/V = get_area(src)
+					if(V.upper)
+						last_showed = world.time
+						if(last_raid+600 < world.time)
+							last_raid = world.time
+							for(var/turf/open/O in range(1, src))
+								if(prob(25))
+									new /obj/effect/temp_visual/desant(O)
+							playsound(loc, 'code/modules/wod13/sounds/helicopter.ogg', 50, TRUE)
+				if(last_showed+9000 < world.time)
+					to_chat(src, "<b>POLICE STOPPED SEARCHING</b>")
+					SEND_SOUND(src, sound('code/modules/wod13/sounds/humanity_gain.ogg', 0, 0, 75))
+					killed_count = 0
+					warrant = FALSE
+			else
+				warrant = FALSE
+		else
+			warrant = FALSE
+	else
+		if(last_nonraid+1800 < world.time)
+			last_nonraid = world.time
+			killed_count = max(0, killed_count-1)
+
+	..()
+
+/mob/living/proc/update_blood_hud()
+	if(!client || !hud_used)
+		return
+	maxbloodpool = 10+((13-generation)*3)
+	if(hud_used.blood_icon)
+		var/emm = round((bloodpool/maxbloodpool)*10)
+		if(emm > 10)
+			hud_used.blood_icon.icon_state = "blood10"
+		if(emm < 0)
+			hud_used.blood_icon.icon_state = "blood0"
+		else
+			hud_used.blood_icon.icon_state = "blood[emm]"

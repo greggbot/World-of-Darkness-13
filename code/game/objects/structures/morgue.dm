@@ -269,14 +269,6 @@ GLOBAL_LIST_EMPTY(crematoriums)
 		for(var/mob/living/M in conts)
 			if(M.stat != DEAD)
 				M.emote("scream")
-				if(user)
-					if(isnpc(M) && !iskindred(M)) //PSEUDO_M we need a frenzy signal here, fire scary
-						var/mob/living/carbon/human/HM = user
-						HM.AdjustHumanity(-1, 0)
-						call_dharma("torture", user)
-						if(!(M in HM.mind.dharma?.deserving))
-							call_dharma("killfirst")
-						call_dharma("kill")
 			if(user)
 				log_combat(user, M, "cremated")
 			else
