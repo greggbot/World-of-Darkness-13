@@ -13,30 +13,34 @@ SUBSYSTEM_DEF(splats)
 		"kindred"	=	/datum/splat/supernatural/kindred,
 		"garou"		=	/datum/splat/supernatural/garou,
 		"ghoul"		=	/datum/splat/supernatural/ghoul,
-		"kuei-jin"	=	/datum/splat/supernatural/kuei-jin,
+		"kuei-jin"	=	/datum/splat/supernatural/kueijin,
 	)
-	///An associated list of lazy lists for splats applied for admins and debugging
-	var/list/applied_splats = list(
-		"human"		= null
-		"kindred"	= null
-		"garou"		= null
-		"ghoul"		= null
-		"kuei-jin"	= null
-	)
+	///An associated list of lazy lists for splats applied; keys are the splat owner, values are the splat
+	var/list/human_splats = list(
+		)
+	var/list/kindred_splats = list(
+		)
+	var/list/garou_splats = list(
+		)
+	var/list/ghoul_splats = list(
+		)
+	var/list/kueijin_splats = list(
+		)
+/datum/controller/subsystem/splats/Initialize()
+	RegisterSignal(src, COMSIG_SPLAT_SPLAT_APPLIED_TO, PROC_REF(track_splat_assignment))
 
 /datum/controller/subsystem/splats/proc/give_new_splat(mob/living/target, splat)
 	if(ispath(splat, /datum/splat))
 		var/datum/splat/new_splat = new()
 		new_splat.Apply(target)
-		return splat
+		return new_splat
 	if(!istext(splat))
 		CRASH("Tried to splat [target] with an undefined value: [splat]")
 	var/splat_type = splat_types[splat]
 	var/datum/splat/new_splat = splat_type/new()
 	new_splat.Apply(target)
-	return splat
+	return new_splat
 
-/datum/controller/subsystem/splats/proc/
 /datum/controller/subsystem/splats/proc/
 /datum/controller/subsystem/splats/proc/
 /datum/controller/subsystem/splats/proc/

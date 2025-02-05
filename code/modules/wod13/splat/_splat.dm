@@ -1,5 +1,5 @@
-#define SPLATTED(/datum/splat/S) (LAZYADD(SSsplats.applied_splats[S.splat_id], S))
-#define UNSPLATTED(/datum/splat/S) (LAZYREMOVE(SSsplats.applied_splats[S.splat_id], S))
+#define SPLATTED(mob/living/M, datum/splat/S) (SEND_SIGNAL(SSsplats, COMSIG_SPLAT_APPLIED_TO, S, M))
+#define UNSPLATTED(mob/living/M, datum/splat/S) (SSsplats)
 
 /datum/species
 	var/animation_goes_up = FALSE	//PSEUDO_M i have no idea what this does
@@ -57,7 +57,7 @@
 	for(var/trait in splat_traits)
 		ADD_TRAIT(my_character, trait, [splat_id])
 	SEND_SIGNAL(my_character, COMSIG_SPLAT_SPLAT_APPLIED, src)
-	SPLATTED(src)
+	SPLATTED(my_character, src)
 
 /* Signal our removal, null out our character, null out the reference to us in SSsplats, then journey into the void. */
 /datum/splat/proc/on_remove()
@@ -66,11 +66,9 @@
 		REMOVE_TRAIT(my_character, trait)
 	SEND_SIGNAL(character, COMSIG_SPLAT_SPLAT_REMOVED, src)
 	my_character = null
-	UNSPLATTED(src)
 	qdel(src)
 
 #undef SPLATTED
-#undef UNSPLATTED
 
 /datum/splat/proc/splat_response(datum/source)
 	SIGNAL_HANDLER
