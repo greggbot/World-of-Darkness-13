@@ -31,13 +31,6 @@ SUBSYSTEM_DEF(city_time)
 	timeofnight = "[get_watch_number(hour)]:[get_watch_number(minutes)]"
 
 	if(hour == 0 && minutes == 0)
-		var/won
-		if(length(SSfactionwar.marks_camarilla) > length(SSfactionwar.marks_anarch) && length(SSfactionwar.marks_camarilla) > length(SSfactionwar.marks_sabbat))
-			won = "camarilla"
-		if(length(SSfactionwar.marks_anarch) > length(SSfactionwar.marks_camarilla) && length(SSfactionwar.marks_anarch) > length(SSfactionwar.marks_sabbat))
-			won = "anarch"
-		if(length(SSfactionwar.marks_sabbat) > length(SSfactionwar.marks_anarch) && length(SSfactionwar.marks_sabbat) > length(SSfactionwar.marks_camarilla))
-			won = "sabbat"
 		for(var/mob/living/carbon/werewolf/W in GLOB.player_list)
 			if(W)
 				if(W.stat != DEAD)
@@ -56,15 +49,13 @@ SUBSYSTEM_DEF(city_time)
 								if("[H.mind.assigned_role]" == "Prince" || "[H.mind.assigned_role]" == "Sheriff" || "[H.mind.assigned_role]" == "Seneschal" || "[H.mind.assigned_role]" == "Chantry Regent" || "[H.mind.assigned_role]" == "Baron" || "[H.mind.assigned_role]" == "Dealer")
 									P.add_experience(2)
 							if(!HAS_TRAIT(H, TRAIT_NON_INT))
-								if(won)
-									if(H.vampire_faction == won)
-										P.add_experience(1)
 								if(H.total_erp > 1500)
 									P.add_experience(2)
 									H.total_erp = 0
 								if(H.total_cleaned > 25)
 									P.add_experience(1)
 									H.total_cleaned = 0
+									call_dharma("cleangrow", H)
 								if(H.mind)
 									if(H.mind.assigned_role == "Graveyard Keeper")
 										if(SSgraveyard.total_good > SSgraveyard.total_bad)
@@ -73,13 +64,6 @@ SUBSYSTEM_DEF(city_time)
 							P.save_character()
 
 	if(hour == 3 && minutes == 0)
-		var/won
-		if(length(SSfactionwar.marks_camarilla) > length(SSfactionwar.marks_anarch) && length(SSfactionwar.marks_camarilla) > length(SSfactionwar.marks_sabbat))
-			won = "camarilla"
-		if(length(SSfactionwar.marks_anarch) > length(SSfactionwar.marks_camarilla) && length(SSfactionwar.marks_anarch) > length(SSfactionwar.marks_sabbat))
-			won = "anarch"
-		if(length(SSfactionwar.marks_sabbat) > length(SSfactionwar.marks_anarch) && length(SSfactionwar.marks_sabbat) > length(SSfactionwar.marks_camarilla))
-			won = "sabbat"
 		for(var/mob/living/carbon/werewolf/W in GLOB.player_list)
 			if(W)
 				if(W.stat != DEAD)
@@ -98,15 +82,13 @@ SUBSYSTEM_DEF(city_time)
 								if("[H.mind.assigned_role]" == "Prince" || "[H.mind.assigned_role]" == "Sheriff" || "[H.mind.assigned_role]" == "Seneschal" || "[H.mind.assigned_role]" == "Chantry Regent" || "[H.mind.assigned_role]" == "Baron" || "[H.mind.assigned_role]" == "Dealer")
 									P.add_experience(2)
 							if(!HAS_TRAIT(H, TRAIT_NON_INT))
-								if(won)
-									if(H.vampire_faction == won)
-										P.add_experience(1)
 								if(H.total_erp > 9000)
 									P.add_experience(2)
 									H.total_erp = 0
 								if(H.total_cleaned > 25)
 									P.add_experience(1)
 									H.total_cleaned = 0
+									call_dharma("cleangrow", H)
 								if(H.mind)
 									if(H.mind.assigned_role == "Graveyard Keeper")
 										if(SSgraveyard.total_good > SSgraveyard.total_bad)
@@ -132,3 +114,22 @@ SUBSYSTEM_DEF(city_time)
 			var/area/vtm/V = get_area(H)
 			if(iskindred(H) && V.upper)
 				H.death() // PSEUDO_M_K need a signal here for being hit with sunlight instead
+			if(iscathayan(H) && V.upper)
+				H.death()
+//				if(H.vampire_faction == won)
+//					if(H.key)
+//						var/datum/preferences/P = GLOB.preferences_datums[ckey(H.key)]
+//						if(P)
+//							var/mode = 1
+//							if(HAS_TRAIT(H, TRAIT_NON_INT))
+//								mode = 2
+//							P.exper = min(calculate_mob_max_exper(H), P.exper+(1000/mode))
+//		switch(won)
+//			if("camarilla")
+//				to_chat(world, "Camarilla takes control over the city...")
+//			if("anarch")
+//				to_chat(world, "Anarchs take control over the city...")
+//			if("sabbat")
+//				to_chat(world, "Sabbat takes control over the city...")
+//			else
+//				to_chat(world, "The city remains neutral...")

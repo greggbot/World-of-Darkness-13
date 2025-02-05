@@ -13,7 +13,7 @@
 			if(A.x <= x)
 				return TRUE
 	return FALSE
-	
+
 /mob/proc/can_respawn()
 	if (client?.ckey)
 		if (GLOB.respawn_timers[client.ckey])

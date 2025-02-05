@@ -485,7 +485,10 @@
 
 	cure_fakedeath(source)
 	REMOVE_TRAIT(src, TRAIT_TORPOR, source)
-	to_chat(src, "<span class='notice'>You have awoken from your Torpor.</span>")
+	if(iskindred(src))
+		to_chat(src, "<span class='notice'>You have awoken from your Torpor.</span>")
+	if(iscathayan(src))
+		to_chat(src, "<span class='notice'>You have awoken from your Little Death.</span>")
 
 ///Unignores all slowdowns that lack the IGNORE_NOSLOW flag.
 /mob/living/proc/unignore_slowdown(source)
