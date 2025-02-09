@@ -59,10 +59,6 @@
 			if(radio.linked_network == "police")
 				radio.say(message)
 
-
-/obj/item/police_radio/proc/dispatcher_talk(said)
-	say(said)
-
 /obj/item/police_radio/Initialize()
 	. = ..()
 	GLOB.police_radios += src
