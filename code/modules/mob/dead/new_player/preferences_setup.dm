@@ -60,7 +60,7 @@
 	if(pref_species.id == "ghoul")
 		discipline_types = list()
 		discipline_levels = list()
-	if(pref_species.id == "kindred")	//PSEUDO_M need to untangle species from prefs
+	if(pref_species.id == "kindred")
 		qdel(clane)
 		clane = new /datum/vampireclane/brujah()
 		discipline_types = list()

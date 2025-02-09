@@ -297,13 +297,7 @@
 					to_chat(H, "<span class='warning'>You have already noted their masquerade breach! Wait some time until you do that again.</span>")
 					return
 				reason = trim(copytext_char(sanitize(reason), 1, MAX_MESSAGE_LEN))
-				masquerade_votes++
 				message_admins("[ADMIN_LOOKUPFLW(H)] spotted [ADMIN_LOOKUPFLW(src)]'s Masquerade violation. Description: [reason]")
-				H.voted_for |= dna.real_name
-				if(masquerade_votes > 1)
-					masquerade_votes = 0
-					last_masquerade_violation = 0
-					AdjustMasquerade(-1)
 ///////HUDs///////
 	if(href_list["hud"])
 		if(!ishuman(usr))

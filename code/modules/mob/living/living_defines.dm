@@ -179,8 +179,8 @@
 	var/physique = 1
 	var/dexterity = 1
 	var/social = 1
-	var/mentality = 1	//PSEUDO_M this should not be on living but we'll come back around
-	var/lockpicking = 0	// to avoid scope creep on fixing species
+	var/mentality = 1
+	var/lockpicking = 0
 	var/athletics = 0
 	var/blood = 1
 
@@ -192,12 +192,12 @@
 	var/additional_lockpicking = 0
 	var/additional_athletics = 0
 	var/more_companions = 0
-	var/melee_professional = FALSE	//PSEUDO_M this should not be on living
+	var/melee_professional = FALSE
 
 	var/info_known = INFO_KNOWN_UNKNOWN
 
 	var/last_message
-	var/total_erp = 0	//PSEUDO_M ugh
+	var/total_erp = 0
 
 	var/last_taste_time
 	var/last_taste_text
@@ -214,8 +214,6 @@
 
 	var/temporis_visual = FALSE	//PSEUDO_M this should be an overlay
 	var/temporis_blur = FALSE	//PSEUDO_M ??
-
-	var/vampire_faction	//PSEUDO_M we'll need to port /tg/ factions for this
 
 	var/frenzy_chance_boost = 10	//PSEUDO_M_K
 
@@ -249,8 +247,6 @@
 	var/last_m_intent = MOVE_INTENT_RUN
 
 	var/harm_focus = SOUTH	//PSEUDO_M there's a more performant way to handle this
-	var/masquerade_votes = 0	//PSEUDO_M don't know what this does so we'll see
-	var/list/voted_for = list()
 	var/flavor_text
 	var/true_real_name
 	var/died_already = FALSE	//PSEUDO_M huh?

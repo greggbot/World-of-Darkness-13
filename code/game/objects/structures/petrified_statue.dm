@@ -80,7 +80,6 @@
 /mob/living/carbon/human/petrify(statue_timer)
 	if(!isturf(loc))
 		return FALSE
-	//PSEUDO_M_K SEND_SIGNAL check return
 	var/obj/structure/statue/petrified/S = new(loc, src, statue_timer)
 	S.name = "statue of [name]"
 	ADD_TRAIT(src, TRAIT_NOBLEED, MAGIC_TRAIT)

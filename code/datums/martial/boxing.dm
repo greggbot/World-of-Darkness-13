@@ -42,7 +42,6 @@
 	D.apply_damage(damage, STAMINA, affecting, armor_block)
 	log_combat(A, D, "punched (boxing) ")
 	if(D.getStaminaLoss() > 60 && istype(D.mind?.martial_art, /datum/martial_art/boxing))
-		//PSEUDO_M add signal here for knockout attempt
 		var/knockout_prob = D.getStaminaLoss()-20
 		if((D.stat != DEAD) && prob(knockout_prob) && !iscathayan(D) && !iskindred(D) && !iscrinos(D) && !iswerewolf(D))
 			D.visible_message("<span class='danger'>[A] knocks [D] out with a haymaker!</span>", \

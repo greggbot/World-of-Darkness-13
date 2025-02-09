@@ -310,7 +310,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	reset_shit()
 	key_bindings = deepCopyList(GLOB.hotkey_keybinding_list_by_key) // give them default keybinds and update their movement keys
 	C?.set_macros()
-	real_name = pref_species.random_name(gender,1)	//PSEUDO_M untangle species from prefs...
+	real_name = pref_species.random_name(gender,1)
 	if(!loaded_preferences_successfully)
 		save_preferences()
 	save_character()		//let's save this new random character so it doesn't keep generating new ones.

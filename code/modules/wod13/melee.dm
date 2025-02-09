@@ -552,7 +552,6 @@
 
 /obj/item/vampire_stake/attack(mob/living/target, mob/living/user)
 	. = ..()
-	//PSEUDO_M fix this shit
 
 /obj/item/melee/vampirearms/shovel
 	icon = 'code/modules/wod13/weapons.dmi'
