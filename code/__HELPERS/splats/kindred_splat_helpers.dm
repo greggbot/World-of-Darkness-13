@@ -18,8 +18,12 @@
 		return FALSE;}\
 	if(!isdiscipline(discipline)){\
 		CRASH("HAS_DISCIPLINE: Invalid discipline passed to function.");\
+	if(!isliving(target) || !istype(target, /datum/mind)){\
+		CRASH("HAS_DISCIPLINE: Invalid target passed to function.");}\
+	var/mob/living/target = target;\
+	if(!target.mind){\
 		return FALSE;}\
-	return discipline_knowledge.knows_discipline(discipline);\
+	return ( target.mind.knowledge["disciplines"].Find(discipline) )
 }
 
 #define GET_DISCIPLINE(owner, discipline) {\
