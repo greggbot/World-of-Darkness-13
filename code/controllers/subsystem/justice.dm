@@ -42,44 +42,6 @@ DECLARE_SUBSYSTEM(justice)
 /*	Datumized to facilitate more programmatic interaction with morality, derangements, and other possible systems
 *	These are singletons, because there's really no need to have more than one instance of each, so don't try to make new ones
 *	and instead use the SSjustice procs to attach crimes to people if you end up working with them. */
-//PSEUDO_M get some sound effects for these to broadcast from dispatcher
-/datum/crime
-
-/datum/crime/assault
-
-/datum/crime/assault_with_weapon
-
-/datum/crime/assault_on_officer
-
-/datum/crime/break_n_enter
-
-/datum/crime/criminal_enterprise
-
-/datum/crime/disturbing
-
-/datum/crime/murder_attempted
-
-/datum/crime/murder
-
-/datum/crime/murder_officer
-
-/datum/crime/resisting
-
-/datum/crime/theft
-
-/datum/crime/theft_grand
-
-/datum/crime/grand_theft_auto	//VIBEO GAME!!!
-
-/datum/crime/possession_distro	//not how it's named IRL but type paths
-
-/datum/crime/possession_minor
-
-/datum/crime/possession_major
-
-/datum/crime/tresspass
-
-/datum/crime/wanted_for_questioning
 
 //from COMSIG_AREA_ENTERED, for if they enter an area that breaks pursuit, has like a shitton of cops, etc
 //if they have an active pursuit we dereg this so no need to worry about checking for that, and if they don't have
