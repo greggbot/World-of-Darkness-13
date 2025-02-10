@@ -145,6 +145,8 @@
 #include "code\__DEFINES\dcs\police_signals.dm"
 #include "code\__DEFINES\dcs\signals.dm"
 #include "code\__DEFINES\research\anomalies.dm"
+#include "code\__DEFINES\wod13\police\police.dm"
+#include "code\__DEFINES\wod13\police\pursuit_defines.dm"
 #include "code\__HELPERS\_lists.dm"
 #include "code\__HELPERS\_logging.dm"
 #include "code\__HELPERS\_string_lists.dm"

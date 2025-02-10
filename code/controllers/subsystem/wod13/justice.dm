@@ -55,8 +55,8 @@ DECLARE_SUBSYSTEM(justice)
 		//they shouldn't be registered with us....
 		UnregisterSignal(suspect, COMSIG_AREA_ENTERED)
 		return NONE
-	if(all_points_bulletins[suspect] == 4 || entered_area.police_presence == POLICE_IMMEDIATELY_PRESENT)
-		SSjustice.start_pursuit(suspect, entered_area, /*start_at*/POLICE_PURSUIT_SUSPECT_ENGAGED)
+	if(all_points_bulletins[suspect] == 4 || entered_area.police_presence == POLICE_PRESENCE_IMMEDIATELY_PRESENT)
+		SSjustice.start_pursuit(suspect, /*start_at*/POLICE_PURSUIT_SUSPECT_ENGAGED, /*crime_severity =*/10)
 	return TRUE
 
 /*	Args:
@@ -72,3 +72,6 @@ DECLARE_SUBSYSTEM(justice)
 /datum/controller/subsystem/justice/proc/declare_APB(datum/source, atom/movable/stalwart_enforcer, atom/movable/suspect, APB_level)
 	SIGNAL_HANDLER
 
+/datum/controller/subsystem/justice/proc/start_pursuit(atom/movable/suspect, start_at = null, crime_severity = 0)
+	if(!start_at)
+		start_at = POLICE_PURSUIT_EN_ROUTE

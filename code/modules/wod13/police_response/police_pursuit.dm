@@ -92,7 +92,7 @@
 	addtimer(CALLBACK(src, PROC_REF(handle_enroute), en_route_value - 1), 10 SECONDS)
 	if(en_route_value <= 5)
 		//PSEUDO_M play police noises in the area
-		
+
 
 /datum/police_pursuit/proc/begin_searching()
 
