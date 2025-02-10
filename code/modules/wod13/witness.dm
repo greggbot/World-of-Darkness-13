@@ -100,7 +100,7 @@
 		if (diablerist)
 			holder.icon_state = "diablerie_aura"
 
-	if(iscathayan(src))
+	if(iskuejin(src))
 		var/mob/living/carbon/human/H = src
 		if(!H.check_kuei_jin_alive())
 			holder.color = "#ffffff"

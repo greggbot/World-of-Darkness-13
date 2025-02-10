@@ -13,7 +13,7 @@ SUBSYSTEM_DEF(splats)
 		"kindred"	=	/datum/splat/supernatural/kindred,
 		"garou"		=	/datum/splat/supernatural/garou,
 		"ghoul"		=	/datum/splat/supernatural/ghoul,
-		"kuei-jin"	=	/datum/splat/supernatural/kueijin,
+		"kuei_jin"	=	/datum/splat/supernatural/kuei_jin,
 	)
 	///An associated list of lazy lists for splats applied; keys are the splat owner, values are the splat
 	var/list/human_splats = list(
@@ -26,8 +26,10 @@ SUBSYSTEM_DEF(splats)
 		)
 	var/list/kueijin_splats = list(
 		)
+
 /datum/controller/subsystem/splats/Initialize()
 	RegisterSignal(src, COMSIG_SPLAT_SPLAT_APPLIED_TO, PROC_REF(track_splat_assignment))
+	return ..()
 
 /datum/controller/subsystem/splats/proc/give_new_splat(mob/living/target, splat)
 	if(ispath(splat, /datum/splat))
@@ -37,7 +39,7 @@ SUBSYSTEM_DEF(splats)
 	if(!istext(splat))
 		CRASH("Tried to splat [target] with an undefined value: [splat]")
 	var/splat_type = splat_types[splat]
-	var/datum/splat/new_splat = splat_type/new()
+	var/datum/splat/new_splat = new(splat_type)
 	new_splat.Apply(target)
 	return new_splat
 

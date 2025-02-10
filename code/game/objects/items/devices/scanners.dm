@@ -235,7 +235,7 @@ GENE SCANNER
 //			if(advanced)
 //				render_list += "<span class='info ml-1'>Subject Minor Disabilities: [C.get_quirk_string(FALSE, CAT_QUIRK_MINOR_DISABILITY)].</span>\n"
 	if(advanced)
-		if(iskindred(M) || (iscathayan(M) && !humhum.check_kuei_jin_alive()))
+		if(iskindred(M) || (iskuejin(M) && !humhum.check_kuei_jin_alive()))
 			render_list += "<span class='info ml-1'>Brain Activity Level: 0%.</span>\n"
 		else
 			render_list += "<span class='info ml-1'>Brain Activity Level: [(200 - M.getOrganLoss(ORGAN_SLOT_BRAIN))/2]%.</span>\n"
@@ -327,7 +327,7 @@ GENE SCANNER
 
 			for(var/obj/item/organ/organ in H.internal_organs)
 				var/status = ""
-				if (iskindred(H) || (iscathayan(H) && !H.check_kuei_jin_alive())) status = "<font color='#E42426'>Non-Functional</font>"
+				if (iskindred(H) || (iskuejin(H) && !H.check_kuei_jin_alive())) status = "<font color='#E42426'>Non-Functional</font>"
 				else if (organ.organ_flags & ORGAN_FAILING) status = "<font color='#E42426'>Non-Functional</font>"
 				else if (organ.damage > organ.high_threshold) status = "<font color='#EC6224'>Severely Damaged</font>"
 				else if (organ.damage > organ.low_threshold) status = "<font color='#F28F1F'>Mildly Damaged</font>"

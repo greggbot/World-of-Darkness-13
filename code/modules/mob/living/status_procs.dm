@@ -487,7 +487,7 @@
 	REMOVE_TRAIT(src, TRAIT_TORPOR, source)
 	if(iskindred(src))
 		to_chat(src, "<span class='notice'>You have awoken from your Torpor.</span>")
-	if(iscathayan(src))
+	if(iskuejin(src))
 		to_chat(src, "<span class='notice'>You have awoken from your Little Death.</span>")
 
 ///Unignores all slowdowns that lack the IGNORE_NOSLOW flag.

@@ -430,7 +430,7 @@
 			var/weaver_taint = NONE
 			var/wyld_taint = NONE
 
-			if(iscathayan(src))
+			if(iskuejin(src))
 				if(!check_kuei_jin_alive())
 					wyrm_taint++
 

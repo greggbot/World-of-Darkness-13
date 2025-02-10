@@ -14,9 +14,3 @@
 	if(!requires_power)
 		return TRUE
 	return FALSE
-
-/area/vtm/proc/break_elysium()
-	if(zone_type == "masquerade")
-		zone_type = "battle"
-		spawn(1800)
-			zone_type = "masquerade"

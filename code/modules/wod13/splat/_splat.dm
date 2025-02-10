@@ -1,5 +1,5 @@
-#define SPLATTED(mob/living/M, datum/splat/S) (SEND_SIGNAL(SSsplats, COMSIG_SPLAT_APPLIED_TO, S, M))
-#define UNSPLATTED(mob/living/M, datum/splat/S) (SSsplats)
+#define SPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_APPLIED_TO, S, M)
+#define UNSPLATTED(M, S) SSsplats
 
 /datum/species
 	var/animation_goes_up = FALSE	//PSEUDO_M i have no idea what this does

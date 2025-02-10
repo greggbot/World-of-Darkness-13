@@ -21,7 +21,6 @@
 	COOLDOWN_DECLARE(torpor_timer)
 	COOLDOWN_DECLARE(violated_masquerade)
 
-
 	var/bloodpower_time_plus = 0					//PSEUDO_M_SR
 	var/thaum_damage_plus = 0						//
 	var/discipline_time_plus = 0					//
@@ -331,7 +330,7 @@
 			L.adjustFireLoss(-25)
 		if(istype(H.pulling, /mob/living/carbon/human))
 			var/mob/living/carbon/human/BLOODBONDED = H.pulling
-			if(iscathayan(BLOODBONDED))
+			if(iskuejin(BLOODBONDED))
 				to_chat(owner, "<span class='warning'>[BLOODBONDED] vomits the vitae back!</span>")
 				return
 			if(!BLOODBONDED.client && !istype(H.pulling, /mob/living/carbon/human/npc))
@@ -640,44 +639,8 @@
 		action.Grant(src)
 	discipline.post_gain(src)
 
-/**
- * Accesses a certain Discipline that a Kindred has. Returns false if they don't.
- *
- * Arguments:
- * * searched_discipline - Name or typepath of the Discipline being searched for.
- */
-/datum/splat/supernatural/kindred/proc/get_discipline(searched_discipline)
-	for(var/datum/discipline/discipline in disciplines)
-		if (ispath(searched_discipline, /datum/discipline))
-			if (istype(discipline, searched_discipline))
-				return discipline
-		else if (istext(searched_discipline))
-			if (discipline.name == searched_discipline)
-				return discipline
-
-	return FALSE
-
 /datum/splat/supernatural/kindred/check_roundstart_eligible()
 	return TRUE
-
-/datum/splat/supernatural/kindred/handle_body(mob/living/carbon/human/H)
-	if (!H.clane)
-		return ..()
-
-	//deflate people if they're super rotten
-	if ((H.clane.alt_sprite == "rotten4") && (H.base_body_mod == "f"))
-		H.base_body_mod = ""
-
-	if(H.clane.alt_sprite)
-		H.dna.species.limbs_id = "[H.base_body_mod][H.clane.alt_sprite]"
-
-	if (H.clane.no_hair)
-		H.hairstyle = "Bald"
-
-	if (H.clane.no_facial)
-		H.facial_hairstyle = "Shaved"
-
-	..()
 
 
 /**
@@ -716,111 +679,11 @@
  * Arguments:
  * * student - human who this Discipline is being taught to.
  */
-/mob/living/carbon/human/verb/teach_discipline(mob/living/carbon/human/student in (range(1, src) - src))
-	set name = "Teach Discipline"
-	set category = "IC"
-	set desc ="Teach a Discipline to a Kindred who has recently drank your blood. Costs 10 experience points."
+/datum/action/teach_discipline
+	name = "Teach Discipline"
+	desc ="Teach a Discipline to a those capable of learning."
+	//PSEUDO_M need button icon state
 
-	var/mob/living/carbon/human/teacher = src
-	var/datum/preferences/teacher_prefs = teacher.client.prefs
-	var/datum/splat/supernatural/kindred/teacher_species = teacher.dna.species
-
-	if (!student.client)
-		to_chat(teacher, "<span class='warning'>Your student needs to be a player!</span>")
-		return
-	var/datum/preferences/student_prefs = student.client.prefs
-
-	if (!is_kindred(student))
-		to_chat(teacher, "<span class='warning'>Your student needs to be a vampire!</span>")
-		return
-	if (student.stat >= SOFT_CRIT)
-		to_chat(teacher, "<span class='warning'>Your student needs to be conscious!</span>")
-		return
-	if (teacher_prefs.true_experience < 10)
-		to_chat(teacher, "<span class='warning'>You don't have enough experience to teach them this Discipline!</span>")
-		return
-	//checks that the teacher has blood bonded the student, this is something that needs to be reworked when blood bonds are made better
-	if (student.mind.enslaved_to != teacher)
-		to_chat(teacher, "<span class='warning'>You need to have fed your student your blood to teach them Disciplines!</span>")
-		return
-
-	var/possible_disciplines = teacher_prefs.discipline_types - student_prefs.discipline_types
-	var/teaching_discipline = input(teacher, "What Discipline do you want to teach [student.name]?", "Discipline Selection") as null|anything in possible_disciplines
-
-	if (teaching_discipline)
-		var/datum/discipline/teacher_discipline = teacher_species.get_discipline(teaching_discipline)
-		var/datum/discipline/giving_discipline = new teaching_discipline
-
-		//if a Discipline is clan-restricted, it must be checked if the student has access to at least one Clan with that Discipline
-		if (giving_discipline.clane_restricted)
-			if (!can_access_discipline(student, teaching_discipline))
-				to_chat(teacher, "<span class='warning'>Your student is not whitelisted for any Clans with this Discipline, so they cannot learn it.</span>")
-				qdel(giving_discipline)
-				return
-
-		//ensure the teacher's mastered it, also prevents them from teaching with free starting experience
-		if (teacher_discipline.level < 5)
-			to_chat(teacher, "<span class='warning'>You do not know this Discipline well enough to teach it. You need to master it to the 5th rank.</span>")
-			qdel(giving_discipline)
-			return
-
-		var/restricted = giving_discipline.clane_restricted
-		if (restricted)
-			if (alert(teacher, "Are you sure you want to teach [student] [giving_discipline], one of your Clan's most tightly guarded secrets? This will cost 10 experience points.", "Confirmation", "Yes", "No") != "Yes")
-				qdel(giving_discipline)
-				return
-		else
-			if (alert(teacher, "Are you sure you want to teach [student] [giving_discipline]? This will cost 10 experience points.", "Confirmation", "Yes", "No") != "Yes")
-				qdel(giving_discipline)
-				return
-
-		var/alienation = FALSE
-		if (student.clane.restricted_disciplines.Find(teaching_discipline))
-			if (alert(student, "Learning [giving_discipline] will alienate you from the rest of the [student.clane], making you just like the false Clan. Do you wish to continue?", "Confirmation", "Yes", "No") != "Yes")
-				visible_message("<span class='warning'>[student] refuses [teacher]'s mentoring!</span>")
-				qdel(giving_discipline)
-				return
-			else
-				alienation = TRUE
-				to_chat(teacher, "<span class='notice'>[student] accepts your mentoring!</span>")
-
-		if (get_dist(student.loc, teacher.loc) > 1)
-			to_chat(teacher, "<span class='warning'>Your student needs to be next to you!</span>")
-			qdel(giving_discipline)
-			return
-
-		visible_message("<span class='notice'>[teacher] begins mentoring [student] in [giving_discipline].</span>")
-		if (do_after(teacher, 30 SECONDS, student))
-			teacher_prefs.true_experience -= 10
-
-			student_prefs.discipline_types += teaching_discipline
-			student_prefs.discipline_levels += 0
-
-			if (alienation)
-				var/datum/vampireclane/main_clan
-				switch(student.clane.type)
-					if (/datum/vampireclane/true_brujah)
-						main_clan = new /datum/vampireclane/brujah
-					if (/datum/vampireclane/old_clan_tzimisce)
-						main_clan = new /datum/vampireclane/tzimisce
-
-				student_prefs.clane = main_clan
-				student.clane = main_clan
-
-			student_prefs.save_character()
-			teacher_prefs.save_character()
-
-			to_chat(teacher, "<span class='notice'>You finish teaching [student] the basics of [giving_discipline]. [student.p_they(TRUE)] seem[student.p_s()] to have absorbed your mentoring.[restricted ? " May your Clanmates take mercy on your soul for spreading their secrets." : ""]</span>")
-			to_chat(student, "<span class='nicegreen'>[teacher] has taught you the basics of [giving_discipline]. You may now spend experience points to learn its first level in the character menu.</span>")
-
-			message_admins("[ADMIN_LOOKUPFLW(teacher)] taught [ADMIN_LOOKUPFLW(student)] the Discipline [giving_discipline.name].")
-			log_game("[key_name(teacher)] taught [key_name(student)] the Discipline [giving_discipline.name].")
-
-		qdel(giving_discipline)
-
-
-//Vampires take 4% of their max health in burn damage every tick they are on fire. Very potent against lower-gens.
-//Set at 0.02 because they already take twice as much burn damage.
 /datum/species/kindred/handle_fire(mob/living/carbon/human/H, no_protection)
 	if(!..())
 		H.adjustFireLoss(H.maxHealth * 0.02)
@@ -875,53 +738,16 @@
 	//nothing found
 	return FALSE
 
-/datum/preferences
-	var/last_torpor = 0
-
 /mob/living/carbon/human/death()
 	. = ..()
 
-	if(iskindred(src))
-		SSmasquerade.dead_level = min(1000, SSmasquerade.dead_level+50)
-	else
-		if(istype(get_area(src), /area/vtm))
-			var/area/vtm/V = get_area(src)
-			if(V.zone_type == "masquerade")
-				SSmasquerade.dead_level = max(0, SSmasquerade.dead_level-25)
-
-	if(bloodhunted)
-		SSbloodhunt.hunted -= src
-		bloodhunted = FALSE
-		SSbloodhunt.update_shit()
-	var/witness_count
-	for(var/mob/living/carbon/human/npc/NEPIC in viewers(7, usr))
-		if(NEPIC && NEPIC.stat != DEAD)
-			witness_count++
-		if(witness_count > 1)
-			for(var/obj/item/police_radio/radio in GLOB.police_radios)
-				radio.announce_crime("murder", get_turf(src))
-			for(var/obj/item/p25radio/police/radio in GLOB.p25_radios)
-				if(radio.linked_network == "police")
-					radio.announce_crime("murder", get_turf(src))
-	GLOB.masquerade_breakers_list -= src
-	GLOB.sabbatites -= src
-
-	//So upon death the corpse is filled with yin chi
-	yin_chi = min(max_yin_chi, yin_chi+yang_chi)
-	yang_chi = 0
-
-	if(iskindred(src) || iscathayan(src))
-		can_be_embraced = FALSE
-		var/obj/item/organ/brain/brain = getorganslot(ORGAN_SLOT_BRAIN) //NO REVIVAL EVER
-		if (brain)
-			brain.organ_flags |= ORGAN_FAILING
-
+	check_witnesses(WITNESSED_HUMAN_DEATH)
 		if(in_frenzy)
 			exit_frenzymod()
 		SEND_SOUND(src, sound('code/modules/wod13/sounds/final_death.ogg', 0, 0, 50))
 
 		//annoying code that depends on clan doesn't work for Kuei-jin
-		if (iscathayan(src))
+		if (iskuejin(src))
 			return
 
 		var/years_undead = chronological_age - age
@@ -951,7 +777,7 @@
 			if (200 to INFINITY)
 				if (iskindred(src))
 					playsound(src, 'code/modules/wod13/sounds/burning_death.ogg', 80, TRUE)
-				else if (iscathayan(src))
+				else if (iskuejin(src))
 					playsound(src, 'code/modules/wod13/sounds/vicissitude.ogg', 80, TRUE)
 				lying_fix()
 				dir = SOUTH
@@ -967,134 +793,69 @@
 
 /datum/keybinding/human/bite/down(client/user)
 	. = ..()
-	if(.)
-		return
-	//the code below is directly imported from onyxcombat.dm's /atom/movable/screen/drinkblood/Click() proc
-	//turning all of this into one centralised proc would be preferable, but it requires more effort than I'm willing to put in right now
-	if(ishuman(user.mob))
-		var/mob/living/carbon/human/BD = user.mob
-		BD.update_blood_hud()
-		if(world.time < BD.last_drinkblood_use+30)
-			return
-		if(world.time < BD.last_drinkblood_click+10)
-			return
-		BD.last_drinkblood_click = world.time
-		if(BD.grab_state > GRAB_PASSIVE)
-			if(ishuman(BD.pulling))
-				var/mob/living/carbon/human/PB = BD.pulling
-				if(isghoul(user.mob))
-					if(!iskindred(PB))
-						SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
-						to_chat(BD, "<span class='warning'>Eww, that is <b>GROSS</b>.</span>")
-						return
-				if(!isghoul(user.mob) && !iskindred(user.mob) && !iscathayan(user.mob))
-					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
-					to_chat(BD, "<span class='warning'>Eww, that is <b>GROSS</b>.</span>")
-					return
-				if(PB.stat == DEAD && !HAS_TRAIT(BD, TRAIT_GULLET) && !iscathayan(user.mob))
-					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
-					to_chat(BD, "<span class='warning'>This creature is <b>DEAD</b>.</span>")
-					return
-				if(PB.bloodpool <= 0 && (!iskindred(BD.pulling) || !iskindred(BD)))
-					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
-					to_chat(BD, "<span class='warning'>There is no <b>BLOOD</b> in this creature.</span>")
-					return
-				if(BD.clane)
-					var/special_clan = FALSE
-					if(BD.clane.name == "Salubri")
-						if(!PB.IsSleeping())
-							to_chat(BD, "<span class='warning'>You can't drink from aware targets!</span>")
-							return
-						special_clan = TRUE
-						PB.emote("moan")
-					if(BD.clane.name == "Giovanni")
-						PB.emote("scream")
-						special_clan = TRUE
-					if(!special_clan)
-						PB.emote("groan")
-				PB.add_bite_animation()
-			if(isliving(BD.pulling))
-				if(!iskindred(BD) && !iscathayan(BD))
-					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
-					to_chat(BD, "<span class='warning'>Eww, that is <b>GROSS</b>.</span>")
-					return
-				var/mob/living/LV = BD.pulling
-				if(LV.bloodpool <= 0 && (!iskindred(BD.pulling) || !iskindred(BD)))
-					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
-					to_chat(BD, "<span class='warning'>There is no <b>BLOOD</b> in this creature.</span>")
-					return
-				if(LV.stat == DEAD && !HAS_TRAIT(BD, TRAIT_GULLET) && !iscathayan(user.mob))
-					SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
-					to_chat(BD, "<span class='warning'>This creature is <b>DEAD</b>.</span>")
-					return
-				var/skipface = (BD.wear_mask && (BD.wear_mask.flags_inv & HIDEFACE)) || (BD.head && (BD.head.flags_inv & HIDEFACE))
-				if(!skipface)
-					if(!HAS_TRAIT(BD, TRAIT_BLOODY_LOVER))
-						playsound(BD, 'code/modules/wod13/sounds/drinkblood1.ogg', 50, TRUE)
-						LV.visible_message("<span class='warning'><b>[BD] bites [LV]'s neck!</b></span>", "<span class='warning'><b>[BD] bites your neck!</b></span>")
-					if(!HAS_TRAIT(BD, TRAIT_BLOODY_LOVER))
-						if(BD.CheckEyewitness(LV, BD, 7, FALSE))
-							BD.AdjustMasquerade(-1)
-					else
-						playsound(BD, 'code/modules/wod13/sounds/kiss.ogg', 50, TRUE)
-						LV.visible_message("<span class='italics'><b>[BD] kisses [LV]!</b></span>", "<span class='userlove'><b>[BD] kisses you!</b></span>")
-					if(iskindred(LV))
-						var/mob/living/carbon/human/HV = BD.pulling
-						if(HV.stakeimmune)
-							to_chat(BD, "<span class='warning'>There is no <b>HEART</b> in this creature.</span>")
-							return
-					BD.drinksomeblood(LV)
-	return TRUE
+	SEND_SIGNAL(user, COMSIG_HUMAN_ATTEMPT_BITE)
 
 /mob/living/carbon/human/Life()
-	if(!iskindred(src) && !iscathayan(src))
-		if(prob(5))
-			adjustCloneLoss(-5, TRUE)
 	update_blood_hud()
 	update_zone_hud()
 	update_rage_hud()
 	update_shadow()
 	handle_vampire_music()
 	update_auspex_hud()
-	if(warrant)
-		last_nonraid = world.time
-		if(key)
-			if(stat != DEAD)
-				if(istype(get_area(src), /area/vtm))
-					var/area/vtm/V = get_area(src)
-					if(V.upper)
-						last_showed = world.time
-						if(last_raid+600 < world.time)
-							last_raid = world.time
-							for(var/turf/open/O in range(1, src))
-								if(prob(25))
-									new /obj/effect/temp_visual/desant(O)
-							playsound(loc, 'code/modules/wod13/sounds/helicopter.ogg', 50, TRUE)
-				if(last_showed+9000 < world.time)
-					to_chat(src, "<b>POLICE STOPPED SEARCHING</b>")
-					SEND_SOUND(src, sound('code/modules/wod13/sounds/humanity_gain.ogg', 0, 0, 75))
-					killed_count = 0
-					warrant = FALSE
-			else
-				warrant = FALSE
-		else
-			warrant = FALSE
-	else
-		if(last_nonraid+1800 < world.time)
-			last_nonraid = world.time
-			killed_count = max(0, killed_count-1)
 
-	..()
 
 /mob/living/proc/update_blood_hud()
-	if(!client || !hud_used)
-		return
-	maxbloodpool = 10+((13-generation)*3)
-	if(hud_used.blood_icon)
-		var/emm = round((bloodpool/maxbloodpool)*10)
-		if(emm > 10)
-			hud_used.blood_icon.icon_state = "blood10"
-		if(emm < 0)
-			hud_used.blood_icon.icon_state = "blood0"
-		else
-			hud_used.blood_icon.icon_state = "blood[emm]"
+
+/atom/movable/screen/blood
+	name = "bloodpool"
+	icon = 'code/modules/wod13/UI/bloodpool.dmi'
+	icon_state = "blood0"
+	layer = HUD_LAYER
+	plane = HUD_PLANE
+
+/atom/movable/screen/blood/Click()
+	. = ..()
+	var/mob/living/user = usr
+	user.update_blood_hud()
+	to_chat(user, "<span class='notice'>You've got [BD.bloodpool]/[BD.maxbloodpool] blood points.</span>")
+
+/datum/action/drinkblood
+	name = "Drink blood."
+	desc = "Bite whatever you have in a strong grab, and drink."
+	check_flags = AB_CHECK_HANDS_BLOCKED | AB_CHECK_LYING | AB_CHECK_CONSCIOUS
+	button_icon_state = "ghoul"
+
+/datum/action/drinkblood/Trigger()
+	. = ..()
+	if(!.)
+		return FALSE
+	if(!isliving(owner.pulling) || owner.grab_state < GRAB_AGGRESSIVE)
+		to_chat(owner, "<span class='warning'>You need to be aggressively grabbing something living to drink blood.</span>")
+		return FALSE
+	var/mob/living/victim = owner.pulling
+	bite(owner, victim)
+	. = ..()
+
+/datum/action/drinkblood/proc/add_bite_animation(mob/living/carbon/victim)
+	victim.remove_overlay(BITE_LAYER)
+	var/mutable_appearance/bite_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "bite", -BITE_LAYER)
+	victim.overlays_standing[BITE_LAYER] = bite_overlay
+	victim.apply_overlay(BITE_LAYER)
+	spawn(15)
+		if(src)
+			victim.remove_overlay(BITE_LAYER)
+
+/datum/action/drinkblood/proc/bite(mob/living/biter, mob/living/victim)
+
+	if(iscarbon(victim))
+		add_bite_animation(victim)
+	if(!HAS_TRAIT(biter, TRAIT_BLOODY_LOVER))
+		playsound(biter, 'code/modules/wod13/sounds/drinkblood1.ogg', 50, TRUE)
+		victim.visible_message("<span class='warning'><b>[biter] bites [victim]'s neck!</b></span>", "<span class='warning'><b>[biter] bites your neck!</b></span>")
+		biter.CheckEyewitness(victim, biter, 7, FALSE)
+	else
+		playsound(biter, 'code/modules/wod13/sounds/kiss.ogg', 50, TRUE)
+		victim.visible_message("<span class='italics'><b>[biter] kisses [victim]!</b></span>", "<span class='userlove'><b>[biter] kisses you!</b></span>")
+	drink_blood(biter, victim)
+
+/datum/action/drinkblood/proc/drink_blood(mob/living/bloodsucker, mob/living/juicebox)

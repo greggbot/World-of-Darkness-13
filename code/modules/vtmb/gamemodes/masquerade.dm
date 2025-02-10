@@ -8,6 +8,9 @@ SUBSYSTEM_DEF(masquerade)
 	var/dead_level = 0
 	var/last_level = "stable"
 	var/manual_adjustment = 0
+	// A assoclist of masquerade scores
+	// vamp_in_question : score
+	var/list/scores = list()
 
 /datum/controller/subsystem/masquerade/proc/get_description()
 	switch(total_level)
