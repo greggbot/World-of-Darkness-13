@@ -76,8 +76,6 @@
 			dat += "<BR>"
 			if(host.mind.enslaved_to)
 				dat += "My Regnant is [host.mind.enslaved_to], I should obey their wants.<BR>"
-		if(host.vampire_faction == FACTION_CAMARILLA || host.vampire_faction == FACTION_ANARCHS || host.vampire_faction == FACTION_SABBAT)
-			dat += "I belong to [host.vampire_faction] faction, I shouldn't disobey their rules.<BR>"
 		if(host.generation)
 			dat += "I'm from [host.generation] generation.<BR>"
 		if(host.mind.special_role)
@@ -189,12 +187,15 @@
 						dat += "Their number is [host.Myself.Lover.phone_number].<BR>"
 					if(host.Myself.Lover.lover_text)
 						dat += "[host.Myself.Lover.lover_text]<BR>"
-		var/obj/keypad/armory/K = find_keypad(/obj/keypad/armory)
-		if(K && (host.mind.assigned_role == "Prince" || host.mind.assigned_role == "Sheriff"))
-			dat += "<b>The pincode for the armory keypad is: [K.pincode]</b><BR>"
+		var/obj/keypad/armory/armory = find_keypad(/obj/keypad/armory)
+		if(armory && (host.mind.assigned_role == "Prince" || host.mind.assigned_role == "Sheriff" || host.mind.assigned_role == "Seneschal"))
+			dat += "The pincode for the armory keypad is<b>: [armory.pincode]</b><BR>"
+		var/obj/keypad/panic_room/panic = find_keypad(/obj/keypad/panic_room)
+		if(panic && (host.mind.assigned_role == "Prince" || host.mind.assigned_role == "Sheriff" || host.mind.assigned_role == "Seneschal"))
+			dat += "The pincode for the panic room keypad is<b>: [panic.pincode]</b><BR>"
 		var/obj/structure/vaultdoor/pincode/bank/bankdoor = find_door_pin(/obj/structure/vaultdoor/pincode/bank)
 		if(bankdoor && (host.mind.assigned_role == "Capo"))
-			dat += "<b>The pincode for the bank vault is: [bankdoor.pincode]</b><BR>"
+			dat += "The pincode for the bank vault is <b>: [bankdoor.pincode]</b><BR>"
 		if(bankdoor && (host.mind.assigned_role == "La Squadra"))
 			if(prob(50))
 				dat += "<b>The pincode for the bank vault is: [bankdoor.pincode]</b><BR>"
@@ -225,6 +226,11 @@
 	var/datum/action/blood_power/bloodpower = new()
 	bloodpower.Grant(C)
 	add_verb(C, /mob/living/carbon/human/verb/teach_discipline)
+
+	C.yang_chi = 0
+	C.max_yang_chi = 0
+	C.yin_chi = 6
+	C.max_yin_chi = 6
 
 	//vampires go to -200 damage before dying
 	for (var/obj/item/bodypart/bodypart in C.bodyparts)
@@ -336,6 +342,9 @@
 			L.adjustFireLoss(-25)
 		if(istype(H.pulling, /mob/living/carbon/human))
 			var/mob/living/carbon/human/BLOODBONDED = H.pulling
+			if(iscathayan(BLOODBONDED))
+				to_chat(owner, "<span class='warning'>[BLOODBONDED] vomits the vitae back!</span>")
+				return
 			if(!BLOODBONDED.client && !istype(H.pulling, /mob/living/carbon/human/npc))
 				to_chat(owner, "<span class='warning'>You need [BLOODBONDED]'s attention to do that!</span>")
 				return
@@ -353,17 +362,6 @@
 				giving = FALSE
 
 				var/new_master = FALSE
-				BLOODBONDED.faction |= H.faction
-				if(!istype(BLOODBONDED, /mob/living/carbon/human/npc))
-					if(H.vampire_faction == FACTION_CAMARILLA || H.vampire_faction == FACTION_ANARCHS || H.vampire_faction == FACTION_SABBAT)
-						if(BLOODBONDED.vampire_faction != H.vampire_faction)
-							BLOODBONDED.vampire_faction = H.vampire_faction
-							if(H.vampire_faction == FACTION_SABBAT)
-								if(BLOODBONDED.mind)
-									BLOODBONDED.mind.add_antag_datum(/datum/antagonist/sabbatist)
-									GLOB.sabbatites += BLOODBONDED
-							SSfactionwar.adjust_members()
-							to_chat(BLOODBONDED, "<span class='notice'>You are now member of <b>[H.vampire_faction]</b></span>")
 				BLOODBONDED.drunked_of |= "[H.dna.real_name]"
 
 				if(BLOODBONDED.stat == DEAD && !iskindred(BLOODBONDED))
@@ -618,6 +616,19 @@
 		if(clane)
 			clane.post_gain(src)
 
+	if((dna.species.id == "kuei-jin")) //only splats that have Disciplines qualify
+		var/list/datum/chi_discipline/adding_disciplines = list()
+
+		if (discipline_pref) //initialise character's own disciplines
+			for (var/i in 1 to client.prefs.discipline_types.len)
+				var/type_to_create = client.prefs.discipline_types[i]
+				var/datum/chi_discipline/discipline = new type_to_create
+				discipline.level = client.prefs.discipline_levels[i]
+				adding_disciplines += discipline
+
+		for (var/datum/chi_discipline/discipline in adding_disciplines)
+			give_chi_discipline(discipline)
+
 /**
  * Creates an action button and applies post_gain effects of the given Discipline.
  *
@@ -632,6 +643,13 @@
 	discipline.post_gain(src)
 	var/datum/species/kindred/species = dna.species
 	species.disciplines += discipline
+
+/mob/living/carbon/human/proc/give_chi_discipline(datum/chi_discipline/discipline)
+	if (discipline.level > 0)
+		var/datum/action/chi_discipline/action = new
+		action.discipline = discipline
+		action.Grant(src)
+	discipline.post_gain(src)
 
 /**
  * Accesses a certain Discipline that a Kindred has. Returns false if they don't.
@@ -810,6 +828,13 @@
 			log_game("[key_name(teacher)] taught [key_name(student)] the Discipline [giving_discipline.name].")
 
 		qdel(giving_discipline)
+
+
+//Vampires take 4% of their max health in burn damage every tick they are on fire. Very potent against lower-gens.
+//Set at 0.02 because they already take twice as much burn damage.
+/datum/species/kindred/handle_fire(mob/living/carbon/human/H, no_protection)
+	if(!..())
+		H.adjustFireLoss(H.maxHealth * 0.02)
 
 /**
  * Checks a vampire for whitelist access to a Discipline.

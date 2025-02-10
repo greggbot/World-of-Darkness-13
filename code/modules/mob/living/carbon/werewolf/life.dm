@@ -48,12 +48,7 @@
 					adjust_rage(1, src, TRUE)
 
 			if(masquerade == 0)
-				var/special_role_name
-				if(mind)
-					if(mind.special_role)
-						var/datum/antagonist/A = mind.special_role
-						special_role_name = A.name
-				if(!is_special_character(src) || special_role_name == "Ambitious")
+				if(!is_special_character(src))
 					if(auspice.gnosis)
 						to_chat(src, "<span class='warning'>My Veil is too low to connect with the spirits of Umbra!</span>")
 						adjust_gnosis(-1, src, FALSE)
@@ -83,7 +78,7 @@
 							last_veil_restore = world.time
 
 				if("Black Spiral Dancers")
-					if(istype(get_area(src), /area/vtm/interior/wyrm_corrupted))
+					if(istype(get_area(src), /area/vtm/interior/endron_facility))
 						if((last_veil_restore + 50 SECONDS) <= world.time)
 							adjust_veil(1, src, TRUE)
 							last_veil_restore = world.time
@@ -126,12 +121,7 @@
 			if(V.zone_type != "masquerade")
 				return
 	last_veil_adjusting = world.time
-	var/special_role_name
-	if(mind)
-		if(mind.special_role)
-			var/datum/antagonist/A = mind.special_role
-			special_role_name = A.name
-	if(!is_special_character(src) || special_role_name == "Ambitious")
+	if(!is_special_character(src))
 		if(amount < 0)
 			if(masquerade > 0)
 				SEND_SOUND(src, sound('code/modules/wod13/sounds/veil_violation.ogg', 0, 0, 75))

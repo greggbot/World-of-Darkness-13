@@ -217,10 +217,10 @@
 				talking = TRUE
 				online.online = src
 				online.talking = TRUE
-				
+
 				var/datum/phonehistory/NEWH_caller = new()
 				var/datum/phonehistory/NEWH_being_called = new()
-				
+
 				//Being called History
 				NEWH_being_called.name = "Unknown"
 				for(var/datum/phonecontact/Contact in contacts)
@@ -232,7 +232,7 @@
 				NEWH_being_called.time = "[SScity_time.timeofnight]"
 				NEWH_being_called.call_type = "I accepted the call"
 				phone_history_list += NEWH_being_called
-				
+
 				//Caller History
 				NEWH_caller.name = "Unknown"
 				for(var/datum/phonecontact/Contact in online.contacts)
@@ -248,15 +248,15 @@
 		if("decline")
 			talking = FALSE
 			if(online)
-			
+
 				if(!silence)
 					playsound(online, 'code/modules/wod13/sounds/phonestop.ogg', 25, FALSE)
 				online.talking = FALSE
-				
-				
+
+
 				var/datum/phonehistory/NEWH_caller = new()
 				var/datum/phonehistory/NEWH_being_called = new()
-				
+
 				//Being called History
 				NEWH_being_called.name = "Unknown"
 				for(var/datum/phonecontact/Contact in contacts)
@@ -268,7 +268,7 @@
 				NEWH_being_called.time = "[SScity_time.timeofnight]"
 				NEWH_being_called.call_type = "I declined the call"
 				phone_history_list += NEWH_being_called
-				
+
 				//Caller History
 				NEWH_caller.name = "Unknown"
 				for(var/datum/phonecontact/Contact in online.contacts)
@@ -283,7 +283,7 @@
 
 				online.online = null
 				online = null
-				
+
 			.= TRUE
 		if("call")
 //			if((iskindred(V) && V.clane.name == "Lasombra"))
@@ -332,7 +332,7 @@
 								NEWH_caller.time = "[SScity_time.timeofnight]"
 								NEWH_caller.call_type = "I called"
 								phone_history_list += NEWH_caller
-								
+
 								//Being Called History
 								NEWH_being_called.name = "Unknown"
 								for(var/datum/phonecontact/Contact in PHN.contacts)
@@ -491,7 +491,7 @@
 							var/split_number = display_number_first + " " + display_number_second
 							to_chat(usr, "# [PH.call_type]: [PH.name] , [split_number] at [PH.time]")
 					else
-						to_chat(usr, "Your don't got a call history")
+						to_chat(usr, "You have no call history.") //PSEUDO_M return to fix all this
 				if("Delete Call History")
 					if(phone_history_list.len > 0)
 						to_chat(usr, "Your total amount of history saved is: [phone_history_list.len]")
@@ -503,12 +503,12 @@
 						else
 							for(var/i = 1 to number_of_deletions)
 								//It will always delete the first item of the list, so the last logs are deleted first
-								var/item_to_remove = phone_history_list[1] 
-								phone_history_list -= item_to_remove            
+								var/item_to_remove = phone_history_list[1]
+								phone_history_list -= item_to_remove
 						to_chat(usr, "[number_of_deletions] call history entries were deleted. Remaining: [phone_history_list.len]")
-						
+
 					else
-						to_chat(usr, "Your don't got a call history to delete")
+						to_chat(usr, "You have no call history to delete it.")
 				if("My Number")
 					var/number_first_part = copytext(number, 1, 4)
 					var/number_second_part = copytext(number, 4, 8)
@@ -524,7 +524,7 @@
 						//If it is true, it will check all the other sounds for phone and disable them
 						silence = TRUE
 						to_chat(usr, "<span class='notice'>Notifications and Sounds toggled off.</span>")
-					else 
+					else
 						silence = FALSE
 						to_chat(usr, "<span class='notice'>Notifications and Sounds toggled on.</span>")
 				if ("Published Numbers as Contacts Toggle")
@@ -797,6 +797,55 @@
 	open_state = "redphone"
 	closed_state = "redphone"
 	folded_state = "redphone"
+
+/obj/item/vamp/phone/emergency
+	desc = "The 911 dispatch phone"
+	icon = 'code/modules/wod13/onfloor.dmi'
+	icon_state = "redphone"
+	anchored = TRUE
+	number = "911"
+	can_fold = 0
+	open_state = "redphone"
+	closed_state = "redphone"
+	folded_state = "redphone"
+	var/obj/machinery/p25transceiver/clinic_transciever
+	var/obj/machinery/p25transceiver/police_transciever
+
+/obj/item/vamp/phone/emergency/Initialize()
+	..()
+	GLOB.phone_numbers_list += number
+	GLOB.phones_list += src
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/item/vamp/phone/emergency/LateInitialize()
+	. = ..()
+	for(var/obj/machinery/p25transceiver/transciever in GLOB.p25_tranceivers)
+		if(transciever.p25_network == "police")
+			police_transciever = transciever
+		if(transciever.p25_network == "clinic")
+			clinic_transciever = transciever
+
+/obj/item/vamp/phone/emergency/handle_hearing(datum/source, list/hearing_args)
+	. = ..()
+	var/speaker = hearing_args[HEARING_SPEAKER]
+	var/message = hearing_args[HEARING_MESSAGE]
+	var/raw_message = hearing_args[HEARING_RAW_MESSAGE]
+	if(speaker && online)
+		do_dispatch_talk(clinic_transciever, speaker, message, raw_message)
+		do_dispatch_talk(police_transciever, speaker, message, raw_message)
+
+/obj/item/vamp/phone/emergency/proc/do_dispatch_talk(obj/machinery/p25transceiver/transciever, speaker, message, raw_message)
+	var/formatted = ""
+	if(ishuman(speaker))
+		var/mob/living/carbon/human/person = speaker
+		if(person.job == "Emergency Dispatcher")
+			formatted = "[icon2html(src, world)]\[<b>DISPATCHER</b>\]: <span class='robot'>[message]</span>"
+		else
+			formatted = "[icon2html(src, world)]\[<b>UNKNOWN</b>\]: <span class='robot'>[raw_message]</span>"
+	else
+		formatted = "[icon2html(src, world)]\[<b>CALLER</b>\]: <span class='robot'>[message]</span>"
+	transciever.broadcast_to_network(formatted, transciever.p25_network, 'sound/effects/radioclick.ogg', 10, FALSE)
+
 
 /obj/item/vamp/phone/clean/Initialize()
 	. = ..()

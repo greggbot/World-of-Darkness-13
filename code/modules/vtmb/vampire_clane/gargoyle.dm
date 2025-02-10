@@ -33,10 +33,8 @@
 
 /datum/vampireclane/gargoyle/on_gain(mob/living/carbon/human/H)
 	..()
-	H.dna.species.no_equip = list(ITEM_SLOT_OCLOTHING, ITEM_SLOT_SUITSTORE)
 	H.dna.species.wings_icon = "Gargoyle"
-	H.physiology.armor.melee += 20
-	H.physiology.armor.bullet += 20
+	H.physiology.brute_mod = 0.8
 
 /datum/vampireclane/gargoyle/post_gain(mob/living/carbon/human/H)
 	..()
@@ -89,20 +87,19 @@
 			spawn(delay+caster.discipline_time_plus)
 				REMOVE_TRAIT(caster, TRAIT_THERMAL_VISION, TRAIT_GENERIC)
 		if(5)
-			caster.gargoyle_pass = TRUE
+			ADD_TRAIT(caster, TRAIT_PASS_THROUGH_WALLS, "visceratika 5")
 			caster.alpha = 10
 			caster.obfuscate_level = 3
 			ADD_TRAIT(caster, TRAIT_THERMAL_VISION, TRAIT_GENERIC)
 			spawn(delay+caster.discipline_time_plus)
 				caster.obfuscate_level = 0
 				caster.alpha = 255
-				caster.gargoyle_pass = FALSE
+				REMOVE_TRAIT(caster, TRAIT_PASS_THROUGH_WALLS, "visceratika 5")
 				REMOVE_TRAIT(caster, TRAIT_THERMAL_VISION, TRAIT_GENERIC)
 
 /turf/closed/Enter(atom/movable/mover, atom/oldloc)
 	if(isliving(mover))
-		var/mob/living/L = mover
-		if(L.gargoyle_pass)
-			if(get_area(L) == get_area(src))
-				return TRUE
+		var/mob/living/moving_mob = mover
+		if(HAS_TRAIT(moving_mob, TRAIT_PASS_THROUGH_WALLS) && (get_area(moving_mob) == get_area(src)))
+			return TRUE
 	return ..()

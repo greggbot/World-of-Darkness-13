@@ -1172,10 +1172,86 @@
 	name = "american flag"
 	desc = "PATRIOTHICC!!!"
 	icon = 'code/modules/wod13/props.dmi'
-	icon_state = "america"
+	icon_state = "flag_usa"
 	plane = GAME_PLANE
 	layer = CAR_LAYER
 	anchored = TRUE
+
+//flags
+
+/obj/flag
+	name = "DO NOT USE"
+	desc = "This shouldn't be used. If you see this in-game, someone has fucked up."
+	icon = 'code/modules/wod13/props.dmi'
+	icon_state = "flag_usa"
+	plane = GAME_PLANE
+	layer = CAR_LAYER
+	anchored = TRUE
+
+/obj/flag/usa
+	name = "flag of the United States"
+	desc = "The flag of the United States of America. In God we trust!"
+	icon_state = "flag_usa"
+
+/obj/flag/california
+	name = "flag of California"
+	desc = "The flag of the great State of California. Eureka!"
+	icon_state = "flag_california"
+
+/obj/flag/britain
+	name = "flag of Great Britain"
+	desc = "The flag of the United Kingdom of Great Britain and Northern Ireland. Dieu et mon droit!"
+	icon_state = "flag_britain"
+
+/obj/flag/france
+	name = "flag of France"
+	desc = "The flag of the French Republic. Liberte, egalite, fraternite!"
+	icon_state = "flag_france"
+
+/obj/flag/germany
+	name = "flag of Germany"
+	desc = "The flag of the Federal Republic of Germany."
+	icon_state = "flag_germany"
+
+/obj/flag/spain
+	name = "flag of Spain"
+	desc = "The flag of the Kingdom of Spain. Plus ultra!"
+	icon_state = "flag_spain"
+
+/obj/flag/italy
+	name = "flag of Italy"
+	desc = "The flag of the Republic of Italy."
+	icon_state = "flag_italy"
+
+/obj/flag/vatican
+	name = "flag of the Vatican"
+	desc = "The flag of Vatican City."
+	icon_state = "flag_vatican"
+
+/obj/flag/russia
+	name = "flag of Russia"
+	desc = "The flag of the Russian Federation."
+	icon_state = "flag_russia"
+
+/obj/flag/soviet
+	name = "flag of the Soviet Union"
+	desc = "The flag of the Union of Socialist Soviet Republics. Workers of the world, unite!"
+	icon_state = "flag_soviet"
+
+/obj/flag/china
+	name = "flag of China"
+	desc = "The flag of the People's Republic of China."
+	icon_state = "flag_china"
+
+/obj/flag/taiwan
+	name = "flag of Taiwan"
+	desc = "The flag of the Republic of China."
+	icon_state = "flag_taiwan"
+
+/obj/flag/japan
+	name = "flag of Japan"
+	desc = "The flag of the State of Japan."
+	icon_state = "flag_japan"
 
 /obj/effect/decal/graffiti
 	name = "graffiti"
@@ -1446,3 +1522,56 @@
 	icon = 'code/modules/wod13/werewolf.dmi'
 	icon_state = "ice"
 	pixel_w = -8
+
+/obj/structure/bury_pit
+	name = "bury pit"
+	desc = "You can bury someone here."
+	icon = 'code/modules/wod13/props.dmi'
+	icon_state = "pit0"
+	plane = GAME_PLANE
+	layer = ABOVE_OPEN_TURF_LAYER
+	anchored = TRUE
+	density = FALSE
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+	var/burying = FALSE
+
+/obj/structure/bury_pit/attackby(obj/item/I, mob/living/user, params)
+	if(istype(I, /obj/item/melee/vampirearms/shovel))
+		if(!burying)
+			burying = TRUE
+			user.visible_message("<span class='warning'>[user] starts to dig [src]</span>", "<span class='warning'>You start to dig [src].</span>")
+			if(do_mob(user, src, 10 SECONDS))
+				burying = FALSE
+				if(icon_state == "pit0")
+					var/dead_amongst = FALSE
+					for(var/mob/living/L in get_turf(src))
+						L.forceMove(src)
+						if(L.stat == DEAD)
+							dead_amongst = TRUE
+						icon_state = "pit1"
+						user.visible_message("<span class='warning'>[user] digs a hole in [src].</span>", "<span class='warning'>You dig a hole in [src].</span>")
+						if(dead_amongst)
+							call_dharma("respect", user)
+				else
+					var/dead_amongst = FALSE
+					for(var/mob/living/L in src)
+						L.forceMove(get_turf(src))
+						if(L.stat == DEAD)
+							dead_amongst = TRUE
+					icon_state = "pit0"
+					user.visible_message("<span class='warning'>[user] digs a hole in [src].</span>", "<span class='warning'>You dig a hole in [src].</span>")
+					if(dead_amongst)
+						call_dharma("disrespect", user)
+			else
+				burying = FALSE
+
+/obj/structure/bury_pit/container_resist_act(mob/living/user)
+	if(!burying)
+		burying = TRUE
+		if(do_mob(user, src, 30 SECONDS))
+			for(var/mob/living/L in src)
+				L.forceMove(get_turf(src))
+			icon_state = "pit0"
+			burying = FALSE
+		else
+			burying = FALSE

@@ -40,7 +40,7 @@
 
 	if(mob.bloodpool <= 1 && mob.maxbloodpool > 1)
 		to_chat(src, "<span class='warning'>You feel small amount of <b>BLOOD</b> in your victim.</span>")
-		if(iskindred(mob))
+		if(iskindred(mob) && iskindred(src))
 			if(!mob.client)
 				to_chat(src, "<span class='warning'>You need [mob]'s attention to do that...</span>")
 				return
@@ -48,11 +48,6 @@
 			log_attack("[key_name(src)] is attempting to Diablerize [key_name(mob)].")
 			if(mob.key)
 				var/vse_taki = FALSE
-				var/special_role_name
-				if(mind)
-					if(mind.special_role)
-						var/datum/antagonist/A = mind.special_role
-						special_role_name = A.name
 				if(clane)
 					var/salubri_allowed = FALSE
 					var/mob/living/carbon/human/H = mob
@@ -61,7 +56,7 @@
 							salubri_allowed = TRUE
 					if(clane.name != "Banu Haqim" && clane.name != "Caitiff")
 						if(!salubri_allowed)
-							if(!mind.special_role || special_role_name == "Ambitious")
+							if(!mind.special_role)
 								to_chat(src, "<span class='warning'>You find the idea of drinking your own <b>KIND's</b> blood disgusting!</span>")
 								last_drinkblood_use = 0
 								if(client)
@@ -81,7 +76,7 @@
 					return
 
 				if(vse_taki)
-					to_chat(src, "<span class='userdanger'><b>YOU TRY TO COMMIT DIABLERIE OVER [mob].</b></span>")
+					to_chat(src, "<span class='userdanger'><b>YOU TRY TO COMMIT DIABLERIE ON [mob].</b></span>")
 				else
 					to_chat(src, "<span class='warning'>You find the idea of drinking your own <b>KIND</b> disgusting!</span>")
 					return
@@ -100,6 +95,20 @@
 			drunked_of |= "[H.dna.real_name]"
 			if(!iskindred(mob))
 				H.blood_volume = max(H.blood_volume-50, 150)
+			if(iscathayan(src))
+				if(mob.yang_chi > 0 || mob.yin_chi > 0)
+					if(mob.yang_chi > mob.yin_chi)
+						mob.yang_chi = mob.yang_chi-1
+						yang_chi = min(yang_chi+1, max_yang_chi)
+						to_chat(src, "<span class='engradio'>Some <b>Yang</b> Chi energy enters you...</span>")
+					else
+						mob.yin_chi = mob.yin_chi-1
+						yin_chi = min(yin_chi+1, max_yin_chi)
+						to_chat(src, "<span class='medradio'>Some <b>Yin</b> Chi energy enters you...</span>")
+					COOLDOWN_START(mob, chi_restore, 30 SECONDS)
+					update_chi_hud()
+				else
+					to_chat(src, "<span class='warning'>The <b>BLOOD</b> feels tasteless...</span>")
 			if(H.reagents)
 				if(length(H.reagents.reagent_list))
 					if(prob(50))
@@ -133,7 +142,7 @@
 		if(mob.bloodpool <= 0)
 			if(ishuman(mob))
 				var/mob/living/carbon/human/K = mob
-				if(iskindred(mob))
+				if(iskindred(mob) && iskindred(src))
 					var/datum/preferences/P = GLOB.preferences_datums[ckey(key)]
 					var/datum/preferences/P2 = GLOB.preferences_datums[ckey(mob.key)]
 					AdjustHumanity(-1, 0)
@@ -142,8 +151,6 @@
 						message_admins("[ADMIN_LOOKUPFLW(src)] successfully Diablerized [ADMIN_LOOKUPFLW(mob)]")
 						log_attack("[key_name(src)] successfully Diablerized [key_name(mob)].")
 						if(K.client)
-							K.generation = 13
-							P2.generation = 13
 							var/datum/brain_trauma/special/imaginary_friend/trauma = gain_trauma(/datum/brain_trauma/special/imaginary_friend)
 							trauma.friend.key = K.key
 						mob.death()
@@ -163,24 +170,24 @@
 							to_chat(src, "<span class='userdanger'><b>[K]'s SOUL OVERCOMES YOURS AND GAIN CONTROL OF YOUR BODY.</b></span>")
 							message_admins("[ADMIN_LOOKUPFLW(src)] tried to Diablerize [ADMIN_LOOKUPFLW(mob)] and was overtaken.")
 							log_attack("[key_name(src)] tried to Diablerize [key_name(mob)] and was overtaken.")
-							generation = 13
+							generation = min(13, P.generation+1)
 							death()
 							if(P)
-								P.generation = 13
 								P.reason_of_death = "Failed the Diablerie ([time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")])."
 						else
 							message_admins("[ADMIN_LOOKUPFLW(src)] successfully Diablerized [ADMIN_LOOKUPFLW(mob)]")
 							log_attack("[key_name(src)] successfully Diablerized [key_name(mob)].")
 							if(P)
 								P.diablerist = 1
-								P.generation = K.generation
+								if(mob.generation + 3 < generation)
+									P.generation = max(P.generation - 2, 7)
+								else
+									P.generation = max(P.generation - 1, 7)
 								generation = P.generation
 							diablerist = 1
 							maxHealth = initial(maxHealth)+max(0, 50*(13-generation))
 							health = initial(health)+max(0, 50*(13-generation))
 							if(K.client)
-								K.generation = 13
-								P2.generation = 13
 								var/datum/brain_trauma/special/imaginary_friend/trauma = gain_trauma(/datum/brain_trauma/special/imaginary_friend)
 								trauma.friend.key = K.key
 							mob.death()
