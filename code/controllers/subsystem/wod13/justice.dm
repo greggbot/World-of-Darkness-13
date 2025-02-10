@@ -19,6 +19,7 @@ DECLARE_SUBSYSTEM(justice)
 	*	If spotted by NPCs, determine based on the crime and the NPC, eventually offer opportunities to utilize skills to manage the situation
 	*/
 	var/list/all_points_bulletins
+
 	/*	Rapsheets:
 	*	List of rapsheets
 	*/
@@ -30,14 +31,14 @@ DECLARE_SUBSYSTEM(justice)
 	var/list/datum/police_pursuit/active_pursuits
 	//An assoc list of areas for if an admin wants to change the police presence in an area from what would typically be determined by their type
 	var/list/area/vtm/police_presence_modified_areas
-
+	var/list/datum/crime/crime_types = list()
 
 /*	Rapsheets! Primarily manipulated with signals, for down-the-line integration with people whose role
-*	interacts with the justice system, public opinion, or for quirks, etc etc	*/
+*	interacts with the justice system, public opinion, or for merits, etc etc	*/
 /datum/rapsheet
 	//Deliberately attached to mobs instead of minds or names
 	var/mob/living
-	var/list/crime/charges
+	var/list/datum/crime/charges
 
 /*	Datumized to facilitate more programmatic interaction with morality, derangements, and other possible systems
 *	These are singletons, because there's really no need to have more than one instance of each, so don't try to make new ones
@@ -49,7 +50,7 @@ DECLARE_SUBSYSTEM(justice)
 /datum/controller/subsystem/justice/proc/check_should_pursue_suspect(datum/source, area/vtm/entered_area)
 	SIGNAL_HANDLER
 	//specifying this here for future coders to maybe learn something about signals :)
-	var/mob/living/suspect = source
+	var/atom/movable/suspect = source
 	if(!all_points_bulletins.Find(suspect) || !all_points_bulletins[suspect])
 		//they shouldn't be registered with us....
 		UnregisterSignal(suspect, COMSIG_AREA_ENTERED)
@@ -68,26 +69,6 @@ DECLARE_SUBSYSTEM(justice)
 /datum/controller/subsystem/justice/proc/charge_with_crime(datum/source, mob/living/suspect, datum/crime/charged_with, atom/damning_evidence, mob/living/stalwart_enforcer = null)
 	SIGNAL_HANDLER
 
-/datum/controller/subsystem/justice/proc/declare_APB(datum/source, mob/living/stalwart_enforcer, mob/living/suspect, APB_level)
+/datum/controller/subsystem/justice/proc/declare_APB(datum/source, atom/movable/stalwart_enforcer, atom/movable/suspect, APB_level)
 	SIGNAL_HANDLER
-
-/* Self-handling datum that does most of the control for a given police pursuit, without us having to make a whole processing subsystem for it */
-/datum/police_pursuit
-	//	Changes at different levels to be helpful for admins to glance at
-	var/name = ""
-	//	Our (alleged) perpetrator
-	var/mob/living/suspect = null
-	//	Set to string defines
-	var/pursuit_status = null
-	//	List of NPCs specifically active in THIS pursuit
-	var/list/mob/living/involved_officers
-	//	timer to facilitate recursive calling of a given stage at a given step
-	var/stage_timer
-	//	For readability and sanity purposes, define how many steps a given stage typically has
-	var/static/list/stage_status_steps = list(
-		POLICE_PURSUIT_EN_ROUTE = 10,		//adjusted for a given crime
-		POLICE_PURSUIT_SEARCHING = 10,		//the same, with the caveat that this can be -1 so the police WON'T stop searching if you stay in the area
-		POLICE_PURSUIT_SUSPECT_ENGAGED = 2,	//only two stages: 2 means you're actively dusting up with the cops, 1 means you've broken line of sight (or killed all the cops)
-	)
-	var/PURSUIT_TIMER_FLAGS = TIMER_UNIQUE|TIMER_STOPPABLE
 
