@@ -1,11 +1,13 @@
 
-* **Website:** TO_BE_DECLARED
-* **Code:** https://github.com/WorldOfDarknessXIII/World-of-Darkness-13
-* **Wiki:** UNDER_CONSTRUCTION
-* **Codedocs:** https://codedocs.tgstation13.org/ + For the time being +
-* **World of Darkness 13 Discord:** https://discord.gg/WBktth6Z8j
-* **Coderbus Discord:** https://discord.gg/Vh8TJp9
-* ~~**IRC:** irc://irc.rizon.net/coderbus~~ (dead)
+| Website                   | Link                                           |
+|---------------------------|------------------------------------------------|
+| *Website | TO_BE_DECLARED |
+| Code | https://github.com/WorldOfDarknessXIII/World-of-Darkness-13 |
+| Wiki | UNDER_CONSTRUCTION |
+| Codedocs | https://codedocs.tgstation13.org/ |
+| World of Darkness 13 Discord | https://discord.gg/WBktth6Z8j |
+| Coderbus Discord | https://discord.gg/Vh8TJp9 |
+
 
 This is the codebase for the World of Darkness 13, a build of a fork of a downstream of a-- in any case...
 
@@ -16,13 +18,15 @@ If you'd like to contribute to this codebase, consider uncommenting line 1 @ _ma
 ## Attribution: tgstation
 ## The vast majority of our code was written by the maintainers and members of the /tg/station community up to February 3rd, 2021. We regularly pull and port features from /tg/station as well. We would like to officially recognize and pay our respect to the thousands of development hours that created the foundation and continue to create the function of our server.
 ## Changes to the below files have taken place to amend references to /tg/station with our own where appropriate. These changes are not intended and should not be interpreted as any attempt to inappropriately misattribute credit for the efforts of the original developers, maintainers, artists, or community managers.
-## The commit for the point at which we diverged from /tg/station:
-
-## commit c0c39018f369fa4d4950a56d565dadb573be54f2 (tg-divergence-backup, tg-divergence)
+---
+## The commit at which this new rebase has diverged from:
+## commit 
 ## Author: tgstation-server <tgstation-server@tgstation13.org>
 ## Date:   Wed Feb 3 16:50:49 2021 -0800
 ##
 ##    Automatic changelog generation for PR #56506 [ci skip]
+
+---
 
 ## DOWNLOADING
 [Downloading](.github/DOWNLOADING.md)
