@@ -1,7 +1,7 @@
 
 | Website                   | Link                                           |
 |---------------------------|------------------------------------------------|
-| *Website | TO_BE_DECLARED |
+| Website | TO_BE_DECLARED |
 | Code | https://github.com/WorldOfDarknessXIII/World-of-Darkness-13 |
 | Wiki | UNDER_CONSTRUCTION |
 | Codedocs | https://codedocs.tgstation13.org/ |
@@ -22,9 +22,9 @@ Changes to the below files have taken place to amend references to /tg/station w
 The commit at which this new rebase has diverged from:
 | Details | Link|
 |--------|-----------------------------------------------------|
-| commit | LOREM IPSUM|
-| Author | tgstation-server <tgstation-server@tgstation13.org> |
-| Date |  Wed Feb 3 16:50:49 2021 -0800 |
+| commit | [8a853dd](https://github.com/tgstation/tgstation/commit/8a853dd3112221e38122d1ac04b0bd2800cfec00) |
+| Author | [tgstation-server <tgstation-server@tgstation13.org> ](https://github.com/tgstation/tgstation/commits?author=tgstation-ci%5Bbot%5D) |
+| Date |  Feb 16, 2025, 11:08 AM |
 
 ---
 
