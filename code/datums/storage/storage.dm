@@ -590,7 +590,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
  */
 /datum/storage/proc/remove_all(atom/drop_loc = parent.drop_location())
 	for(var/obj/item/thing in real_location)
-		if(!attempt_remove(thing, drop_loc, silent = TRUE))
+		if(!attempt_remove(thing, drop_loc))
 			continue
 		thing.pixel_x = thing.base_pixel_x + rand(-8, 8)
 		thing.pixel_y = thing.base_pixel_y + rand(-8, 8)
