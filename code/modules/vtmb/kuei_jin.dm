@@ -53,7 +53,6 @@
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER, TRAIT_VIRUSIMMUNE, TRAIT_PERFECT_ATTACKER, TRAIT_NOBREATH)
 	use_skintones = TRUE
 	limbs_id = "human"
-	wings_icon = "None"
 	mutant_bodyparts = list("tail_human" = "None", "ears" = "None", "wings" = "None")
 	brutemod = 0.5
 	heatmod = 1

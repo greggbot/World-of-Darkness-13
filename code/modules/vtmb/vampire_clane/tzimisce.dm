@@ -160,7 +160,6 @@
 		return
 	if(!hided)
 		hided = TRUE
-//		violating_appearance = FALSE
 		REMOVE_TRAIT(H, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 		if(additional_hands)
 			H.remove_overlay(PROTEAN_LAYER)
@@ -175,12 +174,8 @@
 			H.update_body()
 	else
 		hided = FALSE
-//		violating_appearance = TRUE
 		if(additional_hands || additional_wings || additional_centipede || additional_armor)
 			ADD_TRAIT(H, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
-//			violating_appearance = FALSE
-//		if(violating_appearance)
-
 		if(additional_hands)
 			H.remove_overlay(PROTEAN_LAYER)
 			var/mutable_appearance/hands2_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "2hands", -PROTEAN_LAYER)
