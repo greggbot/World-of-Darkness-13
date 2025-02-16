@@ -1070,7 +1070,6 @@
 	name = "work gloves"
 	desc = "Provides fire protection for working in extreme environments."
 	icon_state = "work"
-	permeability_coefficient = 0.9
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 	heat_protection = HANDS
@@ -1082,7 +1081,6 @@
 	name = "investigator gloves"
 	desc = "Standard issue FBI workgloves tailored for investigators. Made out of latex outer lining and padded for acid and fire protection."
 	icon_state = "work"
-	permeability_coefficient = 0.5
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 	heat_protection = HANDS
@@ -1165,8 +1163,6 @@
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	inhand_icon_state = ""
 	w_class = WEIGHT_CLASS_NORMAL
-	gas_transfer_coefficient = 0.01
-	permeability_coefficient = 0.01
 	flags_cover = MASKCOVERSMOUTH | PEPPERPROOF
 	resistance_flags = NONE
 	body_worn = TRUE

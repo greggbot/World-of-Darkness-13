@@ -263,8 +263,8 @@
 		face_atom(walktarget)
 	if(isturf(loc))
 		if(danger_source)
-			a_intent = INTENT_HARM
-			if(m_intent == MOVE_INTENT_WALK)
+			set_combat_mode(TRUE)
+			if(move_intent == MOVE_INTENT_WALK)
 				toggle_move_intent(src)
 			if(!my_weapon && !fights_anyway)
 //				if(last_walkin+5 < world.time)
@@ -341,37 +341,3 @@
 					spawned_weapon = FALSE
 				else
 					my_weapon = null
-
-/*
-	if(danger_source)
-		a_intent = INTENT_HARM
-		if(m_intent == MOVE_INTENT_WALK)
-			toggle_move_intent(src)
-			set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
-		walk_away(src,danger_source,9,total_multiplicative_slowdown())
-		if(last_danger_meet+300 <= world.time)
-			danger_source = null
-			a_intent = INTENT_HELP
-		goto Skip
-//			if(!range_weapon && !melee_weapon)
-
-	if(lastgo+total_multiplicative_slowdown() > world.time)
-		goto Skip
-	if(pulledby && last_grab+30 > world.time)
-		goto Skip
-	if(!walktarget)
-		walktarget = ChoosePath()
-		face_atom(walktarget)
-		stopturf = rand(1, 2)
-	if(get_dist(walktarget, src) <= stopturf)
-		walktarget = ChoosePath()
-		face_atom(walktarget)
-		stopturf = rand(1, 2)
-	lastgo = world.time
-	var/walkshit = max(stopturf-1, get_dist(walktarget, src)-2)
-	walk_to(src, walktarget, walkshit, total_multiplicative_slowdown())
-	Skip
-*/
-
-//			walk_to(src, walktarget, stopturf, total_multiplicative_slowdown())
-//			walk_to(src, walktarget, stopturf, total_multiplicative_slowdown())

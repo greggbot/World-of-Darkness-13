@@ -84,7 +84,7 @@
 			else
 				complete()
 
-/obj/ritualrune/AltClick(mob/user)
+/obj/ritualrune/click_alt(mob/user)
 	..()
 	qdel(src)
 
@@ -149,7 +149,7 @@
 	melee_damage_upper = 25
 	attack_verb_continuous = "punches"
 	attack_verb_simple = "punch"
-	attack_sound = 'sound/weapons/punch1.ogg'
+	attack_sound = 'sound/items/weapons/punch1.ogg'
 	speak_emote = list("gnashes")
 
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)

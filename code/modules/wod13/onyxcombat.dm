@@ -137,7 +137,7 @@
 	if(HAS_TRAIT(src, TRAIT_ENHANCED_MELEE_DODGE))
 		apply_damage(3, STAMINA)
 		user.do_attack_animation(src)
-		playsound(src, 'sound/weapons/tap.ogg', 70, TRUE)
+		playsound(src, 'sound/items/weapons/tap.ogg', 70, TRUE)
 		emote("flip")
 		visible_message("<span class='danger'>[src] dodges the attack!</span>", "<span class='danger'>You dodge the attack!</span>")
 		return
@@ -150,7 +150,7 @@
 				if(IT.w_class >= W.w_class)
 					apply_damage(10, STAMINA)
 					user.do_attack_animation(src)
-					playsound(src, 'sound/weapons/tap.ogg', 70, TRUE)
+					playsound(src, 'sound/items/weapons/tap.ogg', 70, TRUE)
 					visible_message("<span class='danger'>[src] blocks the attack!</span>", "<span class='danger'>You block the attack!</span>")
 					if(incapacitated(TRUE, TRUE) && blocking)
 						SwitchBlocking()
@@ -181,19 +181,19 @@
 		SwitchBlocking()
 	if(CheckFrenzyMove() && blocking)
 		SwitchBlocking()
-	if(user.a_intent == INTENT_HARM && HAS_TRAIT(src, TRAIT_ENHANCED_MELEE_DODGE))
-		playsound(src, 'sound/weapons/tap.ogg', 70, TRUE)
+	if((user.combat_mode) && HAS_TRAIT(src, TRAIT_ENHANCED_MELEE_DODGE))
+		playsound(src, 'sound/items/weapons/tap.ogg', 70, TRUE)
 		apply_damage(3, STAMINA)
 		user.do_attack_animation(src)
 		emote("flip")
 		visible_message("<span class='danger'>[src] dodges the punch!</span>", "<span class='danger'>You dodge the punch!</span>")
 		return
-	if(user.a_intent == INTENT_HARM && blocking)
-		playsound(src, 'sound/weapons/tap.ogg', 70, TRUE)
+	if((user.combat_mode) && blocking)
+		playsound(src, 'sound/items/weapons/tap.ogg', 70, TRUE)
 		apply_damage(10, STAMINA)
 		user.do_attack_animation(src)
 		visible_message("<span class='danger'>[src] blocks the punch!</span>", "<span class='danger'>You block the punch!</span>")
-		if(incapacitated(TRUE, TRUE) && blocking)
+		if(HAS_TRAIT(user, TRAIT_INCAPACITATED) && blocking)
 			SwitchBlocking()
 		return
 	..()
@@ -228,7 +228,6 @@
 	name = "jump"
 	icon = 'code/modules/wod13/UI/buttons_wide.dmi'
 	icon_state = "act_jump_off"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/jump/Click()
@@ -254,7 +253,6 @@
 	name = "block"
 	icon = 'code/modules/wod13/UI/buttons_wide.dmi'
 	icon_state = "act_block_off"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/block/Click()
@@ -267,7 +265,6 @@
 	name = "zone"
 	icon = 'code/modules/wod13/48x48.dmi'
 	icon_state = "masquerade"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 	alpha = 64
 
@@ -275,11 +272,9 @@
 	name = "bloodpool"
 	icon = 'code/modules/wod13/UI/bloodpool.dmi'
 	icon_state = "blood0"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/addinv
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/blood/Click()
@@ -296,7 +291,6 @@
 	name = "Drink Blood"
 	icon = 'code/modules/wod13/disciplines.dmi'
 //	icon_state = "drink"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/drinkblood/Click()

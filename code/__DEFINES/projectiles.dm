@@ -20,12 +20,17 @@
 #define CALIBER_160SMART ".160 Smart"
 /// The caliber used as the default for ballistic guns. Only not overridden for the [surplus rifle][/obj/item/gun/ballistic/automatic/surplus].
 #define CALIBER_10MM "10mm"
+#define CALIBER_44	".44"
+#define CALIBER_556	"5.56mm"
+#define CALIBER_12G	"12g"
 /// The caliber used by most revolver variants.
 #define CALIBER_357 ".357"
 /// The caliber used by the detective's revolver.
 #define CALIBER_38 ".38"
 /// The caliber used by the C-20r SMG, the tommygun, and the M1911 pistol.
 #define CALIBER_45 ".45"
+/// The caliber used by sniper rifles and the desert eagle.
+#define CALIBER_50	".50"
 /// The caliber used by sniper rifles.
 #define CALIBER_50BMG ".50BMG"
 /// The caliber used by the desert eagle.
@@ -34,6 +39,9 @@
 #define CALIBER_75 ".75"
 /// The caliber used by [one revolver variant][/obj/item/gun/ballistic/revolver/nagant].
 #define CALIBER_N762 "n762"
+
+#define CALIBER_545		"545mm"
+
 /// The caliber used by the the M-90gl Carbine, and NT-ARG 'Boarder'.
 #define CALIBER_A223 "a223"
 /// The caliber used by bolt action rifles.

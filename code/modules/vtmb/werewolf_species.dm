@@ -12,7 +12,6 @@
 	brutemod = 0.75
 	heatmod = 1
 	burnmod = 1
-	dust_anim = "dust-h"
 	whitelisted = TRUE
 	selectable = TRUE
 	var/glabro = FALSE
@@ -24,7 +23,7 @@
 	check_flags = NONE
 	var/mob/living/carbon/host
 
-/datum/action/garouinfo/Trigger()
+/datum/action/garouinfo/Trigger(trigger_flags)
 	if(host)
 		var/dat = {"
 			<style type="text/css">
@@ -62,7 +61,7 @@
 				if(A.objectives)
 					dat += "[printobjectives(A.objectives)]<BR>"
 
-		dat += "<b>Physique</b>: [host.physique]<BR>"
+		dat += "<b>strength</b>: [host.strength]<BR>"
 		dat += "<b>Dexterity</b>: [host.dexterity]<BR>"
 		dat += "<b>Social</b>: [host.social]<BR>"
 		dat += "<b>Mentality</b>: [host.mentality]<BR>"
@@ -94,7 +93,7 @@
 		host << browse(dat, "window=vampire;size=400x450;border=1;can_resize=1;can_minimize=0")
 		onclose(host, "vampire", src)
 
-/datum/species/garou/on_species_gain(mob/living/carbon/human/C)
+/datum/species/garou/on_species_gain(mob/living/carbon/human/human_who_gained_species, datum/species/old_species, pref_load, regenerate_icons)
 	. = ..()
 //	ADD_TRAIT(C, TRAIT_NOBLEED, HIGHLANDER)
 	C.update_body(0)
@@ -106,8 +105,8 @@
 	glabro.Grant(C)
 	var/datum/action/gift/rage_heal/GH = new()
 	GH.Grant(C)
-	C.transformator = new(C)
-	C.transformator.human_form = C
+	human_who_gained_species.transformator = new(human_who_gained_species)
+	human_who_gained_species.transformator.human_form = human_who_gained_species
 
 /datum/species/garou/on_species_loss(mob/living/carbon/human/C, datum/species/new_species, pref_load)
 	. = ..()

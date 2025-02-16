@@ -7,7 +7,7 @@
 /obj/machinery/vamp/atm
 	name = "ATM Machine"
 	desc = "Check your balance or make a transaction"
-	icon = 'icons/obj/vtm_atm.dmi'
+	icon = 'code/modules/wod13/vtm_atm.dmi'
 	icon_state = "atm"
 	plane = GAME_PLANE
 	layer = CAR_LAYER
@@ -18,7 +18,7 @@
 
 	var/atm_balance = 0
 	var/obj/item/vamp/creditcard/current_card = null
-	light_system = STATIC_LIGHT
+	light_system = OVERLAY_LIGHT
 	light_color = COLOR_GREEN
 	light_range = 2
 	light_power = 1
@@ -56,9 +56,8 @@ var/mob/living/carbon/human/H
 	lefthand_file = 'code/modules/wod13/lefthand.dmi'
 	righthand_file = 'code/modules/wod13/righthand.dmi'
 	item_flags = NOBLUDGEON
-	flags_1 = HEAR_1
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/creditcard
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 
@@ -67,6 +66,16 @@ var/mob/living/carbon/human/H
 	var/code
 	var/balance = 0
 	var/has_checked = FALSE
+
+/datum/armor/creditcard
+	melee = 0
+	bullet = 0
+	laser = 0
+	energy = 0
+	bomb = 0
+	fire = 100
+	acid = 100
+	wound = 100
 
 /obj/item/vamp/creditcard/prince
 	icon_state = "card2"

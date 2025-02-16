@@ -183,7 +183,7 @@
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 30)
 	foodtype = GRAIN | ALCOHOL
-	custom_price = PAYCHECK_EASY
+	custom_price = PAYCHECK_CREW
 
 /obj/item/reagent_containers/food/drinks/beer/vampire/blue_stripe
 	name = "blue stripe"
@@ -307,7 +307,7 @@
 		new /datum/data/mining_equipment("strong coffee", /obj/item/reagent_containers/food/drinks/coffee/vampire/robust, 5)
 	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/AltClick(mob/user)
+/obj/machinery/mineral/equipment_vendor/fastfood/click_altt(mob/user)
 	. = ..()
 	if(points && dispenses_dollars)
 		for(var/i in 1 to points)

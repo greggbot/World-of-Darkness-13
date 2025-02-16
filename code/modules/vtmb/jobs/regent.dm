@@ -6,15 +6,14 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Pyramid"
-	selection_color = "#ab2508"
 
 	outfit = /datum/outfit/job/regent
 
 	access = list(ACCESS_LIBRARY, ACCESS_AUX_BASE, ACCESS_MINING_STATION)
 	minimal_access = list(ACCESS_LIBRARY, ACCESS_AUX_BASE, ACCESS_MINING_STATION)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
-	exp_type_department = EXP_TYPE_TREMERE
+	exp_granted_type = EXP_TYPE_TREMERE
 
 	my_contact_is_important = TRUE
 	display_order = JOB_DISPLAY_ORDER_REGENT

@@ -11,7 +11,7 @@
 		language_weights = list()
 		for(var/lang_type in GLOB.uncommon_roundstart_languages)
 			language_weights[lang_type] = 1
-		language_weights[/datum/language/common] = 20
+		language_weights[/datum/language/english] = 20
 
 	var/datum/language/picked = GLOB.language_datum_instances[pick_weight(language_weights)]
 	if(unique)
@@ -38,7 +38,7 @@
 
 	if(length(languages_to_pick_from) >= 2)
 		// Basically, if we have alternatives, don't pick common it's boring
-		languages_to_pick_from -= /datum/language/common
+		languages_to_pick_from -= /datum/language/english
 
 	if(!include_all || length(languages_to_pick_from) <= 1)
 		return generate_random_name(gender, unique, languages_to_pick_from)

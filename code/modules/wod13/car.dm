@@ -153,7 +153,7 @@ SUBSYSTEM_DEF(carpool)
 		if(prob(50))
 			L.apply_damage(P.damage, P.damage_type, pick(BODY_ZONE_HEAD, BODY_ZONE_CHEST))
 
-/obj/vampire_car/AltClick(mob/user)
+/obj/vampire_car/click_alt(mob/user)
 	..()
 	if(!repairing)
 		if(locked)
@@ -178,7 +178,7 @@ SUBSYSTEM_DEF(carpool)
 			user.visible_message("<span class='warning'>[user] has managed to get [L] out of [src].</span>", \
 				"<span class='warning'>You've managed to get [L] out of [src].</span>")
 			if(C)
-				C.Trigger()
+				C.Trigger(trigger_flags)
 		else
 			to_chat(user, "<span class='warning'>You've failed to get [L] out of [src].</span>")
 		repairing = FALSE
@@ -375,26 +375,26 @@ SUBSYSTEM_DEF(carpool)
 	desc = "Toggle light on/off."
 	button_icon_state = "lights"
 
-/datum/action/carr/fari_vrubi/Trigger()
+/datum/action/carr/fari_vrubi/Trigger(trigger_flags)
 	if(istype(owner.loc, /obj/vampire_car))
 		var/obj/vampire_car/V = owner.loc
 		if(!V.fari_on)
 			V.fari_on = TRUE
 			V.add_overlay(V.Fari)
 			to_chat(owner, "<span class='notice'>You toggle [V]'s lights.</span>")
-			playsound(V, 'sound/weapons/magin.ogg', 40, TRUE)
+			playsound(V, 'sound/items/weapons/magin.ogg', 40, TRUE)
 		else
 			V.fari_on = FALSE
 			V.cut_overlay(V.Fari)
 			to_chat(owner, "<span class='notice'>You toggle [V]'s lights.</span>")
-			playsound(V, 'sound/weapons/magout.ogg', 40, TRUE)
+			playsound(V, 'sound/items/weapons/magout.ogg', 40, TRUE)
 
 /datum/action/carr/beep
 	name = "Signal"
 	desc = "Beep-beep."
 	button_icon_state = "beep"
 
-/datum/action/carr/beep/Trigger()
+/datum/action/carr/beep/Trigger(trigger_flags)
 	if(istype(owner.loc, /obj/vampire_car))
 		var/obj/vampire_car/V = owner.loc
 		if(V.last_beep+10 < world.time)
@@ -406,7 +406,7 @@ SUBSYSTEM_DEF(carpool)
 	desc = "Toggle transmission to 1, 2 or 3."
 	button_icon_state = "stage"
 
-/datum/action/carr/stage/Trigger()
+/datum/action/carr/stage/Trigger(trigger_flags)
 	if(istype(owner.loc, /obj/vampire_car))
 		var/obj/vampire_car/V = owner.loc
 		if(V.stage < 3)
@@ -420,10 +420,10 @@ SUBSYSTEM_DEF(carpool)
 	desc = "Lock/Unlock Baggage."
 	button_icon_state = "baggage"
 
-/datum/action/carr/baggage/Trigger()
+/datum/action/carr/baggage/Trigger(trigger_flags)
 	if(istype(owner.loc, /obj/vampire_car))
 		var/obj/vampire_car/V = owner.loc
-		var/datum/component/storage/STR = V.GetComponent(/datum/component/storage)
+		var/datum/storage/STR = V.GetComponent(/datum/storage)
 		STR.locked = !STR.locked
 		playsound(V, 'code/modules/wod13/sounds/door.ogg', 50, TRUE)
 		if(STR.locked)
@@ -436,7 +436,7 @@ SUBSYSTEM_DEF(carpool)
 	desc = "Toggle engine on/off."
 	button_icon_state = "keys"
 
-/datum/action/carr/engine/Trigger()
+/datum/action/carr/engine/Trigger(trigger_flags)
 	if(istype(owner.loc, /obj/vampire_car))
 		var/obj/vampire_car/V = owner.loc
 		if(!V.on)
@@ -465,7 +465,7 @@ SUBSYSTEM_DEF(carpool)
 	desc = "Exit the vehicle."
 	button_icon_state = "exit"
 
-/datum/action/carr/exit_car/Trigger()
+/datum/action/carr/exit_car/Trigger(trigger_flags)
 	if(istype(owner.loc, /obj/vampire_car))
 		var/obj/vampire_car/V = owner.loc
 		if(V.driver == owner)
@@ -796,7 +796,7 @@ SUBSYSTEM_DEF(carpool)
 	. = ..()
 	apply_vector_angle()
 
-/obj/vampire_car/Moved(atom/OldLoc, Dir)
+/obj/vampire_car/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
 	. = ..()
 	last_pos["x"] = x
 	last_pos["y"] = y

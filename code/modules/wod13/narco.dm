@@ -48,16 +48,14 @@
 	time = 10
 	reqs = list(/obj/item/food/vampire/weed = 1)
 	result = /obj/item/weedpack
-	always_available = TRUE
-	category = CAT_DRUGS
+	category = CAT_CHEMISTRY
 
 /datum/crafting_recipe/weed_blunt
 	name = "Roll Blunt"
 	time = 10
 	reqs = list(/obj/item/weedpack = 1, /obj/item/paper = 1)
 	result = /obj/item/clothing/mask/cigarette/rollie/cannabis
-	always_available = TRUE
-	category = CAT_DRUGS
+	category = CAT_CHEMISTRY
 
 /obj/item/food/vampire/weed
 	name = "leaf"
@@ -110,7 +108,7 @@
 			new /obj/item/food/vampire/weed(get_turf(user))
 	update_weed_icon()
 
-/obj/structure/weedshit/AltClick(mob/user)
+/obj/structure/weedshit/click_alt(mob/user)
 	if(do_after(user, 15))
 		if(anchored)
 			to_chat(user, "<span class='notice'>You unsecure the [src] from the ground.</span>")
@@ -437,7 +435,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	else
 		. += "<span class='warning'>[src] is about to fall apart!</span>"
 
-/obj/structure/methlab/AltClick(mob/user)
+/obj/structure/methlab/click_alt(mob/user)
 	if(do_after(user, 15))
 		if(anchored)
 			to_chat(user, "<span class='notice'>You unsecure the [src] from the ground.</span>")

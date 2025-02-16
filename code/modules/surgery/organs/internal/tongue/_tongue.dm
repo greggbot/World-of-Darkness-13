@@ -75,7 +75,7 @@
 	RETURN_TYPE(/list)
 	// This is the default list of languages most humans should be capable of speaking
 	return list(
-		/datum/language/common,
+		/datum/language/english,
 		/datum/language/uncommon,
 		/datum/language/draconic,
 		/datum/language/codespeak,
@@ -482,7 +482,7 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 /obj/item/organ/tongue/alien/get_possible_languages()
 	return list(
 		/datum/language/xenocommon,
-		/datum/language/common,
+		/datum/language/english,
 		/datum/language/uncommon,
 		/datum/language/draconic, // Both hiss?
 		/datum/language/monkey,

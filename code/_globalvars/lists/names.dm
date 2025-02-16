@@ -45,3 +45,8 @@ GLOBAL_LIST_INIT(greek_alphabet, world.file2list("strings/greek_alphabet.txt"))
 GLOBAL_LIST_INIT(hive_names,  world.file2list("strings/names/hive_names.txt"))
 //loaded on startup because of "
 //would include in rsc if ' was used
+
+//Book Quotes
+GLOBAL_LIST_INIT(bahari_quotes, world.file2list("strings/quotes/bahari.txt"))
+GLOBAL_LIST_INIT(noddist_quotes, world.file2list("strings/quotes/noddist.txt"))
+GLOBAL_LIST_INIT(quran_quotes, world.file2list("strings/quotes/islam.txt"))

@@ -7,7 +7,6 @@
 	total_positions = 7
 	spawn_positions = 7
 	supervisors = "the prince"
-	selection_color = "#bd3327"
 	minimal_player_age = 7
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW

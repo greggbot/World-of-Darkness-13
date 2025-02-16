@@ -240,7 +240,7 @@
 
 	spawned_human.mind.add_antag_datum(/datum/antagonist/ashwalker, team)
 
-	spawned_human.remove_language(/datum/language/common)
+	spawned_human.remove_language(/datum/language/english)
 	team.players_spawned += (spawned_human.ckey)
 	eggshell.egg = null
 	QDEL_NULL(eggshell)

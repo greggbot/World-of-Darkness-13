@@ -6,15 +6,12 @@
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Traditions and the Regent"
-	selection_color = "#ab2508"
 
 	outfit = /datum/outfit/job/archivist
 
-	access = list(ACCESS_LIBRARY, ACCESS_AUX_BASE, ACCESS_MINING_STATION)
-	minimal_access = list(ACCESS_LIBRARY, ACCESS_AUX_BASE, ACCESS_MINING_STATION)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
-	exp_type_department = EXP_TYPE_TREMERE
+	exp_granted_type = EXP_TYPE_TREMERE
 
 	display_order = JOB_DISPLAY_ORDER_ARCHIVIST
 

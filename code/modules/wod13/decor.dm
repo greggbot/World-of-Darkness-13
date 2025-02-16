@@ -606,8 +606,8 @@
 	. = ..()
 	icon_state = "[rand(2, 5)]"
 
-/obj/cargotrain/Moved(atom/OldLoc, Dir, Forced = FALSE)
-	for(var/mob/living/L in get_step(src, Dir))
+/obj/cargotrain/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
+	for(var/mob/living/L in get_step(src, movement_dir))
 		if(isnpc(L))
 			if(starter)
 				if(ishuman(starter))
@@ -697,7 +697,7 @@
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF | FREEZE_PROOF
 	var/stored_money = 0
 
-/obj/structure/fuelstation/AltClick(mob/user)
+/obj/structure/fuelstation/click_alt(mob/user)
 	if(stored_money)
 		say("Money refunded.")
 		for(var/i in 1 to stored_money)

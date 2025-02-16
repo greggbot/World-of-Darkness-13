@@ -148,6 +148,7 @@
 	name = "vampire tongue"
 	actions_types = list(/datum/action/item_action/organ_action/vampire)
 	color = COLOR_CRAYON_BLACK
+	toxic_foodtypes = MEAT | VEGETABLES | RAW | JUNKFOOD | GRAIN | FRUIT | DAIRY | FRIED | ALCOHOL | SUGAR | PINEAPPLE
 	COOLDOWN_DECLARE(drain_cooldown)
 
 /datum/action/item_action/organ_action/vampire

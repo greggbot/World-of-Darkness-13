@@ -4,7 +4,7 @@
 	/// Number of charges the book has, limits the number of times it can be used.
 	var/charges = 1
 	/// Path to a language datum that the book teaches.
-	var/datum/language/language = /datum/language/common
+	var/datum/language/language = /datum/language/english
 	/// Flavour text to display when the language is successfully learned.
 	var/flavour_text = "suddenly your mind is filled with codewords and responses"
 
@@ -65,7 +65,7 @@
 
 /obj/item/language_manual/roundstart_species/Initialize(mapload)
 	. = ..()
-	var/list/available_languages = length(GLOB.uncommon_roundstart_languages) ? GLOB.uncommon_roundstart_languages : list(/datum/language/common)
+	var/list/available_languages = length(GLOB.uncommon_roundstart_languages) ? GLOB.uncommon_roundstart_languages : list(/datum/language/english)
 	language = pick(available_languages)
 	name = "[initial(language.name)] manual"
 	desc = "The book's cover reads: \"[initial(language.name)] for Xenos - Learn common galactic tongues in seconds.\""

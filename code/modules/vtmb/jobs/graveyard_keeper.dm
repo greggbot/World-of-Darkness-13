@@ -6,14 +6,11 @@
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Camarilla or the Anarchs"
-	selection_color = "#e3e3e3"
-	exp_type_department = EXP_TYPE_SERVICES
+	exp_granted_type = EXP_TYPE_SERVICES
 
 
 	outfit = /datum/outfit/job/graveyard
 
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM, ACCESS_AUX_BASE)
-	minimal_access = list(ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM, ACCESS_AUX_BASE)
 	paycheck = PAYCHECK_MEDIUM
 	paycheck_department = ACCOUNT_CAR
 

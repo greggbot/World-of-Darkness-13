@@ -125,7 +125,7 @@
 /datum/species/monkey/create_pref_language_perk()
 	var/list/to_add = list()
 	// Holding these variables so we can grab the exact names for our perk.
-	var/datum/language/common_language = /datum/language/common
+	var/datum/language/common_language = /datum/language/english
 	var/datum/language/monkey_language = /datum/language/monkey
 
 	to_add += list(list(

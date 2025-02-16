@@ -19,7 +19,7 @@
 /obj/item/ammo_box/magazine/internal/cylinder/rev44
 	name = "revolver cylinder"
 	ammo_type = /obj/item/ammo_casing/vampire/c44
-	caliber = CALIBER_44
+	caliber = CALIBER_10MM
 	max_ammo = 6
 
 /obj/item/gun/ballistic/vampire/revolver
@@ -29,13 +29,13 @@
 	inhand_icon_state = "revolver"
 	worn_icon_state = "revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
-	initial_caliber = CALIBER_44
+	initial_caliber = CALIBER_10MM
 	fire_sound = 'code/modules/wod13/sounds/revolver.ogg'
-	load_sound = 'sound/weapons/gun/revolver/load_bullet.ogg'
-	eject_sound = 'sound/weapons/gun/revolver/empty.ogg'
+	load_sound = 'sound/items/weapons/gun/revolver/load_bullet.ogg'
+	eject_sound = 'sound/items/weapons/gun/revolver/empty.ogg'
 	vary_fire_sound = FALSE
 	fire_sound_volume = 85
-	dry_fire_sound = 'sound/weapons/gun/revolver/dry_fire.ogg'
+	dry_fire_sound = 'sound/items/weapons/gun/revolver/dry_fire.ogg'
 	casing_ejector = FALSE
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
@@ -56,7 +56,7 @@
 	..()
 	chamber_round()
 
-/obj/item/gun/ballistic/vampire/revolver/AltClick(mob/user)
+/obj/item/gun/ballistic/vampire/revolver/click_alt(mob/user)
 	..()
 	spin()
 
@@ -149,15 +149,15 @@
 	actions_types = list()
 	bolt_type = BOLT_TYPE_LOCKING
 	fire_sound = 'code/modules/wod13/sounds/deagle.ogg'
-	dry_fire_sound = 'sound/weapons/gun/pistol/dry_fire.ogg'
-	load_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
-	load_empty_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
-	eject_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
-	eject_empty_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
+	dry_fire_sound = 'sound/items/weapons/gun/pistol/dry_fire.ogg'
+	load_sound = 'sound/items/weapons/gun/pistol/mag_insert.ogg'
+	load_empty_sound = 'sound/items/weapons/gun/pistol/mag_insert.ogg'
+	eject_sound = 'sound/items/weapons/gun/pistol/mag_release.ogg'
+	eject_empty_sound = 'sound/items/weapons/gun/pistol/mag_release.ogg'
 	vary_fire_sound = FALSE
-	rack_sound = 'sound/weapons/gun/pistol/rack_small.ogg'
-	lock_back_sound = 'sound/weapons/gun/pistol/lock_small.ogg'
-	bolt_drop_sound = 'sound/weapons/gun/pistol/drop_small.ogg'
+	rack_sound = 'sound/items/weapons/gun/pistol/rack_small.ogg'
+	lock_back_sound = 'sound/items/weapons/gun/pistol/lock_small.ogg'
+	bolt_drop_sound = 'sound/items/weapons/gun/pistol/drop_small.ogg'
 	fire_sound_volume = 75
 	cost = 75
 
@@ -209,15 +209,15 @@
 	actions_types = list()
 	bolt_type = BOLT_TYPE_LOCKING
 	fire_sound = 'code/modules/wod13/sounds/m1911.ogg'
-	dry_fire_sound = 'sound/weapons/gun/pistol/dry_fire.ogg'
-	load_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
-	load_empty_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
-	eject_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
-	eject_empty_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
+	dry_fire_sound = 'sound/items/weapons/gun/pistol/dry_fire.ogg'
+	load_sound = 'sound/items/weapons/gun/pistol/mag_insert.ogg'
+	load_empty_sound = 'sound/items/weapons/gun/pistol/mag_insert.ogg'
+	eject_sound = 'sound/items/weapons/gun/pistol/mag_release.ogg'
+	eject_empty_sound = 'sound/items/weapons/gun/pistol/mag_release.ogg'
 	vary_fire_sound = FALSE
-	rack_sound = 'sound/weapons/gun/pistol/rack_small.ogg'
-	lock_back_sound = 'sound/weapons/gun/pistol/lock_small.ogg'
-	bolt_drop_sound = 'sound/weapons/gun/pistol/drop_small.ogg'
+	rack_sound = 'sound/items/weapons/gun/pistol/rack_small.ogg'
+	lock_back_sound = 'sound/items/weapons/gun/pistol/lock_small.ogg'
+	bolt_drop_sound = 'sound/items/weapons/gun/pistol/drop_small.ogg'
 	fire_sound_volume = 100
 	cost = 55
 
@@ -247,15 +247,15 @@
 	actions_types = list()
 	bolt_type = BOLT_TYPE_LOCKING
 	fire_sound = 'code/modules/wod13/sounds/glock.ogg'
-	dry_fire_sound = 'sound/weapons/gun/pistol/dry_fire.ogg'
-	load_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
-	load_empty_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
-	eject_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
-	eject_empty_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
+	dry_fire_sound = 'sound/items/weapons/gun/pistol/dry_fire.ogg'
+	load_sound = 'sound/items/weapons/gun/pistol/mag_insert.ogg'
+	load_empty_sound = 'sound/items/weapons/gun/pistol/mag_insert.ogg'
+	eject_sound = 'sound/items/weapons/gun/pistol/mag_release.ogg'
+	eject_empty_sound = 'sound/items/weapons/gun/pistol/mag_release.ogg'
 	vary_fire_sound = FALSE
-	rack_sound = 'sound/weapons/gun/pistol/rack_small.ogg'
-	lock_back_sound = 'sound/weapons/gun/pistol/lock_small.ogg'
-	bolt_drop_sound = 'sound/weapons/gun/pistol/drop_small.ogg'
+	rack_sound = 'sound/items/weapons/gun/pistol/rack_small.ogg'
+	lock_back_sound = 'sound/items/weapons/gun/pistol/lock_small.ogg'
+	bolt_drop_sound = 'sound/items/weapons/gun/pistol/drop_small.ogg'
 	fire_sound_volume = 100
 	cost = 70
 
@@ -285,15 +285,15 @@
 	actions_types = list()
 	bolt_type = BOLT_TYPE_LOCKING
 	fire_sound = 'code/modules/wod13/sounds/glock.ogg'
-	dry_fire_sound = 'sound/weapons/gun/pistol/dry_fire.ogg'
-	load_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
-	load_empty_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
-	eject_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
-	eject_empty_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
+	dry_fire_sound = 'sound/items/weapons/gun/pistol/dry_fire.ogg'
+	load_sound = 'sound/items/weapons/gun/pistol/mag_insert.ogg'
+	load_empty_sound = 'sound/items/weapons/gun/pistol/mag_insert.ogg'
+	eject_sound = 'sound/items/weapons/gun/pistol/mag_release.ogg'
+	eject_empty_sound = 'sound/items/weapons/gun/pistol/mag_release.ogg'
 	vary_fire_sound = FALSE
-	rack_sound = 'sound/weapons/gun/pistol/rack_small.ogg'
-	lock_back_sound = 'sound/weapons/gun/pistol/lock_small.ogg'
-	bolt_drop_sound = 'sound/weapons/gun/pistol/drop_small.ogg'
+	rack_sound = 'sound/items/weapons/gun/pistol/rack_small.ogg'
+	lock_back_sound = 'sound/items/weapons/gun/pistol/lock_small.ogg'
+	bolt_drop_sound = 'sound/items/weapons/gun/pistol/drop_small.ogg'
 	fire_sound_volume = 100
 	cost = 150
 
@@ -323,7 +323,7 @@
 	bolt_type = BOLT_TYPE_OPEN
 	show_bolt_icon = FALSE
 	mag_display = TRUE
-	rack_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
+	rack_sound = 'sound/items/weapons/gun/pistol/slide_lock.ogg'
 	fire_sound = 'code/modules/wod13/sounds/uzi.ogg'
 	cost = 175
 
@@ -353,7 +353,7 @@
 	bolt_type = BOLT_TYPE_LOCKING
 	show_bolt_icon = FALSE
 	mag_display = TRUE
-	rack_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
+	rack_sound = 'sound/items/weapons/gun/pistol/slide_lock.ogg'
 	fire_sound = 'code/modules/wod13/sounds/mp5.ogg'
 	cost = 200
 
@@ -512,8 +512,8 @@
 	fire_sound = 'code/modules/wod13/sounds/sniper.ogg'
 	fire_sound_volume = 90
 	vary_fire_sound = FALSE
-	rack_sound = 'sound/weapons/gun/rifle/bolt_out.ogg'
-	bolt_drop_sound = 'sound/weapons/gun/rifle/bolt_in.ogg'
+	rack_sound = 'sound/items/weapons/gun/rifle/bolt_out.ogg'
+	bolt_drop_sound = 'sound/items/weapons/gun/rifle/bolt_in.ogg'
 	tac_reloads = FALSE
 	fire_delay = 40
 	burst_size = 1

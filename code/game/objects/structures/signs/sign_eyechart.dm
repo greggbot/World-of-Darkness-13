@@ -12,7 +12,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/eyechart, 32)
 	if(isobserver(user))
 		return
 
-	if(!user.can_read(src, READING_CHECK_LITERACY, silent = TRUE) || !user.has_language(/datum/language/common, UNDERSTOOD_LANGUAGE))
+	if(!user.can_read(src, READING_CHECK_LITERACY, silent = TRUE) || !user.has_language(/datum/language/english, UNDERSTOOD_LANGUAGE))
 		if(!user.is_blind())
 			. += "<hr>You gaze at the wall of symbols, trying to make sense of them..."
 			. += span_warning("...But you don't actually know what any of them mean.")

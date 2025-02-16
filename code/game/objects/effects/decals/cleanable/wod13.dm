@@ -12,19 +12,22 @@
 	alpha = 64
 	color = "#c6845b"
 
+/obj/effect/decal/cleanable/gasoline/Initialize()
+	. = ..()
+	RegisterSignals(src, list(COMSIG_MOVABLE_CROSS, COMSIG_MOVABLE_CROSS_OVER), PROC_REF(gasoline_crossed))
+
 /obj/effect/decal/cleanable/gasoline/update_icon(updates=ALL)
 	. = ..()
 	QUEUE_SMOOTH(src)
 	QUEUE_SMOOTH_NEIGHBORS(src)
 
-/obj/effect/decal/cleanable/gasoline/Crossed(atom/movable/AM, oldloc)
-	if(isliving(AM))
-		var/mob/living/L = AM
+/obj/effect/decal/cleanable/gasoline/proc/gasoline_crossed(datum/source, atom/singed)
+	if(isliving(source))
+		var/mob/living/L = source
 		if(L.on_fire)
 			var/obj/effect/fire/F = locate() in get_turf(src)
 			if(!F)
 				new /obj/effect/fire(get_turf(src))
-	..(AM)
 
 /obj/effect/decal/cleanable/gasoline/Initialize()
 	. = ..()

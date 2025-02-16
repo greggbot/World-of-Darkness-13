@@ -8,7 +8,7 @@
 	flag = BULLET
 	reflectable = NONE
 	ricochets_max = 0
-	hitsound = 'sound/weapons/pierce.ogg'
+	hitsound = 'sound/items/weapons/pierce.ogg'
 	hitsound_wall = "ricochet"
 	sharpness = SHARP_POINTY
 	impact_effect_type = /obj/effect/temp_visual/impact_effect
@@ -96,7 +96,7 @@
 	if(iscarbon(target))
 		var/mob/living/carbon/hit_person = target
 		if(hit_person.storyteller_roll(
-			dice = hit_person.get_total_physique() + min(hit_person.get_total_dexterity(), hit_person.get_total_athletics()),
+			dice = hit_person.get_total_strength() + min(hit_person.get_total_dexterity(), hit_person.get_total_athletics()),
 			difficulty = 3 + (!isnull(firer) ? rand(1,2) : 0)
 		) == ROLL_FAILURE)
 			hit_person.Knockdown(20)

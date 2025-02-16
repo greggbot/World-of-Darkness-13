@@ -232,6 +232,7 @@
 #define SPACEVINE_MOB_LAYER 4.7
 
 // Intermediate layer used by both GAME_PLANE and ABOVE_GAME_PLANE
+#define ABOVE_ALL_MOB_LAYERS_LAYER 4.75
 #define ABOVE_ALL_MOB_LAYER 4.8
 
 // ABOVE_GAME_PLANE layers

@@ -5,16 +5,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = " the Traditions"
-	selection_color = "#4f0404"
 
 	outfit = /datum/outfit/job/malkav
 
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_MALKAVIAN
-	exp_type_department = EXP_TYPE_COUNCIL
+	exp_granted_type = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
 	allowed_bloodlines = list("Malkavian")
@@ -56,16 +55,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = " the Traditions"
-	selection_color = "#4f0404"
 
 	outfit = /datum/outfit/job/nosferatu
 
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_NOSFERATU
-	exp_type_department = EXP_TYPE_COUNCIL
+	exp_granted_type = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
 	allowed_bloodlines = list("Nosferatu")
@@ -103,16 +101,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = " the Traditions"
-	selection_color = "#4f0404"
 
 	outfit = /datum/outfit/job/ventrue
 
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_VENTRUE
-	exp_type_department = EXP_TYPE_COUNCIL
+	exp_granted_type = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
 	allowed_bloodlines = list("Ventrue")
@@ -149,16 +146,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = " the Traditions"
-	selection_color = "#4f0404"
 
 	outfit = /datum/outfit/job/toreador
 
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_TOREADOR
-	exp_type_department = EXP_TYPE_COUNCIL
+	exp_granted_type = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
 	allowed_bloodlines = list("Toreador")
@@ -197,16 +193,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = " the Traditions"
-	selection_color = "#4f0404"
 
 	outfit = /datum/outfit/job/brujah
 
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_BRUJAH
-	exp_type_department = EXP_TYPE_COUNCIL
+	exp_granted_type = EXP_TYPE_COUNCIL
 
 	allowed_species = list("Vampire")
 	allowed_bloodlines = list("Brujah")

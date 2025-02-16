@@ -42,10 +42,10 @@
 
 	dummy.set_species(/datum/species/lizard/silverscale)
 
-	TEST_ASSERT(!dummy.has_language(/datum/language/common, SPOKEN_LANGUAGE), \
+	TEST_ASSERT(!dummy.has_language(/datum/language/english, SPOKEN_LANGUAGE), \
 		"Changing a mob's species from one which speaks common to one which does not should remove the language!")
 
-	TEST_ASSERT(dummy.has_language(/datum/language/common, UNDERSTOOD_LANGUAGE), \
+	TEST_ASSERT(dummy.has_language(/datum/language/english, UNDERSTOOD_LANGUAGE), \
 		"Changing a mob's species from one which understands common another which does should not remove the language!")
 
 	TEST_ASSERT(length(holder.spoken_languages) == 2, \

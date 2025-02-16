@@ -100,6 +100,8 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 
 #define isdummy(A) (istype(A, /mob/living/carbon/human/dummy))
 
+#define isnpc(A) (istype(A, /mob/living/carbon/human/npc))
+
 //Human sub-species
 #define isabductor(A) (is_species(A, /datum/species/abductor))
 #define isgolem(A) (is_species(A, /datum/species/golem))
@@ -120,9 +122,20 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 #define ismonkey(A) (is_species(A, /datum/species/monkey))
 #define isandroid(A) (is_species(A, /datum/species/android))
 #define isnightmare(A) (is_species(A, /datum/species/shadow/nightmare))
+#define iskindred(A) (is_species(A,/datum/species/kindred))
+#define iscathayan(A) (is_species(A,/datum/species/kuei_jin))
+#define isghoul(A) (is_species(A,/datum/species/ghoul))
+#define isgarou(A) (is_species(A,/datum/species/garou))
 
 
 //More carbon mobs
+
+#define iswerewolf(A) (istype(A, /mob/living/carbon/werewolf))
+
+#define iscrinos(A) (istype(A, /mob/living/carbon/werewolf/crinos))
+
+#define islupus(A) (istype(A, /mob/living/carbon/werewolf/lupus))
+
 #define isalien(A) (istype(A, /mob/living/carbon/alien))
 
 #define islarva(A) (istype(A, /mob/living/carbon/alien/larva))

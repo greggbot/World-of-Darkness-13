@@ -407,7 +407,7 @@
 	. = ..()
 	var/mob/living/N = user
 	if(locked)
-		if(N.a_intent != INTENT_HARM)
+		if(!(N.combat_mode))
 			playsound(src, lock_sound, 75, TRUE)
 			to_chat(user, "<span class='warning'>[src] is locked!</span>")
 		else

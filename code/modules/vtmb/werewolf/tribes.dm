@@ -5,7 +5,7 @@
 	rage_req = 2
 	gnosis_req = 1
 
-/datum/action/gift/stoic_pose/Trigger()
+/datum/action/gift/stoic_pose/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		playsound(get_turf(owner), 'code/modules/wod13/sounds/ice_blocking.ogg', 100, FALSE)
@@ -39,7 +39,7 @@
 	rage_req = 1
 	//gnosis_req = 1
 
-/datum/action/gift/freezing_wind/Trigger()
+/datum/action/gift/freezing_wind/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		playsound(get_turf(owner), 'code/modules/wod13/sounds/wind_cast.ogg', 100, FALSE)
@@ -59,7 +59,7 @@
 	rage_req = 2
 	gnosis_req = 1
 
-/datum/action/gift/bloody_feast/Trigger()
+/datum/action/gift/bloody_feast/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/C = owner
@@ -76,7 +76,7 @@
 	desc = "Garou creates an aura of very toxic smell, which disorientates everyone around."
 	button_icon_state = "stinky_fur"
 
-/datum/action/gift/stinky_fur/Trigger()
+/datum/action/gift/stinky_fur/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		playsound(get_turf(owner), 'code/modules/wod13/sounds/necromancy.ogg', 75, FALSE)
@@ -93,7 +93,7 @@
 	button_icon_state = "venom_claws"
 	rage_req = 1
 
-/datum/action/gift/venom_claws/Trigger()
+/datum/action/gift/venom_claws/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		if(ishuman(owner))
@@ -128,7 +128,7 @@
 	rage_req = 2
 	gnosis_req = 1
 
-/datum/action/gift/burning_scars/Trigger()
+/datum/action/gift/burning_scars/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		owner.visible_message("<span class='danger'>[owner.name] crackles with heat!</span>", "<span class='danger'>You crackle with heat, charging up your Gift!</span>")
@@ -147,7 +147,7 @@
 	button_icon_state = "smooth_move"
 	//rage_req = 1   somewhat useless gift with MMB pounce
 
-/datum/action/gift/smooth_move/Trigger()
+/datum/action/gift/smooth_move/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/turf/T = get_turf(get_step(get_step(get_step(owner, owner.dir), owner.dir), owner.dir))
@@ -167,7 +167,7 @@
 	rage_req = 2
 	gnosis_req = 1
 
-/datum/action/gift/digital_feelings/Trigger()
+/datum/action/gift/digital_feelings/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		owner.visible_message("<span class='danger'>[owner.name] crackles with static electricity!</span>", "<span class='danger'>You crackle with static electricity, charging up your Gift!</span>")
@@ -185,7 +185,7 @@
 	rage_req = 2
 	gnosis_req = 1
 
-/datum/action/gift/elemental_improvement/Trigger()
+/datum/action/gift/elemental_improvement/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		animate(owner, color = "#6a839a", time = 10)

@@ -5,7 +5,7 @@ GLOBAL_LIST_EMPTY(p25_radios)
 /obj/machinery/p25transceiver
 	name = "P25 transceiver"
 	desc = "A stationary P25 radio transceiver that handles radio connections."
-	icon = 'icons/obj/radio.dmi'
+	icon = 'code/modules/vtmb/electronics/radio.dmi'
 	icon_state = "walkietalkie"
 	anchored = TRUE
 	density = TRUE
@@ -90,7 +90,6 @@ GLOBAL_LIST_EMPTY(p25_radios)
 		popup.set_content(dat)
 		popup.open()
 
-	updateDialog()
 
 /obj/machinery/p25transceiver/proc/register_callsign(obj/item/p25radio/radio, callsign, mob/user)
 	if(!callsign || !istext(callsign))
@@ -307,8 +306,6 @@ GLOBAL_LIST_EMPTY(p25_radios)
 		popup.set_content(dat)
 		popup.open()
 
-	updateDialog()
-
 /obj/machinery/p25transceiver/police/proc/broadcast_emergency(obj/item/p25radio/police/source)
 	if(!active || !source)
 		return FALSE
@@ -384,7 +381,7 @@ GLOBAL_LIST_EMPTY(p25_radios)
 /obj/item/p25radio
 	name = "P25 radio"
 	desc = "A rugged, high-performance two-way radio designed for secure, clear communication in demanding environments, featuring a durable shoulder microphone for hands-free operation. Use .r to transmit through the radio and alt-click to toggle radio receiving."
-	icon = 'icons/obj/radio.dmi'
+	icon = 'code/modules/vtmb/electronics/radio.dmi'
 	icon_state = "p25"
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_EARS
@@ -393,7 +390,6 @@ GLOBAL_LIST_EMPTY(p25_radios)
 	var/linked_network = null
 	var/obj/machinery/p25transceiver/linked_transceiver = null
 	var/callsign = null
-	flags_1 = HEAR_1
 	var/receiving = TRUE
 	var/in_restricted_area = FALSE
 	var/powered = TRUE  // New var to track power state
@@ -575,18 +571,18 @@ GLOBAL_LIST_EMPTY(p25_radios)
 		to_chat(M, formatted)
 	playsound(src, 'sound/effects/radioclick.ogg', 30, FALSE)
 
-/obj/item/p25radio/AltClick(mob/user)
-	if(!user.canUseTopic(src, BE_CLOSE))
+/obj/item/p25radio/click_alt(mob/user)
+	if(!user.can_perform_action(src, interaction_flags_click | SILENT_ADJACENCY))
 		return
 	powered = !powered
 	to_chat(user, "<span class='notice'>You turn the radio [powered ? "ON" : "OFF"].</span>")
 	playsound(src, 'sound/effects/radioonn.ogg', 100, FALSE)
 
-/obj/item/p25radio/Moved()
+/obj/item/p25radio/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
 	. = ..()
 	check_signal()
 
-/mob/living/Moved()
+/mob/living/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
 	. = ..()
 	var/obj/item/p25radio/belt_radio = get_item_by_slot(ITEM_SLOT_BELT)
 	if(istype(belt_radio))
@@ -632,8 +628,8 @@ GLOBAL_LIST_EMPTY(p25_radios)
 		return "Patrol callsign must be between 100 - 499"
 	return TRUE
 
-/obj/item/p25radio/police/AltClick(mob/user)
-	if(!user.canUseTopic(src, BE_CLOSE))
+/obj/item/p25radio/police/click_alt(mob/user)
+	if(!user.can_perform_action(src, interaction_flags_click | SILENT_ADJACENCY))
 		return
 
 	var/list/choices = list(
@@ -643,7 +639,7 @@ GLOBAL_LIST_EMPTY(p25_radios)
 	)
 
 	var/choice = input(user, "Select an option:", "[src]") as null|anything in choices
-	if(!choice || !user.canUseTopic(src, BE_CLOSE))
+	if(!choice || !user.can_perform_action(src, interaction_flags_click | SILENT_ADJACENCY))
 		return
 
 	switch(choices[choice])

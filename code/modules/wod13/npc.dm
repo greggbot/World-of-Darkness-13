@@ -256,13 +256,13 @@
 /mob/living/carbon/human/npc/proc/AssignSocialRole(var/datum/socialrole/S, var/dont_random = FALSE)
 	if(!S)
 		return
-	physique = rand(1, max_stat)
+	strength = rand(1, max_stat)
 	social = rand(1, max_stat)
 	mentality = rand(1, max_stat)
 	lockpicking = rand(1, max_stat)
 	blood = rand(1, 2)
-	maxHealth = round(initial(maxHealth)+(initial(maxHealth)/3)*(physique))
-	health = round(initial(health)+(initial(health)/3)*(physique))
+	maxHealth = round(initial(maxHealth)+(initial(maxHealth)/3)*(strength))
+	health = round(initial(health)+(initial(health)/3)*(strength))
 	last_health = health
 	socialrole = new S()
 	if(GLOB.winter && !length(socialrole.suits))
@@ -476,14 +476,12 @@
 
 /mob/living/carbon/human/npc/attack_hand(mob/user)
 	if(user)
-		if(user.a_intent == INTENT_HELP)
-			Annoy(user)
-		if(user.a_intent == INTENT_DISARM)
-			Aggro(user, TRUE)
-		if(user.a_intent == INTENT_HARM)
+		if(user.combat_mode)
 			for(var/mob/living/carbon/human/npc/NEPIC in oviewers(7, src))
 				NEPIC.Aggro(user)
 			Aggro(user, TRUE)
+		else
+			Annoy(user)
 	..()
 
 /mob/living/carbon/human/npc/on_hit(obj/projectile/P)

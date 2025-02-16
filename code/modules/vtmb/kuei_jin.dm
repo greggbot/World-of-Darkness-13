@@ -136,7 +136,7 @@
 	check_flags = NONE
 	var/mob/living/carbon/human/host
 
-/datum/action/kueijininfo/Trigger()
+/datum/action/kueijininfo/Trigger(trigger_flags)
 	if(host)
 		var/dat = {"
 			<style type="text/css">
@@ -200,7 +200,7 @@
 		dat += "<b>Yin/Yang</b>[host.max_yin_chi]/[host.max_yang_chi]<BR>"
 		dat += "<b>Hun/P'o</b>[host.mind.dharma?.Hun]/[host.max_demon_chi]<BR>"
 
-		dat += "<b>Physique</b>: [host.physique]<BR>"
+		dat += "<b>strength</b>: [host.strength]<BR>"
 		dat += "<b>Dexterity</b>: [host.dexterity]<BR>"
 		dat += "<b>Social</b>: [host.social]<BR>"
 		dat += "<b>Mentality</b>: [host.mentality]<BR>"
@@ -239,22 +239,22 @@
 			for(var/i in host.knowscontacts)
 				dat += "-[i] contact<BR>"
 		for(var/datum/vtm_bank_account/account in GLOB.bank_account_list)
-			if(host.bank_id == account.bank_id)
+			if(host.account_id == account.bank_id)
 				dat += "<b>My bank account code is: [account.code]</b><BR>"
 		host << browse(dat, "window=vampire;size=400x450;border=1;can_resize=1;can_minimize=0")
 		onclose(host, "vampire", src)
 
-/datum/species/kuei_jin/on_species_gain(mob/living/carbon/human/C)
+/datum/species/kuei_jin/on_species_gain(mob/living/carbon/human/human_who_gained_species, datum/species/old_species, pref_load, regenerate_icons)
 	. = ..()
-	C.update_body(0)
-	C.last_experience = world.time + 5 MINUTES
+	human_who_gained_species.update_body(0)
+	human_who_gained_species.last_experience = world.time + 5 MINUTES
 	var/datum/action/kueijininfo/infor = new()
-	infor.host = C
-	infor.Grant(C)
+	infor.host = human_who_gained_species
+	infor.Grant(human_who_gained_species)
 	var/datum/action/reanimate_yang/YG = new()
-	YG.Grant(C)
+	YG.Grant(human_who_gained_species)
 	var/datum/action/reanimate_yin/YN = new()
-	YN.Grant(C)
+	YN.Grant(human_who_gained_species)
 
 /datum/species/kuei_jin/on_species_loss(mob/living/carbon/human/C, datum/species/new_species, pref_load)
 	. = ..()
@@ -419,12 +419,11 @@
 	button_icon_state = "breathe"
 	button_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	background_icon_state = "discipline"
-	icon_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	var/cooldown = 10 SECONDS
 	COOLDOWN_DECLARE(use)
 
-/datum/action/breathe_chi/Trigger()
+/datum/action/breathe_chi/Trigger(trigger_flags)
 	if(!COOLDOWN_FINISHED(src, use))
 		to_chat(usr, "<span class='warning'>You need to wait [DisplayTimeText(COOLDOWN_TIMELEFT(src, use))] to Inhale Chi again!</span>")
 		return
@@ -502,12 +501,11 @@
 	button_icon_state = "area"
 	button_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	background_icon_state = "discipline"
-	icon_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	var/cooldown = 30 SECONDS
 	COOLDOWN_DECLARE(use)
 
-/datum/action/area_chi/Trigger()
+/datum/action/area_chi/Trigger(trigger_flags)
 	if(!COOLDOWN_FINISHED(src, use))
 		to_chat(usr, "<span class='warning'>You need to wait [DisplayTimeText(COOLDOWN_TIMELEFT(src, use))] to gather Chi again!</span>")
 		return
@@ -536,12 +534,11 @@
 	button_icon_state = "yin"
 	button_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	background_icon_state = "discipline"
-	icon_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	vampiric = TRUE
 	var/cooldown = 3 SECONDS
 
-/datum/action/reanimate_yin/Trigger()
+/datum/action/reanimate_yin/Trigger(trigger_flags)
 	if(!istype(owner, /mob/living/carbon/human))
 		return
 	var/mob/living/carbon/human/kueijin = usr
@@ -595,12 +592,11 @@
 	button_icon_state = "yang"
 	button_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	background_icon_state = "discipline"
-	icon_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	vampiric = TRUE
 	var/cooldown = 3 SECONDS
 
-/datum/action/reanimate_yang/Trigger()
+/datum/action/reanimate_yang/Trigger(trigger_flags)
 	if(!istype(owner, /mob/living/carbon/human))
 		return
 	var/mob/living/carbon/human/kueijin = usr
@@ -654,10 +650,9 @@
 	button_icon_state = "assign"
 	button_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	background_icon_state = "discipline"
-	icon_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 
-/datum/action/rebalance/Trigger()
+/datum/action/rebalance/Trigger(trigger_flags)
 	if(!istype(owner, /mob/living/carbon/human))
 		return
 	var/mob/living/carbon/human/kueijin = usr

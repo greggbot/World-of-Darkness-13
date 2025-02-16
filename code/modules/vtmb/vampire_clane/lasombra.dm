@@ -46,7 +46,7 @@
 	vampiric = TRUE
 	var/abuse_fix = 0
 
-/datum/action/lastentacles/Trigger()
+/datum/action/lastentacles/Trigger(trigger_flags)
 	. = ..()
 	if(abuse_fix+100 > world.time)
 		return
@@ -83,7 +83,7 @@
 	vampiric = TRUE
 	var/abuse_fix = 0
 
-/datum/action/lasarmor/Trigger()
+/datum/action/lasarmor/Trigger(trigger_flags)
 	. = ..()
 	if(abuse_fix+250 > world.time)
 		return
@@ -112,7 +112,7 @@
 	vampiric = TRUE
 	var/abuse_fix = 0
 
-/datum/action/shadowcontrol/Trigger()
+/datum/action/shadowcontrol/Trigger(trigger_flags)
 	. = ..()
 	if((abuse_fix + 10 SECONDS) > world.time)
 		return
@@ -150,7 +150,7 @@
 	var/drawing = FALSE
 	var/level = 1
 
-/datum/action/mysticism/Trigger()
+/datum/action/mysticism/Trigger(trigger_flags)
 	. = ..()
 	var/mob/living/carbon/human/H = owner
 	if(H.bloodpool < 2)

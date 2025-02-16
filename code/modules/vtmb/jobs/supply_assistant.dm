@@ -6,14 +6,11 @@
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Dealer"
-	selection_color = "#edc009"
-	exp_type_department = EXP_TYPE_WAREHOUSE
+	exp_granted_type = EXP_TYPE_WAREHOUSE
 
 	outfit = /datum/outfit/job/supply
 
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM, ACCESS_MECH_MINING)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_CAR
 	display_order = JOB_DISPLAY_ORDER_SUPPLY
 	bounty_types = CIV_JOB_RANDOM

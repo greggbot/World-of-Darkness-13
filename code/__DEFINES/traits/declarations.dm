@@ -85,6 +85,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_STASIS "in_stasis"
 /// Makes the owner appear as dead to most forms of medical examination
 #define TRAIT_FAKEDEATH "fakedeath"
+#define TRAIT_TORPOR "torpor" //A special form of fakedeath that vampires go into rather than dying above -200 health
 #define TRAIT_DISFIGURED "disfigured"
 /// "Magic" trait that blocks the mob from moving or interacting with anything. Used for transient stuff like mob transformations or incorporality in special cases.
 /// Will block movement, `Life()` (!!!), and other stuff based on the mob.
@@ -1438,9 +1439,26 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 ////////////////////// START WOD13 TRAIT DECLARATIONS //////////////////////////////////////////////
 
+//#define TRAIT_ACROBATIC			"acrobatic"
+#define TRAIT_DANCER			"dancer"
 #define TRAIT_EXP_DRIVER		"experienced_driver"
-
-
-
+#define TRAIT_BONE_KEY			"bone_key"
+#define TRAIT_BLOODY_LOVER		"bloody_lover"
+#define TRAIT_TOUGH_FLESH		"tough_flesh"
+#define TRAIT_BLOODY_SUCKER		"bloody_sucker"
+#define TRAIT_NON_INT			"non_intellectual"
+#define TRAIT_COFFIN_THERAPY	"coffin_therapy"
+#define TRAIT_RUBICON			"rubicon"
+#define TRAIT_HUNGRY			"hungry"
+#define TRAIT_STAKE_RESISTANT	"stake_resistant"
+#define TRAIT_LAZY				"lazy"
+#define TRAIT_HOMOSEXUAL		"homosexual"
+#define TRAIT_HUNTED			"hunted"
+#define TRAIT_VIOLATOR			"violator"
+#define TRAIT_DIABLERIE			"diablerie"
+#define TRAIT_GULLET			"gullet"
+#define TRAIT_CHARMER			"charmer"
+#define TRAIT_UNMASQUERADE		"unmasquerade"	//For tzi clothing
+#define TRAIT_NONMASQUERADE		"nonmasquerade"	//For tzi mods
 
 // END TRAIT DEFINES

@@ -121,11 +121,11 @@
 	qdel(HS)
 
 
-/obj/effect/mob_spawn/human/citizen
+/obj/effect/mob_spawn/ghost_role/human/citizen
 	name = "just a civilian"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a civillian"
-	icon = 'icons/obj/lavaland/spawners.dmi'
+	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "cryostasis_sleeper"
 	outfit = /datum/outfit/civillian1
 	roundstart = FALSE
@@ -136,7 +136,7 @@
 	flavour_text = "Each day you notice some weird shit going at night. Each day, new corpses, new missing people, new police-don't-give-a-fuck. This time you definitely should go and see the mysterious powers of the night... or not? You are too afraid because you are not aware of it."
 	assignedrole = "Civillian"
 
-/obj/effect/mob_spawn/human/citizen/Initialize(mapload)
+/obj/effect/mob_spawn/ghost_role/human/citizen/Initialize(mapload)
 	. = ..()
 	if(prob(50))
 		qdel(src)
@@ -150,7 +150,8 @@
 		if(4)
 			outfit = /datum/outfit/civillian4
 
-/obj/effect/mob_spawn/human/citizen/special(mob/living/new_spawn)
+/obj/effect/mob_spawn/ghost_role/human/citizen/special(mob/living/new_spawn)
+	. = ..()
 	var/my_name = "Tyler"
 	if(new_spawn.gender == MALE)
 		my_name = pick(GLOB.first_names_male)
@@ -199,22 +200,22 @@
 	l_hand = /obj/item/vamp/keys/npc/fix
 	back = /obj/item/storage/backpack/satchel
 
-/obj/effect/mob_spawn/human/corpse/ciz1
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz1
 	name = "Citizen"
 	id_job = "Citizen"
 	outfit = /datum/outfit/civillian1
 
-/obj/effect/mob_spawn/human/corpse/ciz2
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz2
 	name = "Citizen"
 	id_job = "Citizen"
 	outfit = /datum/outfit/civillian2
 
-/obj/effect/mob_spawn/human/corpse/ciz3
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz3
 	name = "Citizen"
 	id_job = "Citizen"
 	outfit = /datum/outfit/civillian3
 
-/obj/effect/mob_spawn/human/corpse/ciz4
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz4
 	name = "Citizen"
 	id_job = "Citizen"
 	outfit = /datum/outfit/civillian4
@@ -232,7 +233,7 @@
 	id = /obj/item/card/id/syndicate
 // TRIAD
 
-/obj/effect/mob_spawn/human/triad_soldier
+/obj/effect/mob_spawn/ghost_role/human/triad_soldier
 	name = "a triad soldier"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a triad soldier"
@@ -247,7 +248,8 @@
 	flavour_text = "You woke up because of the stupid washing machines. Probably better that you go and check what the gang's up to..."
 	assignedrole = "Triad Soldier"
 
-/obj/effect/mob_spawn/human/triad_soldier/special(mob/living/new_spawn)
+/obj/effect/mob_spawn/ghost_role/human/triad_soldier/special(mob/living/new_spawn)
+	. = ..()
 	var/my_name = "Tyler"
 	if(new_spawn.gender == MALE)
 		my_name = pick(GLOB.first_names_male_triad)
@@ -269,7 +271,7 @@
 	r_hand = /obj/item/gun/ballistic/automatic/vampire/glock19
 	back = /obj/item/storage/backpack/satchel
 //
-/obj/effect/mob_spawn/human/police
+/obj/effect/mob_spawn/ghost_role/human/police
 	name = "a police officer"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a police officer"
@@ -284,7 +286,8 @@
 	flavour_text = "You woke up on your regular night shift and noticed something strange happening in the city. Only man interested in finding the truth is you..."
 	assignedrole = "Police Officer"
 
-/obj/effect/mob_spawn/human/police/special(mob/living/new_spawn)
+/obj/effect/mob_spawn/ghost_role/human/police/special(mob/living/new_spawn)
+	. = ..()
 	var/my_name = "Tyler"
 	if(new_spawn.gender == MALE)
 		my_name = pick(GLOB.first_names_male)
@@ -306,7 +309,7 @@
 	r_hand = /obj/item/police_radio
 	back = /obj/item/storage/backpack/satchel
 
-/obj/effect/mob_spawn/human/achaplain
+/obj/effect/mob_spawn/ghost_role/human/achaplain
 	name = "a chaplain"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a chaplain"
@@ -321,7 +324,8 @@
 	flavour_text = "You are a man of true Faith, but people in this city are not. You should protect the House of God..."
 	assignedrole = "Chaplain"
 
-/obj/effect/mob_spawn/human/achaplain/special(mob/living/new_spawn)
+/obj/effect/mob_spawn/ghost_role/human/achaplain/special(mob/living/new_spawn)
+	. = ..()
 	var/my_name = "Tyler"
 	if(new_spawn.gender == MALE)
 		my_name = pick(GLOB.first_names_male)
@@ -343,22 +347,21 @@
 	back = /obj/item/storage/backpack/satchel
 
 //Officer Chunk ghostspawn role
-/obj/effect/mob_spawn/human/chunkguard
+/obj/effect/mob_spawn/ghost_role/human/chunkguard
 	name = "Millenium Tower Security Guard"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a Millenium Tower Security Guard"
-	icon = 'icons/obj/lavaland/spawners.dmi'
-	icon_state = "cryostasis_sleeper"
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper"
 	outfit = /datum/outfit/chunk
-	roundstart = FALSE
-	death = FALSE
-	random = FALSE
 	mob_species = /datum/species/human
 	short_desc = "You are working the night shift on Millenium Towers, just like any other night...."
 	flavour_text = "You are up late protecting Millenium Towers on behalf of your pasty-faced, but filthy rich, boss. Come to think of it, you only ever see him at night..."
 	assignedrole = "Millenium Tower Secuity Guard"
+	spawner_job_path = /datum/job/
 
-/obj/effect/mob_spawn/human/chunkguard/special(mob/living/new_spawn)
+/obj/effect/mob_spawn/ghost_role/human/chunkguard/special(mob/living/new_spawn)
+	. = ..()
 	var/my_name = "Tyler"
 	if(new_spawn.gender == MALE)
 		my_name = pick(GLOB.first_names_male)
@@ -379,7 +382,6 @@
 
 /obj/item/card/id/chunk
 	name = "Millenium Tower Security ID"
-	id_type_name = "Security ID"
 	desc = "An ID showing propensity for donuts"
 	icon = 'code/modules/wod13/items.dmi'
 	icon_state = "id2"
@@ -390,5 +392,3 @@
 	worn_icon = 'code/modules/wod13/worn.dmi'
 	worn_icon_state = "id2"
 
-/obj/item/card/id/chunk/AltClick(mob/user)
-	return

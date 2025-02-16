@@ -90,7 +90,6 @@ SUBSYSTEM_DEF(beastmastering)
 	attack_verb_continuous = "bites"
 	attack_verb_simple = "bite"
 	attack_sound = 'code/modules/wod13/sounds/dog.ogg'
-	a_intent = INTENT_HARM
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 2
@@ -251,7 +250,7 @@ SUBSYSTEM_DEF(beastmastering)
 	var/cool_down = 0
 	var/following = FALSE
 
-/datum/action/beastmaster_stay/Trigger()
+/datum/action/beastmaster_stay/Trigger(trigger_flags)
 	. = ..()
 	if(ishuman(owner))
 		if(cool_down+10 >= world.time)
@@ -276,7 +275,7 @@ SUBSYSTEM_DEF(beastmastering)
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	var/cool_down = 0
 
-/datum/action/beastmaster_deaggro/Trigger()
+/datum/action/beastmaster_deaggro/Trigger(trigger_flags)
 	. = ..()
 	if(ishuman(owner))
 		if(cool_down+10 >= world.time)
@@ -286,4 +285,3 @@ SUBSYSTEM_DEF(beastmastering)
 		for(var/mob/living/simple_animal/hostile/beastmaster/B in H.beastmaster)
 			B.enemies = list()
 			B.targa = null
-//			B.LosePatience()

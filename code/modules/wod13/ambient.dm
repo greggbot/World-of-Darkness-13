@@ -16,8 +16,8 @@
 	icon = 'code/modules/wod13/tiles.dmi'
 	icon_state = "sewer"
 	requires_power = FALSE
-	has_gravity = STANDARD_GRAVITY
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	default_gravity = STANDARD_GRAVITY
+	area_has_base_lighting = TRUE
 	wall_rating = VERY_HIGH_WALL_RATING
 	var/music
 	var/upper = TRUE

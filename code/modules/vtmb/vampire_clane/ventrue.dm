@@ -12,7 +12,7 @@
 
 /datum/discipline/dominate/post_gain(mob/living/carbon/human/H)
 	if(level >= 1)
-		var/obj/effect/proc_holder/spell/voice_of_god/S = new(H)
+		var/voice_of_god/S = new(H)
 		H.mind.AddSpell(S)
 
 /datum/action/dominate
@@ -23,7 +23,7 @@
 	vampiric = TRUE
 	var/cool_down = 0
 
-/datum/action/dominate/Trigger()
+/datum/action/dominate/Trigger(trigger_flags)
 	. = ..()
 	if((cool_down + 5 SECONDS) >= world.time)
 		return

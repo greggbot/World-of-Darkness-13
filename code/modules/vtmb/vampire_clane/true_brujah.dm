@@ -32,7 +32,7 @@
 	check_flags = AB_CHECK_CONSCIOUS
 	vampiric = TRUE
 
-/datum/action/clock/Trigger()
+/datum/action/clock/Trigger(trigger_flags)
 	. = ..()
 	to_chat(usr, "<b>[SScity_time.timeofnight]</b>")
 
@@ -73,7 +73,7 @@ var/datum/martial_art/cowalker/style
 		M.temporis_visual = FALSE
 		playsound(M.loc, 'code/modules/wod13/sounds/temporis end.ogg', 50, FALSE)
 
-/datum/action/temporis_step/Trigger()
+/datum/action/temporis_step/Trigger(trigger_flags)
 	if(spam_fix + 15 SECONDS > world.time)
 		return
 	var/mob/living/carbon/human/H = owner
@@ -118,7 +118,7 @@ var/datum/martial_art/cowalker/style
 			M.next_move_modifier /= TEMPORIS_ATTACK_SPEED_MODIFIER
 
 
-/datum/action/clotho/Trigger()
+/datum/action/clotho/Trigger(trigger_flags)
 	if(spam_fix + 15 SECONDS > world.time)
 		return
 	var/mob/living/carbon/human/H = owner

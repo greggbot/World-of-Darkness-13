@@ -99,7 +99,7 @@
 	newwalker.undershirt = "Nude"
 	newwalker.underwear = "Nude"
 	newwalker.update_body()
-	newwalker.remove_language(/datum/language/common)
+	newwalker.remove_language(/datum/language/english)
 	oldmob.mind.transfer_to(newwalker)
 	newwalker.mind.grab_ghost()
 	to_chat(newwalker, "<b>You have been pulled back from beyond the grave, with a new body and renewed purpose. Glory to the Necropolis!</b>")

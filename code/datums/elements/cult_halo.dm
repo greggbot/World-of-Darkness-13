@@ -27,12 +27,12 @@
 		return
 
 	ADD_TRAIT(target, TRAIT_CULT_HALO, CULT_TRAIT)
-	var/mutable_appearance/new_halo_overlay = mutable_appearance('icons/mob/effects/halo.dmi', "halo[rand(1, 6)]", -HALO_LAYER)
+	var/mutable_appearance/new_halo_overlay = mutable_appearance('icons/mob/effects/halo.dmi', "halo[rand(1, 6)]", -FIGHT_LAYER)
 	if (ishuman(target))
 		var/mob/living/carbon/human/human_parent = target
 		new /obj/effect/temp_visual/cult/sparks(get_turf(human_parent), human_parent.dir)
-		human_parent.overlays_standing[HALO_LAYER] = new_halo_overlay
-		human_parent.apply_overlay(HALO_LAYER)
+		human_parent.overlays_standing[FIGHT_LAYER] = new_halo_overlay
+		human_parent.apply_overlay(FIGHT_LAYER)
 	else
 		target.add_overlay(new_halo_overlay)
 
@@ -45,9 +45,9 @@
 	REMOVE_TRAIT(target, TRAIT_CULT_HALO, CULT_TRAIT)
 	if (ishuman(target))
 		var/mob/living/carbon/human/human_parent = target
-		human_parent.remove_overlay(HALO_LAYER)
+		human_parent.remove_overlay(FIGHT_LAYER)
 		human_parent.update_body()
 	else
-		target.cut_overlay(HALO_LAYER)
+		target.cut_overlay(FIGHT_LAYER)
 	UnregisterSignal(target, list(COMSIG_CHANGELING_TRANSFORM, COMSIG_HUMAN_MONKEYIZE, COMSIG_MONKEY_HUMANIZE))
 	return ..()

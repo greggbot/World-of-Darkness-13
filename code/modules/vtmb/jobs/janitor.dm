@@ -6,13 +6,12 @@
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Camarilla."
-	selection_color = "#e3e3e3"
 
 	outfit = /datum/outfit/job/vjanitor
 
 	access = list(ACCESS_JANITOR, ACCESS_MAINT_TUNNELS, ACCESS_MINERAL_STOREROOM)
 	minimal_access = list(ACCESS_JANITOR, ACCESS_MAINT_TUNNELS, ACCESS_MINERAL_STOREROOM)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 
 	allowed_species = list("Vampire", "Ghoul", "Human")

@@ -57,6 +57,11 @@
 	RegisterSignal(src, SIGNAL_ADDTRAIT(TRAIT_SKITTISH), PROC_REF(on_skittish_trait_gain))
 	RegisterSignal(src, SIGNAL_REMOVETRAIT(TRAIT_SKITTISH), PROC_REF(on_skittish_trait_loss))
 
+	RegisterSignal(src, list(
+		SIGNAL_ADDTRAIT(TRAIT_TORPOR),
+		SIGNAL_REMOVETRAIT(TRAIT_TORPOR),
+	), PROC_REF(update_torpor_action))
+
 	RegisterSignals(src, list(SIGNAL_ADDTRAIT(TRAIT_UNDENSE), SIGNAL_REMOVETRAIT(TRAIT_UNDENSE)), PROC_REF(undense_changed))
 	RegisterSignals(src, list(SIGNAL_ADDTRAIT(TRAIT_NEGATES_GRAVITY), SIGNAL_REMOVETRAIT(TRAIT_NEGATES_GRAVITY)), PROC_REF(on_negate_gravity))
 	RegisterSignals(src, list(SIGNAL_ADDTRAIT(TRAIT_IGNORING_GRAVITY), SIGNAL_REMOVETRAIT(TRAIT_IGNORING_GRAVITY)), PROC_REF(on_ignore_gravity))
@@ -231,6 +236,13 @@
 		throw_alert(ALERT_SUCCUMB, /atom/movable/screen/alert/succumb)
 	else
 		clear_alert(ALERT_SUCCUMB)
+
+/mob/living/proc/update_torpor_action()
+	SIGNAL_HANDLER
+	if (HAS_TRAIT(src, TRAIT_TORPOR))
+		throw_alert("untorpor", /atom/movable/screen/alert/untorpor)
+	else
+		clear_alert("untorpor")
 
 ///From [element/movetype_handler/on_movement_type_trait_gain()]
 /mob/living/proc/on_movement_type_flag_enabled(datum/source, flag, old_movement_type)

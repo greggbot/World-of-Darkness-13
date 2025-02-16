@@ -5,7 +5,7 @@
 
 	var/total_cleaned = 0
 
-	var/physique = 1
+	var/strength = 1
 	var/dexterity = 1
 	var/social = 1
 	var/mentality = 1
@@ -13,7 +13,7 @@
 	var/athletics = 0
 	var/blood = 1
 
-	var/additional_physique = 0
+	var/additional_strength = 0
 	var/additional_dexterity = 0
 	var/additional_mentality = 0
 	var/additional_social = 0
@@ -27,9 +27,6 @@
 
 	var/last_message
 	var/total_erp = 0
-
-	var/last_taste_time
-	var/last_taste_text
 
 	var/no_fire_delay = FALSE
 
