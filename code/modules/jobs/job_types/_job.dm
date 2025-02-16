@@ -95,7 +95,7 @@
 	var/list/departments_list = null
 
 	/// Should this job be allowed to be picked for the bureaucratic error event?
-	var/allow_bureaucratic_error = TRUE
+	var/allow_bureaucratic_error = FALSE
 
 	///Is this job affected by weird spawns like the ones from station traits
 	var/random_spawns_possible = TRUE
