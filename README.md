@@ -15,16 +15,16 @@ We are based on the Paradox Interactive World of Darkness(c) gamelines, with adm
 
 If you'd like to contribute to this codebase, consider uncommenting line 1 @ _maps\_basemap.dm for faster initialization.
 
-## Attribution: tgstation
-## The vast majority of our code was written by the maintainers and members of the /tg/station community up to February 3rd, 2021. We regularly pull and port features from /tg/station as well. We would like to officially recognize and pay our respect to the thousands of development hours that created the foundation and continue to create the function of our server.
-## Changes to the below files have taken place to amend references to /tg/station with our own where appropriate. These changes are not intended and should not be interpreted as any attempt to inappropriately misattribute credit for the efforts of the original developers, maintainers, artists, or community managers.
+Attribution: tgstation
+The vast majority of our code was written by the maintainers and members of the /tg/station community up to February 3rd, 2021. We regularly pull and port features from /tg/station as well. We would like to officially recognize and pay our respect to the thousands of development hours that created the foundation and continue to create the function of our server.
+Changes to the below files have taken place to amend references to /tg/station with our own where appropriate. These changes are not intended and should not be interpreted as any attempt to inappropriately misattribute credit for the efforts of the original developers, maintainers, artists, or community managers.
 ---
-## The commit at which this new rebase has diverged from:
-## commit 
-## Author: tgstation-server <tgstation-server@tgstation13.org>
-## Date:   Wed Feb 3 16:50:49 2021 -0800
-##
-##    Automatic changelog generation for PR #56506 [ci skip]
+The commit at which this new rebase has diverged from:
+| Details | Link|
+|--------|-----------------------------------------------------|
+| commit | LOREM IPSUM|
+| Author | tgstation-server <tgstation-server@tgstation13.org> |
+| Date |  Wed Feb 3 16:50:49 2021 -0800 |
 
 ---
 
