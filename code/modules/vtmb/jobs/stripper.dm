@@ -5,13 +5,9 @@
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Camarilla or the Anarchs"
-	selection_color = "#e3e3e3"
-	access = list()
-	minimal_access = list()
 	outfit = /datum/outfit/job/strip
-	antag_rep = 7
-	paycheck = PAYCHECK_ASSISTANT // Get a job. Job reassignment changes your paycheck now. Get over it.
-	exp_type_department = EXP_TYPE_SERVICES
+	paycheck = PAYCHECK_CREW // Get a job. Job reassignment changes your paycheck now. Get over it.
+	exp_granted_type = EXP_TYPE_SERVICES
 
 	paycheck_department = ACCOUNT_CIV
 	display_order = JOB_DISPLAY_ORDER_STRIP

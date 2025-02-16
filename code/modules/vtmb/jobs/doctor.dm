@@ -6,8 +6,7 @@
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Camarilla or the Anarchs"
-	selection_color = "#80D0F4"
-	exp_type_department = EXP_TYPE_CLINIC
+	exp_granted_type = EXP_TYPE_CLINIC
 
 
 	outfit = /datum/outfit/job/vdoctor
@@ -61,8 +60,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Camarilla or the Anarchs"
-	selection_color = "#80D0F4"
-	exp_type_department = EXP_TYPE_CLINIC
+	exp_granted_type = EXP_TYPE_CLINIC
 
 
 	outfit = /datum/outfit/job/vdirector

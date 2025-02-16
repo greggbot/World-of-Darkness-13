@@ -1,34 +1,24 @@
 /datum/species/vamp_mannequin
 	name = "mannequin"
 	id = "mannequin"
-	species_traits = list(NOEYESPRITES,NOBLOOD,NO_UNDERWEAR)
-	inherent_traits = list(TRAIT_VIRUSIMMUNE,TRAIT_NOHUNGER,TRAIT_NOBREATH,TRAIT_TOXIMMUNE,TRAIT_NOCRITDAMAGE,TRAIT_ADVANCEDTOOLUSER,TRAIT_RESISTHEAT,TRAIT_NOBREATH,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_RADIMMUNE,TRAIT_GENELESS,TRAIT_PIERCEIMMUNE)
+	inherent_traits = list(TRAIT_GODMODE, TRAIT_NO_EYELIDS,TRAIT_NOBLOOD, TRAIT_NO_UNDERWEAR, TRAIT_VIRUSIMMUNE,TRAIT_NOHUNGER,TRAIT_NOBREATH,TRAIT_TOXIMMUNE,TRAIT_NOCRITDAMAGE,TRAIT_ADVANCEDTOOLUSER,TRAIT_RESISTHEAT,TRAIT_NOBREATH,TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_NOFIRE,TRAIT_CHUNKYFINGERS,TRAIT_RADIMMUNE,TRAIT_GENELESS,TRAIT_PIERCEIMMUNE)
 	inherent_biotypes = MOB_HUMANOID
 	payday_modifier = 0.75
 	siemens_coeff = 0
-	punchdamagelow = 5
-	punchdamagehigh = 5
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC
-	damage_overlay_type = ""
 	meat = /obj/item/food/meat/slab/human/mutant/golem
 	sexes = 1
-	limbs_id = "mannequin"
-//	fixed_mut_color = "aaa"
-	use_skintones = FALSE
-//	var/last_spooked_out = 0
 
-/datum/species/vamp_mannequin/on_species_gain(mob/living/carbon/human/C)
+/datum/species/vamp_mannequin/on_species_gain(mob/living/carbon/human/human_who_gained_species, datum/species/old_species, pref_load, regenerate_icons)
 	. = ..()
-	C.status_flags |= GODMODE
-	C.skin_tone = "albino"
-	C.dna.species.limbs_id = "mannequin"
-	C.update_body_parts()
-	C.update_body()
-	C.update_icon()
-	C.dna.real_name = "mannequin"
-	C.real_name = "mannequin"
-	C.true_real_name = "mannequin"
-	C.real_name = "mannequin"
+	human_who_gained_species.skin_tone = "albino"
+	human_who_gained_species.update_body_parts()
+	human_who_gained_species.update_body()
+	human_who_gained_species.update_icon()
+	human_who_gained_species.dna.real_name = "mannequin"
+	human_who_gained_species.real_name = "mannequin"
+	human_who_gained_species.true_real_name = "mannequin"
+	human_who_gained_species.real_name = "mannequin"
 
 /datum/species/vamp_mannequin/check_roundstart_eligible()
 	return FALSE
@@ -47,14 +37,11 @@
 		walk_to(H, 0)
 
 /datum/species/vamp_mannequin/proc/do_spooky(var/mob/living/carbon/human/man)
-//	if(last_spooked_out+10 > world.time)
-//		return
-//	last_spooked_out = world.time
 	for(var/mob/living/L in range(7, man))
 		if(L.client)
 			man.face_atom(L)
 			if(prob(50))
-				walk_to(man, L, 0, man.total_multiplicative_slowdown())
+				step(man, L)
 
 	for(var/mob/living/carbon/human/H in range(1, man))
 		if(H.client)
@@ -70,5 +57,4 @@
 
 	if(prob(33))
 		var/turf/T = get_step(man, pick(NORTH, SOUTH, WEST, EAST))
-//		man.face_atom(T)
 		step_to(man,T,0)

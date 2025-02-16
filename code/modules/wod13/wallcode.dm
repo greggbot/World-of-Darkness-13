@@ -88,8 +88,8 @@
 					return
 
 				var/roll = rand(1, 20)
-				var/physique = H.physique
-				if(roll + physique*2 >= 15)
+				var/strength = H.strength
+				if(roll + strength*2 >= 15)
 					H.loc = above_turf
 					var/turf/forward_turf = get_step(H.loc, H.dir)
 					if(forward_turf && !forward_turf.density)

@@ -20,10 +20,10 @@
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BELT
 	attack_verb_continuous = list("attacks", "chops", "cleaves", "tears", "lacerates", "cuts")
 	attack_verb_simple = list("attack", "chop", "cleave", "tear", "lacerate", "cut")
-	hitsound = 'sound/weapons/bladeslice.ogg'
+	hitsound = 'sound/items/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
 	max_integrity = 200
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 30)
+	armor_type = /datum/armor/item_fireaxe
 	resistance_flags = FIRE_PROOF
 	wound_bonus = -15
 	bare_wound_bonus = 20
@@ -37,9 +37,6 @@
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(on_wield))
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(on_unwield))
-
-/obj/item/melee/vampirearms/fireaxe/ComponentInitialize()
-	. = ..()
 	AddComponent(/datum/component/butchering, 100, 80, 0 , hitsound)
 	AddComponent(/datum/component/two_handed, force_unwielded=10, force_wielded=70, icon_wielded="fireaxe1")
 
@@ -80,7 +77,7 @@
 	sharpness = SHARP_EDGED
 	attack_verb_continuous = list("slashes", "cuts")
 	attack_verb_simple = list("slash", "cut")
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	hitsound = 'sound/items/weapons/rapierhit.ogg'
 	wound_bonus = 5
 	bare_wound_bonus = 25
 	pixel_w = -8
@@ -132,7 +129,7 @@
 	sharpness = SHARP_POINTY
 	attack_verb_continuous = list("stabs", "pokes")
 	attack_verb_simple = list("stab", "poke")
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	hitsound = 'sound/items/weapons/rapierhit.ogg'
 	wound_bonus = 5
 	bare_wound_bonus = 15
 	resistance_flags = FIRE_PROOF
@@ -156,7 +153,7 @@
     sharpness = SHARP_EDGED
     attack_verb_continuous = list("slashes", "cuts")
     attack_verb_simple = list("slash", "cut")
-    hitsound = 'sound/weapons/rapierhit.ogg'
+    hitsound = 'sound/items/weapons/rapierhit.ogg'
     wound_bonus = 5
     bare_wound_bonus = 25
     pixel_w = -8
@@ -178,7 +175,7 @@
 	sharpness = SHARP_EDGED
 	attack_verb_continuous = list("slashes", "cuts")
 	attack_verb_simple = list("slash", "cut")
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	hitsound = 'sound/items/weapons/rapierhit.ogg'
 	wound_bonus = 5
 	bare_wound_bonus = 20
 	resistance_flags = FIRE_PROOF
@@ -200,7 +197,7 @@
 	sharpness = SHARP_EDGED
 	attack_verb_continuous = list("slashes", "cuts")
 	attack_verb_simple = list("slash", "cut")
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	hitsound = 'sound/items/weapons/rapierhit.ogg'
 	wound_bonus = 5
 	bare_wound_bonus = 25
 	resistance_flags = FIRE_PROOF
@@ -262,7 +259,7 @@
 	if(length(contents))
 		. += "<span class='notice'>Alt-click it to quickly draw the blade.</span>"
 
-/obj/item/storage/belt/vampire/sheathe/AltClick(mob/user)
+/obj/item/storage/belt/vampire/sheathe/click_alt(mob/user)
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY, FALSE, TRUE))
 		return
 	if(length(contents))
@@ -366,7 +363,7 @@
 	throwforce = 15
 	attack_verb_continuous = list("slashes", "cuts")
 	attack_verb_simple = list("slash", "cut")
-	hitsound = 'sound/weapons/slash.ogg'
+	hitsound = 'sound/items/weapons/slash.ogg'
 	armour_penetration = 35
 	block_chance = 5
 	sharpness = SHARP_EDGED
@@ -502,7 +499,7 @@
 
 /obj/item/melee/vampirearms/chainsaw/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/butchering, 30, 100, 0, 'sound/weapons/chainsawhit.ogg', TRUE)
+	AddComponent(/datum/component/butchering, 30, 100, 0, 'sound/items/weapons/chainsawhit.ogg', TRUE)
 	AddComponent(/datum/component/two_handed, require_twohands=TRUE)
 
 /obj/item/melee/vampirearms/chainsaw/proc/on_wield(obj/item/source, mob/user)
@@ -524,7 +521,7 @@
 	butchering.butchering_enabled = on
 
 	if(on)
-		hitsound = 'sound/weapons/chainsawhit.ogg'
+		hitsound = 'sound/items/weapons/chainsawhit.ogg'
 	else
 		hitsound = "swing_hit"
 
@@ -544,7 +541,7 @@
 	throwforce = 10
 	attack_verb_continuous = list("pierces", "cuts")
 	attack_verb_simple = list("pierce", "cut")
-	hitsound = 'sound/weapons/bladeslice.ogg'
+	hitsound = 'sound/items/weapons/bladeslice.ogg'
 	armour_penetration = 50
 	sharpness = SHARP_EDGED
 	w_class = WEIGHT_CLASS_SMALL
@@ -610,7 +607,7 @@
 	sharpness = SHARP_EDGED
 	attack_verb_continuous = list("slashes", "cuts")
 	attack_verb_simple = list("slash", "cut")
-	hitsound = 'sound/weapons/rapierhit.ogg'
+	hitsound = 'sound/items/weapons/rapierhit.ogg'
 	wound_bonus = 5
 	bare_wound_bonus = 10
 	resistance_flags = FIRE_PROOF
@@ -642,7 +639,7 @@
 	var/on = FALSE
 	var/last_solo = 0
 
-/obj/item/melee/vampirearms/eguitar/AltClick(mob/user)
+/obj/item/melee/vampirearms/eguitar/click_alt(mob/user)
 	if(last_solo+600 > world.time)
 		return
 	var/result = input(user, "Select a riff") as null|anything in list("1", "2", "3", "4")
@@ -677,6 +674,7 @@
 	wielded = FALSE
 
 /obj/item/melee/vampirearms/eguitar/update_icon_state()
+	. = ..()
 	icon_state = "rock0"
 
 /obj/item/shield/door
@@ -726,7 +724,7 @@
 	throwforce = 5
 	throw_speed = 3
 	throw_range = 6
-	hitsound = 'sound/weapons/genhit.ogg'
+	hitsound = 'sound/items/weapons/genhit.ogg'
 	attack_verb_continuous = list("stubs", "pokes")
 	attack_verb_simple = list("stub", "poke")
 	resistance_flags = FIRE_PROOF
@@ -734,7 +732,7 @@
 
 /obj/item/melee/vampirearms/knife/switchblade/attack_self(mob/user)
 	extended = !extended
-	playsound(src.loc, 'sound/weapons/batonextend.ogg', 50, TRUE)
+	playsound(src.loc, 'sound/items/weapons/batonextend.ogg', 50, TRUE)
 	if(extended)
 		force = 25
 		w_class = WEIGHT_CLASS_NORMAL
@@ -745,10 +743,10 @@
 		icon_state = "switchblade1"
 		attack_verb_continuous = list("slashes", "stabs", "slices", "tears", "lacerates", "rips", "dices", "cuts")
 		attack_verb_simple = list("slash", "stab", "slice", "tear", "lacerate", "rip", "dice", "cut")
-		hitsound = 'sound/weapons/bladeslice.ogg'
+		hitsound = 'sound/items/weapons/bladeslice.ogg'
 		sharpness = SHARP_EDGED
-		grid_width = 1 GRID_BOXES
-		grid_height = 2 GRID_BOXES
+		//grid_width = 1 GRID_BOXES
+		//grid_height = 2 GRID_BOXES
 	else
 		force = 5
 		w_class = WEIGHT_CLASS_TINY
@@ -757,10 +755,10 @@
 		icon_state = "switchblade0"
 		attack_verb_continuous = list("stubs", "pokes")
 		attack_verb_simple = list("stub", "poke")
-		hitsound = 'sound/weapons/genhit.ogg'
-		sharpness = SHARP_NONE
-		grid_width = 1 GRID_BOXES
-		grid_height = 1 GRID_BOXES
+		hitsound = 'sound/items/weapons/genhit.ogg'
+		sharpness = NONE
+		//grid_width = 1 GRID_BOXES
+		//grid_height = 1 GRID_BOXES
 
 
 /obj/item/melee/vampirearms/brick
@@ -775,13 +773,13 @@
 	throwforce = 30
 	attack_verb_continuous = list("bludgeons", "bashes", "beats")
 	attack_verb_simple = list("bludgeon", "bash", "beat", "smacks")
-	hitsound = 'sound/weapons/genhit3.ogg'
-	sharpness = SHARP_NONE
+	hitsound = 'sound/items/weapons/genhit3.ogg'
+	sharpness = NONE
 	force = 18
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_SUITSTORE
 	w_class = WEIGHT_CLASS_NORMAL
-	grid_width = 2 GRID_BOXES
-	grid_height = 1 GRID_BOXES
+	//grid_width = 2 GRID_BOXES
+	//grid_height = 1 GRID_BOXES
 	var/broken = FALSE
 
 /obj/item/melee/vampirearms/brick/after_throw(datum/callback/callback)
@@ -794,10 +792,10 @@
 		icon_state = "red_brick2"
 		attack_verb_continuous = list("bludgeons", "bashes", "beats")
 		attack_verb_simple = list("bludgeon", "bash", "beat", "smacks", "whacks")
-		hitsound = 'sound/weapons/genhit1.ogg'
-		sharpness = SHARP_NONE
-		grid_width = 1 GRID_BOXES
-		grid_height = 1 GRID_BOXES
+		hitsound = 'sound/items/weapons/genhit1.ogg'
+		sharpness = NONE
+		//grid_width = 1 GRID_BOXES
+		//grid_height = 1 GRID_BOXES
 	else
 		force = 18
 		w_class = WEIGHT_CLASS_NORMAL
@@ -805,9 +803,9 @@
 		armour_penetration = 0
 		attack_verb_continuous = list("bludgeons", "bashes", "beats")
 		attack_verb_simple = list("bludgeon", "bash", "beat", "smacks")
-		hitsound = 'sound/weapons/genhit3.ogg'
-		sharpness = SHARP_NONE
-		grid_width = 2 GRID_BOXES
-		grid_height = 1 GRID_BOXES
+		hitsound = 'sound/items/weapons/genhit3.ogg'
+		sharpness = NONE
+		//grid_width = 2 GRID_BOXES
+		//grid_height = 1 GRID_BOXES
 
 

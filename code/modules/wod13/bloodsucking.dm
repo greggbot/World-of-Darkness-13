@@ -35,7 +35,8 @@
 	if(isnpc(mob))
 		var/mob/living/carbon/human/npc/NPC = mob
 		NPC.danger_source = null
-		mob.Stun(40) //NPCs don't get to resist
+//		NPC.last_attacker = src
+	mob.Stun(30)
 
 	if(mob.bloodpool <= 1 && mob.maxbloodpool > 1)
 		to_chat(src, "<span class='warning'>You feel small amount of <b>BLOOD</b> in your victim.</span>")
@@ -75,7 +76,7 @@
 					return
 
 				if(vse_taki)
-					to_chat(src, "<span class='userdanger'><b>YOU TRY TO COMMIT DIABLERIE ON [mob].</b></span>")
+					to_chat(src, "<span class='userdanger'><b>YOU TRY TO COMMIT DIABLERIE OVER [mob].</b></span>")
 				else
 					to_chat(src, "<span class='warning'>You find the idea of drinking your own <b>KIND</b> disgusting!</span>")
 					return
@@ -150,6 +151,8 @@
 						message_admins("[ADMIN_LOOKUPFLW(src)] successfully Diablerized [ADMIN_LOOKUPFLW(mob)]")
 						log_attack("[key_name(src)] successfully Diablerized [key_name(mob)].")
 						if(K.client)
+							K.generation = 13
+							P2.generation = 13
 							var/datum/brain_trauma/special/imaginary_friend/trauma = gain_trauma(/datum/brain_trauma/special/imaginary_friend)
 							trauma.friend.key = K.key
 						mob.death()
@@ -169,9 +172,10 @@
 							to_chat(src, "<span class='userdanger'><b>[K]'s SOUL OVERCOMES YOURS AND GAIN CONTROL OF YOUR BODY.</b></span>")
 							message_admins("[ADMIN_LOOKUPFLW(src)] tried to Diablerize [ADMIN_LOOKUPFLW(mob)] and was overtaken.")
 							log_attack("[key_name(src)] tried to Diablerize [key_name(mob)] and was overtaken.")
-							generation = min(13, P.generation+1)
+							generation = 13
 							death()
 							if(P)
+								P.generation = 13
 								P.reason_of_death = "Failed the Diablerie ([time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")])."
 //							ghostize(FALSE)
 //							key = K.key
@@ -184,15 +188,14 @@
 							log_attack("[key_name(src)] successfully Diablerized [key_name(mob)].")
 							if(P)
 								P.diablerist = 1
-								if(mob.generation + 3 < generation)
-									P.generation = max(P.generation - 2, 7)
-								else
-									P.generation = max(P.generation - 1, 7)
+								P.generation = K.generation
 								generation = P.generation
 							diablerist = 1
 							maxHealth = initial(maxHealth)+max(0, 50*(13-generation))
 							health = initial(health)+max(0, 50*(13-generation))
 							if(K.client)
+								K.generation = 13
+								P2.generation = 13
 								var/datum/brain_trauma/special/imaginary_friend/trauma = gain_trauma(/datum/brain_trauma/special/imaginary_friend)
 								trauma.friend.key = K.key
 							mob.death()
@@ -237,5 +240,5 @@
 			client.images -= suckbar
 		qdel(suckbar)
 		stop_sound_channel(CHANNEL_BLOOD)
-		if(!(SEND_SIGNAL(mob, COMSIG_MOB_VAMPIRE_SUCKED, mob) & COMPONENT_RESIST_VAMPIRE_KISS))
+		if(!iskindred(mob))
 			mob.SetSleeping(50)

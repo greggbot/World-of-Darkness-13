@@ -11,8 +11,7 @@
 	head = /obj/item/clothing/head/vampire/army
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/vampaug = 3,
-		/obj/item/radio/military = 1,
-		/obj/item/gun/ballistic/automatic/vampire/beretta=1
+		/obj/item/radio/military = 1
 		)
 
 /datum/antagonist/national_guard/proc/equip_national_guard()
@@ -26,8 +25,8 @@
 	H.set_species(/datum/species/human)
 	H.generation = 13
 	H.ignores_warrant = TRUE
-	H.maxHealth = round((initial(H.maxHealth)-initial(H.maxHealth)/4)+(initial(H.maxHealth)/4)*(H.physique+13-H.generation))
-	H.health = round((initial(H.health)-initial(H.health)/4)+(initial(H.health)/4)*(H.physique+13-H.generation))
+	H.maxHealth = round((initial(H.maxHealth)-initial(H.maxHealth)/4)+(initial(H.maxHealth)/4)*(H.strength+13-H.generation))
+	H.health = round((initial(H.health)-initial(H.health)/4)+(initial(H.health)/4)*(H.strength+13-H.generation))
 /*	var/my_name = "Tyler"
 	if(H.gender == MALE)
 		my_name = pick(GLOB.first_names_male)
@@ -377,7 +376,7 @@
 	var/datum/team/national_guard/national_guard_team
 	flags = HIGHLANDER_RULESET
 
-/datum/dynamic_ruleset/midround/from_ghosts/national_guard/acceptable(population=0, threat=0)
+/datum/dynamic_ruleset/midround/from_ghosts/national_guard/acceptable(population = 0, threat_level = 0)
 	indice_pop = min(operative_cap.len, round(living_players.len/5)+1)
 	required_candidates = max(5, operative_cap[indice_pop])
 	return ..()

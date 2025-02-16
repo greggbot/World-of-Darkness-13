@@ -47,7 +47,7 @@
 	vampiric = TRUE
 	var/obj/effect/proc_holder/spell/targeted/shapeshift/bloodcrawler/BC
 
-/datum/action/vicissitude_blood/Trigger()
+/datum/action/vicissitude_blood/Trigger(trigger_flags)
 	. = ..()
 	var/mob/living/carbon/human/NG = owner
 	if(NG.stat > 1 || NG.IsSleeping() || NG.IsUnconscious() || NG.IsParalyzed() || NG.IsKnockdown() || NG.IsStun() || HAS_TRAIT(NG, TRAIT_RESTRAINED) || !isturf(NG.loc))
@@ -79,7 +79,7 @@
 	vampiric = TRUE
 	var/obj/effect/proc_holder/spell/targeted/shapeshift/tzimisce/TE
 
-/datum/action/vicissitude_form/Trigger()
+/datum/action/vicissitude_form/Trigger(trigger_flags)
 	. = ..()
 	var/mob/living/carbon/human/NG = owner
 	if(NG.stat > 1 || NG.IsSleeping() || NG.IsUnconscious() || NG.IsParalyzed() || NG.IsKnockdown() || NG.IsStun() || HAS_TRAIT(NG, TRAIT_RESTRAINED) || !isturf(NG.loc))
@@ -106,7 +106,7 @@
 	vampiric = TRUE
 	var/used = FALSE
 
-/datum/action/basic_vicissitude/Trigger()
+/datum/action/basic_vicissitude/Trigger(trigger_flags)
 	. = ..()
 	var/mob/living/carbon/human/H = owner
 	if(H.hided)
@@ -160,7 +160,6 @@
 		return
 	if(!hided)
 		hided = TRUE
-//		violating_appearance = FALSE
 		REMOVE_TRAIT(H, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 		if(additional_hands)
 			H.remove_overlay(PROTEAN_LAYER)
@@ -175,12 +174,8 @@
 			H.update_body()
 	else
 		hided = FALSE
-//		violating_appearance = TRUE
 		if(additional_hands || additional_wings || additional_centipede || additional_armor)
 			ADD_TRAIT(H, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
-//			violating_appearance = FALSE
-//		if(violating_appearance)
-
 		if(additional_hands)
 			H.remove_overlay(PROTEAN_LAYER)
 			var/mutable_appearance/hands2_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "2hands", -PROTEAN_LAYER)
@@ -397,7 +392,7 @@
 				if(T)
 					T.wash(CLEAN_WASH)
 
-/datum/action/vicissitude/Trigger()
+/datum/action/vicissitude/Trigger(trigger_flags)
 	. = ..()
 	var/mob/living/carbon/human/H = owner
 //	H.put_in_r_hand(new /obj/item/chameleon(H))
@@ -614,7 +609,7 @@
 	melee_damage_upper = 20
 	attack_verb_continuous = "bites"
 	attack_verb_simple = "bite"
-	attack_sound = 'sound/weapons/bite.ogg'
+	attack_sound = 'sound/items/weapons/bite.ogg'
 	speak_emote = list("gnashes")
 
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -663,8 +658,7 @@
 	melee_damage_upper = 30
 	attack_verb_continuous = "punches"
 	attack_verb_simple = "punch"
-	attack_sound = 'sound/weapons/punch1.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/punch1.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	status_flags = CANPUSH
@@ -690,8 +684,7 @@
 	melee_damage_upper = 25
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	faction = list("Tzimisce")
@@ -717,15 +710,13 @@
 	melee_damage_upper = 40
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 10
 	maxbloodpool = 10
 	dextrous = TRUE
 	held_items = list(null, null)
-	possible_a_intents = list(INTENT_HELP, INTENT_GRAB, INTENT_DISARM, INTENT_HARM)
 
 /mob/living/simple_animal/hostile/gangrel/better
 	maxHealth = 500
@@ -761,15 +752,13 @@
 	melee_damage_upper = 45
 	attack_verb_continuous = "punches"
 	attack_verb_simple = "punch"
-	attack_sound = 'sound/weapons/punch1.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/punch1.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 10
 	maxbloodpool = 10
 	dextrous = TRUE
 	held_items = list(null, null)
-	possible_a_intents = list(INTENT_HELP, INTENT_GRAB, INTENT_DISARM, INTENT_HARM)
 	faction = list("Tremere")
 
 /mob/living/simple_animal/hostile/gargoyle/proc/gain_nigs()
@@ -794,7 +783,7 @@
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	var/abuse_fix = 0
 
-/datum/action/gargoyle/Trigger()
+/datum/action/gargoyle/Trigger(trigger_flags)
 	. = ..()
 	if(abuse_fix+100 > world.time)
 		return
@@ -825,8 +814,7 @@
 	melee_damage_upper = 70
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 10
@@ -850,8 +838,7 @@
 	melee_damage_upper = 10
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 20

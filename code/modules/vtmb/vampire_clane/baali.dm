@@ -35,7 +35,7 @@
 	vampiric = TRUE
 	var/used = FALSE
 
-/datum/action/antifrenzy/Trigger()
+/datum/action/antifrenzy/Trigger(trigger_flags)
 	var/mob/living/carbon/human/NG = owner
 	if(NG.stat > 1 || NG.IsSleeping() || NG.IsUnconscious() || NG.IsParalyzed() || NG.IsKnockdown() || NG.IsStun() || HAS_TRAIT(NG, TRAIT_RESTRAINED) || !isturf(NG.loc))
 		return
@@ -65,8 +65,7 @@
 	melee_damage_upper = 40
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 10

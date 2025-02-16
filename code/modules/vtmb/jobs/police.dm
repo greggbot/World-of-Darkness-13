@@ -6,16 +6,13 @@
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = " the SFPD Chief and your Sergeant."
-	selection_color = "#7e7e7e"
 
 	outfit = /datum/outfit/job/police_officer
 
-	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_ARMORY, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_POLICE
-	exp_type_department = EXP_TYPE_POLICE
+	exp_granted_type = EXP_TYPE_POLICE
 
 	allowed_species = list("Ghoul", "Human")
 	species_slots = list("Ghoul" = 1)
@@ -47,7 +44,6 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = " the SFPD Chief"
-	selection_color = "#7e7e7e"
 
 	outfit = /datum/outfit/job/police_sergeant
 
@@ -56,7 +52,7 @@
 	paycheck = PAYCHECK_HARD
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_POLICE_SERGEANT
-	exp_type_department = EXP_TYPE_POLICE
+	exp_granted_type = EXP_TYPE_POLICE
 
 	allowed_species = list("Human")
 
@@ -87,7 +83,6 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = " the SFPD"
-	selection_color = "#7e7e7e"
 
 	outfit = /datum/outfit/job/police_chief
 
@@ -96,7 +91,7 @@
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_POLICE_CHIEF
-	exp_type_department = EXP_TYPE_POLICE
+	exp_granted_type = EXP_TYPE_POLICE
 
 	allowed_species = list("Human")
 

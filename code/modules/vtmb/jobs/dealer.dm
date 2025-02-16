@@ -6,8 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "None. You are beholden only to yourself."
-	selection_color = "#edc009"
-	exp_type_department = EXP_TYPE_WAREHOUSE // This is so the jobs menu can work properly
+	exp_granted_type = EXP_TYPE_WAREHOUSE // This is so the jobs menu can work properly
 
 	outfit = /datum/outfit/job/dealer
 

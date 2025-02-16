@@ -3,47 +3,43 @@
 	button_icon = 'code/modules/wod13/UI/kuei_jin.dmi' //This is the file for the BACKGROUND icon
 	background_icon_state = "discipline" //And this is the state for the background icon
 
-	icon_icon = 'code/modules/wod13/UI/kuei_jin.dmi' //This is the file for the ACTION icon
 	button_icon_state = "discipline" //And this is the state for the action icon
 	vampiric = TRUE
 	var/level_icon_state = "1" //And this is the state for the action icon
 	var/datum/chi_discipline/discipline
 	var/active_check = FALSE
 
-/datum/action/chi_discipline/Trigger()
+/datum/action/chi_discipline/Trigger(trigger_flags)
 	if(discipline && isliving(owner))
 		var/mob/living/owning = owner
 		if(discipline.ranged)
 			if(!active_check)
 				active_check = TRUE
 				if(owning.chi_ranged)
-					owning.chi_ranged.Trigger()
+					owning.chi_ranged.Trigger(trigger_flags)
 				owning.chi_ranged = src
-				if(button)
-					button.color = "#970000"
 			else
 				active_check = FALSE
 				owning.chi_ranged = null
-				button.color = "#ffffff"
 		else
 			if(discipline)
 				if(discipline.check_activated(owner, owner))
 					discipline.activate(owner, owner)
 	. = ..()
 
-/datum/action/chi_discipline/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force = FALSE)
+/datum/action/chi_discipline/apply_button_icon(atom/movable/screen/movable/action_button/current_button, force)
+	. = ..()
 	button_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
-	icon_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
-	if(icon_icon && button_icon_state && ((current_button.button_icon_state != button_icon_state) || force))
+	if(button_icon_state && ((current_button.button_icon_state != button_icon_state) || force))
 		current_button.cut_overlays(TRUE)
 		if(discipline)
 			current_button.name = discipline.name
 			current_button.desc = discipline.desc
-			current_button.add_overlay(mutable_appearance(icon_icon, "[discipline.icon_state]"))
+			current_button.add_overlay(mutable_appearance(button_icon, "[discipline.icon_state]"))
 			current_button.button_icon_state = "[discipline.icon_state]"
-			current_button.add_overlay(mutable_appearance(icon_icon, "[discipline.level_casting]"))
+			current_button.add_overlay(mutable_appearance(button_icon, "[discipline.level_casting]"))
 		else
-			current_button.add_overlay(mutable_appearance(icon_icon, button_icon_state))
+			current_button.add_overlay(mutable_appearance(button_icon, button_icon_state))
 			current_button.button_icon_state = button_icon_state
 
 /datum/action/chi_discipline/proc/switch_level()
@@ -51,13 +47,9 @@
 	if(discipline)
 		if(discipline.level_casting < discipline.level)
 			discipline.level_casting = discipline.level_casting+1
-			if(button)
-				ApplyIcon(button, TRUE)
 			return
 		else
 			discipline.level_casting = 1
-			if(button)
-				ApplyIcon(button, TRUE)
 			return
 
 /mob/living/Click()
@@ -65,18 +57,10 @@
 		var/mob/living/L = usr
 		if(L.chi_ranged)
 			L.chi_ranged.active_check = FALSE
-			if(L.chi_ranged.button)
-				animate(L.chi_ranged.button, color = "#ffffff", time = 10, loop = 1)
 			if(L.chi_ranged.discipline.check_activated(src, usr))
 				L.chi_ranged.discipline.activate(src, usr)
 			L.chi_ranged = null
 	. = ..()
-
-//			if(DISCP)
-//				if(DISCP.active)
-//					DISCP.range_activate(src, SH)
-//					SH.face_atom(src)
-//					return
 
 /atom/movable/screen/movable/action_button/Click(location,control,params)
 	if(istype(linked_action, /datum/action/chi_discipline))
@@ -860,8 +844,6 @@
 			var/mutable_appearance/potence_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "flesh_arms", -PROTEAN_LAYER)
 			caster.overlays_standing[PROTEAN_LAYER] = potence_overlay
 			caster.apply_overlay(PROTEAN_LAYER)
-			caster.dna.species.punchdamagelow += 20
-			caster.dna.species.punchdamagehigh += 20
 			caster.dna.species.meleemod += 1
 			caster.dna.species.attack_sound = 'code/modules/wod13/sounds/heavypunch.ogg'
 			tackler = caster.AddComponent(/datum/component/tackler, stamina_cost=0, base_knockdown = 1 SECONDS, range = 2+level_casting, speed = 1, skill_mod = 0, min_distance = 0)
@@ -871,8 +853,6 @@
 				if(caster)
 					caster.remove_overlay(PROTEAN_LAYER)
 					caster.potential = 0
-					caster.dna.species.punchdamagelow -= 20
-					caster.dna.species.punchdamagehigh -= 20
 					caster.dna.species.meleemod -= 1
 					caster.dna.species.attack_sound = initial(caster.dna.species.attack_sound)
 					qdel(tackler)
@@ -968,10 +948,9 @@
 	button_icon_state = "demon_form"
 	button_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	background_icon_state = "discipline"
-	icon_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 
-/datum/action/choose_demon_form/Trigger()
+/datum/action/choose_demon_form/Trigger(trigger_flags)
 	if(istype(owner, /mob/living/carbon/human))
 		var/mob/living/carbon/human/user = usr
 		var/new_form = input(user, "Choose your Demon Form", "Demon Form") as null|anything in list("Samurai", "Tentacles", "Demon", "Giant", "Foul")
@@ -982,8 +961,6 @@
 					if(istype(chi_action.discipline, /datum/chi_discipline/demon_shintai))
 						var/datum/chi_discipline/demon_shintai/demon_shintai = chi_action.discipline
 						demon_shintai.current_form = new_form
-		button.color = "#970000"
-		animate(button, color = "#ffffff", time = 2 SECONDS, loop = 1)
 
 /datum/movespeed_modifier/tentacles1
 	multiplicative_slowdown = -0.5
@@ -1093,15 +1070,11 @@
 			var/mutable_appearance/potence_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "giant", -UNICORN_LAYER)
 			caster.overlays_standing[UNICORN_LAYER] = potence_overlay
 			caster.apply_overlay(UNICORN_LAYER)
-			caster.dna.species.punchdamagelow += mod
-			caster.dna.species.punchdamagehigh += mod
 			caster.dna.species.meleemod += meleemod
 			ADD_TRAIT(caster, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 			spawn((delay)+caster.discipline_time_plus)
 				if(caster)
 					caster.remove_overlay(UNICORN_LAYER)
-					caster.dna.species.punchdamagelow -= mod
-					caster.dna.species.punchdamagehigh -= mod
 					caster.dna.species.meleemod -= meleemod
 					REMOVE_TRAIT(caster, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/demonshintai_deactivate.ogg', 50, FALSE)
@@ -1254,7 +1227,7 @@
 		set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
 		step_to(src,caster,0)
 		face_atom(caster)
-		a_intent = INTENT_HARM
+		set_combat_mode(TRUE)
 		drop_all_held_items()
 		UnarmedAttack(caster)
 
@@ -1340,8 +1313,7 @@
 	melee_damage_upper = 70
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 10
@@ -1450,8 +1422,7 @@
 	melee_damage_upper = 1
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
-	a_intent = INTENT_HARM
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 0
@@ -2223,19 +2194,19 @@
 						if(victim)
 							victim.cure_trauma_type(/datum/brain_trauma/hypnosis, TRAUMA_RESILIENCE_MAGIC)
 		if(2)
-			caster.remove_overlay(HALO_LAYER)
-			var/mutable_appearance/fortitude_overlay = mutable_appearance('icons/effects/96x96.dmi', "boh_tear", -HALO_LAYER)
+			caster.remove_overlay(FIGHT_LAYER)
+			var/mutable_appearance/fortitude_overlay = mutable_appearance('icons/effects/96x96.dmi', "boh_tear", -FIGHT_LAYER)
 			fortitude_overlay.pixel_x = -32
 			fortitude_overlay.pixel_y = -32
 			fortitude_overlay.alpha = 128
-			caster.overlays_standing[HALO_LAYER] = fortitude_overlay
-			caster.apply_overlay(HALO_LAYER)
+			caster.overlays_standing[FIGHT_LAYER] = fortitude_overlay
+			caster.apply_overlay(FIGHT_LAYER)
 			caster.set_light(2, 5, "#ffffff")
 			spawn()
 				yang_mantle_loop(caster, delay + caster.discipline_time_plus)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
-					caster.remove_overlay(HALO_LAYER)
+					caster.remove_overlay(FIGHT_LAYER)
 					caster.set_light(0)
 		if(3)
 			ADD_TRAIT(caster, TRAIT_ENHANCED_MELEE_DODGE, "yang prana 3")

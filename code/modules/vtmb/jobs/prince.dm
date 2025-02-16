@@ -6,12 +6,11 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Camarilla and the Traditions"
-	selection_color = "#bd3327"
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 180
 	exp_type = EXP_TYPE_CREW
-	exp_type_department = EXP_TYPE_CAMARILLIA
+	exp_granted_type = EXP_TYPE_CAMARILLIA
 
 	outfit = /datum/outfit/job/prince
 

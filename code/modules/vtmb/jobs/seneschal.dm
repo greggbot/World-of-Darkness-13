@@ -8,12 +8,11 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the prince"
-	selection_color = "#bd3327"
 	req_admin_notify = 1
 	minimal_player_age = 10
 	exp_requirements = 180
 	exp_type = EXP_TYPE_CREW
-	exp_type_department = EXP_TYPE_NEUTRALS
+	exp_granted_type = EXP_TYPE_NEUTRALS
 
 	outfit = /datum/outfit/job/clerk
 

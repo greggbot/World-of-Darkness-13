@@ -1,12 +1,11 @@
 // P25 Radio System
 
 GLOBAL_LIST_EMPTY(p25_radios)
-GLOBAL_LIST_EMPTY(p25_tranceivers)
 
 /obj/machinery/p25transceiver
 	name = "P25 transceiver"
 	desc = "A stationary P25 radio transceiver that handles radio connections."
-	icon = 'icons/obj/radio.dmi'
+	icon = 'code/modules/vtmb/electronics/radio.dmi'
 	icon_state = "walkietalkie"
 	anchored = TRUE
 	density = TRUE
@@ -14,10 +13,6 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 	var/list/connected_radios = list()
 	var/p25_network = "default"
 	var/list/registered_callsigns = list()
-
-/obj/machinery/p25transceiver/Initialize()
-	. = ..()
-	GLOB.p25_tranceivers += src
 
 /obj/machinery/p25transceiver/ui_interact(mob/user)
 	. = ..()
@@ -95,7 +90,6 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 		popup.set_content(dat)
 		popup.open()
 
-	updateDialog()
 
 /obj/machinery/p25transceiver/proc/register_callsign(obj/item/p25radio/radio, callsign, mob/user)
 	if(!callsign || !istext(callsign))
@@ -215,49 +209,6 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 // Police Transceiver
 // ==============================
 
-/obj/machinery/p25policeportal
-	name = "police P25 linker"
-	desc = "A stationary P25 radio transceiver that handles radio connections."
-	icon = 'icons/obj/radio.dmi'
-	icon_state = "walkietalkie"
-	anchored = TRUE
-	density = TRUE
-	var/obj/machinery/p25transceiver/police/transceiver
-
-/obj/machinery/p25policeportal/LateInitialize()
-	. = ..()
-	for(var/obj/machinery/p25transceiver/P in GLOB.p25_tranceivers)
-		if(P.p25_network == "police")
-			transceiver = P
-			break
-
-/obj/machinery/p25policeportal/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/p25radio))
-		var/obj/item/p25radio/radio = W
-		if(radio.linked_network == transceiver.p25_network)
-			transceiver.unregister_callsign(radio)
-			radio.linked_network = null
-			radio.linked_transceiver = null
-			transceiver.connected_radios -= radio
-			to_chat(user, "<span class='notice'>You unlink [W] from [src].</span>")
-			return
-
-		var/new_callsign = input(user, "Enter a callsign for this radio:", "Register Callsign") as text|null
-		if(!new_callsign)
-			return
-		var/registration_result = transceiver.register_callsign(radio, new_callsign, user)
-		if(registration_result != "Successfully registered callsign [new_callsign]")
-			to_chat(user, "<span class='warning'>[registration_result]</span>")
-			return
-
-		radio.linked_network = transceiver.p25_network
-		radio.linked_transceiver = transceiver
-		transceiver.connected_radios |= radio
-		to_chat(user, "<span class='notice'>You link [W] to [transceiver] with callsign [new_callsign].</span>")
-		playsound(src, 'sound/effects/radioonn.ogg', 25, FALSE)
-	else
-		return ..()
-
 /obj/machinery/p25transceiver/police
 	name = "police P25 transceiver"
 	desc = "A P25 radio transceiver configured for police communications."
@@ -355,8 +306,6 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 		popup.set_content(dat)
 		popup.open()
 
-	updateDialog()
-
 /obj/machinery/p25transceiver/police/proc/broadcast_emergency(obj/item/p25radio/police/source)
 	if(!active || !source)
 		return FALSE
@@ -432,7 +381,7 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 /obj/item/p25radio
 	name = "P25 radio"
 	desc = "A rugged, high-performance two-way radio designed for secure, clear communication in demanding environments, featuring a durable shoulder microphone for hands-free operation. Use .r to transmit through the radio and alt-click to toggle radio receiving."
-	icon = 'icons/obj/radio.dmi'
+	icon = 'code/modules/vtmb/electronics/radio.dmi'
 	icon_state = "p25"
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_EARS
@@ -441,7 +390,6 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 	var/linked_network = null
 	var/obj/machinery/p25transceiver/linked_transceiver = null
 	var/callsign = null
-	flags_1 = HEAR_1
 	var/receiving = TRUE
 	var/in_restricted_area = FALSE
 	var/powered = TRUE  // New var to track power state
@@ -488,7 +436,7 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 	var/static/list/restricted_areas = list(
 		/area/vtm/sewer,
 		/area/vtm/sewer/nosferatu_town,
-		/area/vtm/sewer/old_clan_sanctum
+		/area/vtm/interior/wyrm_corrupted
 	)
 	var/area/current_area = get_area(A)
 	for(var/restricted_type in restricted_areas)
@@ -623,18 +571,18 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 		to_chat(M, formatted)
 	playsound(src, 'sound/effects/radioclick.ogg', 30, FALSE)
 
-/obj/item/p25radio/AltClick(mob/user)
-	if(!user.canUseTopic(src, BE_CLOSE))
+/obj/item/p25radio/click_alt(mob/user)
+	if(!user.can_perform_action(src, interaction_flags_click | SILENT_ADJACENCY))
 		return
 	powered = !powered
 	to_chat(user, "<span class='notice'>You turn the radio [powered ? "ON" : "OFF"].</span>")
 	playsound(src, 'sound/effects/radioonn.ogg', 100, FALSE)
 
-/obj/item/p25radio/Moved()
+/obj/item/p25radio/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
 	. = ..()
 	check_signal()
 
-/mob/living/Moved()
+/mob/living/Moved(atom/old_loc, movement_dir, forced, list/old_locs, momentum_change = TRUE)
 	. = ..()
 	var/obj/item/p25radio/belt_radio = get_item_by_slot(ITEM_SLOT_BELT)
 	if(istype(belt_radio))
@@ -680,8 +628,8 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 		return "Patrol callsign must be between 100 - 499"
 	return TRUE
 
-/obj/item/p25radio/police/AltClick(mob/user)
-	if(!user.canUseTopic(src, BE_CLOSE))
+/obj/item/p25radio/police/click_alt(mob/user)
+	if(!user.can_perform_action(src, interaction_flags_click | SILENT_ADJACENCY))
 		return
 
 	var/list/choices = list(
@@ -691,7 +639,7 @@ GLOBAL_LIST_EMPTY(p25_tranceivers)
 	)
 
 	var/choice = input(user, "Select an option:", "[src]") as null|anything in choices
-	if(!choice || !user.canUseTopic(src, BE_CLOSE))
+	if(!choice || !user.can_perform_action(src, interaction_flags_click | SILENT_ADJACENCY))
 		return
 
 	switch(choices[choice])

@@ -15,7 +15,7 @@
 	plane = PLANE_SPACE
 	layer = SPACE_LAYER
 	light_power = 0.25
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+	area_has_base_lighting = TRUE
 	umbra = TRUE
 	density = TRUE
 	planetary_atmos = TRUE

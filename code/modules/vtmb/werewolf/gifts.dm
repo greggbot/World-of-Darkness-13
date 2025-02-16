@@ -1,5 +1,4 @@
 /datum/action/gift
-	icon_icon = 'code/modules/wod13/werewolf_abilities.dmi'
 	button_icon = 'code/modules/wod13/werewolf_abilities.dmi'
 	check_flags = AB_CHECK_IMMOBILE|AB_CHECK_CONSCIOUS
 	var/rage_req = 0
@@ -9,11 +8,10 @@
 	var/allowed_to_proceed = FALSE
 
 /datum/action/gift/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force = FALSE)
-	icon_icon = 'code/modules/wod13/werewolf_abilities.dmi'
 	button_icon = 'code/modules/wod13/werewolf_abilities.dmi'
 	. = ..()
 
-/datum/action/gift/Trigger()
+/datum/action/gift/Trigger(trigger_flags)
 	. = ..()
 	if(istype(owner, /mob/living/carbon))
 		var/mob/living/carbon/H = owner
@@ -48,7 +46,7 @@
 	button_icon_state = "falling_touch"
 	rage_req = 1
 
-/datum/action/gift/falling_touch/Trigger()
+/datum/action/gift/falling_touch/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/H = owner
@@ -80,7 +78,7 @@
 		to_chat(src, "<span class='warning'>You no longer feel inspired...</span>")
 		inspired = FALSE
 
-/datum/action/gift/inspiration/Trigger()
+/datum/action/gift/inspiration/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/H = owner
@@ -98,25 +96,15 @@
 	button_icon_state = "razor_claws"
 	rage_req = 1
 
-/datum/action/gift/razor_claws/Trigger()
+/datum/action/gift/razor_claws/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		if(ishuman(owner))
 			playsound(get_turf(owner), 'code/modules/wod13/sounds/razor_claws.ogg', 75, FALSE)
 			var/mob/living/carbon/human/H = owner
-			H.dna.species.attack_verb = "slash"
-			H.dna.species.attack_sound = 'sound/weapons/slash.ogg'
-			H.dna.species.miss_sound = 'sound/weapons/slashmiss.ogg'
-			H.dna.species.punchdamagelow = 20
-			H.dna.species.punchdamagehigh = 20
 			H.agg_damage_plus = 5
 			to_chat(owner, "<span class='notice'>You feel your claws sharpening...</span>")
 			spawn(150)
-				H.dna.species.attack_verb = initial(H.dna.species.attack_verb)
-				H.dna.species.attack_sound = initial(H.dna.species.attack_sound)
-				H.dna.species.miss_sound = initial(H.dna.species.miss_sound)
-				H.dna.species.punchdamagelow = initial(H.dna.species.punchdamagelow)
-				H.dna.species.punchdamagehigh = initial(H.dna.species.punchdamagehigh)
 				H.agg_damage_plus = 0
 				to_chat(owner, "<span class='warning'>Your claws are not sharp anymore...</span>")
 		else
@@ -139,7 +127,7 @@
 	rage_req = 1
 	//gnosis_req = 1
 
-/datum/action/gift/beast_speech/Trigger()
+/datum/action/gift/beast_speech/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/C = owner
@@ -163,7 +151,7 @@
 	button_icon_state = "call_of_the_wyld"
 	rage_req = 1
 
-/datum/action/gift/call_of_the_wyld/Trigger()
+/datum/action/gift/call_of_the_wyld/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/C = owner
@@ -184,7 +172,7 @@
 	button_icon_state = "mindspeak"
 //	gnosis_req = 1
 
-/datum/action/gift/mindspeak/Trigger()
+/datum/action/gift/mindspeak/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/new_thought = input(owner, "What do you want to tell to your Tribe?") as text|null
@@ -203,7 +191,7 @@
 	button_icon_state = "resist_pain"
 	rage_req = 2
 
-/datum/action/gift/resist_pain/Trigger()
+/datum/action/gift/resist_pain/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		if(ishuman(owner))
@@ -232,7 +220,7 @@
 	rage_req = 1
 	//gnosis_req = 1
 
-/datum/action/gift/scent_of_the_true_form/Trigger()
+/datum/action/gift/scent_of_the_true_form/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/datum/atom_hud/abductor_hud = GLOB.huds[DATA_HUD_ABDUCTOR]
@@ -253,7 +241,7 @@
 	rage_req = 2
 	//gnosis_req = 1
 
-/datum/action/gift/mothers_touch/Trigger()
+/datum/action/gift/mothers_touch/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/H = owner
@@ -265,7 +253,7 @@
 	button_icon_state = "sense_wyrm"
 	rage_req = 1
 
-/datum/action/gift/sense_wyrm/Trigger()
+/datum/action/gift/sense_wyrm/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/C = owner
@@ -282,7 +270,7 @@
 	button_icon_state = "spirit_speech"
 	//gnosis_req = 1
 
-/datum/action/gift/spirit_speech/Trigger()
+/datum/action/gift/spirit_speech/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/C = owner
@@ -297,7 +285,7 @@
 	rage_req = 2
 	//gnosis_req = 1
 
-/datum/action/gift/blur_of_the_milky_eye/Trigger()
+/datum/action/gift/blur_of_the_milky_eye/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/C = owner
@@ -314,7 +302,7 @@
 	button_icon_state = "open_seal"
 //	gnosis_req = 1
 
-/datum/action/gift/open_seal/Trigger()
+/datum/action/gift/open_seal/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		for(var/obj/structure/vampdoor/V in range(5, owner))
@@ -336,14 +324,14 @@
 	button_icon_state = "infectious_laughter"
 	rage_req = 1
 
-/datum/action/gift/infectious_laughter/Trigger()
+/datum/action/gift/infectious_laughter/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/C = owner
 		C.emote("laugh")
 		C.Stun(10)
 		playsound(get_turf(owner), 'code/modules/wod13/sounds/infectious_laughter.ogg', 100, FALSE)
-		for(var/mob/living/L in oviewers(4, owner))
+		for(var/mob/living/L in oviewers(4, src))
 			if(L)
 				L.emote("laugh")
 				L.Stun(20)
@@ -355,7 +343,7 @@
 	rage_req = 1
 	check_flags = null
 
-/datum/action/gift/rage_heal/Trigger()
+/datum/action/gift/rage_heal/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/C = owner
@@ -390,10 +378,9 @@
 	name = "Change Apparel"
 	desc = "Choose the clothes of your Crinos form."
 	button_icon_state = "choose_apparel"
-	icon_icon = 'code/modules/wod13/werewolf_abilities.dmi'
 	check_flags = AB_CHECK_IMMOBILE|AB_CHECK_CONSCIOUS
 
-/datum/action/change_apparel/Trigger()
+/datum/action/change_apparel/Trigger(trigger_flags)
 	. = ..()
 	var/mob/living/carbon/werewolf/crinos/C = owner
 	if(C.stat == CONSCIOUS)
@@ -407,7 +394,7 @@
 	desc = "Change your Lupus form into Hispo and backwards."
 	button_icon_state = "hispo"
 
-/datum/action/gift/hispo/Trigger()
+/datum/action/gift/hispo/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/werewolf/lupus/H = owner
@@ -438,7 +425,7 @@
 	desc = "Change your Homid form into Glabro and backwards."
 	button_icon_state = "glabro"
 
-/datum/action/gift/glabro/Trigger()
+/datum/action/gift/glabro/Trigger(trigger_flags)
 	. = ..()
 	if(allowed_to_proceed)
 		var/mob/living/carbon/human/H = owner
@@ -446,9 +433,7 @@
 		playsound(get_turf(owner), 'code/modules/wod13/sounds/transform.ogg', 50, FALSE)
 		if(G.glabro)
 			H.remove_overlay(PROTEAN_LAYER)
-			G.punchdamagelow -= 15
-			G.punchdamagehigh -= 15
-			H.physique = H.physique-2
+			H.strength = initial(H.strength)
 			H.physiology.armor.melee -= 15
 			H.physiology.armor.bullet -= 15
 			var/matrix/M = matrix()
@@ -461,9 +446,7 @@
 			var/mutable_appearance/glabro_overlay = mutable_appearance('code/modules/wod13/werewolf_abilities.dmi', H.transformator.crinos_form?.sprite_color, -PROTEAN_LAYER)
 			H.overlays_standing[PROTEAN_LAYER] = glabro_overlay
 			H.apply_overlay(PROTEAN_LAYER)
-			G.punchdamagelow += 15
-			G.punchdamagehigh += 15
-			H.physique = H.physique+2
+			H.strength = H.strength+2
 			H.physiology.armor.melee += 15
 			H.physiology.armor.bullet += 15
 			var/matrix/M = matrix()

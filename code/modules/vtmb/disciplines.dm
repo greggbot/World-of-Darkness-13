@@ -6,28 +6,24 @@
 	button_icon = 'code/modules/wod13/UI/actions.dmi' //This is the file for the BACKGROUND icon
 	background_icon_state = "discipline" //And this is the state for the background icon
 
-	icon_icon = 'code/modules/wod13/UI/actions.dmi' //This is the file for the ACTION icon
 	button_icon_state = "discipline" //And this is the state for the action icon
 	vampiric = TRUE
 	var/level_icon_state = "1" //And this is the state for the action icon
 	var/datum/discipline/discipline
 	var/active_check = FALSE
 
-/datum/action/discipline/Trigger()
+/datum/action/discipline/Trigger(trigger_flags)
 	if(discipline && isliving(owner))
 		var/mob/living/owning = owner
 		if(discipline.ranged)
 			if(!active_check)
 				active_check = TRUE
 				if(owning.discipline_ranged)
-					owning.discipline_ranged.Trigger()
+					owning.discipline_ranged.Trigger(trigger_flags)
 				owning.discipline_ranged = src
-				if(button)
-					button.color = "#970000"
 			else
 				active_check = FALSE
 				owning.discipline_ranged = null
-				button.color = "#ffffff"
 		else
 			if(discipline)
 				if(discipline.check_activated(owner, owner))
@@ -40,21 +36,19 @@
 			if(owner.client.prefs)
 				if(owner.client.prefs.old_discipline)
 					button_icon = 'code/modules/wod13/disciplines.dmi'
-					icon_icon = 'code/modules/wod13/disciplines.dmi'
 				else
 					button_icon = 'code/modules/wod13/UI/actions.dmi'
-					icon_icon = 'code/modules/wod13/UI/actions.dmi'
-	if(icon_icon && button_icon_state && ((current_button.button_icon_state != button_icon_state) || force))
+	if(button_icon_state && ((current_button.button_icon_state != button_icon_state) || force))
 		current_button.cut_overlays(TRUE)
 		if(discipline)
 			current_button.name = discipline.name
 			current_button.desc = discipline.desc
-			current_button.add_overlay(mutable_appearance(icon_icon, "[discipline.icon_state]"))
+			current_button.add_overlay(mutable_appearance(button_icon, "[discipline.icon_state]"))
 			current_button.button_icon_state = "[discipline.icon_state]"
 			if(discipline.leveled)
-				current_button.add_overlay(mutable_appearance(icon_icon, "[discipline.level_casting]"))
+				current_button.add_overlay(mutable_appearance(button_icon, "[discipline.level_casting]"))
 		else
-			current_button.add_overlay(mutable_appearance(icon_icon, button_icon_state))
+			current_button.add_overlay(mutable_appearance(button_icon, button_icon_state))
 			current_button.button_icon_state = button_icon_state
 
 /datum/action/discipline/proc/switch_level()
@@ -367,14 +361,6 @@
 			F.beastmaster = caster
 		if(5)
 			AN.Shapeshift(caster)
-//			caster.dna.species.attack_verb = "slash"
-//			caster.dna.species.attack_sound = 'sound/weapons/slash.ogg'
-//			caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow+20
-//			caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagehigh+20
-//			caster.add_movespeed_modifier(/datum/movespeed_modifier/protean3)
-//			caster.remove_overlay(PROTEAN_LAYER)
-//			caster.overlays_standing[PROTEAN_LAYER] = protean_overlay
-//			caster.apply_overlay(PROTEAN_LAYER)
 			spawn(20 SECONDS + caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
 					AN.Restore(AN.myshape)
@@ -799,8 +785,6 @@
 	var/mutable_appearance/potence_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "potence", -POTENCE_LAYER)
 	caster.overlays_standing[POTENCE_LAYER] = potence_overlay
 	caster.apply_overlay(POTENCE_LAYER)
-	caster.dna.species.punchdamagelow += mod
-	caster.dna.species.punchdamagehigh += mod
 	caster.dna.species.meleemod += armah
 	caster.dna.species.attack_sound = 'code/modules/wod13/sounds/heavypunch.ogg'
 	tackler = caster.AddComponent(/datum/component/tackler, stamina_cost=0, base_knockdown = 1 SECONDS, range = 2+level_casting, speed = 1, skill_mod = 0, min_distance = 0)
@@ -810,8 +794,6 @@
 			if(caster.dna)
 				if(caster.dna.species)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/potence_deactivate.ogg', 50, FALSE)
-					caster.dna.species.punchdamagelow -= mod
-					caster.dna.species.punchdamagehigh -= mod
 					caster.dna.species.meleemod -= armah
 					caster.dna.species.attack_sound = initial(caster.dna.species.attack_sound)
 					caster.remove_overlay(POTENCE_LAYER)
@@ -943,7 +925,7 @@
 
 /mob/living/carbon/human/proc/attack_myself_command()
 	if(!CheckFrenzyMove())
-		a_intent = INTENT_HARM
+		set_combat_mode(TRUE)
 		var/obj/item/I = get_active_held_item()
 		if(I)
 			if(I.force)
@@ -1046,7 +1028,6 @@
 /datum/discipline/protean/activate(mob/living/target, mob/living/carbon/human/caster)
 	. = ..()
 	var/mod = min(4, level_casting)
-//	var/mutable_appearance/protean_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "protean[mod]", -PROTEAN_LAYER)
 	if(!GA)
 		GA = new(caster)
 	switch(mod)
@@ -1055,77 +1036,36 @@
 			caster.put_in_r_hand(new /obj/item/melee/vampirearms/knife/gangrel(caster))
 			caster.put_in_l_hand(new /obj/item/melee/vampirearms/knife/gangrel(caster))
 			caster.add_client_colour(/datum/client_colour/glass_colour/red)
-//			caster.dna.species.attack_verb = "slash"
-//			caster.dna.species.attack_sound = 'sound/weapons/slash.ogg'
-//			caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow+10
-//			caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagehigh+10
-//			caster.remove_overlay(PROTEAN_LAYER)
-//			caster.overlays_standing[PROTEAN_LAYER] = protean_overlay
-//			caster.apply_overlay(PROTEAN_LAYER)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
 					for(var/obj/item/melee/vampirearms/knife/gangrel/G in caster.contents)
 						if(G)
 							qdel(G)
 					caster.remove_client_colour(/datum/client_colour/glass_colour/red)
-//					if(caster.dna)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
-//						caster.dna.species.attack_verb = initial(caster.dna.species.attack_verb)
-//						caster.dna.species.attack_sound = initial(caster.dna.species.attack_sound)
-//						caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow-10
-//						caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagehigh-10
-//						caster.remove_overlay(PROTEAN_LAYER)
 		if(2)
 			caster.drop_all_held_items()
 			caster.put_in_r_hand(new /obj/item/melee/vampirearms/knife/gangrel(caster))
 			caster.put_in_l_hand(new /obj/item/melee/vampirearms/knife/gangrel(caster))
 			caster.add_client_colour(/datum/client_colour/glass_colour/red)
-//			caster.dna.species.attack_verb = "slash"
-//			caster.dna.species.attack_sound = 'sound/weapons/slash.ogg'
-//			caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow+15
-//			caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagehigh+15
 			caster.add_movespeed_modifier(/datum/movespeed_modifier/protean2)
-//			caster.remove_overlay(PROTEAN_LAYER)
-//			caster.overlays_standing[PROTEAN_LAYER] = protean_overlay
-//			caster.apply_overlay(PROTEAN_LAYER)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
 					for(var/obj/item/melee/vampirearms/knife/gangrel/G in caster.contents)
 						if(G)
 							qdel(G)
 					caster.remove_client_colour(/datum/client_colour/glass_colour/red)
-//					if(caster.dna)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
-//						caster.dna.species.attack_verb = initial(caster.dna.species.attack_verb)
-//						caster.dna.species.attack_sound = initial(caster.dna.species.attack_sound)
-//						caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow-15
-//						caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagehigh-15
 					caster.remove_movespeed_modifier(/datum/movespeed_modifier/protean2)
-//						caster.remove_overlay(PROTEAN_LAYER)
 		if(3)
 			caster.drop_all_held_items()
 			GA.Shapeshift(caster)
-//			caster.dna.species.attack_verb = "slash"
-//			caster.dna.species.attack_sound = 'sound/weapons/slash.ogg'
-//			caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow+20
-//			caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagehigh+20
-//			caster.add_movespeed_modifier(/datum/movespeed_modifier/protean3)
-//			caster.remove_overlay(PROTEAN_LAYER)
-//			caster.overlays_standing[PROTEAN_LAYER] = protean_overlay
-//			caster.apply_overlay(PROTEAN_LAYER)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
 					GA.Restore(GA.myshape)
 					caster.Stun(15)
 					caster.do_jitter_animation(30)
-//					if(caster.dna)
 					caster.playsound_local(caster, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
-//						caster.dna.species.attack_verb = initial(caster.dna.species.attack_verb)
-//						caster.dna.species.attack_sound = initial(caster.dna.species.attack_sound)
-//						caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow-20
-//						caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagehigh-20
-//						caster.remove_movespeed_modifier(/datum/movespeed_modifier/protean3)
-//						caster.remove_overlay(PROTEAN_LAYER)
 		if(4 to 5)
 			caster.drop_all_held_items()
 			if(level_casting == 4)
@@ -1133,33 +1073,12 @@
 			if(level_casting == 5)
 				GA.shapeshift_type = /mob/living/simple_animal/hostile/gangrel/best
 			GA.Shapeshift(caster)
-//			caster.dna.species.attack_verb = "slash"
-//			caster.dna.species.attack_sound = 'sound/weapons/slash.ogg'
-//			caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow+25
-//			caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagelow+25
-//			if(level_casting == 5)
-//				caster.add_movespeed_modifier(/datum/movespeed_modifier/protean5)
-//			else
-//				caster.add_movespeed_modifier(/datum/movespeed_modifier/protean4)
-//			caster.remove_overlay(PROTEAN_LAYER)
-//			caster.overlays_standing[PROTEAN_LAYER] = protean_overlay
-//			caster.apply_overlay(PROTEAN_LAYER)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
 					GA.Restore(GA.myshape)
 					caster.Stun(1 SECONDS)
 					caster.do_jitter_animation(1.5 SECONDS)
-//					if(caster.dna)
 					caster.playsound_local(caster, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
-//						caster.dna.species.attack_verb = initial(caster.dna.species.attack_verb)
-//						caster.dna.species.attack_sound = initial(caster.dna.species.attack_sound)
-//						caster.dna.species.punchdamagelow = caster.dna.species.punchdamagelow-25
-//						caster.dna.species.punchdamagehigh = caster.dna.species.punchdamagehigh-25
-//						if(level_casting == 5)
-//							caster.remove_movespeed_modifier(/datum/movespeed_modifier/protean5)
-//						else
-//							caster.remove_movespeed_modifier(/datum/movespeed_modifier/protean4)
-//						caster.remove_overlay(PROTEAN_LAYER)
 
 /mob/living/proc/tremere_gib()
 	Stun(5 SECONDS)
@@ -1198,7 +1117,7 @@
 	damage = 5
 	damage_type = BURN
 	hitsound = 'code/modules/wod13/sounds/drinkblood1.ogg'
-	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
+	hitsound_wall = 'sound/items/weapons/effects/searwall.ogg'
 	flag = LASER
 	light_system = MOVABLE_LIGHT
 	light_range = 1
@@ -1501,8 +1420,8 @@
 	pass_flags = PASSTABLE
 	damage = 80
 	damage_type = BURN
-	hitsound = 'sound/weapons/effects/searwall.ogg'
-	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
+	hitsound = 'sound/items/weapons/effects/searwall.ogg'
+	hitsound_wall = 'sound/items/weapons/effects/searwall.ogg'
 	ricochets_max = 0
 	ricochet_chance = 0
 

@@ -17,7 +17,7 @@
 
 /obj/structure/weedshit/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Alt-click to [anchored ? "un" : ""]secure [src] [anchored ? "from" : "to"] the ground.</span>"
+	. += "<span class='notice'>Alt-click to secure the [src] to the ground.</span>"
 	if(!wet)
 		. += "<span class='warning'>[src] is dry!</span>"
 	if(growth_stage == 5)
@@ -48,16 +48,14 @@
 	time = 10
 	reqs = list(/obj/item/food/vampire/weed = 1)
 	result = /obj/item/weedpack
-	always_available = TRUE
-	category = CAT_DRUGS
+	category = CAT_CHEMISTRY
 
 /datum/crafting_recipe/weed_blunt
 	name = "Roll Blunt"
 	time = 10
 	reqs = list(/obj/item/weedpack = 1, /obj/item/paper = 1)
 	result = /obj/item/clothing/mask/cigarette/rollie/cannabis
-	always_available = TRUE
-	category = CAT_DRUGS
+	category = CAT_CHEMISTRY
 
 /obj/item/food/vampire/weed
 	name = "leaf"
@@ -68,7 +66,7 @@
 	bite_consumption = 5
 	tastes = list("cat piss" = 4, "weed" = 2)
 	foodtypes = VEGETABLES
-	food_reagents = list(/datum/reagent/drug/cannabis = 20, /datum/reagent/toxin/lipolicide = 20)
+	food_reagents = list(/datum/reagent/drug/space_drugs = 20, /datum/reagent/toxin/lipolicide = 20)
 	eat_time = 10
 	illegal = TRUE
 	cost = 50
@@ -85,8 +83,6 @@
 	. = ..()
 	if(!amount_of_water)
 		. += "<span class='warning'>[src] is empty!</span>"
-	else
-		. += "<span class='notice'>It has [amount_of_water]/10 unit[amount_of_water == 1 ? "" : "s"] of water left.</span>"
 
 /obj/structure/weedshit/attack_hand(mob/user, params)
 	. = ..()
@@ -112,17 +108,14 @@
 			new /obj/item/food/vampire/weed(get_turf(user))
 	update_weed_icon()
 
-/obj/structure/weedshit/AltClick(mob/user)
-	if(!user.Adjacent(src))
-		return
-	to_chat(user, "<span class='notice'>You start [anchored ? "unsecuring" : "securing"] [src] [anchored ? "from" : "to"] the ground.</span>")
+/obj/structure/weedshit/click_alt(mob/user)
 	if(do_after(user, 15))
 		if(anchored)
-			to_chat(user, "<span class='notice'>You unsecure [src] from the ground.</span>")
+			to_chat(user, "<span class='notice'>You unsecure the [src] from the ground.</span>")
 			anchored = FALSE
 			return
 		else
-			to_chat(user, "<span class='notice'>You secure [src] to the ground.</span>")
+			to_chat(user, "<span class='notice'>You secure the [src] to the ground.</span>")
 			anchored = TRUE
 			return
 
@@ -274,7 +267,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	playsound(src, 'code/modules/wod13/sounds/heatdam.ogg', 50, TRUE)
 	if(!do_after(user, 40, src))
 		return
-	to_chat(hit_mob, "<span class='notice'>You finish taking a hit from [src].</span>")
+	to_chat(hit_mob, "<span class='notice'>You finish taking a hit from the [src].</span>")
 	if(reagents.total_volume)
 		reagents.trans_to(hit_mob, reagent_transfer_per_use, methods = VAPOR)
 		bong_hits--
@@ -428,7 +421,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 
 /obj/structure/methlab/movable/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>Alt-click to [anchored ? "un" : ""]secure [src] [anchored ? "from" : "to"] the ground.</span>"
+	. += "<span class='notice'>Alt-click to secure the [src] to the ground.</span>"
 
 	if(health == 20)
 		. += "<span class='notice'>[src] is in good condition.</span>"
@@ -442,24 +435,21 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	else
 		. += "<span class='warning'>[src] is about to fall apart!</span>"
 
-/obj/structure/methlab/AltClick(mob/user)
-	if(!user.Adjacent(src))
-		return
-	to_chat(user, "<span class='notice'>You start [anchored ? "unsecuring" : "securing"] [src] [anchored ? "from" : "to"] the ground.</span>")
+/obj/structure/methlab/click_alt(mob/user)
 	if(do_after(user, 15))
 		if(anchored)
-			to_chat(user, "<span class='notice'>You unsecure [src] from the ground.</span>")
+			to_chat(user, "<span class='notice'>You unsecure the [src] from the ground.</span>")
 			anchored = FALSE
 			return
 		else
-			to_chat(user, "<span class='notice'>You secure [src] to the ground.</span>")
+			to_chat(user, "<span class='notice'>You secure the [src] to the ground.</span>")
 			anchored = TRUE
 			return
 
 /obj/structure/methlab/movable/attackby(obj/item/used_item, mob/user, params)
 	if(..(used_item, user, params))
 		if(health <= 0)
-			to_chat(user, "<span class='warning'>[src] is too damaged to use!</span>")
+			to_chat(user, "<span class='warning'>The [src] is too damaged to use!</span>")
 			return
 		return TRUE
 

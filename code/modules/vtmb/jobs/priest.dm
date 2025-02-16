@@ -6,16 +6,15 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "God"
-	selection_color = "#fff700"
 
 	outfit = /datum/outfit/job/priest
 
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_EASY
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_PRIEST
-	exp_type_department = EXP_TYPE_CHURCH
+	exp_granted_type = EXP_TYPE_CHURCH
 
 	allowed_species = list("Human")
 	minimal_generation = 13
