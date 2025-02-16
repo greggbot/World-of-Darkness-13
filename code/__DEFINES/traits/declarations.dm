@@ -1436,4 +1436,11 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 /// Prevents fishing achievement from being granted by catching one of these
 #define TRAIT_NO_FISHING_ACHIEVEMENT "no_fishing_achievement"
 
+////////////////////// START WOD13 TRAIT DECLARATIONS //////////////////////////////////////////////
+
+#define TRAIT_EXP_DRIVER		"experienced_driver"
+
+
+
+
 // END TRAIT DEFINES
