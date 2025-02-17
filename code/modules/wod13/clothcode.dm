@@ -797,6 +797,12 @@
 	desc = "Durable, lightweight vest designed to protect against most threats efficiently."
 	icon_state = "vest"
 	armor_type = /datum/armor/vampire_vest
+	allowed = list(
+		/obj/item/card/id,
+		/obj/item/flashlight,
+		/obj/item/melee/classic_baton/vampire,
+		/obj/item/restraints/handcuffs
+	)
 
 /// Automatically generated armor datum, errors may exist
 /datum/armor/vampire_vest

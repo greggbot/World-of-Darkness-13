@@ -10,9 +10,12 @@
 	sort_list(surgeries, GLOBAL_PROC_REF(cmp_typepaths_asc))
 	return surgeries
 
-/// Legacy procs that really should be replaced with proper _INIT macros
-/proc/make_datum_reference_lists()
-	// I tried to eliminate this proc but I couldn't untangle their init-order interdependencies -Dominion/Cyberboss
+	// Hair Gradients - Initialise all /datum/sprite_accessory/gradient into an list indexed by gradient-style name
+	for(var/path in subtypesof(/datum/sprite_accessory/gradient))
+		var/datum/sprite_accessory/gradient/H = new path()
+		GLOB.gradients_list[H.name] = H
+
+	// Keybindings
 	init_keybindings()
 	GLOB.emote_list = init_emote_list() // WHY DOES THIS NEED TO GO HERE? IT JUST INITS DATUMS
 	init_crafting_recipes()
