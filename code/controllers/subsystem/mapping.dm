@@ -444,10 +444,10 @@ Used by the AI doomsday and the self-destruct nuke.
 
 #ifndef LOWMEMORYMODE
 
-	if(current_map.minetype == "lavaland")
-		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
-	else if (!isnull(current_map.minetype) && current_map.minetype != "none")
-		INIT_ANNOUNCE("WARNING: An unknown minetype '[current_map.minetype]' was set! This is being ignored! Update the maploader code!")
+	if(config.minetype == "lavaland")
+		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm")
+	else if (!isnull(config.minetype) && config.minetype != "none")
+		INIT_ANNOUNCE("WARNING: An unknown minetype '[config.minetype]' was set! This is being ignored! Update the maploader code!")
 #endif
 
 	if(LAZYLEN(FailedZs)) //but seriously, unless the server's filesystem is messed up this will never happen
