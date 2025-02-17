@@ -551,26 +551,6 @@
 		/datum/action/cooldown/spell/conjure/simian,
 	)
 
-/datum/outfit/deathmatch_loadout/head_of_security
-	name = "Deathmatch: Head of Security"
-	display_name = "Head of Security"
-	desc = "Finally, nobody to stop the power from going to your head."
-
-	head = /datum/outfit/job/hos::head
-	ears = 	/datum/outfit/job/hos::ears
-	uniform = /obj/item/clothing/under/rank/security/head_of_security/alt
-	shoes = /datum/outfit/job/hos::shoes
-	neck = /datum/outfit/job/hos::neck
-	glasses = /datum/outfit/job/hos::glasses
-	suit = /obj/item/clothing/suit/armor/hos/hos_formal
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/compact
-	gloves = /obj/item/clothing/gloves/tackler/combat
-	belt = /obj/item/gun/energy/e_gun/hos
-	r_hand = /obj/item/melee/baton/security/loaded
-	l_hand = /obj/item/shield/riot/tele
-	l_pocket = /obj/item/grenade/flashbang
-	r_pocket = /obj/item/restraints/legcuffs/bola/energy
-
 /datum/outfit/deathmatch_loadout/captain
 	name = "Deathmatch: Captain"
 	display_name = "Captain"
@@ -696,40 +676,6 @@
 		/obj/item/food/pie/cream = 1,
 		/obj/item/dnainjector/clumsymut,
 		/obj/item/sbeacondrop/clownbomb,
-		)
-
-/datum/outfit/deathmatch_loadout/mime
-	name = "Deathmatch: Mime"
-	display_name = "Mime"
-	desc = "..."
-
-	uniform = /datum/outfit/job/mime::uniform
-	belt = /obj/item/food/baguette/combat
-	head = /datum/outfit/job/mime::head
-	shoes = /datum/outfit/job/mime::shoes
-	mask = /datum/outfit/job/mime::mask
-	back = /datum/outfit/job/mime::backpack
-	box = /datum/outfit/job/mime::box
-	l_pocket = /obj/item/toy/crayon/spraycan/mimecan
-	r_pocket = /obj/item/food/grown/banana/mime
-	neck = /datum/outfit/job/mime::neck
-	gloves = /datum/outfit/job/mime::gloves
-
-	backpack_contents = list(
-		/obj/item/reagent_containers/cup/glass/bottle/bottleofnothing,
-		/obj/item/gun/ballistic/automatic/pistol,
-		/obj/item/suppressor,
-		/obj/item/ammo_box/c9mm,
-		/obj/item/food/croissant/throwing = 2,
-		)
-
-	spells_to_add = list(
-		/datum/action/cooldown/spell/vow_of_silence,
-		/datum/action/cooldown/spell/conjure_item/invisible_box,
-		/datum/action/cooldown/spell/conjure/invisible_chair,
-		/datum/action/cooldown/spell/conjure/invisible_wall,
-		/datum/action/cooldown/spell/forcewall/mime,
-		/datum/action/cooldown/spell/pointed/projectile/finger_guns,
 		)
 
 /datum/outfit/deathmatch_loadout/chef/upgraded

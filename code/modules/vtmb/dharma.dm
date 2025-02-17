@@ -71,13 +71,13 @@
 		animated = "Yang"
 		mob.yang_chi = max(0, mob.yang_chi-1)
 		mob.dna?.species.brutemod = 1
-		mob.dna?.species.burnmod = 0.5
+		mob.dna?.species.heatmod = 0.5
 	else
 		animated = "Yin"
 		mob.yin_chi = max(0, mob.yin_chi-1)
 		mob.skin_tone = get_vamp_skin_color(mob.skin_tone)
 		mob.dna?.species.brutemod = initial(mob.dna?.species.brutemod)
-		mob.dna?.species.burnmod = initial(mob.dna?.species.burnmod)
+		mob.dna?.species.heatmod = initial(mob.dna?.species.heatmod)
 
 	if(level >= 5)
 		if(!locate(/datum/action/breathe_chi) in mob.actions)
@@ -247,7 +247,6 @@
 						if(isliving(mind?.dharma?.Po_Focus))
 							var/mob/living/L = mind?.dharma?.Po_Focus
 							if(L.stat != DEAD)
-								a_intent = INTENT_GRAB
 								dropItemToGround(get_active_held_item())
 								if(last_rage_hit+5 < world.time)
 									last_rage_hit = world.time
@@ -258,7 +257,7 @@
 			if("Monkey")
 				if(mind?.dharma?.Po_Focus)
 					if(get_dist(mind?.dharma?.Po_Focus, src) <= 1)
-						a_intent = INTENT_HELP
+						set_combat_mode(FALSE)
 						if(!istype(get_active_held_item(), /obj/item/toy))
 							dropItemToGround(get_active_held_item())
 						else
@@ -275,7 +274,6 @@
 			if("Demon")
 				if(mind?.dharma?.Po_Focus)
 					if(get_dist(mind?.dharma?.Po_Focus, src) <= 1)
-						a_intent = INTENT_GRAB
 						dropItemToGround(get_active_held_item())
 						if(last_rage_hit+5 < world.time)
 							last_rage_hit = world.time

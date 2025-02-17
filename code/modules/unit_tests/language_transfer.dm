@@ -60,7 +60,7 @@
 /datum/unit_test/language_species_change_other_known/Run()
 	var/mob/living/carbon/human/dummy = allocate(/mob/living/carbon/human/consistent)
 	dummy.grant_language(/datum/language/piratespeak, source = LANGUAGE_MIND)
-	dummy.grant_language(/datum/language/draconic, source = LANGUAGE_ATOM)
+	dummy.grant_language(/datum/language/hebrew, source = LANGUAGE_ATOM)
 	dummy.set_species(/datum/species/lizard)
 
 	TEST_ASSERT(dummy.has_language(/datum/language/piratespeak, SPOKEN_LANGUAGE), \
@@ -71,10 +71,10 @@
 
 	dummy.set_species(/datum/species/human)
 
-	TEST_ASSERT(dummy.has_language(/datum/language/draconic, SPOKEN_LANGUAGE), \
+	TEST_ASSERT(dummy.has_language(/datum/language/hebrew, SPOKEN_LANGUAGE), \
 		"Dummy should still speak Draconic after changing species, as it's an atom language!")
 
-	TEST_ASSERT(dummy.has_language(/datum/language/draconic, UNDERSTOOD_LANGUAGE), \
+	TEST_ASSERT(dummy.has_language(/datum/language/hebrew, UNDERSTOOD_LANGUAGE), \
 		"Dummy should still understand Draconic after changing species, as it's an atom language!")
 
 /// Tests that mind bound languages are not lost swapping into a new mob, but other languages are
@@ -85,7 +85,7 @@
 	var/mob/living/basic/pet/dog/corgi/transfer_target = allocate(/mob/living/basic/pet/dog/corgi)
 	dummy.mind_initialize()
 	dummy.grant_language(/datum/language/piratespeak, source = LANGUAGE_MIND)
-	dummy.grant_language(/datum/language/draconic, source = LANGUAGE_ATOM)
+	dummy.grant_language(/datum/language/hebrew, source = LANGUAGE_ATOM)
 	dummy.set_species(/datum/species/lizard/silverscale)
 
 	dummy.mind.transfer_to(transfer_target)
@@ -102,25 +102,25 @@
 		"Dummy's new mob should be capable of understanding Pirate!")
 
 	// transfer_target should NOT speak and understand draconic
-	TEST_ASSERT(dummy.has_language(/datum/language/draconic, SPOKEN_LANGUAGE), \
+	TEST_ASSERT(dummy.has_language(/datum/language/hebrew, SPOKEN_LANGUAGE), \
 		"Dummy should still understand Draconic after losing their mind - it's an atom language!")
-	TEST_ASSERT(!transfer_target.has_language(/datum/language/draconic, SPOKEN_LANGUAGE), \
+	TEST_ASSERT(!transfer_target.has_language(/datum/language/hebrew, SPOKEN_LANGUAGE), \
 		"Dummy's new mob should not understand Draconic - it's an atom language!")
 
-	TEST_ASSERT(dummy.has_language(/datum/language/draconic, UNDERSTOOD_LANGUAGE), \
+	TEST_ASSERT(dummy.has_language(/datum/language/hebrew, UNDERSTOOD_LANGUAGE), \
 		"Dummy should still understand Draconic after losing their mind - it's an atom language!")
-	TEST_ASSERT(!transfer_target.has_language(/datum/language/draconic, UNDERSTOOD_LANGUAGE), \
+	TEST_ASSERT(!transfer_target.has_language(/datum/language/hebrew, UNDERSTOOD_LANGUAGE), \
 		"Dummy's new mob should not understand Draconic - it's an atom language!")
 
 	// transfer_target should NOT speak and understand uncommon
-	TEST_ASSERT(dummy.has_language(/datum/language/uncommon, SPOKEN_LANGUAGE), \
+	TEST_ASSERT(dummy.has_language(/datum/language/mandarin, SPOKEN_LANGUAGE), \
 		"Dummy should still understand Uncommon after losing their mind - it's a species language!")
-	TEST_ASSERT(!transfer_target.has_language(/datum/language/uncommon, SPOKEN_LANGUAGE), \
+	TEST_ASSERT(!transfer_target.has_language(/datum/language/mandarin, SPOKEN_LANGUAGE), \
 		"Dummy's new mob should not understand Uncommon - it's a species language!")
 
-	TEST_ASSERT(dummy.has_language(/datum/language/uncommon, UNDERSTOOD_LANGUAGE), \
+	TEST_ASSERT(dummy.has_language(/datum/language/mandarin, UNDERSTOOD_LANGUAGE), \
 		"Dummy should still understand Uncommon after losing their mind - it's a species language!")
-	TEST_ASSERT(!transfer_target.has_language(/datum/language/uncommon, UNDERSTOOD_LANGUAGE), \
+	TEST_ASSERT(!transfer_target.has_language(/datum/language/mandarin, UNDERSTOOD_LANGUAGE), \
 		"Dummy's new mob should not understand Uncommon - it's a species language!")
 
 /// Tests that mind bound languages are not lost when swapping with another person (wiz mindswap)

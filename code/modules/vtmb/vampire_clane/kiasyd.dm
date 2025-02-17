@@ -160,14 +160,14 @@
 						to_chat(caster, "- [A.name]")
 		if(2)
 			caster.enhanced_strip = TRUE
-			target.show_inv(caster)
+			target.strip(caster)
 			spawn(delay + caster.discipline_time_plus)
 				caster.enhanced_strip = FALSE
 		if(3)
 			var/obj/item/clothing/mask/facehugger/kiasyd/K = new (get_turf(caster))
 			K.throw_at(target, 10, 14, caster)
 		if(4)
-			var/list/screens = list(target.hud_used.plane_masters["[FLOOR_PLANE]"], target.hud_used.plane_masters["[GAME_PLANE]"], target.hud_used.plane_masters["[LIGHTING_PLANE]"])
+			var/list/screens = list(target.hud_used.plane_master_controllers[FLOOR_PLANE], target.hud_used.plane_master_controllers[GAME_PLANE], target.hud_used.plane_master_controllers[LIGHTING_PLANE])
 			var/rotation = 50
 			for(var/whole_screen in screens)
 				animate(whole_screen, transform = matrix(rotation, MATRIX_ROTATE), time = 0.5 SECONDS, easing = QUAD_EASING, loop = -1)
@@ -331,8 +331,11 @@
 	var/unique = FALSE
 	var/mob/owner
 
-/obj/mytherceria_trap/Crossed(atom/movable/AM)
-	..()
+/obj/mytherceria_trap/Initialize(mapload)
+	. = ..()
+	RegisterSignal(src, COMSIG_MOVABLE_CROSS, PROC_REF(on_cross))
+
+/obj/mytherceria_trap/proc/on_cross(atom/movable/AM)
 	if(isliving(AM) && owner)
 		if(AM != owner)
 			playsound(get_turf(src), 'code/modules/wod13/sounds/kiasyd.ogg', 100, FALSE)
@@ -351,12 +354,12 @@
 	unique = TRUE
 	icon_state = "rune2"
 
-/obj/mytherceria_trap/disorient/Crossed(atom/movable/AM)
+/obj/mytherceria_trap/disorient/on_cross(atom/movable/AM)
 	..()
 	if(isliving(AM) && owner)
 		if(AM != owner)
 			var/mob/living/L = AM
-			var/list/screens = list(L.hud_used.plane_masters["[FLOOR_PLANE]"], L.hud_used.plane_masters["[GAME_PLANE]"], L.hud_used.plane_masters["[LIGHTING_PLANE]"])
+			var/list/screens = list(L.hud_used.plane_master_controllers[FLOOR_PLANE], L.hud_used.plane_master_controllers[GAME_PLANE], L.hud_used.plane_master_controllers[LIGHTING_PLANE])
 			var/rotation = 50
 			for(var/whole_screen in screens)
 				animate(whole_screen, transform = matrix(rotation, MATRIX_ROTATE), time = 0.5 SECONDS, easing = QUAD_EASING, loop = -1)
@@ -374,12 +377,11 @@
 	unique = TRUE
 	icon_state = "rune3"
 
-/obj/mytherceria_trap/drop/Crossed(atom/movable/AM)
-	..()
+/obj/mytherceria_trap/drop/on_cross(atom/movable/AM)
 	if(iscarbon(AM) && owner)
 		if(AM != owner)
 			var/mob/living/carbon/L = AM
-			for(var/obj/item/I in L.get_equipped_items(include_pockets = TRUE))
+			for(var/obj/item/I in L.get_equipped_items(INCLUDE_POCKETS))
 				if(I)
 					L.dropItemToGround(I, TRUE)
 			qdel(src)

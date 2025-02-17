@@ -57,15 +57,15 @@
 
 /obj/item/vtm_artifact/weekapaug_thistle/get_powers()
 	..()
-	var/mob/living/carbon/human/H = owner
-	H.physiology.armor.melee = H.physiology.armor.melee+10
-	H.physiology.armor.bullet = H.physiology.armor.bullet+10
+	//var/mob/living/carbon/human/H = owner
+	//H.physiology.armor.melee = H.physiology.armor.melee+10
+	//H.physiology.armor.bullet = H.physiology.armor.bullet+10
 
 /obj/item/vtm_artifact/weekapaug_thistle/remove_powers()
 	..()
-	var/mob/living/carbon/human/H = owner
-	H.physiology.armor.melee = H.physiology.armor.melee-10
-	H.physiology.armor.bullet = H.physiology.armor.bullet-10
+	//var/mob/living/carbon/human/H = owner
+	//H.physiology.armor.melee = H.physiology.armor.melee-10
+	//H.physiology.armor.bullet = H.physiology.armor.bullet-10
 
 /obj/item/vtm_artifact/tarulfang
 	true_name = "Tarulfang"
@@ -145,13 +145,13 @@
 	..()
 	var/mob/living/carbon/human/H = owner
 	if(H.dna)
-		H.dna.species.meleemod = H.dna.species.meleemod+0.5
+		H.dna.species.brutemod = H.dna.species.brutemod+0.5
 
 /obj/item/vtm_artifact/heart_of_eliza/remove_powers()
 	..()
 	var/mob/living/carbon/human/H = owner
 	if(H.dna)
-		H.dna.species.meleemod = H.dna.species.meleemod-0.5
+		H.dna.species.brutemod = H.dna.species.brutemod-0.5
 
 /obj/item/vtm_artifact/bloodstar
 	true_name = "Bloodstar"
@@ -191,7 +191,7 @@
 		return
 	if(H.dna)
 		H.dna.species.brutemod = H.dna.species.brutemod-0.2
-		H.dna.species.burnmod = H.dna.species.burnmod-0.2
+		H.dna.species.heatmod = H.dna.species.heatmod-0.2
 
 /obj/item/vtm_artifact/key_of_alamut/remove_powers()
 	..()
@@ -200,7 +200,7 @@
 		return
 	if(H.dna)
 		H.dna.species.brutemod = H.dna.species.brutemod+0.2
-		H.dna.species.burnmod = H.dna.species.burnmod+0.2
+		H.dna.species.heatmod = H.dna.species.heatmod+0.2
 
 /obj/item/vtm_artifact/odious_chalice
 	true_name = "Odious Chalice"

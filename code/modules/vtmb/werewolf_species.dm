@@ -6,11 +6,8 @@
 	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, HAS_FLESH, HAS_BONE)
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER, TRAIT_VIRUSIMMUNE, TRAIT_PERFECT_ATTACKER)
 	use_skintones = TRUE
-	limbs_id = "human"
-	mutant_bodyparts = list("tail_human" = "None", "ears" = "None", "wings" = "None")
 	brutemod = 0.75
 	heatmod = 1
-	burnmod = 1
 	whitelisted = TRUE
 	var/glabro = FALSE
 

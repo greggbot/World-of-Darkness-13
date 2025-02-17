@@ -16,7 +16,7 @@
 	if(!iscathayan(src))
 		if((yang_chi == 0 && max_yang_chi != 0) && (yang_chi == 0 && max_yang_chi != 0))
 			to_chat(src, "<span clas='warning'>Your vital energies seem to disappear...</span>")
-			adjustCloneLoss(5, TRUE)
+			adjustFireLoss(5, TRUE)
 		else if(yang_chi == 0 && max_yang_chi != 0)
 			if(max_yin_chi != 0)
 				to_chat(src, "<span clas='warning'>You lack dynamic part of life...</span>")
@@ -24,7 +24,7 @@
 				adjustFireLoss(5, TRUE)
 			else
 				to_chat(src, "<span clas='warning'>Your vital energies seem to disappear...</span>")
-				adjustCloneLoss(5, TRUE)
+				adjustFireLoss(5, TRUE)
 		else if(yin_chi == 0 && max_yin_chi != 0)
 			if(max_yang_chi != 0)
 				to_chat(src, "<span clas='warning'>You lack static part of life...</span>")
@@ -32,7 +32,7 @@
 				adjustFireLoss(5, TRUE)
 			else
 				to_chat(src, "<span clas='warning'>Your vital energies seem to disappear...</span>")
-				adjustCloneLoss(5, TRUE)
+				adjustFireLoss(5, TRUE)
 
 	if(!iscathayan(src))
 		if (COOLDOWN_FINISHED(src, chi_restore))
@@ -56,7 +56,7 @@
 	mutant_bodyparts = list("tail_human" = "None", "ears" = "None", "wings" = "None")
 	brutemod = 0.5
 	heatmod = 1
-	burnmod = 3
+	heatmod = 3
 	dust_anim = "dust-k"
 	whitelisted = TRUE
 	selectable = TRUE
@@ -87,7 +87,6 @@
 	name = "Chi Pool"
 	icon = 'code/modules/wod13/UI/chi.dmi'
 	icon_state = "base"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 	var/image/upper_layer
 
@@ -95,33 +94,29 @@
 	name = "Yang Chi"
 	icon = 'code/modules/wod13/UI/chi.dmi'
 	icon_state = "yang-0"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/yin_chi
 	name = "Yin Chi"
 	icon = 'code/modules/wod13/UI/chi.dmi'
 	icon_state = "yin-0"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/imbalance_chi
 	name = "Chi Imbalance"
 	icon = 'code/modules/wod13/UI/chi.dmi'
 	icon_state = "base"
-	layer = HUD_LAYER-1
 	plane = HUD_PLANE
 
 /atom/movable/screen/demon_chi
 	name = "Demon Chi"
 	icon = 'code/modules/wod13/UI/chi.dmi'
 	icon_state = "base"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/chi_pool/Initialize()
 	. = ..()
-	upper_layer = image(icon = 'code/modules/wod13/UI/chi.dmi', icon_state = "add", layer = HUD_LAYER+1)
+	upper_layer = image(icon = 'code/modules/wod13/UI/chi.dmi', icon_state = "add", plane = HUD_PLANE+1)
 	add_overlay(upper_layer)
 
 /atom/movable/screen/chi_pool/Click()
@@ -448,8 +443,6 @@
 
 	drain_breath(kueijin, victim)
 
-	button.color = "#970000"
-	animate(button, color = "#ffffff", time = cooldown)
 
 /datum/action/breathe_chi/proc/drain_breath(mob/living/carbon/human/kueijin, mob/living/victim)
 	//this one is on carbon instead of living which means it needs some annoying extra code
@@ -524,9 +517,6 @@
 			kueijin.yin_chi = min(kueijin.yin_chi + draining_area.yin_chi, kueijin.max_yin_chi)
 			to_chat(kueijin, "<span class='medradio'>Some <b>Yin</b> Chi energy enters you...</span>")
 
-		button.color = "#970000"
-		animate(button, color = "#ffffff", time = cooldown)
-
 /datum/action/reanimate_yin
 	name = "Yin Reanimate"
 	desc = "Reanimate your body with Yin Chi energy."
@@ -558,7 +548,7 @@
 	kueijin.mind.dharma?.animated = "Yin"
 	kueijin.skin_tone = get_vamp_skin_color(kueijin.skin_tone)
 	kueijin.dna?.species.brutemod = initial(kueijin.dna?.species.brutemod)
-	kueijin.dna?.species.burnmod = initial(kueijin.dna?.species.burnmod)
+	kueijin.dna?.species.heatmod = initial(kueijin.dna?.species.heatmod)
 	kueijin.update_body()
 
 	for (var/i in 1 to 5)
@@ -566,15 +556,13 @@
 			var/datum/wound/wound = pick(kueijin.all_wounds)
 			wound.remove_wound()
 
-	var/obj/item/organ/eyes/eyes = kueijin.getorganslot(ORGAN_SLOT_EYES)
+	var/obj/item/organ/eyes/eyes = kueijin.get_organ_loss(ORGAN_SLOT_EYES)
 	if(eyes)
-		kueijin.adjust_blindness(-2)
-		kueijin.adjust_blurriness(-2)
-		eyes.applyOrganDamage(-5)
+		eyes.apply_organ_damage(10)
 
-	var/obj/item/organ/brain/brain = kueijin.getorganslot(ORGAN_SLOT_BRAIN)
+	var/obj/item/organ/brain/brain = kueijin.get_organ_loss(ORGAN_SLOT_BRAIN)
 	if(brain)
-		brain.applyOrganDamage(-100)
+		brain.apply_organ_damage(100)
 
 	var/heal_level = min(kueijin.mind.dharma.level, 4)
 	kueijin.heal_ordered_damage(20 * heal_level, list(OXY, STAMINA, BRUTE, TOX))
@@ -582,8 +570,6 @@
 	kueijin.blood_volume = min(kueijin.blood_volume + 56, 560)
 	kueijin.yin_chi = max(0, kueijin.yin_chi - 1)
 
-	button.color = "#970000"
-	animate(button, color = "#ffffff", time = cooldown)
 
 /datum/action/reanimate_yang
 	name = "Yang Reanimate"
@@ -616,7 +602,7 @@
 	kueijin.mind.dharma?.animated = "Yang"
 	kueijin.skin_tone = kueijin.mind.dharma?.initial_skin_color
 	kueijin.dna?.species.brutemod = 1
-	kueijin.dna?.species.burnmod = 0.5
+	kueijin.dna?.species.heatmod = 0.5
 	kueijin.update_body()
 
 	for (var/i in 1 to 5)
@@ -624,24 +610,19 @@
 			var/datum/wound/wound = pick(kueijin.all_wounds)
 			wound.remove_wound()
 
-	var/obj/item/organ/eyes/eyes = kueijin.getorganslot(ORGAN_SLOT_EYES)
+	var/obj/item/organ/eyes/eyes = kueijin.get_organ_loss(ORGAN_SLOT_EYES)
 	if(eyes)
-		kueijin.adjust_blindness(-2)
-		kueijin.adjust_blurriness(-2)
-		eyes.applyOrganDamage(-5)
+		eyes.apply_organ_damage(10)
 
-	var/obj/item/organ/brain/brain = kueijin.getorganslot(ORGAN_SLOT_BRAIN)
+	var/obj/item/organ/brain/brain = kueijin.get_organ_loss(ORGAN_SLOT_BRAIN)
 	if(brain)
-		brain.applyOrganDamage(-100)
+		brain.apply_organ_damage(100)
 
 	var/heal_level = min(kueijin.mind.dharma.level, 4)
 	kueijin.heal_ordered_damage(10 * heal_level, list(OXY, STAMINA, BRUTE, TOX))
-	kueijin.heal_ordered_damage(2.5 * heal_level, list(BURN, CLONE))
+	kueijin.heal_ordered_damage(2.5 * heal_level, list(BURN))
 	kueijin.blood_volume = min(kueijin.blood_volume + 28, 560)
 	kueijin.yang_chi = max(0, kueijin.yang_chi - 1)
-
-	button.color = "#970000"
-	animate(button, color = "#ffffff", time = cooldown)
 
 /datum/action/rebalance
 	name = "Rebalance"

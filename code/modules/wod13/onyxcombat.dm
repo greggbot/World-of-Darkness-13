@@ -35,7 +35,7 @@
 
 	if(iskindred(src) || iscathayan(src))
 		can_be_embraced = FALSE
-		var/obj/item/organ/brain/brain = getorganslot(ORGAN_SLOT_BRAIN) //NO REVIVAL EVER
+		var/obj/item/organ/brain/brain = get_organ_loss(ORGAN_SLOT_BRAIN) //NO REVIVAL EVER
 		if (brain)
 			brain.organ_flags |= ORGAN_FAILING
 
@@ -152,7 +152,7 @@
 					user.do_attack_animation(src)
 					playsound(src, 'sound/items/weapons/tap.ogg', 70, TRUE)
 					visible_message("<span class='danger'>[src] blocks the attack!</span>", "<span class='danger'>You block the attack!</span>")
-					if(incapacitated(TRUE, TRUE) && blocking)
+					if(HAS_TRAIT(user, TRAIT_INCAPACITATED) && blocking)
 						SwitchBlocking()
 					return
 				else
@@ -162,7 +162,7 @@
 					apply_damage(30, STAMINA)
 					user.do_attack_animation(src)
 					visible_message("<span class='warning'>[src] weakly blocks the attack!</span>", "<span class='warning'>You weakly block the attack!</span>")
-					if(incapacitated(TRUE, TRUE) && blocking)
+					if(HAS_TRAIT(user, TRAIT_INCAPACITATED) && blocking)
 						SwitchBlocking()
 					return
 			else
@@ -171,12 +171,12 @@
 				apply_damage(30, STAMINA)
 				user.do_attack_animation(src)
 				visible_message("<span class='warning'>[src] blocks the attack with [gender == MALE ? "his" : "her"] bare hands!</span>", "<span class='warning'>You block the attack with your bare hands!</span>")
-				if(incapacitated(TRUE, TRUE) && blocking)
+				if(HAS_TRAIT(user, TRAIT_INCAPACITATED) && blocking)
 					SwitchBlocking()
 				return
 	..()
 
-/mob/living/carbon/human/attack_hand(mob/user)
+/mob/living/carbon/human/attack_hand(mob/living/user)
 	if(getStaminaLoss() >= 50 && blocking)
 		SwitchBlocking()
 	if(CheckFrenzyMove() && blocking)
@@ -376,7 +376,6 @@
 	name = "Bloodheal"
 	icon = 'code/modules/wod13/disciplines.dmi'
 	icon_state = "bloodheal"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/bloodheal/Click()
@@ -420,15 +419,15 @@
 				var/datum/wound/W = pick(BD.all_wounds)
 				W.remove_wound()
 			BD.adjustFireLoss(-10*min(4, 15-BD.generation), TRUE)
-			BD.adjustCloneLoss(-5, TRUE)
-			var/obj/item/organ/eyes/eyes = BD.getorganslot(ORGAN_SLOT_EYES)
+			BD.adjustFireLoss(-5, TRUE)
+			var/obj/item/organ/eyes/eyes = BD.get_organ_loss(ORGAN_SLOT_EYES)
 			if(eyes)
 				BD.adjust_blindness(-2)
 				BD.adjust_blurriness(-2)
-				eyes.applyOrganDamage(-5)
-			var/obj/item/organ/brain/brain = BD.getorganslot(ORGAN_SLOT_BRAIN)
+				eyes.apply_organ_damage(-5)
+			var/obj/item/organ/brain/brain = BD.get_organ_loss(ORGAN_SLOT_BRAIN)
 			if(brain)
-				brain.applyOrganDamage(-100)
+				brain.apply_organ_damage(-100)
 			BD.update_damage_overlays()
 			BD.update_health_hud()
 		else
@@ -442,7 +441,6 @@
 	name = "Bloodpower"
 	icon = 'code/modules/wod13/disciplines.dmi'
 	icon_state = "bloodpower"
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 
 /atom/movable/screen/bloodpower/Click()
@@ -491,7 +489,6 @@
 //	H.physiology.armor.bullet += 20
 
 /atom/movable/screen/disciplines
-	layer = HUD_LAYER
 	plane = HUD_PLANE
 	var/datum/discipline/dscpln
 	var/last_discipline_click = 0
@@ -701,7 +698,7 @@
 /mob/living/carbon/human/Life()
 	if(!iskindred(src) && !iscathayan(src))
 		if(prob(5))
-			adjustCloneLoss(-5, TRUE)
+			adjustFireLoss(-5, TRUE)
 	update_blood_hud()
 	update_zone_hud()
 	update_rage_hud()

@@ -82,7 +82,7 @@
 					H.stakeimmune = TRUE
 					urn = new(H.loc)
 					urn.own = owner
-					var/obj/item/organ/heart/heart = H.getorganslot(ORGAN_SLOT_HEART)
+					var/obj/item/organ/heart/heart = H.get_organ_loss(ORGAN_SLOT_HEART)
 					heart.forceMove(urn)
 
 		else

@@ -9,7 +9,7 @@
 	limbs_id = "human"
 	mutant_bodyparts = list("tail_human" = "None", "ears" = "None", "wings" = "None")
 	brutemod = 1	//0.8 instead, if changing.
-	burnmod = 1
+	heatmod = 1
 	dust_anim = "dust-h"
 	var/mob/living/carbon/human/master
 	var/changed_master = FALSE
@@ -207,7 +207,7 @@
 	if(owner)
 		if(owner.client)
 			if(owner.client.prefs)
-				if(owner.client.prefs.old_discipline)
+				if(owner.client.prefs.read_preference(/datum/preference/toggle/old_discipline))
 					button_icon = 'code/modules/wod13/disciplines.dmi'
 				else
 					button_icon = 'code/modules/wod13/UI/actions.dmi'
@@ -244,15 +244,15 @@
 			for(var/i in 1 to min(5, length(H.all_wounds)))
 				var/datum/wound/W = pick(H.all_wounds)
 				W.remove_wound()
-		H.adjustCloneLoss(-5, TRUE)
-		var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
+		H.adjustFireLoss(-5, TRUE)
+		var/obj/item/organ/eyes/eyes = H.get_organ_loss(ORGAN_SLOT_EYES)
 		if(eyes)
 			H.adjust_blindness(-2)
 			H.adjust_blurriness(-2)
-			eyes.applyOrganDamage(-5)
-		var/obj/item/organ/brain/brain = H.getorganslot(ORGAN_SLOT_BRAIN)
+			eyes.apply_organ_damage(-5)
+		var/obj/item/organ/brain/brain = H.get_organ_loss(ORGAN_SLOT_BRAIN)
 		if(brain)
-			brain.applyOrganDamage(-100)
+			brain.apply_organ_damage(-100)
 		H.update_damage_overlays()
 		H.update_health_hud()
 		H.update_blood_hud()

@@ -367,7 +367,7 @@
 	SAY He wanted to get to the other side!
 	SOUND clownstep
 	DELAY 30
-	LANGUAGE /datum/language/narsie
+	LANGUAGE /datum/language/espanol
 	SAY Helped him get there!
 	DELAY 10
 	SAY ALSO IM SECRETLY A GORILLA
@@ -449,7 +449,7 @@
 	SAY Oh, shit!
 	DELAY 10
 	PRESET /datum/preset_holoimage/engineer/atmos/mod
-	LANGUAGE /datum/language/narsie
+	LANGUAGE /datum/language/espanol
 	NAME Unknown
 	SAY RISE, MY LORD!!
 	DELAY 10

@@ -222,7 +222,7 @@
 			for(var/ld in GLOB.all_languages)
 				var/datum/language/LD = ld
 				if(initial(LD.key) == message[1 + length(message[1])])
-					// No, you cannot speak in xenocommon just because you know the key
+					// No, you cannot speak in russian just because you know the key
 					if(!can_speak_language(LD))
 						return message
 					mods[LANGUAGE_EXTENSION] = LD

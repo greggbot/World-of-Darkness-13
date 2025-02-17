@@ -9,7 +9,10 @@
 	layer = ABOVE_ALL_MOB_LAYERS_LAYER
 	anchored = TRUE
 	mouse_opacity = 0
-//	vis_flags = VIS_HIDE
+
+/obj/effect/addwall/Initialize(mapload)
+	. = ..()
+
 
 /obj/effect/addwall/Crossed(atom/movable/AM, oldloc)
 	. = ..()

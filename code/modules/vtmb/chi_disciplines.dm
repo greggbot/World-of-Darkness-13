@@ -219,8 +219,9 @@
 	. = ..()
 	icon_state = "floor[rand(1, 7)]"
 	icon_living = "floor[rand(1, 7)]"
+	RegisterSignal(src, COMSIG_MOVABLE_CROSS, PROC_REF(on_cross))
 
-/mob/living/simple_animal/hostile/bloodcrawler/kuei_jin/Crossed(atom/movable/O)
+/mob/living/simple_animal/hostile/bloodcrawler/kuei_jin/proc/on_cross(atom/movable/O)
 	. = ..()
 	if(ishuman(O))
 		var/mob/living/carbon/C = O
@@ -675,7 +676,7 @@
 				if(firekatana)
 					qdel(firekatana)
 		if(5)
-			caster.dna.species.burnmod = 0
+			caster.dna.species.heatmod = 0
 			ADD_TRAIT(caster, TRAIT_PERMANENTLY_ONFIRE, MAGIC_TRAIT)
 			ADD_TRAIT(caster, TRAIT_RESISTHEAT, MAGIC_TRAIT)
 			caster.set_fire_stacks(7)
@@ -688,11 +689,11 @@
 					if(caster.mind.dharma)
 						switch(caster.mind.dharma.animated)
 							if("Yang")
-								caster.dna.species.burnmod = 0.5
+								caster.dna.species.heatmod = 0.5
 							if("Yin")
-								caster.dna.species.burnmod = initial(caster.dna.species.burnmod)
+								caster.dna.species.heatmod = initial(caster.dna.species.heatmod)
 					else
-						caster.dna.species.burnmod = initial(caster.dna.species.burnmod)
+						caster.dna.species.heatmod = initial(caster.dna.species.heatmod)
 					caster.bodytemperature = BODYTEMP_NORMAL
 					caster.coretemperature = BODYTEMP_NORMAL
 
@@ -764,7 +765,7 @@
 				H.AdjustMasquerade(-1)
 	..()
 
-/obj/projectile/flesh_shintai/on_hit(atom/target)
+/obj/projectile/flesh_shintai/on_hit(atom/target, blocked, pierce_hit)
 	. = ..()
 	if(ismovable(target))
 		var/atom/movable/movable_target = target
@@ -1115,8 +1116,6 @@
 	discipline_type = "Demon"
 
 /atom/movable/screen/fullscreen/yomi_world
-	icon = 'icons/hud/fullscreen.dmi'
-	icon_state = "hall"
 	layer = CURSE_LAYER
 	plane = FULLSCREEN_PLANE
 
@@ -1127,15 +1126,14 @@
 /obj/effect/particle_effect/smoke/bad/yomi
 	name = "dark red smoke"
 	color = "#6f0000"
-	opaque = FALSE
 
 /datum/effect_system/smoke_spread/bad/yomi
 	effect_type = /obj/effect/particle_effect/smoke/bad/yomi
 
-/obj/effect/particle_effect/smoke/bad/yomi/smoke_mob(mob/living/carbon/inhaling_mob)
+/obj/effect/particle_effect/smoke/bad/yomi/start(mob/living/carbon/inhaling_mob)
 	. = ..()
 	if(.)
-		inhaling_mob.adjustCloneLoss(10, TRUE)
+		inhaling_mob.adjustFireLoss(10, TRUE)
 		inhaling_mob.emote(pick("scream", "groan", "cry"))
 		return TRUE
 
@@ -1587,7 +1585,7 @@
 				H.AdjustMasquerade(-1)
 	..()
 
-/obj/projectile/storm_shintai/on_hit(atom/target)
+/obj/projectile/storm_shintai/on_hit(atom/target, blocked, pierce_hit)
 	. = ..()
 	if(ismovable(target))
 		var/atom/movable/A = target
@@ -1944,6 +1942,10 @@
 	drops_core = FALSE
 	var/mob/owner
 
+/obj/effect/anomaly/grav_kuei/Initialize(mapload, new_lifespan)
+	. = ..()
+	RegisterSignal(src, COMSIG_MOVABLE_CROSS, PROC_REF(on_cross))
+
 /obj/effect/anomaly/grav_kuei/process(delta_time)
 	anomalyEffect()		//so it's kinda more faster?
 	if(death_time < world.time)
@@ -1968,15 +1970,13 @@
 	for(var/obj/affected_object in range(0, src))
 		if(!affected_object.anchored)
 			if(isturf(affected_object.loc))
-				var/turf/object_turf = affected_object.loc
-				if(object_turf.intact && HAS_TRAIT(affected_object, TRAIT_T_RAY_VISIBLE))
+				if(HAS_TRAIT(affected_object, TRAIT_T_RAY_VISIBLE))
 					continue
 			var/mob/living/target = locate() in view(4,src) - owner
 			if(target && !target.stat)
 				affected_object.throw_at(target, 5, 10)
 
-/obj/effect/anomaly/grav_kuei/Crossed(atom/movable/AM)
-	. = ..()
+/obj/effect/anomaly/grav_kuei/proc/on_cross(atom/movable/AM)
 	gravShock(AM)
 
 /obj/effect/anomaly/grav_kuei/Bump(atom/A)
@@ -1998,7 +1998,7 @@
 		if(1)
 			caster.client.prefs.chat_toggles ^= CHAT_DEAD
 			caster.see_invisible = SEE_INVISIBLE_OBSERVER
-			notify_ghosts("All ghosts are being called by [caster]!", source = caster, action = NOTIFY_ORBIT, header = "Ghost Summoning")
+			notify_ghosts("All ghosts are being called by [caster]!", source = caster, header = "Ghost Summoning")
 			spawn(30 SECONDS)
 				if(caster)
 					caster.client?.prefs.chat_toggles &= ~CHAT_DEAD
@@ -2060,7 +2060,7 @@
 			var/teleport_to
 			teleport_to = input(caster, "Dragon Nest to travel to:", "BOOYEA", teleport_to) as null|anything in GLOB.teleportlocs
 			if(teleport_to)
-				if(do_mob(caster, caster, delay))
+				if(do_after(caster, delay, caster))
 					var/area/thearea = GLOB.teleportlocs[teleport_to]
 
 					var/datum/effect_system/smoke_spread/smoke = new
@@ -2076,7 +2076,7 @@
 						to_chat(caster, "<span class='warning'>There are no available destinations in that area!</span>")
 						return
 
-					if(do_teleport(caster, pick(available_turfs), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE))
+					if(do_teleport(caster, pick(available_turfs), channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE))
 						smoke.start()
 					else
 						to_chat(caster, "<span class='warning'>Something disrupted your travel!</span>")
@@ -2100,8 +2100,6 @@
 	name = "\improper shadow touch"
 	desc = "This is kind of like when you rub your feet on a shag rug so you can zap your friends, only a lot less safe."
 	icon = 'code/modules/wod13/weapons.dmi'
-	catchphrase = null
-	on_use_sound = 'sound/magic/disintegrate.ogg'
 	icon_state = "quietus"
 	color = "#343434"
 	inhand_icon_state = "mansus"
@@ -2121,7 +2119,7 @@
 		qdel(target)
 	if(isliving(target))
 		var/mob/living/target_mob = target
-		target_mob.adjustCloneLoss(20)
+		target_mob.adjustFireLoss(20)
 		target_mob.AdjustKnockdown(2 SECONDS)
 	return ..()
 

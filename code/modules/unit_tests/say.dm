@@ -56,7 +56,7 @@
 	handle_speech_result = null
 
 	// lizard's forked tongue does not cause hissing when speaking native draconic
-	talking_lizard.set_active_language(/datum/language/draconic)
+	talking_lizard.set_active_language(/datum/language/hebrew)
 	talking_lizard.say(unhissed_quote)
 	TEST_ASSERT(handle_speech_result, "Handle speech signal was not fired")
 	TEST_ASSERT_EQUAL(unhissed_quote, handle_speech_result[SPEECH_MESSAGE], "Speech modifier test failed: [handle_speech_result[SPEECH_LANGUAGE]] did not equal [unhissed_quote] when spoken by a lizard in language [handle_speech_result[SPEECH_LANGUAGE]]")

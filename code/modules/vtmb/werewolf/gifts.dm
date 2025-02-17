@@ -351,7 +351,7 @@
 			SEND_SOUND(owner, sound('code/modules/wod13/sounds/rage_heal.ogg', 0, 0, 75))
 			C.adjustBruteLoss(-40*C.auspice.level, TRUE)
 			C.adjustFireLoss(-30*C.auspice.level, TRUE)
-			C.adjustCloneLoss(-10*C.auspice.level, TRUE)
+			C.adjustFireLoss(-10*C.auspice.level, TRUE)
 			C.adjustToxLoss(-10*C.auspice.level, TRUE)
 			C.adjustOxyLoss(-20*C.auspice.level, TRUE)
 			C.bloodpool = min(C.bloodpool + C.auspice.level, C.maxbloodpool)

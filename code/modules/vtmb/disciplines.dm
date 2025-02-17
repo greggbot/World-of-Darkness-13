@@ -34,7 +34,7 @@
 	if(owner)
 		if(owner.client)
 			if(owner.client.prefs)
-				if(owner.client.prefs.old_discipline)
+				if(owner.client.prefs.read_preference(/datum/preference/toggle/old_discipline))
 					button_icon = 'code/modules/wod13/disciplines.dmi'
 				else
 					button_icon = 'code/modules/wod13/UI/actions.dmi'
