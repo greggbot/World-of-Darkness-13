@@ -370,20 +370,7 @@
 		if(last_sound_played+40 <= world.time)
 			last_sound_played = world.time
 			playsound(loc, 'code/modules/wod13/sounds/guh.ogg', 50, FALSE)
-/*
-/mob/living/Life()
-	if(GLOB.canon_event)
-		if(client)
-			if(client.holder)
-				if(client.holder.rank.rights & R_ADMIN)
-					var/cool_guy = FALSE
-					for(var/i in GLOB.psychokids)
-						if(i == "[client.ckey]")
-							cool_guy = TRUE
-					if(!cool_guy)
-						client.deadmin()
-	..()
-*/
+
 /obj/item/argemia
 	name = "strange plushie"
 	desc = "Voiding..."
@@ -392,10 +379,11 @@
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/argemia/microwave_act(obj/machinery/microwave/M)
-	playsound(M.loc, 'code/modules/wod13/sounds/aeaeae.ogg', 100, FALSE)
+/obj/item/argemia/microwave_act(obj/machinery/microwave/microwave_source, mob/microwaver, randomize_pixel_offset)
+	. = ..()
+	playsound(microwave_source.loc, 'code/modules/wod13/sounds/aeaeae.ogg', 100, FALSE)
 	spawn(50)
-		explosion(M.loc, 0, 1, 2)
+		explosion(microwave_source.loc, 0, 1, 2)
 
 /obj/item/ravnos
 	name = "illusion"

@@ -713,7 +713,7 @@
 			H.Stun(5)
 			H.emote("laugh")
 			to_chat(target, "<span class='userdanger'><b>HAHAHAHAHAHAHAHAHAHAHAHA!!</b></span>")
-			caster.playsound_local(get_turf(H), pick('sound/items/SitcomLaugh1.ogg', 'sound/items/SitcomLaugh2.ogg', 'sound/items/SitcomLaugh3.ogg'), 100, FALSE)
+			caster.playsound_local(get_turf(H), pick('sound/items/sitcom_laugh/SitcomLaugh1.ogg', 'sound/items/sitcom_laugh/SitcomLaugh2.ogg', 'sound/items/sitcom_laugh/SitcomLaugh3.ogg'), 100, FALSE)
 			if(target.body_position == STANDING_UP)
 				target.toggle_resting()
 		if(2)
@@ -749,7 +749,6 @@
 
 /datum/discipline/potence/activate(mob/living/target, mob/living/carbon/human/caster)
 	. = ..()
-	var/armah = 0.4*level_casting
 	caster.remove_overlay(POTENCE_LAYER)
 	var/mutable_appearance/potence_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "potence", -POTENCE_LAYER)
 	caster.overlays_standing[POTENCE_LAYER] = potence_overlay
@@ -776,8 +775,6 @@
 
 /datum/discipline/fortitude/activate(mob/living/target, mob/living/carbon/human/caster)
 	. = ..()
-	var/mod = min(3, level_casting)
-	var/armah = 15*mod
 	spawn(delay+caster.discipline_time_plus)
 		if(caster)
 			caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/fortitude_deactivate.ogg', 50, FALSE)
@@ -965,16 +962,14 @@
 	violates_masquerade = TRUE
 	activate_sound = 'code/modules/wod13/sounds/protean_activate.ogg'
 	clane_restricted = TRUE
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/gangrel/GA
+	var/datum/action/cooldown/spell/shapeshift/gangrel/GA
 
 /datum/movespeed_modifier/protean2
 	multiplicative_slowdown = -0.15
-
-/obj/effect/proc_holder/spell/targeted/shapeshift/gangrel
+/datum/action/cooldown/spell/shapeshift/gangrel
 	name = "Gangrel Form"
 	desc = "Take on the shape a wolf."
-	charge_max = 50
-	cooldown_min = 50
+	cooldown_time = 5 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
 	shapeshift_type = /mob/living/simple_animal/hostile/gangrel
@@ -1013,10 +1008,10 @@
 					caster.remove_movespeed_modifier(/datum/movespeed_modifier/protean2)
 		if(3)
 			caster.drop_all_held_items()
-			GA.Shapeshift(caster)
+			GA.do_shapeshift(caster)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
-					GA.Restore(GA.myshape)
+					GA.do_unshapeshift(caster)
 					caster.Stun(15)
 					caster.do_jitter_animation(30)
 					caster.playsound_local(caster, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
@@ -1026,10 +1021,10 @@
 				GA.shapeshift_type = /mob/living/simple_animal/hostile/gangrel/better
 			if(level_casting == 5)
 				GA.shapeshift_type = /mob/living/simple_animal/hostile/gangrel/best
-			GA.Shapeshift(caster)
+			GA.do_shapeshift(caster)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
-					GA.Restore(GA.myshape)
+					GA.do_unshapeshift(caster)
 					caster.Stun(1 SECONDS)
 					caster.do_jitter_animation(1.5 SECONDS)
 					caster.playsound_local(caster, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
@@ -1072,8 +1067,7 @@
 	damage_type = BURN
 	hitsound = 'code/modules/wod13/sounds/drinkblood1.ogg'
 	hitsound_wall = 'sound/items/weapons/effects/searwall.ogg'
-	flag = LASER
-	light_system = MOVABLE_LIGHT
+	light_system = COMPLEX_LIGHT
 	light_range = 1
 	light_power = 1
 	light_color = COLOR_SOFT_RED
@@ -1085,6 +1079,7 @@
 	var/level = 1
 
 /obj/projectile/thaumaturgy/on_hit(atom/target, blocked = FALSE, pierce_hit)
+	. = ..()
 	if(ishuman(firer))
 		var/mob/living/carbon/human/VH = firer
 		if(isliving(target))
@@ -1143,14 +1138,12 @@
 			var/turf/start = get_turf(caster)
 			var/obj/projectile/thaumaturgy/H = new(start)
 			H.firer = caster
-			H.preparePixelProjectile(target, start)
 			H.fire(direct_target = target)
 		if(2)
 			var/turf/start = get_turf(caster)
 			var/obj/projectile/thaumaturgy/H = new(start)
 			H.firer = caster
 			H.damage = 10+caster.thaum_damage_plus
-			H.preparePixelProjectile(target, start)
 			H.level = 2
 			H.fire(direct_target = target)
 		if(3)
@@ -1158,7 +1151,6 @@
 			var/obj/projectile/thaumaturgy/H = new(start)
 			H.firer = caster
 			H.damage = 15+caster.thaum_damage_plus
-			H.preparePixelProjectile(target, start)
 			H.level = 2
 			H.fire(direct_target = target)
 		else
@@ -1270,7 +1262,7 @@
 		caster.Stun(20)
 		caster.emote("scream")
 		target.apply_damage(10*level_casting, BRUTE)
-		target.apply_damage(5*level_casting, CLONE)
+		target.apply_damage(5*level_casting, BURN)
 		target.visible_message("<span class='danger'>[target]'s skin writhes like worms, twisting and contorting!</span>", "<span class='userdanger'>Your flesh twists unnaturally!</span>")
 		target.Stun(30)
 		target.emote("scream")
@@ -1397,9 +1389,6 @@
 		if(1)
 			for(var/mob/living/carbon/human/H in oviewers(7, caster))
 				ADD_TRAIT(H, TRAIT_DEAF, "quietus")
-				if(H.get_confusion() < 15)
-					var/diff = 15 - H.get_confusion()
-					H.add_confusion(min(15, diff))
 				spawn(50)
 					if(H)
 						REMOVE_TRAIT(H, TRAIT_DEAF, "quietus")
@@ -1556,7 +1545,7 @@
 				target.gib()
 	else
 		target.apply_damage(5 * level_casting, BRUTE, caster.zone_selected)
-		target.apply_damage(6 * level_casting, CLONE, caster.zone_selected)
+		target.apply_damage(6 * level_casting, BURN, caster.zone_selected)
 		target.emote("scream")
 
 /datum/discipline/obtenebration
@@ -1568,7 +1557,7 @@
 	delay = 100
 	violates_masquerade = TRUE
 	clane_restricted = TRUE
-	activate_sound = 'sound/magic/voidblink.ogg'
+	activate_sound = 'sound/effects/magic/voidblink.ogg'
 
 /datum/discipline/obtenebration/activate(mob/living/target, mob/living/carbon/human/caster)
 	. = ..()
@@ -1592,7 +1581,7 @@
 	violates_masquerade = TRUE
 	activate_sound = 'code/modules/wod13/sounds/protean_activate.ogg'
 	clane_restricted = TRUE
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/bat/BAT
+	var/datum/action/cooldown/spell/shapeshift/bat/BAT
 
 /datum/discipline/daimonion/activate(mob/living/target, mob/living/carbon/human/caster)
 	. = ..()
@@ -1627,10 +1616,10 @@
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
 		if(4 to 5)
 			caster.drop_all_held_items()
-			BAT.Shapeshift(caster)
+			BAT.do_shapeshift(caster)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
-					BAT.Restore(BAT.myshape)
+					BAT.do_unshapeshift(caster)
 					caster.Stun(15)
 					caster.do_jitter_animation(30)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
@@ -1662,9 +1651,6 @@
 			if(get_dist(caster, target) <= 2)
 				if(isgarou(target))
 					return
-				if(iskindred(target))
-					target.add_confusion(5)
-					target.drowsyness += 4
 				else if(ishuman(target))
 					target.SetSleeping(300)
 			else

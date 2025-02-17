@@ -48,7 +48,6 @@
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER, TRAIT_VIRUSIMMUNE, TRAIT_PERFECT_ATTACKER, TRAIT_NOBREATH)
 	brutemod = 0.5
 	heatmod = 3
-	dust_anim = "dust-k"
 	whitelisted = TRUE
 	var/turf/fool_turf
 	var/fool_fails = 0

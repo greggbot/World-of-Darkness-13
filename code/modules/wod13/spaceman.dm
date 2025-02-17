@@ -90,7 +90,7 @@
 	icon_state = "swat_back"
 	duration = 7
 
-/mob/living/simple_animal/hostile/retaliate/nanotrasenpeace/vampire/UnarmedAttack(atom/A)
+/mob/living/simple_animal/hostile/retaliate/nanotrasenpeace/vampire/UnarmedAttack(atom/attack_target, proximity_flag, list/modifiers)
 	if(HAS_TRAIT(src, TRAIT_HANDS_BLOCKED))
 		return
 	if(iscarbon(A))
