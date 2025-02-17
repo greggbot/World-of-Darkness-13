@@ -263,16 +263,14 @@
 	name = "a police officer"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a police officer"
-	icon = 'icons/obj/lavaland/spawners.dmi'
+	icon = 'icons/obj/mining_zones/spawners.dmi'
 	icon_state = "cryostasis_sleeper"
 	outfit = /datum/outfit/policeofficer
-	roundstart = FALSE
-	death = FALSE
-	random = FALSE
 	mob_species = /datum/species/human
 	you_are_text = "You worked a simple night shift, but then..."
 	flavour_text = "You woke up on your regular night shift and noticed something strange happening in the city. Only man interested in finding the truth is you..."
-	assignedrole = "Police Officer"
+	spawner_job_path = /datum/job/vamp/police_officer
+
 
 /obj/effect/mob_spawn/ghost_role/human/police/special(mob/living/new_spawn)
 	. = ..()
@@ -301,16 +299,13 @@
 	name = "a chaplain"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a chaplain"
-	icon = 'icons/obj/lavaland/spawners.dmi'
+	icon = 'icons/obj/mining_zones/spawners.dmi'
 	icon_state = "cryostasis_sleeper"
 	outfit = /datum/outfit/achaplain
-	roundstart = FALSE
-	death = FALSE
-	random = FALSE
 	mob_species = /datum/species/human
 	you_are_text = "You were guarding the Church, but then..."
 	flavour_text = "You are a man of true Faith, but people in this city are not. You should protect the House of God..."
-	assignedrole = "Chaplain"
+	spawner_job_path = /datum/job/vamp/priest
 
 /obj/effect/mob_spawn/ghost_role/human/achaplain/special(mob/living/new_spawn)
 	. = ..()
@@ -345,8 +340,7 @@
 	mob_species = /datum/species/human
 	you_are_text = "You are working the night shift on Millenium Towers, just like any other night...."
 	flavour_text = "You are up late protecting Millenium Towers on behalf of your pasty-faced, but filthy rich, boss. Come to think of it, you only ever see him at night..."
-	assignedrole = "Millenium Tower Secuity Guard"
-	spawner_job_path = /datum/job/vamp/guard
+	spawner_job_path = /datum/job/vamp/chunkguard
 
 /obj/effect/mob_spawn/ghost_role/human/chunkguard/special(mob/living/new_spawn)
 	. = ..()

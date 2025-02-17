@@ -7,11 +7,20 @@
 	can_adjust = FALSE
 	icon = 'code/modules/wod13/clothing.dmi'
 	worn_icon = 'code/modules/wod13/worn.dmi'
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 15)
+	armor_type = /datum/armor/vampire_under
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	body_worn = TRUE
-	fitted = NO_FEMALE_UNIFORM
-	cost = 10
+
+/datum/armor/vampire_under
+	melee = 0
+	bullet = 0
+	laser = 0
+	energy = 0
+	bomb = 0
+	bio = 0
+	fire = 0
+	acid = 0
+	wound = 15
 
 /obj/item/clothing/under/vampire/brujah
 	name = "Punk attire"
@@ -343,7 +352,18 @@
 	name = "weirdo hat"
 	desc = "Can look dangerous or sexy despite the circumstances. Provides some kind of protection."
 	icon_state = "malkav_hat"
-	armor = list(MELEE = 25, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = malkav_hat
+
+/datum/armor/malkav_hat
+	melee = 25
+	bullet = 25
+	laser = 10
+	energy = 10
+	bomb = 10
+	bio = 0
+	fire = 0
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/under/vampire/fancy_gray
 	name = "Fancy gray suit"
@@ -376,7 +396,6 @@
 	can_be_tied = FALSE
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	body_worn = TRUE
-	cost = 5
 
 /obj/item/clothing/shoes/vampire/brown
 	icon_state = "shoes_brown"
@@ -451,7 +470,6 @@
 	resistance_flags = NONE
 	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
 	body_worn = TRUE
-	cost = 15
 
 /obj/item/clothing/suit/hooded/heisenberg
 	name = "chemical costume"
@@ -838,7 +856,6 @@
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
 	body_worn = TRUE
-	cost = 10
 
 /obj/item/clothing/head/vampire/bandana
 	name = "bandana"
