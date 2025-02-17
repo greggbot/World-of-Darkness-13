@@ -1472,5 +1472,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 /// Can pass through walls so long as it doesn't move the mob into a new area
 #define TRAIT_PASS_THROUGH_WALLS "pass_through_walls"
 
+#define TRAIT_ELYSIUM			"elysium"
+#define TRAIT_BLIND				"blind"
 
 // END TRAIT DEFINES

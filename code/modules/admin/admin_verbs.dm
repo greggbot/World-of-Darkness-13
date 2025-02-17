@@ -96,6 +96,42 @@ ADMIN_VERB(game_panel, R_ADMIN, "Game Panel", "Look at the state of the game.", 
 	user.holder.Game()
 	BLACKBOX_LOG_ADMIN_VERB("Game Panel")
 
+ADMIN_VERB(toggle_canon, R_ADMIN, "Toggle Canon", "Toggle the canonnity of the round.", ADMIN_CATEGORY_GAME)
+	BLACKBOX_LOG_ADMIN_VERB("Toggle Canon")
+	if (!check_rights(R_ADMIN))
+		return
+
+	GLOB.canon_event = !GLOB.canon_event
+	SEND_SOUND(world, sound('code/modules/wod13/sounds/canon.ogg'))
+	if(GLOB.canon_event)
+		to_chat(world, "<b>THE ROUND IS NOW CANON. ALL ROLEPLAY AND ESCALATION RULES ARE IN EFFECT.</b>")
+	else
+		to_chat(world, "<b>THE ROUND IS NO LONGER CANON. DATA WILL NO LONGER SAVE, AND ROLEPLAY AND ESCALATION RULES ARE NO LONGER IN EFFECT.</b>")
+	message_admins("[key_name_admin(usr)] toggled the round's canonicity. The round is [GLOB.canon_event ? "now canon." : "no longer canon."]")
+	log_admin("[key_name(usr)] toggled the round's canonicity. The round is [GLOB.canon_event ? "now canon." : "no longer canon."]")
+
+ADMIN_VERB(cmd_admin_global_adjust_masquerade, R_ADMIN, "Adjust Global Masquerade", "Adjust the masquerade of the round.", ADMIN_CATEGORY_GAME)
+	if (!check_rights(R_ADMIN))
+		return
+
+
+	var/last_global_mask = SSmasquerade.total_level
+
+	var/value = input(usr, "Enter the Global Masquerade adjustment values(- will decrease, + will increase) :", "Global Masquerade Adjustment", 0) as num|null
+	if(value == null)
+		return
+
+	SSmasquerade.manual_adjustment = value
+
+	var/changed_mask = max(0,min(1000,last_global_mask + value))
+
+	SSmasquerade.fire()
+
+	var/msg = "<span class='adminnotice'><b>Global Masquerade Adjustment: [key_name_admin(usr)] has adjusted Global masquerade from [last_global_mask] to [changed_mask] with the value of : [value]. Real Masquerade Value with the other possible variables : [SSmasquerade.total_level]</b></span>"
+	log_admin("Global MasqAdjust: [key_name(usr)] has adjusted Global masquerade from [last_global_mask] to [changed_mask] with the value of : [value]. Real Masquerade Value with the other possible variables : [SSmasquerade.total_level]")
+	message_admins(msg)
+	SSblackbox.record_feedback("tally", "admin_verb", 1, "Global Adjust Masquerade")
+
 ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.", ADMIN_CATEGORY_MAIN)
 	user.holder.poll_list_panel()
 	BLACKBOX_LOG_ADMIN_VERB("Server Poll Management")

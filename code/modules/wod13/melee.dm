@@ -51,16 +51,8 @@
 	wielded = FALSE
 
 /obj/item/melee/vampirearms/fireaxe/update_icon_state()
-	icon_state = "fireaxe0"
-
-/obj/item/melee/vampirearms/fireaxe/afterattack(atom/A, mob/user, proximity)
 	. = ..()
-	if(!proximity)
-		return
-	if(wielded)
-		if(istype(A, /obj/structure/window) || istype(A, /obj/structure/grille))
-			var/obj/structure/W = A
-			W.obj_destruction("fireaxe")
+	icon_state = "fireaxe0"
 
 /obj/item/melee/vampirearms/katana
 	name = "katana"
@@ -260,7 +252,7 @@
 		. += "<span class='notice'>Alt-click it to quickly draw the blade.</span>"
 
 /obj/item/storage/belt/vampire/sheathe/click_alt(mob/user)
-	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY, FALSE, TRUE))
+	if(!user.can_perform_action(src, BE_CLOSE, NO_DEXTERITY, FALSE, TRUE))
 		return
 	if(length(contents))
 		var/obj/item/I = contents[1]

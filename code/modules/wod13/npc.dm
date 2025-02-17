@@ -1,6 +1,5 @@
 /mob/living/carbon/human/npc
 	name = "Loh ebanii"
-	a_intent = INTENT_HELP
 	var/datum/socialrole/socialrole
 
 	var/is_talking = FALSE
@@ -420,7 +419,7 @@
 	. = ..()
 	var/mob/living/carbon/human/npc/NPC = locate() in get_turf(Obstacle)
 	if(NPC)
-		if(a_intent != INTENT_HELP)
+		if(combat_mode)
 			NPC.Annoy(src)
 
 /mob/living/carbon/Move(NewLoc, direct)
@@ -428,7 +427,7 @@
 		if(alpha < 200)
 			playsound(loc, 'code/modules/wod13/sounds/obfuscate_deactivate.ogg', 50, FALSE)
 			alpha = 255
-	if(m_intent != MOVE_INTENT_WALK)
+	if(move_intent != MOVE_INTENT_WALK)
 		if(obfuscate_level < 3)
 			if(alpha < 200)
 				playsound(loc, 'code/modules/wod13/sounds/obfuscate_deactivate.ogg', 50, FALSE)

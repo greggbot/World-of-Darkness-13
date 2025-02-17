@@ -7,10 +7,6 @@
 
 	var/allowed_to_proceed = FALSE
 
-/datum/action/gift/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force = FALSE)
-	button_icon = 'code/modules/wod13/werewolf_abilities.dmi'
-	. = ..()
-
 /datum/action/gift/Trigger(trigger_flags)
 	. = ..()
 	if(istype(owner, /mob/living/carbon))
@@ -196,13 +192,8 @@
 	if(allowed_to_proceed)
 		if(ishuman(owner))
 			playsound(get_turf(owner), 'code/modules/wod13/sounds/resist_pain.ogg', 75, FALSE)
-			var/mob/living/carbon/human/H = owner
-			H.physiology.armor.melee = 40
-			H.physiology.armor.bullet = 25
 			to_chat(owner, "<span class='notice'>You feel your skin thickering...</span>")
 			spawn(15 SECONDS)
-				H.physiology.armor.melee = initial(H.physiology.armor.melee)
-				H.physiology.armor.bullet = initial(H.physiology.armor.bullet)
 				to_chat(owner, "<span class='warning'>Your skin is thin again...</span>")
 		else
 			playsound(get_turf(owner), 'code/modules/wod13/sounds/resist_pain.ogg', 75, FALSE)
@@ -224,9 +215,12 @@
 	. = ..()
 	if(allowed_to_proceed)
 		var/datum/atom_hud/abductor_hud = GLOB.huds[DATA_HUD_ABDUCTOR]
-		abductor_hud.add_hud_to(owner)
-		spawn(200)
-			abductor_hud.remove_hud_from(owner)
+		abductor_hud.add_atom_to_hud(owner)
+		addtimer(CALLBACK(src, PROC_REF(remove_hud)), 20 SECONDS)
+
+/datum/action/gift/scent_of_the_true_form/proc/remove_hud()
+	var/datum/atom_hud/abductor_hud = GLOB.huds[DATA_HUD_ABDUCTOR]
+	abductor_hud.remove_atom_from_hud(owner)
 
 /datum/action/gift/truth_of_gaia
 	name = "Truth Of Gaia"
@@ -268,7 +262,6 @@
 	name = "Spirit Speech"
 	desc = "This Gift allows the Garou to communicate with encountered spirits."
 	button_icon_state = "spirit_speech"
-	//gnosis_req = 1
 
 /datum/action/gift/spirit_speech/Trigger(trigger_flags)
 	. = ..()
@@ -434,8 +427,6 @@
 		if(G.glabro)
 			H.remove_overlay(PROTEAN_LAYER)
 			H.strength = initial(H.strength)
-			H.physiology.armor.melee -= 15
-			H.physiology.armor.bullet -= 15
 			var/matrix/M = matrix()
 			M.Scale(1)
 			animate(H, transform = M, time = 1 SECONDS)
@@ -447,8 +438,6 @@
 			H.overlays_standing[PROTEAN_LAYER] = glabro_overlay
 			H.apply_overlay(PROTEAN_LAYER)
 			H.strength = H.strength+2
-			H.physiology.armor.melee += 15
-			H.physiology.armor.bullet += 15
 			var/matrix/M = matrix()
 			M.Scale(1.23)
 			animate(H, transform = M, time = 1 SECONDS)

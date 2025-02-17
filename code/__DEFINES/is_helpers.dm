@@ -34,6 +34,8 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 	/turf/open/space/openspace
 	)))
 
+#define isnpcbeacon(A) (istype(A, /obj/effect/landmark/npcbeacon))
+
 #define isgroundlessturf(A) (is_type_in_typecache(A, GLOB.turfs_without_ground))
 
 GLOBAL_LIST_INIT(turfs_openspace, typecacheof(list(

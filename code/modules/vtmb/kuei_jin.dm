@@ -45,21 +45,11 @@
 /datum/species/kuei_jin
 	name = "Kuei-Jin"
 	id = "kuei-jin"
-	default_color = "FFFFFF"
-	mutant_bodyparts = list("wings" = "None")
-	disliked_food = GROSS | RAW
-	liked_food = JUNKFOOD | FRIED
-	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, HAS_FLESH, HAS_BONE)
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER, TRAIT_VIRUSIMMUNE, TRAIT_PERFECT_ATTACKER, TRAIT_NOBREATH)
-	use_skintones = TRUE
-	limbs_id = "human"
-	mutant_bodyparts = list("tail_human" = "None", "ears" = "None", "wings" = "None")
 	brutemod = 0.5
-	heatmod = 1
 	heatmod = 3
 	dust_anim = "dust-k"
 	whitelisted = TRUE
-	selectable = TRUE
 	var/turf/fool_turf
 	var/fool_fails = 0
 
@@ -116,7 +106,7 @@
 
 /atom/movable/screen/chi_pool/Initialize()
 	. = ..()
-	upper_layer = image(icon = 'code/modules/wod13/UI/chi.dmi', icon_state = "add", plane = HUD_PLANE+1)
+	upper_layer = image(icon = 'code/modules/wod13/UI/chi.dmi', icon_state = "add", layer = HUD_PLANE+1)
 	add_overlay(upper_layer)
 
 /atom/movable/screen/chi_pool/Click()
@@ -566,7 +556,7 @@
 
 	var/heal_level = min(kueijin.mind.dharma.level, 4)
 	kueijin.heal_ordered_damage(20 * heal_level, list(OXY, STAMINA, BRUTE, TOX))
-	kueijin.heal_ordered_damage(5 * heal_level, list(BURN, CLONE))
+	kueijin.heal_ordered_damage(5 * heal_level, list(BURN))
 	kueijin.blood_volume = min(kueijin.blood_volume + 56, 560)
 	kueijin.yin_chi = max(0, kueijin.yin_chi - 1)
 

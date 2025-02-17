@@ -1,21 +1,13 @@
 /datum/species/ghoul
 	name = "Ghoul"
 	id = "ghoul"
-	default_color = "FFFFFF"
-	toxic_food = RAW
-	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, HAS_FLESH, HAS_BONE)
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER, TRAIT_VIRUSIMMUNE, TRAIT_NOCRITDAMAGE)
-	use_skintones = TRUE
-	limbs_id = "human"
-	mutant_bodyparts = list("tail_human" = "None", "ears" = "None", "wings" = "None")
 	brutemod = 1	//0.8 instead, if changing.
 	heatmod = 1
-	dust_anim = "dust-h"
 	var/mob/living/carbon/human/master
 	var/changed_master = FALSE
 	var/last_vitae = 0
 	var/list/datum/discipline/disciplines = list()
-	selectable = TRUE
 
 /datum/action/ghoulinfo
 	name = "About Me"
@@ -203,16 +195,6 @@
 	var/last_heal = 0
 	var/level = 1
 
-/datum/action/blood_heal/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force = FALSE)
-	if(owner)
-		if(owner.client)
-			if(owner.client.prefs)
-				if(owner.client.prefs.read_preference(/datum/preference/toggle/old_discipline))
-					button_icon = 'code/modules/wod13/disciplines.dmi'
-				else
-					button_icon = 'code/modules/wod13/UI/actions.dmi'
-	. = ..()
-
 /datum/action/blood_heal/Trigger(trigger_flags)
 	if(istype(owner, /mob/living/carbon/human))
 		if (HAS_TRAIT(owner, TRAIT_TORPOR))
@@ -238,8 +220,6 @@
 		H.adjustOxyLoss(-20*level, TRUE)
 		H.adjustToxLoss(-20*level, TRUE)
 		H.blood_volume = min(H.blood_volume + 56, 560)
-		button.color = "#970000"
-		animate(button, color = "#ffffff", time = 20, loop = 1)
 		if(length(H.all_wounds))
 			for(var/i in 1 to min(5, length(H.all_wounds)))
 				var/datum/wound/W = pick(H.all_wounds)
@@ -247,9 +227,7 @@
 		H.adjustFireLoss(-5, TRUE)
 		var/obj/item/organ/eyes/eyes = H.get_organ_loss(ORGAN_SLOT_EYES)
 		if(eyes)
-			H.adjust_blindness(-2)
-			H.adjust_blurriness(-2)
-			eyes.apply_organ_damage(-5)
+			eyes.apply_organ_damage(-8)
 		var/obj/item/organ/brain/brain = H.get_organ_loss(ORGAN_SLOT_BRAIN)
 		if(brain)
 			brain.apply_organ_damage(-100)

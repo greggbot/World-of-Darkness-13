@@ -75,7 +75,7 @@
 		if(do_after(usr, 5 SECONDS))
 			if(!item_drill || src.flags_1 & NODECONSTRUCT_1)
 				return
-			if(!usr.canUseTopic(src, BE_CLOSE, NO_DEXTERITY, FALSE, TRUE))
+			if(!usr.can_perform_action(src, BE_CLOSE, NO_DEXTERITY, FALSE, TRUE))
 				return
 			usr.visible_message("<span class='notice'>[usr] lifts \the [src.name].</span>", "<span class='notice'>You grab \the [src.name].</span>")
 			ready = FALSE

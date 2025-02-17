@@ -352,7 +352,7 @@
 	name = "weirdo hat"
 	desc = "Can look dangerous or sexy despite the circumstances. Provides some kind of protection."
 	icon_state = "malkav_hat"
-	armor_type = malkav_hat
+	armor_type = /datum/armor/malkav_hat
 
 /datum/armor/malkav_hat
 	melee = 25
@@ -658,7 +658,6 @@
    name = "opulent coat"
    desc = "Lavish, luxurious, and deeply purple. Slickback Clothing Co. It exudes immense energy."
    icon_state = "slickbackcoat"
-   armor = list(MELEE = 5, BULLET = 5, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 5)
 
 /obj/item/clothing/suit/vampire/jacket
 	name = "leather jacket"
@@ -1062,7 +1061,6 @@
 	desc = "For looking cool."
 	icon_state = "sun"
 	inhand_icon_state = "glasses"
-	darkness_view = 1
 	flash_protect = FLASH_PROTECTION_FLASH
 
 /obj/item/clothing/glasses/vampire/perception
@@ -1070,7 +1068,6 @@
 	desc = "For reading books."
 	icon_state = "perception"
 	inhand_icon_state = "glasses"
-	vision_correction = TRUE
 
 //HATS
 
@@ -1217,8 +1214,6 @@
 	desc = "Looks dangerous. Provides good protection."
 	icon_state = "helmet"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	armor_type = /datum/armor/vampire_helmet
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
@@ -1270,8 +1265,6 @@
 	desc = "Looks dangerous. Provides great protection against blunt force."
 	icon_state = "viet"
 	flags_inv = HIDEEARS|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	armor_type = /datum/armor/vampire_army
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
 	masquerade_violating = TRUE
@@ -1291,7 +1284,6 @@
     name = "construction helmet"
     desc = "A thermoplastic hard helmet used to protect the head from injury."
     icon_state = "hardhat"
-    armor = list(MELEE = 20, BULLET = 5, LASER = 0, ENERGY = 0, BOMB = 10, BIO = 0, RAD = 0, FIRE = 5, ACID = 0, WOUND = 15)
 
 /obj/item/clothing/head/vampire/eod
 	name = "EOD helmet"
@@ -1299,8 +1291,6 @@
 	icon_state = "bomb"
 	armor_type = /datum/armor/vampire_eod
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	visor_flags_inv = HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	visor_flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
@@ -1325,8 +1315,6 @@
 	icon_state = "bogatyr_helmet"
 	armor_type = /datum/armor/vampire_bogatyr
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	visor_flags_inv = HIDEFACE|HIDESNOUT
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	visor_flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
@@ -1350,8 +1338,6 @@
 			felt the seeds of Life and Knowledge, burn within me, I swore that day I would not turn back..."
 	icon_state = "bahari_mask"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	armor_type = /datum/armor/vampire_bahari_mask
 
 /// Automatically generated armor datum, errors may exist
@@ -1373,8 +1359,6 @@
 	desc = "A traditional headscarf worn by Muslim women."
 	icon_state = "hijab"
 	flags_inv = HIDEEARS|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/vampire/taqiyah
 	name = "taqiyah"
@@ -1406,8 +1390,6 @@
 	desc = "A traditional veil."
 	icon_state = "prayer_veil"
 	flags_inv = HIDEEARS|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 
 //GLOVES
 
@@ -1427,7 +1409,6 @@
 	name = "leather gloves"
 	desc = "Looks dangerous. Provides some kind of protection."
 	icon_state = "leather"
-	transfer_prints = TRUE
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 	resistance_flags = NONE
@@ -1633,7 +1614,6 @@
 /obj/item/storage/belt/holster/detective/vampire
 	name = "holster"
 	desc = "a holster for your gun."
-	component_type = /datum/component/storage/concrete/vtm/holster
 
 /obj/item/storage/belt/holster/detective/vampire/police
 	desc = "standard issue holster for standard issue sidearms."

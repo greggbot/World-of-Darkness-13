@@ -30,48 +30,22 @@
 					discipline.activate(owner, owner)
 	. = ..()
 
-/datum/action/discipline/ApplyIcon(atom/movable/screen/movable/action_button/current_button, force = FALSE)
-	if(owner)
-		if(owner.client)
-			if(owner.client.prefs)
-				if(owner.client.prefs.read_preference(/datum/preference/toggle/old_discipline))
-					button_icon = 'code/modules/wod13/disciplines.dmi'
-				else
-					button_icon = 'code/modules/wod13/UI/actions.dmi'
-	if(button_icon_state && ((current_button.button_icon_state != button_icon_state) || force))
-		current_button.cut_overlays(TRUE)
-		if(discipline)
-			current_button.name = discipline.name
-			current_button.desc = discipline.desc
-			current_button.add_overlay(mutable_appearance(button_icon, "[discipline.icon_state]"))
-			current_button.button_icon_state = "[discipline.icon_state]"
-			if(discipline.leveled)
-				current_button.add_overlay(mutable_appearance(button_icon, "[discipline.level_casting]"))
-		else
-			current_button.add_overlay(mutable_appearance(button_icon, button_icon_state))
-			current_button.button_icon_state = button_icon_state
 
 /datum/action/discipline/proc/switch_level()
 	SEND_SOUND(owner, sound('code/modules/wod13/sounds/highlight.ogg', 0, 0, 50))
 	if(discipline)
 		if(discipline.level_casting < discipline.level)
 			discipline.level_casting = discipline.level_casting+1
-			if(button)
-				ApplyIcon(button, TRUE)
 			return
 		else
 			discipline.level_casting = 1
-			if(button)
-				ApplyIcon(button, TRUE)
 			return
 
-/mob/living/Click()
+/mob/living/Click(location, control, params)
 	if(isliving(usr) && usr != src)
 		var/mob/living/L = usr
 		if(L.discipline_ranged)
 			L.discipline_ranged.active_check = FALSE
-			if(L.discipline_ranged.button)
-				animate(L.discipline_ranged.button, color = "#ffffff", time = 10, loop = 1)
 			if(L.discipline_ranged.discipline.check_activated(src, usr))
 				L.discipline_ranged.discipline.activate(src, usr)
 			L.discipline_ranged = null
@@ -139,17 +113,17 @@
 			if(!isturf(src) && !isobj(src) && !ismob(src))
 				return
 			var/list/fingerprints = list()
-			var/list/blood = return_blood_DNA()
-			var/list/fibers = return_fibers()
+			var/list/blood = GET_ATOM_BLOOD_DNA(src)
+			var/list/fibers = GET_ATOM_FIBRES(src)
 			var/list/reagents = list()
 
 			if(ishuman(src))
 				var/mob/living/carbon/human/H = src
 				if(!H.gloves)
-					fingerprints += md5(H.dna.uni_identity)
+					fingerprints += md5(H.dna.unique_identity)
 
 			else if(!ismob(src))
-				fingerprints = return_fingerprints()
+				fingerprints = GET_ATOM_FINGERPRINTS(src)
 
 
 				if(isturf(src))
@@ -291,7 +265,7 @@
 	violates_masquerade = TRUE
 	activate_sound = 'code/modules/wod13/sounds/wolves.ogg'
 	dead_restricted = FALSE
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/animalism/AN
+	var/datum/action/cooldown/spell/shapeshift/animalism/AN
 
 /obj/effect/spectral_wolf
 	name = "Spectral Wolf"
@@ -301,11 +275,10 @@
 	plane = GAME_PLANE
 	layer = ABOVE_ALL_MOB_LAYER
 
-/obj/effect/proc_holder/spell/targeted/shapeshift/animalism
+/datum/action/cooldown/spell/shapeshift/animalism
 	name = "Animalism Form"
 	desc = "Take on the shape a rat."
-	charge_max = 50
-	cooldown_min = 50
+	cooldown_time = 5 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
 	shapeshift_type = /mob/living/simple_animal/pet/rat
@@ -360,10 +333,10 @@
 			caster.beastmaster |= F
 			F.beastmaster = caster
 		if(5)
-			AN.Shapeshift(caster)
+			AN.cast(caster)
 			spawn(20 SECONDS + caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
-					AN.Restore(AN.myshape)
+					AN.do_unshapeshift(caster)
 					caster.Stun(1.5 SECONDS)
 
 /datum/discipline/auspex
@@ -389,10 +362,10 @@
 	var/shitcasted = FALSE
 	if(level_casting >= 2)
 		var/datum/atom_hud/abductor_hud = GLOB.huds[DATA_HUD_ABDUCTOR]
-		abductor_hud.add_hud_to(caster)
+		abductor_hud.add_atom_to_hud(caster)
 	if(level_casting >= 3)
 		var/datum/atom_hud/health_hud = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
-		health_hud.add_hud_to(caster)
+		health_hud.add_atom_to_hud(caster)
 	if(level_casting >= 4)
 		caster.auspex_examine = TRUE
 	if(level_casting >= 5)
@@ -406,9 +379,9 @@
 			caster.auspex_examine = FALSE
 			caster.see_invisible = initial(caster.see_invisible)
 			var/datum/atom_hud/abductor_hud = GLOB.huds[DATA_HUD_ABDUCTOR]
-			abductor_hud.remove_hud_from(caster)
+			abductor_hud.remove_atom_from_hud(caster)
 			var/datum/atom_hud/health_hud = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
-			health_hud.remove_hud_from(caster)
+			health_hud.remove_atom_from_hud(caster)
 			caster.stop_sound_channel(CHANNEL_DISCIPLINES)
 			caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/auspex_deactivate.ogg', 50, FALSE)
 			REMOVE_TRAIT(caster, TRAIT_THERMAL_VISION, TRAIT_GENERIC)
@@ -669,7 +642,6 @@
 				initial_matrix.Translate(-3,0)
 				animate(M, transform = initial_matrix, time = 1, loop = 0)
 		sleep(0.1 SECONDS)
-	M.lying_fix()
 	M.dancing = FALSE
 
 /proc/dancesecond(mob/living/M)
@@ -708,7 +680,6 @@
 				initial_matrix.Translate(-3,0)
 				animate(M, transform = initial_matrix, time = 1, loop = 0)
 		sleep(0.1 SECONDS)
-	M.lying_fix()
 	M.dancing = FALSE
 
 /datum/discipline/dementation/activate(mob/living/target, mob/living/carbon/human/caster)
@@ -746,8 +717,7 @@
 			if(target.body_position == STANDING_UP)
 				target.toggle_resting()
 		if(2)
-//			H.Immobilize(10)
-			H.hallucination += 50
+			H.adjust_hallucinations(5 SECONDS)
 			new /datum/hallucination/oh_yeah(H, TRUE)
 		if(3)
 			H.Immobilize(20)
@@ -779,14 +749,11 @@
 
 /datum/discipline/potence/activate(mob/living/target, mob/living/carbon/human/caster)
 	. = ..()
-	var/mod = 8*level_casting
 	var/armah = 0.4*level_casting
 	caster.remove_overlay(POTENCE_LAYER)
 	var/mutable_appearance/potence_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "potence", -POTENCE_LAYER)
 	caster.overlays_standing[POTENCE_LAYER] = potence_overlay
 	caster.apply_overlay(POTENCE_LAYER)
-	caster.dna.species.meleemod += armah
-	caster.dna.species.attack_sound = 'code/modules/wod13/sounds/heavypunch.ogg'
 	tackler = caster.AddComponent(/datum/component/tackler, stamina_cost=0, base_knockdown = 1 SECONDS, range = 2+level_casting, speed = 1, skill_mod = 0, min_distance = 0)
 	caster.potential = level_casting
 	spawn(delay+caster.discipline_time_plus)
@@ -794,8 +761,6 @@
 			if(caster.dna)
 				if(caster.dna.species)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/potence_deactivate.ogg', 50, FALSE)
-					caster.dna.species.meleemod -= armah
-					caster.dna.species.attack_sound = initial(caster.dna.species.attack_sound)
 					caster.remove_overlay(POTENCE_LAYER)
 					caster.potential = 0
 					qdel(tackler)
@@ -813,18 +778,9 @@
 	. = ..()
 	var/mod = min(3, level_casting)
 	var/armah = 15*mod
-//	caster.remove_overlay(FORTITUDE_LAYER)
-//	var/mutable_appearance/fortitude_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "fortitude", -FORTITUDE_LAYER)
-//	caster.overlays_standing[FORTITUDE_LAYER] = fortitude_overlay
-//	caster.apply_overlay(FORTITUDE_LAYER)
-	caster.physiology.armor.melee += armah
-	caster.physiology.armor.bullet += armah
 	spawn(delay+caster.discipline_time_plus)
 		if(caster)
 			caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/fortitude_deactivate.ogg', 50, FALSE)
-			caster.physiology.armor.melee -= armah
-			caster.physiology.armor.bullet -= armah
-//			caster.remove_overlay(FORTITUDE_LAYER)
 
 /datum/discipline/obfuscate
 	name = "Obfuscate"
@@ -838,7 +794,7 @@
 	// if the caster acts overtly, the ability is deactivated
 	COOLDOWN_DECLARE(obfuscate_combat_cooldown)
 	var/static/list/aggressive_signals = list(
-		COMSIG_HUMAN_MELEE_UNARMED_ATTACK,
+		COMSIG_LIVING_ATTACK_ATOM,
 		COMSIG_MOB_ITEM_ATTACK,
 		COMSIG_MOB_ATTACK_RANGED,
 	)
@@ -912,14 +868,12 @@
 /mob/living/carbon/human/proc/walk_to_caster()
 	walk(src, 0)
 	if(!CheckFrenzyMove())
-		set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
 		step_to(src,caster,0)
 		face_atom(caster)
 
 /mob/living/carbon/human/proc/step_away_caster()
 	walk(src, 0)
 	if(!CheckFrenzyMove())
-		set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
 		step_away(src,caster,99)
 		face_atom(caster)
 
@@ -958,7 +912,7 @@
 			if(1)
 				var/datum/cb = CALLBACK(H,/mob/living/carbon/human/proc/walk_to_caster)
 				for(var/i in 1 to 30)
-					addtimer(cb, (i - 1)*H.total_multiplicative_slowdown())
+					addtimer(cb, (i - 1))
 				to_chat(target, "<span class='userlove'><b>COME HERE</b></span>")
 				caster.say("COME HERE!!")
 			if(2)
@@ -985,7 +939,7 @@
 				caster.say("FEAR ME!!")
 				var/datum/cb = CALLBACK(H,/mob/living/carbon/human/proc/step_away_caster)
 				for(var/i in 1 to 30)
-					addtimer(cb, (i - 1)*H.total_multiplicative_slowdown())
+					addtimer(cb, (i - 1))
 				target.emote("scream")
 				target.do_jitter_animation(30)
 			if(5)
@@ -1774,7 +1728,7 @@
 /mob/living/carbon/human/proc/create_walk_to(var/max)
 	var/datum/cb = CALLBACK(src,/mob/living/carbon/human/proc/walk_to_caster)
 	for(var/i in 1 to max)
-		addtimer(cb, (i - 1)*total_multiplicative_slowdown())
+		addtimer(cb, (i - 1))
 
 /datum/discipline/melpominee/activate(mob/living/target, mob/living/carbon/human/caster)
 	. = ..()
@@ -1792,10 +1746,6 @@
 					to_chat(caster, "<span class='danger'>You can't force others to perform emotes!</span>")
 					return
 
-				if(CHAT_FILTER_CHECK(new_say))
-					to_chat(caster, "<span class='warning'>That message contained a word prohibited in IC chat! Consider reviewing the server rules.\n<span replaceRegex='show_filtered_ic_chat'>\"[new_say]\"</span></span>")
-					SSblackbox.record_feedback("tally", "ic_blocked_words", 1, lowertext(config.ic_filter_regex.match))
-					return
 				target.say("[new_say]", forced = "melpominee 1")
 
 				var/base_difficulty = 5
@@ -1827,10 +1777,6 @@
 				if (input_message)
 					//sanitisation!
 					input_message = trim(copytext_char(sanitize(input_message), 1, MAX_MESSAGE_LEN))
-					if(CHAT_FILTER_CHECK(input_message))
-						to_chat(caster, "<span class='warning'>That message contained a word prohibited in IC chat! Consider reviewing the server rules.\n<span replaceRegex='show_filtered_ic_chat'>\"[input_message]\"</span></span>")
-						SSblackbox.record_feedback("tally", "ic_blocked_words", 1, lowertext(config.ic_filter_regex.match))
-						return
 
 					var/language = caster.get_selected_language()
 					var/message = caster.compose_message(caster, language, input_message, , list())
