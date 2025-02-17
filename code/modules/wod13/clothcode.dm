@@ -468,8 +468,17 @@
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	max_integrity = 250
 	resistance_flags = NONE
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/suit_vampire
 	body_worn = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/suit_vampire
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/suit/hooded/heisenberg
 	name = "chemical costume"
@@ -482,9 +491,18 @@
 	body_parts_covered = CHEST | GROIN | ARMS
 	cold_protection = CHEST | GROIN | ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	armor = list(MELEE = 0, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 50, BIO = 0, RAD = 0, FIRE = 50, ACID = 100, WOUND = 10)
+	armor_type = /datum/armor/hooded_heisenberg
 	hoodtype = /obj/item/clothing/head/hooded/heisenberg_hood
 	body_worn = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/hooded_heisenberg
+	laser = 10
+	energy = 10
+	bomb = 50
+	fire = 50
+	acid = 100
+	wound = 10
 
 /obj/item/clothing/head/hooded/heisenberg_hood
 	name = "chemical hood"
@@ -497,10 +515,19 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEHAIR | HIDEEARS
-	armor = list(MELEE = 0, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 50, BIO = 0, RAD = 0, FIRE = 50, ACID = 100, WOUND = 10)
+	armor_type = /datum/armor/hooded_heisenberg_hood
 	body_worn = TRUE
 
 //** SPOOOOKY ROBES FROM THE CAPPADOCIAN UPDATE **//
+/// Automatically generated armor datum, errors may exist
+/datum/armor/hooded_heisenberg_hood
+	laser = 10
+	energy = 10
+	bomb = 50
+	fire = 50
+	acid = 100
+	wound = 10
+
 /obj/item/clothing/suit/hooded/robes
 	name = "white robe"
 	desc = "Some angelic-looking robes."
@@ -637,27 +664,82 @@
 	name = "leather jacket"
 	desc = "True clothing for any punk. Provides some kind of protection."
 	icon_state = "jacket1"
-	armor = list(MELEE = 25, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 25, ACID = 10, WOUND = 25)
+	armor_type = /datum/armor/vampire_jacket
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_jacket
+	melee = 25
+	bullet = 25
+	laser = 10
+	energy = 10
+	bomb = 25
+	fire = 25
+	acid = 10
+	wound = 25
 
 /obj/item/clothing/suit/vampire/jacket/fbi
 	name = "Federal Bureau of Investigation jacket"
 	desc = "\"FBI OPEN UP!!\""
 	icon_state = "fbi"
-	armor = list(MELEE = 25, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 25, ACID = 10, WOUND = 25)
+	armor_type = /datum/armor/jacket_fbi
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/jacket_fbi
+	melee = 25
+	bullet = 25
+	laser = 10
+	energy = 10
+	bomb = 25
+	fire = 25
+	acid = 10
+	wound = 25
 
 /obj/item/clothing/suit/vampire/jacket/punk
 	icon_state = "punk"
-	armor = list(MELEE = 50, BULLET = 50, LASER = 10, ENERGY = 10, BOMB = 50, BIO = 0, RAD = 0, FIRE = 25, ACID = 10, WOUND = 25)
+	armor_type = /datum/armor/jacket_punk
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/jacket_punk
+	melee = 50
+	bullet = 50
+	laser = 10
+	energy = 10
+	bomb = 50
+	fire = 25
+	acid = 10
+	wound = 25
 
 /obj/item/clothing/suit/vampire/jacket/better
 	icon_state = "jacket2"
-	armor = list(MELEE = 35, BULLET = 35, LASER = 10, ENERGY = 10, BOMB = 35, BIO = 0, RAD = 0, FIRE = 35, ACID = 10, WOUND = 35)
+	armor_type = /datum/armor/jacket_better
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/jacket_better
+	melee = 35
+	bullet = 35
+	laser = 10
+	energy = 10
+	bomb = 35
+	fire = 35
+	acid = 10
+	wound = 35
 
 /obj/item/clothing/suit/vampire/trench
 	name = "trenchcoat"
 	desc = "Best noir clothes for night. Provides some kind of protection."
 	icon_state = "trench1"
-	armor = list(MELEE = 25, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 25, ACID = 10, WOUND = 25)
+	armor_type = /datum/armor/vampire_trench
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_trench
+	melee = 25
+	bullet = 25
+	laser = 10
+	energy = 10
+	bomb = 25
+	fire = 25
+	acid = 10
+	wound = 25
 
 /obj/item/clothing/suit/vampire/trench/alt
 	icon_state = "trench2"
@@ -666,34 +748,86 @@
 	name = "rich trenchcoat"
 	desc = "Best choise for pleasant life... or not."
 	icon_state = "trench3"
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/trench_archive
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/trench_archive
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/suit/vampire/trench/tzi
 	name = "fleshcoat"
 	desc = "HUMAN LEATHER JACKET."
 	icon_state = "trench_tzi"
-	armor = list(MELEE = 50, BULLET = 50, LASER = 10, ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 50)
+	armor_type = /datum/armor/trench_tzi
 	clothing_traits = list(TRAIT_UNMASQUERADE)
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/trench_tzi
+	melee = 50
+	bullet = 50
+	laser = 10
+	energy = 10
+	bomb = 25
+	acid = 10
+	wound = 50
 
 /obj/item/clothing/suit/vampire/trench/voivode
 	name = "regal coat"
 	desc = "A beautiful jacket. The blue colors belong to clan Tzimisce. Whoever owns this must be important."
 	icon_state = "voicoat"
-	armor = list(MELEE = 60, BULLET = 60, LASER = 10, ENERGY = 10, BOMB = 55, BIO = 0, RAD = 0, FIRE = 45, ACID = 10, WOUND = 25)
+	armor_type = /datum/armor/trench_voivode
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/trench_voivode
+	melee = 60
+	bullet = 60
+	laser = 10
+	energy = 10
+	bomb = 55
+	fire = 45
+	acid = 10
+	wound = 25
 
 /obj/item/clothing/suit/vampire/vest
 	name = "bulletproof vest"
 	desc = "Durable, lightweight vest designed to protect against most threats efficiently."
 	icon_state = "vest"
-	armor = list(MELEE = 55, BULLET = 55, LASER = 10, ENERGY = 10, BOMB = 55, BIO = 0, RAD = 0, FIRE = 45, ACID = 10, WOUND = 25)
+	armor_type = /datum/armor/vampire_vest
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_vest
+	melee = 55
+	bullet = 55
+	laser = 10
+	energy = 10
+	bomb = 55
+	fire = 45
+	acid = 10
+	wound = 25
 
 /obj/item/clothing/suit/vampire/vest/medieval
 	name = "medieval vest"
 	desc = "Probably spanish. Provides good protection."
 	icon_state = "medieval"
-	armor = list(MELEE = 55, BULLET = 55, LASER = 10, ENERGY = 10, BOMB = 55, BIO = 0, RAD = 0, FIRE = 45, ACID = 10, WOUND = 25)
+	armor_type = /datum/armor/vest_medieval
 
 //Police + Army
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vest_medieval
+	melee = 55
+	bullet = 55
+	laser = 10
+	energy = 10
+	bomb = 55
+	fire = 45
+	acid = 10
+	wound = 25
+
 /obj/item/clothing/suit/vampire/vest/police
 	name = "police duty vest"
 	icon_state = "pdvest"
@@ -709,15 +843,37 @@
 	name = "police chief duty vest"
 	icon_state = "chiefvest"
 	desc = "Composite bulletproof vest with SFPD markings, tailored for improved protection. This one has captain insignia on it."
-	armor = list(MELEE = 70, BULLET = 70, LASER = 10, ENERGY = 10, BOMB = 60, BIO = 0, RAD = 0, FIRE = 50, ACID = 10, WOUND = 30)
+	armor_type = /datum/armor/police_chief
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/police_chief
+	melee = 70
+	bullet = 70
+	laser = 10
+	energy = 10
+	bomb = 60
+	fire = 50
+	acid = 10
+	wound = 30
 
 /obj/item/clothing/suit/vampire/vest/army
 	desc = "Army equipment. Provides great protection against blunt force."
 	icon_state = "army"
 	w_class = WEIGHT_CLASS_BULKY
-	armor = list(MELEE = 70, BULLET = 70, LASER = 10, ENERGY = 10, BOMB = 55, BIO = 0, RAD = 0, FIRE = 45, ACID = 10, WOUND = 25)
+	armor_type = /datum/armor/vest_army
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
 	masquerade_violating = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vest_army
+	melee = 70
+	bullet = 70
+	laser = 10
+	energy = 10
+	bomb = 55
+	fire = 45
+	acid = 10
+	wound = 25
 
 /obj/item/clothing/suit/vampire/eod
 	name = "EOD suit"
@@ -730,9 +886,20 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	slowdown = 2
 	w_class = WEIGHT_CLASS_BULKY
-	armor = list(MELEE = 90, BULLET = 90, LASER = 50, ENERGY = 50, BOMB = 100, BIO = 0, RAD = 0, FIRE = 70, ACID = 90, WOUND = 50)
+	armor_type = /datum/armor/vampire_eod
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
 	masquerade_violating = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_eod
+	melee = 90
+	bullet = 90
+	laser = 50
+	energy = 50
+	bomb = 100
+	fire = 70
+	acid = 90
+	wound = 50
 
 /obj/item/clothing/suit/vampire/bogatyr
 	name = "Bogatyr armor"
@@ -745,14 +912,30 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	slowdown = 1
 	w_class = WEIGHT_CLASS_BULKY
-	armor = list(MELEE = 75, BULLET = 75, LASER = 15, ENERGY = 15, BOMB = 20, BIO = 0, RAD = 0, FIRE = 55, ACID = 70, WOUND = 35)
+	armor_type = /datum/armor/vampire_bogatyr
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_bogatyr
+	melee = 75
+	bullet = 75
+	laser = 15
+	energy = 15
+	bomb = 20
+	fire = 55
+	acid = 70
+	wound = 35
 
 /obj/item/clothing/suit/vampire/labcoat
 	name = "labcoat"
 	desc = "For medicine and research purposes."
 	icon_state = "labcoat"
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 90, WOUND = 10)
+	armor_type = /datum/armor/vampire_labcoat
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_labcoat
+	acid = 90
+	wound = 10
 
 /obj/item/clothing/suit/vampire/labcoat/director
 	name = "clinic director's labcoat"
@@ -779,37 +962,82 @@
 	desc = "When I first tasted the fruit of the Trees,\
 			felt the seeds of Life and Knowledge, burn within me, I swore that day I would not turn back..."
 	icon_state = "bahari"
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_bahari
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_bahari
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/suit/vampire/kasaya
 	name = "Kasaya"
 	desc = "A traditional robe worn by monks and nuns of the Buddhist faith."
 	icon_state = "kasaya"
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_kasaya
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_kasaya
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/suit/vampire/imam
 	name = "Imam robe"
 	desc = "A traditional robe worn by imams of the Islamic faith."
 	icon_state = "imam"
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_imam
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_imam
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/suit/vampire/noddist
 	name = "Noddist robe"
 	desc = "Shine black the sun! Shine blood the moon! Gehenna is coming soon."
 	icon_state = "noddist"
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_noddist
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_noddist
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/suit/vampire/orthodox
 	name = "Orthodox robe"
 	desc = "A traditional robe worn by priests of the Orthodox faith."
 	icon_state = "vestments"
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_orthodox
 
 //GLASSES
 
 //GLASSES
 
 //GLASSES
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_orthodox
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/glasses/vampire
 	icon = 'code/modules/wod13/clothing.dmi'
@@ -854,8 +1082,17 @@
 	icon = 'code/modules/wod13/clothing.dmi'
 	worn_icon = 'code/modules/wod13/worn.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/head_vampire
 	body_worn = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/head_vampire
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/head/vampire/bandana
 	name = "bandana"
@@ -893,31 +1130,61 @@
 	name = "police hat"
 	desc = "Can look dangerous or sexy despite the circumstances. Provides some kind of protection."
 	icon_state = "law"
-	armor = list(MELEE = 20, BULLET = 20, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_police
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_police
+	melee = 20
+	bullet = 20
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/head/vampire/cowboy
 	name = "cowboy hat"
 	desc = "Looks cool anyway. Provides some kind of protection."
 	icon_state = "cowboy"
-	armor = list(MELEE = 20, BULLET = 20, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_cowboy
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_cowboy
+	melee = 20
+	bullet = 20
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/head/vampire/british
 	name = "british police hat"
 	desc = "Want some tea? Provides some kind of protection."
 	icon_state = "briish"
-	armor = list(MELEE = 20, BULLET = 20, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_british
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_british
+	melee = 20
+	bullet = 20
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/head/vampire/napoleon
 	name = "french admiral hat"
 	desc = "Dans mon esprit tout divague, je me perds dans tes yeux... Je me noie dans la vague de ton regard amoureux..."
 	icon_state = "french"
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+	armor_type = /datum/armor/none
 
 /obj/item/clothing/head/vampire/nazi
 	name = "german bad guy hat"
 	desc = "\"Du wirst immer ein Schwein sein!\""
 	icon_state = "ss"
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+	armor_type = /datum/armor/none
 
 /obj/item/clothing/head/vampire/nazi/Initialize()
 	. = ..()
@@ -927,13 +1194,23 @@
 	name = "top hat"
 	desc = "Want some tea? Provides some kind of protection."
 	icon_state = "top"
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0, WOUND = 0)
+	armor_type = /datum/armor/none
 
 /obj/item/clothing/head/vampire/skull
 	name = "skull helmet"
 	desc = "Damn... Provides some kind of protection."
 	icon_state = "skull"
-	armor = list(MELEE = 20, BULLET = 20, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_skull
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_skull
+	melee = 20
+	bullet = 20
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/head/vampire/helmet
 	name = "police helmet"
@@ -942,10 +1219,21 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 20, BIO = 0, RAD = 0, FIRE = 20, ACID = 40, WOUND = 25)
+	armor_type = /datum/armor/vampire_helmet
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
 	masquerade_violating = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_helmet
+	melee = 40
+	bullet = 40
+	laser = 40
+	energy = 40
+	bomb = 20
+	fire = 20
+	acid = 40
+	wound = 25
 
 /obj/item/clothing/head/vampire/helmet/egorium
 	name = "strange mask"
@@ -962,9 +1250,20 @@
 	desc = "Concistador! Provides good protection."
 	icon_state = "spain"
 	flags_inv = HIDEEARS
-	armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 20, BIO = 0, RAD = 0, FIRE = 20, ACID = 40, WOUND = 25)
+	armor_type = /datum/armor/helmet_spain
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	masquerade_violating = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/helmet_spain
+	melee = 40
+	bullet = 40
+	laser = 40
+	energy = 40
+	bomb = 20
+	fire = 20
+	acid = 40
+	wound = 25
 
 /obj/item/clothing/head/vampire/army
 	name = "army helmet"
@@ -973,9 +1272,20 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 40, BIO = 0, RAD = 0, FIRE = 20, ACID = 40, WOUND = 25)
+	armor_type = /datum/armor/vampire_army
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
 	masquerade_violating = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_army
+	melee = 60
+	bullet = 60
+	laser = 60
+	energy = 60
+	bomb = 40
+	fire = 20
+	acid = 40
+	wound = 25
 
 /obj/item/clothing/head/vampire/hardhat
     name = "construction helmet"
@@ -987,7 +1297,7 @@
 	name = "EOD helmet"
 	desc = "Looks dangerous. Provides best protection against nearly everything."
 	icon_state = "bomb"
-	armor = list(MELEE = 70, BULLET = 70, LASER = 90, ENERGY = 90, BOMB = 100, BIO = 0, RAD = 0, FIRE = 50, ACID = 90, WOUND = 40)
+	armor_type = /datum/armor/vampire_eod
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -998,11 +1308,22 @@
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
 	masquerade_violating = TRUE
 
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_eod
+	melee = 70
+	bullet = 70
+	laser = 90
+	energy = 90
+	bomb = 100
+	fire = 50
+	acid = 90
+	wound = 40
+
 /obj/item/clothing/head/vampire/bogatyr
 	name = "Bogatyr helmet"
 	desc = "A regal helmet made of unknown materials."
 	icon_state = "bogatyr_helmet"
-	armor = list(MELEE = 55, BULLET = 50, LASER = 60, ENERGY = 60, BOMB = 20, BIO = 0, RAD = 0, FIRE = 40, ACID = 70, WOUND = 30)
+	armor_type = /datum/armor/vampire_bogatyr
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -1012,6 +1333,17 @@
 	w_class = WEIGHT_CLASS_BULKY
 //	clothing_traits = list(TRAIT_UNMASQUERADE)
 
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_bogatyr
+	melee = 55
+	bullet = 50
+	laser = 60
+	energy = 60
+	bomb = 20
+	fire = 40
+	acid = 70
+	wound = 30
+
 /obj/item/clothing/head/vampire/bahari_mask
 	name = "Dark mother's mask"
 	desc = "When I first tasted the fruit of the Trees,\
@@ -1020,7 +1352,16 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_bahari_mask
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_bahari_mask
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/head/vampire/straw_hat
 	name = "straw hat"
@@ -1044,7 +1385,16 @@
 	name = "Noddist mask"
 	desc = "Shine black the sun! Shine blood the moon! Gehenna is coming soon."
 	icon_state = "noddist_mask"
-	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
+	armor_type = /datum/armor/vampire_noddist_mask
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_noddist_mask
+	melee = 10
+	laser = 10
+	energy = 10
+	bomb = 10
+	acid = 10
+	wound = 10
 
 /obj/item/clothing/head/vampire/kalimavkion
 	name = "Kalimavkion"
@@ -1081,7 +1431,13 @@
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 	resistance_flags = NONE
-	armor = list(MELEE = 15, BULLET = 15, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 30)
+	armor_type = /datum/armor/vampire_leather
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_leather
+	melee = 15
+	bullet = 15
+	acid = 30
 
 /obj/item/clothing/gloves/vampire/work
 	name = "work gloves"
@@ -1092,7 +1448,15 @@
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
 	resistance_flags = NONE
-	armor = list(MELEE = 30, BULLET = 15, LASER = 0, ENERGY = 0, BOMB = 10, BIO = 0, RAD = 0, FIRE = 70, ACID = 30)
+	armor_type = /datum/armor/vampire_work
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_work
+	melee = 30
+	bullet = 15
+	bomb = 10
+	fire = 70
+	acid = 30
 
 /obj/item/clothing/gloves/vampire/investigator
 	name = "investigator gloves"
@@ -1103,25 +1467,41 @@
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
 	resistance_flags = NONE
-	armor = list(MELEE = 30, BULLET = 20, LASER = 5, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 70, ACID = 70)
+	armor_type = /datum/armor/vampire_investigator
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_investigator
+	melee = 30
+	bullet = 20
+	laser = 5
+	fire = 70
+	acid = 70
 
 /obj/item/clothing/gloves/vampire/cleaning
 	name = "cleaning gloves"
 	desc = "Provides acid protection."
 	icon_state = "cleaning"
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 70)
+	armor_type = /datum/armor/vampire_cleaning
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_cleaning
+	acid = 70
 
 /obj/item/clothing/gloves/vampire/latex
 	name = "latex gloves"
 	desc = "Provides acid protection."
 	icon_state = "latex"
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 70)
+	armor_type = /datum/armor/vampire_latex
 
 //NECK
 
 //NECK
 
 //NECK
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampire_latex
+	acid = 70
 
 /obj/item/clothing/neck/vampire
 	icon = 'code/modules/wod13/clothing.dmi'

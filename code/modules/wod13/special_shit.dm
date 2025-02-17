@@ -6,8 +6,13 @@
 	icon_state = "masquerade"
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/item_masquerade_contract
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/item_masquerade_contract
+	fire = 100
+	acid = 100
 
 /obj/item/masquerade_contract/attack_self(mob/user)
 	. = ..()
@@ -96,7 +101,7 @@
 	righthand_file = 'code/modules/wod13/righthand.dmi'
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/item_drinkable_bloodpack
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 
@@ -104,6 +109,11 @@
 	var/feeding = FALSE
 	var/amount_of_bloodpoints = 2
 	var/vitae = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/item_drinkable_bloodpack
+	fire = 100
+	acid = 100
 
 /obj/item/drinkable_bloodpack/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -148,8 +158,13 @@
 	icon_state = "eye"
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/item_blood_hunt
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/item_blood_hunt
+	fire = 100
+	acid = 100
 
 /obj/item/blood_hunt/attack_self(mob/user)
 	. = ..()

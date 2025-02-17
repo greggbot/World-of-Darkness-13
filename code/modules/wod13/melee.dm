@@ -580,10 +580,14 @@
 	w_class = WEIGHT_CLASS_BULKY
 	attack_verb_continuous = list("attacks", "chops", "tears", "beats")
 	attack_verb_simple = list("attack", "chop", "tear", "beat")
-	armor = list(MELEE = 25, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0)
+	armor_type = /datum/armor/vampirearms_shovel
 	resistance_flags = FIRE_PROOF
 	masquerade_violating = FALSE
 	is_iron = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampirearms_shovel
+	melee = 25
 
 /obj/item/melee/vampirearms/shovel/attack(mob/living/target, mob/living/user)
 	. = ..()
@@ -627,7 +631,7 @@
 	hitsound = 'code/modules/wod13/sounds/rock.ogg'
 	sharpness = SHARP_EDGED
 	max_integrity = 200
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 30)
+	armor_type = /datum/armor/vampirearms_eguitar
 	resistance_flags = FIRE_PROOF
 	wound_bonus = -15
 	bare_wound_bonus = 15
@@ -638,6 +642,11 @@
 	var/wielded = FALSE
 	var/on = FALSE
 	var/last_solo = 0
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampirearms_eguitar
+	fire = 100
+	acid = 30
 
 /obj/item/melee/vampirearms/eguitar/click_alt(mob/user)
 	if(last_solo+600 > world.time)

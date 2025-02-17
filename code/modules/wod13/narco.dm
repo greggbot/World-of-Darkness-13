@@ -561,13 +561,18 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	resistance_flags = FREEZE_PROOF
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/drug_methpack
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 	var/empty = FALSE
 	var/feeding = FALSE
 	var/amount_of_bloodpoints = 4
 	var/vitae = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/drug_methpack
+	fire = 100
+	acid = 100
 
 /obj/item/reagent_containers/drug/methpack/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -611,13 +616,18 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	resistance_flags = FREEZE_PROOF
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/drug_morphpack
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 	var/empty = FALSE
 	var/feeding = FALSE
 	var/amount_of_bloodpoints = 4
 	var/vitae = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/drug_morphpack
+	fire = 100
+	acid = 100
 
 /obj/item/reagent_containers/drug/morphpack/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -661,13 +671,18 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	resistance_flags = FREEZE_PROOF
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/drug_cokepack
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 	var/empty = FALSE
 	var/feeding = FALSE
 	var/amount_of_bloodpoints = 4
 	var/vitae = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/drug_cokepack
+	fire = 100
+	acid = 100
 
 /obj/item/reagent_containers/drug/cokepack/attack(mob/living/M, mob/living/user)
 	. = ..()

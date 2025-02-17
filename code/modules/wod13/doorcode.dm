@@ -20,7 +20,7 @@
 	icon_state = "keys"
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_TINY
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/vamp_keys
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 
@@ -28,6 +28,11 @@
 		"nothing"
 	)
 	var/roundstart_fix = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vamp_keys
+	fire = 100
+	acid = 100
 
 /obj/item/vamp/keys/camarilla
 	name = "Camarilla keys"

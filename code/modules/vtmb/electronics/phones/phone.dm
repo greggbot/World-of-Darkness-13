@@ -30,7 +30,7 @@
 	item_flags = NOBLUDGEON
 	flags_1 = HEAR_1
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/vamp_phone
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 
@@ -57,6 +57,11 @@
 	var/open_state = "phone2"
 	var/closed_state = "phone1"
 	var/folded_state = "phone0"
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vamp_phone
+	fire = 100
+	acid = 100
 
 /obj/item/vamp/phone/Initialize()
 	. = ..()
