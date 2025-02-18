@@ -303,7 +303,7 @@ jobs:
 
   test_windows:
     name: Windows Build
-    needs: [collect_data]
+    needs: [collect_data, compile_all_maps]
     runs-on: windows-latest
     timeout-minutes: 5
 
@@ -322,8 +322,6 @@ jobs:
         with:
           path: tgui/public
           key: ${{ runner.os }}-tgui-${{ hashFiles('tgui/public') }}
-          restore-keys: |
-            ${{ runner.os }}-tgui-
 
       - name: Compile
         run: pwsh tools/ci/build.ps1
