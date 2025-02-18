@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
-  
+
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -115,6 +115,7 @@ jobs:
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: tools/bootstrap/python -m trait_validity.check
       - name: Run DreamChecker
+        id: "dreamchecker"
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         shell: bash
         run: ~/dreamchecker 2>&1 | bash tools/ci/annotate_dm.sh
@@ -147,7 +148,8 @@ jobs:
 
   compile_all_maps:
     name: Compile Maps
-    needs: collect_data
+    needs: [collect_data, run_linters]
+    if: needs.run_linters.outputs.dreamchecker == 'success'
     runs-on: ubuntu-22.04
     timeout-minutes: 5
 
