@@ -31,72 +31,83 @@ jobs:
       - name: Mandatory Empty Step
         run: exit 0
 
-  run_linters:
-    name: Run Linters
+  install_tools:
+    name: Install Tools
     needs: start_gate
     runs-on: ubuntu-22.04
     timeout-minutes: 5
 
     steps:
+    - uses: actions/checkout@v4
+    - name: Restore SpacemanDMM cache
+      uses: actions/cache@v4
+      with:
+        path: ~/SpacemanDMM
+        key: ${{ runner.os }}-spacemandmm-${{ hashFiles('dependencies.sh') }}
+        restore-keys: |
+          ${{ runner.os }}-spacemandmm-
+    - name: Restore Yarn cache
+      uses: actions/cache@v4
+      with:
+        path: tgui/.yarn/cache
+        key: ${{ runner.os }}-yarn-${{ hashFiles('tgui/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+    - name: Restore Node cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.nvm
+        key: ${{ runner.os }}-node-${{ hashFiles('dependencies.sh') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Restore Bootstrap cache
+      uses: actions/cache@v4
+      with:
+        path: tools/bootstrap/.cache
+        key: ${{ runner.os }}-bootstrap-${{ hashFiles('tools/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-bootstrap-
+    - name: Restore Rust cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.cargo
+        key: ${{ runner.os }}-rust-${{ hashFiles('tools/ci/ci_dependencies.sh')}}
+        restore-keys: |
+          ${{ runner.os }}-rust-
+    - name: Restore Cutter cache
+      uses: actions/cache@v4
+      with:
+        path: tools/icon_cutter/cache
+        key: ${{ runner.os }}-cutter-${{ hashFiles('dependencies.sh') }}
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4.2.0
+      with:
+        dotnet-version: 9.x
+    - name: Install OpenDream
+      uses: robinraju/release-downloader@v1.11
+      with:
+        repository: "OpenDreamProject/OpenDream"
+        tag: "latest"
+        fileName: "DMCompiler_linux-x64.tar.gz"
+        extract: true
+    - name: Install Tools
+      run: |
+        pip3 install setuptools
+        bash tools/ci/install_node.sh
+        bash tools/ci/instal l_spaceman_dmm.sh dreamchecker
+        bash tools/ci/install_ripgrep.sh
+        tools/bootstrap/python -c ''
+
+
+  run_linters:
+    name: Run Linters
+    needs: [start_gate, install_tools]
+    runs-on: ubuntu-22.04
+    timeout-minutes: 5
+
+    steps:
       - uses: actions/checkout@v4
-      - name: Restore SpacemanDMM cache
-        uses: actions/cache@v4
-        with:
-          path: ~/SpacemanDMM
-          key: ${{ runner.os }}-spacemandmm-${{ hashFiles('dependencies.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-spacemandmm-
-      - name: Restore Yarn cache
-        uses: actions/cache@v4
-        with:
-          path: tgui/.yarn/cache
-          key: ${{ runner.os }}-yarn-${{ hashFiles('tgui/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-      - name: Restore Node cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.nvm
-          key: ${{ runner.os }}-node-${{ hashFiles('dependencies.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Restore Bootstrap cache
-        uses: actions/cache@v4
-        with:
-          path: tools/bootstrap/.cache
-          key: ${{ runner.os }}-bootstrap-${{ hashFiles('tools/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-bootstrap-
-      - name: Restore Rust cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cargo
-          key: ${{ runner.os }}-rust-${{ hashFiles('tools/ci/ci_dependencies.sh')}}
-          restore-keys: |
-            ${{ runner.os }}-rust-
-      - name: Restore Cutter cache
-        uses: actions/cache@v4
-        with:
-          path: tools/icon_cutter/cache
-          key: ${{ runner.os }}-cutter-${{ hashFiles('dependencies.sh') }}
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4.2.0
-        with:
-          dotnet-version: 9.x
-      - name: Install OpenDream
-        uses: robinraju/release-downloader@v1.11
-        with:
-          repository: "OpenDreamProject/OpenDream"
-          tag: "latest"
-          fileName: "DMCompiler_linux-x64.tar.gz"
-          extract: true
-      - name: Install Tools
-        run: |
-          pip3 install setuptools
-          bash tools/ci/install_node.sh
-          bash tools/ci/install_spaceman_dmm.sh dreamchecker
-          bash tools/ci/install_ripgrep.sh
-          tools/bootstrap/python -c ''
       - name: Give Linters A Go
         id: linter-setup
         run: ':'
@@ -114,14 +125,6 @@ jobs:
       - name: Check Trait Validity
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: tools/bootstrap/python -m trait_validity.check
-      - name: Run DreamChecker
-        id: "dreamchecker"
-        if: steps.linter-setup.conclusion == 'success' && !cancelled()
-        shell: bash
-        run: ~/dreamchecker 2>&1 | bash tools/ci/annotate_dm.sh
-      - name: Run OpenDream
-        if: steps.linter-setup.conclusion == 'success' && !cancelled()
-        run: ./DMCompiler_linux-x64/DMCompiler tgstation.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
       - name: Run Map Checks
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: |
@@ -146,6 +149,16 @@ jobs:
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: tools/build/build --ci lint tgui-test
 
+  run_compiler:
+    name: Compile with OpenDream
+    needs: [start_gate, install_tools, run_dreamchecker]
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Run OpenDream Compiler
+        shell: bash
+        run: ./DMCompiler_linux-x64/DMCompiler tgstation.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
+
+
   run_dreamchecker:
     name: Run DreamChecker
     needs: [start_gate, collect_data]
@@ -154,6 +167,7 @@ jobs:
       - name: Run DreamChecker
         shell: bash
         run: ~/dreamchecker 2>&1 | bash tools/ci/annotate_dm.sh
+
 
   compile_all_maps:
     name: Compile Maps
