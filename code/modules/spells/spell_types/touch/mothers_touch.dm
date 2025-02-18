@@ -1,8 +1,7 @@
 /obj/item/melee/touch_attack/mothers_touch
 	name = "\improper mother's touch"
 	desc = "That's the bottom line, because Gaia said so!"
-	on_use_sound = 'code/modules/wod13/sounds/restore_cast.ogg'
-	catchphrase = "Come forth, spirits!"
+	hitsound = 'code/modules/wod13/sounds/restore_cast.ogg'
 	icon_state = "fleshtostone"
 	inhand_icon_state = "fleshtostone"
 
@@ -13,7 +12,7 @@
 		to_chat(user, "<span class='warning'>You can't reach out!</span>")
 		return
 	var/mob/living/M = target
-	if(M.anti_magic_check())
+	if(HAS_TRAIT(M, TRAIT_ANTIMAGIC))
 		to_chat(user, "<span class='warning'>The spell can't seem to affect [M]!</span>")
 		to_chat(M, "<span class='warning'>You feel your flesh turn to stone for a moment, then revert back!</span>")
 		..()
@@ -22,7 +21,6 @@
 	M.adjustFireLoss(-30, TRUE)
 	M.adjustToxLoss(-50, TRUE)
 	M.adjustOxyLoss(-50, TRUE)
-	M.adjustCloneLoss(-45, TRUE)
 	if(ishuman(M))
 		var/mob/living/carbon/human/BD = M
 		if(length(BD.all_wounds))

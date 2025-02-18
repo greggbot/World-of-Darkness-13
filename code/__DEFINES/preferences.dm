@@ -61,7 +61,7 @@
 // Playtime tracking system, see jobs_exp.dm
 #define EXP_TYPE_LIVING			"Living"
 #define EXP_TYPE_CREW			"Kindred"
-#define EXP_TYPE_CAMARILLIA		"Camarilla Authorities"
+#define EXP_TYPE_CAMARILLA		"Camarilla Authorities"
 #define EXP_TYPE_GANG			"Gangs"
 #define EXP_TYPE_TREMERE		"Tremere"
 #define EXP_TYPE_ANARCH			"Anarchs"

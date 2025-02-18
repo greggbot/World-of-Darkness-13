@@ -10,7 +10,7 @@
 	minimal_player_age = 14
 	exp_requirements = 180
 	exp_required_type = EXP_TYPE_CREW
-	exp_granted_type = EXP_TYPE_CAMARILLIA
+	exp_granted_type = EXP_TYPE_CAMARILLA
 
 	outfit = /datum/outfit/job/prince
 
