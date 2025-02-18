@@ -195,8 +195,7 @@ jobs:
         run: |
           bash tools/ci/install_byond.sh
           source $HOME/BYOND/byond/bin/byondsetup
-          tools/build/build --ci tgui -DCIBUILDING -DCITESTING -DALL_MAPS
-          tools/build/build --ci dm -DCIBUILDING -DCITESTING -DALL_MAPS
+          tools/build/build --ci -DCIBUILDING -DCITESTING -DALL_MAPS
       - name: Check client Compatibility
         uses: tgstation/byond-client-compatibility-check@v3
         with:
