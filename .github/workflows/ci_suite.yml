@@ -161,7 +161,7 @@ jobs:
 
   run_dreamchecker:
     name: Run DreamChecker
-    needs: [start_gate, collect_data]
+    needs: [start_gate, collect_data, install_tools]
     runs-on: ubuntu-22.04
     steps:
       - name: Run DreamChecker
