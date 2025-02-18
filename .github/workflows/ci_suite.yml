@@ -146,10 +146,18 @@ jobs:
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: tools/build/build --ci lint tgui-test
 
+  run_dreamchecker:
+    name: Run DreamChecker
+    needs: [start_gate, collect_data]
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Run DreamChecker
+        shell: bash
+        run: ~/dreamchecker 2>&1 | bash tools/ci/annotate_dm.sh
+
   compile_all_maps:
     name: Compile Maps
-    needs: [collect_data, run_linters]
-    if: needs.run_linters.outputs.dreamchecker == 'success'
+    needs: [collect_data, run_dreamchecker]
     runs-on: ubuntu-22.04
     timeout-minutes: 5
 
