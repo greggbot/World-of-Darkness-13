@@ -13,10 +13,6 @@ on:
   merge_group:
     branches:
     - master
-  workflow_dispatch:
-permissions:
-  contents: read
-
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -31,41 +27,72 @@ jobs:
       - name: Mandatory Empty Step
         run: exit 0
 
-  install_tools:
-    name: Install Tools
+  run_linters:
+    name: Run Linters
     needs: start_gate
     runs-on: ubuntu-22.04
     timeout-minutes: 5
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Restore Cutter cache
-      uses: actions/cache@v4
-      with:
-        path: tools/icon_cutter/cache
-        key: ${{ runner.os }}-cutter-${{ hashFiles('dependencies.sh') }}
-
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v4.2.0
-      with:
-        dotnet-version: 9.x
-
-    - name: Install Tools
-      run: |
-        pip3 install setuptools
-        bash tools/ci/install_node.sh
-        bash tools/ci/install_ripgrep.sh
-        tools/bootstrap/python -c ''
-
-
-  run_linters:
-    name: Run Linters
-    needs: [start_gate, install_tools]
-    runs-on: ubuntu-22.04
-    timeout-minutes: 5
-
-    steps:
       - uses: actions/checkout@v4
+      - name: Restore SpacemanDMM cache
+        uses: actions/cache@v4
+        with:
+          path: ~/SpacemanDMM
+          key: ${{ runner.os }}-spacemandmm-${{ hashFiles('dependencies.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-spacemandmm-
+      - name: Restore Yarn cache
+        uses: actions/cache@v4
+        with:
+          path: tgui/.yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('tgui/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Restore Node cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.nvm
+          key: ${{ runner.os }}-node-${{ hashFiles('dependencies.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Restore Bootstrap cache
+        uses: actions/cache@v4
+        with:
+          path: tools/bootstrap/.cache
+          key: ${{ runner.os }}-bootstrap-${{ hashFiles('tools/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-bootstrap-
+      - name: Restore Rust cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-rust-${{ hashFiles('tools/ci/ci_dependencies.sh')}}
+          restore-keys: |
+            ${{ runner.os }}-rust-
+      - name: Restore Cutter cache
+        uses: actions/cache@v4
+        with:
+          path: tools/icon_cutter/cache
+          key: ${{ runner.os }}-cutter-${{ hashFiles('dependencies.sh') }}
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4.2.0
+        with:
+          dotnet-version: 9.x
+      - name: Install OpenDream
+        uses: robinraju/release-downloader@v1.11
+        with:
+          repository: "OpenDreamProject/OpenDream"
+          tag: "latest"
+          fileName: "DMCompiler_linux-x64.tar.gz"
+          extract: true
+      - name: Install Tools
+        run: |
+          pip3 install setuptools
+          bash tools/ci/install_node.sh
+          bash tools/ci/install_spaceman_dmm.sh dreamchecker
+          bash tools/ci/install_ripgrep.sh
+          tools/bootstrap/python -c ''
       - name: Give Linters A Go
         id: linter-setup
         run: ':'
@@ -83,6 +110,17 @@ jobs:
       - name: Check Trait Validity
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: tools/bootstrap/python -m trait_validity.check
+      - name: Run DreamChecker
+        if: steps.linter-setup.conclusion == 'success' && !cancelled()
+        shell: bash
+        run: ~/dreamchecker 2>&1 | bash tools/ci/annotate_dm.sh
+      - name: Run TGUI Checks
+        if: steps.linter-setup.conclusion == 'success' && !cancelled()
+        run: tools/build/build --ci lint tgui-test  # we build tgui here because asset_cache relies on its output
+      - name: Run OpenDream
+        if: steps.linter-setup.conclusion == 'success' && !cancelled()
+        run: |
+          ./DMCompiler_linux-x64/DMCompiler tgstation.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
       - name: Run Map Checks
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: |
@@ -103,50 +141,15 @@ jobs:
       - name: Check Miscellaneous Files
         if: steps.linter-setup.conclusion == 'success' && !cancelled()
         run: bash tools/ci/check_misc.sh
-      - name: Run TGUI Checks
-        if: steps.linter-setup.conclusion == 'success' && !cancelled()
-        run: tools/build/build --ci lint tgui-test
 
-
-  run_dreamchecker:
-    name: Run DreamChecker
-    needs: [start_gate, collect_data, install_tools]
+  compile_all_maps:
+    name: Compile Maps
+    needs: collect_data
     runs-on: ubuntu-22.04
+    timeout-minutes: 5
+
     steps:
       - uses: actions/checkout@v4
-      - name: Restore SpacemanDMM cache
-        uses: actions/cache@v4
-        with:
-          path: ~/SpacemanDMM
-          key: ${{ runner.os }}-spacemandmm-${{ hashFiles('dependencies.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-spacemandmm-
-      - name: Install SpaceManDMM
-        id: install_spaceman_dmm
-        shell: bash
-        run: |
-         bash tools/ci/install_spaceman_dmm.sh dreamchecker
-
-      - name: Run DreamChecker
-        if: steps.install_spaceman_dmm.conclusion == 'success' && !cancelled()
-        shell: bash
-        run: ~/dreamchecker 2>&1 | bash tools/ci/annotate_dm.sh
-
-
-  run_compiler:
-    name: Compile with OpenDream
-    needs: [start_gate, install_tools, run_dreamchecker]
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install OpenDream
-        uses: robinraju/release-downloader@v1.11
-        with:
-          repository: "OpenDreamProject/OpenDream"
-          tag: "latest"
-          fileName: "DMCompiler_linux-x64.tar.gz"
-          extract: true
       - name: Restore Yarn cache
         uses: actions/cache@v4
         with:
@@ -161,23 +164,14 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('dependencies.sh') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Build TGUI for asset_cache
-        shell: bash
-        run: |
-          tools/build/build --ci tgui
+      - name: Restore Bootstrap cache
+        uses: actions/cache@v4
+        with:
+          path: tools/bootstrap/.cache
+          key: ${{ runner.os }}-bootstrap-${{ hashFiles('tools/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-bootstrap-
 
-
-      - name: Run OpenDream Compiler
-        run: ./DMCompiler_linux-x64/DMCompiler tgstation.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
-
-  compile_all_maps:
-    name: Compile Maps
-    needs: [collect_data, run_dreamchecker]
-    runs-on: ubuntu-22.04
-    timeout-minutes: 5
-
-    steps:
-      - uses: actions/checkout@v4
       - name: Restore BYOND cache
         uses: actions/cache@v4
         with:
@@ -294,7 +288,7 @@ jobs:
 
   test_windows:
     name: Windows Build
-    needs: [collect_data, compile_all_maps]
+    needs: [collect_data]
     runs-on: windows-latest
     timeout-minutes: 5
 
@@ -307,13 +301,13 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('tgui/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-
       - name: Restore tgui cache
         uses: actions/cache@v4
         with:
           path: tgui/public
           key: ${{ runner.os }}-tgui-${{ hashFiles('tgui/public') }}
-
+          restore-keys: |
+            ${{ runner.os }}-tgui-
       - name: Compile
         run: pwsh tools/ci/build.ps1
         env:
