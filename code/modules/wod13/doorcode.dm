@@ -476,7 +476,7 @@
 				if(P)
 					P.Aggro(user)
 			var/total_lockpicking = user.get_total_lockpicking()
-			if(do_mob(user, src, (lockpick_timer - total_lockpicking * 2) SECONDS))
+			if(do_after(user, (lockpick_timer - total_lockpicking * 2) SECONDS, src))
 				var/roll = rand(1, 20) + (total_lockpicking * 2 + user.get_total_dexterity()) - lockpick_difficulty
 				if(roll <=1)
 					to_chat(user, "<span class='warning'>Your lockpick broke!</span>")

@@ -79,7 +79,7 @@
 			adjust_rage(1, C, TRUE)
 
 /datum/hud
-	var/atom/movable/screen/auspice_icon
+	ui_style = 'code/modules/wod13/UI/buttons32.dmi'
 
 /datum/hud/werewolf/New(mob/living/carbon/werewolf/owner)
 	..()
@@ -95,109 +95,90 @@
 
 //begin buttons
 
-	using = new /atom/movable/screen/fullscreen_hud()
+	using = new /atom/movable/screen/human()
 	using.screen_loc = ui_full_inventory
-	using.hud = src
 	static_inventory += using
 
 	transform_werewolf = new /atom/movable/screen/transform_lupus()
 	transform_werewolf.screen_loc = ui_werewolf_lupus
-	transform_werewolf.hud = src
 	static_inventory += transform_werewolf
 
 	transform_werewolf = new /atom/movable/screen/transform_crinos()
 	transform_werewolf.screen_loc = ui_werewolf_crinos
-	transform_werewolf.hud = src
 	static_inventory += transform_werewolf
 
 	transform_werewolf = new /atom/movable/screen/transform_homid()
 	transform_werewolf.screen_loc = ui_werewolf_homid
-	transform_werewolf.hud = src
 	static_inventory += transform_werewolf
 
-	auspice_icon = new /atom/movable/screen/auspice()
-	auspice_icon.screen_loc = ui_werewolf_auspice
-	auspice_icon.hud = src
-	static_inventory += auspice_icon
+	transform_werewolf = new /atom/movable/screen/auspice()
+	transform_werewolf.screen_loc = ui_werewolf_auspice
+	static_inventory += transform_werewolf
 
 	rage_icon = new /atom/movable/screen/rage()
 	rage_icon.screen_loc = ui_werewolf_rage
-	rage_icon.hud = src
 	infodisplay += rage_icon
 
 	if(iscrinos(owner))
 		using = new /atom/movable/screen/swap_hand()
-		using.icon = 'code/modules/wod13/UI/buttons32.dmi'
+		using.icon = ui_style
 		using.icon_state = "swap_1"
 		using.screen_loc = ui_swaphand_position(owner,1)
-		using.hud = src
 		static_inventory += using
 
 		using = new /atom/movable/screen/swap_hand()
-		using.icon = 'code/modules/wod13/UI/buttons32.dmi'
+		using.icon = ui_style
 		using.icon_state = "swap_2"
 		using.screen_loc = ui_swaphand_position(owner,2)
-		using.hud = src
 		static_inventory += using
 
-	using = new /atom/movable/screen/act_intent()
-	using.icon_state = mymob.a_intent
-	using.icon = 'code/modules/wod13/UI/buttons32.dmi'
-	using.hud = src
-	static_inventory += using
-	action_intent = using
+	using = new /atom/movable/screen/combattoggle/flashy(null, src)
+	using.icon = ui_style
+	action_intent.screen_loc = ui_combat_toggle
+	static_inventory += action_intent
 
 	using = new/atom/movable/screen/language_menu
 	using.screen_loc = ui_language_menu
 	using.icon = 'code/modules/wod13/UI/buttons_wide.dmi'
-	using.hud = src
 	static_inventory += using
 
-	using = new /atom/movable/screen/drop()
+	using = new /atom/movable/screen/drop(null, src)
 	using.icon = 'code/modules/wod13/UI/buttons_wide.dmi'
-	using.screen_loc = ui_drop
-	using.hud = src
+	using.screen_loc = ui_swaphand_position(owner, 1)
 	static_inventory += using
 
-	using = new /atom/movable/screen/resist()
-	using.icon = 'code/modules/wod13/UI/buttons_wide.dmi'
-	using.screen_loc = ui_resist
-	using.hud = src
-	hotkeybuttons += using
+	resist_icon = new /atom/movable/screen/resist()
+	resist_icon.icon = 'code/modules/wod13/UI/buttons_wide.dmi'
+	resist_icon.screen_loc = ui_above_movement
+	hotkeybuttons += resist_icon
 
 	throw_icon = new /atom/movable/screen/throw_catch()
 	throw_icon.icon = 'code/modules/wod13/UI/buttons_wide.dmi'
-	throw_icon.screen_loc = ui_throw
-	throw_icon.hud = src
+	throw_icon.screen_loc = ui_drop_throw
 	hotkeybuttons += throw_icon
 
 	pull_icon = new /atom/movable/screen/pull()
 	pull_icon.icon = 'code/modules/wod13/UI/buttons_wide.dmi'
-	pull_icon.update_icon()
-	pull_icon.screen_loc = ui_pull
-	pull_icon.hud = src
+	pull_icon.screen_loc = ui_above_movement_top
+	pull_icon.update_appearance()
 	static_inventory += pull_icon
 
 //begin indicators
 
 	healths = new /atom/movable/screen/healths()
 	healths.icon = 'code/modules/wod13/UI/buttons32.dmi'
-	healths.hud = src
 	infodisplay += healths
 	blood_icon = new /atom/movable/screen/blood()
 	blood_icon.screen_loc = ui_bloodpool
-	blood_icon.hud = src
 	infodisplay += blood_icon
 
 	zone_select = new /atom/movable/screen/zone_sel()
 	zone_select.icon = 'code/modules/wod13/UI/buttons64.dmi'
-	zone_select.hud = src
 	zone_select.update_icon()
 	static_inventory += zone_select
 
 	for(var/atom/movable/screen/inventory/inv in (static_inventory + toggleable_inventory))
 		if(inv.slot_id)
-			inv.hud = src
 			inv_slots[TOBITSHIFT(inv.slot_id) + 1] = inv
 			inv.update_icon()
 

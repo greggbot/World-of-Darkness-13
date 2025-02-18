@@ -21,20 +21,18 @@
 	accessories_layers = list("spines" = UNICORN_LAYER, "spines_slim" = UNICORN_LAYER, "animal_skull" = UNICORN_LAYER, "none" = UNICORN_LAYER)
 
 
-/obj/effect/proc_holder/spell/targeted/shapeshift/tzimisce
+/datum/action/cooldown/spell/shapeshift/tzimisce
 	name = "Tzimisce Form"
 	desc = "Take on the shape a beast."
-	charge_max = 10 SECONDS
-	cooldown_min = 10 SECONDS
+	cooldown_time = 10 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
 	shapeshift_type = /mob/living/simple_animal/hostile/tzimisce_beast
 
-/obj/effect/proc_holder/spell/targeted/shapeshift/bloodcrawler
+/datum/action/cooldown/spell/shapeshift/bloodcrawler
 	name = "Blood Crawler"
 	desc = "Take on the shape a beast."
-	charge_max = 5 SECONDS
-	cooldown_min = 5 SECONDS
+	cooldown_time = 5 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
 	shapeshift_type = /mob/living/simple_animal/hostile/bloodcrawler
@@ -45,7 +43,7 @@
 	button_icon_state = "bloodcrawler"
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	vampiric = TRUE
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/bloodcrawler/BC
+	var/datum/action/cooldown/spell/shapeshift/bloodcrawler/BC
 
 /datum/action/vicissitude_blood/Trigger(trigger_flags)
 	. = ..()
@@ -59,15 +57,15 @@
 	if(!BC)
 		BC = new(owner)
 	H.bloodpool = max(0, H.bloodpool-2)
-	BC.Shapeshift(H)
+	BC.do_shapeshift(H)
 	spawn(200)
 		if(BC)
-			var/mob/living/simple_animal/hostile/bloodcrawler/BD = BC.myshape
+			var/mob/living/simple_animal/hostile/bloodcrawler/BD = BC.shapeshift_type
 			H.bloodpool = min(H.bloodpool+round(BD.collected_blood/2), H.maxbloodpool)
 			if(BD.collected_blood > 1)
 				H.adjustBruteLoss(-5*round(BD.collected_blood/2), TRUE)
 				H.adjustFireLoss(-5*round(BD.collected_blood/2), TRUE)
-			BC.Restore(BC.myshape)
+			BC.do_unshapeshift(H)
 			NG.Stun(15)
 			NG.do_jitter_animation(30)
 
@@ -77,7 +75,7 @@
 	button_icon_state = "tzimisce"
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	vampiric = TRUE
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/tzimisce/TE
+	var/datum/action/cooldown/spell/shapeshift/tzimisce/TE
 
 /datum/action/vicissitude_form/Trigger(trigger_flags)
 	. = ..()
@@ -91,10 +89,10 @@
 	if(!TE)
 		TE = new(owner)
 	H.bloodpool = max(0, H.bloodpool-3)
-	TE.Shapeshift(H)
+	TE.do_shapeshift(H)
 	spawn(200)
 		if(TE)
-			TE.Restore(TE.myshape)
+			TE.do_unshapeshift(H)
 			NG.Stun(2 SECONDS)
 			NG.do_jitter_animation(5 SECONDS)
 
@@ -128,8 +126,6 @@
 				H.skin_tone = "albino"
 				H.hairstyle = "Bald"
 				H.base_body_mod = ""
-				H.physiology.armor.melee = H.physiology.armor.melee+20
-				H.physiology.armor.bullet = H.physiology.armor.bullet+20
 				H.update_body()
 				H.update_body_parts()
 				H.update_hair()
@@ -223,11 +219,9 @@
 		if(level >= 3)
 			H.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_eyes)
 			H.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_fister)
-			H.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_implant)
 		if(level >= 4)
 			H.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_tanker)
 			H.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_heart)
-			H.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_koldun)
 		if(level >= 5)
 //			H.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_stealth)
 			H.mind.teach_crafting_recipe(/datum/crafting_recipe/tzi_trench)
@@ -249,31 +243,27 @@
 	time = 50
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 5)
 	result = /obj/item/vampire_stake
-	always_available = TRUE
-	category = CAT_WEAPON
+	category = CAT_WEAPON_MELEE
 
 /datum/crafting_recipe/molotov
 	name = "Molotov Cocktail"
 	time = 50
 	reqs = list(/obj/item/stack/sheet/cloth = 1, /obj/item/reagent_containers/food/drinks/beer/vampire = 1, /obj/item/gas_can = 1)
 	result = /obj/item/molotov
-	always_available = TRUE
-	category = CAT_WEAPON
+	category = CAT_WEAPON_RANGED
 
 /datum/crafting_recipe/tzi_trench
 	name = "Leather-Bone Trenchcoat (Armor)"
 	time = 50
 	reqs = list(/obj/item/stack/human_flesh = 50, /obj/item/spine = 1)
 	result = /obj/item/clothing/suit/vampire/trench/tzi
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 /datum/crafting_recipe/tzi_med
 	name = "Medical Hand (Healing)"
 	time = 50
-	reqs = list(/obj/item/stack/human_flesh = 35, /obj/item/bodypart/r_arm = 1, /obj/item/organ/heart = 1, /obj/item/organ/tongue = 1)
+	reqs = list(/obj/item/stack/human_flesh = 35, /obj/item/bodypart/arm/right = 1, /obj/item/organ/heart = 1, /obj/item/organ/tongue = 1)
 	result = /obj/item/organ/cyberimp/arm/medibeam
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 
@@ -282,39 +272,13 @@
 	time = 50
 	reqs = list(/obj/item/stack/human_flesh = 25, /obj/item/organ/heart = 1)
 	result = /obj/item/organ/cyberimp/brain/anti_stun/tzi
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 /datum/crafting_recipe/tzi_eyes
 	name = "Better Eyes (Nightvision)"
 	time = 50
 	reqs = list(/obj/item/stack/human_flesh = 15, /obj/item/organ/eyes = 1)
-	result = /obj/item/organ/eyes/night_vision/nightmare
-	always_available = FALSE
-	category = CAT_TZIMISCE
-/*
-/datum/crafting_recipe/tzi_stealth
-	name = "Stealth Skin (Invisibility)"
-	time = 50
-	reqs = list(/obj/item/stack/human_flesh = 10, /obj/item/vampire_stake = 1, /obj/item/drinkable_bloodpack = 1)
-	result = /obj/item/dnainjector/chameleonmut
-	always_available = FALSE
-	category = CAT_TZIMISCE
-*/
-/datum/crafting_recipe/tzi_koldun
-	name = "Koldun Sorcery (Firebreath)"
-	time = 50
-	reqs = list(/obj/item/stack/human_flesh = 10, /obj/item/vampire_stake = 1, /obj/item/drinkable_bloodpack = 1)
-	result = /obj/item/dnainjector/koldun
-	always_available = FALSE
-	category = CAT_TZIMISCE
-
-/datum/crafting_recipe/tzi_implant
-	name = "Implanting Flesh Device"
-	time = 50
-	reqs = list(/obj/item/stack/human_flesh = 10, /obj/item/melee/vampirearms/knife = 1, /obj/item/drinkable_bloodpack = 1)
-	result = /obj/item/autosurgeon/organ
-	always_available = FALSE
+	result = /obj/item/organ/eyes/shadow
 	category = CAT_TZIMISCE
 
 /datum/crafting_recipe/tzi_floor
@@ -322,7 +286,6 @@
 	time = 50
 	reqs = list(/obj/item/stack/human_flesh = 1, /obj/item/guts = 1)
 	result = /obj/effect/decal/gut_floor
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 /datum/crafting_recipe/tzi_wall
@@ -330,7 +293,6 @@
 	time = 50
 	reqs = list(/obj/item/stack/human_flesh = 2)
 	result = /obj/structure/fleshwall
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 /obj/effect/decal/gut_floor
@@ -408,11 +370,10 @@
 				original_facehair = H.facial_hairstyle
 				original_skintone = H.skin_tone
 				original_gender = H.gender
-				original_bodytype = H.body_type
 				original_haircolor = H.hair_color
 				original_facialhaircolor = H.facial_hair_color
 				original_bodysprite = H.unique_body_sprite
-				original_eyecolor = H.eye_color
+				original_eyecolor = H.eye_color_left
 				original_realname = H.real_name
 				original_age = H.age
 				original_body_mode = H.base_body_mod
@@ -423,11 +384,10 @@
 				H.facial_hairstyle = last_facehair
 				H.skin_tone = last_skintone
 				H.gender = last_gender
-				H.body_type = last_bodytype
 				H.hair_color = last_haircolor
 				H.facial_hair_color = last_facialhaircolor
 				H.unique_body_sprite = last_bodysprite
-				H.eye_color = last_eyecolor
+				H.eye_color_left = last_eyecolor
 				H.real_name = last_realname
 				H.name = H.real_name
 				H.age = last_age
@@ -445,11 +405,10 @@
 				original_facehair = H.facial_hairstyle
 				original_skintone = H.skin_tone
 				original_gender = H.gender
-				original_bodytype = H.body_type
 				original_haircolor = H.hair_color
 				original_facialhaircolor = H.facial_hair_color
 				original_bodysprite = H.unique_body_sprite
-				original_eyecolor = H.eye_color
+				original_eyecolor = H.eye_color_left
 				original_realname = H.real_name
 				original_age = H.age
 				original_body_mode = H.base_body_mod
@@ -461,11 +420,10 @@
 				H.facial_hairstyle = ZV.facial_hairstyle
 				H.skin_tone = ZV.skin_tone
 				H.gender = ZV.gender
-				H.body_type = ZV.body_type
 				H.hair_color = ZV.hair_color
 				H.facial_hair_color = ZV.facial_hair_color
 				H.unique_body_sprite = ZV.unique_body_sprite
-				H.eye_color = ZV.eye_color
+				H.eye_color_left = ZV.eye_color_left
 				H.real_name = ZV.real_name
 				H.name = H.real_name
 				H.age = ZV.age
@@ -477,11 +435,9 @@
 				last_facehair = H.facial_hairstyle
 				last_skintone = H.skin_tone
 				last_gender = H.gender
-				last_bodytype = H.body_type
 				last_haircolor = H.hair_color
 				last_facialhaircolor = H.facial_hair_color
-				last_bodysprite = H.unique_body_sprite
-				last_eyecolor = H.eye_color
+				last_eyecolor = H.eye_color_left
 				last_realname = H.real_name
 				last_age = H.age
 				last_body_mode = H.base_body_mod
@@ -501,13 +457,12 @@
 		H.facial_hairstyle = original_facehair
 		H.skin_tone = original_skintone
 		H.gender = original_gender
-		H.body_type = original_bodytype
 		H.hair_color = original_haircolor
 		H.facial_hair_color = original_facialhaircolor
 		H.unique_body_sprite = original_bodysprite
 		if(H.additional_armor)
 			H.unique_body_sprite = "tziarmor"
-		H.eye_color = original_eyecolor
+		H.eye_color_left = original_eyecolor
 		H.real_name = original_realname
 		H.name = H.real_name
 		H.age = original_age
@@ -534,9 +489,8 @@
 /datum/crafting_recipe/tzi_stool
 	name = "Arm Stool"
 	time = 50
-	reqs = list(/obj/item/stack/human_flesh = 5, /obj/item/bodypart/r_arm = 2, /obj/item/bodypart/l_arm = 2)
+	reqs = list(/obj/item/stack/human_flesh = 5, /obj/item/bodypart/arm/right = 2, /obj/item/bodypart/arm/left = 2)
 	result = /obj/structure/chair/old/tzimisce
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 /obj/structure/chair/old/tzimisce
@@ -562,25 +516,22 @@
 /datum/crafting_recipe/tzi_biter
 	name = "Biting Abomination"
 	time = 100
-	reqs = list(/obj/item/stack/human_flesh = 2, /obj/item/bodypart/r_arm = 2, /obj/item/bodypart/l_arm = 2, /obj/item/spine = 1)
+	reqs = list(/obj/item/stack/human_flesh = 2, /obj/item/bodypart/arm/right = 2, /obj/item/bodypart/arm/left = 2, /obj/item/spine = 1)
 	result = /mob/living/simple_animal/hostile/biter
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 /datum/crafting_recipe/tzi_fister
 	name = "Punching Abomination"
 	time = 100
-	reqs = list(/obj/item/stack/human_flesh = 5, /obj/item/bodypart/r_arm = 1, /obj/item/bodypart/l_arm = 1, /obj/item/spine = 1, /obj/item/guts = 1)
+	reqs = list(/obj/item/stack/human_flesh = 5, /obj/item/bodypart/arm/right = 1, /obj/item/bodypart/arm/left = 1, /obj/item/spine = 1, /obj/item/guts = 1)
 	result = /mob/living/simple_animal/hostile/fister
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 /datum/crafting_recipe/tzi_tanker
 	name = "Fat Abomination"
 	time = 100
-	reqs = list(/obj/item/stack/human_flesh = 10, /obj/item/bodypart/r_arm = 1, /obj/item/bodypart/l_arm = 1, /obj/item/bodypart/r_leg = 1, /obj/item/bodypart/l_leg = 1, /obj/item/spine = 1, /obj/item/guts = 2)
+	reqs = list(/obj/item/stack/human_flesh = 10, /obj/item/bodypart/arm/right = 1, /obj/item/bodypart/arm/left = 1, /obj/item/bodypart/leg/right = 1, /obj/item/bodypart/leg/left = 1, /obj/item/spine = 1, /obj/item/guts = 2)
 	result = /mob/living/simple_animal/hostile/tanker
-	always_available = FALSE
 	category = CAT_TZIMISCE
 
 /mob/living/simple_animal/hostile/biter
@@ -715,7 +666,6 @@
 	minbodytemp = 0
 	bloodpool = 10
 	maxbloodpool = 10
-	dextrous = TRUE
 	held_items = list(null, null)
 
 /mob/living/simple_animal/hostile/gangrel/better
@@ -757,13 +707,12 @@
 	minbodytemp = 0
 	bloodpool = 10
 	maxbloodpool = 10
-	dextrous = TRUE
 	held_items = list(null, null)
 	faction = list("Tremere")
 
 /mob/living/simple_animal/hostile/gargoyle/proc/gain_nigs()
 	set waitfor = FALSE
-	var/list/mob/dead/observer/candidates = pollCandidatesForMob("Do you want to play as Embraced Gargoyle?", null, null, null, 50, src)
+	var/list/mob/dead/observer/candidates = SSpolling.poll_ghosts_for_target("Do you want to play as Embraced Gargoyle?", null, null, null, 50, src)
 	for(var/mob/dead/observer/G in GLOB.player_list)
 		if(G.key)
 			to_chat(G, "<span class='ghostalert'>New Gargoyle has been made.</span>")
@@ -867,7 +816,7 @@
 	singular_name = "human flesh"
 	icon_state = "human"
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
-	mats_per_unit = list(/datum/material/pizza = MINERAL_MATERIAL_AMOUNT)
+	mats_per_unit = list(/datum/material/pizza = SHEET_MATERIAL_AMOUNT)
 	merge_type = /obj/item/stack/human_flesh
 	max_amount = 50
 
@@ -881,6 +830,7 @@
 	amount = 5
 
 /obj/item/stack/human_flesh/update_icon_state()
+	. = ..()
 	var/amount = get_amount()
 	switch(amount)
 		if(30 to INFINITY)

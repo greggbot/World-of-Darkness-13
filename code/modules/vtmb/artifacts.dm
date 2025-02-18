@@ -14,7 +14,7 @@
 				remove_powers()
 				owner = null
 
-/obj/item/vtm_artifact/process(delta_time)
+/obj/item/vtm_artifact/process(seconds_per_tick)
 	if(owner != loc && owner != loc.loc)
 		forceMove(get_turf(src))
 		STOP_PROCESSING(SSobj, src)
@@ -86,7 +86,7 @@
 	icon_state = "m_fetish"
 	var/last_regen = 0
 
-/obj/item/vtm_artifact/mummywrap_fetish/process(delta_time)
+/obj/item/vtm_artifact/mummywrap_fetish/process(seconds_per_tick)
 	. = ..()
 	if(identified && owner)
 		if(last_regen+60 < world.time)

@@ -692,7 +692,7 @@
 			if(!P.burying)
 				P.burying = TRUE
 				user.visible_message("<span class='warning'>[user] starts to dig [src]</span>", "<span class='warning'>You start to dig [src].</span>")
-				if(do_mob(user, src, 10 SECONDS))
+				if(do_after(user, 10 SECONDS, src))
 					P.burying = FALSE
 					if(P.icon_state == "pit0")
 						var/dead_amongst = FALSE
@@ -718,7 +718,7 @@
 					P.burying = FALSE
 		else
 			user.visible_message("<span class='warning'>[user] starts to dig [src]</span>", "<span class='warning'>You start to dig [src].</span>")
-			if(do_mob(user, src, 10 SECONDS))
+			if(do_after(user, 10 SECONDS, src))
 				if(!locate(/obj/structure/bury_pit) in src)
 					user.visible_message("<span class='warning'>[user] digs a hole in [src].</span>", "<span class='warning'>You dig a hole in [src].</span>")
 					new /obj/structure/bury_pit(src)
@@ -771,7 +771,7 @@
 			if(!P.burying)
 				P.burying = TRUE
 				user.visible_message("<span class='warning'>[user] starts to dig [src]</span>", "<span class='warning'>You start to dig [src].</span>")
-				if(do_mob(user, src, 10 SECONDS))
+				if(do_after(user, 10 SECONDS, src))
 					P.burying = FALSE
 					if(P.icon_state == "pit0")
 						var/dead_amongst = FALSE
@@ -797,7 +797,7 @@
 					P.burying = FALSE
 		else
 			user.visible_message("<span class='warning'>[user] starts to dig [src]</span>", "<span class='warning'>You start to dig [src].</span>")
-			if(do_mob(user, src, 10 SECONDS))
+			if(do_after(user, 10 SECONDS, src))
 				if(!locate(/obj/structure/bury_pit) in src)
 					user.visible_message("<span class='warning'>[user] digs a hole in [src].</span>", "<span class='warning'>You dig a hole in [src].</span>")
 					new /obj/structure/bury_pit(src)
@@ -1099,7 +1099,7 @@
 			if(!P.burying)
 				P.burying = TRUE
 				user.visible_message("<span class='warning'>[user] starts to dig [src]</span>", "<span class='warning'>You start to dig [src].</span>")
-				if(do_mob(user, src, 10 SECONDS))
+				if(do_after(user, 10 SECONDS, src))
 					P.burying = FALSE
 					if(P.icon_state == "pit0")
 						var/dead_amongst = FALSE
@@ -1125,7 +1125,7 @@
 					P.burying = FALSE
 		else
 			user.visible_message("<span class='warning'>[user] starts to dig [src]</span>", "<span class='warning'>You start to dig [src].</span>")
-			if(do_mob(user, src, 10 SECONDS))
+			if(do_after(user, 10 SECONDS, src))
 				if(!locate(/obj/structure/bury_pit) in src)
 					user.visible_message("<span class='warning'>[user] digs a hole in [src].</span>", "<span class='warning'>You dig a hole in [src].</span>")
 					new /obj/structure/bury_pit(src)

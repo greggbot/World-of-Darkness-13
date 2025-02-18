@@ -118,11 +118,10 @@
 	G.Stun(100)
 	G.petrify(100, "Serpentis")
 
-/obj/effect/proc_holder/spell/targeted/shapeshift/cobra
+/datum/action/cooldown/spell/shapeshift/cobra
 	name = "Cobra"
 	desc = "Take on the shape a beast."
-	charge_max = 50
-	cooldown_min = 50
+	cooldown_time = 5 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
 	shapeshift_type = /mob/living/simple_animal/hostile/cobra
@@ -133,7 +132,7 @@
 	button_icon_state = "cobra"
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 	vampiric = TRUE
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/cobra/BC
+	var/datum/action/cooldown/spell/shapeshift/cobra/BC
 
 /datum/action/cobra/Trigger(trigger_flags)
 	. = ..()
@@ -147,10 +146,10 @@
 	if(!BC)
 		BC = new(owner)
 	H.bloodpool = max(0, H.bloodpool-2)
-	BC.Shapeshift(H)
+	BC.do_shapeshift(H)
 	spawn(150)
 		if(BC)
-			BC.Restore(BC.myshape)
+			BC.do_unshapeshift(H)
 			NG.Stun(15)
 			NG.do_jitter_animation(30)
 

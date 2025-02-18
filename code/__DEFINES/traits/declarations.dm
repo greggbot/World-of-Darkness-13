@@ -1474,5 +1474,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 #define TRAIT_ELYSIUM			"elysium"
 #define TRAIT_BLIND				"blind"
+#define TRAIT_PERMANENTLY_ONFIRE	"permanently_onfire"
+#define TRAIT_IGNOREDAMAGESLOWDOWN "ignoredamageslowdown"
+
 
 // END TRAIT DEFINES

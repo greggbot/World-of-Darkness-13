@@ -5,26 +5,14 @@
 	pass_flags = PASSTABLE
 	mob_size = MOB_SIZE_SMALL
 	butcher_results = list(/obj/item/food/meat/slab = 5)
-	possible_a_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB, INTENT_HARM)
 	hud_type = /datum/hud/werewolf
 	limb_destroyer = 1
 	has_limbs = 0
-//	dextrous = FALSE
-//	speed = -1.5     doesn't work on carbons
-//	var/move_delay_add = -1.5 // movement delay to add    also didn't work
 	melee_damage_lower = 15
 	melee_damage_upper = 35
 	health = 150
 	maxHealth = 150
 	werewolf_armor = 10
-//	bodyparts = list(
-//		/obj/item/bodypart/chest,
-//		/obj/item/bodypart/head,
-//		/obj/item/bodypart/r_arm,
-//		/obj/item/bodypart/l_arm,
-//		/obj/item/bodypart/r_leg,
-//		/obj/item/bodypart/l_leg,
-//		)
 	var/hispo = FALSE
 
 /datum/movespeed_modifier/lupusform
@@ -55,7 +43,6 @@
 	var/mutable_appearance/eye_overlay = mutable_appearance(icon, "eyes[laid_down ? "_rest" : ""]")
 	eye_overlay.color = sprite_eye_color
 	eye_overlay.plane = ABOVE_LIGHTING_PLANE
-	eye_overlay.layer = ABOVE_LIGHTING_LAYER
 	add_overlay(eye_overlay)
 
 /mob/living/carbon/werewolf/lupus/regenerate_icons()
