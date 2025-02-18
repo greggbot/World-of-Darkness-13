@@ -56,9 +56,7 @@
 		"camarilla",
 		"prince",
 		"archive",
-		"milleniumCommon",
-		"primogen",
-		"clerk"
+		"milleniumCommon"
 	)
 	color = "#bd3327"
 
