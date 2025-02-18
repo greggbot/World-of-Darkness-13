@@ -175,7 +175,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run OpenDream Compiler
         shell: bash
-        run: ./DMCompiler_linux-x64/DMCompiler tgstation.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
+        run: ./DMCompiler tgstation.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
 
   compile_all_maps:
     name: Compile Maps
