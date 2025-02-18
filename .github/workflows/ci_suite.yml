@@ -95,7 +95,6 @@ jobs:
       run: |
         pip3 install setuptools
         bash tools/ci/install_node.sh
-        bash tools/ci/install_spaceman_dmm.sh dreamchecker
         bash tools/ci/install_ripgrep.sh
         tools/bootstrap/python -c ''
 
@@ -156,14 +155,14 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - name: Restore SpacemanDMM cache
-        uses: actions/cache@v4
-        with:
-          path: ~/SpacemanDMM
-          key: ${{ runner.os }}-spacemandmm-${{ hashFiles('dependencies.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-spacemandmm-
+      - name: Install SpaceManDMM
+        id: install_spaceman_dmm
+        shell: bash
+        run: |
+         bash tools/ci/install_spaceman_dmm.sh dreamchecker
+
       - name: Run DreamChecker
+        if: steps.install_spaceman_dmm.conclusion == 'success' && !cancelled()
         shell: bash
         run: ~/dreamchecker 2>&1 | bash tools/ci/annotate_dm.sh
 
