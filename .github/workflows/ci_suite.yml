@@ -316,6 +316,15 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('tgui/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
+      - name: Restore tgui cache
+        uses: actions/cache@v4
+        with:
+          path: tgui/public
+          key: ${{ runner.os }}-tgui-${{ hashFiles('tgui/public') }}
+          restore-keys: |
+            ${{ runner.os }}-tgui-
+
       - name: Compile
         run: pwsh tools/ci/build.ps1
         env:
