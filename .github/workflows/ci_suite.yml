@@ -84,13 +84,7 @@ jobs:
       uses: actions/setup-dotnet@v4.2.0
       with:
         dotnet-version: 9.x
-    - name: Install OpenDream
-      uses: robinraju/release-downloader@v1.11
-      with:
-        repository: "OpenDreamProject/OpenDream"
-        tag: "latest"
-        fileName: "DMCompiler_linux-x64.tar.gz"
-        extract: true
+
     - name: Install Tools
       run: |
         pip3 install setuptools
@@ -174,12 +168,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Restore OpenDream Compiler Cache
-        uses: actions/cache@v4
+      - name: Install OpenDream
+        uses: robinraju/release-downloader@v1.11
         with:
-          path: ~/DMCompiler_linux-x64
-          key: ${{ runner.os }}-dmcompiler-${{ hashFiles('dependencies.sh') }}
-
+          repository: "OpenDreamProject/OpenDream"
+          tag: "latest"
+          fileName: "DMCompiler_linux-x64.tar.gz"
+          extract: true
       - name: Run OpenDream Compiler
         run: ~/DMCompiler_linux-x64/DMCompiler tgstation.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
 
