@@ -167,19 +167,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	data["character_preferences"] = compile_character_preferences(user)
 
-			dat += "<center><h2>[make_font_cool("OCCUPATION CHOICES")]</h2>"
-			dat += "<a href='?_src_=prefs;preference=job;task=menu'>Set Occupation Preferences</a><br></center>"
-			if(CONFIG_GET(flag/roundstart_traits))
-				dat += "<center><h2>[make_font_cool("QUIRK SETUP")]</h2>"
-				dat += "<a href='?_src_=prefs;preference=trait;task=menu'>Configure Quirks</a><br></center>"
-				dat += "<center><b>Current Quirks:</b> [all_quirks.len ? all_quirks.Join(", ") : "None"]</center>"
-			dat += "<h2>[make_font_cool("IDENTITY")]</h2>"
-			dat += "<table width='100%'><tr><td width='75%' valign='top'>"
-			if(is_banned_from(user.ckey, "Appearance"))
-				dat += "<b>You are banned from using custom names and appearances. You can continue to adjust your characters, but you will be randomised once you join the game.</b><br>"
-			dat += "<a href='?_src_=prefs;preference=name;task=random'>Random Name</A> "
-			dat += "<br><b>Name:</b> "
-			dat += "<a href='?_src_=prefs;preference=name;task=input'>[real_name]</a><BR>"
+	data["active_slot"] = default_slot
 
 	for (var/datum/preference_middleware/preference_middleware as anything in middleware)
 		data += preference_middleware.get_ui_data(user)

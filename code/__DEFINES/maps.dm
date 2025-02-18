@@ -86,7 +86,7 @@ Always compile, always use that verb, and always make sure that it works for wha
 
 // boolean - weather types that occur on the level
 #define ZTRAIT_SNOWSTORM "Weather_Snowstorm"
-#define ZTRAIT_ACIDRAIN "Weather_Acidrain"
+#define ZTRAIT_ASHSTORM "Weather_Ashstorm"
 #define ZTRAIT_VOIDSTORM "Weather_Voidstorm"
 
 /// boolean - does this z prevent ghosts from observing it
@@ -130,6 +130,18 @@ Always compile, always use that verb, and always make sure that it works for wha
 #define ZTRAITS_STATION list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_STATION = TRUE)
 ///Z level traits for Deep Space
 #define ZTRAITS_SPACE list(ZTRAIT_LINKAGE = CROSSLINKED, ZTRAIT_SPACE_RUINS = TRUE)
+///Z level traits for Lavaland
+#define ZTRAITS_LAVALAND list(\
+	ZTRAIT_MINING = TRUE, \
+	ZTRAIT_NOPARALLAX = TRUE, \
+	ZTRAIT_ASHSTORM = TRUE, \
+	ZTRAIT_LAVA_RUINS = TRUE, \
+	ZTRAIT_BOMBCAP_MULTIPLIER = 2, \
+	ZTRAIT_BASETURF = /turf/open/lava/smooth/lava_land_surface)
+///Z level traits for Away Missions
+#define ZTRAITS_AWAY list(ZTRAIT_AWAY = TRUE)
+///Z level traits for Secret Away Missions
+#define ZTRAITS_AWAY_SECRET list(ZTRAIT_AWAY = TRUE, ZTRAIT_SECRET = TRUE, ZTRAIT_NOPHASE = TRUE)
 
 #define DL_NAME "name"
 #define DL_TRAITS "traits"

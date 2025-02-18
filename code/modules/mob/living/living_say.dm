@@ -114,7 +114,6 @@ GLOBAL_LIST_INIT(message_modes_stat_limits, list(
 	if(!message || message == "")
 		return
 
-	var/list/message_mods = list()
 	var/original_message = message
 	message = get_message_mods(message, message_mods)
 	saymode = SSradio.saymodes[message_mods[RADIO_KEY]]

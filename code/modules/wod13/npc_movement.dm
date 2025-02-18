@@ -30,11 +30,10 @@
 	GLOB.npc_activities += src
 
 /mob/living/carbon/human/npc/Initialize()
-	.=..()
+	..()
 	GLOB.npc_list += src
 	GLOB.alive_npc_list += src
 	add_movespeed_modifier(/datum/movespeed_modifier/npc)
-	return INITIALIZE_HINT_LATELOAD
 
 /mob/living/carbon/human/npc/death()
 	GLOB.alive_npc_list -= src
@@ -257,15 +256,14 @@
 				walk_away(src, danger_source, reqsteps)
 			if(my_weapon || fights_anyway)
 				var/obj/item/card/id/id_card = danger_source.get_idcard(FALSE)
-				if(!istype(id_card, /obj/item/card/id/police) || is_criminal)
-					if(!spawned_weapon && has_weapon)
+				if(!istype(id_card, /obj/item/card/id/police))
+					if(!spawned_weapon && my_weapon)
 						my_weapon.forceMove(loc)
 						drop_all_held_items()
-						temporarilyRemoveItemFromInventory(my_weapon, TRUE)
 						put_in_active_hand(my_weapon)
 						spawned_weapon = TRUE
 					if(spawned_weapon && get_active_held_item() != my_weapon)
-						has_weapon = FALSE
+						my_weapon = null
 					if(danger_source)
 						if(danger_source == src)
 							danger_source = null
@@ -279,25 +277,25 @@
 				var/mob/living/L = danger_source
 				if(L.stat > 2)
 					danger_source = null
-					if(has_weapon)
+					if(my_weapon)
 						if(get_active_held_item() == my_weapon)
 							drop_all_held_items()
 							my_weapon.forceMove(src)
 							spawned_weapon = FALSE
 						else
-							has_weapon = FALSE
+							my_weapon = null
 					walktarget = ChoosePath()
 					set_combat_mode(FALSE)
 
 			if(last_danger_meet+300 <= world.time)
 				danger_source = null
-				if(has_weapon)
+				if(my_weapon)
 					if(get_active_held_item() == my_weapon)
 						drop_all_held_items()
 						my_weapon.forceMove(src)
 						spawned_weapon = FALSE
 					else
-						has_weapon = FALSE
+						my_weapon = null
 				walktarget = ChoosePath()
 				set_combat_mode(FALSE)
 		else if(less_danger)
@@ -311,7 +309,7 @@
 			var/reqsteps = round((SShumannpcpool.next_fire-world.time))
 			walk_to(src, walktarget, reqsteps)
 
-		if(has_weapon && !danger_source)
+		if(my_weapon && !danger_source)
 			if(spawned_weapon)
 				if(get_active_held_item() == my_weapon)
 					drop_all_held_items()

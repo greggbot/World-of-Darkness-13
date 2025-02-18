@@ -15,7 +15,6 @@
 	preferedgender = MALE
 	male_names = null
 	surnames = null
-	is_criminal = TRUE
 
 	hair_colors = list("040404",	//Black
 											"120b05",	//Dark Brown
@@ -745,18 +744,26 @@
 
 /mob/living/carbon/human/npc/bandit
 	max_stat = 3
-	my_backup_weapon = /obj/item/melee/vampirearms/knife
 
 /mob/living/carbon/human/npc/bandit/Initialize()
-	. = ..()
-	if(prob(50))
+	..()
+	if(prob(33))
 		base_body_mod = "f"
+	if(prob(33))
+		my_weapon = new /obj/item/gun/ballistic/automatic/vampire/deagle(src)
+	else
+		if(prob(50))
+			my_weapon = new /obj/item/gun/ballistic/vampire/revolver/snub(src)
+		if(prob(50))
+			my_weapon = new /obj/item/melee/vampirearms/baseball(src)
+		else
+			my_weapon = new /obj/item/melee/vampirearms/knife(src)
 	AssignSocialRole(/datum/socialrole/bandit)
 
 /mob/living/carbon/human/npc/walkby
 
 /mob/living/carbon/human/npc/walkby/Initialize()
-	. = ..()
+	..()
 	if(prob(50))
 		base_body_mod = pick("s", "f")
 	AssignSocialRole(pick(/datum/socialrole/usualmale, /datum/socialrole/usualfemale))
@@ -766,7 +773,7 @@
 	old_movement = TRUE
 
 /mob/living/carbon/human/npc/hobo/Initialize()
-	. = ..()
+	..()
 	if(prob(33))
 		base_body_mod = "s"
 	AssignSocialRole(pick(/datum/socialrole/poormale, /datum/socialrole/poorfemale))
@@ -775,7 +782,7 @@
 	bloodquality = BLOOD_QUALITY_HIGH
 
 /mob/living/carbon/human/npc/business/Initialize()
-	. = ..()
+	..()
 	if(prob(66))
 		base_body_mod = "s"
 	AssignSocialRole(pick(/datum/socialrole/richmale, /datum/socialrole/richfemale))
@@ -974,7 +981,7 @@
 	is_talking = TRUE
 
 /mob/living/carbon/human/npc/shop/Initialize()
-	. = ..()
+	..()
 	if(prob(66))
 		base_body_mod = "f"
 	AssignSocialRole(/datum/socialrole/shop)
@@ -986,7 +993,7 @@
 	staying = TRUE
 
 /mob/living/carbon/human/npc/bacotell/Initialize()
-	. = ..()
+	..()
 	if(prob(66))
 		base_body_mod = "f"
 	AssignSocialRole(/datum/socialrole/shop/bacotell)
@@ -998,7 +1005,7 @@
 	staying = TRUE
 
 /mob/living/carbon/human/npc/bubway/Initialize()
-	. = ..()
+	..()
 	if(prob(66))
 		base_body_mod = "f"
 	AssignSocialRole(/datum/socialrole/shop/bubway)
@@ -1010,7 +1017,7 @@
 	staying = TRUE
 
 /mob/living/carbon/human/npc/gummaguts/Initialize()
-	. = ..()
+	..()
 	if(prob(66))
 		base_body_mod = "f"
 	AssignSocialRole(/datum/socialrole/shop/gummaguts)
@@ -1105,12 +1112,15 @@
 /mob/living/carbon/human/npc/police
 	fights_anyway = TRUE
 	max_stat = 4
-	my_backup_weapon_type = /obj/item/melee/classic_baton/vampire
 
 /mob/living/carbon/human/npc/police/Initialize()
-	. = ..()
+	..()
 	if(prob(66))
 		base_body_mod = "f"
+	if(prob(66))
+		my_weapon = new /obj/item/gun/ballistic/vampire/revolver(src)
+	else
+		my_weapon = new /obj/item/gun/ballistic/automatic/vampire/ar15(src)
 	AssignSocialRole(/datum/socialrole/police)
 
 /mob/living/carbon/human/npc/police/Life()
@@ -1224,13 +1234,12 @@
 	staying = TRUE
 	fights_anyway = TRUE
 	max_stat = 4
-	my_weapon_type = /obj/item/gun/ballistic/automatic/vampire/m1911
-	my_backup_weapon_type = /obj/item/melee/classic_baton/vampire
 
 /mob/living/carbon/human/npc/guard/Initialize()
-	. = ..()
+	..()
 	if(prob(66))
 		base_body_mod = "f"
+	my_weapon = new /obj/item/gun/ballistic/automatic/vampire/m1911(src)
 	AssignSocialRole(/datum/socialrole/guard)
 
 /mob/living/carbon/human/npc/walkby/club/Life()
@@ -1366,7 +1375,7 @@
 	staying = TRUE
 
 /mob/living/carbon/human/npc/stripper/Initialize()
-	. = ..()
+	..()
 	base_body_mod = "s"
 	AssignSocialRole(/datum/socialrole/stripfemale)
 	underwear = "Nude"
@@ -1387,7 +1396,7 @@
 	staying = TRUE
 
 /mob/living/carbon/human/npc/incel/Initialize()
-	. = ..()
+	..()
 	if(prob(50))
 		base_body_mod = "f"
 	AssignSocialRole(/datum/socialrole/usualmale)
@@ -1411,12 +1420,11 @@
 	help_phrases = list("Cops!",
 											"Fuck the police!!",
 											"COPS?!!")
-	is_criminal = TRUE
 
 /mob/living/carbon/human/npc/illegal
 	staying = TRUE
 	is_talking = TRUE
 
 /mob/living/carbon/human/npc/illegal/Initialize()
-	. = ..()
+	..()
 	AssignSocialRole(/datum/socialrole/shop/illegal)

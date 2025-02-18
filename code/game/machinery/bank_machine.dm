@@ -1,9 +1,11 @@
 /obj/machinery/computer/bank_machine
 	name = "bank machine"
 	desc = "A machine used to deposit and withdraw station funds."
-	icon = 'icons/obj/power.dmi'
-	idle_power_usage = 100
-
+	circuit = /obj/item/circuitboard/computer/bankmachine
+	icon_screen = "vault"
+	icon_keyboard = "security_key"
+	req_access = list(ACCESS_VAULT)
+	///Whether the machine is currently being siphoned
 	var/siphoning = FALSE
 	///While siphoning, how much money do we have? Will drop this once siphon is complete.
 	var/syphoning_credits = 0
