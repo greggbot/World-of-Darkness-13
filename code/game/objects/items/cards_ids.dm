@@ -132,7 +132,7 @@
 /obj/item/card/id/Initialize(mapload)
 	. = ..()
 
-	var/datum/bank_account/blank_bank_account = new("Unassigned", SSjob.get_job_type(/datum/job/unassigned), player_account = FALSE)
+	var/datum/bank_account/blank_bank_account = new("Unassigned", SSjob.get_job_type(/datum/job/vamp/citizen), player_account = FALSE)
 	registered_account = blank_bank_account
 	registered_account.replaceable = TRUE
 
@@ -474,7 +474,6 @@
 	if(!length(accesses) || isnull(basic_access_list) || isnull(wildcard_access_list))
 		CRASH("Invalid parameters passed to build_access_lists")
 
-	wildcard_access_list |= new_access
 
 /// Helper proc that determines if a card can be used in certain types of payment transactions.
 /obj/item/card/id/proc/can_be_used_in_payment(mob/living/user)
@@ -1161,10 +1160,6 @@
 
 	/// Then we handle the job's icon here.
 	. += mutable_appearance(trim_icon_file, trim_icon_state)
-
-/// Returns the trim sechud icon state.
-/obj/item/card/id/advanced/get_trim_sechud_icon_state()
-	return sechud_icon_state_override || ..()
 
 /obj/item/card/id/advanced/rainbow
 	name = "rainbow identification card"

@@ -15,7 +15,7 @@
 	violating_appearance = TRUE
 	current_accessory = "none"
 	accessories = list("fae_ears", "none")
-	accessories_layers = list("fae_ears" = UPPER_EARS_LAYER, "none" = UPPER_EARS_LAYER)
+	accessories_layers = list("fae_ears" = NECK_LAYER, "none" = NECK_LAYER)
 
 	COOLDOWN_DECLARE(cold_iron_frenzy)
 
@@ -25,10 +25,10 @@
 	if (H.clane?.type != /datum/vampireclane/kiasyd)
 		return
 	if(H.isdwarfy)
-		H.RemoveElement(/datum/element/dwarfism, COMSIG_PARENT_PREQDELETED, src)
+		H.RemoveElement(/datum/element/dwarfism, COMSIG_QDELETING, src)
 		H.isdwarfy = FALSE
 	if(!H.istower)
-		H.AddElement(/datum/element/giantism, COMSIG_PARENT_PREQDELETED, src)
+		H.AddElement(/datum/element/giantism, COMSIG_QDELETING, src)
 		H.istower = TRUE
 	var/obj/item/organ/eyes/night_vision/kiasyd/NV = new()
 	NV.Insert(H, TRUE, FALSE)
@@ -70,7 +70,8 @@
 	var/datum/riddle/riddle
 	var/bad_answers = 0
 
-/atom/movable/screen/alert/riddle/Click()
+/atom/movable/screen/alert/riddle/Click(location, control, params)
+	. = ..()
 	if(iscarbon(usr) && (usr == owner))
 		var/mob/living/carbon/M = usr
 		if(riddle)
@@ -122,7 +123,7 @@
 		if(alert.bad_answers >= round(length(riddle_options)/2))
 			if(iscarbon(answerer))
 				var/mob/living/carbon/C = answerer
-				var/obj/item/organ/tongue/tongue = locate(/obj/item/organ/tongue) in C.internal_organs
+				var/obj/item/organ/tongue/tongue = locate(/obj/item/organ/tongue) in C.organs
 				if(tongue)
 					tongue.Remove(C)
 			to_chat(answerer,
@@ -160,7 +161,6 @@
 						to_chat(caster, "- [A.name]")
 		if(2)
 			caster.enhanced_strip = TRUE
-			target.strip(caster)
 			spawn(delay + caster.discipline_time_plus)
 				caster.enhanced_strip = FALSE
 		if(3)

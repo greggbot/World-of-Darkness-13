@@ -10,7 +10,7 @@
 	var/datum/chi_discipline/discipline
 	var/active_check = FALSE
 
-/datum/action/chi_discipline/Trigger()
+/datum/action/chi_discipline/Trigger(trigger_flags)
 	if(discipline && isliving(owner))
 		var/mob/living/owning = owner
 		if(discipline.ranged)
@@ -226,7 +226,7 @@
 /obj/item/gun/magic/blood_shintai
 	name = "blood spit"
 	desc = "Spit blood on your targets."
-	icon = 'icons/obj/projectiles.dmi'
+	icon = 'icons/obj/weapons/guns/projectiles.dmi'
 	icon_state = "leaper"
 	item_flags = NEEDS_PERMIT | ABSTRACT | DROPDEL | NOBLUDGEON
 	flags_1 = NONE
@@ -718,7 +718,7 @@
 				H.AdjustMasquerade(-1)
 	..()
 
-/obj/projectile/flesh_shintai/on_hit(atom/target)
+/obj/projectile/flesh_shintai/on_hit(atom/target, blocked, pierce_hit)
 	. = ..()
 	if(ismovable(target))
 		var/atom/movable/movable_target = target
@@ -901,7 +901,7 @@
 	background_icon = 'code/modules/wod13/UI/kuei_jin.dmi'
 	check_flags = AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING|AB_CHECK_CONSCIOUS
 
-/datum/action/choose_demon_form/Trigger()
+/datum/action/choose_demon_form/Trigger(trigger_flags)
 	if(istype(owner, /mob/living/carbon/human))
 		var/mob/living/carbon/human/user = usr
 		var/new_form = input(user, "Choose your Demon Form", "Demon Form") as null|anything in list("Samurai", "Tentacles", "Demon", "Giant", "Foul")
@@ -1235,7 +1235,7 @@
 	melee_damage_upper = 70
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 10
@@ -1341,7 +1341,7 @@
 	melee_damage_upper = 1
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/weapons/slash.ogg'
+	attack_sound = 'sound/items/weapons/slash.ogg'
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	bloodpool = 0
@@ -1505,7 +1505,7 @@
 				H.AdjustMasquerade(-1)
 	..()
 
-/obj/projectile/storm_shintai/on_hit(atom/target)
+/obj/projectile/storm_shintai/on_hit(atom/target, blocked, pierce_hit)
 	. = ..()
 	if(ismovable(target))
 		var/atom/movable/A = target
@@ -1959,7 +1959,7 @@
 	name = "\improper shadow touch"
 	desc = "This is kind of like when you rub your feet on a shag rug so you can zap your friends, only a lot less safe."
 	icon = 'code/modules/wod13/weapons.dmi'
-	hitsound = 'sound/magic/disintegrate.ogg'
+	hitsound = 'sound/effects/magic/disintegrate.ogg'
 	icon_state = "quietus"
 	color = "#343434"
 	inhand_icon_state = "mansus"

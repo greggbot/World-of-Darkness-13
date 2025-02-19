@@ -4,7 +4,7 @@
 	worn_icon = 'code/modules/wod13/worn.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	var/quieted = FALSE
-	var/cost = 25
+	cost = 25
 
 /obj/item
 	var/masquerade_violating = FALSE

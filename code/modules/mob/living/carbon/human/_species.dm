@@ -183,6 +183,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/list/outfit_override_registry = list()
 
 	var/whitelisted = FALSE
+	var/selectable = TRUE
 
 ///////////
 // PROCS //

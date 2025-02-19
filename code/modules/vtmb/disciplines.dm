@@ -1599,11 +1599,7 @@
 					caster.physiology.burn_mod *= 100
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
 		if(2)
-			caster.dna.species.GiveSpeciesFlight(caster)
-			spawn(delay+caster.discipline_time_plus)
-				if(caster)
-					caster.dna.species.RemoveSpeciesFlight(caster)
-					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/protean_deactivate.ogg', 50, FALSE)
+			return
 		if(3)
 			caster.drop_all_held_items()
 			caster.put_in_r_hand(new /obj/item/melee/vampirearms/knife/gangrel(caster))

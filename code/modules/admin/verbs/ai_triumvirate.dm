@@ -37,7 +37,7 @@ GLOBAL_DATUM(triple_ai_controller, /datum/triple_ai_controller)
 	var/datum/job/job
 	if(!job)
 		to_chat(usr, "Unable to locate the AI job", confidential = TRUE)
-		CRASH("triple_ai() called, no /datum/job/ai to be found.")
+		CRASH("triple_ai() called, no /datum/job/vamp/citizen to be found.")
 
 	if(!GLOB.triple_ai_controller)
 		GLOB.triple_ai_controller = new()

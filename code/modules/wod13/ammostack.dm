@@ -4,8 +4,6 @@
 	damage = 20
 	pass_flags = PASSTABLE
 	damage_type = BRUTE
-	nodamage = FALSE
-	flag = BULLET
 	reflectable = NONE
 	ricochets_max = 0
 	hitsound = 'sound/items/weapons/pierce.ogg'
@@ -13,33 +11,15 @@
 	sharpness = SHARP_POINTY
 	impact_effect_type = /obj/effect/temp_visual/impact_effect
 	shrapnel_type = /obj/item/shrapnel/bullet
-	embedding = list(embed_chance=15, fall_chance=2, jostle_chance=0, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.5, pain_mult=3, rip_time=10)
 	wound_falloff_tile = -5
 	embed_falloff_tile = -5
 	range = 50
 	eyeblur = 0
 	light_range = 0
 	light_power = 0
-//	jitter = 10
 	icon_state = ""
 	hitscan = TRUE
-	tracer_type = /obj/effect/projectile/tracer/tracer/beam_rifle/vampire
-
-/obj/projectile/beam/beam_rifle/vampire/generate_hitscan_tracers(cleanup = TRUE, duration = 5, impacting = TRUE, highlander)
-	set waitfor = FALSE
-	if(isnull(highlander))
-		highlander = TRUE
-	if(highlander && istype(gun))
-		QDEL_LIST(gun.current_tracers)
-		for(var/datum/point/p in beam_segments)
-			gun.current_tracers += generate_tracer_between_points(p, beam_segments[p], tracer_type, color, 0, hitscan_light_range, hitscan_light_color_override, hitscan_light_intensity)
-	else
-		for(var/datum/point/p in beam_segments)
-			generate_tracer_between_points(p, beam_segments[p], tracer_type, color, duration, hitscan_light_range, hitscan_light_color_override, hitscan_light_intensity)
-	if(cleanup)
-		QDEL_LIST(beam_segments)
-		beam_segments = null
-		QDEL_NULL(beam_index)
+	tracer_type = /obj/effect/projectile/tracer/tracer/beam_rifle
 
 /obj/projectile/beam/beam_rifle/vampire/vamp9mm
 	name = "9mm bullet"
@@ -127,7 +107,7 @@
 	if(iscarbon(target))
 		var/mob/living/carbon/M = target
 		M.adjust_fire_stacks(fire_stacks)
-		M.IgniteMob()
+		M.ignite_mob()
 
 /obj/projectile/bullet/crossbow_bolt
 	name = "bolt"

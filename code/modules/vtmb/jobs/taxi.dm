@@ -21,10 +21,6 @@
 	experience_addition = 10
 	allowed_bloodlines = list("Daughters of Cacaphony", "Salubri", "Baali", "Brujah", "Tremere", "Ventrue", "Nosferatu", "Gangrel", "Toreador", "Malkavian", "Banu Haqim", "Giovanni", "Ministry", "Tzimisce", "Lasombra", "Caitiff", "Kiasyd", "Cappadocian")
 
-/datum/job/vamp/taxi/after_spawn(mob/living/H, mob/M, latejoin = FALSE)
-	..()
-	H.taxist = TRUE
-
 /datum/outfit/job/taxi
 	name = "Taxi Driver"
 	jobtype = /datum/job/vamp/taxi

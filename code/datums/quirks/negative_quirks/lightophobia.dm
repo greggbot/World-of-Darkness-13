@@ -4,9 +4,8 @@
 	value = -3
 	medical_record_text = "Patient demonstrates a fear of the light."
 	hardcore_value = 5
-	mood_quirk = TRUE
 
-/datum/quirk/lightophobia/on_process()
+/datum/quirk/lightophobia/process()
 	var/turf/T = get_turf(quirk_holder)
 	if(T)
 		var/lums = T.get_lumcount()

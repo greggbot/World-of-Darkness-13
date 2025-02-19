@@ -16,7 +16,6 @@
 		if(card && card.has_checked == FALSE)
 			for(var/obj/item/vamp/creditcard/caard in b.contents)
 				if(caard)
-					H.bank_id = caard.account.bank_id
 					caard.account.account_owner = H.true_real_name
 					caard.has_checked = TRUE
 

@@ -370,16 +370,6 @@
 	registered_name = "Pluoxium LXVII"
 	registered_age = 67
 
-/// Spawns assistants with some gear, either gimmicky or functional. Maybe, one day, it will inspire an assistant to do something productive or fun
-/datum/station_trait/assistant_gimmicks
-	name = "Geared Assistants Pilot"
-	report_message = "The Nanotrassen Assistant Affairs division is performing a pilot to see if different assistant equipment helps improve productivity!"
-	trait_type = STATION_TRAIT_POSITIVE
-	weight = 3
-	trait_to_give = STATION_TRAIT_ASSISTANT_GIMMICKS
-	show_in_report = TRUE
-	blacklist = list(/datum/station_trait/colored_assistants)
-
 /datum/station_trait/random_event_weight_modifier/assistant_gimmicks/get_pulsar_message()
 	var/advisory_string = "Advisory Level: <b>Grey Sky</b></center><BR>"
 	advisory_string += "Your sector's advisory level is Grey Sky. Our sensors detect abnormal activity among the assistants assigned to your station. We advise you to closely monitor the Tool Storage, Bridge, Tech Storage, and Brig for gathering crowds or petty thievery."
