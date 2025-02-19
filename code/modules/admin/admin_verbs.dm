@@ -132,6 +132,63 @@ ADMIN_VERB(cmd_admin_global_adjust_masquerade, R_ADMIN, "Adjust Global Masquerad
 	message_admins(msg)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Global Adjust Masquerade")
 
+ADMIN_VERB(reward_exp, R_ADMIN, "Reward Experience", "Reward experience to a player.", ADMIN_CATEGORY_MAIN)
+	if (!check_rights(R_ADMIN))
+		return
+
+	var/list/explist = list()
+	for(var/client/C in GLOB.clients)
+		explist |= "[C.ckey]"
+	var/exper = input("Rewarding:") as null|anything in explist
+	if(exper)
+		var/amount = input("Amount:") as null|num
+		if(amount)
+			var/reason = input("Reason:") as null|text
+			if(reason)
+				for(var/client/C in GLOB.clients)
+					if("[C.ckey]" == "[exper]")
+						to_chat(C, "<b>You've been rewarded with [amount] experience points. Reason: \"[reason]\"</b>")
+
+						C.prefs.add_experience(amount)
+						C.prefs.save_character()
+
+						message_admins("[ADMIN_LOOKUPFLW(usr)] rewarded [ADMIN_LOOKUPFLW(exper)] with [amount] experience points. Reason: [reason]")
+						log_admin("[key_name(usr)] rewarded [key_name(exper)] with [amount] experience points. Reason: [reason]")
+	SSblackbox.record_feedback("tally", "admin_verb", 1, "Reward Experience") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+ADMIN_VERB(grant_whitelist, R_ADMIN, "Grant Whitelist", "Add a player to the whitelist.", ADMIN_CATEGORY_MAIN)
+	if (!check_rights(R_ADMIN))
+		return
+
+	if (!SSwhitelists.whitelists_enabled)
+		to_chat(usr, "<span class='warning'>Whitelisting isn't enabled!</span>")
+		return
+
+	var/whitelistee = input("CKey to whitelist:") as null|text
+	if (whitelistee)
+		whitelistee = ckey(whitelistee)
+		var/list/whitelist_pool = (SSwhitelists.possible_whitelists - SSwhitelists.get_user_whitelists(whitelistee))
+		if (whitelist_pool.len == 0)
+			to_chat(usr, "<span class='warning'>[whitelistee] already has all whitelists!</span>")
+			return
+		var/whitelist = input("Whitelist to give:") as null|anything in whitelist_pool
+		if (whitelist)
+			var/ticket_link = input("Link to whitelist request ticket:") as null|text
+			if (ticket_link)
+				var/approval_reason = input("Reason for whitelist approval:") as null|text
+				if (approval_reason)
+					SSwhitelists.add_whitelist(whitelistee, whitelist, usr.ckey, ticket_link, approval_reason)
+					message_admins("[key_name_admin(usr)] gave [whitelistee] the [whitelist] whitelist. Reason: [approval_reason]")
+					log_admin("[key_name(usr)] gave [whitelistee] the [whitelist] whitelist. Reason: [approval_reason]")
+	SSblackbox.record_feedback("tally", "admin_verb", 1, "Grant Whitelist") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+ADMIN_VERB(whitelist_panel, R_ADMIN, "Whitelist Management", "View and manage whitelists.", ADMIN_CATEGORY_MAIN)
+	if (!check_rights(R_ADMIN))
+		return
+	user.holder.whitelist_panel()
+	SSblackbox.record_feedback("tally", "admin_verb", 1, "Whitelist Management") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+
 ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.", ADMIN_CATEGORY_MAIN)
 	user.holder.poll_list_panel()
 	BLACKBOX_LOG_ADMIN_VERB("Server Poll Management")
