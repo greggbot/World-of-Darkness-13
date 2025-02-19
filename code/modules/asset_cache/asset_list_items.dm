@@ -1,25 +1,5 @@
 //DEFINITIONS FOR ASSET DATUMS START HERE.
 
-/datum/asset/simple/tgui_common
-	keep_local_name = TRUE
-	assets = list(
-		"tgui-common.bundle.js" = 'tgui/public/tgui-common.bundle.js',
-	)
-
-/datum/asset/simple/tgui
-	keep_local_name = TRUE
-	assets = list(
-		"tgui.bundle.js" = 'tgui/public/tgui.bundle.js',
-		"tgui.bundle.css" = 'tgui/public/tgui.bundle.css',
-	)
-
-/datum/asset/simple/tgui_panel
-	keep_local_name = TRUE
-	assets = list(
-		"tgui-panel.bundle.js" = 'tgui/public/tgui-panel.bundle.js',
-		"tgui-panel.bundle.css" = 'tgui/public/tgui-panel.bundle.css',
-	)
-
 /datum/asset/simple/headers
 	assets = list(
 		"alarm_green.gif" = 'icons/program_icons/alarm_green.gif',

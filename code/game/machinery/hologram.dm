@@ -206,6 +206,9 @@ Possible to do for anyone motivated enough:
 		return UI_CLOSE
 	return ..()
 
+/mob/verb/input_test()
+	var/datum/tgui/ui = new(src, src, "TextInput", "Test")
+
 /obj/machinery/holopad/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
