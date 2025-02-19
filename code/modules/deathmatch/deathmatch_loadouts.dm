@@ -667,7 +667,6 @@
 	ears = /obj/item/radio/headset/headset_com
 	neck = /obj/item/clothing/neck/large_scarf/blue
 	//suit
-	id_trim = /datum/id_trim/job/bridge_assistant // half tider half command
 	id = /obj/item/card/id/advanced/chameleon
 	uniform = /obj/item/clothing/under/trek/command/next
 	l_pocket = /obj/item/gun/energy/e_gun/mini // they are thej best race in the end. not as impactful as you may think
@@ -685,7 +684,6 @@
 	species_override = /datum/species/lizard
 
 	head = /obj/item/clothing/head/soft/purple
-	id_trim = /datum/id_trim/job/janitor
 	id = /obj/item/card/id/advanced/chameleon
 	uniform = /obj/item/clothing/under/rank/civilian/janitor
 	gloves = /obj/item/clothing/gloves/color/black
@@ -712,7 +710,6 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	suit = /obj/item/clothing/suit/hooded/wintercoat/medical
 	suit_store = /obj/item/flashlight/pen/paramedic
-	id_trim = /datum/id_trim/job/medical_doctor
 	id = /obj/item/card/id/advanced/chameleon
 	uniform = /obj/item/clothing/under/rank/medical/scrubs/blue
 	belt = /obj/item/storage/belt/medical/paramedic
@@ -736,10 +733,8 @@
 	species_override = /datum/species/ethereal
 
 	head = /obj/item/clothing/head/soft/black
-	id_trim = /datum/id_trim/job/roboticist
 	id = /obj/item/card/id/advanced/chameleon
 	suit = /obj/item/clothing/suit/toggle/labcoat/roboticist
-	suit_store = /datum/id_trim/job/roboticist
 	uniform = /obj/item/clothing/under/rank/rnd/roboticist
 	l_pocket = /obj/item/assembly/flash
 	belt = /obj/item/storage/belt/utility/full
@@ -763,7 +758,6 @@
 	suit = /obj/item/clothing/suit/hazardvest
 	suit_store = /obj/item/flashlight
 	uniform = /obj/item/clothing/under/plasmaman/atmospherics
-	id_trim = /datum/id_trim/job/atmospheric_technician
 	id = /obj/item/card/id/advanced/chameleon
 	belt = /obj/item/storage/belt/utility/atmostech
 	gloves = /obj/item/clothing/gloves/color/plasmaman/atmos
@@ -841,7 +835,6 @@
 	suit = /obj/item/clothing/suit/hooded/cultrobes/cult_shield // the dreaded return!
 	suit_store = /obj/item/melee/cultblade
 	uniform = /obj/item/clothing/under/color/black
-	id_trim = null
 	belt = /obj/item/melee/cultblade/dagger
 	l_pocket = /obj/item/flashlight/flare/culttorch
 	r_pocket = /obj/item/flashlight/flare/culttorch
@@ -869,7 +862,6 @@
 	suit = /obj/item/clothing/suit/hooded/cultrobes/berserker
 	suit_store = /obj/item/melee/sickly_blade/cursed
 	uniform = /obj/item/clothing/under/color/red
-	id_trim = null
 	belt = /obj/item/melee/cultblade/dagger
 	l_pocket = /obj/item/flashlight/flare/culttorch
 	r_pocket = /obj/item/flashlight/flare/culttorch
@@ -923,7 +915,6 @@
 	suit = /obj/item/clothing/suit/hooded/cultrobes/eldritch
 	suit_store = /obj/item/melee/sickly_blade/dark
 	uniform = /obj/item/clothing/under/color/darkgreen
-	id_trim = null
 	belt = /obj/item/melee/sickly_blade/rust
 	gloves = null
 	shoes = /obj/item/clothing/shoes/sandal
@@ -970,7 +961,6 @@
 	suit = /obj/item/clothing/suit/hooded/cultrobes/void
 	suit_store = /obj/item/melee/sickly_blade
 	uniform = /obj/item/clothing/under/costume/gamberson/military
-	id_trim = null
 	belt = /obj/item/storage/belt/unfathomable_curio
 	gloves = null
 	shoes = /obj/item/clothing/shoes/winterboots/ice_boots
@@ -1011,7 +1001,6 @@
 	suit = /obj/item/clothing/suit/chaplainsuit/armor/templar
 	suit_store = /obj/item/book/bible/booze
 	uniform = /obj/item/clothing/under/rank/civilian/chaplain
-	id_trim = null
 	belt = /obj/item/nullrod/non_station // choose any!
 	gloves = /obj/item/clothing/gloves/plate
 	shoes = /obj/item/clothing/shoes/plate
@@ -1040,7 +1029,6 @@
 	suit = /obj/item/clothing/suit/costume/bronze
 	suit_store = /obj/item/toy/clockwork_watch
 	uniform = /obj/item/clothing/under/chameleon
-	id_trim = null
 	belt = /obj/item/brass_spear
 	gloves = /obj/item/clothing/gloves/tinkerer
 	shoes = /obj/item/clothing/shoes/bronze

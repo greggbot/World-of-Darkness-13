@@ -96,9 +96,7 @@
 /// An outfit which replaces parts of a wizard's clothes with captain's clothes but keeps the robes
 /datum/outfit/job/wizard_captain
 	name = "Captain (Wizard Transformation)"
-	jobtype = /datum/job/captain
 	id = /obj/item/card/id/advanced/gold
-	id_trim = /datum/id_trim/job/captain
 	uniform = /obj/item/clothing/under/rank/captain/parade
 	belt = /obj/item/modular_computer/pda/heads/captain
 	ears = /obj/item/radio/headset/heads/captain/alt

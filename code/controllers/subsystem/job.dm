@@ -950,9 +950,9 @@ SUBSYSTEM_DEF(job)
 /datum/controller/subsystem/job/proc/has_minimum_jobs(crew_threshold, list/jobs = list(), list/head_jobs = list())
 	var/employees = 0
 	for(var/datum/record/crew/target in GLOB.manifest.general)
-		if(target.trim in head_jobs)
+		if(target.rank in head_jobs)
 			return TRUE
-		if(target.trim in jobs)
+		if(target.rank in jobs)
 			employees++
 
 	if(employees > crew_threshold)

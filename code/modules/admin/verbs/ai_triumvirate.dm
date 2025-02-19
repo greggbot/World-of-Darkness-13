@@ -16,8 +16,6 @@ GLOBAL_DATUM(triple_ai_controller, /datum/triple_ai_controller)
 /datum/triple_ai_controller/proc/on_occupations_divided(datum/source, pure, allow_all)
 	SIGNAL_HANDLER
 
-	for(var/datum/job/ai/ai_datum in SSjob.joinable_occupations)
-		ai_datum.spawn_positions = 3
 	if(!pure)
 		for(var/obj/effect/landmark/start/ai/secondary/secondary_ai_spawn in GLOB.start_landmarks_list)
 			secondary_ai_spawn.latejoin_active = TRUE
@@ -36,7 +34,7 @@ GLOBAL_DATUM(triple_ai_controller, /datum/triple_ai_controller)
 		to_chat(usr, "This option is currently only usable during pregame. This may change at a later date.", confidential = TRUE)
 		return
 
-	var/datum/job/job = SSjob.get_job_type(/datum/job/ai)
+	var/datum/job/job
 	if(!job)
 		to_chat(usr, "Unable to locate the AI job", confidential = TRUE)
 		CRASH("triple_ai() called, no /datum/job/ai to be found.")

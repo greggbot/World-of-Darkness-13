@@ -95,6 +95,8 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 
 #define isbrain(A) (istype(A, /mob/living/brain))
 
+#define iszomboid(A) (istype(A, /mob/living/basic/zombie))
+
 //Carbon mobs
 #define iscarbon(A) (istype(A, /mob/living/carbon))
 

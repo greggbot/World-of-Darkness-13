@@ -229,9 +229,6 @@ GLOBAL_DATUM_INIT(orbit_menu, /datum/orbit_menu, new)
 	if (isnull(outfit))
 		return serialized
 
-	var/datum/id_trim/trim = outfit.id_trim
-	if (!isnull(trim))
-		serialized["mind_icon"] = trim::sechud_icon_state
 	return serialized
 
 /// Gets a list: Misc data and whether it's critical. Handles all snowflakey type cases

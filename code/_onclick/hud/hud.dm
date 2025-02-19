@@ -55,6 +55,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	var/atom/movable/screen/demon_chi/demon_chi_icon
 	var/atom/movable/screen/drinkblood/drinkblood_icon
 	var/atom/movable/screen/zone_icon
+	var/atom/movable/screen/auspice_icon
 
 
 	var/list/static_inventory = list() //the screen objects which are static

@@ -1490,7 +1490,7 @@
 					E1.Grant(caster)
 					var/datum/action/beastmaster_deaggro/E2 = new()
 					E2.Grant(caster)
-				var/mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/M = new /mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/level1(caster.loc)
+				var/mob/living/basic/zombie/beastmaster/giovanni_zombie/M = new /mob/living/basic/zombie/beastmaster/giovanni_zombie/level1(caster.loc)
 				M.my_creator = caster
 				caster.beastmaster |= M
 				M.beastmaster = caster
@@ -1505,7 +1505,7 @@
 					E1.Grant(caster)
 					var/datum/action/beastmaster_deaggro/E2 = new()
 					E2.Grant(caster)
-				var/mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/M = new /mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/level2(caster.loc)
+				var/mob/living/basic/zombie/beastmaster/giovanni_zombie/M = new /mob/living/basic/zombie/beastmaster/giovanni_zombie/level2(caster.loc)
 				M.my_creator = caster
 				caster.beastmaster |= M
 				M.beastmaster = caster
@@ -1516,7 +1516,7 @@
 					E1.Grant(caster)
 					var/datum/action/beastmaster_deaggro/E2 = new()
 					E2.Grant(caster)
-				var/mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/M = new /mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/level3(caster.loc)
+				var/mob/living/basic/zombie/beastmaster/giovanni_zombie/M = new /mob/living/basic/zombie/beastmaster/giovanni_zombie/level3(caster.loc)
 				M.my_creator = caster
 				caster.beastmaster |= M
 				M.beastmaster = caster
@@ -1527,7 +1527,7 @@
 					E1.Grant(caster)
 					var/datum/action/beastmaster_deaggro/E2 = new()
 					E2.Grant(caster)
-				var/mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/M = new /mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/level4(caster.loc)
+				var/mob/living/basic/zombie/beastmaster/giovanni_zombie/M = new /mob/living/basic/zombie/beastmaster/giovanni_zombie/level4(caster.loc)
 				M.my_creator = caster
 				caster.beastmaster |= M
 				M.beastmaster = caster
@@ -1538,7 +1538,7 @@
 					E1.Grant(caster)
 					var/datum/action/beastmaster_deaggro/E2 = new()
 					E2.Grant(caster)
-				var/mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/M = new /mob/living/simple_animal/hostile/beastmaster/giovanni_zombie/level5(caster.loc)
+				var/mob/living/basic/zombie/beastmaster/giovanni_zombie/M = new /mob/living/basic/zombie/beastmaster/giovanni_zombie/level5(caster.loc)
 				M.my_creator = caster
 				caster.beastmaster |= M
 				M.beastmaster = caster

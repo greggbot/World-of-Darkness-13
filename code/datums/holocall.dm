@@ -309,35 +309,8 @@
 		. = image(mannequin)
 		unset_busy_human_dummy("HOLODISK_PRESET")
 
-/datum/preset_holoimage/clown
-	outfit_type = /datum/outfit/job/clown
-
-/datum/preset_holoimage/engineer
-	outfit_type = /datum/outfit/job/engineer
-
 /datum/preset_holoimage/corgi
 	nonhuman_mobtype = /mob/living/basic/pet/dog/corgi
-
-/datum/preset_holoimage/engineer/mod
-	outfit_type = /datum/outfit/job/engineer/mod
-
-/datum/preset_holoimage/engineer/ce
-	outfit_type = /datum/outfit/job/ce
-
-/datum/preset_holoimage/engineer/ce/mod
-	outfit_type = /datum/outfit/job/ce/mod
-
-/datum/preset_holoimage/engineer/atmos
-	outfit_type = /datum/outfit/job/atmos
-
-/datum/preset_holoimage/engineer/atmos/mod
-	outfit_type = /datum/outfit/job/atmos/mod
-
-/datum/preset_holoimage/researcher
-	outfit_type = /datum/outfit/job/scientist
-
-/datum/preset_holoimage/captain
-	outfit_type = /datum/outfit/job/captain
 
 /datum/preset_holoimage/nanotrasenprivatesecurity
 	outfit_type = /datum/outfit/nanotrasensoldiercorpse
@@ -358,7 +331,7 @@
 	outfit_type = /datum/outfit/job/assistant
 
 /obj/item/disk/holodisk/example
-	preset_image_type = /datum/preset_holoimage/clown
+	preset_image_type = /datum/preset_holoimage/corgi
 	preset_record_text = {"
 	NAME Clown
 	DELAY 10
@@ -381,7 +354,7 @@
 /obj/item/disk/holodisk/donutstation/whiteship
 	name = "Blackbox Print-out #DS024"
 	desc = "A holodisk containing the last viable recording of DS024's blackbox."
-	preset_image_type = /datum/preset_holoimage/engineer/ce
+	preset_image_type = /datum/preset_holoimage/corgi
 	preset_record_text = {"
 	NAME Geysr Shorthalt
 	SAY Engine renovations complete and the ships been loaded. We all ready?
@@ -427,7 +400,7 @@
 /obj/item/disk/holodisk/ruin/snowengieruin
 	name = "Blackbox Print-out #EB412"
 	desc = "A holodisk containing the last moments of EB412. There's a bloody fingerprint on it."
-	preset_image_type = /datum/preset_holoimage/engineer
+	preset_image_type = /datum/preset_holoimage/corgi
 	preset_record_text = {"
 	NAME Dave Tundrale
 	SAY Maria, how's Build?
@@ -567,7 +540,7 @@
 /obj/item/disk/holodisk/ruin/space/travelers_rest
 	name = "Owner's memo"
 	desc = "A holodisk containing a small memo from the previous owner, addressed to someone else."
-	preset_image_type = /datum/preset_holoimage/engineer/atmos
+	preset_image_type = /datum/preset_holoimage/corgi
 	preset_record_text = {"
 		NAME Space Adventurer
 		SOUND PING

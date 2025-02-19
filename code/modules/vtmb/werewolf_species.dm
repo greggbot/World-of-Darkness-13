@@ -128,7 +128,7 @@
 
 	if(amount && sound)
 		if(prob(20))
-			INVOKE_ASYNC(C, PROC_REF(emote), "growl")
+			INVOKE_ASYNC(C, TYPE_PROC_REF(/mob/living/carbon, emote), "growl")
 			if(iscrinos(C))
 				playsound(get_turf(C), 'code/modules/wod13/sounds/crinos_growl.ogg', 75, FALSE)
 			if(islupus(C))
