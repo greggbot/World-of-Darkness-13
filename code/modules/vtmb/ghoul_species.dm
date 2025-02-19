@@ -1,13 +1,7 @@
 /datum/species/ghoul
 	name = "Ghoul"
 	id = "ghoul"
-	default_color = "FFFFFF"
-	toxic_food = RAW
-	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, HAS_FLESH, HAS_BONE)
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER, TRAIT_VIRUSIMMUNE, TRAIT_NOCRITDAMAGE)
-	use_skintones = TRUE
-	limbs_id = "human"
-	mutant_bodyparts = list("tail_human" = "None", "ears" = "None", "wings" = "None")
 	brutemod = 1	//0.8 instead, if changing.
 	burnmod = 1
 	dust_anim = "dust-h"
@@ -15,7 +9,6 @@
 	var/changed_master = FALSE
 	var/last_vitae = 0
 	var/list/datum/discipline/disciplines = list()
-	selectable = TRUE
 
 /datum/action/ghoulinfo
 	name = "About Me"
@@ -238,21 +231,17 @@
 		H.adjustOxyLoss(-20*level, TRUE)
 		H.adjustToxLoss(-20*level, TRUE)
 		H.blood_volume = min(H.blood_volume + 56, 560)
-		button.color = "#970000"
-		animate(button, color = "#ffffff", time = 20, loop = 1)
 		if(length(H.all_wounds))
 			for(var/i in 1 to min(5, length(H.all_wounds)))
 				var/datum/wound/W = pick(H.all_wounds)
 				W.remove_wound()
-		H.adjustCloneLoss(-5, TRUE)
-		var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
+		H.adjustFireLoss(-5, TRUE)
+		var/obj/item/organ/eyes/eyes = H.get_organ_loss(ORGAN_SLOT_EYES)
 		if(eyes)
-			H.adjust_blindness(-2)
-			H.adjust_blurriness(-2)
-			eyes.applyOrganDamage(-5)
-		var/obj/item/organ/brain/brain = H.getorganslot(ORGAN_SLOT_BRAIN)
+			eyes.apply_organ_damage(-8)
+		var/obj/item/organ/brain/brain = H.get_organ_loss(ORGAN_SLOT_BRAIN)
 		if(brain)
-			brain.applyOrganDamage(-100)
+			brain.apply_organ_damage(-100)
 		H.update_damage_overlays()
 		H.update_health_hud()
 		H.update_blood_hud()

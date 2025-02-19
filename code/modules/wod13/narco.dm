@@ -537,7 +537,6 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	list_reagents = list(/datum/reagent/drug/methamphetamine = 30)
 	spillable = FALSE
 	resistance_flags = FREEZE_PROOF
-	isGlass = FALSE
 	foodtype = BREAKFAST
 	illegal = TRUE
 	cost = 300
@@ -561,13 +560,18 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	resistance_flags = FREEZE_PROOF
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/drug_methpack
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 	var/empty = FALSE
 	var/feeding = FALSE
 	var/amount_of_bloodpoints = 4
 	var/vitae = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/drug_methpack
+	fire = 100
+	acid = 100
 
 /obj/item/reagent_containers/drug/methpack/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -577,7 +581,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	if(empty)
 		return
 	feeding = TRUE
-	if(do_mob(user, src, 3 SECONDS))
+	if(do_after(user, 3 SECONDS, src))
 		var/obj/item/reagent_containers/drug/methpack/H = new(src) //setting up the drugged bag in question (and its contents) as a variable to be called later
 		feeding = FALSE
 		empty = TRUE
@@ -591,7 +595,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 		M.update_health_hud()
 		if(iskindred(M))
 			M.update_blood_hud()
-			H.reagents.trans_to(M, min(10, H.reagents.total_volume), transfered_by = H, methods = VAMPIRE) //calling the earlier variable to transfer to target, M
+			H.reagents.trans_to(M, min(10, H.reagents.total_volume), transferred_by = H, methods = VAMPIRE) //calling the earlier variable to transfer to target, M
 		playsound(M.loc,'sound/items/drink.ogg', 50, TRUE)
 		return
 	else
@@ -611,13 +615,18 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	resistance_flags = FREEZE_PROOF
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/drug_morphpack
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 	var/empty = FALSE
 	var/feeding = FALSE
 	var/amount_of_bloodpoints = 4
 	var/vitae = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/drug_morphpack
+	fire = 100
+	acid = 100
 
 /obj/item/reagent_containers/drug/morphpack/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -627,7 +636,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	if(empty)
 		return
 	feeding = TRUE
-	if(do_mob(user, src, 3 SECONDS))
+	if(do_after(user, 3 SECONDS, src))
 		var/obj/item/reagent_containers/drug/morphpack/H = new(src) //setting up the drugged bag in question (and its contents) as a variable to be called later
 		feeding = FALSE
 		empty = TRUE
@@ -641,7 +650,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 		M.update_health_hud()
 		if(iskindred(M))
 			M.update_blood_hud()
-			H.reagents.trans_to(M, min(10, H.reagents.total_volume), transfered_by = H, methods = VAMPIRE) //calling the earlier variable to transfer to target, M
+			H.reagents.trans_to(M, min(10, H.reagents.total_volume), transferred_by = H, methods = VAMPIRE) //calling the earlier variable to transfer to target, M
 		playsound(M.loc,'sound/items/drink.ogg', 50, TRUE)
 		return
 	else
@@ -661,13 +670,18 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	resistance_flags = FREEZE_PROOF
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/drug_cokepack
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 	var/empty = FALSE
 	var/feeding = FALSE
 	var/amount_of_bloodpoints = 4
 	var/vitae = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/drug_cokepack
+	fire = 100
+	acid = 100
 
 /obj/item/reagent_containers/drug/cokepack/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -677,7 +691,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 	if(empty)
 		return
 	feeding = TRUE
-	if(do_mob(user, src, 3 SECONDS))
+	if(do_after(user, 3 SECONDS, src))
 		var/obj/item/reagent_containers/drug/cokepack/H = new(src) //setting up the drugged bag in question (and its contents) as a variable to be called later
 		feeding = FALSE
 		empty = TRUE
@@ -691,7 +705,7 @@ SUBSYSTEM_DEF(smokeweedeveryday)
 		M.update_health_hud()
 		if(iskindred(M))
 			M.update_blood_hud()
-			H.reagents.trans_to(M, min(10, H.reagents.total_volume), transfered_by = H, methods = VAMPIRE) //calling the earlier variable to transfer to target, M
+			H.reagents.trans_to(M, min(10, H.reagents.total_volume), transferred_by = H, methods = VAMPIRE) //calling the earlier variable to transfer to target, M
 		playsound(M.loc,'sound/items/drink.ogg', 50, TRUE)
 		return
 	else

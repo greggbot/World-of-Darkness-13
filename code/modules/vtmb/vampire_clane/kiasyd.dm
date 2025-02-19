@@ -160,7 +160,7 @@
 						to_chat(caster, "- [A.name]")
 		if(2)
 			caster.enhanced_strip = TRUE
-			target.show_inv(caster)
+			target.strip(caster)
 			spawn(delay + caster.discipline_time_plus)
 				caster.enhanced_strip = FALSE
 		if(3)
@@ -331,8 +331,11 @@
 	var/unique = FALSE
 	var/mob/owner
 
-/obj/mytherceria_trap/Crossed(atom/movable/AM)
-	..()
+/obj/mytherceria_trap/Initialize(mapload)
+	. = ..()
+	RegisterSignal(src, COMSIG_MOVABLE_CROSS, PROC_REF(on_cross))
+
+/obj/mytherceria_trap/proc/on_cross(atom/movable/AM)
 	if(isliving(AM) && owner)
 		if(AM != owner)
 			playsound(get_turf(src), 'code/modules/wod13/sounds/kiasyd.ogg', 100, FALSE)
@@ -374,12 +377,11 @@
 	unique = TRUE
 	icon_state = "rune3"
 
-/obj/mytherceria_trap/drop/Crossed(atom/movable/AM)
-	..()
+/obj/mytherceria_trap/drop/on_cross(atom/movable/AM)
 	if(iscarbon(AM) && owner)
 		if(AM != owner)
 			var/mob/living/carbon/L = AM
-			for(var/obj/item/I in L.get_equipped_items(include_pockets = TRUE))
+			for(var/obj/item/I in L.get_equipped_items(INCLUDE_POCKETS))
 				if(I)
 					L.dropItemToGround(I, TRUE)
 			qdel(src)

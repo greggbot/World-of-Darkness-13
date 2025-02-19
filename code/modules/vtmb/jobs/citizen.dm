@@ -6,12 +6,7 @@
 	spawn_positions = -1
 	supervisors = "the Traditions"
 	outfit = /datum/outfit/job/citizen
-	antag_rep = 7
-	paycheck = PAYCHECK_ASSISTANT // Get a job. Job reassignment changes your paycheck now. Get over it.
-
-	access = list(ACCESS_MAINT_TUNNELS)
-	liver_traits = list(TRAIT_GREYTIDE_METABOLISM)
-
+	paycheck = PAYCHECK_CREW // Get a job. Job reassignment changes your paycheck now. Get over it.
 	paycheck_department = ACCOUNT_CIV
 	display_order = JOB_DISPLAY_ORDER_CITIZEN
 

@@ -86,9 +86,9 @@
 	..()
 	if(pulledby)
 		if(prob(25))
-			Aggro(pulledby, TRUE)
+			INVOKE_ASYNC(src, PROC_REF(Aggro), pulledby, TRUE)
 		if(fights_anyway)
-			Aggro(pulledby, TRUE)
+			INVOKE_ASYNC(src, PROC_REF(Aggro), pulledby, TRUE)
 	if(!CheckMove())
 		nutrition = 400
 		if(get_dist(danger_source, src) < 7)
@@ -110,15 +110,6 @@
 				if(walktarget && !old_movement)
 					if(route_optimisation())
 						forceMove(get_turf(walktarget))
-//		if(prob(5) && !danger_source)
-//			var/activity = rand(1, 3)
-//			switch(activity)
-//				if(1)
-//					StareAction()
-//				if(2)
-//					EmoteAction()
-//				if(3)
-//					SpeechAction()
 
 /mob/living/carbon/human/npc/proc/CreateWay(var/direction)
 	var/turf/location = get_turf(src)
@@ -132,11 +123,8 @@
 			if(istype(A, /obj/effect/landmark/npcwall))
 				return get_step_towards(location, get_turf(src))
 			if(isnpcbeacon(A) && prob(50))
-//				var/opposite_dir = turn(direction, 180)				Nado
 				stopturf = 1
 				return get_step(location, direction)
-//		if(distance == 50)
-//			return location
 
 /mob/living/carbon/human/npc/proc/ChoosePath()
 	if(!old_movement)
@@ -254,9 +242,6 @@
 		less_danger = null
 	if(!staying)
 		lifespan = lifespan+1
-/*	if(lifespan >= 1000)
-		if(route_optimisation())
-			qdel(src)*/
 	if(!walktarget && !staying)
 		stopturf = rand(1, 2)
 		walktarget = ChoosePath()
@@ -267,10 +252,8 @@
 			if(move_intent == MOVE_INTENT_WALK)
 				toggle_move_intent(src)
 			if(!my_weapon && !fights_anyway)
-//				if(last_walkin+5 < world.time)
-				var/reqsteps = round((SShumannpcpool.next_fire-world.time)/total_multiplicative_slowdown())
-				set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
-				walk_away(src, danger_source, reqsteps, total_multiplicative_slowdown())
+				var/reqsteps = round((SShumannpcpool.next_fire-world.time))
+				walk_away(src, danger_source, reqsteps)
 			if(my_weapon || fights_anyway)
 				var/obj/item/card/id/id_card = danger_source.get_idcard(FALSE)
 				if(!istype(id_card, /obj/item/card/id/police))
@@ -287,13 +270,8 @@
 						else
 							ClickOn(danger_source)
 							face_atom(danger_source)
-//				if(last_walkin+5 < world.time)
-							var/reqsteps = round((SShumannpcpool.next_fire-world.time)/total_multiplicative_slowdown())
-							set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
-//						var/plus_turfs = 0
-//						if(istype(my_weapon, /obj/item/gun))
-//							plus_turfs = 3
-							walk_to(src, danger_source, reqsteps, total_multiplicative_slowdown())
+							var/reqsteps = round((SShumannpcpool.next_fire-world.time))
+							walk_to(src, danger_source, reqsteps)
 
 			if(isliving(danger_source))
 				var/mob/living/L = danger_source
@@ -307,7 +285,7 @@
 						else
 							my_weapon = null
 					walktarget = ChoosePath()
-					a_intent = INTENT_HELP
+					set_combat_mode(FALSE)
 
 			if(last_danger_meet+300 <= world.time)
 				danger_source = null
@@ -319,19 +297,17 @@
 					else
 						my_weapon = null
 				walktarget = ChoosePath()
-				a_intent = INTENT_HELP
+				set_combat_mode(FALSE)
 		else if(less_danger)
-			var/reqsteps = round((SShumannpcpool.next_fire-world.time)/total_multiplicative_slowdown())
-			set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
-			walk_away(src, less_danger, reqsteps, total_multiplicative_slowdown())
+			var/reqsteps = round((SShumannpcpool.next_fire-world.time))
+			walk_away(src, less_danger, reqsteps)
 			if(prob(25))
 				emote("scream")
 		else if(walktarget && !staying)
 			if(prob(25))
 				toggle_move_intent(src)
-			var/reqsteps = round((SShumannpcpool.next_fire-world.time)/total_multiplicative_slowdown())
-			set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
-			walk_to(src, walktarget, reqsteps, total_multiplicative_slowdown())
+			var/reqsteps = round((SShumannpcpool.next_fire-world.time))
+			walk_to(src, walktarget, reqsteps)
 
 		if(my_weapon && !danger_source)
 			if(spawned_weapon)

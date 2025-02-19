@@ -19,7 +19,7 @@
 		if(prob(50))
 			if(!my_weapon)
 				if(prob(50))
-					emote("scream")
+					INVOKE_ASYNC(src, PROC_REF(emote), "scream")
 				else
 					RealisticSay(pick(socialrole.help_phrases))
 			else

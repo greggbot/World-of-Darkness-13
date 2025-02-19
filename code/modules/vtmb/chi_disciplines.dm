@@ -180,7 +180,7 @@
 	delay = 10 SECONDS
 	cost_yin = 1
 	activate_sound = 'code/modules/wod13/sounds/bloodshintai_activate.ogg'
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/bloodcrawler/kuei_jin/bloodcrawler_shapeshift
+	var/datum/action/cooldown/spell/shapeshift/bloodcrawler/kuei_jin/bloodcrawler_shapeshift
 
 /datum/movespeed_modifier/blood_fat
 	multiplicative_slowdown = 1
@@ -211,7 +211,6 @@
 	health = 100
 	melee_damage_lower = 1
 	melee_damage_upper = 1
-	a_intent = INTENT_HELP
 	attack_verb_continuous = "splashes"
 	attack_verb_simple = "splash"
 
@@ -219,9 +218,9 @@
 	. = ..()
 	icon_state = "floor[rand(1, 7)]"
 	icon_living = "floor[rand(1, 7)]"
+	RegisterSignal(src, COMSIG_MOVABLE_CROSS, PROC_REF(on_cross))
 
-/mob/living/simple_animal/hostile/bloodcrawler/kuei_jin/Crossed(atom/movable/O)
-	. = ..()
+/mob/living/simple_animal/hostile/bloodcrawler/kuei_jin/proc/on_cross(atom/movable/O)
 	if(ishuman(O))
 		var/mob/living/carbon/C = O
 		to_chat(C, "<span class='notice'>You slipped[ O ? " on the [O.name]" : ""]!</span>")
@@ -235,7 +234,7 @@
 		C.moving_diagonally = 0 //If this was part of diagonal move slipping will stop it.
 		C.Knockdown(2 SECONDS)
 
-/obj/effect/proc_holder/spell/targeted/shapeshift/bloodcrawler/kuei_jin
+/datum/action/cooldown/spell/shapeshift/bloodcrawler/kuei_jin
 	shapeshift_type = /mob/living/simple_animal/hostile/bloodcrawler/kuei_jin
 
 /obj/item/gun/magic/blood_shintai
@@ -290,7 +289,6 @@
 
 	impact_effect_type = /obj/effect/temp_visual/impact_effect
 
-	hit_stunned_targets = TRUE
 
 /datum/chi_discipline/blood_shintai/activate(mob/living/target, mob/living/carbon/human/caster)
 	..()
@@ -302,14 +300,10 @@
 				inflating_matrix.Scale(1.2, 1)
 				var/matrix/initial = caster.transform
 				animate(caster, transform = inflating_matrix, 1 SECONDS)
-				caster.physiology.armor.melee += 20
-				caster.physiology.armor.bullet += 20
 				caster.add_movespeed_modifier(/datum/movespeed_modifier/blood_fat)
 				spawn(delay+caster.discipline_time_plus)
 					if(caster)
 						animate(caster, transform = initial, 1 SECONDS)
-						caster.physiology.armor.melee -= 20
-						caster.physiology.armor.bullet -= 20
 						caster.remove_movespeed_modifier(/datum/movespeed_modifier/blood_fat)
 			else if(result == "Shrink")
 				var/matrix/shrinking_matrix = matrix()
@@ -334,16 +328,16 @@
 		if(3)
 			if(!bloodcrawler_shapeshift)
 				bloodcrawler_shapeshift = new (caster)
-			bloodcrawler_shapeshift.Shapeshift(caster)
-			var/mob/living/simple_animal/hostile/host = bloodcrawler_shapeshift.myshape
+			bloodcrawler_shapeshift.do_shapeshift(caster)
+			var/mob/living/simple_animal/hostile/host = bloodcrawler_shapeshift.shapeshift_type
 			host.my_creator = null
 			spawn(delay+caster.discipline_time_plus)
 				if(bloodcrawler_shapeshift)
-					var/mob/living/simple_animal/hostile/bloodcrawler/current_form = bloodcrawler_shapeshift.myshape
+					var/mob/living/simple_animal/hostile/bloodcrawler/current_form = bloodcrawler_shapeshift.shapeshift_type
 					if(current_form.collected_blood > 1)
 						caster.adjustBruteLoss(-5*round(current_form.collected_blood/2), TRUE)
 						caster.adjustFireLoss(-5*round(current_form.collected_blood/2), TRUE)
-					bloodcrawler_shapeshift.Restore(bloodcrawler_shapeshift.myshape)
+					bloodcrawler_shapeshift.do_unshapeshift(caster)
 					caster.Stun(1.5 SECONDS)
 					caster.do_jitter_animation(3 SECONDS)
 		if(4)
@@ -381,9 +375,6 @@
 	. = ..()
 	tank = new /obj/item/tank/internals/oxygen/stone_shintai()
 
-/obj/item/melee/powerfist/stone/updateTank(obj/item/tank/internals/thetank, removing = 0, mob/living/carbon/human/user)
-	return FALSE
-
 /datum/chi_discipline/jade_shintai/activate(mob/living/target, mob/living/carbon/human/caster)
 	..()
 	switch(level_casting)
@@ -410,17 +401,15 @@
 					REMOVE_TRAIT(caster, TRAIT_PASS_THROUGH_WALLS, "jade shintai 3")
 					caster.remove_movespeed_modifier(/datum/movespeed_modifier/wall_passing)
 		if(4)
-			caster.dna.species.ToggleFlight(caster)
-			spawn(delay+caster.discipline_time_plus)
-				if(caster)
-					caster.dna.species.ToggleFlight(caster)
+			var/obj/item/organ/wings/functional/wings = caster.get_organ_slot(ORGAN_SLOT_EXTERNAL_WINGS)
+			if(wings?.can_fly())
+				wings.toggle_flight(caster)
+				addtimer(CALLBACK(caster, TYPE_PROC_REF(/obj/item/organ/wings/functional, toggle_flight), caster), delay+caster.discipline_time_plus)
 		if(5)
 			caster.remove_overlay(POTENCE_LAYER)
 			var/mutable_appearance/fortitude_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "[caster.base_body_mod]rock", -POTENCE_LAYER)
 			caster.overlays_standing[POTENCE_LAYER] = fortitude_overlay
 			caster.apply_overlay(POTENCE_LAYER)
-			caster.physiology.armor.melee += 50
-			caster.physiology.armor.bullet += 50
 			caster.drop_all_held_items()
 			var/obj/item/melee/powerfist/stone/righthand_stonefist = new (caster)
 			var/obj/item/melee/powerfist/stone/lefthand_stonefist = new (caster)
@@ -429,8 +418,6 @@
 			ADD_TRAIT(caster, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
-					caster.physiology.armor.melee -= 50
-					caster.physiology.armor.bullet -= 50
 					caster.remove_overlay(POTENCE_LAYER)
 					REMOVE_TRAIT(caster, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 					if(righthand_stonefist)
@@ -453,13 +440,6 @@
 /datum/effect_system/smoke_spread/bad/green/bone_shintai
 	effect_type = /obj/effect/particle_effect/smoke/bad/green/bone_shintai
 
-/obj/effect/particle_effect/smoke/bad/green/bone_shintai/smoke_mob(mob/living/carbon/inhaling_mob)
-	. = ..()
-	if(.)
-		inhaling_mob.adjustToxLoss(15, TRUE)
-		inhaling_mob.emote("cough")
-		return TRUE
-
 /obj/item/melee/vampirearms/knife/bone_shintai
 	name = "claws"
 	icon_state = "claws"
@@ -477,21 +457,14 @@
 		if(1)
 			ADD_TRAIT(caster, TRAIT_NOSOFTCRIT, MAGIC_TRAIT)
 			ADD_TRAIT(caster, TRAIT_NOHARDCRIT, MAGIC_TRAIT)
-			caster.physiology.armor.melee += 25
-			caster.physiology.armor.bullet += 25
 			caster.add_movespeed_modifier(/datum/movespeed_modifier/necroing)
-			var/initial_limbs_id = caster.dna.species.limbs_id
-			caster.dna.species.limbs_id = "rotten1"
 			caster.update_body()
 			ADD_TRAIT(caster, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
 					REMOVE_TRAIT(caster, TRAIT_NOSOFTCRIT, MAGIC_TRAIT)
 					REMOVE_TRAIT(caster, TRAIT_NOHARDCRIT, MAGIC_TRAIT)
-					caster.physiology.armor.melee -= 25
-					caster.physiology.armor.bullet -= 25
 					caster.remove_movespeed_modifier(/datum/movespeed_modifier/necroing)
-					caster.dna.species.limbs_id = initial_limbs_id
 					caster.update_body()
 					REMOVE_TRAIT(caster, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 		if(2)
@@ -528,8 +501,6 @@
 		if(5)
 			ADD_TRAIT(caster, TRAIT_NOSOFTCRIT, MAGIC_TRAIT)
 			ADD_TRAIT(caster, TRAIT_NOHARDCRIT, MAGIC_TRAIT)
-			caster.physiology.armor.melee += 25
-			caster.physiology.armor.bullet += 25
 			caster.unique_body_sprite = "rotten1"
 			caster.update_body()
 			caster.set_light(1.4,5,"#34D352")
@@ -538,8 +509,6 @@
 				if(caster)
 					REMOVE_TRAIT(caster, TRAIT_NOSOFTCRIT, MAGIC_TRAIT)
 					REMOVE_TRAIT(caster, TRAIT_NOHARDCRIT, MAGIC_TRAIT)
-					caster.physiology.armor.melee -= 25
-					caster.physiology.armor.bullet -= 25
 					caster.unique_body_sprite = null
 					caster.update_body()
 					caster.set_light(0)
@@ -576,7 +545,6 @@
 	speak_chance = 0
 	turns_per_move = 3
 	see_in_dark = 6
-	ventcrawler = VENTCRAWLER_ALWAYS
 	pass_flags = PASSTABLE
 	mob_size = MOB_SIZE_SMALL
 	mob_biotypes = MOB_UNDEAD
@@ -628,7 +596,7 @@
 /obj/item/ammo_casing/magic/ghostflame_shintai
 	name = "fire spit"
 	desc = "A spit."
-	projectile_type = /obj/projectile/magic/aoe/fireball/firebreath
+	projectile_type = /obj/projectile/magic/fireball/firebreath
 	caliber = CALIBER_TENTACLE
 	firing_effect_type = null
 	item_flags = DROPDEL
@@ -675,11 +643,11 @@
 				if(firekatana)
 					qdel(firekatana)
 		if(5)
-			caster.dna.species.burnmod = 0
+			caster.dna.species.heatmod = 0
 			ADD_TRAIT(caster, TRAIT_PERMANENTLY_ONFIRE, MAGIC_TRAIT)
 			ADD_TRAIT(caster, TRAIT_RESISTHEAT, MAGIC_TRAIT)
 			caster.set_fire_stacks(7)
-			caster.IgniteMob()
+			caster.ignite_mob()
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
 					REMOVE_TRAIT(caster, TRAIT_PERMANENTLY_ONFIRE, MAGIC_TRAIT)
@@ -688,11 +656,11 @@
 					if(caster.mind.dharma)
 						switch(caster.mind.dharma.animated)
 							if("Yang")
-								caster.dna.species.burnmod = 0.5
+								caster.dna.species.heatmod = 0.5
 							if("Yin")
-								caster.dna.species.burnmod = initial(caster.dna.species.burnmod)
+								caster.dna.species.heatmod = initial(caster.dna.species.heatmod)
 					else
-						caster.dna.species.burnmod = initial(caster.dna.species.burnmod)
+						caster.dna.species.heatmod = initial(caster.dna.species.heatmod)
 					caster.bodytemperature = BODYTEMP_NORMAL
 					caster.coretemperature = BODYTEMP_NORMAL
 
@@ -980,18 +948,13 @@
 	..()
 	switch(current_form)
 		if("Samurai")
-			var/mod = 10*level_casting
 			caster.remove_overlay(UNICORN_LAYER)
 			var/mutable_appearance/potence_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "samurai", -UNICORN_LAYER)
 			caster.overlays_standing[UNICORN_LAYER] = potence_overlay
 			caster.apply_overlay(UNICORN_LAYER)
-			caster.physiology.armor.melee += mod
-			caster.physiology.armor.bullet += mod
 			ADD_TRAIT(caster, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 			spawn((delay)+caster.discipline_time_plus)
 				if(caster)
-					caster.physiology.armor.melee -= mod
-					caster.physiology.armor.bullet -= mod
 					caster.remove_overlay(UNICORN_LAYER)
 					REMOVE_TRAIT(caster, TRAIT_NONMASQUERADE, TRAUMA_TRAIT)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/demonshintai_deactivate.ogg', 50, FALSE)
@@ -1064,8 +1027,6 @@
 							caster.remove_movespeed_modifier(/datum/movespeed_modifier/demonform5)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/demonshintai_deactivate.ogg', 50, FALSE)
 		if("Giant")
-			var/mod = level_casting*10
-			var/meleemod = level_casting*0.5
 			caster.remove_overlay(UNICORN_LAYER)
 			var/mutable_appearance/potence_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "giant", -UNICORN_LAYER)
 			caster.overlays_standing[UNICORN_LAYER] = potence_overlay
@@ -1098,9 +1059,10 @@
 		for(var/mob/living/carbon/grossed_out_mob in oviewers(3, caster))
 			if(prob(strength))
 				grossed_out_mob.Unconscious(0.5 SECONDS)
-			grossed_out_mob.adjust_blurriness(strength * 5)
+			var/obj/item/organ/eyes/eyes = grossed_out_mob.get_organ_slot(ORGAN_SLOT_EYES)
+			eyes.apply_organ_damage(strength * 5)
 
-			addtimer(CALLBACK(grossed_out_mob, TYPE_PROC_REF(/mob/living/carbon, adjust_blurriness), -strength * 5), duration)
+			addtimer(CALLBACK(grossed_out_mob, TYPE_PROC_REF(/obj/item/organ/eyes, apply_organ_damage), -strength * 5), duration)
 
 		sleep(3 SECONDS)
 
@@ -1127,17 +1089,9 @@
 /obj/effect/particle_effect/smoke/bad/yomi
 	name = "dark red smoke"
 	color = "#6f0000"
-	opaque = FALSE
 
 /datum/effect_system/smoke_spread/bad/yomi
 	effect_type = /obj/effect/particle_effect/smoke/bad/yomi
-
-/obj/effect/particle_effect/smoke/bad/yomi/smoke_mob(mob/living/carbon/inhaling_mob)
-	. = ..()
-	if(.)
-		inhaling_mob.adjustCloneLoss(10, TRUE)
-		inhaling_mob.emote(pick("scream", "groan", "cry"))
-		return TRUE
 
 /datum/movespeed_modifier/yomi_flashback
 	multiplicative_slowdown = 6
@@ -1196,20 +1150,9 @@
 
 /datum/chi_discipline/iron_mountain/activate(mob/living/target, mob/living/carbon/human/caster)
 	..()
-	var/mod = level_casting
-	var/bonus = 15 * mod
-//	caster.remove_overlay(FORTITUDE_LAYER)
-//	var/mutable_appearance/fortitude_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "mountain", -FORTITUDE_LAYER)
-//	caster.overlays_standing[FORTITUDE_LAYER] = fortitude_overlay
-//	caster.apply_overlay(FORTITUDE_LAYER)
-	caster.physiology.armor.melee += bonus
-	caster.physiology.armor.bullet += bonus
 	spawn(delay+caster.discipline_time_plus)
 		if(caster)
 			caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/ironmountain_deactivate.ogg', 50, FALSE)
-			caster.physiology.armor.melee -= bonus
-			caster.physiology.armor.bullet -= bonus
-//			caster.remove_overlay(FORTITUDE_LAYER)
 
 /datum/chi_discipline/kiai
 	name = "Kiai"
@@ -1224,7 +1167,6 @@
 /mob/living/carbon/human/proc/combat_to_caster()
 	walk(src, 0)
 	if(!CheckFrenzyMove())
-		set_glide_size(DELAY_TO_GLIDE_SIZE(total_multiplicative_slowdown()))
 		step_to(src,caster,0)
 		face_atom(caster)
 		set_combat_mode(TRUE)
@@ -1285,13 +1227,12 @@
 	delay = 12 SECONDS
 	cost_yang = 1
 	activate_sound = 'code/modules/wod13/sounds/beastshintai_activate.ogg'
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/werewolf_like/wolflike_shapeshift
+	var/datum/action/cooldown/spell/shapeshift/werewolf_like/wolflike_shapeshift
 
-/obj/effect/proc_holder/spell/targeted/shapeshift/werewolf_like
+/datum/action/cooldown/spell/shapeshift/werewolf_like
 	name = "Crinos Form"
 	desc = "Take on the shape a Crinos."
-	charge_max = 50
-	cooldown_min = 50
+	cooldown_time = 5 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
 	shapeshift_type = /mob/living/simple_animal/hostile/crinos_beast
@@ -1366,10 +1307,10 @@
 			caster.beastmaster |= bat
 			bat.beastmaster = caster
 		if(5)
-			wolflike_shapeshift.Shapeshift(caster)
+			wolflike_shapeshift.do_shapeshift(caster)
 			spawn(10 SECONDS + caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
-					wolflike_shapeshift.Restore(wolflike_shapeshift.myshape)
+					wolflike_shapeshift.do_unshapeshift(caster)
 					caster.Stun(1.5 SECONDS)
 
 /datum/chi_discipline/smoke_shintai
@@ -1380,23 +1321,21 @@
 	delay = 12 SECONDS
 	cost_yang = 1
 	activate_sound = 'code/modules/wod13/sounds/smokeshintai_activate.ogg'
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/smoke_form/smoke_shapeshift
-	var/obj/effect/proc_holder/spell/targeted/shapeshift/hidden_smoke_form/hidden_smoke_shapeshift
+	var/datum/action/cooldown/spell/shapeshift/smoke_form/smoke_shapeshift
+	var/datum/action/cooldown/spell/shapeshift/hidden_smoke_form/hidden_smoke_shapeshift
 
-/obj/effect/proc_holder/spell/targeted/shapeshift/smoke_form
+/datum/action/cooldown/spell/shapeshift/smoke_form
 	name = "Smoke Form"
 	desc = "Take on the shape a Smoke."
-	charge_max = 50
-	cooldown_min = 50
+	cooldown_time = 5 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
 	shapeshift_type = /mob/living/simple_animal/hostile/smokecrawler
 
-/obj/effect/proc_holder/spell/targeted/shapeshift/hidden_smoke_form
+/datum/action/cooldown/spell/shapeshift/hidden_smoke_form
 	name = "Smoke Form"
 	desc = "Take on the shape a Smoke."
-	charge_max = 50
-	cooldown_min = 50
+	cooldown_time = 5 SECONDS
 	revert_on_death = TRUE
 	die_with_shapeshifted_form = FALSE
 	shapeshift_type = /mob/living/simple_animal/hostile/smokecrawler/hidden
@@ -1409,7 +1348,6 @@
 	icon_living = "smoke"
 	mob_biotypes = MOB_ORGANIC
 	density = FALSE
-	ventcrawler = VENTCRAWLER_ALWAYS
 	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
 	mob_size = MOB_SIZE_TINY
 	speak_chance = 0
@@ -1493,22 +1431,22 @@
 				qdel(visual2)
 				qdel(visual3)
 		if(4)
-			smoke_shapeshift.Shapeshift(caster)
-			var/mob/living/simple_animal/hostile/host = smoke_shapeshift.myshape
+			smoke_shapeshift.do_shapeshift(caster)
+			var/mob/living/simple_animal/hostile/host = smoke_shapeshift.shapeshift_type
 			host.my_creator = null
 			playsound(get_turf(caster), 'sound/effects/smoke.ogg', 50, TRUE)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
-					smoke_shapeshift.Restore(smoke_shapeshift.myshape)
+					smoke_shapeshift.do_unshapeshift(caster)
 					caster.Stun(1.5 SECONDS)
 		if(5)
-			hidden_smoke_shapeshift.Shapeshift(caster)
-			var/mob/living/simple_animal/hostile/host = hidden_smoke_shapeshift.myshape
+			hidden_smoke_shapeshift.do_shapeshift(caster)
+			var/mob/living/simple_animal/hostile/host = hidden_smoke_shapeshift.shapeshift_type
 			host.my_creator = null
 			playsound(get_turf(caster), 'sound/effects/smoke.ogg', 50, TRUE)
 			spawn(30 SECONDS + caster.discipline_time_plus)
 				if(caster && caster.stat != DEAD)
-					hidden_smoke_shapeshift.Restore(hidden_smoke_shapeshift.myshape)
+					hidden_smoke_shapeshift.do_unshapeshift(caster)
 					caster.Stun(1.5 SECONDS)
 
 /datum/chi_discipline/storm_shintai
@@ -1523,8 +1461,7 @@
 /obj/item/melee/touch_attack/storm_shintai
 	name = "Storm touch"
 	desc = "ELECTROCUTE YOURSELF!"
-	catchphrase = null
-	on_use_sound = 'code/modules/wod13/sounds/lightning.ogg'
+	hitsound = 'code/modules/wod13/sounds/lightning.ogg'
 	icon_state = "zapper"
 	inhand_icon_state = "zapper"
 
@@ -1535,7 +1472,7 @@
 		to_chat(user, "<span class='warning'>You can't reach out!</span>")
 		return
 	var/mob/living/human_target = target
-	if(human_target.anti_magic_check())
+	if(HAS_TRAIT(human_target, TRAIT_ANTIMAGIC))
 		to_chat(user, "<span class='warning'>The spell can't seem to affect [human_target]!</span>")
 		to_chat(human_target, "<span class='warning'>You feel your flesh turn to stone for a moment, then revert back!</span>")
 		..()
@@ -1626,7 +1563,9 @@
 			caster.drop_all_held_items()
 			caster.put_in_active_hand(new /obj/item/gun/magic/hook/storm_shintai(caster))
 		if(4)
-			caster.dna.species.ToggleFlight(caster)
+			var/obj/item/organ/wings/functional/wings =caster.get_organ_slot(ORGAN_SLOT_EXTERNAL_WINGS)
+			if(wings)
+				wings.toggle_flight(caster)
 			caster.remove_overlay(FORTITUDE_LAYER)
 			var/mutable_appearance/fortitude_overlay = mutable_appearance('code/modules/wod13/icons.dmi', "tornado", -FORTITUDE_LAYER)
 			fortitude_overlay.pixel_y = -16
@@ -1634,7 +1573,7 @@
 			caster.apply_overlay(FORTITUDE_LAYER)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
-					caster.dna.species.ToggleFlight(caster)
+					wings.toggle_flight(caster)
 					caster.remove_overlay(FORTITUDE_LAYER)
 		if(5)
 			caster.remove_overlay(FORTITUDE_LAYER)
@@ -1688,9 +1627,6 @@
 	..()
 	switch(level_casting)
 		if(1)
-			caster.dna.species.punchdamagehigh += 5
-			caster.physiology.armor.melee += 15
-			caster.physiology.armor.bullet += 15
 			caster.dexterity += 2
 			caster.athletics += 2
 			caster.lockpicking += 2
@@ -1698,9 +1634,6 @@
 			caster.do_jitter_animation(1 SECONDS)
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
-					caster.dna.species.punchdamagehigh -= 5
-					caster.physiology.armor.melee -= 15
-					caster.physiology.armor.bullet -= 15
 					caster.dexterity -= 2
 					caster.athletics -= 2
 					caster.lockpicking -= 2
@@ -1751,9 +1684,6 @@
 				to_chat(caster, "<span class='warning'>You put your Demon into your Yang.</span>")
 		if(3)
 			for(var/mob/living/carbon/human/affected_mob in oviewers(5, caster))
-				affected_mob.dna.species.punchdamagehigh += 5
-				affected_mob.physiology.armor.melee += 15
-				affected_mob.physiology.armor.bullet += 15
 				affected_mob.dexterity += 2
 				affected_mob.athletics += 2
 				affected_mob.lockpicking += 2
@@ -1767,9 +1697,6 @@
 				spawn(delay+caster.discipline_time_plus)
 					qdel(celerity_effect)
 					if(affected_mob)
-						affected_mob.dna.species.punchdamagehigh -= 5
-						affected_mob.physiology.armor.melee -= 15
-						affected_mob.physiology.armor.bullet -= 15
 						affected_mob.dexterity -= 2
 						affected_mob.athletics -= 2
 						affected_mob.lockpicking -= 2
@@ -1815,13 +1742,13 @@
 			caster.update_sight()
 			caster.add_client_colour(/datum/client_colour/glass_colour/lightblue)
 			var/datum/atom_hud/abductor_hud = GLOB.huds[DATA_HUD_ABDUCTOR]
-			abductor_hud.add_hud_to(caster)
+			abductor_hud.add_atom_to_hud(caster)
 			caster.auspex_examine = TRUE
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
 					caster.auspex_examine = FALSE
 					caster.see_invisible = initial(caster.see_invisible)
-					abductor_hud.remove_hud_from(caster)
+					abductor_hud.remove_atom_from_hud(caster)
 					caster.stop_sound_channel(CHANNEL_DISCIPLINES)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/auspex_deactivate.ogg', 50, FALSE)
 					REMOVE_TRAIT(caster, TRAIT_NIGHT_VISION, TRAIT_GENERIC)
@@ -1834,13 +1761,13 @@
 			ADD_TRAIT(caster, TRAIT_NIGHT_VISION, TRAIT_GENERIC)
 			caster.update_sight()
 			var/datum/atom_hud/health_hud = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
-			health_hud.add_hud_to(caster)
+			health_hud.add_atom_to_hud(caster)
 			caster.auspex_examine = TRUE
 			spawn(delay+caster.discipline_time_plus)
 				if(caster)
 					caster.auspex_examine = FALSE
 					caster.see_invisible = initial(caster.see_invisible)
-					health_hud.remove_hud_from(caster)
+					health_hud.remove_atom_from_hud(caster)
 					caster.stop_sound_channel(CHANNEL_DISCIPLINES)
 					caster.playsound_local(caster.loc, 'code/modules/wod13/sounds/auspex_deactivate.ogg', 50, FALSE)
 					REMOVE_TRAIT(caster, TRAIT_THERMAL_VISION, TRAIT_GENERIC)
@@ -1935,23 +1862,26 @@
 		forceMove(get_step(src, direction))
 */
 
-/obj/effect/anomaly/grav_kuei
+/obj/effect/anomaly/grav/grav_kuei
 	name = "gravitational anomaly"
 	icon_state = "shield2"
 	density = FALSE
-	var/boing = 0
-	aSignal = /obj/item/assembly/signaler/anomaly/grav
-	drops_core = FALSE
+	boing = 0
+	anomaly_core = null
 	var/mob/owner
 
-/obj/effect/anomaly/grav_kuei/process(delta_time)
+/obj/effect/anomaly/grav/grav_kuei/Initialize(mapload, new_lifespan)
+	. = ..()
+	RegisterSignal(src, COMSIG_MOVABLE_CROSS, PROC_REF(on_cross))
+
+/obj/effect/anomaly/grav/grav_kuei/process(seconds_per_tick)
 	anomalyEffect()		//so it's kinda more faster?
 	if(death_time < world.time)
 		if(loc)
 			detonate()
 		qdel(src)
 
-/obj/effect/anomaly/grav_kuei/anomalyEffect()
+/obj/effect/anomaly/grav/grav_kuei/anomalyEffect()
 	..()
 	boing = TRUE
 	for(var/obj/affected_object in orange(4, src))
@@ -1968,29 +1898,20 @@
 	for(var/obj/affected_object in range(0, src))
 		if(!affected_object.anchored)
 			if(isturf(affected_object.loc))
-				var/turf/object_turf = affected_object.loc
-				if(object_turf.intact && HAS_TRAIT(affected_object, TRAIT_T_RAY_VISIBLE))
+				if(HAS_TRAIT(affected_object, TRAIT_T_RAY_VISIBLE))
 					continue
 			var/mob/living/target = locate() in view(4,src) - owner
 			if(target && !target.stat)
 				affected_object.throw_at(target, 5, 10)
 
-/obj/effect/anomaly/grav_kuei/Crossed(atom/movable/AM)
-	. = ..()
+/obj/effect/anomaly/grav/grav_kuei/proc/on_cross(atom/movable/AM)
 	gravShock(AM)
 
-/obj/effect/anomaly/grav_kuei/Bump(atom/A)
+/obj/effect/anomaly/grav/grav_kuei/Bump(atom/A)
 	gravShock(A)
 
-/obj/effect/anomaly/grav_kuei/Bumped(atom/movable/AM)
+/obj/effect/anomaly/grav/grav_kuei/Bumped(atom/movable/AM)
 	gravShock(AM)
-
-/obj/effect/anomaly/grav_kuei/proc/gravShock(mob/living/affected_mob)
-	if(boing && isliving(affected_mob) && !affected_mob.stat)
-		affected_mob.Paralyze(4 SECONDS)
-		var/atom/target = get_edge_target_turf(affected_mob, get_dir(src, get_step_away(affected_mob, src)))
-		affected_mob.throw_at(target, 5, 1)
-		boing = FALSE
 
 /datum/chi_discipline/tapestry/activate(mob/living/target, mob/living/carbon/human/caster)
 	..()
@@ -1998,7 +1919,7 @@
 		if(1)
 			caster.client.prefs.chat_toggles ^= CHAT_DEAD
 			caster.see_invisible = SEE_INVISIBLE_OBSERVER
-			notify_ghosts("All ghosts are being called by [caster]!", source = caster, action = NOTIFY_ORBIT, header = "Ghost Summoning")
+			notify_ghosts("All ghosts are being called by [caster]!", source = caster, header = "Ghost Summoning")
 			spawn(30 SECONDS)
 				if(caster)
 					caster.client?.prefs.chat_toggles &= ~CHAT_DEAD
@@ -2006,49 +1927,6 @@
 		if(2)
 			caster.yin_chi += 1
 			caster.yang_chi += 1
-			//disabled due to bugs, sorry!
-			/*
-			var/chosen_z
-			var/umbra_z
-			var/obj/penumbra_ghost/ghost
-
-			if(istype(caster.loc, /obj/penumbra_ghost))
-				ghost = caster.loc
-
-			for(var/area/vtm/interior/penumbra/penumbra in world)
-				if(penumbra)
-					chosen_z = penumbra.z
-					umbra_z = penumbra.z
-
-			if(caster.z != chosen_z)
-				prev_z = caster.z
-			else
-				chosen_z = prev_z
-				var/turf/caster_turf = get_turf(caster)
-				var/turf/to_wall = locate(caster_turf.x, caster_turf.y, chosen_z)
-				var/area/cross_area = get_area(to_wall)
-				if(cross_area)
-					if(cross_area.wall_rating > LOW_WALL_RATING)
-						to_chat(caster, "<span class='warning'><b>GAUNTLET</b> rating there is too high! You can't cross <b>PENUMBRA</b> like this...</span>")
-						caster.yin_chi += 1
-						caster.yang_chi += 1
-						return
-
-			if(do_mob(caster, caster, delay))
-				if(chosen_z != umbra_z)
-					var/atom/myloc = caster.loc
-					caster.forceMove(locate(myloc.x, myloc.y, chosen_z))
-					if(ghost)
-						qdel(ghost)
-				else
-					caster.z = chosen_z
-					ghost = new (get_turf(caster))
-					ghost.appearance = caster.appearance
-					ghost.name = caster.name
-					ghost.alpha = 128
-					caster.forceMove(ghost)
-				playsound(get_turf(caster), 'code/modules/wod13/sounds/portal.ogg', 100, TRUE)
-			*/
 		if(3)
 			ADD_TRAIT(caster, TRAIT_SUPERNATURAL_LUCK, "tapestry 3")
 			to_chat(caster, "<b>You feel insanely lucky!</b>")
@@ -2060,7 +1938,7 @@
 			var/teleport_to
 			teleport_to = input(caster, "Dragon Nest to travel to:", "BOOYEA", teleport_to) as null|anything in GLOB.teleportlocs
 			if(teleport_to)
-				if(do_mob(caster, caster, delay))
+				if(do_after(caster, delay, caster))
 					var/area/thearea = GLOB.teleportlocs[teleport_to]
 
 					var/datum/effect_system/smoke_spread/smoke = new
@@ -2076,12 +1954,12 @@
 						to_chat(caster, "<span class='warning'>There are no available destinations in that area!</span>")
 						return
 
-					if(do_teleport(caster, pick(available_turfs), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE))
+					if(do_teleport(caster, pick(available_turfs), channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE))
 						smoke.start()
 					else
 						to_chat(caster, "<span class='warning'>Something disrupted your travel!</span>")
 		if(5)
-			var/obj/effect/anomaly/grav_kuei/grav_anomaly = new (get_turf(caster))
+			var/obj/effect/anomaly/grav/grav_kuei/grav_anomaly = new (get_turf(caster))
 			grav_anomaly.owner = caster
 			spawn(30 SECONDS)
 				qdel(grav_anomaly)
@@ -2100,8 +1978,7 @@
 	name = "\improper shadow touch"
 	desc = "This is kind of like when you rub your feet on a shag rug so you can zap your friends, only a lot less safe."
 	icon = 'code/modules/wod13/weapons.dmi'
-	catchphrase = null
-	on_use_sound = 'sound/magic/disintegrate.ogg'
+	hitsound = 'sound/magic/disintegrate.ogg'
 	icon_state = "quietus"
 	color = "#343434"
 	inhand_icon_state = "mansus"
@@ -2121,7 +1998,7 @@
 		qdel(target)
 	if(isliving(target))
 		var/mob/living/target_mob = target
-		target_mob.adjustCloneLoss(20)
+		target_mob.adjustFireLoss(20, TRUE)
 		target_mob.AdjustKnockdown(2 SECONDS)
 	return ..()
 
@@ -2173,7 +2050,7 @@
 	cost_yang = 2
 	discipline_type = "Chi"
 	activate_sound = 'code/modules/wod13/sounds/yang_prana.ogg'
-	var/obj/effect/proc_holder/spell/targeted/ethereal_jaunt/jaunt
+	var/datum/action/cooldown/spell/jaunt/ethereal_jaunt/jaunt
 
 /datum/chi_discipline/yang_prana/activate(mob/living/target, mob/living/carbon/human/caster)
 	..()

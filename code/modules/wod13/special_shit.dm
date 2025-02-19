@@ -6,8 +6,13 @@
 	icon_state = "masquerade"
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/item_masquerade_contract
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/item_masquerade_contract
+	fire = 100
+	acid = 100
 
 /obj/item/masquerade_contract/attack_self(mob/user)
 	. = ..()
@@ -21,71 +26,7 @@
 				to_chat(user, "[H.true_real_name], Masquerade: [H.masquerade], Diablerist: [H.diablerist ? "<b>YES</b>" : "NO"], [get_area_name(H)] X:[TT.x] Y:[TT.y]")
 	else
 		to_chat(user, "No available Masquerade breakers in city...")
-/*
-/obj/item/masquerade_contract/attack(mob/living/M, mob/living/user)
-	. = ..()
-	if(iskindred(M) || isghoul(M))
-		var/mob/living/carbon/human/D = M
-		if(D.diablerist)
-			if(!GLOB.canon_event)
-				to_chat(user, "This is not a canon event!")
-				return
-			if(!M.client)
-				to_chat(user, "You need [M] attention to do that.")
-				return
-			if(M.stat >= HARD_CRIT)
-				var/datum/preferences/P = GLOB.preferences_datums[ckey(M.key)]
-//				var/extra = FALSE
-//				if(D.diablerist)
-//					extra = TRUE
-				M.death()
-				if(P)
-					P.reason_of_death = "Executed to sustain the Traditions ([time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")])."
-					reset_shit(M)
-				M.ghostize(FALSE)
-				to_chat(user, "<b>Successfully punished Traditions violator and restored the Masquerade.</b>")
-				var/mob/living/carbon/human/HM = user
-				HM.AdjustMasquerade(1)
-				HM.total_contracted += 2
-				return
-		if(M in GLOB.masquerade_breakers_list)
-			if(!GLOB.canon_event)
-				to_chat(user, "This is not a canon event!")
-				return
-			if(!M.client)
-				to_chat(user, "You need [M] attention to do that.")
-				return
-			if(M.stat >= HARD_CRIT)
-				var/datum/preferences/P = GLOB.preferences_datums[ckey(M.key)]
-//				var/extra = FALSE
-//				if(D.diablerist)
-//					extra = TRUE
-				M.death()
-				if(P)
-					P.reason_of_death = "Executed to sustain the Traditions ([time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")])."
-					reset_shit(M)
-				M.ghostize(FALSE)
-				to_chat(user, "<b>Successfully punished Traditions violator and restored the Masquerade.</b>")
-				var/mob/living/carbon/human/HM = user
-				HM.AdjustMasquerade(1)
-				HM.total_contracted += 1
-//				if(user.key)
-//					if(P)
-//						if(extra)
-//							P.exper = min(calculate_mob_max_exper(user), P.exper+1000)
-//						else
-//							P.exper = min(calculate_mob_max_exper(user), P.exper+500)
-				return
-			else
-				to_chat(user, "Target must be in critical condition or torpor.")
-				return
-		else
-			to_chat(user, "Target must have at least 2 Masquerade violations.")
-			return
-	else
-		to_chat(user, "Target must be kindred or ghoul.")
-		return
-*/
+
 /obj/item/drinkable_bloodpack
 	name = "\improper drinkable blood pack (full)"
 	desc = "Fast way to feed your inner beast."
@@ -96,7 +37,7 @@
 	righthand_file = 'code/modules/wod13/righthand.dmi'
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/item_drinkable_bloodpack
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 
@@ -104,6 +45,11 @@
 	var/feeding = FALSE
 	var/amount_of_bloodpoints = 2
 	var/vitae = FALSE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/item_drinkable_bloodpack
+	fire = 100
+	acid = 100
 
 /obj/item/drinkable_bloodpack/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -113,7 +59,7 @@
 	if(empty)
 		return
 	feeding = TRUE
-	if(do_mob(user, src, 3 SECONDS))
+	if(do_after(user, 3 SECONDS, src))
 		feeding = FALSE
 		empty = TRUE
 		icon_state = "blood0"
@@ -148,8 +94,13 @@
 	icon_state = "eye"
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_SMALL
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 100)
+	armor_type = /datum/armor/item_blood_hunt
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/item_blood_hunt
+	fire = 100
+	acid = 100
 
 /obj/item/blood_hunt/attack_self(mob/user)
 	. = ..()
@@ -350,25 +301,12 @@
 	GLOB.generators -= src
 	STOP_PROCESSING(SSobj, src)
 
-/obj/generator/process(delta_time)
+/obj/generator/process(seconds_per_tick)
 	if(on)
 		if(last_sound_played+40 <= world.time)
 			last_sound_played = world.time
 			playsound(loc, 'code/modules/wod13/sounds/guh.ogg', 50, FALSE)
-/*
-/mob/living/Life()
-	if(GLOB.canon_event)
-		if(client)
-			if(client.holder)
-				if(client.holder.rank.rights & R_ADMIN)
-					var/cool_guy = FALSE
-					for(var/i in GLOB.psychokids)
-						if(i == "[client.ckey]")
-							cool_guy = TRUE
-					if(!cool_guy)
-						client.deadmin()
-	..()
-*/
+
 /obj/item/argemia
 	name = "strange plushie"
 	desc = "Voiding..."
@@ -377,10 +315,11 @@
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 
-/obj/item/argemia/microwave_act(obj/machinery/microwave/M)
-	playsound(M.loc, 'code/modules/wod13/sounds/aeaeae.ogg', 100, FALSE)
+/obj/item/argemia/microwave_act(obj/machinery/microwave/microwave_source, mob/microwaver, randomize_pixel_offset)
+	. = ..()
+	playsound(microwave_source.loc, 'code/modules/wod13/sounds/aeaeae.ogg', 100, FALSE)
 	spawn(50)
-		explosion(M.loc, 0, 1, 2)
+		explosion(microwave_source.loc, 0, 1, 2)
 
 /obj/item/ravnos
 	name = "illusion"

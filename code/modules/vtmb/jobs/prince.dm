@@ -14,8 +14,6 @@
 
 	outfit = /datum/outfit/job/prince
 
-	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_access()
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
 
@@ -41,9 +39,8 @@
 	v_duty = "You are the top dog of this city. You hold Praxis over San Francisco, and your word is law. Make sure the Masquerade is upheld, and your status is respected."
 	experience_addition = 25
 
-/datum/job/vamp/prince/announce(mob/living/carbon/human/H)
-	..()
-	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, PROC_REF(minor_announce), "Prince [H.real_name] is in the city!"))
+/datum/job/vamp/prince/get_captaincy_announcement(mob/living/carbon/human/H)
+	return "Prince [H.real_name] is in the city!"
 
 /datum/outfit/job/prince
 	name = "Prince"

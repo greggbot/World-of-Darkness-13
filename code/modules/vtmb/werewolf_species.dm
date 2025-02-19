@@ -1,9 +1,6 @@
 /datum/species/garou
 	name = "Werewolf"
 	id = "garou"
-	default_color = "FFFFFF"
-	toxic_food = PINEAPPLE
-	species_traits = list(EYECOLOR, HAIR, FACEHAIR, LIPS, HAS_FLESH, HAS_BONE)
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER, TRAIT_VIRUSIMMUNE, TRAIT_PERFECT_ATTACKER)
 	use_skintones = TRUE
 	limbs_id = "human"
@@ -135,7 +132,7 @@
 
 	if(amount && sound)
 		if(prob(20))
-			C.emote("growl")
+			INVOKE_ASYNC(C, TYPE_PROC_REF(/mob/living/carbon, emote), "growl")
 			if(iscrinos(C))
 				playsound(get_turf(C), 'code/modules/wod13/sounds/crinos_growl.ogg', 75, FALSE)
 			if(islupus(C))

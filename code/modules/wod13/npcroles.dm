@@ -881,15 +881,14 @@
 	icon_dead = "bat_dead"
 	name = "bat"
 	desc = "It's a bat."
-	is_flying_animal = TRUE
 	maxHealth = 10
 	health = 10
 	speed = -0.8
 
-/mob/living/simple_animal/hostile/beastmaster/rat/flying/UnarmedAttack(atom/A)
+/mob/living/simple_animal/hostile/beastmaster/rat/flying/UnarmedAttack(atom/attack_target, proximity_flag, list/modifiers)
 	. = ..()
-	if(ishuman(A))
-		var/mob/living/carbon/human/H = A
+	if(ishuman(attack_target))
+		var/mob/living/carbon/human/H = attack_target
 		if(H.bloodpool)
 			if(prob(10))
 				H.bloodpool = max(0, H.bloodpool-1)
@@ -1131,7 +1130,7 @@
 			for(var/mob/living/carbon/human/H in oviewers(4, src))
 				if(H)
 					if(H.warrant)
-						Aggro(H, FALSE)
+						INVOKE_ASYNC(src, PROC_REF(Aggro), H)
 
 /datum/socialrole/guard
 	s_tones = list(
@@ -1251,11 +1250,11 @@
 			for(var/obj/machinery/jukebox/J in range(5, src))
 				if(J)
 					hasjukebox = TRUE
-					if(J.active)
+					if(J.music_player.active_song_sound)
 						if(prob(50))
-							dancefirst(src)
+							INVOKE_ASYNC(src, PROC_REF(dancefirst))
 						else
-							dancesecond(src)
+							INVOKE_ASYNC(src, PROC_REF(dancesecond))
 			if(!hasjukebox)
 				staying = FALSE
 
@@ -1391,7 +1390,7 @@
 			for(var/obj/structure/pole/P in range(1, src))
 				if(P)
 					drop_all_held_items()
-					ClickOn(P)
+					INVOKE_ASYNC(P, PROC_REF(ClickOn))
 
 /mob/living/carbon/human/npc/incel
 	staying = TRUE

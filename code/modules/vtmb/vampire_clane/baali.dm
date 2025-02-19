@@ -78,7 +78,7 @@
 
 /mob/living/simple_animal/hostile/baali_guard/proc/give_player()
 	set waitfor = FALSE
-	var/list/mob/dead/observer/candidates = pollCandidatesForMob("Do you want to play as Infernal Creature?", null, null, null, 50, src)
+	var/list/mob/dead/observer/candidates = SSpolling.poll_ghosts_for_target("Do you want to play as Infernal Creature?", null, null, null, 50, src)
 	for(var/mob/dead/observer/G in GLOB.player_list)
 		if(G.key)
 			to_chat(G, "<span class='ghostalert'>Someone is summoning a demon!</span>")

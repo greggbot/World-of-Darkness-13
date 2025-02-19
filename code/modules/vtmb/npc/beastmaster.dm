@@ -127,12 +127,10 @@ SUBSYSTEM_DEF(beastmastering)
 						targa = L
 
 	var/totalshit = 1
-	if(total_multiplicative_slowdown() > 0)
-		totalshit = total_multiplicative_slowdown()
 
 	if(targa)
 		var/reqsteps = round((SSbeastmastering.next_fire-world.time)/totalshit)
-		walk_to(src, targa, reqsteps, total_multiplicative_slowdown())
+		walk_to(src, targa, reqsteps)
 		if(get_dist(src, targa) <= 1)
 			ClickOn(targa)
 	else
@@ -141,7 +139,7 @@ SUBSYSTEM_DEF(beastmastering)
 				forceMove(get_turf(beastmaster))
 			else
 				var/reqsteps = round((SSbeastmastering.next_fire-world.time)/totalshit)
-				walk_to(src, beastmaster, reqsteps, total_multiplicative_slowdown())
+				walk_to(src, beastmaster, reqsteps)
 		else
 			walk(src, 0)
 
@@ -156,9 +154,9 @@ SUBSYSTEM_DEF(beastmastering)
 	if(!targa)
 		targa = L
 
-/mob/living/carbon/human/attack_hand(mob/user)
+/mob/living/carbon/human/attack_hand(mob/living/carbon/human/user)
 	if(user)
-		if(user.a_intent != INTENT_HELP)
+		if(user.combat_mode)
 			for(var/mob/living/simple_animal/hostile/beastmaster/B in beastmaster)
 				B.add_beastmaster_enemies(user)
 	..()
@@ -169,12 +167,12 @@ SUBSYSTEM_DEF(beastmastering)
 			B.add_beastmaster_enemies(user)
 	..()
 
-/mob/living/carbon/human/on_hit(obj/projectile/P)
+/mob/living/carbon/human/projectile_hit(obj/projectile/hitting_projectile, def_zone, piercing_hit, blocked)
 	. = ..()
-	if(P)
-		if(P.firer)
+	if(hitting_projectile)
+		if(hitting_projectile.firer)
 			for(var/mob/living/simple_animal/hostile/beastmaster/B in beastmaster)
-				B.add_beastmaster_enemies(P.firer)
+				B.add_beastmaster_enemies(hitting_projectile.firer)
 
 /mob/living/carbon/human/hitby(atom/movable/AM, skipcatch, hitpush = TRUE, blocked = FALSE, datum/thrownthing/throwingdatum)
 	. = ..()
@@ -202,19 +200,19 @@ SUBSYSTEM_DEF(beastmastering)
 				B.add_beastmaster_enemies(A)
 //				B.GiveTarget(A)
 
-/mob/living/simple_animal/hostile/beastmaster/attack_hand(mob/user)
+/mob/living/simple_animal/hostile/beastmaster/attack_hand(mob/living/carbon/human/user, list/modifiers)
 	if(user)
-		if(user.a_intent != INTENT_HELP)
+		if(user.combat_mode)
 			for(var/mob/living/simple_animal/hostile/beastmaster/B in beastmaster.beastmaster)
 				B.add_beastmaster_enemies(user)
 	..()
 
-/mob/living/simple_animal/hostile/beastmaster/on_hit(obj/projectile/P)
+/mob/living/simple_animal/hostile/beastmaster/projectile_hit(obj/projectile/hitting_projectile, def_zone, piercing_hit, blocked)
 	. = ..()
-	if(P)
-		if(P.firer)
+	if(hitting_projectile)
+		if(hitting_projectile.firer)
 			for(var/mob/living/simple_animal/hostile/beastmaster/B in beastmaster.beastmaster)
-				B.add_beastmaster_enemies(P.firer)
+				B.add_beastmaster_enemies(hitting_projectile.firer)
 
 /mob/living/simple_animal/hostile/beastmaster/hitby(atom/movable/AM, skipcatch, hitpush = TRUE, blocked = FALSE, datum/thrownthing/throwingdatum)
 	. = ..()

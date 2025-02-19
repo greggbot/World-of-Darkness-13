@@ -451,8 +451,11 @@
 
 /obj/machinery/light/prince/ghost
 
-/obj/machinery/light/prince/ghost/Crossed(atom/movable/AM)
+/obj/machinery/light/prince/ghost/Initialize(mapload)
 	. = ..()
+	RegisterSignal(src, COMSIG_MOVABLE_CROSS, PROC_REF(on_cross))
+
+/obj/machinery/light/prince/ghost/proc/on_cross(atom/movable/AM)
 	if(ishuman(AM))
 		var/mob/living/L = AM
 		if(L.client)
@@ -744,7 +747,7 @@
 	reagent_id = /datum/reagent/space_cleaner
 	icon_state = "water"
 
-/mob/living/carbon/human/MouseDrop(atom/over_object)
+/mob/living/carbon/human/mouse_drop_receive(atom/over_object, atom/user, params)
 	. = ..()
 	if(istype(over_object, /obj/structure/bloodextractor))
 		if(get_dist(src, over_object) < 2)
@@ -941,9 +944,6 @@
 		// Handle job slot/tater cleanup.
 		var/job = mob_occupant.mind.assigned_role
 		crew_member["job"] = job
-		SSjob.FreeRole(job, mob_occupant)
-//		if(LAZYLEN(mob_occupant.mind.objectives))
-//			mob_occupant.mind.objectives.Cut()
 		mob_occupant.mind.special_role = null
 	else
 		crew_member["job"] = "N/A"
@@ -963,7 +963,7 @@
 		gear = C.get_all_gear()
 		for(var/obj/item/item_content as anything in gear)
 			qdel(item_content)
-		for(var/mob/living/L in mob_occupant.GetAllContents() - mob_occupant)
+		for(var/mob/living/L in mob_occupant.get_all_contents() - mob_occupant)
 			L.forceMove(pod.loc)
 		if(mob_occupant.client)
 			mob_occupant.client.screen.Cut()
@@ -1011,28 +1011,21 @@
 	. = ..()
 	if(.)
 		return
-	if(obj_flags & IN_USE)
-		to_chat(user, "It's already in use - wait a bit.")
-		return
 	if(user.dancing)
 		return
-	else
-		obj_flags |= IN_USE
-		user.setDir(SOUTH)
-		user.Stun(100)
-		user.forceMove(src.loc)
-		user.visible_message("<B>[user] dances on [src]!</B>")
-		animatepole(user)
-		user.layer = layer //set them to the poles layer
-		obj_flags &= ~IN_USE
-		user.pixel_y = 0
-		icon_state = initial(icon_state)
+	user.setDir(SOUTH)
+	user.Stun(100)
+	user.forceMove(src.loc)
+	user.visible_message("<B>[user] dances on [src]!</B>")
+	animatepole(user)
+	user.layer = layer //set them to the poles layer
+	user.pixel_y = 0
+	icon_state = initial(icon_state)
 
 /obj/structure/pole/proc/animatepole(mob/living/user)
 	return
 
 /obj/structure/pole/animatepole(mob/living/user)
-
 	if (user.loc != src.loc)
 		return
 	animate(user,pixel_x = -6, pixel_y = 0, time = 10)
@@ -1464,7 +1457,7 @@
 		if(!burying)
 			burying = TRUE
 			user.visible_message("<span class='warning'>[user] starts to dig [src]</span>", "<span class='warning'>You start to dig [src].</span>")
-			if(do_mob(user, src, 10 SECONDS))
+			if(do_after(user, 10 SECONDS, src))
 				burying = FALSE
 				if(icon_state == "pit0")
 					var/dead_amongst = FALSE
@@ -1492,7 +1485,7 @@
 /obj/structure/bury_pit/container_resist_act(mob/living/user)
 	if(!burying)
 		burying = TRUE
-		if(do_mob(user, src, 30 SECONDS))
+		if(do_after(user, 30 SECONDS, src))
 			for(var/mob/living/L in src)
 				L.forceMove(get_turf(src))
 			icon_state = "pit0"

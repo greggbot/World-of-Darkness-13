@@ -47,9 +47,7 @@
 
 	outfit = /datum/outfit/job/police_sergeant
 
-	access = list(ACCESS_HYDROPONICS, ACCESS_ARMORY, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_HARD
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_POLICE_SERGEANT
 	exp_granted_type = EXP_TYPE_POLICE
@@ -86,9 +84,7 @@
 
 	outfit = /datum/outfit/job/police_chief
 
-	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_ARMORY, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE)
-	paycheck = PAYCHECK_COMMAND
+	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
 	display_order = JOB_DISPLAY_ORDER_POLICE_CHIEF
 	exp_granted_type = EXP_TYPE_POLICE

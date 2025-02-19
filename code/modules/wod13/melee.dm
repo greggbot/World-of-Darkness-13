@@ -4,7 +4,7 @@
 	worn_icon = 'code/modules/wod13/worn.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	var/quieted = FALSE
-	cost = 25
+	var/cost = 25
 
 /obj/item
 	var/masquerade_violating = FALSE
@@ -31,7 +31,6 @@
 	block_chance = 15
 	pixel_w = -8
 	masquerade_violating = FALSE
-	var/wielded = FALSE
 
 /obj/item/melee/vampirearms/fireaxe/Initialize()
 	. = ..()
@@ -40,34 +39,15 @@
 	AddComponent(/datum/component/butchering, 100, 80, 0 , hitsound)
 	AddComponent(/datum/component/two_handed, force_unwielded=10, force_wielded=70, icon_wielded="fireaxe1")
 
-/obj/item/melee/vampirearms/fireaxe/proc/on_wield(obj/item/source, mob/user)
-	SIGNAL_HANDLER
-
-	wielded = TRUE
-
-/obj/item/melee/vampirearms/fireaxe/proc/on_unwield(obj/item/source, mob/user)
-	SIGNAL_HANDLER
-
-	wielded = FALSE
-
 /obj/item/melee/vampirearms/fireaxe/update_icon_state()
-	icon_state = "fireaxe0"
-
-/obj/item/melee/vampirearms/fireaxe/afterattack(atom/A, mob/user, proximity)
 	. = ..()
-	if(!proximity)
-		return
-	if(wielded)
-		if(istype(A, /obj/structure/window) || istype(A, /obj/structure/grille))
-			var/obj/structure/W = A
-			W.obj_destruction("fireaxe")
+	icon_state = "fireaxe0"
 
 /obj/item/melee/vampirearms/katana
 	name = "katana"
 	desc = "An elegant weapon, its tiny edge is capable of cutting through flesh and bone with ease."
 	icon = 'code/modules/wod13/48x32weapons.dmi'
 	icon_state = "katana"
-	flags_1 = CONDUCT_1
 	force = 55
 	throwforce = 10
 	w_class = WEIGHT_CLASS_BULKY
@@ -114,14 +94,13 @@
 	. = ..()
 	if (isliving(target) && proximity)
 		var/mob/living/burnt_mob = target
-		burnt_mob.apply_damage(30, CLONE)
+		burnt_mob.apply_damage(30, BRUTE)
 
 /obj/item/melee/vampirearms/rapier
 	name = "rapier"
 	desc = "A thin, elegant sword, the rapier is a weapon of the duelist, designed for thrusting."
 	icon = 'code/modules/wod13/weapons.dmi'
 	icon_state = "rapier"
-	flags_1 = CONDUCT_1
 	force = 48
 	throwforce = 10
 	block_chance = 45
@@ -143,7 +122,6 @@
     desc = "A certified chopper fit for the jungles...but you don't see any vines around. Well-weighted enough to be thrown."
     icon = 'code/modules/wod13/weapons.dmi'
     icon_state = "machete"
-    flags_1 = CONDUCT_1
     force = 45
     throwforce = 30
     w_class = WEIGHT_CLASS_BULKY
@@ -166,7 +144,6 @@
 	desc = "A curved sword, the sabre is a weapon of the cavalry, designed for slashing and thrusting."
 	icon = 'code/modules/wod13/weapons.dmi'
 	icon_state = "sabre"
-	flags_1 = CONDUCT_1
 	force = 56
 	throwforce = 10
 	w_class = WEIGHT_CLASS_BULKY
@@ -188,7 +165,6 @@
 	desc = "A classic weapon of the knight, the longsword is a versatile weapon that can be used for both cutting and thrusting."
 	icon = 'code/modules/wod13/weapons.dmi'
 	icon_state = "longsword"
-	flags_1 = CONDUCT_1
 	force = 58
 	throwforce = 10
 	w_class = WEIGHT_CLASS_BULKY
@@ -217,7 +193,6 @@
 	righthand_file = 'code/modules/wod13/lefthand.dmi'
 	worn_icon = 'code/modules/wod13/worn.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
-	component_type = /datum/component/storage/concrete/vtm/sheathe
 
 /obj/item/storage/belt/vampire/sheathe/longsword
 	desc = "An ornate sheath designed to hold a knight's blade."
@@ -234,13 +209,13 @@
 	icon_state = "sabre_sheathe-1"
 	worn_icon_state = "sabre_sheathe"
 
-/obj/item/storage/belt/vampire/sheathe/ComponentInitialize()
+/obj/item/storage/belt/vampire/sheathe/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/update_icon_updates_onmob)
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 1
+	var/datum/storage/STR = GetComponent(/datum/storage)
+	STR.max_slots = 1
 	STR.rustle_sound = FALSE
-	STR.max_w_class = WEIGHT_CLASS_BULKY
+	STR.max_specific_storage = WEIGHT_CLASS_BULKY
 	if(istype(src, /obj/item/storage/belt/vampire/sheathe/longsword))
 		STR.set_holdable(list(
 		/obj/item/melee/vampirearms/longsword
@@ -266,14 +241,12 @@
 		var/obj/item/I = contents[1]
 		user.visible_message("<span class='notice'>[user] takes [I] out of [src].</span>", "<span class='notice'>You take [I] out of [src].</span>")
 		user.put_in_hands(I)
-		var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-		if(STR)
-			STR.grid_remove_item(I)
 		update_icon()
 	else
 		to_chat(user, "<span class='warning'>[src] is empty!</span>")
 
 /obj/item/storage/belt/vampire/sheathe/update_icon_state()
+	. = ..()
 	icon_state = initial(icon_state)
 	if(contents.len)
 		var/obj/item/I = contents[1]
@@ -388,7 +361,7 @@
 		return
 	if(isliving(target))
 		var/mob/living/L = target
-		L.apply_damage(30, CLONE)
+		L.apply_damage(30, BRUTE)
 
 /obj/item/melee/vampirearms/knife/gangrel/lasombra
 	name = "shadow tentacle"
@@ -403,15 +376,13 @@
 		return
 	if(isliving(target))
 		var/mob/living/L = target
-		L.apply_damage(16, CLONE)
+		L.apply_damage(16, BRUTE)
 		L.apply_damage(7, BURN)
 
 /obj/item/melee/touch_attack/quietus
 	name = "\improper poison touch"
 	desc = "This is kind of like when you rub your feet on a shag rug so you can zap your friends, only a lot less safe."
 	icon = 'code/modules/wod13/weapons.dmi'
-	catchphrase = null
-	on_use_sound = 'sound/magic/disintegrate.ogg'
 	icon_state = "quietus"
 	inhand_icon_state = "mansus"
 
@@ -429,8 +400,6 @@
 	name = "\improper falling touch"
 	desc = "This is kind of like when you rub your feet on a shag rug so you can zap your friends, only a lot less safe."
 	icon = 'code/modules/wod13/weapons.dmi'
-	catchphrase = null
-	on_use_sound = 'sound/magic/disintegrate.ogg'
 	icon_state = "falling"
 	inhand_icon_state = "disintegrate"
 
@@ -466,14 +435,13 @@
 
 /obj/item/melee/vampirearms/knife/gangrel/Initialize()
 	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT(src))
 
 /obj/item/melee/vampirearms/chainsaw
 	name = "chainsaw"
 	desc = "A versatile power tool. Useful for limbing trees and delimbing humans."
 	icon = 'code/modules/wod13/weapons.dmi'
 	icon_state = "chainsaw"
-	flags_1 = CONDUCT_1
 	force = 15
 	var/force_on = 150
 	w_class = WEIGHT_CLASS_BULKY
@@ -490,7 +458,6 @@
 	resistance_flags = FIRE_PROOF
 	is_iron = TRUE
 	var/on = FALSE
-	var/wielded = FALSE
 
 /obj/item/melee/vampirearms/chainsaw/Initialize()
 	. = ..()
@@ -502,15 +469,6 @@
 	AddComponent(/datum/component/butchering, 30, 100, 0, 'sound/items/weapons/chainsawhit.ogg', TRUE)
 	AddComponent(/datum/component/two_handed, require_twohands=TRUE)
 
-/obj/item/melee/vampirearms/chainsaw/proc/on_wield(obj/item/source, mob/user)
-	SIGNAL_HANDLER
-
-	wielded = TRUE
-
-/obj/item/melee/vampirearms/chainsaw/proc/on_unwield(obj/item/source, mob/user)
-	SIGNAL_HANDLER
-
-	wielded = FALSE
 
 /obj/item/melee/vampirearms/chainsaw/attack_self(mob/user)
 	on = !on
@@ -525,11 +483,6 @@
 	else
 		hitsound = "swing_hit"
 
-	if(src == user.get_active_held_item())
-		user.update_inv_hands()
-	for(var/X in actions)
-		var/datum/action/A = X
-		A.UpdateButtonIcon()
 
 /obj/item/vampire_stake
 	name = "stake"
@@ -580,10 +533,14 @@
 	w_class = WEIGHT_CLASS_BULKY
 	attack_verb_continuous = list("attacks", "chops", "tears", "beats")
 	attack_verb_simple = list("attack", "chop", "tear", "beat")
-	armor = list(MELEE = 25, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 0, ACID = 0)
+	armor_type = /datum/armor/vampirearms_shovel
 	resistance_flags = FIRE_PROOF
 	masquerade_violating = FALSE
 	is_iron = TRUE
+
+/// Automatically generated armor datum, errors may exist
+/datum/armor/vampirearms_shovel
+	melee = 25
 
 /obj/item/melee/vampirearms/shovel/attack(mob/living/target, mob/living/user)
 	. = ..()
@@ -627,15 +584,13 @@
 	hitsound = 'code/modules/wod13/sounds/rock.ogg'
 	sharpness = SHARP_EDGED
 	max_integrity = 200
-	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 30)
+	armor_type = /datum/armor/vampirearms_eguitar
 	resistance_flags = FIRE_PROOF
 	wound_bonus = -15
 	bare_wound_bonus = 15
 	armour_penetration = 30
 	pixel_w = -8
-	actions_types = list(/datum/action/item_action/eguitar)
 	is_wood = TRUE
-	var/wielded = FALSE
 	var/on = FALSE
 	var/last_solo = 0
 
@@ -656,22 +611,7 @@
 
 /obj/item/melee/vampirearms/eguitar/Initialize()
 	. = ..()
-	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(on_wield))
-	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(on_unwield))
-
-/obj/item/melee/vampirearms/eguitar/ComponentInitialize()
-	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded=40, force_wielded=10, icon_wielded="rock1")
-
-/obj/item/melee/vampirearms/eguitar/proc/on_wield(obj/item/source, mob/user)
-	SIGNAL_HANDLER
-
-	wielded = TRUE
-
-/obj/item/melee/vampirearms/eguitar/proc/on_unwield(obj/item/source, mob/user)
-	SIGNAL_HANDLER
-
-	wielded = FALSE
 
 /obj/item/melee/vampirearms/eguitar/update_icon_state()
 	. = ..()
@@ -694,7 +634,6 @@
 	attack_verb_continuous = list("shoves", "bashes")
 	attack_verb_simple = list("shove", "bash")
 	max_integrity = 999999
-	material_flags = MATERIAL_NO_EFFECTS
 	is_wood = TRUE
 
 /obj/item/melee/classic_baton/vampire
@@ -716,7 +655,6 @@
 /obj/item/melee/vampirearms/knife/switchblade
 	name = "switchblade"
 	desc = "A spring-loaded knife. Perfect for stabbing sharks and jets."
-	flags_1 = CONDUCT_1
 	force = 5
 	icon_state = "switchblade" //sprite by Spefo
 	w_class = WEIGHT_CLASS_NORMAL

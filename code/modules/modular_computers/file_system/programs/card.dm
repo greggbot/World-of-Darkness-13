@@ -312,4 +312,12 @@
 			data["trimAssignment"] = ""
 			data["trimAccess"] = list()
 
+	data["has_id"] = !!inserted_id
+	data["id_name"] = inserted_id ? inserted_id.name : "-----"
+	if(inserted_id)
+		data["id_rank"] = inserted_id.assignment ? inserted_id.assignment : "Unassigned"
+		data["id_owner"] = inserted_id.registered_name ? inserted_id.registered_name : "-----"
+		data["access_on_card"] = inserted_id.access
+		data["wildcardSlots"] = inserted_id.wildcard_slots
+		data["id_age"] = inserted_id.registered_age
 	return data

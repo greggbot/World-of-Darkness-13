@@ -190,6 +190,7 @@ GLOBAL_LIST_INIT(creepy_ambience,list(
 	'sound/effects/hallucinations/wail.ogg',
 ))
 
+
 GLOBAL_LIST_INIT(ambience_assoc,list(
 	AMBIENCE_AWAY = GLOB.away_ambience,
 	AMBIENCE_CREEPY = GLOB.creepy_ambience,

@@ -247,7 +247,7 @@
 
 /obj/ritualrune/question/complete()
 	visible_message("<span class='notice'>A call rings out to the dead from the [src.name] rune...</span>")
-	var/list/mob/dead/observer/candidates = pollCandidatesForMob("Do you wish to answer a question? (You are allowed to spread meta information)", null, null, null, 10 SECONDS, src)
+	var/list/mob/dead/observer/candidates = SSpolling.poll_ghosts_for_target("Do you wish to answer a question? (You are allowed to spread meta information)", null, null, null, 10 SECONDS, src)
 	for(var/mob/dead/observer/G in GLOB.player_list)
 		if(G.key)
 			to_chat(G, "<span class='ghostalert'>Question rune has been triggered.</span>")
@@ -361,7 +361,7 @@
 			cursed = namem
 			for(var/mob/living/carbon/human/H in GLOB.player_list)
 				if(H.real_name == cursed)
-					H.adjustCloneLoss(25)
+					H.adjustFireLoss(25)
 					playsound(H.loc, 'code/modules/wod13/sounds/thaum.ogg', 50, FALSE)
 					to_chat(H, "<span class='warning'>You feel someone repeating your name from the shadows...</span>")
 					H.Stun(10)
@@ -403,7 +403,7 @@
 				H.forceMove(get_turf(src))
 				H.create_disciplines(FALSE, H.clane.clane_disciplines)
 				if(!H.key)
-					var/list/mob/dead/observer/candidates = pollCandidatesForMob("Do you wish to play as Sentient Gargoyle?", null, null, null, 50, src)
+					var/list/mob/dead/observer/candidates = SSpolling.poll_ghosts_for_target("Do you wish to play as Sentient Gargoyle?", null, null, null, 50, src)
 					for(var/mob/dead/observer/G in GLOB.player_list)
 						if(G.key)
 							to_chat(G, "<span class='ghostalert'>Gargoyle Transformation rune has been triggered.</span>")

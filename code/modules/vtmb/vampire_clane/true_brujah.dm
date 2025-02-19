@@ -19,7 +19,7 @@
 		var/datum/action/clock/clocke = new()
 		clocke.Grant(H)
 	if(level >= 4)
-		var/datum/action/temporis_step/tstep = new()
+		var/datum/action/cooldown/temporis_step/tstep = new()
 		tstep.Grant(H)
 	if(level >= 5)
 		var/datum/action/clotho/clot = new()
@@ -36,17 +36,16 @@
 	. = ..()
 	to_chat(usr, "<b>[SScity_time.timeofnight]</b>")
 
-var/datum/martial_art/cowalker/style
 
-/datum/action/temporis_step
+/datum/action/cooldown/temporis_step
 	name = "Cowalker"
 	desc = "Stop time for a moment in order to appear in two places at once."
 	button_icon_state = "Cowalker"
 	check_flags = AB_CHECK_CONSCIOUS
 	vampiric = TRUE
-	var/spam_fix = 0
+	var/datum/martial_art/cowalker/style
 
-/proc/tempstep(mob/living/M)
+/datum/action/cooldown/temporis_step/proc/tempstep(mob/living/M)
 	style = new
 	if(M.temporis_visual)
 		return
@@ -82,19 +81,18 @@ var/datum/martial_art/cowalker/style
 		return
 	H.bloodpool = max(0, H.bloodpool-1)
 	playsound(H.loc, 'code/modules/wod13/sounds/temporis.ogg', 50, FALSE)
-	spam_fix = world.time
 	var/mob/living/carbon/human/M = usr
 	tempstep(M)
 
-/datum/action/clotho
+/datum/action/cooldown/clotho
 	name = "Clotho's Gift"
 	desc = "Accelerate your time frame in order to move and act faster."
 	button_icon_state = "Clotho"
 	check_flags = AB_CHECK_CONSCIOUS
 	vampiric = TRUE
-	var/spam_fix = 0
+	var/datum/martial_art/cowalker/style
 
-/proc/clothogift(mob/living/M)
+/datum/action/cooldown/clotho/proc/clothogift(mob/living/M)
 	style = new
 	if(M.temporis_blur)
 		return
@@ -127,6 +125,5 @@ var/datum/martial_art/cowalker/style
 		return
 	H.bloodpool = max(0, H.bloodpool-3)
 	playsound(H.loc, 'code/modules/wod13/sounds/temporis.ogg', 50, FALSE)
-	spam_fix = world.time
 	var/mob/living/carbon/human/M = usr
 	clothogift(M)

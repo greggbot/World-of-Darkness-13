@@ -55,10 +55,11 @@
 				switch(loadout_type)
 					if("Numina")
 						to_chat(H, "<span class='alertsyndie'>You have been blessed with psychic powers. They make you extraordinary among mortals, yet you still fear the horrors lurking unknown.</span>")
-						var/obj/effect/proc_holder/spell/targeted/numina_freeze/n_freeze = new(H)
-						var/obj/effect/proc_holder/spell/self/numina_heal/n_heal = new(H)
+						var/datum/action/targeted/numina_freeze/n_freeze = new(H)
+						var/datum/spell/self/numina_heal/n_heal = new(H)
 						H.mind.AddSpell(n_freeze)
 						H.mind.AddSpell(n_heal)
+
 					if("True Faith")
 						H.mind.holy_role = HOLY_ROLE_PRIEST
 						H.resistant_to_disciplines = TRUE

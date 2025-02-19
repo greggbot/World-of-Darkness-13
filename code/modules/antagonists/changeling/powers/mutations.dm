@@ -337,6 +337,10 @@
 	gun = loc
 	. = ..()
 
+/obj/projectile/tentacle/lasombra
+	damage_type = BURN
+	state_icon = "curse0"
+
 /obj/item/ammo_casing/magic/tentacle/Destroy()
 	gun = null
 	return ..()

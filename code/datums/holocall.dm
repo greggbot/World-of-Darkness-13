@@ -358,7 +358,7 @@
 	outfit_type = /datum/outfit/job/assistant
 
 /obj/item/disk/holodisk/example
-	preset_image_type = /datum/preset_holoimage/clown
+	preset_image_type = /datum/preset_holoimage/corgi
 	preset_record_text = {"
 	NAME Clown
 	DELAY 10
@@ -367,7 +367,7 @@
 	SAY He wanted to get to the other side!
 	SOUND clownstep
 	DELAY 30
-	LANGUAGE /datum/language/narsie
+	LANGUAGE /datum/language/espanol
 	SAY Helped him get there!
 	DELAY 10
 	SAY ALSO IM SECRETLY A GORILLA
@@ -381,7 +381,7 @@
 /obj/item/disk/holodisk/donutstation/whiteship
 	name = "Blackbox Print-out #DS024"
 	desc = "A holodisk containing the last viable recording of DS024's blackbox."
-	preset_image_type = /datum/preset_holoimage/engineer/ce
+	preset_image_type = /datum/preset_holoimage/corgi
 	preset_record_text = {"
 	NAME Geysr Shorthalt
 	SAY Engine renovations complete and the ships been loaded. We all ready?
@@ -427,7 +427,7 @@
 /obj/item/disk/holodisk/ruin/snowengieruin
 	name = "Blackbox Print-out #EB412"
 	desc = "A holodisk containing the last moments of EB412. There's a bloody fingerprint on it."
-	preset_image_type = /datum/preset_holoimage/engineer
+	preset_image_type = /datum/preset_holoimage/corgi
 	preset_record_text = {"
 	NAME Dave Tundrale
 	SAY Maria, how's Build?

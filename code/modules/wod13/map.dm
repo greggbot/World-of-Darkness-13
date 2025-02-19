@@ -89,10 +89,10 @@
 	var/obj/damap/theatre/TH = new(user)
 	var/obj/damap/bar/BA = new(user)
 	var/obj/damap/hospital/HS = new(user)
-	var/obj/overlay/AM = new(DAMAP)
+	var/obj/effect/overlay/AM = new(DAMAP)
 	AM.icon = 'code/modules/wod13/disciplines.dmi'
 	AM.icon_state = "target"
-	AM.layer = ABOVE_HUD_LAYER
+	AM.plane = ABOVE_HUD_PLANE
 	AM.pixel_x = x-4
 	AM.pixel_y = y-4
 	DAMAP.overlays |= AM
@@ -128,13 +128,10 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "cryostasis_sleeper"
 	outfit = /datum/outfit/civillian1
-	roundstart = FALSE
-	death = FALSE
-	random = FALSE
 	mob_species = /datum/species/human
-	short_desc = "You just woke up from strange noises outside. This city is totally cursed..."
+	you_are_text = "You just woke up from strange noises outside. This city is totally cursed..."
 	flavour_text = "Each day you notice some weird shit going at night. Each day, new corpses, new missing people, new police-don't-give-a-fuck. This time you definitely should go and see the mysterious powers of the night... or not? You are too afraid because you are not aware of it."
-	assignedrole = "Civillian"
+	spawner_job_path = /datum/job/vamp/citizen
 
 /obj/effect/mob_spawn/ghost_role/human/citizen/Initialize(mapload)
 	. = ..()
@@ -202,51 +199,45 @@
 
 /obj/effect/mob_spawn/ghost_role/human/corpse/ciz1
 	name = "Citizen"
-	id_job = "Citizen"
 	outfit = /datum/outfit/civillian1
 
 /obj/effect/mob_spawn/ghost_role/human/corpse/ciz2
 	name = "Citizen"
-	id_job = "Citizen"
 	outfit = /datum/outfit/civillian2
 
 /obj/effect/mob_spawn/ghost_role/human/corpse/ciz3
 	name = "Citizen"
-	id_job = "Citizen"
 	outfit = /datum/outfit/civillian3
 
 /obj/effect/mob_spawn/ghost_role/human/corpse/ciz4
 	name = "Citizen"
-	id_job = "Citizen"
 	outfit = /datum/outfit/civillian4
 
 /datum/outfit/syndicatecommandocorpse
 	name = "Syndicate Commando Corpse"
 	uniform = /obj/item/clothing/under/syndicate
-	suit = /obj/item/clothing/suit/space/hardsuit/syndi
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 	ears = /obj/item/radio/headset
 	mask = /obj/item/clothing/mask/gas/syndicate
 	back = /obj/item/tank/jetpack/oxygen
 	r_pocket = /obj/item/tank/internals/emergency_oxygen
-	id = /obj/item/card/id/syndicate
 // TRIAD
 
 /obj/effect/mob_spawn/ghost_role/human/triad_soldier
 	name = "a triad soldier"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a triad soldier"
-	icon = 'icons/obj/lavaland/spawners.dmi'
+	icon = 'icons/obj/mining_zones/spawners.dmi'
 	icon_state = "cryostasis_sleeper"
 	outfit = /datum/outfit/triadsoldier
 	roundstart = FALSE
 	death = FALSE
 	random = FALSE
 	mob_species = /datum/species/human
-	short_desc = "You were sleeping. But you can't anymore."
+	you_are_text = "You were sleeping. But you can't anymore."
 	flavour_text = "You woke up because of the stupid washing machines. Probably better that you go and check what the gang's up to..."
-	assignedrole = "Triad Soldier"
+	spawner_job_path = /datum/job/vamp/triad_soldier
 
 /obj/effect/mob_spawn/ghost_role/human/triad_soldier/special(mob/living/new_spawn)
 	. = ..()
@@ -275,16 +266,13 @@
 	name = "a police officer"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a police officer"
-	icon = 'icons/obj/lavaland/spawners.dmi'
+	icon = 'icons/obj/mining_zones/spawners.dmi'
 	icon_state = "cryostasis_sleeper"
 	outfit = /datum/outfit/policeofficer
-	roundstart = FALSE
-	death = FALSE
-	random = FALSE
 	mob_species = /datum/species/human
-	short_desc = "You worked a simple night shift, but then..."
+	you_are_text = "You worked a simple night shift, but then..."
 	flavour_text = "You woke up on your regular night shift and noticed something strange happening in the city. Only man interested in finding the truth is you..."
-	assignedrole = "Police Officer"
+	spawner_job_path = /datum/job/vamp/police_officer
 
 /obj/effect/mob_spawn/ghost_role/human/police/special(mob/living/new_spawn)
 	. = ..()
@@ -313,16 +301,13 @@
 	name = "a chaplain"
 	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is broken and it's likely being used as a bed."
 	mob_name = "a chaplain"
-	icon = 'icons/obj/lavaland/spawners.dmi'
+	icon = 'icons/obj/mining_zones/spawners.dmi'
 	icon_state = "cryostasis_sleeper"
 	outfit = /datum/outfit/achaplain
-	roundstart = FALSE
-	death = FALSE
-	random = FALSE
 	mob_species = /datum/species/human
-	short_desc = "You were guarding the Church, but then..."
+	you_are_text = "You were guarding the Church, but then..."
 	flavour_text = "You are a man of true Faith, but people in this city are not. You should protect the House of God..."
-	assignedrole = "Chaplain"
+	spawner_job_path = /datum/job/vamp/priest
 
 /obj/effect/mob_spawn/ghost_role/human/achaplain/special(mob/living/new_spawn)
 	. = ..()
@@ -355,7 +340,7 @@
 	icon_state = "sleeper"
 	outfit = /datum/outfit/chunk
 	mob_species = /datum/species/human
-	short_desc = "You are working the night shift on Millenium Towers, just like any other night...."
+	you_are_text = "You are working the night shift on Millenium Towers, just like any other night...."
 	flavour_text = "You are up late protecting Millenium Towers on behalf of your pasty-faced, but filthy rich, boss. Come to think of it, you only ever see him at night..."
 	assignedrole = "Millenium Tower Secuity Guard"
 	spawner_job_path = /datum/job/

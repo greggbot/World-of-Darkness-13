@@ -112,7 +112,7 @@
 			if(H.reagents)
 				if(length(H.reagents.reagent_list))
 					if(prob(50))
-						H.reagents.trans_to(src, min(10, H.reagents.total_volume), transfered_by = mob, methods = VAMPIRE)
+						H.reagents.trans_to(src, min(10, H.reagents.total_volume), transferred_by = mob, methods = VAMPIRE)
 		if(clane)
 			if(clane.name == "Giovanni")
 				mob.adjustBruteLoss(20, TRUE)

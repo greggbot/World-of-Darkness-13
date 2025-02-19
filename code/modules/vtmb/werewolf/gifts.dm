@@ -196,13 +196,8 @@
 	if(allowed_to_proceed)
 		if(ishuman(owner))
 			playsound(get_turf(owner), 'code/modules/wod13/sounds/resist_pain.ogg', 75, FALSE)
-			var/mob/living/carbon/human/H = owner
-			H.physiology.armor.melee = 40
-			H.physiology.armor.bullet = 25
 			to_chat(owner, "<span class='notice'>You feel your skin thickering...</span>")
 			spawn(15 SECONDS)
-				H.physiology.armor.melee = initial(H.physiology.armor.melee)
-				H.physiology.armor.bullet = initial(H.physiology.armor.bullet)
 				to_chat(owner, "<span class='warning'>Your skin is thin again...</span>")
 		else
 			playsound(get_turf(owner), 'code/modules/wod13/sounds/resist_pain.ogg', 75, FALSE)
@@ -224,9 +219,12 @@
 	. = ..()
 	if(allowed_to_proceed)
 		var/datum/atom_hud/abductor_hud = GLOB.huds[DATA_HUD_ABDUCTOR]
-		abductor_hud.add_hud_to(owner)
-		spawn(200)
-			abductor_hud.remove_hud_from(owner)
+		abductor_hud.add_atom_to_hud(owner)
+		addtimer(CALLBACK(src, PROC_REF(remove_hud)), 20 SECONDS)
+
+/datum/action/gift/scent_of_the_true_form/proc/remove_hud()
+	var/datum/atom_hud/abductor_hud = GLOB.huds[DATA_HUD_ABDUCTOR]
+	abductor_hud.remove_atom_from_hud(owner)
 
 /datum/action/gift/truth_of_gaia
 	name = "Truth Of Gaia"
@@ -268,7 +266,6 @@
 	name = "Spirit Speech"
 	desc = "This Gift allows the Garou to communicate with encountered spirits."
 	button_icon_state = "spirit_speech"
-	//gnosis_req = 1
 
 /datum/action/gift/spirit_speech/Trigger(trigger_flags)
 	. = ..()
@@ -351,7 +348,7 @@
 			SEND_SOUND(owner, sound('code/modules/wod13/sounds/rage_heal.ogg', 0, 0, 75))
 			C.adjustBruteLoss(-40*C.auspice.level, TRUE)
 			C.adjustFireLoss(-30*C.auspice.level, TRUE)
-			C.adjustCloneLoss(-10*C.auspice.level, TRUE)
+			C.adjustFireLoss(-10*C.auspice.level, TRUE)
 			C.adjustToxLoss(-10*C.auspice.level, TRUE)
 			C.adjustOxyLoss(-20*C.auspice.level, TRUE)
 			C.bloodpool = min(C.bloodpool + C.auspice.level, C.maxbloodpool)

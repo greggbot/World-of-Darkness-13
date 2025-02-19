@@ -1,6 +1,5 @@
 /mob/living/carbon/human/npc
 	name = "Loh ebanii"
-	a_intent = INTENT_HELP
 	var/datum/socialrole/socialrole
 
 	var/is_talking = FALSE
@@ -278,7 +277,6 @@
 		gender = pick(MALE, FEMALE)
 		if(socialrole.preferedgender)
 			gender = socialrole.preferedgender
-		body_type = gender
 		var/list/m_names = list()
 		var/list/f_names = list()
 		var/list/s_names = list()
@@ -315,12 +313,14 @@
 			real_name = "[pick(f_names)] [pick(s_names)]"
 		name = real_name
 		dna.real_name = real_name
-		var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes)
+		var/obj/item/organ/eyes/organ_eyes = get_organ_by_type(/obj/item/organ/eyes)
+		var/eye_color = random_eye_color()
 		if(organ_eyes)
-			organ_eyes.eye_color = random_eye_color()
+			organ_eyes.eye_color_left = eye_color
+			organ_eyes.eye_color_right = eye_color
 		underwear = random_underwear(gender)
 		if(prob(50))
-			underwear_color = organ_eyes.eye_color
+			underwear_color = eye_color
 		if(prob(50) || gender == FEMALE)
 			undershirt = random_undershirt(gender)
 		if(prob(25))
@@ -381,7 +381,7 @@
 	var/delay = round(length_char(message)/2)
 	spawn(5)
 		remove_overlay(SAY_LAYER)
-		var/mutable_appearance/say_overlay = mutable_appearance('icons/mob/talk.dmi', "default0", -SAY_LAYER)
+		var/mutable_appearance/say_overlay = mutable_appearance('icons/mob/effects/talk.dmi', "default0", -SAY_LAYER)
 		overlays_standing[SAY_LAYER] = say_overlay
 		apply_overlay(SAY_LAYER)
 		spawn(max(1, delay))
@@ -420,7 +420,7 @@
 	. = ..()
 	var/mob/living/carbon/human/npc/NPC = locate() in get_turf(Obstacle)
 	if(NPC)
-		if(a_intent != INTENT_HELP)
+		if(combat_mode)
 			NPC.Annoy(src)
 
 /mob/living/carbon/Move(NewLoc, direct)
@@ -428,7 +428,7 @@
 		if(alpha < 200)
 			playsound(loc, 'code/modules/wod13/sounds/obfuscate_deactivate.ogg', 50, FALSE)
 			alpha = 255
-	if(m_intent != MOVE_INTENT_WALK)
+	if(move_intent != MOVE_INTENT_WALK)
 		if(obfuscate_level < 3)
 			if(alpha < 200)
 				playsound(loc, 'code/modules/wod13/sounds/obfuscate_deactivate.ogg', 50, FALSE)
@@ -474,7 +474,7 @@
 	else if(overlays_standing[UNDERSHADOW_LAYER])
 		remove_overlay(UNDERSHADOW_LAYER)
 
-/mob/living/carbon/human/npc/attack_hand(mob/user)
+/mob/living/carbon/human/npc/attack_hand(mob/living/carbon/human/user)
 	if(user)
 		if(user.combat_mode)
 			for(var/mob/living/carbon/human/npc/NEPIC in oviewers(7, src))
@@ -484,13 +484,13 @@
 			Annoy(user)
 	..()
 
-/mob/living/carbon/human/npc/on_hit(obj/projectile/P)
+/mob/living/carbon/human/npc/projectile_hit(obj/projectile/hitting_projectile, def_zone, piercing_hit, blocked)
 	. = ..()
-	if(P)
-		if(P.firer)
+	if(hitting_projectile)
+		if(hitting_projectile.firer)
 			for(var/mob/living/carbon/human/npc/NEPIC in oviewers(7, src))
-				NEPIC.Aggro(P.firer)
-			Aggro(P.firer, TRUE)
+				NEPIC.Aggro(hitting_projectile.firer)
+			Aggro(hitting_projectile.firer, TRUE)
 			var/witness_count
 			for(var/mob/living/carbon/human/npc/NEPIC in viewers(7, usr))
 				if(NEPIC && NEPIC.stat != DEAD)
@@ -572,7 +572,7 @@
 
 /mob/living/carbon/human/npc/proc/ghoulificate(mob/owner)
 	set waitfor = FALSE
-	var/list/mob/dead/observer/candidates = pollCandidatesForMob("Do you want to play as [owner]`s ghoul?", null, null, null, 50, src)
+	var/list/mob/dead/observer/candidates = SSpolling.poll_candidates("Do you want to play as [owner]`s ghoul?", check_jobban = ROLE_SENTIENCE, poll_time = 5 SECONDS, group = GLOB.current_observers_list, alert_pic = src, role_name_text = "ghoul")
 	for(var/mob/dead/observer/G in GLOB.player_list)
 		if(G.key)
 			to_chat(G, "<span class='ghostalert'>[owner] is ghoulificating [src].</span>")

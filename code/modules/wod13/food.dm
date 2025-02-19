@@ -2,7 +2,6 @@
 	icon = 'code/modules/wod13/items.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	w_class = WEIGHT_CLASS_SMALL
-	eatsound = 'code/modules/wod13/sounds/eat.ogg'
 	var/biten = FALSE
 
 /obj/item/food/vampire/proc/got_biten()
@@ -120,7 +119,6 @@
 	tastes = list("salt" = 1, "crisps" = 1)
 	food_flags = FOOD_IN_CONTAINER
 	foodtypes = JUNKFOOD | FRIED
-	eatsound = 'code/modules/wod13/sounds/crisp.ogg'
 
 /obj/item/food/vampire/crisps/proc/open_crisps(mob/user)
 	to_chat(user, "<span class='notice'>You pull back the wrapper of \the [src].</span>")
@@ -168,8 +166,6 @@
 	list_reagents = list(/datum/reagent/consumable/coffee = 30)
 	spillable = TRUE
 	resistance_flags = FREEZE_PROOF
-	isGlass = FALSE
-	foodtype = BREAKFAST
 
 /obj/item/reagent_containers/food/drinks/coffee/vampire/robust
 	name = "robust coffee"
@@ -197,9 +193,7 @@
 	icon_state = "colared"
 	icon = 'code/modules/wod13/items.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
-	isGlass = FALSE
 	list_reagents = list(/datum/reagent/consumable/space_cola = 100)
-	foodtype = SUGAR
 	age_restricted = FALSE
 
 /obj/item/reagent_containers/food/drinks/bottle/vampirecola/blue
@@ -218,7 +212,6 @@
 	desc = "For your energy needs. Brought to you by King Breweries and Distilleries!"
 	icon_state = "soda"
 	list_reagents = list(/datum/reagent/consumable/monkey_energy = 50)
-	foodtype = SUGAR | JUNKFOOD
 
 /obj/item/reagent_containers/food/drinks/bottle/vampirewater
 	name = "water bottle"
@@ -226,7 +219,6 @@
 	icon_state = "water1"
 	icon = 'code/modules/wod13/items.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
-	isGlass = FALSE
 	list_reagents = list(/datum/reagent/water = 100)
 	age_restricted = FALSE
 
@@ -237,7 +229,6 @@
 	icon = 'code/modules/wod13/items.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	list_reagents = list(/datum/reagent/consumable/space_cola = 50)
-	foodtype = SUGAR
 
 /obj/item/reagent_containers/food/drinks/soda_cans/vampirecola/blue
 	desc = "Pep cola. Put some Pep in your step"
@@ -251,7 +242,6 @@
 	icon = 'code/modules/wod13/items.dmi'
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	list_reagents = list(/datum/reagent/consumable/sodawater = 50)
-	foodtype = SUGAR
 
 /obj/item/reagent_containers/food/condiment/vampiremilk
 	name = "milk"
@@ -267,45 +257,32 @@
 
 //--------VENDING MACHINES AND CLERKS--------//
 
-/obj/machinery/mineral/equipment_vendor/fastfood
+/obj/machinery/computer/order_console/mining/fastfood
 	name = "Clerk Catalogue"
 	desc = "Order some fastfood here."
 	icon = 'code/modules/wod13/props.dmi'
 	icon_state = "menu"
-	icon_deny = "menu"
-	prize_list = list()
 	var/dispenses_dollars = TRUE
 
-/obj/machinery/mineral/equipment_vendor/fastfood/sodavendor
+/obj/machinery/computer/order_console/mining/fastfood/sodavendor
 	name = "Drink Vendor"
 	desc = "Order drinks here."
 	icon = 'code/modules/wod13/props.dmi'
 	icon_state = "vend_r"
 	anchored = TRUE
 	density = TRUE
-	owner_needed = FALSE
-	prize_list = list(new /datum/data/mining_equipment("cola",	/obj/item/reagent_containers/food/drinks/soda_cans/vampirecola,	10),
-		new /datum/data/mining_equipment("soda", /obj/item/reagent_containers/food/drinks/soda_cans/vampiresoda, 5)
-	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/sodavendor/blue
+/obj/machinery/computer/order_console/mining/fastfood/sodavendor/blue
 	icon_state = "vend_c"
-	prize_list = list(new /datum/data/mining_equipment("cola",	/obj/item/reagent_containers/food/drinks/soda_cans/vampirecola/blue,10),
-		new /datum/data/mining_equipment("soda", /obj/item/reagent_containers/food/drinks/soda_cans/vampirecola/blue, 5),
-		new /datum/data/mining_equipment("summer thaw", /obj/item/reagent_containers/food/drinks/bottle/vampirecola/summer_thaw, 5),
-		new /datum/data/mining_equipment("thaw club soda", /obj/item/reagent_containers/food/drinks/bottle/vampirecola/thaw_club, 7)
-	)
-/obj/machinery/mineral/equipment_vendor/fastfood/coffeevendor
+
+/obj/machinery/computer/order_console/mining/fastfood/coffeevendor
 	name = "Coffee Vendor"
 	desc = "For those sleepy mornings."
 	icon = 'code/modules/wod13/props.dmi'
 	icon_state = "vend_g"
 	anchored = TRUE
 	density = TRUE
-	owner_needed = FALSE
-	prize_list = list(new /datum/data/mining_equipment("coffee",	/obj/item/reagent_containers/food/drinks/coffee/vampire,	10),
 		new /datum/data/mining_equipment("strong coffee", /obj/item/reagent_containers/food/drinks/coffee/vampire/robust, 5)
-	)
 
 /obj/machinery/mineral/equipment_vendor/fastfood/click_altt(mob/user)
 	. = ..()
@@ -314,52 +291,28 @@
 			new /obj/item/stack/dollar(loc)
 		points = 0
 
-/obj/machinery/mineral/equipment_vendor/fastfood/snacks
+/obj/machinery/computer/order_console/mining/fastfood/snacks
 	name = "Snack Vendor"
 	desc = "That candy bar better not get stuck this time..."
 	icon_state = "vend_b"
 	anchored = TRUE
 	density = TRUE
-	owner_needed = FALSE
 	prize_list = list(new /datum/data/mining_equipment("chocolate bar",	/obj/item/food/vampire/bar,	3),
 		new /datum/data/mining_equipment("chips",	/obj/item/food/vampire/crisps,	5)
 	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/bacotell
-	prize_list = list(new /datum/data/mining_equipment("square pizza",	/obj/item/food/vampire/pizza,	15),
-		new /datum/data/mining_equipment("taco",	/obj/item/food/vampire/taco,	10),
-		new /datum/data/mining_equipment("burger",	/obj/item/food/vampire/burger,	20),
-		new /datum/data/mining_equipment("two liter cola bottle",	/obj/item/reagent_containers/food/drinks/bottle/vampirecola,	10),
-		new /datum/data/mining_equipment("cola can",	/obj/item/reagent_containers/food/drinks/soda_cans/vampirecola,	5),
-		new /datum/data/mining_equipment("summer thaw", /obj/item/reagent_containers/food/drinks/bottle/vampirecola/summer_thaw, 5),
-		new /datum/data/mining_equipment("thaw club soda", /obj/item/reagent_containers/food/drinks/bottle/vampirecola/thaw_club, 8),
-	)
+/obj/machinery/computer/order_console/mining/fastfood/bacotell
 
-/obj/machinery/mineral/equipment_vendor/fastfood/bubway
-	prize_list = list(new /datum/data/mining_equipment("donut",	/obj/item/food/vampire/donut,	5),
-		new /datum/data/mining_equipment("burger",	/obj/item/food/vampire/burger,	10),
-		new /datum/data/mining_equipment("coffee",	/obj/item/reagent_containers/food/drinks/coffee/vampire,	5),
-		new /datum/data/mining_equipment("robust coffee",	/obj/item/reagent_containers/food/drinks/coffee/vampire/robust,	10),
-		new /datum/data/mining_equipment("thaw club soda", /obj/item/reagent_containers/food/drinks/bottle/vampirecola/thaw_club, 8)
-	)
+/obj/machinery/computer/order_console/mining/fastfood/bubway
 
-/obj/machinery/mineral/equipment_vendor/fastfood/gummaguts
-	prize_list = list(new /datum/data/mining_equipment("five-piece chicken wing box",	/obj/item/storage/fancy/nugget_box,	5),
-		new /datum/data/mining_equipment("burger",	/obj/item/food/vampire/burger,	15),
-		new /datum/data/mining_equipment("square pizza",	/obj/item/food/vampire/pizza,	10),
-		new /datum/data/mining_equipment("two liter cola bottle",	/obj/item/reagent_containers/food/drinks/bottle/vampirecola,	10),
-		new /datum/data/mining_equipment("cola can",	/obj/item/reagent_containers/food/drinks/soda_cans/vampirecola,	5)
-	)
+/obj/machinery/computer/order_console/mining/fastfood/gummaguts
 
-/obj/machinery/mineral/equipment_vendor/fastfood/products
+/obj/machinery/computer/order_console/mining/fastfood/products
 	desc = "Purchase junkfood and crap."
 	prize_list = list(new /datum/data/mining_equipment("chocolate bar",	/obj/item/food/vampire/bar,	3),
 		new /datum/data/mining_equipment("chips",	/obj/item/food/vampire/crisps,	5),
 		new /datum/data/mining_equipment("water bottle",	/obj/item/reagent_containers/food/drinks/bottle/vampirewater,	3),
 		new /datum/data/mining_equipment("soda can",	/obj/item/reagent_containers/food/drinks/soda_cans/vampiresoda,	3),
-		new /datum/data/mining_equipment("two liter cola bottle",	/obj/item/reagent_containers/food/drinks/bottle/vampirecola,	7),
-		new /datum/data/mining_equipment("cola can",	/obj/item/reagent_containers/food/drinks/soda_cans/vampirecola,	5),
-		new /datum/data/mining_equipment("summer thaw", /obj/item/reagent_containers/food/drinks/bottle/vampirecola/summer_thaw, 5),
 		new /datum/data/mining_equipment("milk",	/obj/item/reagent_containers/food/condiment/vampiremilk,	5),
 		new /datum/data/mining_equipment("beer bottle",	/obj/item/reagent_containers/food/drinks/beer/vampire,	10),
 		new /datum/data/mining_equipment("blue stripe", /obj/item/reagent_containers/food/drinks/beer/vampire/blue_stripe, 8),
@@ -368,7 +321,7 @@
 		new /datum/data/mining_equipment("respirator",	/obj/item/clothing/mask/vampire,	35)
 	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/clothing
+/obj/machinery/computer/order_console/mining/fastfood/clothing
 	desc = "Purchase all the finest outfits.. Or don't wagie.."
 	prize_list = list(new /datum/data/mining_equipment("crimson red dress",	/obj/item/clothing/under/vampire/primogen_toreador/female	,	350),
 		new /datum/data/mining_equipment("black dress",	/obj/item/clothing/under/vampire/business,	250),
@@ -460,7 +413,7 @@
 		new /datum/data/mining_equipment("purple robes",	/obj/item/clothing/suit/hooded/robes/purple,	40)
 	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/costumes
+/obj/machinery/computer/order_console/mining/fastfood/costumes
 	desc = "Purchase a mask for that ugly mug."
 	prize_list = list(
 		new /datum/data/mining_equipment("balaclava",	 /obj/item/clothing/mask/vampire/balaclava,	10),
@@ -500,7 +453,7 @@
 	. = ..()
 	icon_state = "vat[rand(1, 3)]"
 
-/obj/machinery/mineral/equipment_vendor/fastfood/america	//PSEUDO_M make this restricted or remove it completely
+/obj/machinery/computer/order_console/mining/fastfood/america	//PSEUDO_M make this restricted or remove it completely
 	desc = "Boom! Booom!! BOOOOOOM!!!!"
 	prize_list = list(new /datum/data/mining_equipment("magnum revolver",	/obj/item/gun/ballistic/vampire/revolver,	200),
 		new /datum/data/mining_equipment("Colt M1911",	/obj/item/gun/ballistic/automatic/vampire/m1911,	250),
@@ -521,10 +474,9 @@
 		new /datum/data/mining_equipment("baseball bat",	/obj/item/melee/vampirearms/baseball,	200),
 		new /datum/data/mining_equipment("real katana",	/obj/item/melee/vampirearms/katana,	1500),
 		new /datum/data/mining_equipment("machete", /obj/item/melee/vampirearms/machete, 500),
-		new /datum/data/mining_equipment("donut",	/obj/item/food/vampire/donut,	10)
 	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/illegal	// PSEUDO_M make this restricted and only available for triads
+/obj/machinery/computer/order_console/mining/fastfood/illegal	// PSEUDO_M make this restricted and only available for triads
 	prize_list = list(
 		new /datum/data/mining_equipment("lighter",		/obj/item/lighter/greyscale,	10),
 		new /datum/data/mining_equipment("zippo lighter",	/obj/item/lighter,	20),
@@ -548,7 +500,7 @@
 		new /datum/data/mining_equipment("incendiary 5.56 ammo",	/obj/item/ammo_box/vampire/c556/incendiary,	9000)
 	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/pharmacy
+/obj/machinery/computer/order_console/mining/fastfood/pharmacy
 	prize_list = list(
 		new /datum/data/mining_equipment("bruise pack", /obj/item/stack/medical/bruise_pack, 100),
 		new /datum/data/mining_equipment("burn ointment", /obj/item/stack/medical/ointment, 100),
@@ -560,7 +512,7 @@
 	)
 
 
-/obj/machinery/mineral/equipment_vendor/fastfood/smoking
+/obj/machinery/computer/order_console/mining/fastfood/smoking
 	prize_list = list(new /datum/data/mining_equipment("malboro",	/obj/item/storage/fancy/cigarettes/cigpack_robust,	50),
 		new /datum/data/mining_equipment("newport",		/obj/item/storage/fancy/cigarettes/cigpack_xeno,	30),
 		new /datum/data/mining_equipment("camel",	/obj/item/storage/fancy/cigarettes/dromedaryco,	30),
@@ -568,13 +520,13 @@
 		new /datum/data/mining_equipment("lighter",		/obj/item/lighter/greyscale,	10)
 	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/gas
+/obj/machinery/computer/order_console/mining/fastfood/gas
 	prize_list = list(new /datum/data/mining_equipment("full gas can",	/obj/item/gas_can/full,	250),
 		new /datum/data/mining_equipment("tire iron",		/obj/item/melee/vampirearms/tire,	50),
 		new /datum/data/mining_equipment("Spray Paint",		/obj/item/toy/crayon/spraycan,		25)
 	)
 
-/obj/machinery/mineral/equipment_vendor/fastfood/library
+/obj/machinery/computer/order_console/mining/fastfood/library
 
 	prize_list = list(
 		new /datum/data/mining_equipment("Bible",	/obj/item/storage/book/bible,  20),

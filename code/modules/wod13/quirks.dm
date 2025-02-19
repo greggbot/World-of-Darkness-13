@@ -23,7 +23,7 @@ Dancer
 	gain_text = "<span class='notice'>You feel more financial stable.</span>"
 	lose_text = "<span class='warning'>You don't feel rich anymore.</span>"
 
-/datum/quirk/broker/on_spawn()
+/datum/quirk/broker/New()
 	if(!iswerewolf(quirk_holder))
 		var/mob/living/carbon/human/H = quirk_holder
 		var/obj/item/stocks_license/pills = new()
@@ -45,17 +45,6 @@ Dancer
 	gain_text = "<span class='notice'>You feel more experienced about cars.</span>"
 	lose_text = "<span class='warning'>You feel more clueless about cars.</span>"
 
-//[Lucia] - commented out due to being made defunct by the lockpicking update
-/*
-/datum/quirk/bone_key
-	name = "Bone Key"
-	desc = "You know much more about door locks, and always have a tool for them."
-	mob_trait = TRAIT_BONE_KEY
-	value = 3
-	gain_text = "<span class='notice'>You feel more experienced in lockery.</span>"
-	lose_text = "<span class='warning'>You feel more clueless in lockery.</span>"
-*/
-
 /datum/quirk/annonymus
 	name = "Anonymous"
 	desc = "You always bring a mask."
@@ -63,7 +52,7 @@ Dancer
 	gain_text = "<span class='notice'>You feel more anonymus.</span>"
 	lose_text = "<span class='warning'>You don't feel anonymous anymore.</span>"
 
-/datum/quirk/annonymus/on_spawn()
+/datum/quirk/annonymus/New()
 	if(!iswerewolf(quirk_holder))
 		var/mob/living/carbon/human/H = quirk_holder
 		H.equip_to_slot_or_del(new /obj/item/clothing/mask/vampire/balaclava(H), ITEM_SLOT_MASK)
@@ -75,7 +64,6 @@ Dancer
 	value = 2
 	gain_text = "<span class='notice'>You feel more experienced in love.</span>"
 	lose_text = "<span class='warning'>You feel more clueless in love.</span>"
-	allowed_species = list("Vampire", "Kuei-Jin")
 
 /datum/quirk/tough_flesh
 	name = "Tough Flesh"
@@ -95,7 +83,7 @@ Dancer
 	gain_text = "<span class='warning'>You feel slo-o-o-o-o-o-o-o-o-o-o-o-ow.</span>"
 	lose_text = "<span class='notice'>You can feel a normal speed again.</span>"
 
-/datum/quirk/slowpoke/on_spawn()
+/datum/quirk/slowpoke/New()
 	var/mob/living/carbon/H = quirk_holder
 	H.add_movespeed_modifier(/datum/movespeed_modifier/slowpoke)
 
@@ -106,7 +94,6 @@ Dancer
 	value = -2
 	gain_text = "<span class='warning'>You feel anxious about the way you feed.</span>"
 	lose_text = "<span class='warning'>You can feed normal again.</span>"
-	allowed_species = list("Vampire", "Kuei-Jin")
 
 /datum/quirk/lazy
 	name = "Lazy"
@@ -123,7 +110,7 @@ Dancer
 	gain_text = "<span class='warning'>You don't feel one of your arms.</span>"
 	lose_text = "<span class='notice'>You feel both of your arms again.</span>"
 
-/datum/quirk/one_hand/on_spawn()
+/datum/quirk/one_hand/New()
 	if(!iswerewolf(quirk_holder))
 		var/mob/living/carbon/human/H = quirk_holder
 		var/obj/item/bodypart/B1 = H.get_bodypart(BODY_ZONE_R_ARM)
@@ -142,7 +129,6 @@ Dancer
 	value = -5
 	gain_text = "<span class='warning'>You feel dumb.</span>"
 	lose_text = "<span class='notice'>You don't feel dumb anymore.</span>"
-	allowed_species = list("Vampire", "Human", "Ghoul", "Kuei-Jin")
 
 /datum/quirk/coffin_therapy
 	name = "Coffin Therapy"
@@ -151,7 +137,6 @@ Dancer
 	value = -2
 	gain_text = "<span class='warning'>You feel like you need a coffin.</span>"
 	lose_text = "<span class='notice'>You don't need a coffin anymore.</span>"
-	allowed_species = list("Vampire", "Ghoul")
 
 /datum/quirk/rubicon
 	name = "Crossing the Rubicon"
@@ -160,7 +145,6 @@ Dancer
 	value = -1
 	gain_text = "<span class='warning'>You feel afraid of water.</span>"
 	lose_text = "<span class='notice'>You aren't afraid of water anymore.</span>"
-	allowed_species = list("Vampire", "Ghoul")
 
 /datum/quirk/hungry
 	name = "Hungry"
@@ -169,7 +153,6 @@ Dancer
 	value = -3
 	gain_text = "<span class='warning'>You feel extra <b>HUNGRY</b>.</span>"
 	lose_text = "<span class='notice'>You don't feel extra <b>HUNGRY</b> anymore.</span>"
-	allowed_species = list("Vampire", "Ghoul")
 
 /datum/action/fly_upper
 	name = "Fly Up"
@@ -237,7 +220,7 @@ Dancer
 	gain_text = "<span class='notice'>You feel short.</span>"
 	lose_text = "<span class='notice'>You don't feel short anymore.</span>"
 
-/datum/quirk/dwarf/on_spawn()
+/datum/quirk/dwarf/New()
 	var/mob/living/carbon/human/H = quirk_holder
 	if(H.age < 16)
 		to_chat(H, "<span class='userdanger'>You can't be a dwarf kid, looser!</span>")
@@ -265,12 +248,9 @@ Dancer
 	src.comsig = comsig
 
 	var/mob/living/carbon/human/L = target
-	if(L.lying_angle != 0)
-		L.transform = L.transform.Scale(SHORT, 1)
-		L.transform = L.transform.Translate(L.lying_angle == 90 ? 16*(SHORT-1) : -(16*(SHORT-1)), 0) //Makes sure you stand on the tile no matter the size - sand
-	else
-		L.transform = L.transform.Scale(1, SHORT)
-		L.transform = L.transform.Translate(0, 16*(SHORT-1)) //Makes sure you stand on the tile no matter the size - sand
+	L.set_lying_angle(0)
+	L.transform = L.transform.Scale(1, SHORT)
+	L.transform = L.transform.Translate(0, 16*(SHORT-1)) //Makes sure you stand on the tile no matter the size - sand
 	attached_targets[target] = comsig_target
 	RegisterSignal(target, comsig, PROC_REF(check_loss)) //Second arg of the signal will be checked against the comsig_target.
 
@@ -282,12 +262,9 @@ Dancer
 	. = ..()
 	if(QDELETED(L))
 		return
-	if(L.lying_angle != 0)
-		L.transform = L.transform.Scale(TALL, 1)
-		L.transform = L.transform.Translate(L.lying_angle == 90 ? 16*(TALL-1) : -(16*(TALL-1)), 0) //Makes sure you stand on the tile no matter the size - sand
-	else
-		L.transform = L.transform.Scale(1, TALL)
-		L.transform = L.transform.Translate(0, 16*(TALL-1)) //Makes sure you stand on the tile no matter the size - sand
+	L.set_lying_angle(0)
+	L.transform = L.transform.Scale(1, TALL)
+	L.transform = L.transform.Translate(0, 16*(TALL-1)) //Makes sure you stand on the tile no matter the size - sand
 	UnregisterSignal(L, comsig)
 	attached_targets -= L
 
@@ -296,8 +273,7 @@ Dancer
 
 
 /datum/element/children
-	element_flags = ELEMENT_DETACH|ELEMENT_BESPOKE
-	id_arg_index = 2
+	element_flags = ELEMENT_COMPLEX_DETACH|ELEMENT_BESPOKE
 	var/comsig
 	var/list/attached_targets = list()
 
@@ -465,9 +441,9 @@ Dancer
 	gain_text = "<span class='danger'>You feel injured from inside.</span>"
 	lose_text = "<span class='notice'>You feel healthy again.</span>"
 	medical_record_text = "Patient has aggressive flesh eating bacteria in their boody."
-	allowed_species = list("Vampire", "Ghoul", "Human", "Kuei-Jin")
 
-/datum/quirk/consumption/on_process(delta_time)
+/datum/quirk/consumption/process(seconds_per_tick)
+	. = ..()
 	if(prob(5))
 		quirk_holder.adjustBruteLoss(5, TRUE)
 
@@ -476,9 +452,8 @@ Dancer
 	desc = "You are in the Blood Hunt list from the start and can't leave it. Good luck!"
 	value = -3
 	mob_trait = TRAIT_HUNTED
-	allowed_species = list("Vampire", "Ghoul")
 
-/datum/quirk/hunted/on_spawn()
+/datum/quirk/hunted/New()
 	if(iswerewolf(quirk_holder) || isgarou(quirk_holder))
 		return
 	if(isturf(quirk_holder.loc))
@@ -490,7 +465,7 @@ Dancer
 	value = -3
 	allowed_species = list("Vampire")
 */
-/datum/quirk/diablerist/on_spawn()
+/datum/quirk/diablerist/New()
 	if(iswerewolf(quirk_holder) || isgarou(quirk_holder))
 		return
 	var/mob/living/carbon/human/H = quirk_holder
@@ -507,7 +482,7 @@ Dancer
 /datum/quirk/badvision/add()
 	quirk_holder.become_nearsighted(ROUNDSTART_TRAIT)
 
-/datum/quirk/badvision/on_spawn()
+/datum/quirk/badvision/New()
 	if(iswerewolf(quirk_holder))
 		return
 	var/mob/living/carbon/human/H = quirk_holder
@@ -520,7 +495,6 @@ Dancer
 	desc = "You can't recover your masquerade at all."
 	value = -2
 	mob_trait = TRAIT_VIOLATOR
-	allowed_species = list("Vampire", "Ghoul", "Kuei-Jin")
 
 /datum/quirk/irongullet
 	name = "Iron Gullet"
@@ -529,7 +503,6 @@ Dancer
 	mob_trait = TRAIT_GULLET
 	gain_text = "<span class='notice'>You feel necroresistant.</span>"
 	lose_text = "<span class='notice'>You don't want necrophilia anymore.</span>"
-	allowed_species = list("Vampire")
 
 /datum/quirk/charmer
 	name = "Abnormal Charmer"
@@ -538,7 +511,6 @@ Dancer
 	mob_trait = TRAIT_CHARMER
 	gain_text = "<span class='notice'>You feel charismatic.</span>"
 	lose_text = "<span class='notice'>You don't feel charismatic anymore.</span>"
-	allowed_species = list("Vampire", "Kuei-Jin")
 
 /datum/quirk/tower
 	name = "Tower"
@@ -547,14 +519,14 @@ Dancer
 	gain_text = "<span class='notice'>You feel tall.</span>"
 	lose_text = "<span class='notice'>You don't feel tall anymore.</span>"
 
-/datum/quirk/tower/on_spawn()
+/datum/quirk/tower/New()
 	var/mob/living/carbon/human/H = quirk_holder
 	if(H.age < 16)
 		to_chat(H, "<span class='userdanger'>You can't be a tall kid, looser!</span>")
 		return
 	if(iswerewolf(quirk_holder))
 		return
-	H.AddElement(/datum/element/giantism, COMSIG_PARENT_PREQDELETED, src)
+	H.AddElement(/datum/element/giantism)
 	H.istower = TRUE
 
 #define TALL 1.16
@@ -562,8 +534,8 @@ Dancer
 
 ///Very similar to squish, but for dwarves and shorties
 /datum/element/giantism
-	element_flags = ELEMENT_DETACH|ELEMENT_BESPOKE
-	id_arg_index = 2
+	element_flags = ELEMENT_COMPLEX_DETACH|ELEMENT_BESPOKE
+	argument_hash_start_idx = 2
 	var/comsig
 	var/list/attached_targets = list()
 
@@ -575,12 +547,9 @@ Dancer
 	src.comsig = comsig
 
 	var/mob/living/carbon/human/L = target
-	if(L.lying_angle != 0)
-		L.transform = L.transform.Scale(TALL, 1)
-		L.transform = L.transform.Translate(L.lying_angle == 90 ? 16*(TALL-1) : -(16*(TALL-1)), 0) //Makes sure you stand on the tile no matter the size - sand
-	else
-		L.transform = L.transform.Scale(1, TALL)
-		L.transform = L.transform.Translate(0, 16*(TALL-1)) //Makes sure you stand on the tile no matter the size - sand
+	L.set_lying_angle(0)
+	L.transform = L.transform.Scale(1, TALL)
+	L.transform = L.transform.Translate(0, 16*(TALL-1)) //Makes sure you stand on the tile no matter the size - sand
 	attached_targets[target] = comsig_target
 	RegisterSignal(target, comsig, PROC_REF(check_loss)) //Second arg of the signal will be checked against the comsig_target.
 
@@ -592,12 +561,9 @@ Dancer
 	. = ..()
 	if(QDELETED(L))
 		return
-	if(L.lying_angle != 0)
-		L.transform = L.transform.Scale(SHORT, 1)
-		L.transform = L.transform.Translate(L.lying_angle == 90 ? 16*(SHORT-1) : -(16*(SHORT-1)), 0) //Makes sure you stand on the tile no matter the size - sand
-	else
-		L.transform = L.transform.Scale(1, SHORT)
-		L.transform = L.transform.Translate(0, 16*(SHORT-1)) //Makes sure you stand on the tile no matter the size - sand
+	L.set_lying_angle(0)
+	L.transform = L.transform.Scale(1, SHORT)
+	L.transform = L.transform.Translate(0, 16*(SHORT-1)) //Makes sure you stand on the tile no matter the size - sand
 	UnregisterSignal(L, comsig)
 	attached_targets -= L
 
