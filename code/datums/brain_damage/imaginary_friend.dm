@@ -170,7 +170,7 @@
 			highest_pref = this_pref
 
 	if(!appearance_job)
-		appearance_job = SSjob.get_job(JOB_ASSISTANT)
+		appearance_job = SSjob.get_job(JOB_CITIZEN)
 
 	human_image = get_flat_human_icon(null, appearance_job, appearance_from_prefs)
 	Show()

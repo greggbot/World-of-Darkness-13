@@ -56,7 +56,7 @@
 	else
 		former_captain.equipOutfit(/datum/outfit/job/assistant)
 
-	GLOB.manifest.modify(former_captain.real_name, JOB_ASSISTANT, JOB_ASSISTANT)
+	GLOB.manifest.modify(former_captain.real_name, JOB_CITIZEN, JOB_CITIZEN)
 	var/list/valid_turfs = list()
 	// Used to be into prison but that felt a bit too mean
 	for (var/turf/exile_turf as anything in get_area_turfs(/area/station/maintenance, subtypes = TRUE))
