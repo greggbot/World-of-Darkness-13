@@ -267,11 +267,6 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/central/greater)
-"uj" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/north,
-/turf/open/floor/iron/smooth,
-/area/station/maintenance/port/central)
 "wi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/auto_name/directional/east,
@@ -1777,7 +1772,7 @@ Ms
 Ms
 La
 Hl
-uj
+La
 Ms
 Ms
 He

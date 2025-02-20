@@ -15,11 +15,6 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)
-"c" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/east,
-/turf/open/floor/iron/smooth,
-/area/station/maintenance/starboard/greater)
 "e" = (
 /turf/template_noop,
 /area/template_noop)
@@ -30,11 +25,6 @@
 /obj/effect/spawner/random/mod/maint,
 /obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plating,
-/area/station/maintenance/starboard/greater)
-"g" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/north,
-/turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)
 "j" = (
 /obj/effect/decal/cleanable/dirt,
@@ -209,7 +199,7 @@ r
 S
 b
 A
-g
+S
 r
 Q
 e
@@ -222,9 +212,9 @@ r
 J
 x
 m
-g
+S
 r
-c
+v
 e
 "}
 (4,1,1) = {"

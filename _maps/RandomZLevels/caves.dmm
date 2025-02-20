@@ -1941,7 +1941,7 @@
 /turf/open/floor/iron,
 /area/awaymission/caves/bmp_asteroid)
 "WH" = (
-/obj/vehicle/sealed/mecha/ripley/mining,
+/obj/vehicle/sealed/mecha/medical/combat/ripley/mining,
 /turf/open/floor/iron/recharge_floor,
 /area/awaymission/caves/bmp_asteroid)
 "Xa" = (

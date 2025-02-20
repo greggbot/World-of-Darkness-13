@@ -1452,7 +1452,7 @@
 /area/shuttle/escape)
 "uS" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
@@ -2483,7 +2483,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold/cyan/visible{
 	dir = 4
@@ -2492,7 +2492,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/white/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/machinery/meter,
 /turf/open/floor/iron/white,

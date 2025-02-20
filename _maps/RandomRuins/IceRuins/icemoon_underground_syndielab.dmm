@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/clipboard{
 	pixel_y = 3;
 	pixel_x = -4
@@ -68,7 +68,7 @@
 "cg" = (
 /obj/structure/tank_dispenser/oxygen,
 /obj/machinery/light/warm/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/warning/gas_mask/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
@@ -150,7 +150,7 @@
 /obj/machinery/vending/donksnack{
 	onstation_override = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
 "hl" = (
@@ -244,9 +244,6 @@
 	},
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/mineral/plastitanium/red,
-/area/ruin/syndielab)
-"oA" = (
-/turf/open/floor/iron/dark/textured,
 /area/ruin/syndielab)
 "oY" = (
 /obj/effect/mapping_helpers/apc/syndicate_access,
@@ -594,7 +591,7 @@
 	pixel_y = 1
 	},
 /obj/structure/sign/poster/contraband/interdyne_gene_clinics/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
 "HS" = (
@@ -689,7 +686,7 @@
 	pixel_x = -5
 	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/crowbar/hammer{
 	pixel_x = 3;
 	pixel_y = 1
@@ -880,7 +877,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "Zx" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/smes/magical/cybersun{
 	cable_layer = 1;
 	input_level = 180000;
@@ -1082,7 +1079,7 @@ Xt
 Xt
 AR
 Jc
-oA
+ey
 FJ
 AR
 qC

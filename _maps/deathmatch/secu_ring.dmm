@@ -7,9 +7,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/deathmatch)
 "l" = (
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/deathmatch)
 "n" = (
@@ -31,44 +29,34 @@
 /turf/open/floor/pod/dark,
 /area/deathmatch)
 "H" = (
-/obj/machinery/light{
-	dir = 8
-	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/pod,
 /area/deathmatch)
 "I" = (
 /turf/closed/indestructible/reinforced,
 /area/deathmatch)
 "M" = (
-/obj/machinery/light,
+/obj/machinery/light/directional/south,
 /turf/open/floor/pod,
 /area/deathmatch)
 "N" = (
-/obj/machinery/light{
-	dir = 4
-	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/pod,
 /area/deathmatch)
 "O" = (
-/obj/machinery/light{
-	dir = 8
-	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/deathmatch)
 "R" = (
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/light/directional/north,
 /turf/open/floor/pod,
 /area/deathmatch)
 "S" = (
-/obj/machinery/light{
-	dir = 4
-	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/deathmatch)
 "T" = (
-/obj/machinery/light,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/deathmatch)
 "W" = (

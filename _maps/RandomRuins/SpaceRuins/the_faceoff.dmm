@@ -37,7 +37,7 @@
 /area/ruin/space)
 "aC" = (
 /obj/effect/turf_decal/stripes/red/full,
-/obj/machinery/light/small/built,
+/obj/machinery/light/small/built/directional/south,
 /obj/item/light/bulb/broken,
 /turf/open/floor/iron/dark/smooth_large/airless,
 /area/ruin/space)
@@ -87,7 +87,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "ch" = (
-/obj/machinery/light/small/broken,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
 "ck" = (
@@ -407,10 +407,10 @@
 "pL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/misc/asteroid/basalt/airless,
 /area/ruin/space)
@@ -428,7 +428,7 @@
 "qT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
@@ -575,12 +575,10 @@
 "wW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/spawner/random/structure/crate_abandoned,
-/obj/machinery/light/dim{
-	dir = 1
-	},
+/obj/machinery/light/dim/directional/north,
 /turf/open/misc/asteroid/basalt/airless,
 /area/ruin/space)
 "wY" = (
@@ -860,9 +858,7 @@
 /area/ruin/space)
 "Jh" = (
 /obj/structure/cable,
-/obj/machinery/light/dim{
-	dir = 1
-	},
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "Jl" = (
@@ -1090,7 +1086,7 @@
 "UQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/misc/asteroid/basalt/airless,
@@ -1177,7 +1173,7 @@
 "XQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/spawner/random/structure/closet_empty/crate,
 /turf/open/misc/asteroid/basalt/airless,
@@ -1185,7 +1181,7 @@
 "YE" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/machinery/light/small/broken,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space)
 "YI" = (

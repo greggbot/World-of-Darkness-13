@@ -29,7 +29,7 @@
 /area/station/maintenance/department/science)
 "k" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron/white,
 /area/station/maintenance/department/science)
 "n" = (
@@ -53,12 +53,11 @@
 "p" = (
 /obj/structure/table,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/box/syringes,
-/obj/structure/sign/warning/secure_area{
-	pixel_x = 32;
+/obj/structure/sign/warning/secure_area/directional/east{
 	name = "TESTING RANGE sign";
 	desc = "A warning sign which reads 'TESTING RANGE'."
 	},
@@ -88,7 +87,7 @@
 /area/station/maintenance/department/science)
 "t" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/white,
 /area/station/maintenance/department/science)
@@ -184,8 +183,7 @@
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/target/clown,
-/obj/structure/sign/warning/secure_area{
-	pixel_x = 32;
+/obj/structure/sign/warning/secure_area/directional/east{
 	name = "TESTING RANGE sign";
 	desc = "A warning sign which reads 'TESTING RANGE'."
 	},

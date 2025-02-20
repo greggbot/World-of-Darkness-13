@@ -55,10 +55,6 @@
 /obj/structure/table/reinforced,
 /turf/open/indestructible,
 /area/deathmatch)
-"jc" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible,
-/area/deathmatch)
 "jX" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/indestructible,
@@ -75,7 +71,7 @@
 /area/deathmatch)
 "kp" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /turf/open/indestructible,
 /area/deathmatch)
@@ -89,7 +85,7 @@
 /area/deathmatch)
 "lA" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/indestructible,
 /area/deathmatch)
@@ -99,7 +95,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "lN" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/caution/stand_clear,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -117,7 +113,7 @@
 /area/deathmatch)
 "nS" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -231,11 +227,6 @@
 "Er" = (
 /obj/item/clothing/head/utility/welding,
 /obj/structure/table/reinforced,
-/turf/open/indestructible,
-/area/deathmatch)
-"Ew" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/reagent_containers/pill/maintenance,
 /turf/open/indestructible,
 /area/deathmatch)
 "EK" = (
@@ -413,7 +404,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Su" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/box,
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible,
@@ -455,7 +446,7 @@
 /area/deathmatch)
 "Xb" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /turf/open/indestructible,
 /area/deathmatch)
@@ -643,7 +634,7 @@ It
 zF
 zF
 zF
-jc
+nQ
 cn
 sk
 nQ
@@ -701,7 +692,7 @@ cn
 cn
 cn
 cn
-jc
+nQ
 cn
 NO
 cn
@@ -755,7 +746,7 @@ FL
 FL
 FL
 aD
-Ew
+qK
 mS
 Mt
 nQ
@@ -861,11 +852,11 @@ ho
 Ok
 aD
 jX
-jc
+nQ
 cn
 EK
 aD
-jc
+nQ
 aD
 FL
 FL
@@ -889,7 +880,7 @@ Ij
 Ij
 Ij
 aD
-jc
+nQ
 aD
 jY
 PW
@@ -1200,8 +1191,8 @@ cn
 Na
 aD
 jX
-jc
-jc
+nQ
+nQ
 cn
 qK
 cn
@@ -1413,7 +1404,7 @@ aD
 mZ
 cn
 cn
-jc
+nQ
 cn
 aD
 FL

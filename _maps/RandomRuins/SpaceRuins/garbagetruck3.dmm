@@ -67,7 +67,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "dh" = (
-/obj/machinery/light/warm,
+/obj/machinery/light/warm/directional/south,
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/space/has_grav/garbagetruck/squat)
@@ -146,7 +146,7 @@
 /obj/structure/bed/maint,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/fuel_pool,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "iU" = (
@@ -237,15 +237,11 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "lE" = (
-/obj/machinery/airalarm{
+/obj/machinery/airalarm/directional/north{
 	pixel_y = 25
 	},
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron,
-/area/ruin/space/has_grav/garbagetruck/squat)
-"lY" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "mV" = (
 /turf/closed/wall/r_wall,
@@ -414,7 +410,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "uW" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/fuel_pool,
 /obj/structure/bonfire{
 	desc = "Begging to be lit."
@@ -468,12 +464,10 @@
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/machinery/light/warm,
-/obj/machinery/power/apc{
-	locked = 0;
-	pixel_y = -25;
-	start_charge = 0
-	},
+/obj/machinery/light/warm/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/no_charge,
+/obj/effect/mapping_helpers/apc/unlocked,
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/space/has_grav/garbagetruck/squat)
@@ -646,7 +640,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "Hn" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/fuel_pool,
 /obj/effect/decal/cleanable/oil/slippery,
 /obj/item/pen,
@@ -694,7 +688,7 @@
 	pixel_y = -2
 	},
 /obj/structure/closet/crate/preopen,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/syringe/contraband/methamphetamine{
 	pixel_x = -5;
 	pixel_y = -7
@@ -807,13 +801,13 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "Rw" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/fuel_pool,
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "RD" = (
 /obj/effect/decal/cleanable/fuel_pool,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "RP" = (
@@ -846,7 +840,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "Tv" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/trash/can/food/beans{
 	pixel_x = 8;
 	pixel_y = -4
@@ -925,7 +919,7 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "Zu" = (
 /obj/item/food/candy,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/trashcart,
 /obj/item/storage/bag/trash/filled,
 /obj/item/trash/champagne_cork,
@@ -1121,7 +1115,7 @@ ui
 xg
 RP
 Jx
-lY
+WV
 JL
 tL
 Xt

@@ -27,9 +27,8 @@
 /area/space)
 "ao" = (
 /obj/structure/rack,
-/obj/machinery/camera/motion{
-	c_tag = "Armory - Internal";
-	dir = 4
+/obj/machinery/camera/motion/directional/west{
+	c_tag = "Armory - Internal"
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -259,7 +258,7 @@
 /turf/closed/indestructible/fakedoor,
 /area/deathmatch)
 "dy" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/effect/turf_decal/trimline/red/warning{
 	dir = 4
 	},
@@ -890,9 +889,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "os" = (
-/obj/structure/sign/warning/pods{
-	pixel_x = 32
-	},
+/obj/structure/sign/warning/pods/directional/east,
 /turf/open/indestructible,
 /area/deathmatch)
 "oA" = (
@@ -1636,7 +1633,7 @@
 /area/deathmatch)
 "yN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/effect/turf_decal/trimline/red/warning{
 	dir = 4
 	},
@@ -1651,7 +1648,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "yR" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/effect/turf_decal/trimline/red/warning{
 	dir = 8
 	},
@@ -2627,9 +2624,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Mb" = (
-/obj/structure/sign/warning/vacuum/external{
-	pixel_y = 32
-	},
+/obj/structure/sign/warning/vacuum/external/directional/north,
 /obj/machinery/light/small/directional/north,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -3307,9 +3302,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/obj/structure/sign/warning/vacuum/external{
-	pixel_x = -32
-	},
+/obj/structure/sign/warning/vacuum/external/directional/west,
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 8
 	},
@@ -3557,7 +3550,7 @@
 /turf/open/floor/iron/white,
 /area/deathmatch)
 "Zj" = (
-/obj/machinery/door/window/brigdoor/security/holding{
+/obj/machinery/door/window/brigdoor/security/holding/left/directional/south{
 	id = "Holding Cell";
 	name = "Holding Cell"
 	},

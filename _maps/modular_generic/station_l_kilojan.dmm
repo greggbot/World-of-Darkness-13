@@ -46,7 +46,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "h" = (
@@ -54,7 +54,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted,
 /obj/effect/turf_decal/tile/blue,
 /obj/structure/closet/crate/trashcart/filled,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "i" = (
@@ -64,7 +64,7 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "j" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/template_noop)
 "k" = (
@@ -99,7 +99,7 @@
 /area/template_noop)
 "n" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/purple/half/contrasted,
@@ -150,12 +150,12 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "s" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/machinery/door/window/left/directional/south{
 	name = "Trash Chute";
@@ -175,7 +175,7 @@
 	dir = 1
 	},
 /obj/effect/spawner/random/trash/mess,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -188,7 +188,7 @@
 /area/template_noop)
 "u" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "v" = (
@@ -207,7 +207,7 @@
 	},
 /obj/structure/broken_flooring/side/directional/south,
 /obj/structure/closet/crate/trashcart/filled,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/template_noop)
 "z" = (
@@ -223,10 +223,6 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/template_noop)
-"A" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron,
 /area/template_noop)
 "B" = (
 /obj/effect/turf_decal/delivery,
@@ -308,7 +304,7 @@
 /obj/effect/turf_decal/tile/blue,
 /obj/structure/sign/poster/random/directional/south,
 /obj/structure/closet/crate/trashcart/filled,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "K" = (
@@ -364,7 +360,7 @@
 /obj/item/reagent_containers/cup/bucket,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
 /obj/structure/sign/poster/random/directional/north,
@@ -384,7 +380,7 @@
 	},
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/machinery/button/door/directional/north{
 	id = "custodialwagon";
@@ -403,7 +399,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "S" = (
@@ -434,7 +430,7 @@
 "V" = (
 /obj/effect/turf_decal/tile/purple/half/contrasted,
 /obj/effect/turf_decal/tile/blue,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "W" = (
@@ -495,7 +491,7 @@
 	},
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 
@@ -542,7 +538,7 @@ a
 a
 i
 u
-A
+e
 g
 F
 C

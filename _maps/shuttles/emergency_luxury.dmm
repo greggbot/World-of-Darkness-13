@@ -575,9 +575,8 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "yB" = (
-/obj/structure/chair/stool/bar{
+/obj/structure/chair/stool/bar/directional/south{
 	can_buckle = 1;
-	dir = 1;
 	name = "buckleable bar stool"
 	},
 /turf/open/floor/carpet/blue,
@@ -606,9 +605,8 @@
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape/luxury)
 "zM" = (
-/obj/structure/chair/stool/bar{
+/obj/structure/chair/stool/bar/directional/west{
 	can_buckle = 1;
-	dir = 8;
 	name = "buckleable bar stool"
 	},
 /turf/open/floor/carpet/blue,

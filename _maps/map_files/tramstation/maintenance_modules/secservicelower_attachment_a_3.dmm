@@ -36,7 +36,7 @@
 /area/station/maintenance/central/greater)
 "w" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/central/greater)
 "x" = (

@@ -89,9 +89,7 @@
 "cZ" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/shieldgen,
-/obj/machinery/camera/autoname{
-	dir = 4
-	},
+/obj/machinery/camera/autoname/directional/west,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/escape)
 "dt" = (
@@ -493,7 +491,7 @@
 /obj/structure/chair/comfy/shuttle,
 /obj/machinery/status_display/evac/directional/north,
 /obj/machinery/camera/autoname{
-	dir = 9
+	dir = 6
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/escape)
@@ -754,14 +752,14 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 10
 	},
-/obj/machinery/camera/autoname,
+/obj/machinery/camera/directional/north,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "pU" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 4
@@ -1092,7 +1090,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/machinery/camera/autoname,
+/obj/machinery/camera/directional/north,
 /obj/machinery/button/door/directional/south{
 	id = "evac_shutters";
 	name = "Emergency Shutters Control"
@@ -1236,7 +1234,7 @@
 /obj/machinery/stasis,
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/camera/autoname{
-	dir = 9
+	dir = 6
 	},
 /turf/open/floor/iron/white/herringbone,
 /area/shuttle/escape)
@@ -1408,7 +1406,7 @@
 "Eu" = (
 /obj/structure/closet/crate/freezer/blood,
 /obj/effect/turf_decal/bot_red,
-/obj/machinery/camera/autoname,
+/obj/machinery/camera/directional/north,
 /turf/open/floor/iron/white/textured,
 /area/shuttle/escape)
 "EB" = (
@@ -1462,7 +1460,7 @@
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/status_display/evac/directional/west,
 /obj/machinery/camera/autoname{
-	dir = 9
+	dir = 6
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
@@ -1784,7 +1782,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 8
@@ -1939,9 +1937,7 @@
 "NM" = (
 /obj/structure/table/glass,
 /obj/effect/spawner/random/entertainment/cigarette,
-/obj/machinery/camera/autoname{
-	dir = 4
-	},
+/obj/machinery/camera/autoname/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "OB" = (
@@ -2193,9 +2189,7 @@
 	pixel_x = -5;
 	pixel_y = 6
 	},
-/obj/machinery/camera/autoname{
-	dir = 8
-	},
+/obj/machinery/camera/autoname/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Sq" = (
@@ -2385,7 +2379,7 @@
 /obj/machinery/chem_dispenser/drinks/beer,
 /obj/machinery/status_display/evac/directional/north,
 /obj/machinery/camera/autoname{
-	dir = 9
+	dir = 6
 	},
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -2639,7 +2633,7 @@
 /area/shuttle/escape)
 "ZI" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 1

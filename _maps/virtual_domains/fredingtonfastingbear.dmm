@@ -177,7 +177,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "kf" = (
-/obj/structure/chair/stool/bar/directional/east,
+/obj/structure/chair/stool/bar/directional/west,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "km" = (
@@ -776,7 +776,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "Mm" = (
-/obj/structure/chair/stool/bar/directional/north,
+/obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "Mq" = (

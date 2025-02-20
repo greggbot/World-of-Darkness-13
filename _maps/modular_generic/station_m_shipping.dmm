@@ -12,13 +12,6 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/template_noop)
-"c" = (
-/obj/effect/turf_decal/stripes{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/smooth,
-/area/template_noop)
 "d" = (
 /obj/machinery/light/small/directional/north,
 /turf/template_noop,
@@ -81,9 +74,9 @@
 /area/template_noop)
 "p" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth,
 /area/template_noop)
 "q" = (
@@ -99,7 +92,7 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/official/here_for_your_safety/directional/north,
 /turf/open/floor/plating,
 /area/template_noop)
@@ -111,10 +104,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/smooth,
-/area/template_noop)
-"w" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/smooth,
 /area/template_noop)
 "x" = (
@@ -130,10 +119,10 @@
 /area/template_noop)
 "B" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/decal/cleanable/oil/streak{
 	pixel_x = 1
@@ -153,7 +142,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "J" = (
@@ -199,7 +188,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken/directional/west,
 /turf/open/floor/iron/smooth,
 /area/template_noop)
@@ -248,7 +237,7 @@ e
 O
 r
 r
-c
+l
 J
 h
 "}
@@ -279,7 +268,7 @@ h
 t
 j
 V
-w
+Z
 q
 H
 t

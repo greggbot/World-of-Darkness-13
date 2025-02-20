@@ -506,7 +506,7 @@
 /area/shuttle/sbc_starfury)
 "bW" = (
 /obj/structure/cable,
-/obj/structure/chair/stool/directional/north,
+/obj/structure/chair/stool/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_starfury)
@@ -1374,7 +1374,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/red/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/structure/table,
 /turf/open/floor/mineral/plastitanium/red,
@@ -1719,7 +1719,7 @@
 "gF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/vehicle/sealed/mecha/marauder/mauler/loaded,
+/obj/vehicle/sealed/mecha/medical/combat/marauder/mauler/loaded,
 /turf/open/floor/pod/light,
 /area/shuttle/sbc_starfury)
 "gH" = (
@@ -2104,7 +2104,7 @@
 	pixel_y = -4
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/pod/light,
 /area/shuttle/sbc_starfury)
@@ -2860,7 +2860,7 @@
 /area/shuttle/sbc_starfury)
 "jM" = (
 /obj/effect/turf_decal/box/corners{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/shuttle/sbc_starfury)
@@ -3194,7 +3194,7 @@
 /area/shuttle/sbc_starfury)
 "kQ" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -3204,7 +3204,7 @@
 /area/shuttle/sbc_starfury)
 "kR" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/sbc_starfury)
@@ -3220,7 +3220,7 @@
 /area/shuttle/sbc_starfury)
 "la" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/sbc_starfury)
@@ -3529,11 +3529,11 @@
 /area/shuttle/sbc_starfury)
 "mC" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/plasma,
 /obj/effect/turf_decal/box/corners{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
@@ -3567,7 +3567,7 @@
 /area/shuttle/sbc_starfury)
 "mJ" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/machinery/light/small/red/directional/north,
 /turf/open/floor/plating,
@@ -4074,7 +4074,7 @@
 /area/shuttle/sbc_starfury)
 "vK" = (
 /obj/effect/turf_decal/box/corners{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/engine,
 /area/shuttle/sbc_starfury)
@@ -4196,7 +4196,7 @@
 /area/shuttle/sbc_starfury)
 "xF" = (
 /obj/structure/cable,
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/dark,
@@ -4491,7 +4491,7 @@
 /area/shuttle/sbc_starfury)
 "CC" = (
 /obj/effect/turf_decal/box/corners{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/shuttle/sbc_starfury)
@@ -4597,7 +4597,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/red/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/structure/table,
 /turf/open/floor/mineral/plastitanium/red,
@@ -4901,10 +4901,10 @@
 /obj/machinery/power/turbine/core_rotor,
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/red/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/effect/turf_decal/stripes/red/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/plating/airless,
 /area/shuttle/sbc_starfury)
@@ -4947,7 +4947,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/iron,
 /area/shuttle/sbc_starfury)
@@ -5417,7 +5417,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/portable_atmospherics/canister/plasma,
 /obj/effect/turf_decal/box/corners{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
@@ -5722,7 +5722,7 @@
 /area/shuttle/sbc_starfury)
 "Yi" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,

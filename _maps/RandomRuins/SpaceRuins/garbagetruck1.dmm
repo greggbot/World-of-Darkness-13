@@ -278,7 +278,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "kS" = (
-/obj/machinery/light/warm,
+/obj/machinery/light/warm/directional/south,
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
@@ -844,7 +844,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "Ie" = (
-/obj/machinery/airalarm{
+/obj/machinery/airalarm/directional/north{
 	pixel_y = 25
 	},
 /obj/structure/cable,
@@ -1065,12 +1065,10 @@
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/machinery/light/warm,
-/obj/machinery/power/apc{
-	locked = 0;
-	pixel_y = -25;
-	start_charge = 0
-	},
+/obj/machinery/light/warm/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/no_charge,
+/obj/effect/mapping_helpers/apc/unlocked,
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
@@ -1134,10 +1132,6 @@
 /obj/item/food/deadmouse/moldy,
 /obj/item/pushbroom,
 /obj/effect/decal/cleanable/insectguts,
-/turf/open/floor/plating/dumpsterair,
-/area/ruin/space/has_grav/garbagetruck/foodwaste)
-"TX" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "UX" = (
@@ -1224,7 +1218,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "Zb" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/food/deadmouse,
 /mob/living/basic/mouse/rat,
 /obj/item/organ/heart/rat,
@@ -1335,7 +1329,7 @@ aP
 GU
 KT
 Ad
-TX
+Yz
 ki
 Fp
 xZ
@@ -1349,7 +1343,7 @@ OD
 Ie
 Ct
 tU
-TX
+Yz
 yh
 bx
 Yz
@@ -1376,7 +1370,7 @@ pF
 Gh
 hN
 QL
-TX
+Yz
 Mq
 AM
 CF

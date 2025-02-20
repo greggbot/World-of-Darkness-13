@@ -4,9 +4,9 @@
 /area/template_noop)
 "d" = (
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb,
-/obj/item/storage/secure/safe/directional/north{
+/obj/structure/secure_safe/directional/north{
 	name = "evidence safe"
 	},
 /turf/open/floor/iron/dark,
@@ -39,7 +39,7 @@
 /obj/structure/closet/secure_closet/evidence,
 /obj/effect/spawner/random/sakhno/ammo,
 /obj/effect/spawner/random/medical/injector,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
 /turf/open/floor/iron/dark/textured_large,
 /area/template_noop)
@@ -108,7 +108,7 @@
 /obj/effect/spawner/random/contraband/narcotics,
 /obj/effect/spawner/random/contraband/permabrig_weapon,
 /obj/effect/spawner/random/contraband/permabrig_weapon,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/entertainment/money_large,
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
 /turf/open/floor/iron/dark/textured_large,

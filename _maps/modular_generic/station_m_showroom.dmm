@@ -14,7 +14,7 @@
 /obj/structure/chair/sofa/bench/tram/left{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -26,7 +26,7 @@
 /area/template_noop)
 "d" = (
 /obj/effect/spawner/random/vending/colavend,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "i" = (
@@ -183,7 +183,7 @@
 	},
 /obj/effect/spawner/random/trash/garbage,
 /obj/structure/sign/calendar/directional/east,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/railing,
 /turf/open/floor/iron,
 /area/template_noop)

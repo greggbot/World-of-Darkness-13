@@ -155,7 +155,7 @@
 /area/virtual_domain/fullbright)
 "ce" = (
 /obj/structure/reagent_dispensers/fueltank,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating,
 /area/virtual_domain)
@@ -655,7 +655,7 @@
 /area/virtual_domain)
 "hT" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/decal/cleanable/cobweb,
 /obj/machinery/power/smes/full,
@@ -848,7 +848,7 @@
 "kD" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
@@ -1689,9 +1689,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "ww" = (
-/obj/structure/chair/stool/directional/south{
-	dir = 8
-	},
+/obj/structure/chair/stool/directional/south,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "wx" = (
@@ -2291,7 +2289,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Dx" = (
-/obj/structure/chair/stool/bar/directional/east,
+/obj/structure/chair/stool/bar/directional/west,
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/virtual_domain)
@@ -2526,7 +2524,7 @@
 /area/virtual_domain/fullbright)
 "Gx" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/structure/closet_empty/crate,
 /obj/effect/spawner/random/maintenance/two,
 /obj/item/storage/toolbox/fishing{
@@ -2648,7 +2646,7 @@
 /area/virtual_domain)
 "HV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/virtual_domain)
 "Ib" = (
@@ -2867,7 +2865,7 @@
 /area/virtual_domain)
 "KI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/structure/crate,
 /turf/open/floor/plating,
 /area/virtual_domain)
@@ -3193,7 +3191,7 @@
 /area/virtual_domain)
 "Ol" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/plating,
 /area/virtual_domain)
@@ -3596,7 +3594,7 @@
 /area/virtual_domain)
 "Sr" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance/three,
 /obj/effect/decal/cleanable/cobweb,

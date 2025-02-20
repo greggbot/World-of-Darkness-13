@@ -68,7 +68,7 @@
 /turf/open/misc/asteroid,
 /area/station/asteroid)
 "H" = (
-/obj/structure/chair/stool/directional/north,
+/obj/structure/chair/stool/directional/south,
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating,
 /area/station/asteroid)
@@ -96,7 +96,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/security)
 "U" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating,
 /area/station/asteroid)

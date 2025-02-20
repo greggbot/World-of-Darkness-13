@@ -48,11 +48,6 @@
 /obj/structure/sign/poster/contraband/random/directional/north,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/central/greater)
-"B" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/north,
-/turf/open/floor/iron/smooth,
-/area/station/maintenance/central/greater)
 "G" = (
 /turf/closed/wall,
 /area/station/maintenance/central/greater)
@@ -96,7 +91,7 @@ G
 t
 p
 a
-B
+p
 n
 q
 q
@@ -122,7 +117,7 @@ G
 G
 G
 A
-B
+p
 t
 q
 q

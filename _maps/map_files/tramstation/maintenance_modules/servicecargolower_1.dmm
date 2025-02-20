@@ -220,9 +220,7 @@
 /area/station/maintenance/starboard/greater)
 "G" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sink{
-	pixel_y = 15
-	},
+/obj/structure/sink/directional/south,
 /obj/structure/mirror/directional/north,
 /obj/item/reagent_containers/cup/bucket{
 	pixel_x = -10;

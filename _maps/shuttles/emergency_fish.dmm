@@ -79,7 +79,7 @@
 "fA" = (
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/item/stack/sheet/mineral/sandbags{
 	amount = 5
@@ -291,7 +291,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
 /turf/open/floor/mineral/plastitanium,
@@ -444,7 +444,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "AV" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/structure/fluff/beach_umbrella,
 /obj/effect/turf_decal/tile/dark/half/contrasted{
 	dir = 4
@@ -678,7 +678,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "NM" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/structure/fluff/beach_umbrella/cap,
 /obj/effect/turf_decal/tile/dark/half/contrasted{
 	dir = 4

@@ -178,7 +178,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "oR" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/carpet,
 /area/centcom/basketball)
 "pu" = (

@@ -191,7 +191,7 @@
 /obj/machinery/light/directional/east,
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/camera/autoname{
-	dir = 6
+	dir = 9
 	},
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
@@ -306,7 +306,7 @@
 /turf/open/floor/glass/reinforced,
 /area/shuttle/escape)
 "eV" = (
-/obj/machinery/camera/autoname,
+/obj/machinery/camera/directional/north,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "hf" = (
@@ -386,9 +386,7 @@
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/shuttle/escape)
 "Rl" = (
-/obj/machinery/camera/autoname{
-	dir = 4
-	},
+/obj/machinery/camera/autoname/directional/west,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/shuttle/escape)
 "WP" = (

@@ -936,7 +936,7 @@
 /turf/open/floor/iron/white/side,
 /area/shuttle/syndicate/medical)
 "Km" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/syndicate/engineering)
 "KB" = (

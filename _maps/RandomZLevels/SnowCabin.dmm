@@ -3057,7 +3057,7 @@
 /area/awaymission/cabin/caves/mountain)
 "tk" = (
 /obj/effect/turf_decal/stripes/red/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/effect/light_emitter{
 	set_cap = 3;
@@ -3319,7 +3319,7 @@
 /area/awaymission/cabin/caves)
 "vq" = (
 /obj/effect/turf_decal/stripes/red/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/light_emitter{
 	set_cap = 3;
@@ -4592,7 +4592,7 @@
 /area/awaymission/cabin/caves)
 "MA" = (
 /obj/effect/turf_decal/stripes/red/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/light_emitter{
 	set_cap = 3;

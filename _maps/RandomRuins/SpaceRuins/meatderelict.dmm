@@ -155,7 +155,7 @@
 	dir = 10
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space)
@@ -252,7 +252,7 @@
 "fW" = (
 /obj/effect/turf_decal/tile/purple/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "go" = (
@@ -529,7 +529,7 @@
 /obj/item/reagent_containers/cup/bottle/lithium,
 /obj/item/reagent_containers/cup/bottle/nitrogen,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "kB" = (
@@ -655,7 +655,7 @@
 /obj/structure/closet/secure_closet/chemical,
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "nM" = (
@@ -926,7 +926,7 @@
 /obj/item/reagent_containers/cup/bottle/mutagen,
 /obj/item/reagent_containers/cup/bottle/mutagen,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "sk" = (
@@ -971,7 +971,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space)
@@ -1201,7 +1201,7 @@
 "wM" = (
 /obj/structure/sign/warning/biohazard/directional/east,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "wR" = (
@@ -1597,7 +1597,7 @@
 "Ei" = (
 /obj/machinery/door/airlock/science,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Ew" = (
@@ -1674,11 +1674,6 @@
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/indestructible/dark,
-/area/ruin/space/has_grav/powered/biooutpost)
-"Gb" = (
-/obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Gd" = (
 /obj/machinery/light/cold/dim/directional/east,
@@ -2190,7 +2185,7 @@
 "QM" = (
 /obj/structure/table,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 6
@@ -2226,7 +2221,7 @@
 	dir = 6
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space)
@@ -2898,8 +2893,8 @@ re
 re
 Jh
 ny
-Gb
-Gb
+cp
+cp
 ny
 Jh
 Jh
@@ -3137,7 +3132,7 @@ Jh
 Jh
 Uj
 DJ
-Gb
+cp
 xk
 Jh
 hQ
@@ -3221,7 +3216,7 @@ Ju
 DJ
 ea
 mA
-Gb
+cp
 vZ
 Jh
 Jh
