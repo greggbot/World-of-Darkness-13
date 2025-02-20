@@ -8,6 +8,6 @@
 /obj/structure/sign/poster/@SUBTYPES : /obj/structure/sign/poster/random{@OLD}
 /obj/structure/table/wood/bar : /obj/structure/table/wood{@OLD}
 /obj/structure/destructible/cult/tome : /obj/structure/destructible/cult/item_dispenser/archives{@OLD}
-/obj/structure/window/reinforced/@SUBTYPES : /obj/structure/window/reinforced/fulltile/@SUBTYPES{@OLD}
+/obj/structure/window/reinforced/indestructable : /obj/structure/window/reinforced/fulltile/indestructable{@OLD}
 /mob/living/basic/pet/cat/vampire : /mob/living/basic/pet/cat{@OLD}
 /obj/effect/mob_spawn/human/@SUBTYPES : /obj/effect/mob_spawn/ghost_role/human/@SUBTYPES{@OLD}
