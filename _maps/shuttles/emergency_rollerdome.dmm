@@ -31,7 +31,7 @@
 /turf/open/floor/wood/parquet,
 /area/shuttle/escape)
 "fX" = (
-/obj/structure/chair/stool/bar/directional/east,
+/obj/structure/chair/stool/bar/directional/west,
 /turf/open/floor/wood/parquet,
 /area/shuttle/escape)
 "hD" = (

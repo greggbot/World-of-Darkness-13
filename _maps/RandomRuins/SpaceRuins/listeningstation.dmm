@@ -657,7 +657,7 @@
 /area/ruin/space/has_grav/listeningstation)
 "It" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/north,
+/obj/structure/chair/stool/directional/south,
 /obj/structure/sign/poster/contraband/random/directional/west,
 /turf/open/floor/iron/small,
 /area/ruin/space/has_grav/listeningstation)

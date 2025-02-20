@@ -83,7 +83,7 @@
 /turf/open/floor/carpet/neon/simple/red,
 /area/deathmatch)
 "aA" = (
-/obj/vehicle/sealed/mecha/gygax,
+/obj/vehicle/sealed/mecha/medical/combat/gygax,
 /turf/open/floor/carpet/neon/simple/yellow,
 /area/deathmatch)
 "aB" = (
@@ -105,7 +105,7 @@
 /turf/open/lava,
 /area/deathmatch)
 "aH" = (
-/obj/vehicle/sealed/mecha/gygax,
+/obj/vehicle/sealed/mecha/medical/combat/gygax,
 /turf/open/floor/carpet/neon/simple/green,
 /area/deathmatch)
 "aI" = (
@@ -588,7 +588,7 @@
 /turf/open/floor/engine,
 /area/deathmatch)
 "db" = (
-/obj/vehicle/sealed/mecha/gygax,
+/obj/vehicle/sealed/mecha/medical/combat/gygax,
 /turf/open/floor/carpet/neon/simple/orange,
 /area/deathmatch)
 "dc" = (
@@ -605,7 +605,7 @@
 /turf/open/floor/carpet/neon/simple/teal,
 /area/deathmatch)
 "dg" = (
-/obj/vehicle/sealed/mecha/gygax,
+/obj/vehicle/sealed/mecha/medical/combat/gygax,
 /turf/open/floor/carpet/neon/simple/teal,
 /area/deathmatch)
 "dh" = (

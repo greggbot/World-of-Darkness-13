@@ -53,7 +53,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)
 "G" = (
-/obj/structure/chair/stool/bar/directional/east,
+/obj/structure/chair/stool/bar/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)

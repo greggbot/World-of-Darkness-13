@@ -35,11 +35,6 @@
 "r" = (
 /turf/template_noop,
 /area/template_noop)
-"s" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/east,
-/turf/open/floor/iron/smooth,
-/area/station/maintenance/port/central)
 "w" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
@@ -164,7 +159,7 @@ z
 J
 f
 f
-s
+g
 q
 "}
 (5,1,1) = {"

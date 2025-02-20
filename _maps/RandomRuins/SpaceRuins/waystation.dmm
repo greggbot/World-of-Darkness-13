@@ -207,8 +207,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/cargooffice)
 "dZ" = (
-/obj/structure/chair/stool{
-	dir = 1;
+/obj/structure/chair/stool/directional/south{
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/blood,
@@ -549,9 +548,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/waystation/securestorage)
 "kc" = (
-/obj/structure/chair/stool{
-	dir = 4
-	},
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/cargobay)
 "kg" = (

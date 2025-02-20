@@ -49,11 +49,11 @@
 	pixel_x = 9;
 	pixel_y = 9
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/virtual_domain/protected_space/fullbright)
 "cX" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/claymore/cutlass,
 /obj/item/clothing/head/costume/pirate/bandana/armored{
 	pixel_x = -9;
@@ -114,7 +114,7 @@
 /area/virtual_domain/fullbright)
 "fw" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/virtual_domain/protected_space/fullbright)
 "fR" = (
@@ -254,7 +254,7 @@
 /turf/open/misc/dirt/jungle,
 /area/virtual_domain/protected_space)
 "oL" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/maint,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
@@ -295,7 +295,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /mob/living/basic/trooper/pirate/ranged/space,
 /turf/open/floor/carpet/blue,
 /area/virtual_domain)
@@ -324,7 +324,7 @@
 /area/virtual_domain/protected_space/fullbright)
 "ru" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/maint{
 	pixel_x = 2;
 	pixel_y = 1
@@ -341,7 +341,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "td" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/bitrunning/cache_spawn,
 /turf/open/floor/carpet/blue,
 /area/virtual_domain)
@@ -357,7 +357,7 @@
 /obj/structure/closet/cabinet,
 /obj/item/clothing/head/costume/pirate/armored,
 /obj/item/clothing/suit/costume/pirate/captain/armored,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/parquet,
 /area/virtual_domain)
 "tQ" = (
@@ -388,7 +388,7 @@
 	},
 /area/virtual_domain/fullbright)
 "uH" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
 /obj/item/flashlight/flare/torch{
 	pixel_y = 10
@@ -411,7 +411,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
@@ -474,7 +474,7 @@
 	pixel_x = -10
 	},
 /obj/item/gun/energy/laser/retro,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/virtual_domain/protected_space/fullbright)
 "zR" = (
@@ -512,7 +512,7 @@
 /turf/open/floor/wood/parquet,
 /area/virtual_domain)
 "AP" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/parquet,
 /area/virtual_domain)
 "Bu" = (
@@ -520,7 +520,7 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/maint{
 	pixel_x = 2;
 	pixel_y = 13
@@ -569,7 +569,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "EL" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /mob/living/basic/trooper/pirate/melee/space,
 /turf/open/floor/wood/parquet,
 /area/virtual_domain)
@@ -697,7 +697,7 @@
 	pixel_x = -4;
 	pixel_y = 17
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/virtual_domain/protected_space/fullbright)
 "LP" = (
@@ -707,7 +707,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "Mf" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood{
 	icon_state = "wood_large"
 	},
@@ -758,7 +758,7 @@
 /obj/structure/chair/comfy/carp{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/blue,
 /area/virtual_domain)
 "OD" = (
@@ -841,7 +841,7 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /mob/living/basic/trooper/pirate/ranged,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
@@ -913,14 +913,14 @@
 /turf/open/water/beach,
 /area/virtual_domain/fullbright)
 "VE" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/virtual_domain/protected_space/fullbright)
 "VG" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/blue,
 /area/virtual_domain)
 "Wu" = (

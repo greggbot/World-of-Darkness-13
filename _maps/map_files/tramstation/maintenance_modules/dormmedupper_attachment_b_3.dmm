@@ -4,7 +4,7 @@
 /area/station/asteroid)
 "b" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/plating,
 /area/station/asteroid)
 "d" = (

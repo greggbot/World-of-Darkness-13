@@ -85,13 +85,13 @@
 "x" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 8
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 8
@@ -150,13 +150,13 @@
 "E" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 1
 	},
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{

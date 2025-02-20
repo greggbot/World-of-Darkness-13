@@ -211,7 +211,7 @@
 /turf/open/indestructible,
 /area/misc/testroom/gateway_room)
 "M" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},

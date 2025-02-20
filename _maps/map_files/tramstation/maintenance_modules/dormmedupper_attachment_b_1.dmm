@@ -18,7 +18,7 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "r" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/crew_quarters/dorms)
 "x" = (

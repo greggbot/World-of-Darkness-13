@@ -16,7 +16,7 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/lavaland_atmos{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -111,7 +111,7 @@
 /turf/open/floor/asphalt/lavaland,
 /area/ruin/thelizardsgas_lavaland)
 "fl" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /obj/structure/sign/poster/contraband/starkist/directional/north,
 /turf/open/floor/iron{
@@ -159,7 +159,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/light/small/directional/east,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -191,7 +191,7 @@
 /obj/machinery/power/rtg/advanced,
 /obj/effect/turf_decal/bot,
 /obj/structure/sign/warning/electric_shock/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -267,7 +267,7 @@
 	name = "plasma storage tank";
 	tank_volume = 2500
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -290,7 +290,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "mG" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /obj/structure/noticeboard/directional/north,
@@ -302,7 +302,7 @@
 /obj/structure/chair/sofa/left/maroon{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -312,7 +312,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -372,7 +372,7 @@
 /obj/structure/cable,
 /obj/effect/spawner/random/structure/closet_maintenance,
 /obj/structure/sign/poster/fluff/lizards_gas_power/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -411,7 +411,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "rM" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
@@ -440,7 +440,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "tk" = (
-/obj/structure/chair/stool/bar/directional/east,
+/obj/structure/chair/stool/bar/directional/west,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -489,7 +489,7 @@
 	pixel_y = 6;
 	pixel_x = 2
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -514,7 +514,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/lavaland_atmos{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -550,7 +550,7 @@
 	pixel_y = 6;
 	pixel_x = 7
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -610,7 +610,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "Bf" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /turf/open/floor/iron{
@@ -659,7 +659,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "BX" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -671,7 +671,7 @@
 /turf/open/floor/plating/lavaland_baseturf,
 /area/ruin/thelizardsgas_lavaland)
 "Cx" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -689,7 +689,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/lavaland_atmos{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -771,13 +771,13 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/lavaland_atmos{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
 /area/ruin/thelizardsgas_lavaland)
 "Gg" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /turf/open/floor/iron{
@@ -807,7 +807,7 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/lavaland_atmos{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -817,7 +817,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "HI" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /obj/machinery/duct,
 /turf/open/floor/iron{
@@ -825,7 +825,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "HL" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/food_packaging,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -908,7 +908,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "Kc" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
@@ -917,7 +917,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "Kl" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron{
@@ -945,7 +945,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "Mv" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/effect/spawner/random/entertainment/cigarette_pack,
 /obj/effect/spawner/random/entertainment/cigarette_pack,
@@ -1195,7 +1195,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/lavaland_atmos{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},

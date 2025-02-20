@@ -50,11 +50,6 @@
 	},
 /turf/open/floor/plating,
 /area/template_noop)
-"fN" = (
-/obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark/diagonal,
-/area/template_noop)
 "fS" = (
 /obj/effect/turf_decal/delivery,
 /obj/effect/spawner/random/structure/crate,
@@ -76,7 +71,7 @@
 	pixel_x = -6;
 	pixel_y = 13
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/template_noop)
 "ik" = (
@@ -100,7 +95,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/sign/poster/contraband/random/directional/west,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "kF" = (
@@ -185,7 +180,7 @@
 	},
 /obj/structure/sign/poster/contraband/random/directional/west,
 /obj/machinery/light/warm/dim/directional/west,
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
@@ -423,7 +418,7 @@
 /area/template_noop)
 "VU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "ZE" = (
@@ -498,7 +493,7 @@ Nr
 es
 Cd
 vI
-fN
+xD
 Ec
 gW
 mK
@@ -537,7 +532,7 @@ bq
 Mi
 dy
 uC
-fN
+xD
 vX
 gW
 mK

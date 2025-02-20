@@ -57,7 +57,7 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "o" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/crowbar/red,
 /turf/open/floor/iron/white/textured_large,
 /area/template_noop)
@@ -199,7 +199,7 @@
 /area/template_noop)
 "Y" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,

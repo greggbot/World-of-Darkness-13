@@ -254,7 +254,7 @@
 /turf/open/misc/asteroid/snow/airless,
 /area/centcom/syndicate_mothership)
 "du" = (
-/obj/structure/chair/stool/directional/north,
+/obj/structure/chair/stool/directional/south,
 /obj/effect/landmark/start/nukeop,
 /obj/structure/sign/poster/contraband/donk_co/directional/south,
 /turf/open/floor/wood/tile,
@@ -554,7 +554,7 @@
 /obj/structure/frame/computer{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer/security/telescreen/entertainment/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership)
@@ -713,7 +713,7 @@
 /area/centcom/syndicate_mothership/control)
 "hA" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/railing/corner{
 	dir = 8
@@ -856,7 +856,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
 "iV" = (
-/obj/structure/chair/stool/directional/north,
+/obj/structure/chair/stool/directional/south,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/syndicate_mothership/control)
 "iX" = (
@@ -1086,7 +1086,7 @@
 /area/centcom/syndicate_mothership/control)
 "lB" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/effect/turf_decal/siding/purple,
 /obj/structure/extinguisher_cabinet/directional/south,
@@ -1694,7 +1694,7 @@
 /area/centcom/syndicate_mothership/control)
 "sv" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership)
 "sE" = (
@@ -2681,7 +2681,7 @@
 /area/centcom/syndicate_mothership)
 "EV" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/turf_decal/siding/purple,
 /turf/open/floor/mineral/plastitanium,
@@ -2716,7 +2716,7 @@
 "FG" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
@@ -2757,7 +2757,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
 	},
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/wood/tile,
 /area/centcom/syndicate_mothership/control)
 "Ge" = (
@@ -3479,7 +3479,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
 	},
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/effect/landmark/start/nukeop,
 /turf/open/floor/wood/tile,
 /area/centcom/syndicate_mothership/control)
@@ -3721,10 +3721,10 @@
 /area/centcom/syndicate_mothership/control)
 "Pz" = (
 /obj/effect/turf_decal/box/corners{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
@@ -4212,7 +4212,7 @@
 /turf/open/floor/iron/textured_large,
 /area/centcom/syndicate_mothership/control)
 "TS" = (
-/obj/structure/chair/stool/directional/north,
+/obj/structure/chair/stool/directional/south,
 /obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/wood/tile,
 /area/centcom/syndicate_mothership/control)
@@ -4238,7 +4238,7 @@
 /area/centcom/syndicate_mothership/control)
 "Un" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/structure/railing/corner{
 	dir = 1
@@ -4255,7 +4255,7 @@
 /area/space/nearstation)
 "Uw" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/structure/railing/corner{
 	dir = 4
@@ -4720,7 +4720,7 @@
 /turf/open/floor/plating/snowed/icemoon,
 /area/centcom/syndicate_mothership/control)
 "ZX" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership)
 "ZZ" = (

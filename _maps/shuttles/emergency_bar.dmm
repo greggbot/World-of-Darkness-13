@@ -185,7 +185,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "aN" = (
-/obj/structure/chair/stool/bar/directional/north{
+/obj/structure/chair/stool/bar/directional/south{
 	can_buckle = 1;
 	name = "buckleable bar stool"
 	},
@@ -480,7 +480,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "en" = (
-/obj/structure/chair/stool/bar/directional/east{
+/obj/structure/chair/stool/bar/directional/west{
 	can_buckle = 1;
 	name = "buckleable bar stool"
 	},

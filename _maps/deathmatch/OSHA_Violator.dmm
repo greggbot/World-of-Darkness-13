@@ -266,7 +266,7 @@
 "sp" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /turf/open/indestructible,
 /area/deathmatch)
@@ -351,7 +351,7 @@
 "vK" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/indestructible,
 /area/deathmatch)
@@ -375,7 +375,7 @@
 /area/deathmatch)
 "wI" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -866,7 +866,7 @@
 /area/deathmatch)
 "Pu" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /turf/open/indestructible,
 /area/deathmatch)
@@ -878,7 +878,7 @@
 /area/deathmatch)
 "QA" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /turf/open/indestructible,
 /area/deathmatch)

@@ -51,7 +51,7 @@
 "ds" = (
 /obj/structure/bed/maint,
 /obj/item/bedsheet/syndie,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
 "dP" = (
@@ -99,7 +99,7 @@
 /turf/open/lava/plasma/ice_moon,
 /area/icemoon/underground/explored)
 "gY" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
@@ -241,7 +241,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "nL" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/shower/directional/south,
 /obj/structure/curtain,
 /turf/open/floor/iron/white/diagonal,
@@ -389,7 +389,7 @@
 /turf/open/misc/asteroid/snow/standard_air,
 /area/ruin/comms_agent)
 "xs" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /obj/machinery/microwave,
 /turf/open/floor/iron/white,
@@ -456,7 +456,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "BZ" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/north,
 /obj/structure/sign/poster/contraband/random/directional/north,
 /obj/item/storage/fancy/egg_box,
@@ -506,7 +506,7 @@
 	pixel_y = 3;
 	amount = 30
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/stone,
 /area/ruin/comms_agent)
 "EL" = (
@@ -647,11 +647,11 @@
 /turf/open/floor/wood/parquet,
 /area/ruin/comms_agent)
 "KG" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/stone,
 /area/ruin/comms_agent)
 "KM" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/parquet,
 /area/ruin/comms_agent)
 "KQ" = (
@@ -678,7 +678,7 @@
 /turf/open/floor/plating,
 /area/ruin/comms_agent/maint)
 "Lr" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /obj/item/reagent_containers/cup/glass/waterbottle/empty{
 	pixel_y = 18;
@@ -716,11 +716,11 @@
 /area/ruin/comms_agent/maint)
 "Mj" = (
 /obj/structure/fireplace,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/stone,
 /area/ruin/comms_agent)
 "Ml" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/stone,
 /area/ruin/comms_agent)
@@ -759,7 +759,7 @@
 /area/ruin/comms_agent/maint)
 "Ng" = (
 /obj/item/chair/wood/wings,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/stone,
 /area/ruin/comms_agent)
 "Ny" = (
@@ -803,7 +803,7 @@
 /area/icemoon/underground/explored)
 "Pj" = (
 /obj/structure/bed/maint,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
 "PC" = (
@@ -885,7 +885,7 @@
 /turf/open/floor/carpet,
 /area/ruin/comms_agent)
 "Uw" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -915,7 +915,7 @@
 /turf/open/floor/iron,
 /area/ruin/comms_agent)
 "WL" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/ruin/comms_agent)
 "WR" = (
@@ -959,7 +959,7 @@
 /area/ruin/comms_agent)
 "ZE" = (
 /obj/structure/sink/directional/east,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/mirror/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white/diagonal,

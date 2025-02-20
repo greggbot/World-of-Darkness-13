@@ -145,11 +145,6 @@
 /obj/structure/closet/firecloset,
 /turf/open/floor/plating,
 /area/station/maintenance/port/central)
-"Z" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/north,
-/turf/open/floor/iron/smooth,
-/area/station/maintenance/port/central)
 
 (1,1,1) = {"
 r
@@ -247,7 +242,7 @@ q
 q
 b
 g
-Z
+b
 "}
 (8,1,1) = {"
 q

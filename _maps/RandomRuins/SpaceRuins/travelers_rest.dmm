@@ -249,9 +249,7 @@
 /turf/open/floor/iron/large,
 /area/ruin/space/has_grav/travelers_rest)
 "EI" = (
-/obj/structure/chair/stool/bar/directional/south{
-	dir = 8
-	},
+/obj/structure/chair/stool/bar/directional/south,
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 8
 	},
@@ -468,9 +466,7 @@
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 10
 	},
-/obj/structure/chair/stool/bar/directional/south{
-	dir = 8
-	},
+/obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/iron/large,
 /area/ruin/space/has_grav/travelers_rest)
 "ZE" = (

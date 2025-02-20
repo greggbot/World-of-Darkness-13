@@ -388,11 +388,6 @@
 	},
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/starboard/central)
-"HX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/stool/directional/north,
-/turf/open/floor/iron/smooth,
-/area/station/maintenance/starboard/central)
 "Ip" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1718,7 +1713,7 @@ EG
 dS
 zB
 mM
-HX
+zB
 dS
 BC
 VL

@@ -3,7 +3,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/pod,
 /area/virtual_domain/safehouse)
@@ -12,7 +12,7 @@
 /turf/closed/wall,
 /area/virtual_domain/safehouse)
 "c" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/east,
 /obj/effect/landmark/bitrunning/cache_goal_turf,
 /obj/effect/turf_decal/loading_area{
@@ -133,7 +133,7 @@
 /turf/open/floor/pod/dark,
 /area/virtual_domain/safehouse)
 "U" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/departments/cargo/directional/west,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/pod,

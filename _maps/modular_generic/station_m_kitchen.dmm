@@ -57,11 +57,11 @@
 /area/template_noop)
 "m" = (
 /obj/machinery/computer/arcade/amputation,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/large,
 /area/template_noop)
 "n" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/large,
 /area/template_noop)
 "o" = (
@@ -145,12 +145,12 @@
 /turf/open/floor/wood/large,
 /area/template_noop)
 "L" = (
-/obj/structure/chair/stool/bar/directional/north,
+/obj/structure/chair/stool/bar/directional/south,
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/wood/large,
 /area/template_noop)
 "M" = (
-/obj/structure/chair/stool/bar/directional/north,
+/obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/wood/large,
 /area/template_noop)
 "R" = (
@@ -183,8 +183,8 @@
 /turf/open/floor/iron/cafeteria,
 /area/template_noop)
 "Y" = (
-/obj/structure/chair/stool/bar/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/stool/bar/directional/south,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/large,
 /area/template_noop)
 

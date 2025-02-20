@@ -2040,7 +2040,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
@@ -3153,7 +3153,7 @@
 /obj/item/flashlight,
 /obj/item/flashlight,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/undergroundoutpost45/gateway)
@@ -3524,7 +3524,7 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "nL" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
@@ -4058,7 +4058,7 @@
 "pz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
@@ -4072,7 +4072,7 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "pD" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 8
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,

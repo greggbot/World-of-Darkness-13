@@ -6,7 +6,7 @@
 /area/ruin/space/has_grav/turretedoutpost)
 "aC" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/corpse/human/syndicatecommando/lessenedgear,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
@@ -250,7 +250,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "oJ" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/turretedoutpost)
 "pi" = (
@@ -314,7 +314,7 @@
 "sy" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/item/rack_parts,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/grenade/chem_grenade/teargas,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
@@ -346,7 +346,7 @@
 "uC" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/machinery/suit_storage_unit/industrial,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "vi" = (
@@ -367,12 +367,6 @@
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
-"vG" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/structure/window/reinforced/tinted/spawner/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron,
-/area/ruin/space/has_grav/turretedoutpost)
 "vZ" = (
 /obj/effect/decal/cleanable/glass,
 /obj/effect/spawner/random/trash/grime,
@@ -385,7 +379,7 @@
 /area/ruin/space/has_grav/turretedoutpost)
 "wQ" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/turretedoutpost)
 "xa" = (
@@ -412,7 +406,7 @@
 "yC" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/structure/tank_dispenser/oxygen,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "zN" = (
@@ -539,7 +533,7 @@
 	pixel_x = -4;
 	pixel_y = 3
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "ID" = (
@@ -713,7 +707,7 @@
 /area/ruin/space/has_grav/turretedoutpost)
 "UD" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "US" = (
@@ -1123,7 +1117,7 @@ ir
 xa
 uc
 am
-vG
+ge
 TL
 rw
 ro

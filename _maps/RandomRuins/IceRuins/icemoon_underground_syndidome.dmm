@@ -23,7 +23,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/digital_clock/directional/west,
 /obj/machinery/computer{
 	dir = 4
@@ -49,7 +49,7 @@
 	},
 /obj/effect/turf_decal/siding/wideplating/dark,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "al" = (
@@ -75,12 +75,12 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "ba" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/fake_vent,
 /obj/effect/decal/cleanable/glass/plastitanium,
 /turf/open/floor/iron/dark/side,
@@ -129,7 +129,7 @@
 	},
 /obj/machinery/light/small/dim/directional/south,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "bB" = (
@@ -157,7 +157,7 @@
 	},
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "bJ" = (
@@ -344,7 +344,7 @@
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "eH" = (
@@ -359,7 +359,7 @@
 /obj/structure/chair/office/tactical{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass/plastitanium,
 /obj/effect/decal/cleanable/blood/trails{
 	dir = 1
@@ -398,14 +398,14 @@
 	pixel_x = -8;
 	pixel_y = 0
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
 "fp" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
@@ -433,7 +433,7 @@
 /obj/structure/chair/office/tactical{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
 "fU" = (
@@ -463,7 +463,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/footprints,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "gt" = (
@@ -483,7 +483,7 @@
 /area/ruin/syndibiodome)
 "gv" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 1
 	},
@@ -493,7 +493,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
@@ -541,7 +541,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "hm" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /mob/living/basic/gorilla/hostile,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
@@ -596,7 +596,7 @@
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 2
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "hR" = (
@@ -629,7 +629,7 @@
 /area/ruin/syndibiodome)
 "hZ" = (
 /obj/effect/gibspawner/human/bodypartless,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
 "ic" = (
@@ -695,7 +695,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "iS" = (
@@ -749,7 +749,7 @@
 "je" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "jp" = (
@@ -843,12 +843,12 @@
 /obj/effect/turf_decal/siding/wideplating/dark/end{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "kq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/red/directional/north,
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 1
@@ -858,7 +858,7 @@
 "kt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/human/bodypartless,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "kw" = (
@@ -883,7 +883,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "kH" = (
@@ -900,7 +900,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
@@ -939,7 +939,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/warm/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
@@ -962,7 +962,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/warning/bodysposal/directional/north,
 /turf/open/floor/iron/dark/herringbone,
@@ -993,7 +993,7 @@
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8
 	},
-/obj/structure/chair/stool/bar/directional/north,
+/obj/structure/chair/stool/bar/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/syndibiodome)
@@ -1026,7 +1026,7 @@
 /area/ruin/syndibiodome)
 "mV" = (
 /obj/effect/turf_decal/siding/wideplating/dark,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 1
@@ -1103,7 +1103,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
@@ -1151,7 +1151,7 @@
 	dir = 8
 	},
 /obj/machinery/light/warm/directional/west,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/basic/gorilla/hostile,
 /turf/open/floor/iron/dark,
@@ -1160,7 +1160,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer{
 	dir = 8
 	},
@@ -1193,7 +1193,7 @@
 	pixel_x = -2;
 	pixel_y = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/petri_dish/random{
 	pixel_x = 7;
 	pixel_y = 19
@@ -1221,7 +1221,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark/end{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/red/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
@@ -1240,7 +1240,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "pY" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/blue/corner{
 	dir = 1
@@ -1287,7 +1287,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass/plastitanium,
 /turf/open/floor/mineral/plastitanium/red,
@@ -1297,7 +1297,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark,
 /obj/effect/decal/cleanable/blood/trails{
 	dir = 10
@@ -1305,7 +1305,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "qB" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/fake_scrubber{
 	dir = 4
 	},
@@ -1332,7 +1332,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "qV" = (
@@ -1359,7 +1359,7 @@
 /area/ruin/syndibiodome)
 "rQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /mob/living/basic/gorilla/hostile,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
@@ -1368,7 +1368,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "rZ" = (
@@ -1415,13 +1415,13 @@
 /area/ruin/syndibiodome)
 "sM" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/generic,
 /mob/living/basic/clown/mutant/glutton,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "sN" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/fake_vent,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
@@ -1438,7 +1438,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "td" = (
@@ -1478,7 +1478,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "tx" = (
@@ -1535,7 +1535,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "us" = (
@@ -1549,7 +1549,7 @@
 /obj/structure/chair/sofa/bench/left{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 9
@@ -1579,7 +1579,7 @@
 	pixel_y = -8;
 	pixel_x = -6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/petri_dish/random{
 	pixel_x = 5;
 	pixel_y = -1
@@ -1598,7 +1598,7 @@
 "uH" = (
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/kirbyplants/organic/plant22,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
@@ -1614,13 +1614,13 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "uW" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/human/bodypartless,
 /obj/effect/turf_decal/trimline/blue/corner{
 	dir = 1
@@ -1637,7 +1637,7 @@
 	dir = 1
 	},
 /obj/machinery/light/warm/directional/south,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
@@ -1677,7 +1677,7 @@
 	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "vx" = (
@@ -1689,7 +1689,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark/corner{
 	dir = 1
 	},
@@ -1716,7 +1716,7 @@
 "vJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/purple/corner,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/basic/gorilla/hostile,
 /turf/open/floor/iron/dark/herringbone,
@@ -1750,7 +1750,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
@@ -1809,7 +1809,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/corpse/human/syndicatepilot,
 /obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/mineral/plastitanium/red,
@@ -1842,7 +1842,7 @@
 /obj/effect/turf_decal/trimline/purple/corner{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
@@ -1851,7 +1851,7 @@
 	dir = 8
 	},
 /obj/machinery/light/warm/directional/west,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/iron/dark/herringbone,
@@ -1874,7 +1874,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 9
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer{
 	dir = 8
 	},
@@ -1899,7 +1899,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/iron/dark/herringbone,
@@ -1953,7 +1953,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
 	},
@@ -1974,7 +1974,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
@@ -2022,7 +2022,7 @@
 /obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/bodypart/leg/right/skeleton,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
@@ -2100,7 +2100,7 @@
 	dir = 10
 	},
 /obj/machinery/digital_clock/directional/west,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 4
 	},
@@ -2148,7 +2148,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark,
 /obj/machinery/light/warm/directional/north,
 /turf/open/floor/iron/dark,
@@ -2180,7 +2180,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "zI" = (
@@ -2235,7 +2235,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Ay" = (
@@ -2256,7 +2256,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer{
 	dir = 4
 	},
@@ -2276,7 +2276,7 @@
 	dir = 10
 	},
 /obj/structure/closet/syndicate,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/storage/belt/security/webbing,
 /obj/item/storage/toolbox/syndicate,
 /obj/item/gun/ballistic/automatic/pistol/contraband,
@@ -2345,7 +2345,7 @@
 /area/ruin/syndibiodome)
 "BY" = (
 /obj/effect/turf_decal/siding/wideplating/dark,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/warm/directional/south,
@@ -2403,7 +2403,7 @@
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 2
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark/corner{
 	dir = 4
 	},
@@ -2487,7 +2487,7 @@
 "DS" = (
 /obj/effect/turf_decal/trimline/neutral/line,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
@@ -2548,7 +2548,7 @@
 	},
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
@@ -2561,7 +2561,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/dark/line,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "Fe" = (
@@ -2611,7 +2611,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "FH" = (
@@ -2721,7 +2721,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Hi" = (
@@ -2854,7 +2854,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 9
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
@@ -2876,7 +2876,7 @@
 "Jk" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/fans/tiny,
 /obj/effect/turf_decal/siding/wideplating/dark{
@@ -2899,7 +2899,7 @@
 /obj/structure/chair/office/tactical{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/corpse/human/syndicatecommando/lessenedgear,
 /turf/open/floor/iron/dark/side{
 	dir = 9
@@ -2982,7 +2982,7 @@
 	dir = 2
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Ks" = (
@@ -3044,7 +3044,7 @@
 	dir = 4
 	},
 /obj/effect/gibspawner/human/bodypartless,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/side{
 	dir = 5
 	},
@@ -3097,7 +3097,7 @@
 /obj/machinery/computer{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "Lv" = (
@@ -3111,7 +3111,7 @@
 "Ly" = (
 /obj/structure/aquarium/prefilled,
 /obj/structure/sign/poster/contraband/blood_geometer/directional/west,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
 "LA" = (
@@ -3124,7 +3124,7 @@
 /area/ruin/syndibiodome)
 "LB" = (
 /obj/machinery/doppler_array,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
 "LH" = (
@@ -3138,7 +3138,7 @@
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 4
 	},
-/obj/structure/chair/stool/bar/directional/north,
+/obj/structure/chair/stool/bar/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/syndibiodome)
@@ -3150,7 +3150,7 @@
 /obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/corpse/human/skeleton,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
@@ -3303,7 +3303,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/dark/line,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "MX" = (
@@ -3352,7 +3352,7 @@
 /turf/open/floor/stone/icemoon,
 /area/icemoon/surface/outdoors/noteleport)
 "Nt" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 9
@@ -3361,7 +3361,7 @@
 /area/ruin/syndibiodome)
 "NB" = (
 /obj/effect/turf_decal/trimline/neutral/line,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
@@ -3406,7 +3406,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/neutral/line,
 /turf/open/floor/iron/dark,
@@ -3447,7 +3447,7 @@
 	dir = 9
 	},
 /obj/structure/closet/syndicate,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/warm/directional/east,
 /obj/item/storage/belt/security/webbing,
 /obj/item/gun/ballistic/automatic/pistol/contraband,
@@ -3460,7 +3460,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark/corner,
 /obj/structure/sign/poster/contraband/free_drone/directional/west,
 /obj/effect/decal/cleanable/dirt,
@@ -3481,7 +3481,7 @@
 /obj/effect/mob_spawn/corpse/human/syndicatecommando/lessenedgear,
 /obj/machinery/light/small/dim/directional/south,
 /obj/effect/turf_decal/trimline/dark/line,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "OR" = (
@@ -3568,7 +3568,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Qs" = (
@@ -3586,7 +3586,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "QE" = (
@@ -3616,7 +3616,7 @@
 /obj/structure/chair/sofa/bench/right{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 5
@@ -3669,7 +3669,7 @@
 /obj/structure/chair/office/tactical{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/side{
 	dir = 6
 	},
@@ -3710,7 +3710,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "St" = (
@@ -3749,7 +3749,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "SJ" = (
@@ -3774,7 +3774,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
@@ -3783,7 +3783,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark/corner{
 	dir = 8
 	},
@@ -3837,7 +3837,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/fake_scrubber{
 	dir = 4
 	},
@@ -3898,7 +3898,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/core,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "TC" = (
@@ -3970,7 +3970,7 @@
 /area/ruin/syndibiodome)
 "Uh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/human/bodypartless,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
@@ -3996,7 +3996,7 @@
 /area/ruin/syndibiodome)
 "Uu" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/open/floor/iron/dark/small,
@@ -4036,7 +4036,7 @@
 	dir = 8
 	},
 /obj/effect/mob_spawn/corpse/human/syndicatecommando/lessenedgear,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
 "UG" = (
@@ -4062,7 +4062,7 @@
 	pixel_x = 4;
 	pixel_y = 5
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door/directional/east{
 	name = "Surgery Lockdown";
 	id = "biosurglockdown"
@@ -4110,7 +4110,7 @@
 /obj/structure/closet/secure_closet/cytology,
 /obj/item/storage/box/swab,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "Vt" = (
@@ -4118,12 +4118,12 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/structure/chair/stool/bar/directional/north,
+/obj/structure/chair/stool/bar/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/syndibiodome)
 "Vv" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
@@ -4245,11 +4245,6 @@
 /obj/machinery/light/small/dim/directional/west,
 /turf/open/water/jungle,
 /area/ruin/syndibiodome)
-"XC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/dark,
-/area/ruin/syndibiodome)
 "XE" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -4274,7 +4269,7 @@
 "Ya" = (
 /obj/effect/turf_decal/trimline/neutral/corner,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
@@ -4295,12 +4290,12 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "Yh" = (
-/obj/structure/chair/stool/bar/directional/north,
+/obj/structure/chair/stool/bar/directional/south,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -4368,7 +4363,7 @@
 /obj/effect/turf_decal/trimline/blue/corner{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "YN" = (
@@ -4378,7 +4373,7 @@
 /turf/closed/indestructible/syndicate,
 /area/ruin/syndibiodome)
 "YS" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
 "YV" = (
@@ -4388,7 +4383,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "YZ" = (
@@ -4454,7 +4449,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
@@ -5189,7 +5184,7 @@ qN
 qU
 Ss
 YI
-XC
+Vv
 Zp
 rs
 eO
@@ -5235,7 +5230,7 @@ Kl
 gZ
 je
 kt
-XC
+Vv
 Sr
 tK
 iV
@@ -5281,7 +5276,7 @@ zM
 zM
 YN
 rQ
-XC
+Vv
 nn
 WB
 qN
@@ -5327,7 +5322,7 @@ km
 SH
 zM
 wf
-XC
+Vv
 nn
 Ga
 WB
@@ -5891,7 +5886,7 @@ Do
 sN
 Va
 bK
-XC
+Vv
 By
 zM
 zM
@@ -6078,8 +6073,8 @@ zM
 zM
 qN
 pY
-XC
-XC
+Vv
+Vv
 To
 Ut
 zM

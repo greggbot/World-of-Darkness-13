@@ -19,7 +19,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "o" = (
@@ -54,7 +54,7 @@
 /area/template_noop)
 "G" = (
 /obj/structure/sign/poster/random/directional/north,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "I" = (
@@ -88,7 +88,7 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "S" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "T" = (
@@ -102,11 +102,11 @@
 /area/template_noop)
 "V" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/iron,
 /area/template_noop)

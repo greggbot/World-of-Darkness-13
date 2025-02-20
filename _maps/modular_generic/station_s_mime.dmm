@@ -15,12 +15,8 @@
 /obj/item/food/baguette,
 /turf/open/floor/iron/checker,
 /area/template_noop)
-"i" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/checker,
-/area/template_noop)
 "o" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron/checker,
 /area/template_noop)
 "v" = (
@@ -84,7 +80,7 @@ A
 "}
 (2,1,1) = {"
 a
-i
+v
 v
 v
 H
@@ -113,7 +109,7 @@ a
 a
 v
 Q
-i
+v
 Y
 H
 a

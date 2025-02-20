@@ -1738,7 +1738,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/science/genetics)
 "rz" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt,
@@ -2212,7 +2212,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/medical/medbay)
 "tP" = (
-/obj/structure/chair/stool/directional/north,
+/obj/structure/chair/stool/directional/south,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/atmos)
 "tQ" = (
@@ -2598,11 +2598,6 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/hallway/central)
-"wj" = (
-/obj/structure/chair/stool/directional/east,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/ruin/space/ks13/command/bridge)
 "wl" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -5952,7 +5947,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "ND" = (
-/obj/structure/chair/stool/directional/north,
+/obj/structure/chair/stool/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/service/cafe)
@@ -7711,11 +7706,6 @@
 /obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/iron,
 /area/ruin/space/ks13/science/ordnance)
-"Wp" = (
-/obj/structure/chair/stool/directional/east,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron,
-/area/ruin/space/ks13/command/bridge)
 "Wt" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/airless,
@@ -16072,8 +16062,8 @@ pW
 wg
 rl
 uA
-Wp
-wj
+WD
+QN
 aJ
 Pk
 WV

@@ -18,14 +18,14 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Emergency Shuttle Cockpit"
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium{
 	initial_gas_mix = "LAVALAND_ATMOS"
 	},
 /area/ruin/unpowered)
 "dK" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered)
@@ -98,7 +98,7 @@
 	},
 /area/ruin/unpowered)
 "oE" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/mineral/titanium/yellow{
 	initial_gas_mix = "LAVALAND_ATMOS"
@@ -112,7 +112,7 @@
 /turf/open/lava/smooth/lava_land_surface,
 /area/lavaland/surface)
 "rr" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered)
@@ -268,7 +268,7 @@
 /area/ruin/unpowered)
 "GS" = (
 /obj/item/stack/sheet/iron/five,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered)
 "GZ" = (
@@ -307,7 +307,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered)
 "Ma" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered)
 "NI" = (

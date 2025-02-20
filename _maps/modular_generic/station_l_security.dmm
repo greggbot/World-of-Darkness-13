@@ -75,7 +75,7 @@
 	},
 /obj/effect/turf_decal/box/corners,
 /obj/effect/turf_decal/box/corners{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/iron/dark/textured,
 /area/template_noop)
@@ -162,10 +162,10 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/box/corners{
-	dir = 1
+	dir = 8
 	},
 /obj/effect/turf_decal/box/corners{
-	dir = 4
+	dir = 1
 	},
 /turf/open/floor/iron/dark/textured,
 /area/template_noop)
@@ -175,7 +175,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/box/corners{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/turf_decal/box/corners,
 /turf/open/floor/iron/dark/textured,
@@ -184,7 +184,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
 	},
-/obj/structure/chair/stool/bar/directional/east,
+/obj/structure/chair/stool/bar/directional/west,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "nR" = (
@@ -242,10 +242,10 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/box/corners{
-	dir = 4
+	dir = 1
 	},
 /obj/effect/turf_decal/box/corners{
-	dir = 1
+	dir = 8
 	},
 /turf/open/floor/iron/dark/textured,
 /area/template_noop)
@@ -295,7 +295,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 4
 	},
-/obj/structure/chair/stool/directional/east,
+/obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "IF" = (
@@ -311,9 +311,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "MP" = (
-/obj/structure/chair/stool/bar/directional/east{
-	dir = 8
-	},
+/obj/structure/chair/stool/bar/directional/west,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "NS" = (
@@ -345,9 +343,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "TT" = (
-/obj/structure/chair/stool/bar/directional/east{
-	dir = 8
-	},
+/obj/structure/chair/stool/bar/directional/west,
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
 	},

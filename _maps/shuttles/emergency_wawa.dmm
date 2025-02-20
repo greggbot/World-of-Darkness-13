@@ -28,7 +28,7 @@
 /obj/machinery/conveyor/auto{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "ag" = (
@@ -54,7 +54,7 @@
 	pixel_x = 12;
 	pixel_y = 6
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "al" = (
@@ -68,7 +68,7 @@
 	pixel_x = 12
 	},
 /obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "an" = (
@@ -80,12 +80,12 @@
 /area/shuttle/escape)
 "ao" = (
 /obj/machinery/computer/crew,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/grimy,
 /area/shuttle/escape)
 "ap" = (
 /obj/machinery/computer/emergency_shuttle,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/grimy,
 /area/shuttle/escape)
 "aq" = (
@@ -93,11 +93,11 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "ar" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "as" = (
@@ -130,7 +130,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/engine,
 /area/shuttle/escape)
 "aC" = (
@@ -152,7 +152,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "aH" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/shuttle/escape/brig)
 "aI" = (
@@ -165,7 +165,7 @@
 /area/shuttle/escape/brig)
 "aJ" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "aK" = (
@@ -259,7 +259,7 @@
 /obj/machinery/conveyor/auto{
 	dir = 10
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "be" = (
@@ -270,7 +270,7 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bf" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/toy/plush/lizard_plushie,
 /turf/open/floor/plating,
 /area/shuttle/escape)
@@ -278,7 +278,7 @@
 /obj/machinery/conveyor/auto{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/dim/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/escape)
@@ -286,7 +286,7 @@
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "bk" = (
@@ -320,7 +320,7 @@
 /obj/structure/broken_flooring/singular{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "cY" = (
@@ -332,7 +332,7 @@
 /obj/machinery/conveyor/auto{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "dC" = (
@@ -342,7 +342,7 @@
 	cycle_id = "es1"
 	},
 /obj/structure/broken_flooring/side,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape/brig)
 "dZ" = (
@@ -377,7 +377,7 @@
 /area/shuttle/escape)
 "hq" = (
 /obj/machinery/recycler{
-	dir = 4
+	dir = 8
 	},
 /obj/machinery/conveyor/auto{
 	dir = 8
@@ -397,15 +397,8 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
-/area/shuttle/escape)
-"jA" = (
-/obj/effect/turf_decal/tile/yellow/opposingcorners{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/checker,
 /area/shuttle/escape)
 "jK" = (
 /obj/machinery/light/small/dim/directional/south,
@@ -419,11 +412,11 @@
 	},
 /obj/item/storage/medkit/fire,
 /mob/living/basic/bot/medbot/derelict,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/grimy,
 /area/shuttle/escape)
 "ld" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "lI" = (
@@ -442,7 +435,7 @@
 /obj/machinery/computer/atmos_alert{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/grimy,
 /area/shuttle/escape)
 "nN" = (
@@ -457,7 +450,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/warm/dim/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/escape/brig)
@@ -482,7 +475,7 @@
 /obj/machinery/conveyor/auto{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/dim/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/escape)
@@ -510,7 +503,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "tQ" = (
@@ -522,7 +515,7 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "vz" = (
@@ -536,7 +529,7 @@
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/mineral/stacking_unit_console{
 	pixel_y = 32
 	},
@@ -560,7 +553,7 @@
 /obj/machinery/conveyor/auto{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "za" = (
@@ -582,7 +575,7 @@
 	},
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes/cigars/cohiba,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/warm/dim/directional/south,
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -590,7 +583,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "Dk" = (
@@ -613,7 +606,7 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "FH" = (
@@ -625,12 +618,12 @@
 /area/shuttle/escape)
 "FL" = (
 /obj/machinery/computer/communications,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/grimy,
 /area/shuttle/escape)
 "Gw" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/shuttle/escape/brig)
 "Ic" = (
@@ -649,7 +642,7 @@
 	},
 /obj/item/crowbar,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "IR" = (
@@ -663,7 +656,7 @@
 /obj/structure/broken_flooring/pile{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/dim/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/escape/brig)
@@ -671,7 +664,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/broken_flooring/singular{
 	dir = 8
 	},
@@ -693,34 +686,34 @@
 /area/shuttle/escape)
 "Ne" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "ND" = (
 /obj/machinery/conveyor/auto/inverted{
 	dir = 9
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "NW" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/broken_flooring/pile,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "Oi" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/pill/maintenance,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "Oq" = (
 /obj/structure/broken_flooring/pile,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "Pp" = (
 /obj/machinery/stasis,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "Pw" = (
@@ -743,7 +736,7 @@
 /turf/open/floor/iron/grimy,
 /area/shuttle/escape)
 "SX" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/grimy,
 /area/shuttle/escape)
 "Tq" = (
@@ -752,7 +745,7 @@
 "Xl" = (
 /obj/machinery/stasis,
 /obj/structure/broken_flooring/singular,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "Xw" = (
@@ -761,14 +754,14 @@
 	},
 /obj/structure/window/spawner/directional/south,
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "XE" = (
 /turf/open/floor/iron/grimy,
 /area/shuttle/escape)
 "Yk" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 
@@ -889,7 +882,7 @@ Yk
 Yk
 aJ
 rX
-jA
+gX
 gX
 bc
 br
@@ -915,7 +908,7 @@ uQ
 tw
 bq
 bp
-jA
+gX
 lI
 Tq
 af
@@ -940,7 +933,7 @@ xg
 xg
 bq
 aC
-jA
+gX
 gn
 bs
 xY

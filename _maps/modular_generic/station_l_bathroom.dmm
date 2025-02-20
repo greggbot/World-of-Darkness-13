@@ -21,11 +21,6 @@
 	},
 /turf/open/floor/iron/small,
 /area/template_noop)
-"c" = (
-/obj/effect/turf_decal/tile/dark/diagonal_centre,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/diagonal,
-/area/template_noop)
 "d" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -71,11 +66,11 @@
 /turf/open/floor/iron/small,
 /area/template_noop)
 "h" = (
-/obj/structure/chair/stool/directional/east{
+/obj/structure/chair/stool/directional/west{
 	pixel_x = -6
 	},
 /obj/effect/turf_decal/tile/dark/diagonal_centre,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/diagonal,
 /area/template_noop)
 "i" = (
@@ -151,7 +146,7 @@
 /obj/effect/spawner/random/armory/shotgun,
 /obj/effect/spawner/random/bureaucracy/folder,
 /obj/effect/spawner/random/bureaucracy,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/dim/directional/west,
 /turf/open/floor/iron/freezer,
 /area/template_noop)
@@ -235,7 +230,7 @@
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/cigbutt{
 	pixel_y = 7
 	},
@@ -273,7 +268,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/corner{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/small,
 /area/template_noop)
 "F" = (
@@ -325,7 +320,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/corner{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/trash/boritos{
 	pixel_x = -6;
 	pixel_y = -8
@@ -352,7 +347,7 @@
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/small,
 /area/template_noop)
 "P" = (
@@ -372,7 +367,7 @@
 /obj/structure/chair/stool/directional/south{
 	pixel_y = 16
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/small,
 /area/template_noop)
 "R" = (
@@ -404,7 +399,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/paper/corner{
 	dir = 1
 	},
@@ -419,7 +414,7 @@
 /area/template_noop)
 "W" = (
 /obj/machinery/door/airlock,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/freezer,
 /area/template_noop)
 "X" = (
@@ -449,7 +444,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/corner{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/item/cigbutt,
 /obj/item/cigbutt{
 	pixel_x = -8;
@@ -541,7 +536,7 @@ a
 a
 H
 l
-c
+A
 P
 q
 w

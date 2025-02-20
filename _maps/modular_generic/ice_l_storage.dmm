@@ -12,13 +12,6 @@
 /obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/plating,
 /area/template_noop)
-"f" = (
-/obj/effect/turf_decal/loading_area{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
-/area/template_noop)
 "g" = (
 /obj/structure/broken_flooring/singular/directional/east,
 /turf/open/floor/plating,
@@ -74,10 +67,6 @@
 	id = "modular_room_1";
 	name = "Garage Door"
 	},
-/turf/open/floor/plating,
-/area/template_noop)
-"r" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/template_noop)
 "s" = (
@@ -167,7 +156,7 @@
 /obj/vehicle/ridden/atv{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/template_noop)
 "G" = (
@@ -288,7 +277,7 @@
 /turf/open/floor/plastic,
 /area/template_noop)
 "Y" = (
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/box,
 /obj/vehicle/ridden/atv{
 	dir = 8
@@ -363,7 +352,7 @@ x
 Z
 w
 w
-f
+w
 Z
 q
 a
@@ -375,8 +364,8 @@ L
 U
 T
 k
-r
-r
+m
+m
 Q
 q
 a
@@ -388,7 +377,7 @@ V
 b
 z
 k
-r
+m
 W
 m
 q
