@@ -1,0 +1,13 @@
+/obj/effect/mob_spawn/human/corpse/@SUBTYPES : /obj/effect/mob_spawn/ghost_role/human/corpse/@SUBTYPES{@OLD}
+/obj/item/storage/firstaid/@SUBTYPES : /obj/item/storage/medkit/@SUBTYPES{@OLD}
+/obj/structure/flora/ausbushes/@SUBTYPES : /obj/structure/flora/bush/@SUBTYPES{@OLD}
+/turf/open/floor/grass/fakebasalt : /turf/open/floor/fakebasalt{@OLD}
+/obj/item/reagent_containers/cup/@SUBTYPES : /obj/item/reagent_containers/food/drinks/@SUBTYPES{@OLD}
+/mob/living/simple_animal/hostile/ghost/hostile : /mob/living/basic/ghost{@OLD}
+/obj/machinery/light/small/pink : /obj/machinery/light/blacklight{@OLD}
+/obj/structure/sign/poster/@SUBTYPES : /obj/structure/sign/poster/random{@OLD}
+/obj/structure/table/wood/bar : /obj/structure/table/wood{@OLD}
+/obj/structure/destructible/cult/tome : /obj/structure/destructible/cult/item_dispenser/archives{@OLD}
+/obj/structure/window/reinforced/@SUBTYPES : /obj/structure/window/reinforced/fulltile/@SUBTYPES{@OLD}
+/mob/living/basic/pet/cat/vampire : /mob/living/basic/pet/cat{@OLD}
+/obj/effect/mob_spawn/human/@SUBTYPES : /obj/effect/mob_spawn/ghost_role/human/@SUBTYPES{@OLD}
