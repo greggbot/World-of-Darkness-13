@@ -1009,6 +1009,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
 		var/takes_crit_damage = (!HAS_TRAIT(H, TRAIT_NOCRITDAMAGE))
 		if((H.health < H.crit_threshold) && takes_crit_damage)
 			H.adjustBruteLoss(1)
+
 	if(flying_species)
 		HandleFlight(H)
 
@@ -1175,7 +1176,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
 
 /datum/species/proc/handle_chemicals(datum/reagent/chem, mob/living/carbon/human/H)
 	if(chem.type == exotic_blood)
-		H.blood_volume = min(H.blood_volume + round(chem.volume, 0.1), BLOOD_VOLUME_MAXIMUM)
+		H.adjust_blood_volume(round(chem.volume, 0.1))
 		H.reagents.del_reagent(chem.type)
 		return TRUE
 	if(chem.overdose_threshold && chem.volume >= chem.overdose_threshold)
@@ -1551,7 +1552,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
 			if(OC)
 				if(OC.identified)
 					if(H.bloodpool)
-						H.bloodpool = max(0, H.bloodpool-1)
+						H.adjust_blood_points(-1)
 						OC.stored_blood = OC.stored_blood+1
 	apply_damage((I.force*modifikator) * weakness, I.damtype, def_zone, armor_block, H, wound_bonus = Iwound_bonus, bare_wound_bonus = I.bare_wound_bonus, sharpness = I.get_sharpness())
 
@@ -2242,6 +2243,9 @@ GLOBAL_LIST_EMPTY(selectable_races)
 		else
 			to_chat(H, "<span class='notice'>You beat your wings and begin to hover gently above the ground...</span>")
 			H.set_resting(FALSE, TRUE)
+
+/datum/movespeed_modifier/wing
+	multiplicative_slowdown = -0.25
 
 /**
  * The human species version of [/mob/living/carbon/proc/get_biological_state]. Depends on the HAS_FLESH and HAS_BONE species traits, having bones lets you have bone wounds, having flesh lets you have burn, slash, and piercing wounds

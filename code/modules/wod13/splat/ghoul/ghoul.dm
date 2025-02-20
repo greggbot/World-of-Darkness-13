@@ -18,8 +18,8 @@
 	var/mob/living/carbon/human/master
 	var/changed_master = FALSE
 	var/last_vitae = 0
-	var/list/datum/discipline/disciplines = list()
 	selectable = TRUE
+	var/list/datum/discipline/disciplines = list()
 
 /datum/action/ghoulinfo
 	name = "About Me"

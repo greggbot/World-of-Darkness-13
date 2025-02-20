@@ -396,7 +396,6 @@
 
 /mob/living/carbon/werewolf/Life()
 	. = ..()
-	update_blood_hud()
 	update_rage_hud()
 	update_auspex_hud()
 

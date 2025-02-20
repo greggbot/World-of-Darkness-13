@@ -119,7 +119,7 @@
 
 	var/stun_absorption = null ///converted to a list of stun absorption sources this mob has when one is added
 
-	var/blood_volume = 0 ///how much blood the mob has
+	var/blood_volume = BLOOD_VOLUME_NORMAL ///how much blood the mob has
 	var/obj/effect/proc_holder/ranged_ability ///Any ranged ability the mob has, as a click override
 
 	var/see_override = 0 ///0 for no override, sets see_invisible = see_override in silicon & carbon life process via update_sight()
@@ -170,7 +170,7 @@
 	var/body_position_pixel_y_offset = 0
 
 	//Shitty VtM vars I'm moving here so they're not strewn around the codebase
-	var/bloodquality = 1	//PSEUDO_M calculate this instead of defining a var
+	var/bloodquality = BLOOD_QUALITY_LOW
 
 	var/list/drunked_of = list()
 
@@ -213,9 +213,8 @@
 	var/temporis_visual = FALSE	//PSEUDO_M this should be an overlay
 	var/temporis_blur = FALSE	//PSEUDO_M ??
 
-	var/frenzy_chance_boost = 10	//PSEUDO_M_K
 
-	var/last_bloodpool_restore = 0	//PSEUDO_M_K
+	var/last_bloodpool_restore = 0
 
 	var/list/knowscontacts = list()
 
@@ -228,7 +227,7 @@
 
 	var/hearing_ghosts = FALSE
 
-	var/stakeimmune = FALSE	//PSEUDO_M_K should be a signal
+	var/stakeimmune = FALSE
 
 	var/last_vampire_ambience = 0
 	var/wait_for_music = 30
@@ -247,8 +246,15 @@
 	var/harm_focus = SOUTH	//PSEUDO_M there's a more performant way to handle this
 	var/flavor_text
 	var/true_real_name
-	var/died_already = FALSE	//PSEUDO_M huh?
+	var/died_already = FALSE
 
+	var/bloodpool = 5
+	var/maxbloodpool = 5
+	var/blood_per_point = 0
+	var/generation = 13
+	var/humanity = 7
+	var/masquerade = 5
+	var/last_masquerade_violation = 0
 	var/last_nonraid = 0
 	var/warrant = FALSE
 	var/ignores_warrant = FALSE
