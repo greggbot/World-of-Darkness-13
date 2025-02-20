@@ -38,7 +38,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)
 "v" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)
@@ -101,7 +101,7 @@
 /area/station/maintenance/starboard/greater)
 "T" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)
 "Z" = (

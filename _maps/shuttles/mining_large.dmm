@@ -96,7 +96,7 @@
 /area/shuttle/mining/large)
 "m" = (
 /obj/effect/turf_decal/stripes/white/corner,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
 	dir = 4
 	},
@@ -114,7 +114,7 @@
 /obj/effect/turf_decal/stripes/white/corner{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/radio/intercom{
 	pixel_y = -29
 	},
@@ -267,7 +267,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "y" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/box/white/corners,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
@@ -278,7 +278,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "A" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/box/white/corners{
 	dir = 4
 	},

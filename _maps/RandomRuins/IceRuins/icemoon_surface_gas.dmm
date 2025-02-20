@@ -15,7 +15,7 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/unexplored)
 "bJ" = (
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/plating/snowed/icemoon,
 /area/ruin/powered/lizard_gas)
 "cv" = (
@@ -134,7 +134,7 @@
 	pixel_x = -7
 	},
 /obj/structure/window/spawner/directional/north,
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron,
 /area/ruin/powered/lizard_gas)
 "gv" = (
@@ -291,7 +291,7 @@
 "vA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/official/jim_nortons/directional/south,
-/obj/machinery/light/cold/directional/south,
+/obj/machinery/light/cold/directional/north,
 /obj/machinery/duct,
 /turf/open/floor/iron,
 /area/ruin/powered/lizard_gas)
@@ -356,7 +356,7 @@
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/unexplored)
 "zm" = (
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/lizard_gas)
 "zJ" = (
@@ -399,7 +399,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /obj/item/storage/fancy/donut_box{
 	pixel_y = -2
 	},
@@ -427,7 +427,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered/lizard_gas)
 "IF" = (
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /obj/machinery/vending/cigarette,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/lizard_gas)
@@ -459,7 +459,7 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/unexplored)
 "Mz" = (
-/obj/machinery/light/cold/directional/south,
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/plating/snowed/icemoon,
 /area/ruin/powered/lizard_gas)
 "MA" = (
@@ -551,7 +551,7 @@
 /turf/closed/wall,
 /area/ruin/powered/lizard_gas)
 "RE" = (
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /obj/effect/spawner/random/vending/snackvend,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/lizard_gas)
@@ -579,7 +579,7 @@
 /obj/item/food/candy{
 	pixel_x = 4
 	},
-/obj/machinery/light/cold/directional/west,
+/obj/machinery/light/cold/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
 /obj/item/food/chocolatebar{
 	pixel_y = 2;

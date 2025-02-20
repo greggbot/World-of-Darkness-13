@@ -8,7 +8,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/chair/wood{
 	dir = 1
 	},
@@ -147,7 +147,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/smartfridge/drying/rack,
 /turf/open/floor/iron,
 /area/virtual_domain/safehouse)

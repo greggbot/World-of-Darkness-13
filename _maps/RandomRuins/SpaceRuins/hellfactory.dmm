@@ -308,7 +308,7 @@
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/hellfactoryoffice)
 "aZ" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/checker,
 /area/ruin/space/has_grav/hellfactory)
 "ba" = (
@@ -479,7 +479,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hellfactory)
 "bK" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/rack,
 /obj/item/book/manual/random,
 /obj/item/poster/random_contraband,
@@ -563,7 +563,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "cb" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/curtain,
 /obj/structure/mirror/directional/north,
 /turf/open/floor/holofloor/wood,
@@ -598,12 +598,12 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "ch" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/plumbing/tank,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "ci" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/decal/remains/human,
 /obj/structure/curtain,
 /obj/structure/mirror/directional/north,
@@ -614,7 +614,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "cl" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hellfactory)
 "cm" = (
@@ -845,7 +845,7 @@
 /area/ruin/space/has_grav/hellfactory)
 "oH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/checker,
 /area/ruin/space/has_grav/hellfactory)
 "oJ" = (
@@ -876,7 +876,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "ux" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "uL" = (
@@ -948,11 +948,11 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer4,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plastic,
 /area/ruin/space/has_grav/hellfactory)
 "PO" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hellfactory)
 "QS" = (
@@ -988,7 +988,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hellfactory)
 "Yd" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/hellfactoryoffice)
 "Zh" = (

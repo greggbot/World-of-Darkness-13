@@ -37,7 +37,7 @@
 /area/ruin/space)
 "aC" = (
 /obj/effect/turf_decal/stripes/red/full,
-/obj/machinery/light/small/built/directional/south,
+/obj/machinery/light/small/built/directional/north,
 /obj/item/light/bulb/broken,
 /turf/open/floor/iron/dark/smooth_large/airless,
 /area/ruin/space)
@@ -87,7 +87,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "ch" = (
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
 "ck" = (
@@ -332,7 +332,7 @@
 "jZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/mineral/wood/fifty,
-/obj/machinery/light/dim/directional/west,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "kC" = (
@@ -578,7 +578,7 @@
 	dir = 8
 	},
 /obj/effect/spawner/random/structure/crate_abandoned,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/misc/asteroid/basalt/airless,
 /area/ruin/space)
 "wY" = (
@@ -858,7 +858,7 @@
 /area/ruin/space)
 "Jh" = (
 /obj/structure/cable,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "Jl" = (
@@ -873,7 +873,7 @@
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
 "JF" = (
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
 "JP" = (
@@ -1181,7 +1181,7 @@
 "YE" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space)
 "YI" = (
@@ -1260,7 +1260,7 @@
 	pixel_x = 2;
 	pixel_y = 1
 	},
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "ZS" = (

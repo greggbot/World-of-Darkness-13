@@ -183,7 +183,7 @@
 /turf/open/floor/plastic,
 /area/ruin/bughabitat)
 "sl" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/effect/decal/cleanable/blood/footprints,
 /turf/open/floor/iron,
 /area/ruin/bughabitat)
@@ -243,7 +243,7 @@
 /obj/effect/turf_decal/siding/wideplating/light{
 	color = "#236F26"
 	},
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /turf/open/floor/plastic,
 /area/ruin/bughabitat)
 "zJ" = (
@@ -264,7 +264,7 @@
 /turf/open/floor/plastic,
 /area/ruin/bughabitat)
 "Cv" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/structure/closet,
 /obj/item/food/cheese/wedge,
 /obj/item/stack/rods/ten,
@@ -301,7 +301,7 @@
 /turf/closed/wall,
 /area/ruin/bughabitat)
 "HU" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/item/clothing/suit/hooded/wintercoat/hydro,
 /turf/open/floor/carpet/neon/simple/lime,
 /area/ruin/bughabitat)
@@ -339,7 +339,7 @@
 	},
 /obj/item/plunger,
 /mob/living/basic/mouse,
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /turf/open/floor/plastic,
 /area/ruin/bughabitat)
 "Qd" = (

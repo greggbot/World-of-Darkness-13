@@ -28,7 +28,7 @@
 /area/station/maintenance/department/cargo)
 "ej" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "eJ" = (
@@ -74,7 +74,7 @@
 /area/station/maintenance/department/cargo)
 "lG" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8
 	},
@@ -111,7 +111,7 @@
 /area/station/maintenance/department/cargo)
 "oZ" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/trimline/yellow/corner,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8
@@ -304,7 +304,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/ladder,
@@ -355,7 +355,7 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/cargo)
 "SF" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "TI" = (

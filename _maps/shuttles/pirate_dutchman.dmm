@@ -308,7 +308,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/fermenting_barrel/gunpowder,
 /obj/item/reagent_containers/cup/bucket/wooden,
 /obj/item/reagent_containers/cup/bucket/wooden,
@@ -608,7 +608,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/fermenting_barrel/gunpowder,
 /obj/item/reagent_containers/cup/bucket/wooden,
 /obj/item/reagent_containers/cup/bucket/wooden,
@@ -619,7 +619,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/wood/airless,
 /area/shuttle/pirate/flying_dutchman)
 "BP" = (
@@ -709,7 +709,7 @@
 /obj/structure/table/wood,
 /obj/item/stack/cannonball/fourteen,
 /obj/item/flashlight/flare/torch,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/wood/airless,
 /area/shuttle/pirate/flying_dutchman)
 "Gr" = (
@@ -786,7 +786,7 @@
 /turf/open/floor/wood/airless,
 /area/shuttle/pirate/flying_dutchman)
 "Ms" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/carpet/royalblack/airless,
 /area/shuttle/pirate/flying_dutchman)
 "Oe" = (
@@ -954,7 +954,7 @@
 /obj/structure/table/wood,
 /obj/item/stack/cannonball/fourteen,
 /obj/item/flashlight/flare/torch,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/wood/airless,
 /area/shuttle/pirate/flying_dutchman)
 "ZL" = (
@@ -973,7 +973,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/wood/airless,
 /area/shuttle/pirate/flying_dutchman)
 

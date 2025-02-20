@@ -41,7 +41,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "bt" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/rust,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "bC" = (
@@ -66,7 +66,7 @@
 "cp" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/dim/directional/west,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "cz" = (
@@ -76,7 +76,7 @@
 /area/ruin/space/has_grav/the_outlet/storefront)
 "cK" = (
 /mob/living/basic/construct/proteon/hostile,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor2-old"
 	},
@@ -102,7 +102,7 @@
 "da" = (
 /obj/structure/table/reinforced,
 /obj/machinery/gibber,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "df" = (
@@ -143,7 +143,7 @@
 /area/ruin/space/has_grav/the_outlet/cultinfluence)
 "dC" = (
 /obj/structure/cable,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "dF" = (
@@ -159,7 +159,7 @@
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "ez" = (
 /obj/structure/chair/sofa/corp/left,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "eN" = (
@@ -295,7 +295,7 @@
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "il" = (
 /obj/effect/decal/cleanable/ants,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-143"
 	},
@@ -347,7 +347,7 @@
 /area/ruin/space/has_grav/the_outlet/cultinfluence)
 "iY" = (
 /obj/effect/turf_decal/tile/bar/anticorner/contrasted,
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "jg" = (
@@ -578,7 +578,7 @@
 /turf/open/floor/eighties,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "pt" = (
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "pu" = (
@@ -766,7 +766,7 @@
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "sO" = (
 /obj/effect/decal/cleanable/confetti,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "sS" = (
@@ -840,7 +840,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/cultinfluence)
 "va" = (
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /obj/structure/table,
 /obj/item/soap,
 /turf/open/floor/iron/small,
@@ -853,7 +853,7 @@
 /turf/open/floor/eighties,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "vc" = (
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/eighties,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "vg" = (
@@ -872,7 +872,7 @@
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor7"
 	},
-/obj/machinery/light/dim/directional/south,
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "vs" = (
@@ -893,7 +893,7 @@
 /obj/structure/table/reinforced/rglass,
 /obj/item/reagent_containers/cup/coffeepot,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "wf" = (
@@ -1044,7 +1044,7 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-143"
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "zz" = (
@@ -1586,7 +1586,7 @@
 /area/ruin/space/has_grav/the_outlet/storefront)
 "Mj" = (
 /obj/effect/decal/cleanable/confetti,
-/obj/machinery/light/blacklight/directional/east,
+/obj/machinery/light/blacklight/directional/west,
 /turf/open/floor/eighties,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "Mk" = (
@@ -1644,7 +1644,7 @@
 /turf/open/floor/eighties,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "MY" = (
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /obj/structure/table,
 /obj/item/soap,
 /turf/open/floor/plating/rust,
@@ -1747,7 +1747,7 @@
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "PU" = (
 /obj/structure/cable,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "PV" = (
@@ -1927,7 +1927,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "UR" = (
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /turf/open/floor/plating/rust,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "UY" = (
@@ -1991,7 +1991,7 @@
 /turf/open/floor/eighties,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "Wu" = (
-/obj/machinery/light/dim/directional/south,
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "Wx" = (
@@ -2024,7 +2024,7 @@
 	},
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "WQ" = (

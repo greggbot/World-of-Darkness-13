@@ -79,7 +79,7 @@
 /area/station/maintenance/department/cargo)
 "jX" = (
 /obj/structure/flora/bush/sparsegrass/style_random,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "jY" = (
@@ -163,7 +163,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "re" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8
 	},
@@ -211,7 +211,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/cargo)
 "tQ" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "ub" = (
@@ -233,7 +233,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "vk" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/yellow/corner,
 /obj/effect/turf_decal/trimline/yellow/corner{
@@ -409,7 +409,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "Ii" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 4
 	},
@@ -478,7 +478,7 @@
 "Rr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/event_spawn,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/cargo)
 "Sg" = (

@@ -180,7 +180,7 @@
 	pixel_x = -1;
 	pixel_y = 2
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "gg" = (
@@ -450,7 +450,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "qD" = (
@@ -569,7 +569,7 @@
 	pixel_x = -6;
 	pixel_y = 1
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "vt" = (
@@ -601,7 +601,7 @@
 /obj/item/storage/box/handcuffs{
 	pixel_y = 5
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape/brig)
 "wa" = (
@@ -612,7 +612,7 @@
 	dir = 8
 	},
 /obj/machinery/status_display/evac/directional/east,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "wg" = (
@@ -769,7 +769,7 @@
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 9
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/chair/comfy/shuttle,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
@@ -1118,7 +1118,7 @@
 /obj/effect/turf_decal/trimline/green/filled/line{
 	dir = 5
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/chair/comfy/shuttle,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
@@ -1273,7 +1273,7 @@
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "Zd" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},

@@ -84,7 +84,7 @@
 /turf/open/floor/plating,
 /area/station/asteroid)
 "L" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/misc/asteroid,
 /area/station/asteroid)
 "M" = (
@@ -114,7 +114,7 @@
 /turf/closed/wall/rock/porous,
 /area/station/maintenance/department/cargo)
 "R" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/misc/asteroid,
 /area/station/asteroid)
 "S" = (
@@ -132,7 +132,7 @@
 /area/station/maintenance/department/cargo)
 "X" = (
 /obj/item/stack/ore/glass,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/misc/asteroid/dug,
 /area/station/asteroid)
 "Z" = (

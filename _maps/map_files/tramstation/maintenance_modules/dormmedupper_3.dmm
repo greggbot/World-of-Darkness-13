@@ -35,7 +35,7 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/crew_quarters/dorms)
 "fQ" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "gd" = (
@@ -199,7 +199,7 @@
 /turf/template_noop,
 /area/template_noop)
 "zk" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "AG" = (
@@ -217,7 +217,7 @@
 /area/station/asteroid)
 "Cz" = (
 /obj/structure/flora/bush/flowers_br/style_random,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "CI" = (
@@ -291,12 +291,12 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "KO" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
 "LO" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/loading_area,
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=2";
@@ -317,7 +317,7 @@
 	dir = 8
 	},
 /obj/structure/ladder,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -334,7 +334,7 @@
 /turf/open/floor/grass,
 /area/station/asteroid)
 "NX" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "Py" = (

@@ -51,7 +51,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/mining)
 "j" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},

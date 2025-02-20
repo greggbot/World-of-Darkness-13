@@ -16,7 +16,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "am" = (
@@ -67,7 +67,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/admin)
 "av" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/status_display/evac/directional/east,
 /obj/effect/turf_decal/tile/green/half/contrasted{
 	dir = 4
@@ -212,7 +212,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "bb" = (
@@ -402,7 +402,7 @@
 "bO" = (
 /obj/item/kirbyplants/organic/plant22,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/admin)
 "bP" = (
@@ -576,7 +576,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/administration)
 "cI" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
 	},
@@ -786,7 +786,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
 "ds" = (
@@ -824,7 +824,7 @@
 /turf/open/floor/iron/white,
 /area/centcom/tdome/observation)
 "dx" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/admin)
@@ -1063,7 +1063,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/pale/style_random,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/misc/asteroid,
 /area/centcom/central_command_areas/evacuation)
 "eM" = (
@@ -1308,7 +1308,7 @@
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/pointy/style_random,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/grass,
 /area/centcom/tdome/administration)
 "gd" = (
@@ -1330,7 +1330,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/prison)
 "gi" = (
@@ -1453,7 +1453,7 @@
 /area/centcom/central_command_areas/admin)
 "gL" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "gO" = (
@@ -1550,7 +1550,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/pale/style_random,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/misc/asteroid,
 /area/centcom/central_command_areas/evacuation)
 "ho" = (
@@ -1591,7 +1591,7 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "hD" = (
@@ -1636,7 +1636,7 @@
 "hJ" = (
 /obj/machinery/computer/security/telescreen,
 /obj/structure/table/reinforced,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/status_display/ai/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -1770,7 +1770,7 @@
 "iw" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox/loyalty,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/status_display/ai/directional/north,
 /turf/open/floor/iron,
@@ -1817,7 +1817,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/wood/tile,
@@ -1883,7 +1883,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supply)
 "iQ" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 1
 	},
@@ -1982,7 +1982,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supply)
 "jf" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 4
 	},
@@ -2287,7 +2287,7 @@
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/generic/style_random,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/control)
 "kr" = (
@@ -2382,7 +2382,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/prison)
 "kT" = (
@@ -2406,7 +2406,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/prison)
 "kX" = (
@@ -2468,7 +2468,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "ln" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/brown/half/contrasted,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supply)
@@ -2674,7 +2674,7 @@
 /turf/open/floor/plating,
 /area/centcom/central_command_areas/control)
 "ml" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
 	},
@@ -2909,7 +2909,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/green/half/contrasted{
 	dir = 4
 	},
@@ -3006,7 +3006,7 @@
 /area/centcom/central_command_areas/control)
 "nS" = (
 /obj/structure/bookcase/random,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/courtroom)
@@ -3019,7 +3019,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 8
 	},
@@ -3121,7 +3121,7 @@
 /obj/item/stack/package_wrap,
 /obj/item/hand_labeler,
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supply)
 "ou" = (
@@ -3210,7 +3210,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
 "oL" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/armory)
@@ -3380,7 +3380,7 @@
 /area/centcom/central_command_areas/fore)
 "py" = (
 /obj/item/kirbyplants/organic/plant21,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/mirror/directional/east,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -3510,7 +3510,7 @@
 	pixel_y = 5;
 	pixel_x = -3
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/evacuation/ship)
 "qf" = (
@@ -3521,7 +3521,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/courtroom)
 "qg" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/green/half/contrasted{
 	dir = 1
 	},
@@ -3536,7 +3536,7 @@
 /area/centcom/central_command_areas/courtroom)
 "qj" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/prison)
 "qk" = (
@@ -3568,7 +3568,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supply)
 "qp" = (
@@ -3641,7 +3641,7 @@
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/pointy/style_random,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/evacuation)
 "qB" = (
@@ -3653,7 +3653,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/lavendergrass/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/evacuation)
 "qD" = (
@@ -3742,7 +3742,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/grimy,
 /area/centcom/central_command_areas/courtroom)
 "rf" = (
@@ -3750,7 +3750,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
 "rg" = (
@@ -3797,7 +3797,7 @@
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
 /obj/item/pen,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation)
@@ -3808,7 +3808,7 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "rv" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/status_display/evac/directional/west,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
@@ -3824,7 +3824,7 @@
 /obj/structure/toilet{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/machinery/newscaster/directional/west,
 /turf/open/floor/iron/white,
@@ -3857,7 +3857,7 @@
 /obj/structure/flora/bush/sparsegrass/style_random,
 /obj/structure/flora/bush/lavendergrass/style_random,
 /obj/structure/flora/bush/ferny/style_random,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron{
 	icon_state = "asteroid5";
 	name = "plating"
@@ -3877,7 +3877,7 @@
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/generic/style_random,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/fore)
 "rK" = (
@@ -4180,7 +4180,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
 "sS" = (
@@ -4253,7 +4253,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "to" = (
@@ -4411,7 +4411,7 @@
 /turf/closed/indestructible/riveted,
 /area/centcom/tdome/administration)
 "ug" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation)
@@ -4534,7 +4534,7 @@
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/pointy/style_random,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/grass,
 /area/centcom/tdome/observation)
 "uG" = (
@@ -4625,7 +4625,7 @@
 /obj/structure/flora/bush/sparsegrass/style_random,
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/ferny/style_random,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron{
 	dir = 6;
 	icon_state = "asteroid8";
@@ -4688,7 +4688,7 @@
 /area/centcom/central_command_areas/evacuation)
 "vm" = (
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "vn" = (
@@ -4759,7 +4759,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "vC" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
@@ -4802,7 +4802,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "vH" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/status_display/evac/directional/west,
 /obj/effect/turf_decal/tile/green{
 	dir = 1
@@ -4871,7 +4871,7 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supply)
 "vZ" = (
@@ -4889,7 +4889,7 @@
 /obj/effect/turf_decal/tile/green/half/contrasted{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "wg" = (
@@ -4922,7 +4922,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/smooth_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "wl" = (
@@ -5273,7 +5273,7 @@
 "xU" = (
 /obj/structure/filingcabinet/medical,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
 "xV" = (
@@ -5435,7 +5435,7 @@
 "yC" = (
 /obj/structure/filingcabinet/security,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
 "yH" = (
@@ -5602,7 +5602,7 @@
 	},
 /area/centcom/central_command_areas/evacuation)
 "zn" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/table/reinforced,
 /obj/item/crowbar/red,
 /obj/item/wrench,
@@ -5772,7 +5772,7 @@
 "zR" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "zS" = (
@@ -5781,7 +5781,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/pale/style_random,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/misc/asteroid,
 /area/centcom/tdome/administration)
 "zU" = (
@@ -5843,7 +5843,7 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "Ai" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/courtroom)
@@ -5854,14 +5854,14 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/courtroom)
 "An" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "Ao" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/green,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
@@ -6028,7 +6028,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
 "Bb" = (
@@ -6054,7 +6054,7 @@
 "Bh" = (
 /obj/machinery/processor,
 /obj/effect/turf_decal/stripes/end,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "Bj" = (
@@ -6066,7 +6066,7 @@
 "Bl" = (
 /obj/structure/bookcase/random,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/admin)
 "Bm" = (
@@ -6116,7 +6116,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
 "By" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/status_display/evac/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -6204,7 +6204,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "BI" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/noticeboard/directional/south,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -6296,7 +6296,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "BY" = (
@@ -6308,7 +6308,7 @@
 	},
 /obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "Cb" = (
@@ -6328,7 +6328,7 @@
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/generic/style_random,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/evacuation)
 "Cf" = (
@@ -6411,7 +6411,7 @@
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/green/anticorner/contrasted{
 	dir = 1
 	},
@@ -6436,7 +6436,7 @@
 /obj/item/paper/pamphlet/centcom/visitor_info,
 /obj/item/paper/pamphlet/centcom/visitor_info,
 /obj/item/paper/pamphlet/centcom/visitor_info,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/green/anticorner/contrasted{
 	dir = 4
 	},
@@ -6451,7 +6451,7 @@
 /obj/effect/turf_decal/tile/green/anticorner/contrasted{
 	dir = 1
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "CT" = (
@@ -6534,7 +6534,7 @@
 /obj/structure/table,
 /obj/machinery/status_display/evac/directional/east,
 /obj/effect/turf_decal/tile/green/anticorner/contrasted,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "Dp" = (
@@ -6688,7 +6688,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
 "Em" = (
@@ -7068,7 +7068,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/admin/storage)
 "GB" = (
@@ -7115,7 +7115,7 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "GJ" = (
@@ -7168,12 +7168,12 @@
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/smooth_edge,
 /area/centcom/central_command_areas/evacuation/ship)
 "Hi" = (
 /obj/effect/turf_decal/tile/green,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/ferry)
 "Hj" = (
@@ -7215,7 +7215,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/prison)
 "Hv" = (
@@ -7295,7 +7295,7 @@
 /obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
 "HV" = (
@@ -7463,7 +7463,7 @@
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/generic/style_random,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/grass,
 /area/centcom/tdome/administration)
 "IX" = (
@@ -7531,7 +7531,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 4
 	},
@@ -7646,7 +7646,7 @@
 /obj/structure/flora/bush/sparsegrass/style_random,
 /obj/structure/flora/bush/lavendergrass/style_random,
 /obj/structure/flora/bush/ferny/style_random,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron{
 	icon_state = "asteroid5";
 	name = "plating"
@@ -7969,7 +7969,7 @@
 /obj/machinery/computer/records/medical{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "LV" = (
@@ -8012,7 +8012,7 @@
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
 /obj/item/pen,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/status_display/evac/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -8088,7 +8088,7 @@
 /turf/open/floor/iron/dark/herringbone,
 /area/centcom/central_command_areas/evacuation/ship)
 "MI" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/table/wood,
 /obj/structure/reagent_dispensers/beerkeg{
 	pixel_y = 6;
@@ -8198,7 +8198,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox/loyalty,
 /obj/item/gun/ballistic/automatic/ar,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/admin/storage)
@@ -8280,7 +8280,7 @@
 /area/centcom/central_command_areas/control)
 "NM" = (
 /obj/structure/closet/crate/bin,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/centcom/central_command_areas/admin)
 "NN" = (
@@ -8449,7 +8449,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/supplypod)
 "OB" = (
@@ -8606,7 +8606,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/pale/style_random,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/misc/asteroid,
 /area/centcom/tdome/observation)
 "Pc" = (
@@ -8615,7 +8615,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "Pd" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
 "Pe" = (
@@ -8663,7 +8663,7 @@
 "Pk" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/donut_box,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/courtroom)
@@ -8834,7 +8834,7 @@
 /obj/structure/table/wood,
 /obj/machinery/computer/records/medical/laptop,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
 "PV" = (
@@ -8855,7 +8855,7 @@
 /obj/structure/flora/tree/palm{
 	icon_state = "palm2"
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/evacuation/ship)
 "Qb" = (
@@ -9019,7 +9019,7 @@
 /obj/structure/table/wood,
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "QU" = (
@@ -9227,7 +9227,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/machinery/status_display/evac/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -9275,7 +9275,7 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/arena)
 "RR" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
@@ -9410,7 +9410,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supplypod/loading/three)
 "SG" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation)
@@ -9502,7 +9502,7 @@
 /obj/item/reagent_containers/cup/rag,
 /obj/machinery/newscaster/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "Tg" = (
@@ -9798,7 +9798,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/control)
 "Uw" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/supplypod)
 "Ux" = (
@@ -9821,11 +9821,11 @@
 "UC" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "UH" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/closet/secure_closet/personal,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/supplypod)
@@ -10017,7 +10017,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "Vw" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/status_display/evac/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -10306,7 +10306,7 @@
 /turf/open/floor/iron/grimy,
 /area/centcom/central_command_areas/admin)
 "WY" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/table/reinforced,
 /obj/item/crowbar/red,
 /obj/item/wrench,
@@ -10512,7 +10512,7 @@
 /area/centcom/central_command_areas/admin)
 "Ye" = (
 /obj/structure/closet/crate/bin,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
@@ -10760,7 +10760,7 @@
 /turf/open/floor/circuit/green,
 /area/centcom/central_command_areas/briefing)
 "Zv" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/armory)
@@ -10787,7 +10787,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/supplypod)
 "Zz" = (
@@ -10797,7 +10797,7 @@
 /obj/structure/flora/bush/grassy/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/pointy/style_random,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/control)
 "ZA" = (
@@ -10872,7 +10872,7 @@
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/generic/style_random,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/grass,
 /area/centcom/tdome/observation)
 "ZQ" = (

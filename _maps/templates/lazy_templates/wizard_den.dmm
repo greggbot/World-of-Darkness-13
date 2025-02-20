@@ -23,7 +23,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "cy" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/red,
 /area/centcom/wizard_station)
 "cF" = (
@@ -57,11 +57,11 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "dB" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "eI" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/lava,
 /area/centcom/wizard_station)
 "eW" = (
@@ -110,7 +110,7 @@
 /turf/open/floor/plastic,
 /area/centcom/wizard_station)
 "hj" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/purple,
 /area/centcom/wizard_station)
 "hq" = (
@@ -131,7 +131,7 @@
 /obj/item/clothing/shoes/sandal/magic{
 	pixel_y = 16
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plastic,
 /area/centcom/wizard_station)
 "iW" = (
@@ -151,7 +151,7 @@
 	pixel_x = 8;
 	pixel_y = 2
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "jp" = (
@@ -201,7 +201,7 @@
 	pixel_x = 6;
 	pixel_y = -10
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "mc" = (
@@ -408,7 +408,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "ut" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/purple,
 /area/centcom/wizard_station)
 "uy" = (
@@ -490,7 +490,7 @@
 /obj/structure/chair/wood/wings{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "ya" = (
@@ -498,7 +498,7 @@
 /obj/item/skub{
 	pixel_y = 16
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plastic,
 /area/centcom/wizard_station)
 "yO" = (
@@ -544,7 +544,7 @@
 "Df" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/structure/chair/wood,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "Do" = (
@@ -576,7 +576,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "DX" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Ej" = (
@@ -696,7 +696,7 @@
 /area/centcom/wizard_station)
 "Ol" = (
 /obj/machinery/computer/camera_advanced,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "OV" = (
@@ -709,7 +709,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Pb" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/red,
 /area/centcom/wizard_station)
 "Pz" = (
@@ -731,7 +731,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Qm" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "RR" = (
@@ -779,7 +779,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start/wizard,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "SD" = (
@@ -843,7 +843,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "UG" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "UX" = (
@@ -896,7 +896,7 @@
 /turf/open/floor/carpet/red,
 /area/centcom/wizard_station)
 "XJ" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/red,
 /area/centcom/wizard_station)
 "XV" = (
@@ -960,7 +960,7 @@
 	pixel_y = 1;
 	pixel_x = -6
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 

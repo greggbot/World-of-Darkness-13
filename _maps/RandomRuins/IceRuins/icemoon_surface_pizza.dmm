@@ -22,7 +22,7 @@
 /obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/siding/yellow{
 	dir = 1
 	},
@@ -162,7 +162,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 "gS" = (
@@ -188,7 +188,7 @@
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark/side{
 	dir = 10
 	},
@@ -225,7 +225,7 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/pizzeria/kitchen)
 "ir" = (
@@ -276,7 +276,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/ruin/pizzeria/kitchen)
 "ji" = (
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /turf/open/floor/iron/freezer,
 /area/ruin/pizzeria)
 "jX" = (
@@ -426,7 +426,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /obj/machinery/newscaster/directional/north,
 /turf/open/floor/iron/freezer,
 /area/ruin/pizzeria)
@@ -447,7 +447,7 @@
 /obj/effect/turf_decal/tile/red/opposingcorners{
 	dir = 1
 	},
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/iron/dark/side{
 	dir = 10
 	},
@@ -477,7 +477,7 @@
 "vO" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /obj/machinery/power/port_gen/pacman/pre_loaded,
 /turf/open/floor/plating,
 /area/ruin/pizzeria)
@@ -652,7 +652,7 @@
 /area/ruin/pizzeria)
 "CZ" = (
 /obj/structure/cable,
-/obj/machinery/light/cold/no_nightlight/directional/south,
+/obj/machinery/light/cold/no_nightlight/directional/north,
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
@@ -740,7 +740,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/ruin/pizzeria/kitchen)
 "Fe" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/toilet{
 	dir = 8
 	},
@@ -785,7 +785,7 @@
 /obj/structure/closet/crate/trashcart,
 /obj/item/toy/crayon/spraycan,
 /obj/item/camera,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/spawner/random/trash/botanical_waste,
 /obj/item/seeds/tomato,
 /obj/item/seeds/wheat,
@@ -812,7 +812,7 @@
 /area/ruin/pizzeria/kitchen)
 "IW" = (
 /obj/effect/spawner/random/entertainment/cigarette,
-/obj/machinery/light/small/built/directional/south,
+/obj/machinery/light/small/built/directional/north,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 "IY" = (
@@ -1110,7 +1110,7 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/dark/side{
 	dir = 10
 	},
@@ -1147,7 +1147,7 @@
 /area/ruin/pizzeria/kitchen)
 "Sw" = (
 /obj/structure/chair/sofa/middle/brown,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
@@ -1180,7 +1180,7 @@
 /area/ruin/pizzeria)
 "TE" = (
 /obj/machinery/oven,
-/obj/machinery/light/cold/no_nightlight/directional/north,
+/obj/machinery/light/cold/no_nightlight/directional/south,
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},
@@ -1349,7 +1349,7 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 "Za" = (
-/obj/machinery/light/small/red/directional/south,
+/obj/machinery/light/small/red/directional/north,
 /obj/item/chair,
 /obj/effect/turf_decal/tile/red/opposingcorners{
 	dir = 1

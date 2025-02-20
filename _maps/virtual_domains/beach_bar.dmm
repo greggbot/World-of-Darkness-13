@@ -14,7 +14,7 @@
 /obj/item/trash/candy,
 /obj/item/toy/talking/owl,
 /obj/effect/turf_decal/sand,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/virtual_domain/fullbright)
 "aw" = (
@@ -25,7 +25,7 @@
 /turf/open/floor/pod/light,
 /area/virtual_domain/fullbright)
 "aZ" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/closet/crate{
 	name = "fuel crate"
 	},
@@ -108,7 +108,7 @@
 /turf/open/floor/sepia,
 /area/virtual_domain/fullbright)
 "dI" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "dZ" = (
@@ -136,7 +136,7 @@
 /area/virtual_domain/fullbright)
 "fr" = (
 /obj/item/melee/skateboard/hoverboard,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/pod/light,
 /area/virtual_domain/fullbright)
 "gh" = (
@@ -174,7 +174,7 @@
 /obj/item/book/manual/wiki/barman_recipes,
 /obj/item/reagent_containers/cup/glass/shaker,
 /obj/item/reagent_containers/cup/rag,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "jc" = (
@@ -274,7 +274,7 @@
 /obj/structure/railing/corner{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/misc/beach/coast/corner{
 	dir = 8
 	},
@@ -296,7 +296,7 @@
 /turf/open/floor/plating,
 /area/virtual_domain/fullbright)
 "pZ" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/misc/beach/coast{
 	dir = 1
 	},
@@ -322,7 +322,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "rc" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "ri" = (
@@ -360,11 +360,11 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "uc" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/virtual_domain/fullbright)
 "ug" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/closet/secure_closet/bar/lavaland_bartender_clothes,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
@@ -403,7 +403,7 @@
 /turf/open/floor/plating,
 /area/virtual_domain/fullbright)
 "vp" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
@@ -525,7 +525,7 @@
 /area/virtual_domain/fullbright)
 "ys" = (
 /obj/effect/turf_decal/sand,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "yv" = (
@@ -546,7 +546,7 @@
 /turf/open/floor/carpet/red,
 /area/virtual_domain/fullbright)
 "zn" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/beach/coast{
 	dir = 8
 	},
@@ -568,7 +568,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/sepia,
 /area/virtual_domain/fullbright)
 "Ae" = (
@@ -636,7 +636,7 @@
 /turf/open/floor/pod/light,
 /area/virtual_domain/fullbright)
 "Cb" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /mob/living/basic/crab{
 	name = "Eddie"
 	},
@@ -653,7 +653,7 @@
 /area/virtual_domain/fullbright)
 "CO" = (
 /obj/machinery/vending/dinnerware,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "Db" = (
@@ -667,7 +667,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "Dt" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/sand,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
@@ -684,7 +684,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "Et" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/virtual_domain/fullbright)
@@ -697,7 +697,7 @@
 /turf/open/floor/plating,
 /area/virtual_domain/fullbright)
 "EP" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/washing_machine,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
@@ -719,7 +719,7 @@
 "FS" = (
 /obj/effect/turf_decal/sand,
 /obj/structure/sign/warning/no_smoking/circle/directional/east,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "FY" = (
@@ -757,7 +757,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "Ii" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/stairs/left,
 /area/virtual_domain/fullbright)
 "Ir" = (
@@ -777,7 +777,7 @@
 /area/virtual_domain/fullbright)
 "IM" = (
 /obj/machinery/hydroponics/constructable,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/grimy,
 /area/virtual_domain/fullbright)
 "IP" = (
@@ -844,7 +844,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "Nr" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Nw" = (
@@ -885,7 +885,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "OR" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "OW" = (
@@ -901,7 +901,7 @@
 /area/lavaland/surface/outdoors/virtual_domain)
 "Pc" = (
 /obj/structure/chair/wood,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Pg" = (
@@ -932,7 +932,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "Rx" = (
@@ -952,7 +952,7 @@
 /area/virtual_domain/fullbright)
 "Sg" = (
 /obj/structure/flora/coconuts,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "SB" = (
@@ -1013,7 +1013,7 @@
 /turf/closed/mineral/random/volcanic,
 /area/lavaland/surface/outdoors/virtual_domain)
 "VH" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "VX" = (
@@ -1035,7 +1035,7 @@
 /turf/open/water/beach,
 /area/virtual_domain/fullbright)
 "WL" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "WO" = (
@@ -1064,7 +1064,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "XL" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "XM" = (
@@ -1098,7 +1098,7 @@
 /area/virtual_domain/fullbright)
 "YN" = (
 /obj/effect/turf_decal/sand,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Zb" = (

@@ -18,7 +18,7 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "af" = (
@@ -146,7 +146,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "aE" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "aF" = (
@@ -321,11 +321,11 @@
 /obj/item/clothing/suit/apron/surgical,
 /obj/item/clothing/mask/surgical,
 /obj/structure/table/optable,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "gT" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "im" = (
@@ -357,7 +357,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "xg" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "BR" = (
@@ -388,17 +388,17 @@
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "IV" = (
 /obj/machinery/stasis,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Je" = (
 /obj/structure/closet/emcloset,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "JG" = (
@@ -418,7 +418,7 @@
 /obj/structure/table,
 /obj/machinery/recharger,
 /obj/structure/reagent_dispensers/wall/peppertank/directional/north,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Pc" = (
@@ -460,7 +460,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "SJ" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "TC" = (
@@ -474,7 +474,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "YK" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 

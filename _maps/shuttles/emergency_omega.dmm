@@ -60,7 +60,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "aB" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 1
 	},
@@ -415,7 +415,7 @@
 /obj/item/radio/intercom/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "dW" = (
@@ -503,7 +503,7 @@
 /obj/machinery/vending/wallmed/directional/east{
 	use_power = 0
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "sI" = (
@@ -527,7 +527,7 @@
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "vu" = (
@@ -586,7 +586,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Am" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Dh" = (
@@ -607,7 +607,7 @@
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Ge" = (
@@ -662,7 +662,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "TB" = (

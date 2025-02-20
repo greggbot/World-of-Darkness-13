@@ -3,7 +3,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/airalarm/directional/west,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -74,7 +74,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "aj" = (
@@ -84,7 +84,7 @@
 /obj/machinery/airalarm/directional/west,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/closet/secure_closet/freezer{
 	locked = 0;
 	name = "fridge"
@@ -135,7 +135,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/airalarm/directional/east,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -287,7 +287,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/pirate)
 "aI" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/sign/warning/vacuum/external/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -321,7 +321,7 @@
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "aN" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
@@ -338,7 +338,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "aO" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door/directional/south{
@@ -380,7 +380,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "aW" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/computer/camera_advanced/shuttle_docker/syndicate/pirate{
 	dir = 4;
 	x_offset = -3;
@@ -445,7 +445,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/effect/decal/cleanable/dirt,
@@ -459,7 +459,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "bo" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/sign/warning/vacuum/external/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
@@ -484,7 +484,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/firealarm/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -545,7 +545,7 @@
 "bC" = (
 /obj/machinery/airalarm/directional/east,
 /obj/effect/mapping_helpers/airalarm/all_access,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -572,7 +572,7 @@
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "bI" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/computer/piratepad_control{
 	dir = 1
 	},
@@ -592,7 +592,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
@@ -676,12 +676,12 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "dU" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
@@ -817,7 +817,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "sP" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/computer/monitor{
 	dir = 8
 	},

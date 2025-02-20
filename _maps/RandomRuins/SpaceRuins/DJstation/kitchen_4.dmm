@@ -50,7 +50,7 @@
 /area/ruin/space/djstation)
 "t" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/djstation)
 "z" = (
@@ -131,7 +131,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/djstation)
 "Y" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/ruin/space/djstation)
 "Z" = (

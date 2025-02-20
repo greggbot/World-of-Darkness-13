@@ -128,7 +128,7 @@
 /obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "dU" = (
@@ -180,7 +180,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "iq" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/chair/comfy/shuttle,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
@@ -209,7 +209,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "kb" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/closet{
 	anchorable = 0;
 	anchored = 1
@@ -305,7 +305,7 @@
 /area/shuttle/escape)
 "pn" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "pH" = (
@@ -364,7 +364,7 @@
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted{
 	dir = 1
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "tY" = (
@@ -413,7 +413,7 @@
 "wc" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/tile/green/anticorner/contrasted,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "xD" = (
@@ -452,7 +452,7 @@
 "zt" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/emergency,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "zB" = (
@@ -542,7 +542,7 @@
 	pixel_y = -3
 	},
 /obj/structure/sign/poster/official/moth_epi/directional/south,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
@@ -600,7 +600,7 @@
 /obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Gt" = (
@@ -666,7 +666,7 @@
 /obj/effect/turf_decal/tile/green/anticorner/contrasted{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Lw" = (
@@ -700,7 +700,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Ng" = (
@@ -841,7 +841,7 @@
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "UL" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Vx" = (
@@ -849,7 +849,7 @@
 /obj/effect/turf_decal/tile/green/half/contrasted{
 	dir = 1
 	},
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "VQ" = (
@@ -864,7 +864,7 @@
 /obj/structure/table,
 /obj/effect/spawner/random/bureaucracy/pen,
 /obj/effect/spawner/random/bureaucracy/paper,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Wy" = (
@@ -873,7 +873,7 @@
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "WF" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/closet{
 	anchorable = 0;
 	anchored = 1
@@ -895,7 +895,7 @@
 "Xa" = (
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "YG" = (
@@ -908,11 +908,11 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "YN" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Zq" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "ZI" = (

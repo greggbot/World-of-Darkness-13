@@ -87,14 +87,14 @@
 "P" = (
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/item/electropack,
 /obj/item/assembly/signaler,
 /turf/open/floor/iron/white,
 /area/station/maintenance/department/science)
 "T" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
 "W" = (

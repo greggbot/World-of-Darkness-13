@@ -22,7 +22,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "h" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "i" = (
@@ -120,7 +120,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "N" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "O" = (
@@ -164,7 +164,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "T" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "U" = (
@@ -175,7 +175,7 @@
 /turf/open/floor/wood/large,
 /area/virtual_domain/fullbright)
 "Y" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 

@@ -18,7 +18,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/supply)
 "d" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/button/door/directional/east{
 	id = "QMLoaddoor";
 	name = "Loading Doors";
@@ -35,7 +35,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/supply)
 "e" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/supply)

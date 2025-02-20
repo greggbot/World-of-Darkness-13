@@ -191,7 +191,7 @@
 	icon_state = "floor5-old"
 	},
 /obj/effect/decal/cleanable/blood/gibs/up,
-/obj/machinery/light/small/red/dim/directional/west,
+/obj/machinery/light/small/red/dim/directional/east,
 /turf/open/floor/iron/freezer,
 /area/template_noop)
 "v" = (

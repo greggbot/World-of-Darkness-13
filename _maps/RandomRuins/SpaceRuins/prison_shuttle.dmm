@@ -42,7 +42,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "l" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium/tiled/airless,
 /area/ruin/space/prison_shuttle)
 "m" = (
@@ -60,7 +60,7 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/prison_shuttle)
 "r" = (
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/prison_shuttle)
 "s" = (
@@ -99,7 +99,7 @@
 "A" = (
 /obj/effect/spawner/random/contraband/narcotics,
 /obj/effect/turf_decal/tile/brown/fourcorners,
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "B" = (
@@ -182,7 +182,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "W" = (
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/plating/airless,
 /area/ruin/space/prison_shuttle)
 "X" = (

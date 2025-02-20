@@ -20,7 +20,7 @@
 "aO" = (
 /obj/structure/sign/warning/vacuum/external/directional/west,
 /obj/structure/cable,
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "aP" = (
@@ -124,7 +124,7 @@
 /obj/item/storage/medkit/regular,
 /obj/item/clothing/neck/stethoscope,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
 	},
@@ -237,7 +237,7 @@
 	req_access = list("syndicate");
 	name = "Self Destruct Option"
 	},
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/circuit/red,
 /area/ruin/space/has_grav/listeningstation)
 "lO" = (
@@ -390,7 +390,7 @@
 /obj/machinery/computer/records/medical/syndie{
 	req_access = list("syndicate")
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/listeningstation)
@@ -408,7 +408,7 @@
 "xP" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/small,
 /area/ruin/space/has_grav/listeningstation)
 "xY" = (
@@ -696,7 +696,7 @@
 /area/ruin/space/has_grav/listeningstation)
 "LA" = (
 /obj/item/chair/wood,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/listeningstation)
 "LR" = (
@@ -726,7 +726,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/small,
 /area/ruin/space/has_grav/listeningstation)
 "MS" = (
@@ -818,7 +818,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/listeningstation)
 "Sx" = (
@@ -924,7 +924,7 @@
 	pixel_x = 3;
 	pixel_y = 10
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/listeningstation)
@@ -970,7 +970,7 @@
 	amount = 30
 	},
 /obj/item/stock_parts/power_store/cell/high,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/closet/crate,
 /obj/effect/turf_decal/delivery,
 /obj/structure/cable,

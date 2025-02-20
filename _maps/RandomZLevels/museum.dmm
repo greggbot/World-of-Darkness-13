@@ -17,7 +17,7 @@
 "ac" = (
 /obj/structure/sign/poster/contraband/fake_bombable/directional/west,
 /obj/structure/closet/crate/bin,
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/museum/cafeteria)
@@ -294,7 +294,7 @@
 /mob/living/basic/mothroach,
 /obj/structure/chair/comfy,
 /obj/effect/mapping_helpers/mob_buckler,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/museum)
 "cv" = (
@@ -383,7 +383,7 @@
 /obj/structure/fluff/fake_camera{
 	dir = 5
 	},
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/structure/fluff/fake_scrubber,
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/museum/cafeteria)
@@ -717,7 +717,7 @@
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "fC" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/table/wood,
 /obj/item/language_manual/roundstart_species,
 /obj/effect/decal/cleanable/dirt,
@@ -749,7 +749,7 @@
 /turf/open/chasm/true/no_smooth,
 /area/awaymission/museum)
 "fW" = (
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/wood/tile,
 /area/awaymission/museum)
 "gf" = (
@@ -802,7 +802,7 @@
 /obj/structure/table/wood,
 /obj/item/knife,
 /obj/item/kitchen/rollingpin,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/freezer,
 /area/awaymission/museum)
 "gC" = (
@@ -907,7 +907,7 @@
 	dir = 4
 	},
 /obj/effect/spawner/random/vending/colavend,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "hw" = (
@@ -993,7 +993,7 @@
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "ix" = (
@@ -1036,7 +1036,7 @@
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 4
 	},
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "iF" = (
@@ -1288,7 +1288,7 @@
 /obj/structure/railing/corner{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/chasm/true/no_smooth,
 /area/awaymission/museum)
 "kq" = (
@@ -1614,11 +1614,11 @@
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "nr" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/showroomfloor,
 /area/awaymission/museum)
 "ns" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/chair{
 	dir = 1
 	},
@@ -2091,7 +2091,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "rc" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/girder/displaced,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/museum)
@@ -2214,7 +2214,7 @@
 /area/awaymission/museum)
 "rY" = (
 /mob/living/basic/mouse/rat,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/museum)
@@ -2242,7 +2242,7 @@
 /area/awaymission/museum)
 "sp" = (
 /obj/machinery/door/window/left/directional/west,
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "sq" = (
@@ -2322,7 +2322,7 @@
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -2980,7 +2980,7 @@
 /area/awaymission/museum)
 "yf" = (
 /obj/structure/lattice/catwalk/mining,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/chasm/true/no_smooth,
 /area/awaymission/museum)
 "yi" = (
@@ -3045,7 +3045,7 @@
 /turf/open/misc/grass,
 /area/awaymission/museum/mothroachvoid)
 "yF" = (
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/museum)
@@ -3208,7 +3208,7 @@
 "zY" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -3369,7 +3369,7 @@
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -3392,7 +3392,7 @@
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 8
 	},
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "Bu" = (
@@ -3508,7 +3508,7 @@
 	spawn_loot_count = 2;
 	spawn_random_offset = 2
 	},
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "CB" = (
@@ -3631,7 +3631,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "DA" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/chasm/true/no_smooth,
 /area/awaymission/museum)
 "DD" = (
@@ -3689,14 +3689,14 @@
 /area/awaymission/museum)
 "DX" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/museum/cafeteria)
 "DY" = (
 /turf/closed/indestructible/reinforced/titanium,
 /area/awaymission/museum)
 "Ea" = (
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/museum)
@@ -3740,14 +3740,14 @@
 	held_item = /obj/item/wrench;
 	hat = /obj/item/clothing/head/utility/hardhat
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "Er" = (
 /mob/living/basic/mothroach,
 /obj/structure/chair/comfy/beige,
 /obj/effect/mapping_helpers/mob_buckler,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "Es" = (
@@ -3888,7 +3888,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "Fq" = (
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue,
 /turf/open/floor/iron/dark,
@@ -4178,7 +4178,7 @@
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/awaymission/museum)
 "HP" = (
@@ -4319,7 +4319,7 @@
 /area/awaymission/museum)
 "Jd" = (
 /obj/machinery/vending/cigarette/beach,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "Je" = (
@@ -4518,7 +4518,7 @@
 /turf/open/floor/iron/freezer,
 /area/awaymission/museum)
 "Lk" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/showcase/mecha/marauder,
 /turf/open/floor/mineral/titanium/blue,
 /area/awaymission/museum)
@@ -4580,7 +4580,7 @@
 "LK" = (
 /obj/structure/table,
 /obj/item/piggy_bank/museum,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "LN" = (
@@ -4628,7 +4628,7 @@
 /turf/closed/indestructible/reinforced,
 /area/awaymission/museum)
 "Mn" = (
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "Ms" = (
@@ -5338,7 +5338,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "Ta" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/crayon/puzzle/pin{
 	pixel_x = -32;
 	puzzle_id = "museum_right_wing"
@@ -5474,7 +5474,7 @@
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 4
 	},
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -5607,7 +5607,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/museum/cafeteria)
 "Vc" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 8
@@ -5617,7 +5617,7 @@
 "Vh" = (
 /obj/structure/lattice/catwalk/mining,
 /obj/structure/railing/corner,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/chasm/true/no_smooth,
 /area/awaymission/museum)
 "Vk" = (
@@ -5754,7 +5754,7 @@
 /obj/effect/turf_decal/siding/dark_blue/corner{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "Wr" = (
@@ -5843,7 +5843,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "WU" = (
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 1
@@ -6013,7 +6013,7 @@
 /turf/open/floor/iron,
 /area/awaymission/museum)
 "Yn" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/fake_camera,
 /turf/open/floor/iron/white/small,
@@ -6099,7 +6099,7 @@
 /turf/closed/indestructible/reinforced,
 /area/awaymission/museum)
 "Zg" = (
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/holofloor/beach/water,
 /area/awaymission/museum)
 "Zk" = (

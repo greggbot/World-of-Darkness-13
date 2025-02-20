@@ -25,7 +25,7 @@
 /turf/open/floor/carpet/neon,
 /area/deathmatch)
 "g" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/neon,
 /area/deathmatch)
 "i" = (
@@ -55,7 +55,7 @@
 /turf/open/floor/carpet/neon,
 /area/deathmatch)
 "r" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/barricade/wooden,
 /turf/open/floor/carpet/neon,
 /area/deathmatch)
@@ -88,20 +88,20 @@
 /turf/open/floor/carpet/neon,
 /area/deathmatch)
 "z" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/neon,
 /area/deathmatch)
 "A" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/item/ammo_casing/spent,
 /turf/open/floor/carpet/neon,
 /area/deathmatch)
 "B" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/fakeice/slippery,
 /area/deathmatch)
 "C" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/chasm,
 /area/deathmatch)
 "D" = (
@@ -122,11 +122,11 @@
 /turf/open/floor/carpet/neon,
 /area/deathmatch)
 "K" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/fake_snow,
 /area/deathmatch)
 "L" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/fakeice/slippery,
 /area/deathmatch)
 "M" = (
@@ -173,7 +173,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron/freezer,
 /area/deathmatch)

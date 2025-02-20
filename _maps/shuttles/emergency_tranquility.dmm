@@ -104,7 +104,7 @@
 /obj/structure/sign/picture_frame/portrait/bar{
 	pixel_y = 32
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/stone,
 /area/shuttle/escape)
 "cM" = (
@@ -366,7 +366,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "hB" = (
@@ -793,7 +793,7 @@
 /obj/structure/sign/nanotrasen{
 	pixel_y = -32
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "oV" = (
@@ -1130,7 +1130,7 @@
 /obj/structure/sign/nanotrasen{
 	pixel_y = -32
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "wm" = (
@@ -1145,7 +1145,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "wp" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/flora/bush/fullgrass,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -1178,7 +1178,7 @@
 /obj/structure/chair/pew/left{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
@@ -1322,7 +1322,7 @@
 	color = "#A47449";
 	dir = 4
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/water,
 /area/shuttle/escape)
@@ -1344,7 +1344,7 @@
 	pixel_y = 2
 	},
 /obj/effect/turf_decal/tile/red/fourcorners,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/textured_half,
 /area/shuttle/escape)
 "zB" = (
@@ -1419,7 +1419,7 @@
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "AQ" = (
@@ -1681,7 +1681,7 @@
 	},
 /obj/structure/tank_dispenser/oxygen,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "FY" = (
@@ -1919,7 +1919,7 @@
 	color = "#A47449";
 	dir = 4
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/machinery/status_display/evac/directional/south,
 /turf/open/water,
 /area/shuttle/escape)
@@ -2065,7 +2065,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "MO" = (
@@ -2089,7 +2089,7 @@
 	dir = 8
 	},
 /obj/machinery/vending/cigarette,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/stone,
 /area/shuttle/escape)
 "Na" = (
@@ -2288,7 +2288,7 @@
 /obj/item/grenade/chem_grenade/smart_metal_foam{
 	pixel_x = -4
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/item/trash/boritos{
 	pixel_y = -7;
 	pixel_x = 2
@@ -2461,7 +2461,7 @@
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "UF" = (
@@ -2619,7 +2619,7 @@
 /area/shuttle/escape)
 "XZ" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "Yc" = (
@@ -2664,7 +2664,7 @@
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "Zx" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/catwalk_floor,
 /area/shuttle/escape)
 "ZJ" = (

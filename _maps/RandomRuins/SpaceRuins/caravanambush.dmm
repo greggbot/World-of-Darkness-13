@@ -143,7 +143,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/cable,
 /obj/machinery/button/door/directional/north{
 	id = "caravantrade2_cargo_port";
@@ -194,7 +194,7 @@
 	id = "caravantrade2_cargo_starboard";
 	name = "Cargo Blast Door Control"
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark/airless,
 /area/shuttle/ruin/caravan/freighter2)
 "fh" = (
@@ -217,7 +217,7 @@
 /area/shuttle/ruin/caravan/freighter3)
 "fy" = (
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/button/door/directional/south{
 	id = "caravantrade3_cargo_starboard";
 	name = "Cargo Blast Door Control"
@@ -419,7 +419,7 @@
 /turf/open/floor/iron/airless,
 /area/shuttle/ruin/caravan/freighter2)
 "oV" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/sign/warning/vacuum/directional/west{
 	pixel_y = -32
 	},
@@ -475,7 +475,7 @@
 "rj" = (
 /obj/effect/turf_decal/bot_white/right,
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -954,7 +954,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/ruin/caravan/freighter3)
 "Oj" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/sign/warning/vacuum/directional/west{
 	pixel_y = 32
 	},
@@ -1015,7 +1015,7 @@
 	id = "caravantrade2_cargo_port";
 	name = "Cargo Blast Door Control"
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/closet/crate/secure,
 /obj/effect/spawner/random/entertainment/money_large,
 /obj/effect/spawner/random/entertainment/money_large,
@@ -1074,7 +1074,7 @@
 /area/shuttle/ruin/caravan/freighter3)
 "Vx" = (
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/button/door/directional/north{
 	id = "caravantrade3_cargo_port";
 	name = "Cargo Blast Door Control"
@@ -1098,7 +1098,7 @@
 /area/shuttle/ruin/caravan/freighter2)
 "WC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/sign/warning/vacuum/directional/west{
 	pixel_y = -32
 	},
@@ -1107,7 +1107,7 @@
 "WT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/sign/warning/vacuum/directional/west{
 	pixel_y = 32
 	},
@@ -1123,7 +1123,7 @@
 /obj/effect/turf_decal/bot_white/left,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/button/door/directional/south{
 	id = "caravantrade2_cargo_starboard";
 	name = "Cargo Blast Door Control"

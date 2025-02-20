@@ -128,7 +128,7 @@
 /obj/structure/chair/office/light{
 	name = "Captain"
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "aV" = (
@@ -284,7 +284,7 @@
 /obj/structure/toilet{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "bG" = (
@@ -301,11 +301,11 @@
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "bJ" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "bN" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "bR" = (
@@ -321,7 +321,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "hu" = (
@@ -369,7 +369,7 @@
 	dir = 1
 	},
 /obj/item/radio/intercom/directional/south,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "Id" = (
@@ -398,14 +398,14 @@
 	dir = 1
 	},
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "Nd" = (
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "QS" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "Te" = (

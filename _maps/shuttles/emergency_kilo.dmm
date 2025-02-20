@@ -59,7 +59,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/escape)
 "aw" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/closet/emcloset/anchored,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/mineral/plastitanium,
@@ -146,7 +146,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/camera/autoname/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
@@ -276,7 +276,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "bL" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
@@ -328,7 +328,7 @@
 	dir = 1
 	},
 /obj/item/radio/intercom/directional/south,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "cf" = (
@@ -543,7 +543,7 @@
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/shuttle/escape)
 "hD" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/machinery/camera/autoname/directional/east,
@@ -790,7 +790,7 @@
 	pixel_y = 2
 	},
 /obj/item/storage/medkit/regular,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "sy" = (
@@ -826,7 +826,7 @@
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/assembly/flash/handheld,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "wo" = (
@@ -1204,7 +1204,7 @@
 "RH" = (
 /obj/structure/table/optable,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "Su" = (
@@ -1241,7 +1241,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "VD" = (
@@ -1271,7 +1271,7 @@
 "WN" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "Xx" = (

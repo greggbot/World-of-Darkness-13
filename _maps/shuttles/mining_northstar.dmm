@@ -16,7 +16,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/emergency,
 /obj/structure/sign/warning/xeno_mining/directional/north,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/pod/light,
 /area/shuttle/mining)
 "d" = (
@@ -102,7 +102,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/brown,
-/obj/machinery/light/small/red/directional/south,
+/obj/machinery/light/small/red/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/mining)
 "j" = (
@@ -125,7 +125,7 @@
 	dir = 5
 	},
 /obj/structure/sign/poster/official/work_for_a_future/directional/north,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/pod/light,
 /area/shuttle/mining)
 "m" = (
@@ -154,7 +154,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/brown/end,
-/obj/machinery/light/small/red/directional/south,
+/obj/machinery/light/small/red/directional/north,
 /turf/open/floor/pod/light,
 /area/shuttle/mining)
 "F" = (

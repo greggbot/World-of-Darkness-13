@@ -239,7 +239,7 @@
 /area/deathmatch)
 "iH" = (
 /obj/effect/turf_decal/tile/blue/full,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/table/glass,
 /obj/item/stack/medical/suture,
 /turf/open/indestructible/white,
@@ -259,7 +259,7 @@
 "ks" = (
 /obj/structure/table/glass,
 /obj/item/storage/medkit/toxin,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "kz" = (
@@ -471,7 +471,7 @@
 "rU" = (
 /obj/item/storage/medkit/brute,
 /obj/structure/table/glass,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "rX" = (
@@ -494,7 +494,7 @@
 /area/deathmatch)
 "sx" = (
 /obj/effect/turf_decal/tile/red/full,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "sM" = (
@@ -530,7 +530,7 @@
 "to" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "ty" = (
@@ -539,7 +539,7 @@
 /area/deathmatch)
 "tS" = (
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible/large,
 /area/deathmatch)
 "tU" = (
@@ -656,7 +656,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "AU" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/tank_holder/extinguisher,
 /turf/open/indestructible/white,
 /area/deathmatch)
@@ -707,7 +707,7 @@
 /area/deathmatch)
 "Cv" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "CX" = (
@@ -728,7 +728,7 @@
 "DD" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/tank_holder/extinguisher,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -978,7 +978,7 @@
 /area/deathmatch)
 "NF" = (
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/computer,
 /turf/open/indestructible/large,
 /area/deathmatch)
@@ -989,7 +989,7 @@
 /area/deathmatch)
 "NP" = (
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/machinery/computer{
 	dir = 1
 	},
@@ -1023,7 +1023,7 @@
 /area/deathmatch)
 "Po" = (
 /obj/effect/turf_decal/tile/red/full,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "Pp" = (
@@ -1167,7 +1167,7 @@
 /area/deathmatch)
 "Xf" = (
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/computer{
 	dir = 4
 	},
@@ -1222,7 +1222,7 @@
 "Ym" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/decal/cleanable/glass,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Yz" = (

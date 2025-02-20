@@ -48,7 +48,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/mining)
 "j" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},

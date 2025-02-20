@@ -256,7 +256,7 @@
 "cf" = (
 /obj/structure/frame/machine,
 /obj/structure/cable,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "eY" = (
@@ -299,7 +299,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "iZ" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/item/stack/cable_coil/cut,
 /obj/item/stack/tile/iron/base{
 	pixel_x = 3;
@@ -311,7 +311,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/abandonedzoo)
 "kp" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -368,7 +368,7 @@
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/abandonedzoo)
 "wc" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -389,7 +389,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "Ep" = (
@@ -411,20 +411,20 @@
 "HI" = (
 /obj/structure/table/reinforced,
 /obj/item/food/carrotfries,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "JW" = (
 /obj/structure/table/reinforced,
 /obj/item/cultivator,
 /obj/item/shovel,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "KR" = (
 /obj/structure/cable,
 /obj/machinery/power/shieldwallgen/unlocked/anchored,
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/abandonedzoo)
 "Mb" = (
@@ -455,12 +455,12 @@
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
 "Rh" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/green/fourcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "Rr" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/tile/green/fourcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)

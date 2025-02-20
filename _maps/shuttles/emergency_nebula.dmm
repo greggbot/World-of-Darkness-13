@@ -29,7 +29,7 @@
 "bF" = (
 /obj/effect/turf_decal/trimline/dark/corner,
 /obj/item/banner/medical/mundane,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/corner,
 /area/shuttle/escape)
 "bV" = (
@@ -214,7 +214,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "is" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -284,7 +284,7 @@
 /obj/machinery/computer/records/medical{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white/herringbone,
 /area/shuttle/escape)
 "jp" = (
@@ -661,7 +661,7 @@
 	dir = 8
 	},
 /obj/item/banner/security/mundane,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
@@ -694,7 +694,7 @@
 "pe" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/escape)
 "pg" = (
@@ -753,7 +753,7 @@
 	dir = 10
 	},
 /obj/machinery/camera/directional/north,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "pU" = (
@@ -773,7 +773,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "qJ" = (
@@ -808,7 +808,7 @@
 /obj/machinery/vending/wallmed/directional/east{
 	use_power = 0
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "rF" = (
@@ -1258,12 +1258,12 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 6
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "BC" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/status_display/evac/directional/north,
 /obj/item/radio/intercom/directional/east,
 /obj/machinery/modular_computer/preset/research{
@@ -1380,7 +1380,7 @@
 /obj/machinery/computer/crew{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/status_display/evac/directional/north,
 /obj/machinery/newscaster/directional/west,
 /turf/open/floor/carpet/blue,
@@ -1913,7 +1913,7 @@
 /obj/machinery/computer/operating{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/shuttle/escape)
@@ -2309,7 +2309,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "VY" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
@@ -2444,7 +2444,7 @@
 /obj/item/radio/intercom/directional/east,
 /obj/effect/spawner/surgery_tray/full,
 /obj/machinery/defibrillator_mount/directional/south,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/shuttle/escape)
 "Yn" = (
@@ -2606,7 +2606,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "Zw" = (

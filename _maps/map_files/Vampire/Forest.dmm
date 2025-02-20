@@ -80,7 +80,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "A" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "E" = (
@@ -109,7 +109,7 @@
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "R" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "S" = (

@@ -38,7 +38,7 @@
 "an" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/utility/welding,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/item/inducer,
 /obj/item/weldingtool/largetank,
 /turf/open/floor/carpet/neon/simple/yellow,
@@ -130,7 +130,7 @@
 /turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/deathmatch)
 "aQ" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/engine,
 /area/deathmatch)
 "aR" = (
@@ -161,7 +161,7 @@
 /area/deathmatch)
 "ba" = (
 /obj/structure/closet/crate/trashcart/filled,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/engine,
 /area/deathmatch)
 "bb" = (
@@ -169,7 +169,7 @@
 /turf/open/floor/engine,
 /area/deathmatch)
 "bc" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/engine,
 /area/deathmatch)
 "bd" = (
@@ -256,13 +256,13 @@
 "bv" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/utility/welding,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/item/inducer,
 /obj/item/weldingtool/largetank,
 /turf/open/floor/carpet/neon/simple/teal,
 /area/deathmatch)
 "bw" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/carpet/neon/simple/teal,
 /area/deathmatch)
 "bx" = (
@@ -339,7 +339,7 @@
 /turf/open/floor/carpet/neon/simple/teal,
 /area/deathmatch)
 "bR" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/engine,
 /area/deathmatch)
 "bS" = (
@@ -415,7 +415,7 @@
 /turf/open/floor/sepia,
 /area/deathmatch)
 "cn" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/sepia,
 /area/deathmatch)
 "cp" = (
@@ -441,7 +441,7 @@
 /area/deathmatch)
 "cv" = (
 /obj/item/reagent_containers/cup/bucket/wooden,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/sepia,
 /area/deathmatch)
 "cw" = (
@@ -491,7 +491,7 @@
 "cG" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/utility/welding,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/item/inducer,
 /obj/item/weldingtool/largetank,
 /turf/open/floor/carpet/neon/simple/green,
@@ -580,7 +580,7 @@
 /area/deathmatch)
 "cZ" = (
 /obj/machinery/sheetifier,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/engine,
 /area/deathmatch)
 "da" = (
@@ -593,7 +593,7 @@
 /area/deathmatch)
 "dc" = (
 /obj/machinery/grill,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/engine,
 /area/deathmatch)
 "dd" = (
@@ -616,7 +616,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/head/utility/welding,
 /obj/item/weldingtool/largetank,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/item/inducer,
 /turf/open/floor/carpet/neon/simple/orange,
 /area/deathmatch)
@@ -690,12 +690,12 @@
 /turf/open/floor/carpet/neon/simple/orange,
 /area/deathmatch)
 "tY" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/engine,
 /area/deathmatch)
 "yI" = (
 /obj/structure/reagent_dispensers/watertank,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/engine,
 /area/deathmatch)
 "Br" = (

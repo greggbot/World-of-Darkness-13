@@ -67,7 +67,7 @@
 /area/ruin/syndielab)
 "cg" = (
 /obj/structure/tank_dispenser/oxygen,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/warning/gas_mask/directional/north,
 /turf/open/floor/mineral/plastitanium,
@@ -233,7 +233,7 @@
 "nD" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/microwave,
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
@@ -272,7 +272,7 @@
 	},
 /obj/item/clothing/mask/gas/syndicate,
 /obj/structure/rack,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
@@ -322,7 +322,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
 "tb" = (
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/effect/decal/cleanable/oil/streak,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark/hidden,
 /obj/structure/cable/layer1,
@@ -516,7 +516,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/ruin/syndielab)
 "FJ" = (
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark/hidden,
 /obj/structure/cable/layer1,
 /turf/open/floor/iron/dark/textured,
@@ -890,7 +890,7 @@
 "ZW" = (
 /obj/structure/chair/sofa/corp/right,
 /mob/living/basic/trooper/syndicate/ranged/shotgun,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/structure/cable/layer1,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/syndielab)

@@ -25,7 +25,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/hunter)
 "i" = (
@@ -42,7 +42,7 @@
 /area/shuttle/hunter)
 "l" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/hunter)
 "m" = (
@@ -203,7 +203,7 @@
 "S" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/pod/light,
 /area/shuttle/hunter)
 "T" = (
@@ -247,7 +247,7 @@
 /obj/machinery/suit_storage_unit/standard_unit{
 	storage_type = /obj/item/tank/internals/oxygen/yellow
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/pod/light,
 /area/shuttle/hunter)
 "X" = (

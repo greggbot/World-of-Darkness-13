@@ -13,11 +13,11 @@
 /turf/open/floor/plating,
 /area/template_noop)
 "d" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/template_noop,
 /area/template_noop)
 "e" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
 /area/template_noop)
@@ -163,7 +163,7 @@
 /obj/effect/turf_decal/stripes{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/smooth,
 /area/template_noop)
 "O" = (
@@ -174,7 +174,7 @@
 /turf/open/floor/iron/smooth,
 /area/template_noop)
 "V" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/sign/poster/official/moth_hardhat/directional/east,
 /obj/item/clothing/head/utility/hardhat{
 	pixel_y = 11;
@@ -189,7 +189,7 @@
 	},
 /obj/effect/turf_decal/stripes,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/iron/smooth,
 /area/template_noop)
 "Z" = (

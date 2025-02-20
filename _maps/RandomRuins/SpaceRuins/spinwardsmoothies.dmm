@@ -26,7 +26,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/ruin/space/has_grav/spinwardsmoothies)
 "ri" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/spinwardsmoothies)
@@ -54,12 +54,12 @@
 /area/ruin/space/has_grav/spinwardsmoothies)
 "wH" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/spinwardsmoothies)
 "xc" = (
 /obj/structure/table/wood,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/siding/thinplating/terracotta{
 	dir = 1
 	},
@@ -187,7 +187,7 @@
 	pixel_y = 8
 	},
 /obj/effect/turf_decal/siding/thinplating/terracotta,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood/tile,
 /area/ruin/space/has_grav/spinwardsmoothies)
 "XG" = (

@@ -14,7 +14,7 @@
 /area/ruin/space/djstation)
 "o" = (
 /obj/structure/table_frame,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating/airless,
 /area/ruin/space/djstation)

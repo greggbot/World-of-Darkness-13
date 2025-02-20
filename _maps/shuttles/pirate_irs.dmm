@@ -131,7 +131,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/shuttle/pirate)
 "fb" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "fe" = (
@@ -211,7 +211,7 @@
 /area/shuttle/pirate)
 "ig" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/red/dim/directional/south,
+/obj/machinery/light/red/dim/directional/north,
 /obj/item/storage/bag/money/vault,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
@@ -574,7 +574,7 @@
 /obj/item/storage/medkit{
 	pixel_y = -1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "se" = (
@@ -696,7 +696,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "uy" = (
@@ -940,7 +940,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/edge{
 	dir = 8
 	},
@@ -968,7 +968,7 @@
 	dir = 4
 	},
 /obj/machinery/iv_drip,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Cx" = (
@@ -1031,7 +1031,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Dy" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/white,
 /area/shuttle/pirate)
 "DK" = (
@@ -1059,7 +1059,7 @@
 "Eq" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Et" = (
@@ -1069,7 +1069,7 @@
 /area/shuttle/pirate)
 "EJ" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Fn" = (
@@ -1174,7 +1174,7 @@
 /area/shuttle/pirate)
 "Ic" = (
 /obj/effect/mob_spawn/ghost_role/human/pirate/irs,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/pirate)
 "If" = (
@@ -1355,7 +1355,7 @@
 /obj/item/gun/grenadelauncher{
 	pixel_y = 7
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/smooth,
 /area/shuttle/pirate)
 "KO" = (
@@ -1444,7 +1444,7 @@
 	pixel_y = -7
 	},
 /obj/item/storage/belt/military/assault,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/item/clothing/head/helmet/marine/pmc,
 /obj/item/clothing/suit/armor/vest/marine/pmc,
 /obj/item/clothing/mask/balaclava,
@@ -1495,7 +1495,7 @@
 "Ni" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/turf_decal/siding/dark_green,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "No" = (
@@ -1560,7 +1560,7 @@
 /area/shuttle/pirate)
 "Pn" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/red/dim/directional/south,
+/obj/machinery/light/red/dim/directional/north,
 /obj/item/stack/sheet/mineral/gold{
 	amount = 3;
 	pixel_x = -2;
@@ -1837,7 +1837,7 @@
 /area/template_noop)
 "WU" = (
 /obj/effect/turf_decal/tile/dark/full,
-/obj/machinery/light/red/directional/east,
+/obj/machinery/light/red/directional/west,
 /turf/open/floor/pod/light,
 /area/shuttle/pirate)
 "Xr" = (

@@ -17,7 +17,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/machinery/light/cold/no_nightlight/directional/west,
+/obj/machinery/light/cold/no_nightlight/directional/east,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "kitchen";
 	name = "Kitchen Shutters";
@@ -227,7 +227,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/machinery/light/cold/no_nightlight/directional/east,
+/obj/machinery/light/cold/no_nightlight/directional/west,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "kitchen";
 	name = "Kitchen Shutters"
@@ -415,7 +415,7 @@
 	dir = 8
 	},
 /obj/machinery/vending/wardrobe/chef_wardrobe,
-/obj/machinery/light/cold/no_nightlight/directional/east,
+/obj/machinery/light/cold/no_nightlight/directional/west,
 /turf/open/floor/iron/dark/textured,
 /area/template_noop)
 "C" = (
@@ -536,7 +536,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/machinery/light/cold/no_nightlight/directional/west,
+/obj/machinery/light/cold/no_nightlight/directional/east,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "kitchen";
 	name = "Kitchen Shutters"
@@ -684,7 +684,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/machinery/light/cold/no_nightlight/directional/east,
+/obj/machinery/light/cold/no_nightlight/directional/west,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "kitchen";
 	name = "Kitchen Shutters";

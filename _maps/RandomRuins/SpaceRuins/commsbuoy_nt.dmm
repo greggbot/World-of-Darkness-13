@@ -100,7 +100,7 @@
 	pixel_y = -10;
 	pixel_x = 8
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/ruin/space/nt_commsbuoy)
 "in" = (
@@ -120,7 +120,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/space/nt_commsbuoy)
 "io" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "it" = (
@@ -144,14 +144,14 @@
 /obj/structure/sign/nanotrasen{
 	pixel_y = -32
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "jz" = (
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "kZ" = (
@@ -181,7 +181,7 @@
 /obj/structure/table,
 /obj/structure/noticeboard/directional/north,
 /obj/item/paper/fluff/ruins/nt_commsbuoy/table_of_contents,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/item/gps/spaceruin{
 	pixel_y = 4;
 	pixel_x = 5
@@ -245,7 +245,7 @@
 	},
 /obj/structure/rack,
 /obj/effect/spawner/random/engineering/tool_advanced,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "tx" = (
@@ -467,7 +467,7 @@
 /obj/structure/fluff/fake_camera{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "Qb" = (
@@ -549,7 +549,7 @@
 /obj/structure/fluff/fake_camera{
 	dir = 5
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "Yr" = (
@@ -560,7 +560,7 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/ruin/space/nt_commsbuoy)
 "YY" = (

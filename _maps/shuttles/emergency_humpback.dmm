@@ -130,7 +130,7 @@
 /turf/open/floor/wood/large,
 /area/shuttle/escape)
 "hk" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/table,
 /obj/machinery/recharger,
 /turf/open/floor/mineral/plastitanium/red,
@@ -258,7 +258,7 @@
 /area/shuttle/escape)
 "qp" = (
 /obj/machinery/recharge_station,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "qP" = (
@@ -365,7 +365,7 @@
 /obj/structure/closet,
 /obj/item/multitool,
 /obj/effect/spawner/random/engineering/toolbox,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/spawner/random/contraband/narcotics,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
@@ -407,7 +407,7 @@
 /obj/structure/chair/sofa/middle{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/smooth,
 /area/shuttle/escape)
 "yN" = (
@@ -446,7 +446,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/machinery/light/dim/directional/west,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "Ax" = (
@@ -516,7 +516,7 @@
 	dir = 1;
 	chamber_id = "evacair"
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/engine/air,
 /area/shuttle/escape/brig)
 "Ef" = (
@@ -574,7 +574,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "JW" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/computer/operating,
 /turf/open/floor/iron/showroomfloor,
 /area/shuttle/escape)
@@ -590,7 +590,7 @@
 /area/shuttle/escape)
 "Kv" = (
 /obj/structure/tank_dispenser/oxygen,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -715,7 +715,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "Qe" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
@@ -733,7 +733,7 @@
 /area/shuttle/escape)
 "SJ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/vending/cigarette,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
@@ -788,7 +788,7 @@
 /area/shuttle/escape)
 "Xi" = (
 /obj/structure/window/reinforced/plasma/spawner/directional/east,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/cup/glass/shaker,
 /obj/item/storage/fancy/cigarettes/cigars/havana,
@@ -826,7 +826,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "ZR" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},

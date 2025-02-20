@@ -69,7 +69,7 @@
 /area/ruin/space/has_grav/powered/botanical_haven)
 "r" = (
 /obj/structure/flora/bush/snow/style_random,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/botanical_haven)
 "s" = (
@@ -100,7 +100,7 @@
 /area/ruin/space/has_grav/powered/botanical_haven)
 "A" = (
 /obj/effect/turf_decal/sand,
-/obj/machinery/light/red/dim/directional/north,
+/obj/machinery/light/red/dim/directional/south,
 /obj/structure/closet/crate/hydroponics,
 /obj/item/storage/bag/plants/portaseeder,
 /obj/item/plant_analyzer,
@@ -195,7 +195,7 @@
 "U" = (
 /obj/effect/turf_decal/stripes/asteroid/corner,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/red/dim/directional/south,
+/obj/machinery/light/red/dim/directional/north,
 /obj/item/kirbyplants/fern,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/powered/botanical_haven)
@@ -220,7 +220,7 @@
 /area/ruin/space/has_grav/powered/botanical_haven)
 "Z" = (
 /obj/machinery/hydroponics/soil,
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/botanical_haven)
 

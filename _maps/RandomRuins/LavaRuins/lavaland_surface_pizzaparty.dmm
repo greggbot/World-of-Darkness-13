@@ -186,7 +186,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/machinery/grill,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /turf/open/floor/iron/lavaland,
 /area/ruin/unpowered)
 "lE" = (
@@ -207,7 +207,7 @@
 /area/lavaland/surface/outdoors)
 "nq" = (
 /obj/effect/decal/cleanable/cobweb,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /mob/living/basic/pet/dog/bullterrier/lavaland_party,
 /turf/open/floor/carpet/blue/lavaland,
 /area/ruin/unpowered)
@@ -356,7 +356,7 @@
 	},
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/iron/freezer/lavaland,
 /area/ruin/unpowered)
 "xf" = (
@@ -371,7 +371,7 @@
 /area/ruin/unpowered)
 "xm" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/rack,
 /obj/item/storage/box/lights/bulbs,
 /obj/item/storage/toolbox/mechanical/old,
@@ -431,7 +431,7 @@
 /obj/structure/chair/sofa/left/brown,
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/carpet/blue/lavaland,
 /area/ruin/unpowered)
 "zj" = (
@@ -451,7 +451,7 @@
 /obj/machinery/oven,
 /obj/effect/turf_decal/tile/yellow/diagonal_edge,
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/diagonal/lavaland,
 /area/ruin/unpowered)
 "Ae" = (
@@ -521,7 +521,7 @@
 "KA" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/gift{
 	contains_type = /obj/item/toy/plush/goatplushie;
 	pixel_x = 7;
@@ -548,7 +548,7 @@
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /turf/open/floor/iron/diagonal/lavaland,
 /area/ruin/unpowered)
 "Nt" = (
@@ -573,7 +573,7 @@
 "Oa" = (
 /obj/structure/glowshroom/single,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /obj/structure/sign/poster/party_game/directional/north,
 /obj/item/tail_pin,
 /turf/open/floor/carpet/blue/lavaland,

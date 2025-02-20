@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/obj/machinery/light/small/blacklight/directional/west,
+/obj/machinery/light/small/blacklight/directional/east,
 /turf/open/floor/iron,
 /area/template_noop)
 "c" = (
@@ -44,12 +44,12 @@
 /turf/open/floor/iron/cafeteria,
 /area/template_noop)
 "B" = (
-/obj/machinery/light/small/blacklight/directional/north,
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/template_noop,
 /area/template_noop)
 "C" = (
 /obj/effect/spawner/random/trash/bin,
-/obj/machinery/light/small/blacklight/directional/north,
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/floor/iron,
 /area/template_noop)
 "G" = (
@@ -62,7 +62,7 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "M" = (
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /turf/template_noop,
 /area/template_noop)
 "N" = (
@@ -81,7 +81,7 @@
 /area/template_noop)
 "Q" = (
 /obj/effect/spawner/random/structure/crate,
-/obj/machinery/light/small/blacklight/directional/north,
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/floor/iron,
 /area/template_noop)
 "R" = (
@@ -93,7 +93,7 @@
 /area/template_noop)
 "T" = (
 /obj/structure/sign/poster/random/directional/east,
-/obj/machinery/light/small/blacklight/directional/east,
+/obj/machinery/light/small/blacklight/directional/west,
 /turf/open/floor/iron/cafeteria,
 /area/template_noop)
 "U" = (

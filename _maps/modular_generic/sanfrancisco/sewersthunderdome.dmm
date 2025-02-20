@@ -91,7 +91,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "mq" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "ny" = (
@@ -239,12 +239,12 @@
 	pixel_x = 5;
 	pixel_y = 3
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "CY" = (
 /obj/effect/decal/cleanable/oil/slippery,
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "DA" = (
@@ -299,7 +299,7 @@
 "KB" = (
 /obj/effect/decal/litter,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "KK" = (
@@ -308,7 +308,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Lc" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Ln" = (
@@ -382,7 +382,7 @@
 /turf/open/floor/plating/vampcanalplating,
 /area/vtm/sewer)
 "Ru" = (
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Sc" = (
@@ -474,7 +474,7 @@
 	pixel_x = -13;
 	pixel_y = -5
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/vampcanalplating,
 /area/vtm/sewer)
 "YG" = (

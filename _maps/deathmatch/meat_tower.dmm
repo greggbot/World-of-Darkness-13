@@ -22,13 +22,13 @@
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "eB" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /mob/living/basic/goat/pete,
 /turf/open/indestructible/necropolis/air,
 /area/deathmatch)
 "eH" = (
 /obj/structure/reagent_dispensers/cooking_oil,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/indestructible/necropolis/air,
 /area/deathmatch)
 "fq" = (
@@ -104,7 +104,7 @@
 /area/deathmatch)
 "jT" = (
 /obj/machinery/gibber,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/indestructible/necropolis/air,
 /area/deathmatch)
 "jZ" = (
@@ -116,7 +116,7 @@
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "kL" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "lu" = (
@@ -180,7 +180,7 @@
 /area/deathmatch)
 "pg" = (
 /obj/machinery/vending/dinnerware,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "pE" = (
@@ -218,7 +218,7 @@
 "rb" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "sf" = (
@@ -264,7 +264,7 @@
 "wF" = (
 /obj/structure/kitchenspike,
 /obj/item/food/pizza/arnold,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible/necropolis/air,
 /area/deathmatch)
 "zB" = (
@@ -381,7 +381,7 @@
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "Jo" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "KO" = (
@@ -401,7 +401,7 @@
 /area/deathmatch)
 "KZ" = (
 /obj/machinery/griddle,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "La" = (
@@ -439,7 +439,7 @@
 /area/deathmatch)
 "Mr" = (
 /obj/machinery/deepfryer,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "NF" = (

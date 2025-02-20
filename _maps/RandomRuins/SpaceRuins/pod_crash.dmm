@@ -29,7 +29,7 @@
 /obj/machinery/computer/pod{
 	dir = 8
 	},
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/mineral/titanium/tiled/blue/airless,
 /area/ruin/space)
 "k" = (
@@ -43,7 +43,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/machinery/light/small/red/dim/directional/south,
+/obj/machinery/light/small/red/dim/directional/north,
 /turf/open/floor/mineral/titanium/tiled/blue/airless,
 /area/ruin/space)
 "l" = (

@@ -135,7 +135,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aN" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aO" = (
@@ -155,7 +155,7 @@
 /area/shuttle/escape/brig)
 "aT" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "aU" = (
@@ -347,7 +347,7 @@
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -381,7 +381,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "bQ" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "bR" = (
@@ -437,7 +437,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "cc" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 1
 	},
@@ -451,7 +451,7 @@
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "cg" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "ch" = (
@@ -509,7 +509,7 @@
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "cu" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/stasis,
 /obj/machinery/vending/wallmed/directional/north{
 	use_power = 0
@@ -543,7 +543,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "cA" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
@@ -670,7 +670,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
 "cT" = (
@@ -687,7 +687,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "cV" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/computer/monitor,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
@@ -706,7 +706,7 @@
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
 "cY" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
 "cZ" = (
@@ -757,7 +757,7 @@
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
 "dg" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/recharge_station,
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
@@ -807,7 +807,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "do" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -824,7 +824,7 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "ds" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "dt" = (
@@ -870,7 +870,7 @@
 /area/shuttle/escape)
 "gy" = (
 /obj/item/kirbyplants/organic/plant21,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "hS" = (
@@ -883,7 +883,7 @@
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "hX" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/recharge_floor,
 /area/shuttle/escape)
 "ja" = (
@@ -945,7 +945,7 @@
 /obj/item/storage/toolbox/emergency,
 /obj/item/crowbar,
 /obj/effect/turf_decal/tile/purple/fourcorners,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "CO" = (
@@ -976,7 +976,7 @@
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "IR" = (
@@ -1001,7 +1001,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Ng" = (
@@ -1012,7 +1012,7 @@
 	},
 /obj/item/storage/medkit/o2,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "NP" = (
@@ -1023,7 +1023,7 @@
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "NX" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "PD" = (
@@ -1034,7 +1034,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Sc" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/recharge_floor,
 /area/shuttle/escape)
 "Si" = (
@@ -1081,7 +1081,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "ZC" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 

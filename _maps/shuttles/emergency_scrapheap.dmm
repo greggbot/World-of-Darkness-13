@@ -220,7 +220,7 @@
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
 "bf" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
@@ -246,12 +246,12 @@
 /obj/structure/toilet{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
 "bk" = (
 /obj/machinery/recharge_station,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
 "bn" = (
@@ -262,7 +262,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "gx" = (
@@ -307,7 +307,7 @@
 "CH" = (
 /obj/structure/table,
 /obj/machinery/recharger,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "Fs" = (
@@ -318,7 +318,7 @@
 "GX" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/barricade/wooden,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -326,7 +326,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "QW" = (
@@ -343,7 +343,7 @@
 /turf/open/floor/carpet,
 /area/shuttle/escape)
 "RF" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Tm" = (

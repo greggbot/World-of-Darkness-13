@@ -72,7 +72,7 @@
 /area/deathmatch)
 "go" = (
 /obj/machinery/power/energy_accumulator/grounding_rod/anchored,
-/obj/machinery/light/red/directional/east,
+/obj/machinery/light/red/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "gC" = (
@@ -295,7 +295,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "tc" = (
-/obj/machinery/light/red/directional/west,
+/obj/machinery/light/red/directional/east,
 /turf/open/indestructible,
 /area/deathmatch)
 "th" = (

@@ -139,7 +139,7 @@
 	pixel_y = 7;
 	pixel_x = -3
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "bC" = (
@@ -182,7 +182,7 @@
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "cq" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/cyan,
 /area/awaymission/beach)
 "cv" = (
@@ -472,7 +472,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "fV" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
@@ -626,7 +626,7 @@
 /area/awaymission/beach)
 "iq" = (
 /obj/machinery/washing_machine,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plastic,
 /area/awaymission/beach)
 "iw" = (
@@ -734,7 +734,7 @@
 	pixel_y = 3;
 	pixel_x = -3
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/white/textured_large,
 /area/awaymission/beach)
 "jF" = (
@@ -867,7 +867,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "kI" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet,
 /area/awaymission/beach)
 "kR" = (
@@ -889,7 +889,7 @@
 /area/awaymission/beach)
 "lf" = (
 /obj/structure/chair/stool/directional/south,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/freezer,
 /area/awaymission/beach)
 "li" = (
@@ -1288,7 +1288,7 @@
 /obj/item/wirecutters{
 	pixel_y = 9
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "ql" = (
@@ -1325,7 +1325,7 @@
 /area/awaymission/beach)
 "qX" = (
 /obj/structure/chair/stool/bar/directional/west,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "rd" = (
@@ -1345,7 +1345,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "ru" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "rA" = (
@@ -1589,7 +1589,7 @@
 	pixel_y = 8;
 	pixel_x = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "uv" = (
@@ -1722,7 +1722,7 @@
 /turf/open/floor/carpet,
 /area/awaymission/beach)
 "vR" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "vX" = (
@@ -1814,7 +1814,7 @@
 	pixel_y = -7;
 	pixel_x = -13
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/beach)
 "xp" = (
@@ -1867,7 +1867,7 @@
 /obj/item/kirbyplants/organic/plant8{
 	pixel_y = 6
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/eighties,
 /area/awaymission/beach)
 "yq" = (
@@ -2193,7 +2193,7 @@
 	pixel_y = 8
 	},
 /obj/structure/sink/directional/west,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/beach)
 "Cl" = (
@@ -2441,7 +2441,7 @@
 /obj/structure/mop_bucket/janitorialcart{
 	dir = 8
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "EO" = (
@@ -2540,7 +2540,7 @@
 	pixel_y = 8
 	},
 /obj/structure/sink/directional/west,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/beach)
 "FD" = (
@@ -2625,7 +2625,7 @@
 /turf/open/floor/plating,
 /area/awaymission/beach)
 "Gf" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/carpet,
 /area/awaymission/beach)
 "Gh" = (
@@ -2661,7 +2661,7 @@
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "Gu" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "GC" = (
@@ -2705,11 +2705,11 @@
 /area/awaymission/beach)
 "Hv" = (
 /obj/structure/dresser,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "HF" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark/herringbone,
 /area/awaymission/beach)
 "HU" = (
@@ -2844,7 +2844,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Jr" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "Jv" = (
@@ -3057,7 +3057,7 @@
 /area/awaymission/beach)
 "LS" = (
 /obj/machinery/space_heater,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "Mm" = (
@@ -3182,7 +3182,7 @@
 "Nb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/maintenance,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/awaymission/beach)
 "Nd" = (
@@ -3197,7 +3197,7 @@
 /obj/structure/closet/crate/bin,
 /obj/effect/spawner/random/trash/cigbutt,
 /obj/effect/spawner/random/trash/food_packaging,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "Nf" = (
@@ -3566,7 +3566,7 @@
 	pixel_y = 14;
 	pixel_x = 5
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "Sj" = (
@@ -3664,7 +3664,7 @@
 /turf/open/floor/iron/white/textured_large,
 /area/awaymission/beach)
 "TO" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "TX" = (
@@ -3735,7 +3735,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "UK" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "UX" = (
@@ -4000,7 +4000,7 @@
 /area/awaymission/beach)
 "Zj" = (
 /obj/machinery/recharge_station,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/cyan,
 /area/awaymission/beach)
 "Zm" = (
@@ -4083,7 +4083,7 @@
 	pixel_y = 8
 	},
 /obj/structure/sink/directional/west,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/beach)
 "ZZ" = (

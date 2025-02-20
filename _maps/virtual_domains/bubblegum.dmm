@@ -26,7 +26,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface/no_ruins,
 /area/lavaland/surface/outdoors/virtual_domain)
 "w" = (
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /obj/effect/baseturf_helper/virtual_domain,
 /turf/open/misc/asteroid/basalt/lava_land_surface/no_ruins,
 /area/virtual_domain)

@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "d" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/space/djstation)
 "f" = (

@@ -107,7 +107,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/plating,
 /area/ruin/comms_agent)
 "U" = (

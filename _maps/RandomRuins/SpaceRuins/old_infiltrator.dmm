@@ -152,7 +152,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/unpowered)
 "kC" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -257,7 +257,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/unpowered)
 "ro" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space/unpowered)
 "sz" = (
@@ -268,7 +268,7 @@
 "sL" = (
 /obj/structure/table,
 /obj/effect/spawner/random/engineering/tool,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/item/stack/cable_coil,
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space/unpowered)
@@ -278,7 +278,7 @@
 /area/ruin/space/unpowered)
 "us" = (
 /obj/effect/spawner/random/engineering/tool,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -365,12 +365,12 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/unpowered)
 "xk" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space/unpowered)
 "yL" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space/unpowered)
 "zg" = (
@@ -558,14 +558,14 @@
 "LP" = (
 /obj/effect/turf_decal/bot_red,
 /obj/machinery/suit_storage_unit/open,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/unpowered)
 "Mw" = (
 /obj/machinery/status_display/ai{
 	pixel_x = 32
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/unpowered)
@@ -687,7 +687,7 @@
 /obj/machinery/status_display/evac{
 	pixel_x = -32
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/donkpockets{
 	pixel_y = 7;

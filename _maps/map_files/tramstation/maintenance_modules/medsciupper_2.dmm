@@ -227,7 +227,7 @@
 /area/station/maintenance/department/medical)
 "Dl" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/science)
 "Do" = (
@@ -310,7 +310,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/ladder,
@@ -396,7 +396,7 @@
 /turf/open/floor/grass,
 /area/station/asteroid)
 "Vh" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "Vs" = (

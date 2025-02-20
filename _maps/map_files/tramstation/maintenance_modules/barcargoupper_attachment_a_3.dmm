@@ -46,7 +46,7 @@
 "w" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/item/storage/box/beanbag,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/cargo)

@@ -156,7 +156,7 @@
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
 "kU" = (
-/obj/machinery/light/cold/directional/west,
+/obj/machinery/light/cold/directional/east,
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "mg" = (
@@ -315,7 +315,7 @@
 	pixel_y = 9;
 	pixel_x = -5
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible/stone,
 /area/deathmatch)
 "Ce" = (
@@ -499,7 +499,7 @@
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
 "PP" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/indestructible/stone,
 /area/deathmatch)
 "Qa" = (

@@ -36,7 +36,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/abandoned/engine)
 "by" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/suit_storage_unit/spaceruin{
 	desc = "An industrial suit storage device carrying retro space suits. Neat!"
 	},
@@ -222,7 +222,7 @@
 /turf/open/floor/plating,
 /area/shuttle/abandoned/bridge)
 "oE" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
@@ -233,7 +233,7 @@
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "oI" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/suit_storage_unit/open,
 /obj/item/paper{
 	default_raw_text = "yoink"
@@ -248,7 +248,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/abandoned/bridge)
 "pS" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/spawner/random/bedsheet{
 	dir = 4
 	},
@@ -338,7 +338,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/abandoned/bridge)
 "BN" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/dinner,
 /obj/effect/decal/cleanable/dirt,
@@ -405,7 +405,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/abandoned/bridge)
 "Jv" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/suit_storage_unit/spaceruin{
 	desc = "An industrial suit storage device carrying retro space suits. Neat!"
 	},
@@ -423,7 +423,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/abandoned/bridge)
 "KM" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
@@ -453,7 +453,7 @@
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "OP" = (
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/medical/medkit,
 /obj/structure/table,
@@ -501,7 +501,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/abandoned/engine)
 "WL" = (
-/obj/machinery/light/cold/no_nightlight/directional/west,
+/obj/machinery/light/cold/no_nightlight/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/mineral/plastitanium,

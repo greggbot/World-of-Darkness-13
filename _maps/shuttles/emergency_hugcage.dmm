@@ -9,10 +9,7 @@
 /obj/structure/bed,
 /obj/item/pillow/random,
 /obj/effect/spawner/random/entertainment/plushie_delux,
-/obj/machinery/light/dim/directional/east{
-	brightness = 5;
-	nightshift_brightness = 4
-	},
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "bw" = (
@@ -97,7 +94,7 @@
 /obj/structure/table,
 /obj/machinery/recharger,
 /obj/item/restraints/handcuffs,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "gq" = (
@@ -165,7 +162,7 @@
 "oY" = (
 /obj/item/pillow/random,
 /obj/structure/rack,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "px" = (
@@ -204,10 +201,7 @@
 /obj/structure/table,
 /obj/effect/spawner/random/entertainment/musical_instrument,
 /obj/effect/spawner/random/entertainment/musical_instrument,
-/obj/machinery/light/dim/directional/south{
-	brightness = 5;
-	nightshift_brightness = 4
-	},
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "ys" = (
@@ -219,10 +213,7 @@
 	},
 /obj/item/pillow/random,
 /obj/effect/spawner/random/entertainment/plushie_delux,
-/obj/machinery/light/dim/directional/west{
-	brightness = 5;
-	nightshift_brightness = 4
-	},
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "yF" = (
@@ -365,10 +356,7 @@
 /area/shuttle/escape)
 "Rg" = (
 /obj/machinery/stasis,
-/obj/machinery/light/dim/directional/south{
-	brightness = 5;
-	nightshift_brightness = 4
-	},
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "Rj" = (
@@ -410,10 +398,7 @@
 /obj/item/clothing/mask/surgical,
 /obj/item/surgicaldrill,
 /obj/item/cautery,
-/obj/machinery/light/dim/directional/south{
-	brightness = 5;
-	nightshift_brightness = 4
-	},
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "Xb" = (

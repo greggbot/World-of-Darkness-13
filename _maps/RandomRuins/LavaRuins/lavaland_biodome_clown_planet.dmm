@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ae" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/mapping_helpers/no_lava,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/powered/clownplanet)
@@ -177,7 +177,7 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/white,
 /area/ruin/powered/clownplanet)
 "bl" = (
@@ -305,7 +305,7 @@
 /obj/item/coin/bananium,
 /obj/item/coin/bananium,
 /obj/item/coin/bananium,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/carpet,
 /area/ruin/powered/clownplanet)
 "bT" = (
@@ -357,7 +357,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/white,
 /area/ruin/powered/clownplanet)
 "dG" = (
@@ -365,23 +365,23 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/white,
 /area/ruin/powered/clownplanet)
 "dH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/white,
 /area/ruin/powered/clownplanet)
 "dI" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/indestructible/permalube,
 /area/ruin/powered/clownplanet)
 "dK" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/carpet,
 /area/ruin/powered/clownplanet)
 "dL" = (
@@ -389,15 +389,15 @@
 /obj/item/coin/bananium,
 /obj/item/coin/bananium,
 /obj/item/coin/bananium,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/carpet,
 /area/ruin/powered/clownplanet)
 "dM" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible/honk,
 /area/ruin/powered/clownplanet)
 "dO" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/indestructible/honk,
 /area/ruin/powered/clownplanet)
 "eE" = (
@@ -409,7 +409,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/indestructible/permalube,
 /area/ruin/powered/clownplanet)
@@ -464,7 +464,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/indestructible/permalube,
 /area/ruin/powered/clownplanet)
@@ -495,7 +495,7 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/indestructible/permalube,
 /area/ruin/powered/clownplanet)
@@ -517,7 +517,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/indestructible/permalube,
 /area/ruin/powered/clownplanet)
@@ -596,7 +596,7 @@
 /turf/open/indestructible/permalube,
 /area/ruin/powered/clownplanet)
 "DW" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/mapping_helpers/no_lava,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/powered/clownplanet)
@@ -649,7 +649,7 @@
 /turf/open/floor/noslip,
 /area/ruin/powered/clownplanet)
 "Or" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/mapping_helpers/no_lava,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/powered/clownplanet)
@@ -712,13 +712,13 @@
 /turf/open/floor/noslip,
 /area/ruin/powered/clownplanet)
 "YI" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/mapping_helpers/no_lava,
 /mob/living/basic/clown,
 /turf/open/floor/noslip,
 /area/ruin/powered/clownplanet)
 "Zg" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/mapping_helpers/no_lava,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/powered/clownplanet)

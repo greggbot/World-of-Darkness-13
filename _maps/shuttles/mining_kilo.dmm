@@ -76,7 +76,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/mining/large)
 "m" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -89,7 +89,7 @@
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/mining/large)
 "o" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/radio/intercom/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -168,7 +168,7 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/mining/large)
 "v" = (
@@ -185,7 +185,7 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/mining/large)
 "x" = (
@@ -296,7 +296,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 1
 	},

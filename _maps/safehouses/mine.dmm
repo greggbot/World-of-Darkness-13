@@ -24,7 +24,7 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/landmark/bitrunning/cache_goal_turf,
 /turf/open/indestructible/bitrunning_transport,
 /area/virtual_domain/safehouse)
@@ -97,7 +97,7 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/mining,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/smooth_edge{
 	dir = 4
 	},

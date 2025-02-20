@@ -243,7 +243,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
 	},
@@ -346,11 +346,11 @@
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance/two,
 /obj/item/storage/toolbox/emergency,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "ox" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/computer/camera_advanced/shuttle_docker/syndicate/pirate{
 	dir = 4;
 	x_offset = -5;
@@ -425,7 +425,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/power/port_gen/pacman/pre_loaded,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "qn" = (
@@ -508,7 +508,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/random/clothing/costume,
 /obj/effect/spawner/random/clothing/costume,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "sN" = (
@@ -653,7 +653,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "xj" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/toilet{
 	dir = 8
 	},
@@ -777,7 +777,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
 	},
@@ -824,7 +824,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/reagent_containers/cup/glass/coffee,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
@@ -1032,7 +1032,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "GI" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/mob_spawn/ghost_role/human/pirate/grey/shitter{
 	dir = 4
 	},
@@ -1132,7 +1132,7 @@
 /obj/machinery/computer/atmos_alert,
 /obj/effect/turf_decal/bot,
 /obj/structure/sign/warning/gas_mask/directional/north,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
 	},
@@ -1384,7 +1384,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "Vw" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "VI" = (

@@ -147,7 +147,7 @@
 /turf/closed/indestructible/rock,
 /area/icemoon/underground/explored)
 "oI" = (
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/mailroom)
 "oU" = (
@@ -176,7 +176,7 @@
 /obj/effect/turf_decal/stripes{
 	dir = 8
 	},
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/mailroom)
 "sA" = (
@@ -199,7 +199,7 @@
 /area/ruin/powered/mailroom)
 "uK" = (
 /obj/effect/decal/cleanable/plasma,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/mailroom)
 "vU" = (
@@ -318,7 +318,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "KK" = (
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/carpet/royalblack,
 /area/ruin/powered/mailroom)
 "LN" = (
@@ -340,7 +340,7 @@
 /area/ruin/powered/mailroom)
 "MC" = (
 /obj/effect/decal/cleanable/wrapping,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/smooth_half,
 /area/ruin/powered/mailroom)
 "MP" = (
@@ -352,7 +352,7 @@
 /area/ruin/powered/mailroom)
 "MT" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/textured,
 /area/ruin/powered/mailroom)
 "NE" = (

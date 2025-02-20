@@ -406,7 +406,7 @@
 /area/ruin/space/has_grav/derelictconstruction)
 "Xx" = (
 /obj/item/stack/sheet/iron/ten,
-/obj/machinery/light/cold/directional/south,
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/derelictconstruction)
 "Yh" = (

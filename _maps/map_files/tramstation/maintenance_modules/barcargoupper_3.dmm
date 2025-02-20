@@ -147,7 +147,7 @@
 /area/station/asteroid)
 "ra" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 4
 	},
@@ -214,7 +214,7 @@
 	pixel_x = 8;
 	pixel_y = -3
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/cargo)
 "un" = (
@@ -367,7 +367,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "MH" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "Oe" = (
@@ -434,7 +434,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/ladder,
@@ -475,7 +475,7 @@
 /area/station/maintenance/department/cargo)
 "Xw" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8
 	},
@@ -491,7 +491,7 @@
 /area/station/maintenance/department/cargo)
 "ZJ" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/trimline/yellow/corner,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8

@@ -38,7 +38,7 @@
 /turf/open/floor/iron,
 /area/virtual_domain/safehouse)
 "l" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/landmark/bitrunning/cache_goal_turf,
 /obj/effect/turf_decal/loading_area,
 /turf/open/indestructible/bitrunning_transport,
@@ -78,7 +78,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/virtual_domain/safehouse)
@@ -119,7 +119,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/bitrunning/hololadder_spawn,
 /turf/open/floor/iron,

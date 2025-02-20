@@ -353,7 +353,7 @@
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/derelictoutpost)
 "bD" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost)
 "bE" = (
@@ -383,7 +383,7 @@
 	desc = "A .45 bullet casing. This one is spent.";
 	name = "spent bullet casing"
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bI" = (
@@ -397,7 +397,7 @@
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bK" = (
 /obj/structure/table,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
 "bL" = (
@@ -464,7 +464,7 @@
 	icon_state = "trails_1";
 	name = "dried blood trail"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost)
 "bY" = (
@@ -639,7 +639,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
 "cO" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost)
 "cP" = (
@@ -696,7 +696,7 @@
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
 "dc" = (
 /obj/structure/alien/weeds/creature,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
 "dd" = (
@@ -874,7 +874,7 @@
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
 "dU" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
 "dV" = (
@@ -1032,7 +1032,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
 "eG" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
 "eH" = (
@@ -1093,7 +1093,7 @@
 	name = "First-Aid (empty)"
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargostorage)
 "hF" = (
@@ -1134,7 +1134,7 @@
 "nc" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/fingerless,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
 "oc" = (
@@ -1234,7 +1234,7 @@
 "ye" = (
 /obj/structure/filingcabinet,
 /obj/effect/turf_decal/tile/red/fourcorners,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "yl" = (
@@ -1309,7 +1309,7 @@
 	icon_state = "trails_1";
 	name = "dried blood trail"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
 "Ef" = (
@@ -1459,7 +1459,7 @@
 	icon_state = "trails_1";
 	name = "dried blood trail"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/cargobay)
 "XO" = (

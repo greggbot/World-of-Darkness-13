@@ -103,7 +103,7 @@
 /area/shuttle/pirate)
 "fN" = (
 /obj/structure/dresser,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 9
 	},
@@ -169,7 +169,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
 	},
@@ -184,7 +184,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "kF" = (
@@ -402,7 +402,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
 	},
@@ -424,7 +424,7 @@
 "Ae" = (
 /obj/machinery/shuttle_scrambler,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Ai" = (
@@ -453,7 +453,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Bl" = (
@@ -527,7 +527,7 @@
 /area/shuttle/pirate)
 "Gy" = (
 /obj/structure/table/glass,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/item/reagent_containers/cup/glass/bottle/patron{
 	pixel_x = -5;
 	pixel_y = 16
@@ -572,7 +572,7 @@
 /obj/machinery/computer/piratepad_control{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "Jc" = (
@@ -607,7 +607,7 @@
 "JO" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/turf_decal/bot/right,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "JV" = (
@@ -628,7 +628,7 @@
 /obj/machinery/power/smes/ship,
 /obj/structure/cable,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
 "LE" = (
@@ -663,7 +663,7 @@
 	pixel_y = -1
 	},
 /obj/structure/table,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Mo" = (
@@ -695,7 +695,7 @@
 "Nm" = (
 /obj/machinery/loot_locator,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "NI" = (
@@ -826,7 +826,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "Sh" = (
@@ -857,7 +857,7 @@
 /area/shuttle/pirate)
 "TF" = (
 /obj/structure/musician/piano,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "TT" = (
@@ -880,7 +880,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/carpet/royalblack,
 /area/shuttle/pirate)
 "Ut" = (
@@ -966,7 +966,7 @@
 /area/shuttle/pirate)
 "XB" = (
 /obj/machinery/vending/boozeomat,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 10
 	},

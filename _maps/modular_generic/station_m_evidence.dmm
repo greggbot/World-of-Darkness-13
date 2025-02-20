@@ -57,7 +57,7 @@
 /area/template_noop)
 "s" = (
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "v" = (
@@ -130,7 +130,7 @@
 /area/template_noop)
 "L" = (
 /obj/effect/turf_decal/tile/dark/opposingcorners,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/table,
 /obj/item/stack/package_wrap,
 /obj/item/hand_labeler,

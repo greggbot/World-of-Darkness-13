@@ -80,7 +80,7 @@
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/structure/rack,
 /obj/effect/spawner/random/exotic/syndie,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "ge" = (
@@ -113,7 +113,7 @@
 /obj/effect/turf_decal/trimline/red/line{
 	dir = 6
 	},
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "ir" = (
@@ -160,7 +160,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /obj/item/flashlight/lamp/green{
 	pixel_x = 5;
 	pixel_y = 6
@@ -211,7 +211,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/turretedoutpost)
 "no" = (
-/obj/machinery/light/dim/directional/west,
+/obj/machinery/light/dim/directional/east,
 /obj/effect/turf_decal/trimline/red/line{
 	dir = 9
 	},
@@ -473,7 +473,7 @@
 /area/ruin/space/has_grav/turretedoutpost)
 "CC" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "Df" = (
@@ -640,7 +640,7 @@
 /area/ruin/space/has_grav/turretedoutpost)
 "Rg" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/turretedoutpost)
 "St" = (
@@ -713,7 +713,7 @@
 "US" = (
 /obj/structure/closet/crate,
 /obj/item/ammo_box/c9mm,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
@@ -764,12 +764,12 @@
 "Xi" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/structure/frame/computer,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "XL" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "XM" = (

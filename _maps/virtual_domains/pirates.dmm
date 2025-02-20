@@ -202,7 +202,7 @@
 	pixel_x = 10;
 	pixel_y = -8
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/carpet/blue,
 /area/virtual_domain)
 "lK" = (
@@ -667,7 +667,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/landmark/bitrunning/cache_spawn,
 /turf/open/floor/carpet/blue,
 /area/virtual_domain)

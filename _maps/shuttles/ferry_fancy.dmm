@@ -31,7 +31,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/transport)
 "h" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/pod/light,
 /area/shuttle/transport)
 "i" = (
@@ -45,7 +45,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/transport)
 "k" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/pod/light,
 /area/shuttle/transport)
 "l" = (
@@ -84,7 +84,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/transport)
 "q" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/pod/light,
 /area/shuttle/transport)
 "r" = (

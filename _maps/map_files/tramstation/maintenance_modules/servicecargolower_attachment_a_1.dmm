@@ -29,7 +29,7 @@
 "j" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/item/reagent_containers/cup/glass/bottle/moonshine{
 	pixel_x = 8;
 	pixel_y = 5
@@ -128,7 +128,7 @@
 "J" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/stool/directional/south,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/greater)
 "L" = (

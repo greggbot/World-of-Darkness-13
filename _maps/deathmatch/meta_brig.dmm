@@ -37,7 +37,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/item/reagent_containers/cup/bucket,
 /turf/open/indestructible/dark,
 /area/deathmatch)
@@ -125,7 +125,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "bp" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/iron/white,
@@ -387,7 +387,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "gC" = (
@@ -406,7 +406,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "gI" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/grimy,
 /area/deathmatch)
 "hi" = (
@@ -521,7 +521,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "je" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
@@ -538,7 +538,7 @@
 /area/deathmatch)
 "jN" = (
 /obj/structure/table,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/item/folder/red{
 	pixel_x = 3
 	},
@@ -792,7 +792,7 @@
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "nf" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/fluff/fake_camera{
 	dir = 5
 	},
@@ -870,7 +870,7 @@
 /area/deathmatch)
 "nY" = (
 /obj/structure/table/wood,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/button/door/directional/west{
 	id = "dm6";
 	name = "Privacy Shutters Control"
@@ -893,7 +893,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "oA" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible,
 /area/deathmatch)
 "oB" = (
@@ -947,7 +947,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/indestructible/dark,
 /area/deathmatch)
@@ -980,7 +980,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/closet/secure_closet/security/sec{
 	anchored = 1
 	},
@@ -1125,7 +1125,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "qP" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "qS" = (
@@ -1180,7 +1180,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "sg" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/grimy,
 /area/deathmatch)
 "sr" = (
@@ -1371,7 +1371,7 @@
 /area/deathmatch)
 "uF" = (
 /obj/effect/turf_decal/tile/red,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible,
 /area/deathmatch)
 "uI" = (
@@ -1468,13 +1468,13 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "vL" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/item/toy/plush/beeplushie,
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "vU" = (
 /obj/structure/rack,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -1484,7 +1484,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "vZ" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -1671,7 +1671,7 @@
 /area/deathmatch)
 "yT" = (
 /obj/effect/turf_decal/tile/red,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
@@ -1685,7 +1685,7 @@
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "zg" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/indestructible,
 /area/deathmatch)
 "zh" = (
@@ -1708,7 +1708,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "zm" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "zq" = (
@@ -1731,7 +1731,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "zG" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/machinery/firealarm/directional/south,
 /obj/structure/cable,
 /turf/open/indestructible,
@@ -1803,7 +1803,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible,
 /area/deathmatch)
 "AS" = (
@@ -1816,7 +1816,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "Bf" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "Bt" = (
@@ -2117,7 +2117,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "EX" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "Fi" = (
@@ -2137,7 +2137,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "Fr" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/iron/grimy,
 /area/deathmatch)
@@ -2148,7 +2148,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "FK" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/flasher/directional/east{
@@ -2349,7 +2349,7 @@
 /turf/closed/indestructible/reinforced,
 /area/deathmatch)
 "IL" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
@@ -2424,7 +2424,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "JC" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
 	},
@@ -2625,7 +2625,7 @@
 /area/deathmatch)
 "Mb" = (
 /obj/structure/sign/warning/vacuum/external/directional/north,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/indestructible,
 /area/deathmatch)
 "Mk" = (
@@ -2690,7 +2690,7 @@
 /turf/open/floor/iron/white,
 /area/deathmatch)
 "MV" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -2901,7 +2901,7 @@
 /obj/item/clothing/ears/earmuffs{
 	pixel_y = 7
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -2929,7 +2929,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Qt" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
@@ -3065,7 +3065,7 @@
 /area/deathmatch)
 "SF" = (
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -3080,7 +3080,7 @@
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 1
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible,
 /area/deathmatch)
 "SO" = (
@@ -3100,7 +3100,7 @@
 /area/deathmatch)
 "Tx" = (
 /obj/machinery/status_display/evac/directional/north,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/cable,
 /turf/open/floor/carpet,
 /area/deathmatch)
@@ -3232,7 +3232,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "VG" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -3385,7 +3385,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "WX" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/indestructible,
 /area/deathmatch)
 "XA" = (
@@ -3408,7 +3408,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "XS" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/table,
 /obj/machinery/recharger{
 	pixel_x = 6;

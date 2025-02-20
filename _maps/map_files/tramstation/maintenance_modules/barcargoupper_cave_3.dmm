@@ -63,15 +63,15 @@
 /area/station/asteroid)
 "n" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/station/asteroid)
 "o" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/misc/asteroid,
 /area/station/asteroid)
 "p" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/misc/asteroid,
 /area/station/asteroid)
 "q" = (

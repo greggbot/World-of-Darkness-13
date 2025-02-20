@@ -83,7 +83,7 @@
 "o" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/transport)
 "p" = (
@@ -184,7 +184,7 @@
 "H" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/transport)
 

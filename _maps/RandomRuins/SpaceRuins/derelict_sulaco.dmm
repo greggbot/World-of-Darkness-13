@@ -619,7 +619,7 @@
 /turf/open/floor/carpet,
 /area/ruin/space/has_grav/derelictsulaco)
 "uk" = (
-/obj/machinery/light/dim/directional/south,
+/obj/machinery/light/dim/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/frame/computer{
@@ -775,7 +775,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space)
 "zs" = (
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/dim/directional/west,
 /obj/structure/mirror/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/showroomfloor,
@@ -860,7 +860,7 @@
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/machinery/computer/terminal/sulaco/map,
 /obj/effect/turf_decal/tile/red/fourcorners,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -903,7 +903,7 @@
 /area/ruin/space/has_grav/derelictsulaco)
 "Fc" = (
 /obj/structure/alien/weeds,
-/obj/machinery/light/dim/directional/west,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/derelictsulaco)
 "Fo" = (
@@ -1030,7 +1030,7 @@
 /area/ruin/space/has_grav/derelictsulaco)
 "It" = (
 /obj/structure/table/wood,
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /obj/item/paper/ruins/derelict_sulaco/birthday,
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/derelictsulaco)
@@ -1042,7 +1042,7 @@
 /obj/structure/frame/machine{
 	anchored = 1
 	},
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/smooth,
@@ -1202,7 +1202,7 @@
 /obj/machinery/camera/directional/south{
 	network = list()
 	},
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/derelictsulaco)
 "Ni" = (
@@ -1597,7 +1597,7 @@
 	network = list()
 	},
 /obj/effect/decal/remains/xeno/larva,
-/obj/machinery/light/dim/directional/west,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/derelictsulaco)
 "Yh" = (

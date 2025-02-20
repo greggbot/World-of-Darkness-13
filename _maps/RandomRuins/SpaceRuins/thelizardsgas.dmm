@@ -365,12 +365,12 @@
 /obj/effect/spawner/random/contraband/cannabis/lizardsgas,
 /obj/effect/spawner/random/contraband/cannabis/lizardsgas,
 /obj/effect/spawner/random/contraband/cannabis/lizardsgas,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark/smooth_corner,
 /area/ruin/space/has_grav/thelizardsgas)
 "JP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/thelizardsgas)
 "JY" = (
@@ -407,7 +407,7 @@
 /turf/open/floor/iron/dark/smooth_edge,
 /area/ruin/space/has_grav/thelizardsgas)
 "OQ" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/engine/plasma{
 	initial_gas_mix = "plasma=35000;TEMP=293.15"
 	},
@@ -509,7 +509,7 @@
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "Wh" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/white/side{
 	dir = 1
 	},

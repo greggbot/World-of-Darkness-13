@@ -41,7 +41,7 @@
 /turf/open/floor/plating,
 /area/shuttle/auxiliary_base)
 "i" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating,
 /area/shuttle/auxiliary_base)
 "j" = (
@@ -52,7 +52,7 @@
 /turf/closed/wall,
 /area/shuttle/auxiliary_base)
 "k" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/auxiliary_base)
 "l" = (

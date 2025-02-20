@@ -121,11 +121,11 @@
 /turf/template_noop,
 /area/template_noop)
 "pI" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/eighties,
 /area/shuttle/escape)
 "qU" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
 	dir = 8
@@ -134,7 +134,7 @@
 /area/shuttle/escape)
 "rX" = (
 /obj/effect/spawner/random/entertainment/arcade,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/eighties,
 /area/shuttle/escape)
 "ss" = (
@@ -415,7 +415,7 @@
 /turf/open/floor/eighties,
 /area/shuttle/escape)
 "Yr" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/eighties,
 /area/shuttle/escape)
 "Zf" = (

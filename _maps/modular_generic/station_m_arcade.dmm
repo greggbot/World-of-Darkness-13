@@ -24,7 +24,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "e" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/template_noop,
 /area/template_noop)
 "g" = (
@@ -96,7 +96,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "C" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/template_noop,
 /area/template_noop)
 "D" = (
@@ -174,7 +174,7 @@
 "V" = (
 /obj/effect/decal/cleanable/wrapping/pinata,
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "W" = (
@@ -192,7 +192,7 @@
 "Y" = (
 /obj/structure/hedge,
 /obj/machinery/digital_clock/directional/north,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 

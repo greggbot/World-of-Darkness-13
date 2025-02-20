@@ -14,7 +14,7 @@
 /turf/open/indestructible/hotelwood,
 /area/virtual_domain/safehouse)
 "s" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/landmark/bitrunning/cache_goal_turf,
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -22,7 +22,7 @@
 /turf/open/indestructible/bitrunning_transport,
 /area/virtual_domain/safehouse)
 "v" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/table/wood,
 /obj/item/newspaper,
 /turf/open/indestructible/hotelwood,
@@ -62,7 +62,7 @@
 /turf/open/floor/plating,
 /area/virtual_domain/safehouse)
 "Z" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/hotelwood,
 /area/virtual_domain/safehouse)
 

@@ -31,7 +31,7 @@
 	},
 /obj/machinery/newscaster/directional/south,
 /obj/item/pen/edagger,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
 "k" = (
@@ -117,7 +117,7 @@
 /obj/machinery/syndicatebomb/self_destruct{
 	anchored = 1
 	},
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /obj/machinery/door/window/brigdoor/left/directional/south,
 /turf/open/floor/circuit/red,
 /area/ruin/comms_agent)

@@ -47,7 +47,7 @@
 	},
 /area/shuttle/supply)
 "q" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/supply)
 "s" = (
@@ -119,7 +119,7 @@
 	dir = 4;
 	id = "ShuttleLoad"
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron,
 /area/shuttle/supply)
 "J" = (
@@ -157,7 +157,7 @@
 	dir = 8;
 	id = "ShuttleUnload"
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/shuttle/supply)
 "U" = (

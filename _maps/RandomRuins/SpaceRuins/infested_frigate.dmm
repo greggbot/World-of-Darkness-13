@@ -37,7 +37,7 @@
 /turf/template_noop,
 /area/template_noop)
 "aV" = (
-/obj/machinery/light/small/red/dim/directional/north,
+/obj/machinery/light/small/red/dim/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
@@ -735,7 +735,7 @@
 	icon_state = "floor1-old"
 	},
 /obj/item/ammo_casing/spent,
-/obj/machinery/light/red/dim/directional/north,
+/obj/machinery/light/red/dim/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/infested_frigate)
 "lU" = (
@@ -920,7 +920,7 @@
 	},
 /obj/structure/sign/warning/fire/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/infested_frigate)
 "pl" = (
@@ -1756,7 +1756,7 @@
 /obj/effect/decal/cleanable/blood/gibs{
 	icon_state = "gibup1"
 	},
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /obj/effect/turf_decal{
 	icon_state = "warningline_white"
 	},
@@ -1775,7 +1775,7 @@
 /obj/item/ammo_casing/spent,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/infested_frigate)
 "BO" = (
@@ -2202,7 +2202,7 @@
 	icon_state = "ltrails_1";
 	dir = 4
 	},
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/infested_frigate)
 "JZ" = (
@@ -2368,7 +2368,7 @@
 	},
 /obj/item/bodypart/head,
 /obj/effect/spawner/random/food_or_drink/cake_ingredients,
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/ruin/space/has_grav/infested_frigate)
 "Mp" = (
@@ -2423,7 +2423,7 @@
 	},
 /obj/structure/barricade/security,
 /obj/structure/cable,
-/obj/machinery/light/small/red/dim/directional/east,
+/obj/machinery/light/small/red/dim/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/infested_frigate)
 "ML" = (
@@ -2824,7 +2824,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/infested_frigate)
 "Tb" = (
-/obj/machinery/light/small/red/dim/directional/south,
+/obj/machinery/light/small/red/dim/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/item/ammo_casing/spent,
@@ -2906,7 +2906,7 @@
 	dir = 1
 	},
 /obj/machinery/suit_storage_unit/open,
-/obj/machinery/light/red/dim/directional/north,
+/obj/machinery/light/red/dim/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/infested_frigate)
 "Vt" = (
@@ -2916,7 +2916,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/food/egg_smudge,
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/infested_frigate)
 "VQ" = (

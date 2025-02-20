@@ -34,7 +34,7 @@
 /area/deathmatch)
 "cd" = (
 /obj/effect/turf_decal/tile/dark_blue/full,
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/built/directional/north,
 /obj/machinery/computer{
 	dir = 4
 	},
@@ -44,7 +44,7 @@
 /obj/effect/landmark/deathmatch_player_spawn,
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
-/obj/machinery/light/small/blacklight/directional/north,
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/floor/wood,
 /area/deathmatch)
 "cs" = (
@@ -154,7 +154,7 @@
 /mob/living/basic/pet/cat/feral,
 /obj/structure/bed,
 /obj/item/bedsheet/runtime,
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /turf/open/floor/wood,
 /area/deathmatch)
 "gI" = (
@@ -262,7 +262,7 @@
 	dir = 4
 	},
 /obj/machinery/rnd/production/protolathe/offstation,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "ko" = (
@@ -271,7 +271,7 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/vending/cigarette/syndicate,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "kY" = (
@@ -365,7 +365,7 @@
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 8
 	},
-/obj/machinery/light/small/blacklight/directional/west,
+/obj/machinery/light/small/blacklight/directional/east,
 /turf/open/indestructible/dark/textured,
 /area/deathmatch)
 "oN" = (
@@ -392,7 +392,7 @@
 	dir = 8
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/indestructible,
 /area/deathmatch)
 "pL" = (
@@ -438,7 +438,7 @@
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
 /obj/item/melee/supermatter_sword,
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /turf/open/floor/wood,
 /area/deathmatch)
 "rP" = (
@@ -574,7 +574,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/built/directional/north,
 /turf/open/indestructible,
 /area/deathmatch)
 "wb" = (
@@ -631,7 +631,7 @@
 	},
 /obj/machinery/vending/wardrobe/jani_wardrobe,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/blacklight/directional/north,
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/indestructible,
 /area/deathmatch)
 "xe" = (
@@ -700,7 +700,7 @@
 /area/deathmatch)
 "zt" = (
 /obj/effect/turf_decal/tile/dark_blue/full,
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/built/directional/north,
 /obj/machinery/computer{
 	dir = 8
 	},
@@ -755,7 +755,7 @@
 /mob/living/basic/migo/hatsune,
 /obj/structure/bed,
 /obj/item/bedsheet/cult,
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /turf/open/floor/wood,
 /area/deathmatch)
 "AZ" = (
@@ -854,7 +854,7 @@
 	dir = 4
 	},
 /obj/machinery/vending/wardrobe/engi_wardrobe,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "Es" = (
@@ -867,7 +867,7 @@
 /obj/item/ammo_casing/rebar,
 /obj/item/ammo_casing/rebar,
 /obj/item/ammo_casing/rebar,
-/obj/machinery/light/built/directional/north,
+/obj/machinery/light/built/directional/south,
 /turf/open/indestructible,
 /area/deathmatch)
 "EC" = (
@@ -927,7 +927,7 @@
 	dir = 4
 	},
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "GY" = (
@@ -963,7 +963,7 @@
 /obj/effect/turf_decal/tile/dark_blue/full,
 /obj/structure/rack,
 /obj/item/gun/energy/e_gun/mini/practice_phaser,
-/obj/machinery/light/built/directional/north,
+/obj/machinery/light/built/directional/south,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "Iu" = (
@@ -1126,7 +1126,7 @@
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 4
 	},
-/obj/machinery/light/small/blacklight/directional/east,
+/obj/machinery/light/small/blacklight/directional/west,
 /turf/open/indestructible/dark/textured,
 /area/deathmatch)
 "ND" = (
@@ -1164,7 +1164,7 @@
 /obj/structure/rack,
 /obj/item/cane,
 /obj/structure/fireaxecabinet/directional/south,
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/built/directional/north,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "ON" = (
@@ -1329,7 +1329,7 @@
 /mob/living/basic/cat_butcherer,
 /obj/structure/bed,
 /obj/item/bedsheet/runtime,
-/obj/machinery/light/small/blacklight/directional/north,
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/floor/wood,
 /area/deathmatch)
 "Yr" = (
@@ -1337,7 +1337,7 @@
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/vomit,
-/obj/machinery/light/small/blacklight/directional/north,
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/floor/wood,
 /area/deathmatch)
 "YJ" = (

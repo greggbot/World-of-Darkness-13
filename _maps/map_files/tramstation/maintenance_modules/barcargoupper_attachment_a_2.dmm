@@ -105,7 +105,7 @@
 "A" = (
 /obj/structure/reagent_dispensers/cooking_oil,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/cafeteria,
 /area/station/maintenance/department/cargo)
 "C" = (

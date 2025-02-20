@@ -4,7 +4,7 @@
 /turf/open/floor/grass,
 /area/station/asteroid)
 "ch" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "cj" = (
@@ -74,7 +74,7 @@
 /area/station/maintenance/department/security)
 "gE" = (
 /obj/structure/flora/bush/sparsegrass/style_random,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "hg" = (
@@ -101,7 +101,7 @@
 "lj" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/ladder,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -477,7 +477,7 @@
 /turf/open/misc/asteroid,
 /area/station/maintenance/department/security)
 "VW" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security)
@@ -496,7 +496,7 @@
 /area/station/maintenance/department/security)
 "XY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/table,
 /obj/item/reagent_containers/cup/bucket,
 /obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
