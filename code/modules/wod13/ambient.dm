@@ -394,6 +394,39 @@
 	fire_controled = FALSE
 	wall_rating = LOW_WALL_RATING
 
+/area/vtm/interior/endron_facility/restricted
+	name = "Endron Facility Restricted"
+	icon_state = "graveyard"
+	zone_type = "battle"
+	music = /datum/vampiremusic/forest
+	fire_controled = FALSE
+	yang_chi = 0
+	yin_chi = 2
+	wall_rating = LOW_WALL_RATING
+
+/area/vtm/interior/wyrm_corrupted
+	name = "Wyrm Corruption"
+	icon_state = "graveyard"
+	zone_type = "battle"
+	music = /datum/vampiremusic/forest
+	fire_controled = FALSE
+	yang_chi = 0
+	yin_chi = 2
+	wall_rating = LOW_WALL_RATING
+
+/area/vtm/interior/old_clan_tzimisce_manor
+	name = "Old Clan Tzimisce Manor"
+	icon_state = "old_clan_tzimisce"
+	zone_type = "elysium"
+	music = /datum/vampiremusic/prince
+	wall_rating = HIGH_WALL_RATING
+
+/area/vtm/sewer/old_clan_sanctum
+	name = "Old Clan Tzimisce Sanctum"
+	icon_state = "old_clan_sanctum"
+	zone_type = "elysium"
+	music = /datum/vampiremusic/nosferatu
+	wall_rating = HIGH_WALL_RATING
 //MUSIC
 
 /datum/vampiremusic
