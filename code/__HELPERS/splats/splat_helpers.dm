@@ -46,3 +46,6 @@
 		return target_mind.knowledge[knowledge_type];\
 	}
 }
+
+#define adjust_humanity
+

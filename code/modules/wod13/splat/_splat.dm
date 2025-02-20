@@ -1,5 +1,5 @@
-#define SPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_APPLIED_TO, S, M)
-#define UNSPLATTED(M, S) SSsplats
+#define SPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_SPLAT_APPLIED_TO, M, S)
+#define UNSPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_SPLAT_REMOVED_FROM, M, S)
 
 /datum/species
 	var/animation_goes_up = FALSE	//PSEUDO_M i have no idea what this does
@@ -65,6 +65,7 @@
 	for(var/trait in splat_traits)
 		REMOVE_TRAIT(my_character, trait)
 	SEND_SIGNAL(character, COMSIG_SPLAT_SPLAT_REMOVED, src)
+	UNSPLATTED(my_character, src)
 	my_character = null
 	qdel(src)
 
@@ -84,13 +85,32 @@
 /datum/splat/human/proc/dehumanize(datum/source, datum/splat/new_splat)
 	SIGNAL_HANDLER
 
-	if(istype(new_splat, /datum/splat/supernatural))	//you don't belong in this world!
-		log_game("[my_character] is no longer human as a result of gaining the [splat_id] splat.")
-		Remove(my_character)
+	if(!istype(new_splat, /datum/splat/supernatural))	//you don't belong in this world!
+		return NONE
+	log_game("[my_character] is no longer human as a result of gaining the [splat_id] splat.")
+	Remove(my_character)
 
 /datum/splat/human/on_remove()
 	UnregisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED)
 	..()
+
+/*
+ * Should usually not be called by itself, but is instead meant
+ * to be a helper proc for particular acts communicated via signals.
+ * value - how much it's being adjusted
+ * associated_level - the level of a given act we need to be over or under
+ * admin_override - if we're disregarding having an associated_level
+ */
+/datum/splat/proc/_adjust_integrity(value, associated_level, admin_override = FALSE)
+	if(!value)
+		return
+	if(!isnum(violation_level))
+		if(!admin_override)
+			CRASH("[src]/adjust_integrity needs to be called with a level correlated to a given sinful or virtuous act.")
+		LOG_ADMIN("[usr] adjusted [my_character]'s [integrity_name] by [value].")
+	if(value > 1 || value < -1)
+		LOG_ADMIN("[my_character]'s [integrity_name] was adjusted by more than one level.")
+	value > 0 ? _try_increase_integrity(value, associated_level) : _try_decrease_integrity(value, associated_level)
 
 /// It seems an arbitrary distinction but these will be splats or splat-likes that don't render you technically not human while still giving
 /// more(or less?) than human abilities or characteristics; Hunters, Immortals from CofD, Slashers, etc
@@ -103,9 +123,10 @@
 /datum/splat/metahuman/proc/exclusive_to_humans(datum/source, datum/splat/removing_splat)
 	SIGNAL_HANDLER
 
-	if(istype(removing_splat, /datum/splat/human))
-		log_game("[my_character] lost the [splat_id] splat along with their humanity.")
-		Remove(my_character)
+	if(!istype(removing_splat, /datum/splat/human))
+		return NONE
+	log_game("[my_character] lost the [splat_id] splat along with their humanity.")
+	Remove(my_character)
 
 /datum/splat/metahuman/on_remove()
 	UnregisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED)
@@ -115,62 +136,6 @@
 /// We'll use this for signals to fuck with supernaturals and whatever else
 /datum/splat/supernatural
 
-/mob/living/carbon/human/proc/AdjustHumanity(var/value, var/limit, var/forced = FALSE)
-	if(!iskindred(src))
-		return
-	if(!GLOB.canon_event)
-		return
-	var/special_role_name
-	if(mind)
-		if(mind.special_role)
-			var/datum/antagonist/A = mind.special_role
-			special_role_name = A.name
-	if(!is_special_character(src) || special_role_name == "Ambitious" || forced)
-		if(!in_frenzy || forced)
-			var/mod = 1
-			var/enlight = FALSE
-			if(clane)
-				mod = clane.humanitymod
-				enlight = clane.enlightenment
-			if(enlight)
-				if(value < 0)
-					if(humanity < 10)
-						if (forced)
-							humanity = max(0, humanity-(value * mod))
-						else
-							humanity = max(limit, humanity-(value*mod))
-						SEND_SOUND(src, sound('code/modules/wod13/sounds/humanity_gain.ogg', 0, 0, 75))
-						to_chat(src, "<span class='userhelp'><b>ENLIGHTENMENT INCREASED!</b></span>")
-				if(value > 0)
-					if(humanity > 0)
-						if (forced)
-							humanity = min(10, humanity-(value * mod))
-						else
-							humanity = min(limit, humanity-(value*mod))
-						SEND_SOUND(src, sound('code/modules/wod13/sounds/humanity_loss.ogg', 0, 0, 75))
-						to_chat(src, "<span class='userdanger'><b>ENLIGHTENMENT DECREASED!</b></span>")
-			else
-				if(value < 0)
-					if((humanity > limit) || forced)
-						if (forced)
-							humanity = max(0, humanity+(value * mod))
-						else
-							humanity = max(limit, humanity+(value*mod))
-						SEND_SOUND(src, sound('code/modules/wod13/sounds/humanity_loss.ogg', 0, 0, 75))
-						to_chat(src, "<span class='userdanger'><b>HUMANITY DECREASED!</b></span>")
-						if(humanity == limit)
-							to_chat(src, "<span class='userdanger'><b>If I don't stop, I will succumb to the Beast.</b></span>")
-					else
-						var/msgShit = pick("<span class='userdanger'><b>I can barely control the Beast!</b></span>", "<span class='userdanger'><b>I SHOULD STOP.</b></span>", "<span class='userdanger'><b>I'm succumbing to the Beast!</b></span>")
-						to_chat(src, msgShit) // [ChillRaccoon] - I think we should make's players more scared
-				if(value > 0)				  // so please, do not say about that, they're in safety after they're humanity drops to limit
-					if((humanity < limit) || forced)
-						if (forced)
-							humanity = min(10, humanity+(value * mod))
-						else
-							humanity = min(limit, humanity+(value*mod))
-						SEND_SOUND(src, sound('code/modules/wod13/sounds/humanity_gain.ogg', 0, 0, 75))
-						to_chat(src, "<span class='userhelp'><b>HUMANITY INCREASED!</b></span>")
 
 /mob/living/carbon/human/proc/AdjustMasquerade(var/value, var/forced = FALSE)
 	if(!iskindred(src) && !isghoul(src))

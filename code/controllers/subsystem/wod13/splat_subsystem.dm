@@ -16,16 +16,7 @@ SUBSYSTEM_DEF(splats)
 		"kuei_jin"	=	/datum/splat/supernatural/kuei_jin,
 	)
 	///An associated list of lazy lists for splats applied; keys are the splat owner, values are the splat
-	var/list/human_splats = list(
-		)
-	var/list/kindred_splats = list(
-		)
-	var/list/garou_splats = list(
-		)
-	var/list/ghoul_splats = list(
-		)
-	var/list/kueijin_splats = list(
-		)
+	var/list/splat_havers
 
 /datum/controller/subsystem/splats/Initialize()
 	RegisterSignal(src, COMSIG_SPLAT_SPLAT_APPLIED_TO, PROC_REF(track_splat_assignment))
@@ -43,7 +34,11 @@ SUBSYSTEM_DEF(splats)
 	new_splat.Apply(target)
 	return new_splat
 
-/datum/controller/subsystem/splats/proc/
+/datum/controller/subsystem/splats/proc/track_splat_assignment(datum/source, )
+	SIGNAL_HANDLER
+
+/datum/controller/subsystem/splats/proc/untrack_splat_assignment(datum/source, )
+
 /datum/controller/subsystem/splats/proc/
 /datum/controller/subsystem/splats/proc/
 /datum/controller/subsystem/splats/proc/
