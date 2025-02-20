@@ -1,4 +1,3 @@
-
 #define PURE_HUMAN_SPLAT (1<<0)
 #define KINDRED_SPLAT (1<<1)
 #define GHOUL_SPLAT (1<<2)
