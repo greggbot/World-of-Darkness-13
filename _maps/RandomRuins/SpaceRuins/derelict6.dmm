@@ -49,7 +49,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
 "an" = (
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "ao" = (
@@ -94,7 +94,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
 "aC" = (
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "aD" = (
@@ -136,7 +136,7 @@
 /area/ruin/space/has_grav)
 "aK" = (
 /obj/structure/closet/secure_closet/freezer/fridge/open,
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/iron/cafeteria/airless,
 /area/ruin/space/has_grav)
 "aL" = (
@@ -158,7 +158,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "aP" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
@@ -233,7 +233,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
 "bh" = (
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken/directional/east,
 /obj/structure/table_frame,
 /turf/open/floor/iron/cafeteria/airless,
 /area/ruin/space/has_grav)

@@ -56,7 +56,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "ao" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "ap" = (
@@ -94,7 +94,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
 "av" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "ay" = (
@@ -127,7 +127,7 @@
 /area/shuttle/escape)
 "aF" = (
 /obj/structure/table,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "aG" = (
@@ -150,7 +150,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "aJ" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "aK" = (
@@ -184,7 +184,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "aP" = (
@@ -220,7 +220,7 @@
 	pixel_y = 5
 	},
 /obj/item/storage/medkit/brute,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "aV" = (
@@ -251,7 +251,7 @@
 /area/shuttle/escape/brig)
 "eo" = (
 /obj/item/kirbyplants/organic/plant21,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "iP" = (
@@ -276,7 +276,7 @@
 	pixel_y = 4;
 	use_power = 0
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 

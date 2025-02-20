@@ -47,7 +47,7 @@
 "aN" = (
 /obj/machinery/vending/cigarette/beach,
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/have_a_puff/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/powered/beach)
 "aP" = (
@@ -79,11 +79,11 @@
 /obj/item/trash/candy,
 /obj/item/toy/talking/owl,
 /obj/effect/turf_decal/sand,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/ruin/powered/beach)
 "bd" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "bC" = (
@@ -125,7 +125,7 @@
 /turf/open/floor/iron/stairs/old,
 /area/ruin/powered/beach)
 "bY" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "cd" = (
@@ -159,7 +159,7 @@
 /turf/open/floor/sepia,
 /area/ruin/powered/beach)
 "cP" = (
-/obj/structure/flora/bush/stalky/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/ruin/powered/beach)
 "cV" = (
@@ -198,7 +198,7 @@
 /area/ruin/powered/beach)
 "eA" = (
 /obj/item/melee/skateboard/hoverboard,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/pod/light,
 /area/ruin/powered/beach)
 "eE" = (
@@ -253,7 +253,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/sepia,
 /area/ruin/powered/beach)
 "gT" = (
@@ -303,7 +303,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "hC" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/wood,
@@ -338,8 +338,8 @@
 /turf/open/floor/pod/dark,
 /area/ruin/powered/beach)
 "iH" = (
-/obj/structure/flora/bush/stalky/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/ruin/powered/beach)
 "jc" = (
@@ -350,7 +350,7 @@
 /area/ruin/powered/beach)
 "jh" = (
 /obj/machinery/hydroponics/constructable,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/grimy,
 /area/ruin/powered/beach)
 "kd" = (
@@ -372,7 +372,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "ks" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/item/toy/seashell,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
@@ -420,7 +420,7 @@
 	},
 /obj/structure/table/wood,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "mG" = (
@@ -428,7 +428,7 @@
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "nw" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/washing_machine,
 /turf/open/floor/wood,
@@ -474,7 +474,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered/beach)
 "pS" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -500,7 +500,7 @@
 /turf/open/floor/pod/light,
 /area/ruin/powered/beach)
 "qg" = (
-/obj/structure/flora/bush/large/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "qt" = (
@@ -528,12 +528,12 @@
 /turf/closed/wall/mineral/sandstone,
 /area/ruin/powered/beach)
 "qK" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/closet/secure_closet/bar/lavaland_bartender_clothes,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "qT" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
@@ -541,7 +541,7 @@
 /area/ruin/powered/beach)
 "rv" = (
 /obj/effect/turf_decal/sand,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "rz" = (
@@ -621,7 +621,7 @@
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "ww" = (
-/obj/structure/sign/poster/official/fruit_bowl,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/ruin/powered/beach)
 "wL" = (
@@ -646,7 +646,7 @@
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/ruin/powered/beach)
 "xg" = (
-/obj/structure/sign/poster/official/cohiba_robusto_ad/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "xn" = (
@@ -656,7 +656,7 @@
 /turf/open/misc/beach/coast/corner,
 /area/ruin/powered/beach)
 "xA" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "yc" = (
@@ -669,25 +669,21 @@
 /turf/closed/wall/mineral/sandstone,
 /area/ruin/powered/beach)
 "yk" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/ruin/powered/beach)
 "yN" = (
 /obj/machinery/vending/dinnerware,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood,
-/area/ruin/powered/beach)
-"yO" = (
-/obj/structure/flora/bush/jungle/a/style_random,
-/turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "yT" = (
 /turf/open/misc/beach/coast,
 /area/ruin/powered/beach)
 "yY" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/beach/coast{
 	dir = 8
 	},
@@ -712,7 +708,7 @@
 /area/ruin/powered/beach)
 "zK" = (
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/starkist/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "zT" = (
@@ -770,7 +766,7 @@
 /area/lavaland/surface/outdoors/explored)
 "Bv" = (
 /obj/effect/turf_decal/sand,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "BE" = (
@@ -806,7 +802,7 @@
 "CL" = (
 /obj/effect/turf_decal/sand,
 /obj/structure/sign/warning/no_smoking/circle/directional/east,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "CT" = (
@@ -849,16 +845,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
-"Eu" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/water/beach,
-/area/ruin/powered/beach)
 "EE" = (
 /obj/structure/dresser,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "EL" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/misc/beach/coast{
 	dir = 1
 	},
@@ -890,11 +882,11 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "FD" = (
-/obj/structure/sign/poster/contraband/ambrosia_vulgaris/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/grimy,
 /area/ruin/powered/beach)
 "FH" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "FO" = (
@@ -905,10 +897,6 @@
 /obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
-"FZ" = (
-/obj/structure/sign/poster/contraband/space_up/directional/west,
-/turf/open/floor/wood,
-/area/ruin/powered/beach)
 "Ga" = (
 /obj/structure/table/wood,
 /obj/item/book/manual/wiki/cooking_to_serve_man,
@@ -917,7 +905,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Gf" = (
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "GA" = (
@@ -945,7 +933,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered/beach)
 "Hy" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/stairs/left,
 /area/ruin/powered/beach)
 "HW" = (
@@ -968,7 +956,7 @@
 /area/ruin/powered/beach)
 "Iy" = (
 /obj/structure/chair/wood,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "IG" = (
@@ -988,7 +976,7 @@
 /obj/structure/railing/corner{
 	dir = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/spawner/message_in_a_bottle/low_prob,
 /turf/open/misc/beach/coast/corner{
 	dir = 8
@@ -1019,8 +1007,8 @@
 /turf/open/floor/pod/light,
 /area/ruin/powered/beach)
 "Kn" = (
-/obj/structure/flora/bush/large/style_random,
-/obj/structure/flora/bush/jungle/a/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "Ky" = (
@@ -1105,14 +1093,14 @@
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/ruin/powered/beach)
 "OE" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "OP" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Pr" = (
@@ -1146,11 +1134,11 @@
 /obj/item/book/manual/wiki/barman_recipes,
 /obj/item/reagent_containers/cup/glass/shaker,
 /obj/item/reagent_containers/cup/rag,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "QF" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Rb" = (
@@ -1168,7 +1156,7 @@
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "Rk" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Ro" = (
@@ -1203,7 +1191,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered/beach)
 "SC" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /mob/living/basic/crab{
 	name = "Eddie"
 	},
@@ -1288,10 +1276,6 @@
 /obj/structure/noticeboard/staff,
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/ruin/powered/beach)
-"UT" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/misc/beach/sand,
-/area/ruin/powered/beach)
 "UZ" = (
 /obj/item/stack/sheet/iron/fifty,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -1321,7 +1305,7 @@
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "VL" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/closet/crate{
 	name = "fuel crate"
 	},
@@ -1334,7 +1318,7 @@
 /area/ruin/powered/beach)
 "VY" = (
 /obj/structure/flora/coconuts,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "Wa" = (
@@ -1411,7 +1395,7 @@
 /turf/open/floor/carpet/blue,
 /area/ruin/powered/beach)
 "Zq" = (
-/obj/structure/sign/poster/official/high_class_martini/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/mob_spawn/ghost_role/human/bartender{
 	dir = 4
 	},
@@ -1481,7 +1465,7 @@ BE
 Mf
 Iy
 fS
-UT
+qg
 aj
 oQ
 Zq
@@ -1512,7 +1496,7 @@ Mf
 FO
 IG
 VI
-UT
+qg
 SY
 aj
 HW
@@ -1606,7 +1590,7 @@ aj
 aj
 hj
 VI
-UT
+qg
 AC
 VI
 VI
@@ -1641,7 +1625,7 @@ VI
 VI
 Ri
 PJ
-UT
+qg
 VI
 fB
 lq
@@ -1671,7 +1655,7 @@ VI
 rK
 VI
 VI
-UT
+qg
 VI
 VI
 VI
@@ -1697,7 +1681,7 @@ Mf
 Gf
 VI
 VI
-UT
+qg
 VI
 qg
 VI
@@ -1785,7 +1769,7 @@ aa
 MZ
 VI
 VI
-UT
+qg
 VI
 VI
 xe
@@ -1808,7 +1792,7 @@ cP
 pz
 pz
 pz
-Eu
+cP
 Ro
 MZ
 "}
@@ -1976,7 +1960,7 @@ MZ
 Bp
 Zi
 Mf
-UT
+qg
 VI
 VI
 VI
@@ -1997,7 +1981,7 @@ VI
 VI
 mv
 pz
-Eu
+cP
 pz
 pz
 cP
@@ -2010,7 +1994,7 @@ MZ
 bd
 VI
 VI
-UT
+qg
 VI
 rv
 Lm
@@ -2113,9 +2097,9 @@ qF
 ZA
 Vt
 yc
-yO
+qg
 VI
-UT
+qg
 VI
 VI
 VI
@@ -2215,7 +2199,7 @@ OP
 MZ
 VI
 VI
-UT
+qg
 VI
 dc
 hX
@@ -2270,7 +2254,7 @@ aC
 aC
 aC
 aC
-FZ
+xg
 aC
 aj
 aj

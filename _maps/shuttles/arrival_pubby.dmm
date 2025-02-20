@@ -80,7 +80,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/arrival)
 "q" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "r" = (
@@ -98,7 +98,7 @@
 /area/shuttle/arrival)
 "u" = (
 /obj/item/radio/intercom/directional/south,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "v" = (
@@ -122,8 +122,8 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "Y" = (
-/obj/machinery/light/directional/north,
-/obj/structure/sign/poster/official/enlist/directional/north,
+/obj/machinery/light/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 

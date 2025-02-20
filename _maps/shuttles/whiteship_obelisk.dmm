@@ -69,7 +69,7 @@
 /area/shuttle/abandoned/bridge)
 "dD" = (
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /obj/structure/closet/crate,
 /obj/effect/spawner/random/engineering/toolbox,
 /obj/effect/spawner/random/engineering/material,
@@ -145,13 +145,13 @@
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "hS" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/cable,
 /turf/open/floor/iron/large,
 /area/shuttle/abandoned/crew)
 "iL" = (
 /obj/structure/cable,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -184,7 +184,7 @@
 /obj/structure/bed,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/abandoned/crew)
 "ks" = (
@@ -263,7 +263,7 @@
 /area/shuttle/abandoned/bar)
 "nz" = (
 /obj/structure/cable,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/large,
 /area/shuttle/abandoned)
 "nQ" = (
@@ -295,7 +295,7 @@
 /area/shuttle/abandoned/bar)
 "oX" = (
 /obj/structure/cable,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/large,
 /area/shuttle/abandoned/bar)
 "oY" = (
@@ -419,7 +419,7 @@
 /area/shuttle/abandoned)
 "wZ" = (
 /obj/effect/mob_spawn/corpse/human/damaged,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "xT" = (
@@ -453,7 +453,7 @@
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/abandoned/engine)
 "AX" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/blood/gibs/up,
 /obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating,
@@ -469,7 +469,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/abandoned/bridge)
 "Bw" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/tank_dispenser/oxygen,
 /obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/mineral/titanium/tiled/yellow,
@@ -624,7 +624,7 @@
 /area/shuttle/abandoned/bar)
 "Kv" = (
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /obj/machinery/button/door/directional/west{
 	name = "Bolt Control";
 	normaldoorcontrol = 1;
@@ -654,13 +654,13 @@
 /obj/item/mop,
 /obj/item/reagent_containers/cup/bucket,
 /obj/structure/reagent_dispensers/watertank,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /obj/effect/turf_decal/bot,
 /obj/item/storage/box/lights/mixed,
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "NG" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks/beer{
 	dir = 1
@@ -675,7 +675,7 @@
 "NM" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/blood/old,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -743,7 +743,7 @@
 	default_raw_text = "Management wants to remind to not drink on duty, unlike last time where you people slammed it into a shuttle bay while drunk. Next time, youre all going to be sent off as unpaid asteroid miners.";
 	pixel_y = 11
 	},
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/mineral/titanium/purple,
 /area/shuttle/abandoned/bar)
 "Sb" = (
@@ -794,7 +794,7 @@
 /obj/structure/table,
 /obj/machinery/microwave,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/abandoned/crew)

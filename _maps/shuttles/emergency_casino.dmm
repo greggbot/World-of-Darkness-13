@@ -7,7 +7,7 @@
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "aI" = (
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "aS" = (
@@ -118,14 +118,14 @@
 /area/shuttle/escape)
 "fi" = (
 /obj/structure/bed/dogbed,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/titanium/purple,
 /area/shuttle/escape)
 "fm" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "fS" = (
@@ -236,7 +236,7 @@
 /area/shuttle/escape)
 "it" = (
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "iy" = (
@@ -315,7 +315,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "kO" = (
-/obj/structure/sign/poster/official/love_ian/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/siding,
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
@@ -353,8 +353,8 @@
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
 "lx" = (
-/obj/structure/sign/poster/official/help_others/directional/north,
-/obj/machinery/light/directional/east,
+/obj/structure/sign/poster/random,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "ly" = (
@@ -449,13 +449,13 @@
 /obj/item/canvas,
 /obj/item/canvas,
 /obj/machinery/vending/wallmed/directional/west,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/sepia,
 /area/shuttle/escape)
 "mT" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/turf_decal/delivery,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "mZ" = (
@@ -547,7 +547,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "pp" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
@@ -572,7 +572,7 @@
 "qn" = (
 /obj/machinery/stasis,
 /obj/machinery/vending/wallmed/directional/east,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "qr" = (
@@ -613,7 +613,7 @@
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "rV" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "sd" = (
@@ -659,7 +659,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/item/reagent_containers/cup/glass/bottle/hooch,
 /obj/item/clothing/head/costume/foilhat,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "vi" = (
@@ -711,7 +711,7 @@
 /obj/item/storage/box/drinkingglasses,
 /obj/item/reagent_containers/cup/glass/shaker,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "vT" = (
@@ -822,7 +822,7 @@
 /area/shuttle/escape)
 "yF" = (
 /obj/structure/bed/dogbed,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/titanium/purple,
 /area/shuttle/escape)
 "yH" = (
@@ -889,7 +889,7 @@
 /area/shuttle/escape)
 "Bb" = (
 /obj/structure/reagent_dispensers/wall/peppertank/directional/east,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Bf" = (
@@ -913,7 +913,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Ch" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/vending/cigarette,
 /obj/effect/turf_decal/box,
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
@@ -978,13 +978,13 @@
 /area/shuttle/escape)
 "Fl" = (
 /obj/effect/spawner/random/entertainment/arcade,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
 /obj/structure/sign/warning/vacuum/directional/north,
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
 "Fv" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "FJ" = (
@@ -1046,7 +1046,7 @@
 /area/shuttle/escape)
 "HZ" = (
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Ih" = (
@@ -1077,7 +1077,7 @@
 "KN" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/drinks/fullupgrade,
-/obj/structure/sign/poster/official/cohiba_robusto_ad/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -1193,7 +1193,7 @@
 /area/shuttle/escape)
 "Ow" = (
 /obj/machinery/status_display/evac/directional/east,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
 "OA" = (
@@ -1215,7 +1215,7 @@
 "Pj" = (
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/delivery,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/recharge_floor,
 /area/shuttle/escape)
 "Pu" = (
@@ -1378,7 +1378,7 @@
 /area/shuttle/escape)
 "XW" = (
 /obj/structure/sign/departments/medbay/alt/directional/south,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/closet/crate/bin,
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
 /turf/open/floor/carpet/green,
@@ -1393,7 +1393,7 @@
 /area/shuttle/escape)
 "Yl" = (
 /obj/machinery/status_display/evac/directional/west,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
 "Yp" = (

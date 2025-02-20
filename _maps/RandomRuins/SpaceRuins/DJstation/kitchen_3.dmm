@@ -58,7 +58,7 @@
 	spawn_loot_count = 3;
 	spawn_random_offset = 1
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plastic,
 /area/ruin/space/djstation)
 "S" = (

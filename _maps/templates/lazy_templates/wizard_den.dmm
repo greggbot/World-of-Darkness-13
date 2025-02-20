@@ -23,7 +23,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "cy" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/red,
 /area/centcom/wizard_station)
 "cF" = (
@@ -57,11 +57,11 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "dB" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "eI" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/lava,
 /area/centcom/wizard_station)
 "eW" = (
@@ -110,7 +110,7 @@
 /turf/open/floor/plastic,
 /area/centcom/wizard_station)
 "hj" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/purple,
 /area/centcom/wizard_station)
 "hq" = (
@@ -120,7 +120,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "hT" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/wizard_station)
 "iG" = (
@@ -131,7 +131,7 @@
 /obj/item/clothing/shoes/sandal/magic{
 	pixel_y = 16
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plastic,
 /area/centcom/wizard_station)
 "iW" = (
@@ -151,7 +151,7 @@
 	pixel_x = 8;
 	pixel_y = 2
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "jp" = (
@@ -201,7 +201,7 @@
 	pixel_x = 6;
 	pixel_y = -10
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "mc" = (
@@ -227,7 +227,7 @@
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "nV" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/simple_animal/hostile/ooze/gelatinous{
 	name = "Jimmy";
 	faction = list("slime", "Wizard")
@@ -379,10 +379,6 @@
 	},
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
-"sx" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/centcom/wizard_station)
 "tv" = (
 /obj/structure/destructible/cult/item_dispenser/archives/library,
 /turf/open/floor/engine/cult,
@@ -408,7 +404,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "ut" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/purple,
 /area/centcom/wizard_station)
 "uy" = (
@@ -436,10 +432,6 @@
 	pixel_y = 5
 	},
 /turf/open/floor/engine/cult,
-/area/centcom/wizard_station)
-"wk" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
 /area/centcom/wizard_station)
 "wQ" = (
 /obj/structure/mirror/magic{
@@ -490,7 +482,7 @@
 /obj/structure/chair/wood/wings{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "ya" = (
@@ -498,7 +490,7 @@
 /obj/item/skub{
 	pixel_y = 16
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plastic,
 /area/centcom/wizard_station)
 "yO" = (
@@ -535,7 +527,7 @@
 	name = "Jommy";
 	faction = list("gondola", "Wizard")
 	},
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/wizard_station)
 "Cm" = (
@@ -544,7 +536,7 @@
 "Df" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/structure/chair/wood,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "Do" = (
@@ -576,7 +568,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "DX" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Ej" = (
@@ -696,7 +688,7 @@
 /area/centcom/wizard_station)
 "Ol" = (
 /obj/machinery/computer/camera_advanced,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "OV" = (
@@ -709,12 +701,8 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Pb" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/red,
-/area/centcom/wizard_station)
-"Pz" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/turf/open/floor/grass,
 /area/centcom/wizard_station)
 "PF" = (
 /obj/item/reagent_containers/cup/glass/bottle/beer{
@@ -731,7 +719,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Qm" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "RR" = (
@@ -779,14 +767,14 @@
 	dir = 1
 	},
 /obj/effect/landmark/start/wizard,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "SD" = (
 /obj/structure/destructible/cult/item_dispenser/altar{
 	desc = "An altar dedicated to the Wizard Federation."
 	},
-/obj/structure/sign/poster/contraband/the_big_gas_giant_truth/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Tl" = (
@@ -843,7 +831,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "UG" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "UX" = (
@@ -859,7 +847,7 @@
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "VV" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/floor,
 /turf/open/floor/grass,
 /area/centcom/wizard_station)
@@ -896,7 +884,7 @@
 /turf/open/floor/carpet/red,
 /area/centcom/wizard_station)
 "XJ" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/red,
 /area/centcom/wizard_station)
 "XV" = (
@@ -960,7 +948,7 @@
 	pixel_y = 1;
 	pixel_x = -6
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 
@@ -1631,7 +1619,7 @@ tz
 tz
 LU
 TG
-sx
+hT
 Cm
 hT
 VB
@@ -1724,8 +1712,8 @@ tz
 LU
 TG
 Cm
-wk
-Pz
+hT
+hT
 VB
 Xt
 LU

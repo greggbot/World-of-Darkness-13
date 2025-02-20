@@ -44,7 +44,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "al" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/cable,
 /turf/open/floor/plating/airless,
 /area/ruin/space/tcommsat_oldaisat)
@@ -67,7 +67,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "aq" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "ar" = (
@@ -113,7 +113,7 @@
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen/blue,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "aC" = (
@@ -209,7 +209,7 @@
 /turf/closed/wall/r_wall,
 /area/ruin/space/tcommsat_oldaisat)
 "aV" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "aW" = (
@@ -501,7 +501,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "bY" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "bZ" = (
@@ -631,7 +631,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "cw" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/paper,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -704,7 +704,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/tcommsat_oldaisat)
 "cK" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/tcommsat_oldaisat)
 "cL" = (
@@ -773,7 +773,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/tcommsat_oldaisat)
 "cX" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},

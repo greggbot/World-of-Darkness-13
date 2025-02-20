@@ -18,7 +18,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/freezer,
 /area/shuttle/transport)
 "g" = (
@@ -132,7 +132,7 @@
 /area/shuttle/transport)
 "x" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/freezer,
 /area/shuttle/transport)
 

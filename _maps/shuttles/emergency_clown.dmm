@@ -196,11 +196,11 @@
 /turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "aY" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "aZ" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "bb" = (
@@ -212,7 +212,7 @@
 	},
 /obj/item/crowbar,
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "bc" = (
@@ -247,7 +247,7 @@
 "iU" = (
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet/any,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "kT" = (
@@ -266,7 +266,7 @@
 /area/shuttle/escape)
 "ns" = (
 /obj/item/toy/snappop/phoenix,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/bluespace,
 /area/shuttle/escape)
 "pi" = (
@@ -282,7 +282,7 @@
 "za" = (
 /obj/structure/table,
 /obj/item/toy/sword,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "Hv" = (
@@ -292,7 +292,7 @@
 /obj/effect/spawner/random/bedsheet/any{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "Lb" = (
@@ -320,7 +320,7 @@
 /area/shuttle/escape)
 "YC" = (
 /obj/machinery/status_display/evac/directional/north,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/bananium,
 /area/shuttle/escape)
 "Zf" = (

@@ -44,7 +44,7 @@
 /turf/template_noop,
 /area/template_noop)
 "fb" = (
-/obj/structure/flora/bush/grassy,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "gg" = (
@@ -78,8 +78,8 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "jX" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/machinery/light/small/directional/north,
+/obj/structure/flora/bush/style_random,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "jY" = (
@@ -150,8 +150,8 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/cargo)
 "ob" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/grassy,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "pU" = (
@@ -163,7 +163,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "re" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8
 	},
@@ -211,7 +211,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/cargo)
 "tQ" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "ub" = (
@@ -233,7 +233,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "vk" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/yellow/corner,
 /obj/effect/turf_decal/trimline/yellow/corner{
@@ -251,10 +251,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/cargo)
-"wQ" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "wW" = (
 /obj/effect/turf_decal/trimline/yellow/arrow_cw{
 	dir = 8
@@ -387,10 +383,6 @@
 /obj/effect/turf_decal/trimline/yellow/warning,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/cargo)
-"Gr" = (
-/obj/structure/flora/bush/flowers_br/style_2,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "GM" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -409,7 +401,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "Ii" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 4
 	},
@@ -478,13 +470,9 @@
 "Rr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/event_spawn,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/cargo)
-"Sg" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Ss" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 8
@@ -552,10 +540,6 @@
 /obj/effect/turf_decal/trimline/yellow/arrow_cw,
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
-"XH" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Zd" = (
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8
@@ -1131,7 +1115,7 @@ Fz
 Fz
 Fz
 Fz
-wQ
+fb
 dx
 dx
 "}
@@ -1276,10 +1260,10 @@ Fz
 se
 we
 we
-wQ
+fb
 we
 we
-Sg
+fb
 dx
 dx
 "}
@@ -1311,12 +1295,12 @@ Ug
 MP
 Fz
 jX
-wQ
-we
-wQ
 fb
-wQ
-wQ
+we
+fb
+fb
+fb
+fb
 dx
 dx
 "}
@@ -1347,12 +1331,12 @@ Fz
 Ug
 MP
 QO
-wQ
-wQ
+fb
+fb
 we
 we
-Sg
-Sg
+fb
+fb
 we
 dx
 dx
@@ -1385,11 +1369,11 @@ Bl
 MP
 QO
 ob
-wQ
+fb
 we
-wQ
-Sg
-Sg
+fb
+fb
+fb
 fb
 dx
 dx
@@ -1458,12 +1442,12 @@ MP
 MP
 MP
 QO
-wQ
+fb
 we
-Gr
-wQ
-wQ
-wQ
+fb
+fb
+fb
+fb
 we
 dx
 dx
@@ -1498,9 +1482,9 @@ QO
 we
 ob
 we
-wQ
+fb
 ob
-wQ
+fb
 we
 dx
 dx
@@ -1533,12 +1517,12 @@ MP
 MP
 QO
 we
-wQ
+fb
 we
 we
 we
 we
-wQ
+fb
 dx
 dx
 "}
@@ -1569,11 +1553,11 @@ MP
 MP
 MP
 QO
-Gr
-wQ
+fb
+fb
 we
-wQ
-wQ
+fb
+fb
 we
 we
 dx
@@ -1606,13 +1590,13 @@ QF
 TN
 MP
 QO
-Gr
+fb
 we
 we
 fb
 we
-Sg
-XH
+fb
+fb
 dx
 dx
 "}
@@ -1682,10 +1666,10 @@ MP
 Fz
 tQ
 we
-Gr
+fb
 se
 we
-wQ
+fb
 we
 dx
 dx
@@ -1760,7 +1744,7 @@ we
 we
 we
 we
-XH
+fb
 dx
 dx
 "}

@@ -141,7 +141,7 @@
 /area/station/maintenance/port/central)
 "jX" = (
 /obj/structure/ladder,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -252,7 +252,7 @@
 /area/station/maintenance/central/greater)
 "tj" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/table,
 /obj/item/reagent_containers/cup/bucket{
 	pixel_x = -9;

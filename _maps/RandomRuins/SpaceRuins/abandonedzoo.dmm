@@ -15,31 +15,11 @@
 /turf/closed/mineral/random,
 /area/ruin/space/has_grav/abandonedzoo)
 "al" = (
-/obj/structure/flora/bush/generic/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav/abandonedzoo)
-"ao" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav/abandonedzoo)
-"aq" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
 "at" = (
 /turf/closed/wall/r_wall,
-/area/ruin/space/has_grav/abandonedzoo)
-"av" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav/abandonedzoo)
-"aA" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav/abandonedzoo)
-"aC" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
 "aD" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -156,14 +136,10 @@
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "bu" = (
-/obj/structure/flora/bush/sunny/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/abandonedzoo)
 "bv" = (
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/abandonedzoo)
-"bx" = (
-/obj/structure/flora/bush/pale/style_random,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/abandonedzoo)
 "by" = (
@@ -186,10 +162,6 @@
 /obj/structure/alien/weeds,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/abandonedzoo)
-"bE" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/abandonedzoo)
 "bF" = (
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall/r_wall,
@@ -197,10 +169,6 @@
 "bH" = (
 /obj/structure/alien/resin/wall,
 /turf/open/floor/plating/airless,
-/area/ruin/space/has_grav/abandonedzoo)
-"bI" = (
-/obj/structure/flora/bush/reed/style_random,
-/turf/open/floor/plating,
 /area/ruin/space/has_grav/abandonedzoo)
 "bJ" = (
 /mob/living/basic/crab{
@@ -256,7 +224,7 @@
 "cf" = (
 /obj/structure/frame/machine,
 /obj/structure/cable,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "eY" = (
@@ -299,7 +267,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "iZ" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/item/stack/cable_coil/cut,
 /obj/item/stack/tile/iron/base{
 	pixel_x = 3;
@@ -311,7 +279,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/abandonedzoo)
 "kp" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -326,7 +294,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/abandonedzoo)
 "nY" = (
-/obj/structure/flora/bush/leavy/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/basic/bee,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
@@ -368,7 +336,7 @@
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/abandonedzoo)
 "wc" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -389,7 +357,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "Ep" = (
@@ -411,20 +379,20 @@
 "HI" = (
 /obj/structure/table/reinforced,
 /obj/item/food/carrotfries,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "JW" = (
 /obj/structure/table/reinforced,
 /obj/item/cultivator,
 /obj/item/shovel,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "KR" = (
 /obj/structure/cable,
 /obj/machinery/power/shieldwallgen/unlocked/anchored,
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/abandonedzoo)
 "Mb" = (
@@ -450,17 +418,17 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/abandonedzoo)
 "Rc" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/floor,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
 "Rh" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/green/fourcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "Rr" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/tile/green/fourcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
@@ -574,7 +542,7 @@ aK
 ac
 bu
 bv
-bI
+bu
 bv
 ac
 aa
@@ -635,8 +603,8 @@ Ni
 cf
 at
 ac
-bx
-bE
+bu
+bu
 bv
 bv
 ac
@@ -815,7 +783,7 @@ ac
 al
 gE
 gE
-aA
+al
 ac
 at
 JW
@@ -855,7 +823,7 @@ aa
 (16,1,1) = {"
 ac
 gE
-aq
+al
 nY
 Mb
 aD
@@ -875,10 +843,10 @@ bW
 "}
 (17,1,1) = {"
 ac
-ao
+al
 gE
-av
-aC
+al
+al
 ac
 aQ
 aQ

@@ -34,7 +34,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/plasma_effects/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 8
 	},
@@ -52,7 +52,7 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
-/obj/machinery/light/small/red/directional/south,
+/obj/machinery/light/small/red/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/mining)
 "A" = (
@@ -112,7 +112,7 @@
 "U" = (
 /obj/structure/table/reinforced,
 /obj/item/radio,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/pod/light,
 /area/shuttle/mining)
 

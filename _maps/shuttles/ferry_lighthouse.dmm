@@ -238,7 +238,7 @@
 /area/shuttle/transport)
 "hL" = (
 /obj/machinery/vending/liberationstation,
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/transport)
 "jd" = (
@@ -246,7 +246,7 @@
 	dir = 1;
 	id = "garbage"
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/wood,
 /area/shuttle/transport)
 "op" = (
@@ -264,7 +264,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/transport)
 "ZS" = (
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/wood,
 /area/shuttle/transport)
 

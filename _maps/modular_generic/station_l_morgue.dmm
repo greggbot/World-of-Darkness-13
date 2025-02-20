@@ -15,7 +15,7 @@
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/corpse/human/damaged,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark/textured_large,
 /area/template_noop)
 "c" = (
@@ -129,7 +129,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/medical/patient_stretcher,
 /obj/machinery/iv_drip,
-/obj/machinery/light/small/blacklight/directional/east,
+/obj/machinery/light/small/blacklight/directional/west,
 /turf/open/floor/iron/dark/smooth_large,
 /area/template_noop)
 "r" = (
@@ -163,7 +163,7 @@
 "u" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/mess,
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/textured_half,
 /area/template_noop)
 "v" = (
@@ -187,7 +187,7 @@
 /area/template_noop)
 "y" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/blacklight/directional/west,
+/obj/machinery/light/small/blacklight/directional/east,
 /turf/open/floor/iron/dark/textured_half,
 /area/template_noop)
 "z" = (
@@ -199,7 +199,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/textured_large,
 /area/template_noop)
 "A" = (
@@ -246,7 +246,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "E" = (
-/obj/structure/sign/poster/official/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/smooth_large,
 /area/template_noop)
 "F" = (
@@ -333,7 +333,7 @@
 /area/template_noop)
 "Q" = (
 /obj/effect/spawner/random/trash/mess,
-/obj/machinery/light/small/blacklight/directional/west,
+/obj/machinery/light/small/blacklight/directional/east,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
 	},
@@ -351,7 +351,7 @@
 /area/template_noop)
 "S" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/blacklight/directional/east,
+/obj/machinery/light/small/blacklight/directional/west,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
 	},

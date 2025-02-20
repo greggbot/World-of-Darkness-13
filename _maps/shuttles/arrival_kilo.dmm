@@ -72,7 +72,7 @@
 "aj" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/arrival)
 "ak" = (
@@ -117,7 +117,7 @@
 	dir = 4
 	},
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/arrival)
 "au" = (
@@ -141,10 +141,10 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/arrival)
 "az" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/grass,
 /area/shuttle/arrival)
@@ -161,7 +161,7 @@
 	dir = 1
 	},
 /obj/machinery/status_display/evac/directional/south,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/arrival)
 "aD" = (
@@ -202,7 +202,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/arrival)
 "aN" = (

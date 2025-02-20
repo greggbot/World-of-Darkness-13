@@ -78,7 +78,7 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/telecomms)
 "t" = (
-/obj/structure/sign/poster/contraband/syndiemoth/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/cobweb,
 /obj/machinery/computer/message_monitor{
 	dir = 4
@@ -137,7 +137,7 @@
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/telecomms)
 "B" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/computer/security{
 	dir = 4
 	},
@@ -225,7 +225,7 @@
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/telecomms)
 "W" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/noticeboard/directional/east,

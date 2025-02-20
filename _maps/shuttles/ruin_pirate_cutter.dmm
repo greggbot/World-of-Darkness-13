@@ -81,7 +81,7 @@
 /turf/open/floor/iron,
 /area/shuttle/ruin/caravan/pirate)
 "jc" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 9
 	},
@@ -169,7 +169,7 @@
 	pixel_x = 8;
 	pixel_y = 3
 	},
-/obj/structure/sign/poster/contraband/red_rum/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/pirate)
 "nN" = (
@@ -231,12 +231,12 @@
 /area/shuttle/ruin/caravan/pirate)
 "qU" = (
 /obj/structure/table,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/item/stack/spacecash/c200,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/pirate)
 "se" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -301,13 +301,13 @@
 /obj/item/cautery{
 	pixel_x = 4
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/white/side{
 	dir = 8
 	},
 /area/shuttle/ruin/caravan/pirate)
 "wg" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/pirate)
@@ -342,7 +342,7 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/ruin/caravan/pirate)
 "wV" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/bed,
 /obj/item/bedsheet/pirate,
 /turf/open/floor/iron/dark,
@@ -465,7 +465,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/pirate)
 "Fn" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
 	},
@@ -512,7 +512,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/pirate)
 "Ha" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/bed,
 /obj/item/bedsheet/pirate,
 /turf/open/floor/iron/dark,
@@ -618,7 +618,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/pirate)
 "Ns" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 10
 	},
@@ -627,7 +627,7 @@
 	},
 /area/shuttle/ruin/caravan/pirate)
 "Oo" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/sign/warning/vacuum/directional/west,
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/pirate)
@@ -771,7 +771,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/pirate)
 "Wo" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/closet/crate/secure/loot,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4

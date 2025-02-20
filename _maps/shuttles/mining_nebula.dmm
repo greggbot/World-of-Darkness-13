@@ -85,7 +85,7 @@
 /obj/structure/ore_box,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/cable,
 /obj/structure/railing,
 /obj/effect/mapping_helpers/apc/cell_10k,
@@ -200,7 +200,7 @@
 /area/shuttle/mining/large)
 "K" = (
 /obj/structure/table,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/radio{
 	pixel_x = -5
 	},
@@ -249,7 +249,7 @@
 /obj/structure/closet/crate/internals,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/airalarm/directional/west,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/railing,
 /turf/open/floor/iron/textured_large,
 /area/shuttle/mining/large)
@@ -264,14 +264,14 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/flora/bush/fullgrass/style_random,
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/leafy,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/flora/bush/large/style_2{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 0
 	},
 /turf/open/floor/grass,
@@ -299,18 +299,18 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/flora/bush/fullgrass/style_random,
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/leafy,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/grass,
 /area/shuttle/mining/large)
 "U" = (
 /obj/structure/table,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/storage/toolbox/emergency,
 /obj/item/clothing/mask/gas{
 	pixel_x = -4;

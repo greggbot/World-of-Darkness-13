@@ -17,11 +17,11 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 4
 	},
-/obj/machinery/light/small/blacklight/directional/east,
+/obj/machinery/light/small/blacklight/directional/west,
 /turf/open/indestructible/bitrunning_transport,
 /area/virtual_domain/safehouse)
 "v" = (
-/obj/machinery/light/small/blacklight/directional/east,
+/obj/machinery/light/small/blacklight/directional/west,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/vehicle/ridden/wheelchair,
@@ -36,14 +36,14 @@
 /area/virtual_domain/safehouse)
 "y" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/blacklight/directional/west,
+/obj/machinery/light/small/blacklight/directional/east,
 /obj/effect/spawner/random/medical/medkit,
 /obj/effect/spawner/random/medical/medkit,
 /obj/effect/spawner/random/medical/minor_healing,
 /turf/open/floor/iron/freezer,
 /area/virtual_domain/safehouse)
 "z" = (
-/obj/structure/sign/poster/abductor/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/iron/freezer,
 /area/virtual_domain/safehouse)
@@ -88,7 +88,7 @@
 /area/virtual_domain/safehouse)
 "Z" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/blacklight/directional/west,
+/obj/machinery/light/small/blacklight/directional/east,
 /turf/open/floor/iron/freezer,
 /area/virtual_domain/safehouse)
 

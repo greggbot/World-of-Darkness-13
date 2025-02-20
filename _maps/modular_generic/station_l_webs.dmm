@@ -66,7 +66,7 @@
 /area/template_noop)
 "hL" = (
 /obj/structure/broken_flooring/singular/directional/north,
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/spawner/random/trash/crushed_can{
 	pixel_x = -6;
 	pixel_y = 13
@@ -78,7 +78,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 1
 	},
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/spawner/random/trash/bin,
 /obj/item/fireaxe,
 /turf/open/floor/iron/dark/corner{
@@ -94,7 +94,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/template_noop)
@@ -126,7 +126,7 @@
 /area/template_noop)
 "sc" = (
 /obj/effect/turf_decal/tile/neutral/diagonal_edge,
-/obj/structure/flora/bush/jungle/c/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/iron/dark/diagonal,
 /area/template_noop)
 "uC" = (
@@ -157,7 +157,7 @@
 	dir = 1
 	},
 /obj/structure/broken_flooring/side/directional/north,
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/spawner/random/trash/crushed_can{
 	pixel_x = 9;
 	pixel_y = 13
@@ -178,7 +178,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/machinery/light/warm/dim/directional/west,
 /obj/structure/chair/stool/directional/west,
 /turf/open/floor/iron/dark/side{
@@ -277,7 +277,7 @@
 /obj/structure/extinguisher_cabinet/directional/south,
 /obj/structure/broken_flooring/side/directional/north,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/flora/bush/jungle/b/style_2,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/plating,
 /area/template_noop)
 "Gy" = (
@@ -293,7 +293,7 @@
 /turf/open/floor/plating,
 /area/template_noop)
 "If" = (
-/obj/structure/flora/bush/jungle/b/style_2,
+/obj/structure/flora/bush/style_random,
 /obj/structure/barricade/sandbags{
 	color = "#737373"
 	},
@@ -331,14 +331,14 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/flora/bush/jungle/c/style_2,
+/obj/structure/flora/bush/style_random,
 /obj/effect/spawner/random/engineering/tank,
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
 /area/template_noop)
 "PB" = (
-/obj/structure/flora/bush/jungle/b/style_2,
+/obj/structure/flora/bush/style_random,
 /obj/effect/spawner/random/structure/closet_maintenance,
 /turf/open/floor/iron/dark,
 /area/template_noop)
@@ -391,7 +391,7 @@
 "Uf" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/siding/thinplating_new,
-/obj/structure/flora/bush/jungle/c/style_2,
+/obj/structure/flora/bush/style_random,
 /obj/effect/spawner/random/structure/crate,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/dark,

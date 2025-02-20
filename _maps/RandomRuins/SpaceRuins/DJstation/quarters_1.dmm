@@ -4,7 +4,7 @@
 /area/template_noop)
 "d" = (
 /obj/machinery/duct,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/djstation)
 "f" = (
@@ -34,7 +34,7 @@
 	pixel_y = 8
 	},
 /obj/machinery/duct,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/djstation)
 "A" = (

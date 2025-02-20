@@ -141,7 +141,7 @@
 	dir = 1;
 	id = "QMLoad"
 	},
-/obj/machinery/light/cold/directional/west,
+/obj/machinery/light/cold/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/supply)
 "K" = (
@@ -204,7 +204,7 @@
 	id = "QMLoad2"
 	},
 /obj/effect/turf_decal/stripes/box,
-/obj/machinery/light/cold/directional/west,
+/obj/machinery/light/cold/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/supply)
 "X" = (

@@ -139,7 +139,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered)
 "tx" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/lava/smooth/lava_land_surface,
 /area/ruin/unpowered)
 "tD" = (
@@ -204,7 +204,7 @@
 /area/ruin/unpowered)
 "Dy" = (
 /obj/item/shard/titanium,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered)

@@ -48,7 +48,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "dy" = (
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -72,7 +72,7 @@
 /area/deathmatch)
 "go" = (
 /obj/machinery/power/energy_accumulator/grounding_rod/anchored,
-/obj/machinery/light/red/directional/east,
+/obj/machinery/light/red/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "gC" = (
@@ -136,7 +136,7 @@
 /area/deathmatch)
 "jC" = (
 /obj/structure/cable,
-/obj/structure/sign/poster/official/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -295,7 +295,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "tc" = (
-/obj/machinery/light/red/directional/west,
+/obj/machinery/light/red/directional/east,
 /turf/open/indestructible,
 /area/deathmatch)
 "th" = (
@@ -811,7 +811,7 @@
 /area/deathmatch)
 "Mu" = (
 /obj/structure/cable,
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible,
 /area/deathmatch)
 "My" = (
@@ -1081,7 +1081,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Zi" = (
-/obj/structure/sign/poster/official/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},

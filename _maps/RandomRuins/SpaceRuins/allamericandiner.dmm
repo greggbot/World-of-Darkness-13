@@ -17,7 +17,7 @@
 /area/ruin/space/has_grav/allamericandiner)
 "bE" = (
 /obj/structure/curtain,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/allamericandiner)
 "ce" = (
@@ -97,7 +97,7 @@
 "eR" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/suit_storage_unit/open,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/allamericandiner)
 "fu" = (
@@ -169,7 +169,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
-/obj/machinery/light/dim/directional/south,
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "iS" = (
@@ -181,7 +181,7 @@
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "jl" = (
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
@@ -197,7 +197,7 @@
 "kj" = (
 /obj/structure/kitchenspike,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/allamericandiner)
 "kL" = (
@@ -213,7 +213,7 @@
 /area/ruin/space/has_grav/allamericandiner)
 "ls" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/allamericandiner)
 "lF" = (
@@ -316,7 +316,7 @@
 "pa" = (
 /obj/machinery/vending/cigarette,
 /obj/structure/window/spawner/directional/east,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
@@ -404,7 +404,7 @@
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "ui" = (
-/obj/structure/sign/poster/contraband/moffuchis_pizza/directional/north{
+/obj/structure/sign/poster/random{
 	name = "Ray's Pizza";
 	desc = "Ray's Famous Original Pizza: Family style pizza for 2 centuries."
 	},
@@ -534,14 +534,14 @@
 /area/ruin/space/has_grav/allamericandiner)
 "zw" = (
 /obj/machinery/vending/dinnerware,
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "zM" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/allamericandiner)
 "zN" = (
@@ -574,7 +574,7 @@
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "Bg" = (
-/obj/machinery/light/dim/directional/west,
+/obj/machinery/light/dim/directional/east,
 /obj/structure/chair/sofa/left/maroon{
 	dir = 1
 	},
@@ -600,7 +600,7 @@
 /area/ruin/space/has_grav/allamericandiner)
 "CC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/allamericandiner)
 "CF" = (
@@ -739,7 +739,7 @@
 /obj/item/holosign_creator/janibarrier,
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/cleanliness/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/allamericandiner)
 "Hz" = (
@@ -816,7 +816,7 @@
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "JC" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/misc/asteroid/airless,
 /area/ruin/space)
 "JD" = (
@@ -844,11 +844,6 @@
 "Kp" = (
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/allamericandiner)
-"Kr" = (
-/obj/structure/sign/poster/official/bless_this_spess/directional/north,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/kitchen,
-/area/ruin/space/has_grav/allamericandiner)
 "Kx" = (
 /obj/structure/table,
 /obj/item/book/manual/chef_recipes,
@@ -871,7 +866,7 @@
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/allamericandiner)
 "Lp" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/curtain,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/allamericandiner)
@@ -906,7 +901,7 @@
 "MQ" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/suit_storage_unit/open,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/allamericandiner)
 "MS" = (
@@ -944,7 +939,7 @@
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/space/has_grav/allamericandiner)
 "Ot" = (
-/obj/machinery/light/dim/directional/south,
+/obj/machinery/light/dim/directional/north,
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
 /obj/structure/chair/sofa/left/maroon{
 	dir = 8
@@ -1012,7 +1007,7 @@
 "RB" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/allamericandiner)
@@ -1061,7 +1056,7 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space)
 "TF" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/allamericandiner)
 "TN" = (
@@ -1140,7 +1135,7 @@
 /area/ruin/space/has_grav/allamericandiner)
 "Vq" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/dim/directional/west,
 /obj/machinery/chem_dispenser/drinks/fullupgrade{
 	dir = 1
 	},
@@ -1518,7 +1513,7 @@ oN
 oN
 oN
 EK
-Kr
+jl
 PW
 rd
 GE

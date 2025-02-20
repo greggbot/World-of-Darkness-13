@@ -11,7 +11,7 @@
 "k" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/cigbutt,
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security)
 "n" = (

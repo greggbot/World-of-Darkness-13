@@ -83,7 +83,7 @@
 "ap" = (
 /obj/item/radio/intercom/directional/south,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "aq" = (
@@ -416,16 +416,16 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "bP" = (
 /obj/structure/kitchenspike,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "bR" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "gn" = (
@@ -464,7 +464,7 @@
 "kk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/stasis,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "km" = (
@@ -481,7 +481,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "lI" = (
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/engine,
 /area/shuttle/escape)
 "nQ" = (
@@ -491,7 +491,7 @@
 "wo" = (
 /obj/effect/decal/cleanable/blood/old,
 /mob/living/basic/bear/fightpit,
-/obj/machinery/light/small/red/dim/directional/east,
+/obj/machinery/light/small/red/dim/directional/west,
 /turf/open/floor/engine,
 /area/shuttle/escape)
 "wq" = (
@@ -537,7 +537,7 @@
 /turf/open/floor/engine,
 /area/shuttle/escape)
 "Pf" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "Vb" = (
@@ -548,19 +548,19 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "VJ" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "Yy" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "YM" = (
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/engine,
 /area/shuttle/escape)
 

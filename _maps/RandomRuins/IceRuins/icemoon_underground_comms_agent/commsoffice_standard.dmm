@@ -31,7 +31,7 @@
 	},
 /obj/machinery/newscaster/directional/south,
 /obj/item/pen/edagger,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
 "k" = (
@@ -79,7 +79,7 @@
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
 "y" = (
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/machinery/computer/camera_advanced/syndie{
 	dir = 4
 	},
@@ -117,7 +117,7 @@
 /obj/machinery/syndicatebomb/self_destruct{
 	anchored = 1
 	},
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /obj/machinery/door/window/brigdoor/left/directional/south,
 /turf/open/floor/circuit/red,
 /area/ruin/comms_agent)

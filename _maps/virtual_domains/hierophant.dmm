@@ -51,7 +51,7 @@
 /turf/open/indestructible/hierophant/two,
 /area/lavaland/surface/outdoors/virtual_domain)
 "N" = (
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /obj/effect/baseturf_helper/virtual_domain,
 /turf/open/indestructible/hierophant,
 /area/virtual_domain)

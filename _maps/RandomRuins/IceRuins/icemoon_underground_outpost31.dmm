@@ -54,7 +54,7 @@
 "bg" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/drinkingglasses,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/ruin/outpost31/recroom)
@@ -105,7 +105,7 @@
 	pixel_y = 0
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/white/smooth_half,
 /area/ruin/outpost31/medical)
 "ce" = (
@@ -170,7 +170,7 @@
 /area/ruin/outpost31/radiomap)
 "db" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
@@ -204,7 +204,7 @@
 /obj/structure/table,
 /obj/structure/bedsheetbin,
 /obj/machinery/duct,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/freezer,
 /area/ruin/outpost31/crewquarters)
 "dP" = (
@@ -428,7 +428,7 @@
 /turf/open/floor/pod/dark,
 /area/ruin/outpost31)
 "hT" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
@@ -639,7 +639,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/outpost31)
 "mV" = (
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
@@ -785,7 +785,7 @@
 /area/ruin/outpost31/kitchendiningroom)
 "pw" = (
 /obj/structure/closet/cabinet,
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /turf/open/floor/wood,
 /area/ruin/outpost31/crewquarters)
 "py" = (
@@ -837,7 +837,7 @@
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/outpost31)
 "rb" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/outpost31)
 "rf" = (
@@ -898,7 +898,7 @@
 /area/ruin/outpost31/recroom)
 "si" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /turf/open/floor/plating,
 /area/ruin/outpost31)
 "sk" = (
@@ -959,7 +959,7 @@
 /area/ruin/outpost31/kennel)
 "tx" = (
 /obj/structure/closet/crate/bin,
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "tC" = (
@@ -998,7 +998,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
 "tZ" = (
@@ -1093,7 +1093,7 @@
 /area/ruin/outpost31/kennel)
 "wq" = (
 /obj/structure/cable,
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
@@ -1227,7 +1227,7 @@
 /area/ruin/outpost31)
 "ze" = (
 /obj/structure/table/optable,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /obj/effect/decal/cleanable/blood/old,
 /obj/item/bodypart/arm/left{
 	pixel_x = 4;
@@ -1323,7 +1323,7 @@
 	},
 /area/ruin/outpost31/medical)
 "Al" = (
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
@@ -1360,7 +1360,7 @@
 /turf/open/floor/iron,
 /area/ruin/outpost31/radiomap)
 "Bb" = (
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
@@ -1371,7 +1371,7 @@
 	},
 /area/ruin/outpost31/lab)
 "Bg" = (
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /turf/open/floor/iron/freezer,
 /area/ruin/outpost31/crewquarters)
 "Bj" = (
@@ -1385,7 +1385,7 @@
 /area/ruin/outpost31/lab)
 "Bu" = (
 /obj/effect/turf_decal/tile/neutral,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
 "Bz" = (
@@ -1434,7 +1434,7 @@
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "Cb" = (
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/outpost31/recroom)
@@ -1498,7 +1498,7 @@
 /area/ruin/outpost31/radiomap)
 "DF" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/structure/table,
 /obj/item/mod/module/flamethrower,
 /turf/open/floor/plating,
@@ -1598,7 +1598,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
 "FK" = (
@@ -1778,7 +1778,7 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "IT" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -1859,7 +1859,7 @@
 	name = "winter gear closet"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/pod/light,
 /area/ruin/outpost31)
 "LA" = (
@@ -1901,7 +1901,7 @@
 /area/ruin/outpost31/recroom)
 "Ms" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
@@ -2183,7 +2183,7 @@
 /area/ruin/outpost31/lootroom)
 "RR" = (
 /obj/structure/closet/cabinet,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /turf/open/floor/wood,
 /area/ruin/outpost31/crewquarters)
 "Sa" = (
@@ -2207,14 +2207,6 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/outpost31/commander_room)
-"Sy" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/structure/sign/poster/random/directional/west,
-/turf/open/floor/iron,
-/area/ruin/outpost31)
 "SB" = (
 /obj/item/surgery_tray/full/deployed,
 /obj/effect/decal/cleanable/blood/old,
@@ -2343,7 +2335,7 @@
 /turf/open/floor/wood,
 /area/ruin/outpost31/kennel)
 "Vc" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/item/storage/cans,
 /turf/open/floor/wood,
 /area/ruin/outpost31/commander_room)
@@ -2371,7 +2363,7 @@
 "Vz" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/outpost31/kitchendiningroom)
 "VA" = (
@@ -2428,7 +2420,7 @@
 /area/ruin/outpost31/kennel)
 "Wc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
@@ -3575,7 +3567,7 @@ Tx
 cp
 Ht
 cp
-Sy
+FH
 cp
 YK
 Uy

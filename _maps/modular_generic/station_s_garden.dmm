@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "f" = (
-/obj/structure/flora/bush/jungle/a/style_2{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 10;
 	pixel_x = 4
 	},
@@ -33,7 +33,7 @@
 /turf/open/floor/grass,
 /area/template_noop)
 "B" = (
-/obj/structure/flora/bush/flowers_br/style_2{
+/obj/structure/flora/bush/style_random{
 	pixel_x = 6
 	},
 /obj/item/plant_analyzer{
@@ -58,7 +58,7 @@
 /turf/open/floor/iron/terracotta/small,
 /area/template_noop)
 "H" = (
-/obj/structure/flora/bush/jungle/b/style_2,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/dirt/station,
 /area/template_noop)
 "I" = (
@@ -84,7 +84,7 @@
 /turf/open/misc/dirt/station,
 /area/template_noop)
 "Q" = (
-/obj/structure/flora/bush/flowers_br/style_3{
+/obj/structure/flora/bush/style_random{
 	pixel_x = 4
 	},
 /turf/open/floor/grass,
@@ -103,7 +103,7 @@
 /obj/item/cultivator/rake{
 	pixel_x = 6
 	},
-/obj/structure/flora/bush/sparsegrass/style_2,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/dirt/station,
 /area/template_noop)
 "Y" = (

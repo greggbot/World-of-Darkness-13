@@ -344,7 +344,7 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "br" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/chair/office{
 	dir = 8
 	},
@@ -354,7 +354,7 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/escape)
 "bt" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/chair/office{
 	dir = 4
 	},
@@ -463,7 +463,7 @@
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "iy" = (
@@ -474,7 +474,7 @@
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "jO" = (
@@ -492,11 +492,11 @@
 /area/shuttle/escape)
 "kE" = (
 /obj/structure/reagent_dispensers/fueltank,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "lt" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/item/kirbyplants/organic/plant22,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
@@ -511,7 +511,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "np" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/item/kirbyplants/organic/plant11,
 /obj/effect/turf_decal/tile/green/anticorner/contrasted,
@@ -525,7 +525,7 @@
 /obj/effect/turf_decal/tile/green/anticorner/contrasted{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "rq" = (
@@ -536,7 +536,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "wZ" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "xt" = (
@@ -573,7 +573,7 @@
 /obj/structure/table,
 /obj/item/storage/bag/tray,
 /obj/item/clothing/under/suit/waiter,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/cafeteria,
 /area/shuttle/escape)
 "Uu" = (

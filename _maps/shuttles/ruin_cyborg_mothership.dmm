@@ -72,11 +72,11 @@
 "fB" = (
 /obj/structure/sign/warning/vacuum/external/directional/west,
 /obj/structure/closet/emcloset/anchored,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/ruin/cyborg_mothership)
 "gG" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/power/solar_control{
 	dir = 4;
 	name = "Primary Solar Control"
@@ -100,7 +100,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/ruin/cyborg_mothership)
 "hB" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plating,
 /area/shuttle/ruin/cyborg_mothership)
@@ -331,7 +331,7 @@
 	lighting = 0
 	},
 /obj/effect/mapping_helpers/apc/unlocked,
-/obj/machinery/light/cold/no_nightlight/directional/south,
+/obj/machinery/light/cold/no_nightlight/directional/north,
 /turf/open/floor/circuit/airless,
 /area/shuttle/ruin/cyborg_mothership)
 "qV" = (
@@ -409,7 +409,7 @@
 /turf/open/floor/circuit/green/airless,
 /area/shuttle/ruin/cyborg_mothership)
 "vL" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/conveyor{
 	dir = 8;
 	id = "mothership_main"
@@ -869,7 +869,7 @@
 	pixel_y = 3
 	},
 /obj/item/storage/toolbox/mechanical,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/item/multitool,
 /turf/open/floor/plating/airless,
 /area/shuttle/ruin/cyborg_mothership)

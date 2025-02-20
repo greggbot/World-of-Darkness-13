@@ -19,7 +19,7 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "ea" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
 "ee" = (
@@ -95,7 +95,7 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "lk" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/loading_area,
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=2";
@@ -108,7 +108,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
 "lA" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "mm" = (
@@ -218,7 +218,7 @@
 	dir = 8
 	},
 /obj/structure/ladder,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -240,10 +240,6 @@
 "Es" = (
 /turf/open/misc/asteroid,
 /area/station/asteroid)
-"Fl" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "FO" = (
 /obj/effect/landmark/generic_maintenance_landmark,
 /turf/open/misc/asteroid,
@@ -263,10 +259,6 @@
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
-"IT" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Ji" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -321,8 +313,8 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/crew_quarters/dorms)
 "Pd" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/machinery/light/small/directional/south,
+/obj/structure/flora/bush/style_random,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "PA" = (
@@ -364,10 +356,6 @@
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
-"Uw" = (
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Vh" = (
 /obj/item/stack/ore/glass,
 /turf/open/misc/asteroid,
@@ -664,7 +652,7 @@ LS
 LS
 "}
 (9,1,1) = {"
-Fl
+lA
 LS
 LS
 LS
@@ -769,7 +757,7 @@ LS
 LS
 "}
 (12,1,1) = {"
-Fl
+lA
 LS
 LS
 LS
@@ -804,7 +792,7 @@ LS
 LS
 "}
 (13,1,1) = {"
-IT
+lA
 LS
 LS
 LS
@@ -874,7 +862,7 @@ LS
 LS
 "}
 (15,1,1) = {"
-Fl
+lA
 ge
 ge
 LS
@@ -911,7 +899,7 @@ LS
 (16,1,1) = {"
 ge
 lA
-Fl
+lA
 LS
 LS
 LS
@@ -944,9 +932,9 @@ LS
 LS
 "}
 (17,1,1) = {"
-Uw
+lA
 ge
-Fl
+lA
 LS
 LS
 LS
@@ -979,9 +967,9 @@ LS
 LS
 "}
 (18,1,1) = {"
-IT
+lA
 ge
-Uw
+lA
 ge
 LS
 LS
@@ -1014,9 +1002,9 @@ LS
 LS
 "}
 (19,1,1) = {"
-Fl
+lA
 ge
-IT
+lA
 Oi
 Oi
 Oi
@@ -1085,8 +1073,8 @@ LS
 "}
 (21,1,1) = {"
 lA
-Fl
-IT
+lA
+lA
 ge
 Es
 Es
@@ -1119,8 +1107,8 @@ LS
 LS
 "}
 (22,1,1) = {"
-Uw
-Fl
+lA
+lA
 ge
 lA
 ge
@@ -1154,11 +1142,11 @@ LS
 LS
 "}
 (23,1,1) = {"
-Uw
+lA
 ge
-Fl
+lA
 ge
-Fl
+lA
 Oi
 Oi
 Oi
@@ -1224,7 +1212,7 @@ LS
 LS
 "}
 (25,1,1) = {"
-IT
+lA
 ge
 Es
 Es
@@ -1259,7 +1247,7 @@ LS
 LS
 "}
 (26,1,1) = {"
-Uw
+lA
 ge
 Es
 Oi
@@ -1294,7 +1282,7 @@ LS
 LS
 "}
 (27,1,1) = {"
-Uw
+lA
 Es
 Oi
 Oi

@@ -724,7 +724,7 @@
 /area/space)
 "AS" = (
 /obj/structure/table,
-/obj/structure/window/reinforced/indestructable{
+/obj/structure/window/reinforced/fulltile/indestructable{
 	dir = 1;
 	icon_state = "rwindow"
 	},
@@ -838,7 +838,7 @@
 /turf/open/floor/plating/umbra,
 /area/space)
 "DW" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/concrete{
 	umbra = 1
 	},
@@ -928,7 +928,7 @@
 	},
 /area/space)
 "GK" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/parquetry/old{
 	umbra = 1
 	},
@@ -1480,7 +1480,7 @@
 /turf/open/floor/plating/vampwood,
 /area/space)
 "Zd" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/sidewalk/rich{
 	umbra = 1
 	},

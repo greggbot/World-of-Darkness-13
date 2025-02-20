@@ -153,7 +153,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "az" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/machinery/status_display/ai/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted{
@@ -184,7 +184,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aF" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/machinery/status_display/evac/directional/south,
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted,
 /turf/open/floor/iron/dark,
@@ -254,7 +254,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/chair/comfy/shuttle,
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
@@ -280,7 +280,7 @@
 	},
 /area/shuttle/escape)
 "aU" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/machinery/status_display/evac/directional/north,
 /obj/structure/table/optable,
 /obj/item/surgical_drapes,
@@ -709,7 +709,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "bY" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
@@ -796,7 +796,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "cq" = (
@@ -834,7 +834,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "cw" = (
@@ -1163,7 +1163,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
@@ -1244,7 +1244,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "ds" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/item/radio/intercom/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -1366,7 +1366,7 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "dK" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "dL" = (
@@ -1617,7 +1617,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 8
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Rw" = (
@@ -1633,7 +1633,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 4
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Ub" = (

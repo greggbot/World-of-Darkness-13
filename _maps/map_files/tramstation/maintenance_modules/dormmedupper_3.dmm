@@ -1,10 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ca" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
-"ci" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "cm" = (
@@ -22,7 +18,7 @@
 /turf/open/misc/asteroid,
 /area/station/maintenance/department/crew_quarters/dorms)
 "fh" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/railing{
 	dir = 1
 	},
@@ -35,20 +31,13 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/crew_quarters/dorms)
 "fQ" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "gd" = (
 /obj/item/stack/ore/glass,
 /turf/open/misc/asteroid,
 /area/station/maintenance/department/crew_quarters/dorms)
-"gm" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/grass,
-/area/station/asteroid)
 "gn" = (
 /turf/closed/wall/rock/porous,
 /area/station/maintenance/department/medical)
@@ -199,25 +188,17 @@
 /turf/template_noop,
 /area/template_noop)
 "zk" = (
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/grass,
-/area/station/asteroid)
-"AG" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "BU" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
-"Cp" = (
-/obj/structure/flora/bush/grassy,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "Cz" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/machinery/light/small/directional/south,
+/obj/structure/flora/bush/style_random,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "CI" = (
@@ -256,10 +237,6 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/crew_quarters/dorms)
-"GE" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "GW" = (
 /turf/closed/wall,
 /area/station/maintenance/department/crew_quarters/dorms)
@@ -291,12 +268,12 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "KO" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
 "LO" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/loading_area,
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=2";
@@ -317,7 +294,7 @@
 	dir = 8
 	},
 /obj/structure/ladder,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -334,7 +311,7 @@
 /turf/open/floor/grass,
 /area/station/asteroid)
 "NX" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "Py" = (
@@ -354,7 +331,7 @@
 /turf/closed/wall/rust,
 /area/station/maintenance/department/crew_quarters/dorms)
 "Qt" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/basic/butterfly,
 /turf/open/floor/grass,
 /area/station/asteroid)
@@ -726,7 +703,7 @@ ym
 ym
 "}
 (9,1,1) = {"
-AG
+ca
 ym
 ym
 ym
@@ -761,7 +738,7 @@ ym
 ym
 "}
 (10,1,1) = {"
-ci
+ca
 ym
 ym
 ym
@@ -796,7 +773,7 @@ ym
 ym
 "}
 (11,1,1) = {"
-ci
+ca
 ym
 ym
 ym
@@ -831,7 +808,7 @@ ym
 ym
 "}
 (12,1,1) = {"
-AG
+ca
 ym
 ym
 ym
@@ -866,7 +843,7 @@ ym
 ym
 "}
 (13,1,1) = {"
-GE
+ca
 ym
 ym
 ym
@@ -936,7 +913,7 @@ ym
 ym
 "}
 (15,1,1) = {"
-AG
+ca
 Ms
 rO
 ym
@@ -972,8 +949,8 @@ ym
 "}
 (16,1,1) = {"
 rO
-gm
-AG
+fh
+ca
 ym
 ym
 ym
@@ -1006,7 +983,7 @@ ym
 ym
 "}
 (17,1,1) = {"
-Cp
+ca
 Ms
 Qt
 ym
@@ -1041,9 +1018,9 @@ ym
 ym
 "}
 (18,1,1) = {"
-GE
+ca
 Ms
-Cp
+ca
 rO
 ym
 ht
@@ -1076,18 +1053,18 @@ ym
 ym
 "}
 (19,1,1) = {"
-AG
+ca
 Ms
-GE
+ca
 vg
-ci
+ca
 rO
 rO
 rO
 rO
-Cp
+ca
 BU
-AG
+ca
 GW
 Iz
 kx
@@ -1111,18 +1088,18 @@ ym
 ym
 "}
 (20,1,1) = {"
-ci
+ca
 Ms
 Cz
 pB
 zk
-AG
-AG
-AG
+ca
+ca
+ca
 rO
-AG
-AG
-AG
+ca
+ca
+ca
 GW
 Mq
 sk
@@ -1146,14 +1123,14 @@ ym
 ym
 "}
 (21,1,1) = {"
-ci
+ca
 fh
-GE
+ca
 rO
 rO
 BU
 BU
-AG
+ca
 rO
 NE
 rO
@@ -1181,16 +1158,16 @@ ym
 ym
 "}
 (22,1,1) = {"
-Cp
+ca
 fh
 rO
-ci
+ca
 rO
 rO
 rO
-ci
+ca
 rO
-AG
+ca
 rO
 ca
 GW
@@ -1216,16 +1193,16 @@ ym
 ym
 "}
 (23,1,1) = {"
-Cp
+ca
 Ms
-AG
+ca
 rO
-AG
+ca
 rO
 rO
 rO
-AG
-AG
+ca
+ca
 BU
 NX
 GW
@@ -1251,19 +1228,19 @@ ym
 ym
 "}
 (24,1,1) = {"
-ci
+ca
 Ms
 rO
 rO
 rO
-AG
-AG
+ca
+ca
 rO
 rO
 rO
-AG
-AG
-AG
+ca
+ca
+ca
 rO
 rO
 wq
@@ -1286,7 +1263,7 @@ ym
 ym
 "}
 (25,1,1) = {"
-GE
+ca
 Ms
 rO
 rO
@@ -1297,8 +1274,8 @@ rO
 rO
 rO
 oy
-AG
-AG
+ca
+ca
 rO
 ca
 GW
@@ -1321,9 +1298,9 @@ ym
 ym
 "}
 (26,1,1) = {"
-Cp
+ca
 Ms
-AG
+ca
 rO
 cs
 cs
@@ -1331,10 +1308,10 @@ jc
 ym
 ym
 cs
-ci
+ca
 rO
 rO
-Cp
+ca
 rO
 cs
 cs
@@ -1356,7 +1333,7 @@ ym
 ym
 "}
 (27,1,1) = {"
-Cp
+ca
 Ms
 cs
 rO

@@ -191,7 +191,7 @@
 "DZ" = (
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/catwalk_floor{
 	initial_gas_mix = "TEMP=2.7"
 	},
@@ -208,7 +208,7 @@
 "EO" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/catwalk_floor{
 	initial_gas_mix = "TEMP=2.7"
 	},

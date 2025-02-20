@@ -93,7 +93,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "fH" = (
-/obj/machinery/light/cold/directional/south,
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "fL" = (
@@ -104,7 +104,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "gl" = (
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "go" = (
@@ -223,7 +223,7 @@
 /area/shuttle/escape)
 "jR" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/cold/directional/west,
+/obj/machinery/light/cold/directional/east,
 /turf/open/floor/mineral/titanium/purple,
 /area/shuttle/escape)
 "kL" = (
@@ -427,7 +427,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "yV" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "zh" = (
@@ -595,7 +595,7 @@
 /obj/structure/closet/crate{
 	name = "lifejackets"
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "DP" = (
@@ -812,7 +812,7 @@
 	pixel_y = 9
 	},
 /obj/structure/fireaxecabinet/directional/east,
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/mineral/titanium/purple,
 /area/shuttle/escape)
 "OK" = (
@@ -824,7 +824,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "Pd" = (
@@ -975,7 +975,7 @@
 /obj/machinery/vending/wallmed/directional/east{
 	name = "Hooper's First Medical Kit"
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "YB" = (

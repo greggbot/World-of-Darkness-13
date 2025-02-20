@@ -81,7 +81,7 @@
 "gv" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 8
 	},
@@ -91,7 +91,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/emergency,
 /obj/item/wrench,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
@@ -139,7 +139,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/closet/syndicate{
 	anchored = 1
 	},
@@ -165,7 +165,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "oW" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/button/door/directional/west{
 	id = "caravansyndicate3_bolt_port";
 	name = "External Bolt Control";
@@ -180,7 +180,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "rQ" = (
@@ -239,7 +239,7 @@
 /area/shuttle/ruin/caravan/syndicate3)
 "zB" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/mapping_helpers/apc/syndicate_access,
 /obj/effect/decal/cleanable/dirt,
@@ -328,7 +328,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/syndicate{
@@ -339,7 +339,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/ruin/caravan/syndicate3)
 "JT" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/button/door/directional/west{
 	id = "caravansyndicate3_bolt_starboard";
 	name = "External Bolt Control";

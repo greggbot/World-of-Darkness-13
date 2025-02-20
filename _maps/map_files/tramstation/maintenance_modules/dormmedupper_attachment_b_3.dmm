@@ -48,7 +48,7 @@
 /obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/spawner/random/food_or_drink/cups,
 /obj/effect/spawner/random/entertainment/lighter,
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/misc/asteroid,
 /area/station/asteroid)
 "s" = (
@@ -102,7 +102,7 @@
 /area/station/asteroid)
 "I" = (
 /obj/effect/spawner/random/food_or_drink/booze,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/misc/asteroid,
 /area/station/asteroid)
 "J" = (

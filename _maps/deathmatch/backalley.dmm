@@ -14,7 +14,7 @@
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
 "cF" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
 "cH" = (
@@ -142,7 +142,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "jy" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/mystery_box/tdome{
 	pixel_y = 0
 	},
@@ -156,7 +156,7 @@
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
 "kU" = (
-/obj/machinery/light/cold/directional/west,
+/obj/machinery/light/cold/directional/east,
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "mg" = (
@@ -315,7 +315,7 @@
 	pixel_y = 9;
 	pixel_x = -5
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/indestructible/stone,
 /area/deathmatch)
 "Ce" = (
@@ -499,7 +499,7 @@
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
 "PP" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/indestructible/stone,
 /area/deathmatch)
 "Qa" = (
@@ -579,7 +579,7 @@
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
 "Yg" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/stone,
 /area/deathmatch)
 "YU" = (

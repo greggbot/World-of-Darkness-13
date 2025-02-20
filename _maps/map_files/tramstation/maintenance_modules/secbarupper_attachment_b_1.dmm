@@ -72,7 +72,7 @@
 /area/station/maintenance/department/security)
 "O" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/table,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/security)

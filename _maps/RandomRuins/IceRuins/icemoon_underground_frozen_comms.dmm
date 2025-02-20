@@ -12,7 +12,7 @@
 /area/icemoon/underground/explored)
 "cv" = (
 /obj/structure/flora/rock/pile/icy/style_random,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/ruin/powered/shuttle)
 "cH" = (
@@ -217,7 +217,7 @@
 	pixel_y = 4
 	},
 /obj/item/toy/crayon/spraycan,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/showroomfloor{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -238,7 +238,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/button/door/directional/north{
 	id = "ice_comms_car";
 	name = "Garage Door Button";
@@ -250,7 +250,7 @@
 /area/ruin/powered/shuttle)
 "FK" = (
 /mob/living/basic/mining/wolf,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/shuttle)
 "FP" = (
@@ -263,7 +263,7 @@
 "Gl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/dresser,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /turf/open/floor/iron/grimy{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -312,11 +312,11 @@
 /obj/structure/rack,
 /obj/item/wrench,
 /obj/item/crowbar/large/twenty_force,
-/obj/machinery/light/small/built/directional/south,
+/obj/machinery/light/small/built/directional/north,
 /turf/open/floor/plating/icemoon,
 /area/ruin/powered/shuttle)
 "Kr" = (
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/shuttle)
 "Ly" = (
@@ -385,7 +385,7 @@
 	},
 /area/ruin/powered/shuttle)
 "SR" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/shuttle)
 "Tz" = (
@@ -412,7 +412,7 @@
 /obj/structure/frame/computer{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/showroomfloor{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},

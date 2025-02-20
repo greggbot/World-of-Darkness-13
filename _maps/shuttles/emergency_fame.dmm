@@ -31,7 +31,7 @@
 /area/shuttle/escape)
 "bG" = (
 /obj/machinery/space_heater,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bR" = (
@@ -145,7 +145,7 @@
 "hg" = (
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "it" = (
@@ -292,7 +292,7 @@
 /obj/item/radio,
 /obj/structure/closet,
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "mn" = (
@@ -378,7 +378,7 @@
 /area/shuttle/escape)
 "pg" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "px" = (
@@ -497,7 +497,7 @@
 /area/shuttle/escape)
 "vP" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "vT" = (
@@ -522,7 +522,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "wv" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/table/wood/fancy/royalblue,
 /obj/effect/spawner/random/decoration/statue,
 /turf/open/floor/carpet/black,
@@ -581,7 +581,7 @@
 /turf/open/floor/fakebasalt,
 /area/shuttle/escape/brig)
 "yy" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/table/wood/fancy/royalblue,
 /obj/effect/spawner/random/decoration/statue,
 /turf/open/floor/carpet/black,
@@ -637,7 +637,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "AA" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/glass/reinforced,
 /area/shuttle/escape)
 "AS" = (
@@ -692,7 +692,7 @@
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "Ei" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/glass/reinforced,
 /area/shuttle/escape)
 "EF" = (
@@ -737,7 +737,7 @@
 	pixel_y = 4;
 	use_power = 0
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "GU" = (
@@ -749,13 +749,13 @@
 "Hy" = (
 /obj/structure/table,
 /obj/item/storage/box/handcuffs,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "HS" = (
 /obj/structure/table/optable,
 /obj/item/surgical_drapes,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/defibrillator_mount/directional/west,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
@@ -872,7 +872,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "Oa" = (
@@ -965,7 +965,7 @@
 /turf/open/floor/carpet/red,
 /area/shuttle/escape)
 "Ty" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Uu" = (
@@ -1005,7 +1005,7 @@
 /area/shuttle/escape)
 "Xl" = (
 /obj/item/kirbyplants/organic/plant16,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Xr" = (
@@ -1019,7 +1019,7 @@
 "XW" = (
 /obj/structure/closet/firecloset,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Yp" = (

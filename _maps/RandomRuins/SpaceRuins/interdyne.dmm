@@ -23,7 +23,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "bE" = (
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "bV" = (
@@ -36,7 +36,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ca" = (
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/interdyne)
 "ck" = (
@@ -152,7 +152,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/machinery/light/cold/no_nightlight/directional/south,
+/obj/machinery/light/cold/no_nightlight/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/interdyne)
 "gV" = (
@@ -176,7 +176,7 @@
 /area/ruin/space/has_grav/interdyne)
 "hG" = (
 /obj/structure/table/wood,
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "iv" = (
@@ -220,7 +220,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "kl" = (
-/obj/machinery/light/blacklight/directional/west,
+/obj/machinery/light/blacklight/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "kp" = (
@@ -418,7 +418,7 @@
 "ri" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/interdyne)
 "rr" = (
@@ -433,7 +433,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "rL" = (
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "rQ" = (
@@ -468,7 +468,7 @@
 	dir = 1;
 	pipe_color = "#0000FF"
 	},
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /turf/open/floor/engine/air,
 /area/ruin/space/has_grav/interdyne)
 "tx" = (
@@ -587,7 +587,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/interdyne)
 "zX" = (
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
@@ -617,7 +617,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/cold/no_nightlight/directional/south,
+/obj/machinery/light/cold/no_nightlight/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "AN" = (
@@ -642,7 +642,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "Bk" = (
-/obj/machinery/light/blacklight/directional/west,
+/obj/machinery/light/blacklight/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -662,13 +662,13 @@
 /area/ruin/space/has_grav/interdyne)
 "BZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "Ci" = (
 /obj/effect/mob_spawn/corpse/human/syndicatecommando/lessenedgear,
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/interdyne)
 "DA" = (
@@ -680,7 +680,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/interdyne)
 "DL" = (
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /obj/machinery/chem_heater/withbuffer,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
@@ -697,7 +697,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "Ei" = (
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/mineral/plastitanium,
@@ -775,16 +775,16 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/interdyne)
 "GY" = (
-/obj/machinery/light/cold/no_nightlight/directional/north,
+/obj/machinery/light/cold/no_nightlight/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "HP" = (
 /obj/item/pizzabox,
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "HQ" = (
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/interdyne)
 "Id" = (
@@ -822,7 +822,7 @@
 /obj/item/stack/sheet/mineral/silver{
 	amount = 25
 	},
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/interdyne)
 "Jo" = (
@@ -874,7 +874,7 @@
 /area/ruin/space/has_grav/interdyne)
 "Kv" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/interdyne)
@@ -931,7 +931,7 @@
 "MB" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/light/blacklight/directional/east,
+/obj/machinery/light/blacklight/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "MJ" = (
@@ -976,7 +976,7 @@
 /obj/structure/fluff/shower_drain,
 /obj/machinery/shower/directional/east,
 /obj/item/soap/syndie,
-/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/light/blacklight/directional/south,
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/interdyne)
 "NV" = (
@@ -1112,7 +1112,7 @@
 /area/ruin/space/has_grav/interdyne)
 "SC" = (
 /obj/machinery/chem_heater/withbuffer,
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/interdyne)
 "SE" = (
@@ -1297,7 +1297,7 @@
 /area/ruin/space/has_grav/interdyne)
 "ZT" = (
 /obj/structure/cable,
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/blacklight/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/mineral/plastitanium,

@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/structure/fluff/fake_camera{
 	dir = 4
 	},
@@ -117,7 +117,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/obj/structure/flora/bush/reed/style_2,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/jungle,
 /area/ruin/syndibiodome)
 "bz" = (
@@ -289,7 +289,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "dk" = (
@@ -332,7 +332,7 @@
 	},
 /obj/structure/closet,
 /obj/item/clothing/under/syndicate/bloodred/sleepytime,
-/obj/structure/sign/poster/contraband/energy_swords/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/ruin/syndibiodome)
 "el" = (
@@ -351,7 +351,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/rock/pile/jungle/style_4,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
@@ -420,7 +420,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/noteleport)
 "fO" = (
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/blood/trails{
 	dir = 10
 	},
@@ -470,7 +470,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/obj/structure/flora/bush/reed/style_4{
+/obj/structure/flora/bush/style_random{
 	pixel_x = 3;
 	pixel_y = 2
 	},
@@ -557,7 +557,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 9
 	},
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "hF" = (
@@ -674,17 +674,17 @@
 /turf/open/floor/iron/cafeteria,
 /area/ruin/syndibiodome)
 "iH" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/leafy,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/marker_beacon/lime,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
-/obj/structure/flora/bush/large{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -4
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
@@ -701,7 +701,7 @@
 "iS" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/end,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/donk_co/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/white/small,
 /area/ruin/syndibiodome)
 "iV" = (
@@ -753,7 +753,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "jp" = (
-/obj/structure/flora/bush/jungle/a/style_2,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "jv" = (
@@ -805,7 +805,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /obj/item/food/popcorn/salty{
 	pixel_x = -4;
 	pixel_y = 8
@@ -849,7 +849,7 @@
 "kq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 1
 	},
@@ -893,7 +893,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 10
 	},
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "kJ" = (
@@ -940,7 +940,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "la" = (
@@ -971,7 +971,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
-/obj/machinery/light/small/red/directional/south,
+/obj/machinery/light/small/red/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/ruin/syndibiodome)
@@ -1091,7 +1091,7 @@
 /area/ruin/syndibiodome)
 "nP" = (
 /obj/effect/turf_decal/weather/dirt,
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "oc" = (
@@ -1150,7 +1150,7 @@
 /obj/effect/turf_decal/trimline/dark_blue/line{
 	dir = 8
 	},
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/basic/gorilla/hostile,
@@ -1222,7 +1222,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "pE" = (
@@ -1253,7 +1253,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/syndibiodome)
 "qh" = (
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/dark_red/line{
 	dir = 8
@@ -1336,8 +1336,8 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "qV" = (
-/obj/structure/flora/bush/flowers_yw/style_3,
-/obj/structure/flora/bush/flowers_br/style_3,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "rs" = (
@@ -1352,7 +1352,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/machinery/digital_clock/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
@@ -1386,7 +1386,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "sD" = (
@@ -1457,7 +1457,7 @@
 /obj/effect/turf_decal/trimline/dark_red/line{
 	dir = 8
 	},
-/obj/structure/sign/poster/contraband/gorlex_recruitment/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "tq" = (
@@ -1636,7 +1636,7 @@
 /obj/structure/chair/sofa/bench{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark{
@@ -1666,10 +1666,6 @@
 	dir = 10
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/ruin/syndibiodome)
-"vu" = (
-/obj/structure/flora/bush/flowers_br/style_3,
-/turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "vw" = (
 /obj/effect/turf_decal/trimline/neutral/line{
@@ -1850,7 +1846,7 @@
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 8
 	},
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/gibspawner/human/bodypartless,
@@ -1886,7 +1882,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "xi" = (
@@ -2014,7 +2010,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/floor,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
@@ -2030,7 +2026,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/obj/structure/flora/bush/flowers_br/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/blood/trails{
 	dir = 5
 	},
@@ -2139,7 +2135,7 @@
 	dir = 8
 	},
 /obj/structure/tank_dispenser/oxygen,
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/machinery/digital_clock/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
@@ -2150,7 +2146,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "zy" = (
@@ -2260,7 +2256,7 @@
 /obj/machinery/computer{
 	dir = 4
 	},
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "AI" = (
@@ -2302,13 +2298,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
-"Bl" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 10
-	},
-/obj/structure/flora/bush/jungle/a/style_2,
-/turf/open/floor/grass,
-/area/ruin/syndibiodome)
 "Bo" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/effect/decal/cleanable/blood/footprints,
@@ -2327,11 +2316,11 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/obj/structure/flora/bush/flowers_yw/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "Bw" = (
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/turf_decal/trimline/dark_red/corner{
 	dir = 2
 	},
@@ -2348,7 +2337,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/footprints,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "Ct" = (
@@ -2507,9 +2496,9 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/machinery/chem_master,
-/obj/structure/sign/poster/contraband/communist_state/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/white/small,
 /area/ruin/syndibiodome)
 "EE" = (
@@ -2576,7 +2565,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/rock/pile/jungle,
 /obj/structure/fluff/fake_camera{
 	dir = 10
@@ -2618,8 +2607,8 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/obj/structure/flora/bush/flowers_yw/style_3,
-/obj/structure/flora/bush/flowers_br/style_3,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/tree/jungle/small/style_6{
 	pixel_x = -33;
 	pixel_y = -6
@@ -2662,7 +2651,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/free_key/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Gm" = (
@@ -2741,8 +2730,8 @@
 /turf/open/floor/carpet/black,
 /area/ruin/syndibiodome)
 "Hs" = (
-/obj/structure/flora/bush/flowers_br/style_3,
-/obj/structure/flora/bush/flowers_yw/style_3,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/gibspawner/human/bodypartless,
 /obj/effect/mob_spawn/corpse/human/syndicatecommando/lessenedgear,
 /turf/open/floor/grass,
@@ -2910,7 +2899,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "JC" = (
@@ -2920,7 +2909,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/machinery/door/poddoor/shutters/window/indestructible/preopen{
 	name = "Syndicate Biodome Kitchen Shutters";
 	id = "bdomekitch"
@@ -3087,7 +3076,7 @@
 /obj/item/polymorph_belt/functioning,
 /obj/item/pen/edagger,
 /obj/item/clothing/under/costume/schoolgirl/red,
-/obj/structure/sign/poster/contraband/communist_state/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/carpet/green,
 /area/ruin/syndibiodome)
 "Lm" = (
@@ -3110,7 +3099,7 @@
 /area/ruin/syndibiodome)
 "Ly" = (
 /obj/structure/aquarium/prefilled,
-/obj/structure/sign/poster/contraband/blood_geometer/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)
@@ -3225,7 +3214,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/ruin/syndibiodome)
 "Mr" = (
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/syndibiodome)
@@ -3238,7 +3227,7 @@
 	pixel_x = 5;
 	pixel_y = 3
 	},
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/structure/fluff/fake_camera{
 	dir = 4
 	},
@@ -3317,18 +3306,18 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndibiodome)
 "Nj" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/leafy,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/marker_beacon/lime,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
-/obj/structure/flora/bush/large{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -4
 	},
 /turf/open/floor/iron/dark/textured,
@@ -3369,7 +3358,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "NE" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/machinery/vending/dinnerware,
 /obj/effect/turf_decal/siding/thinplating_new/dark/end{
 	dir = 1
@@ -3377,8 +3366,8 @@
 /turf/open/floor/iron/white/small,
 /area/ruin/syndibiodome)
 "NH" = (
-/obj/structure/flora/bush/flowers_pp/style_3,
-/obj/structure/flora/bush/flowers_yw,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
@@ -3448,7 +3437,7 @@
 	},
 /obj/structure/closet/syndicate,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/item/storage/belt/security/webbing,
 /obj/item/gun/ballistic/automatic/pistol/contraband,
 /obj/item/ammo_box/magazine/m9mm,
@@ -3462,7 +3451,7 @@
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/dark/corner,
-/obj/structure/sign/poster/contraband/free_drone/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
@@ -3537,7 +3526,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "PM" = (
@@ -3628,7 +3617,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/item/bodypart/head/monkey,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/effect/decal/cleanable/dirt,
@@ -3652,7 +3641,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/obj/structure/flora/bush/flowers_yw/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "RH" = (
@@ -3693,7 +3682,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
@@ -3705,7 +3694,7 @@
 /area/ruin/syndibiodome)
 "Ss" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 8
 	},
@@ -3792,13 +3781,6 @@
 	dir = 5
 	},
 /turf/open/floor/iron/dark,
-/area/ruin/syndibiodome)
-"SS" = (
-/obj/effect/turf_decal/weather/dirt{
-	dir = 9
-	},
-/obj/structure/flora/bush/flowers_br/style_3,
-/turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "ST" = (
 /obj/structure/flora/grass/jungle/a/style_random,
@@ -3927,7 +3909,7 @@
 /obj/item/stack/sheet/mineral/uranium/five,
 /obj/item/stack/sheet/mineral/uranium/five,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/syndibiodome)
 "TL" = (
@@ -3964,7 +3946,7 @@
 /turf/open/floor/carpet/green,
 /area/ruin/syndibiodome)
 "Ug" = (
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/floor,
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
@@ -4077,7 +4059,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/obj/structure/flora/bush/flowers_pp/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/blood/trails{
 	dir = 8
 	},
@@ -4136,7 +4118,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "VG" = (
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/ruin/syndibiodome)
 "VJ" = (
@@ -4162,7 +4144,7 @@
 /area/ruin/syndibiodome)
 "VK" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 1
 	},
@@ -4253,11 +4235,6 @@
 /mob/living/basic/gorilla/hostile,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
-"XG" = (
-/obj/effect/turf_decal/weather/dirt,
-/obj/structure/flora/bush/flowers_pp/style_2,
-/turf/open/floor/grass,
-/area/ruin/syndibiodome)
 "XM" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -4315,13 +4292,9 @@
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
-"Yz" = (
-/obj/structure/flora/bush/flowers_pp/style_3,
-/turf/open/floor/grass,
-/area/ruin/syndibiodome)
 "YD" = (
-/obj/structure/flora/bush/flowers_yw/style_3,
-/obj/structure/flora/bush/jungle/c/style_2{
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random{
 	pixel_x = -11;
 	pixel_y = -6
 	},
@@ -4408,11 +4381,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
-"Zf" = (
-/obj/structure/flora/bush/flowers_yw/style_3,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/ruin/syndibiodome)
 "Zp" = (
 /obj/effect/decal/cleanable/blood/trails{
 	dir = 4
@@ -4445,7 +4413,7 @@
 /turf/open/floor/stone/icemoon,
 /area/icemoon/surface/outdoors/noteleport)
 "ZT" = (
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/turf_decal/trimline/purple/line{
 	dir = 6
 	},
@@ -5372,12 +5340,12 @@ FE
 zF
 Ml
 WB
-SS
+RG
 jp
 Hs
-Yz
-Yz
-Bl
+jp
+jp
+di
 WB
 WB
 my
@@ -5424,7 +5392,7 @@ FT
 hf
 Yi
 eH
-Zf
+qV
 di
 qN
 us
@@ -5519,7 +5487,7 @@ xr
 bw
 HB
 yd
-XG
+nP
 Le
 If
 cm
@@ -5560,7 +5528,7 @@ YV
 TC
 Rv
 Bs
-Yz
+jp
 ST
 nP
 nx
@@ -5607,12 +5575,12 @@ PC
 Fl
 qN
 IU
-vu
+jp
 MH
 YD
 Fp
 xz
-vu
+jp
 cN
 qN
 us

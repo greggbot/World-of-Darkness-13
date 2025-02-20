@@ -83,7 +83,7 @@
 /obj/machinery/conveyor_switch/oneway{
 	id = "cargoshuttle"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/button/door/directional/east{
 	id = "QMLoaddoor";
 	name = "Loading Doors";
@@ -137,7 +137,7 @@
 	id = "cargoshuttle";
 	name = "cargo shuttle conveyor belt"
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "C" = (

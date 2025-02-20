@@ -46,7 +46,7 @@
 /turf/open/floor/iron,
 /area/centcom/ctf)
 "bc" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/wood,
 /area/centcom/ctf)
@@ -62,7 +62,7 @@
 /turf/open/floor/iron,
 /area/centcom/ctf)
 "bg" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass,
 /area/centcom/ctf)
 "bs" = (
@@ -189,7 +189,7 @@
 /area/centcom/ctf)
 "ev" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/centcom/ctf)
 "ey" = (
@@ -234,11 +234,6 @@
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/centcom/ctf)
-"fn" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/random/directional/north,
-/turf/open/floor/plating,
 /area/centcom/ctf)
 "fw" = (
 /obj/effect/turf_decal/trimline/red/line{
@@ -450,7 +445,7 @@
 /area/centcom/ctf)
 "je" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/eighties,
 /area/centcom/ctf)
 "jf" = (
@@ -586,11 +581,6 @@
 /obj/item/ctf_flag/blue,
 /turf/open/floor/circuit/green/anim,
 /area/centcom/ctf)
-"lL" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/structure/sign/poster/random/directional/north,
-/turf/open/floor/eighties,
-/area/centcom/ctf)
 "lT" = (
 /obj/structure/rack{
 	resistance_flags = 64
@@ -663,7 +653,7 @@
 /turf/open/floor/iron,
 /area/centcom/ctf)
 "ok" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron,
 /area/centcom/ctf)
@@ -895,7 +885,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "ve" = (
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/centcom/ctf)
 "vo" = (
@@ -929,16 +919,11 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/ctf)
-"wx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/random/directional/east,
-/turf/open/floor/plating,
-/area/centcom/ctf)
 "wR" = (
 /obj/effect/turf_decal/trimline/red/line{
 	dir = 1
 	},
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/centcom/ctf)
 "wU" = (
@@ -1070,7 +1055,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/eighties,
 /area/centcom/ctf)
 "zq" = (
@@ -1135,7 +1120,7 @@
 "Ap" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced/ctf,
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/centcom/ctf)
 "Av" = (
@@ -1158,11 +1143,6 @@
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/centcom/ctf)
-"AL" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/random/directional/south,
-/turf/open/floor/plating,
 /area/centcom/ctf)
 "AR" = (
 /obj/effect/turf_decal/trimline/red/line{
@@ -1195,7 +1175,7 @@
 /area/centcom/ctf)
 "BK" = (
 /obj/effect/turf_decal/stripes/corner,
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
@@ -1364,10 +1344,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/centcom/ctf)
-"Ew" = (
-/obj/structure/sign/poster/contraband/random/directional/west,
-/turf/open/floor/plating,
-/area/centcom/ctf)
 "EB" = (
 /obj/machinery/button/door/directional/south{
 	id = "flag1";
@@ -1433,10 +1409,6 @@
 /obj/effect/turf_decal/tile/blue,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
-"Gk" = (
-/obj/structure/sign/poster/contraband/random/directional/north,
-/turf/open/floor/plating,
-/area/centcom/ctf)
 "Gm" = (
 /obj/machinery/door/poddoor/shutters/window{
 	id = "flag2";
@@ -1460,7 +1432,7 @@
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/centcom/ctf)
 "GE" = (
@@ -1520,13 +1492,6 @@
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
-"Ij" = (
-/obj/effect/turf_decal/trimline/red/line{
-	dir = 1
-	},
-/obj/structure/sign/poster/random/directional/north,
-/turf/open/floor/iron,
-/area/centcom/ctf)
 "Il" = (
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 1
@@ -1550,7 +1515,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
@@ -1673,10 +1638,6 @@
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/centcom/ctf)
-"KL" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/misc/grass,
 /area/centcom/ctf)
 "KV" = (
 /obj/effect/turf_decal/siding/white,
@@ -1948,13 +1909,6 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/ctf)
-"Rz" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/structure/sign/poster/random/directional/west,
-/turf/open/floor/eighties,
-/area/centcom/ctf)
 "RD" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible{
 	dir = 4;
@@ -1999,7 +1953,7 @@
 /area/centcom/ctf)
 "Sf" = (
 /obj/effect/turf_decal/siding/wood/corner,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/eighties,
 /area/centcom/ctf)
 "Sg" = (
@@ -2087,7 +2041,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/eighties,
 /area/centcom/ctf)
 "UY" = (
@@ -2736,7 +2690,7 @@ Dd
 BH
 BH
 xs
-wx
+ev
 BH
 BH
 BH
@@ -2750,7 +2704,7 @@ Te
 Te
 Te
 td
-fn
+ev
 xs
 td
 Ll
@@ -3121,7 +3075,7 @@ BH
 BH
 BH
 BH
-AL
+ev
 td
 Te
 Te
@@ -3171,7 +3125,7 @@ BH
 GT
 Sf
 cp
-Rz
+zj
 cp
 zj
 Hf
@@ -3207,7 +3161,7 @@ td
 El
 xs
 td
-lL
+je
 ql
 hU
 ql
@@ -3245,7 +3199,7 @@ td
 Ap
 BH
 td
-lL
+je
 kZ
 xy
 kZ
@@ -3397,7 +3351,7 @@ td
 xs
 BH
 td
-lL
+je
 kZ
 xy
 kZ
@@ -3508,7 +3462,7 @@ Te
 "}
 (33,1,1) = {"
 td
-Gk
+ve
 El
 td
 td
@@ -3537,7 +3491,7 @@ xK
 TD
 td
 El
-AL
+ev
 td
 Te
 Te
@@ -3708,7 +3662,7 @@ Dm
 ql
 hU
 td
-Ij
+wR
 yX
 eC
 kR
@@ -3737,7 +3691,7 @@ Te
 (39,1,1) = {"
 td
 BH
-AL
+ev
 td
 vX
 dO
@@ -3833,14 +3787,14 @@ De
 Kh
 zA
 Mq
-KL
+bg
 Mz
 hg
 Mz
-KL
+bg
 da
 td
-fn
+ev
 GB
 td
 Te
@@ -3909,10 +3863,10 @@ De
 Kh
 zA
 Mq
-KL
+bg
 Mz
 IO
-KL
+bg
 Mz
 da
 td
@@ -3927,7 +3881,7 @@ Te
 (44,1,1) = {"
 td
 GB
-AL
+ev
 td
 MQ
 MQ
@@ -4040,7 +3994,7 @@ Te
 "}
 (47,1,1) = {"
 td
-fn
+ev
 xs
 xs
 SU
@@ -4081,7 +4035,7 @@ td
 BH
 BH
 BH
-AL
+ev
 td
 ag
 ag
@@ -4309,7 +4263,7 @@ Te
 Te
 td
 GB
-AL
+ev
 td
 MU
 MU
@@ -4384,7 +4338,7 @@ Te
 Te
 Te
 td
-fn
+ev
 xs
 td
 Ll
@@ -4445,7 +4399,7 @@ BH
 Dd
 BH
 xs
-Ew
+ve
 BH
 BH
 BH

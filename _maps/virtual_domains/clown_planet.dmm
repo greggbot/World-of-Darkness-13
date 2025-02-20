@@ -4,7 +4,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
@@ -101,7 +101,7 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/white,
 /area/lavaland/surface/outdoors/virtual_domain)
 "eE" = (
@@ -202,7 +202,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/white,
 /area/lavaland/surface/outdoors/virtual_domain)
 "lr" = (
@@ -274,7 +274,7 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
@@ -283,7 +283,7 @@
 /obj/item/coin/bananium,
 /obj/item/coin/bananium,
 /obj/item/coin/bananium,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/carpet,
 /area/lavaland/surface/outdoors/virtual_domain)
 "rh" = (
@@ -302,7 +302,7 @@
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "sq" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
@@ -338,7 +338,7 @@
 /obj/item/coin/bananium,
 /obj/item/coin/bananium,
 /obj/item/coin/bananium,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/carpet,
 /area/lavaland/surface/outdoors/virtual_domain)
 "uX" = (
@@ -360,7 +360,7 @@
 /turf/open/indestructible/white,
 /area/lavaland/surface/outdoors/virtual_domain)
 "wz" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/mapping_helpers/no_lava,
 /mob/living/basic/clown,
 /turf/open/floor/noslip,
@@ -433,7 +433,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/white,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Cs" = (
@@ -500,7 +500,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
@@ -536,7 +536,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
@@ -566,7 +566,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/white,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Nv" = (
@@ -697,7 +697,7 @@
 /turf/closed/wall/r_wall,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Ug" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/carpet,
 /area/lavaland/surface/outdoors/virtual_domain)
 "UL" = (
@@ -768,11 +768,11 @@
 /turf/open/indestructible/white,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Xp" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/indestructible/honk,
 /area/lavaland/surface/outdoors/virtual_domain)
 "XB" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/indestructible/honk,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Yb" = (

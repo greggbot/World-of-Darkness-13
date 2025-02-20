@@ -89,7 +89,7 @@
 "bX" = (
 /obj/structure/table,
 /obj/machinery/gibber,
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /turf/open/floor/iron/checker,
 /area/ruin/huntinglodge)
 "ca" = (
@@ -224,7 +224,7 @@
 "eh" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/wood/tile,
 /area/ruin/huntinglodge)
@@ -380,7 +380,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/wood,
 /area/ruin/huntinglodge)
 "gM" = (
@@ -844,7 +844,7 @@
 "nX" = (
 /obj/structure/table/wood/fancy,
 /obj/item/bodypart/head/ethereal,
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /turf/open/floor/carpet/green,
 /area/ruin/huntinglodge)
 "og" = (
@@ -956,7 +956,7 @@
 	pixel_y = -2
 	},
 /obj/structure/sink/kitchen/directional/west,
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/checker,
 /area/ruin/huntinglodge)
 "pX" = (
@@ -1161,7 +1161,7 @@
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/huntinglodge)
 "uZ" = (
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/misc/hay/icemoon,
 /area/ruin/huntinglodge)
 "vc" = (
@@ -1409,7 +1409,7 @@
 	dir = 8
 	},
 /obj/structure/table/wood/fancy/royalblack,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /obj/item/reagent_containers/cup/glass/coffee{
 	pixel_x = -6;
 	pixel_y = 1
@@ -1813,7 +1813,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/light/warm/directional/east,
+/obj/machinery/light/warm/directional/west,
 /obj/structure/table/wood,
 /obj/item/clothing/shoes/winterboots/ice_boots,
 /obj/item/clothing/shoes/winterboots/ice_boots{
@@ -1996,7 +1996,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /obj/effect/decal/cleanable/blood,
 /obj/item/ammo_casing/shotgun/buckshot/spent{
 	pixel_x = 0;
@@ -2313,7 +2313,7 @@
 "Jk" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/noticeboard/directional/north,
-/obj/structure/sign/poster/contraband/blood_geometer/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/table/wood,
 /obj/item/paper{
 	pixel_x = 3;
@@ -2442,7 +2442,7 @@
 /turf/open/floor/wood,
 /area/ruin/huntinglodge)
 "Mf" = (
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/misc/asteroid/snow/icemoon/do_not_chasm,
 /area/ruin/huntinglodge)
 "Mw" = (
@@ -2540,7 +2540,7 @@
 /area/icemoon/surface/outdoors/nospawn)
 "Oa" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/brimdust,
 /turf/open/floor/wood/large,

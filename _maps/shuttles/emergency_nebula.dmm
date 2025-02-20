@@ -29,7 +29,7 @@
 "bF" = (
 /obj/effect/turf_decal/trimline/dark/corner,
 /obj/item/banner/medical/mundane,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/corner,
 /area/shuttle/escape)
 "bV" = (
@@ -64,11 +64,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding,
-/obj/structure/flora/bush/large/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "cQ" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end,
 /turf/open/floor/grass,
@@ -77,13 +77,13 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/flora/bush/sparsegrass/style_2,
-/obj/structure/flora/bush/grassy/style_2,
-/obj/structure/flora/bush/flowers_yw,
-/obj/structure/flora/bush/sunny/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/flora/bush/large/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "cZ" = (
@@ -134,7 +134,7 @@
 	dir = 1
 	},
 /obj/structure/marker_beacon/lime,
-/obj/structure/flora/bush/large,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "fk" = (
@@ -169,10 +169,10 @@
 /turf/open/floor/iron/dark/small,
 /area/shuttle/escape)
 "fD" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -214,7 +214,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "is" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -284,7 +284,7 @@
 /obj/machinery/computer/records/medical{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white/herringbone,
 /area/shuttle/escape)
 "jp" = (
@@ -525,7 +525,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 1
 	},
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "mw" = (
@@ -588,14 +588,6 @@
 	},
 /obj/structure/hedge,
 /turf/open/floor/iron/dark/small,
-/area/shuttle/escape)
-"oj" = (
-/obj/effect/turf_decal/siding{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding,
-/obj/structure/flora/bush/large/style_2,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "om" = (
 /obj/effect/turf_decal/stripes/line{
@@ -661,7 +653,7 @@
 	dir = 8
 	},
 /obj/item/banner/security/mundane,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
@@ -694,7 +686,7 @@
 "pe" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/escape)
 "pg" = (
@@ -753,7 +745,7 @@
 	dir = 10
 	},
 /obj/machinery/camera/directional/north,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "pU" = (
@@ -773,7 +765,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "qJ" = (
@@ -791,15 +783,6 @@
 	dir = 1
 	},
 /area/shuttle/escape)
-"ri" = (
-/obj/effect/turf_decal/siding,
-/obj/effect/turf_decal/siding{
-	dir = 1
-	},
-/obj/structure/marker_beacon/lime,
-/obj/structure/flora/bush/large/style_3,
-/turf/open/floor/grass,
-/area/shuttle/escape)
 "rm" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
@@ -808,7 +791,7 @@
 /obj/machinery/vending/wallmed/directional/east{
 	use_power = 0
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "rF" = (
@@ -1258,12 +1241,12 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 6
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "BC" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/status_display/evac/directional/north,
 /obj/item/radio/intercom/directional/east,
 /obj/machinery/modular_computer/preset/research{
@@ -1282,7 +1265,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
 	},
-/obj/structure/flora/bush/large,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "BH" = (
@@ -1313,7 +1296,7 @@
 	},
 /area/shuttle/escape)
 "Ck" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -1380,7 +1363,7 @@
 /obj/machinery/computer/crew{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/status_display/evac/directional/north,
 /obj/machinery/newscaster/directional/west,
 /turf/open/floor/carpet/blue,
@@ -1913,7 +1896,7 @@
 /obj/machinery/computer/operating{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/shuttle/escape)
@@ -2205,7 +2188,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
-/obj/structure/flora/bush/large,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "SC" = (
@@ -2239,7 +2222,7 @@
 /turf/open/floor/iron/white/herringbone,
 /area/shuttle/escape)
 "Tt" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -2309,7 +2292,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "VY" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
@@ -2390,7 +2373,7 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/marker_beacon/lime,
-/obj/structure/flora/bush/large,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "Xl" = (
@@ -2444,7 +2427,7 @@
 /obj/item/radio/intercom/directional/east,
 /obj/effect/spawner/surgery_tray/full,
 /obj/machinery/defibrillator_mount/directional/south,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/shuttle/escape)
 "Yn" = (
@@ -2606,7 +2589,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "Zw" = (
@@ -2948,7 +2931,7 @@ tl
 sO
 tl
 pU
-oj
+ct
 UU
 bB
 Ig
@@ -2978,7 +2961,7 @@ Jq
 cZ
 lR
 Aq
-ri
+ff
 kZ
 Ba
 Ba

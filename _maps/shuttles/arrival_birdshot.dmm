@@ -59,7 +59,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "w" = (
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "x" = (
@@ -90,7 +90,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "L" = (
-/obj/machinery/light/cold/directional/south,
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/arrival)
 "M" = (

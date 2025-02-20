@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aA" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating{
 	initial_gas_mix = "TEMP=2.7"
@@ -87,7 +87,7 @@
 	},
 /area/ruin/space/virtual_domain)
 "ll" = (
-/obj/structure/sign/poster/contraband/clown/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/vaporwave,
 /area/virtual_domain)
 "lu" = (
@@ -107,7 +107,7 @@
 /area/virtual_domain)
 "qm" = (
 /obj/structure/flora/tree/palm,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/holofloor/beach,
 /area/virtual_domain)
 "qu" = (
@@ -171,7 +171,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/vaporwave,
 /area/virtual_domain)
 "Jr" = (
@@ -200,7 +200,7 @@
 /area/ruin/space/virtual_domain)
 "LP" = (
 /obj/structure/flora/tree/palm,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/holofloor/beach,
 /area/virtual_domain)
 "Nz" = (

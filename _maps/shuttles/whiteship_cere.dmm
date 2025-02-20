@@ -61,7 +61,7 @@
 /turf/open/floor/plating,
 /area/shuttle/abandoned/cargo)
 "aB" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/power/smes{
 	charge = 5e+007;
 	output_level = 20000
@@ -134,7 +134,7 @@
 /area/shuttle/abandoned/engine)
 "bh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/shuttle/abandoned/cargo)
 "bU" = (
@@ -150,7 +150,7 @@
 /area/shuttle/abandoned/cargo)
 "cm" = (
 /obj/structure/cable/layer1,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/south,
 /obj/effect/mapping_helpers/airalarm/unlocked,
@@ -162,7 +162,7 @@
 	dir = 1;
 	name = "solar sail control"
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "dp" = (
@@ -172,7 +172,7 @@
 /area/shuttle/abandoned/cargo)
 "dN" = (
 /obj/structure/closet/secure_closet/freezer/kitchen/mining,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/abandoned/bar)
@@ -307,7 +307,7 @@
 	name = "Cargo Blast Door Toggle"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/iron/ten,
 /obj/item/stack/sheet/glass{
@@ -389,14 +389,14 @@
 "oB" = (
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet/any,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/wood,
 /area/shuttle/abandoned/crew)
 "oG" = (
 /obj/structure/cable,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/cable/layer1,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/paper/crumpled/bloody/ruins/whiteship/cere/told_you_so,
@@ -450,7 +450,7 @@
 /area/shuttle/abandoned/cargo)
 "rW" = (
 /obj/structure/cable,
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/wood,
@@ -485,7 +485,7 @@
 "wI" = (
 /obj/structure/bed,
 /obj/item/bedsheet/captain,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door/directional/east{
 	id = "whiteship_cap_bolts";
@@ -683,7 +683,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/abandoned/cargo)
 "Hw" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/computer/camera_advanced/shuttle_docker/whiteship{
 	dir = 1;
 	x_offset = 0;
@@ -759,7 +759,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/shuttle/abandoned/cargo)
 "KH" = (
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
@@ -775,7 +775,7 @@
 /area/shuttle/abandoned/cargo)
 "Li" = (
 /obj/structure/closet/secure_closet/freezer/meat/open,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -823,7 +823,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/shuttle/abandoned/cargo)
 "PO" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/computer/shuttle/white_ship/bridge{
 	dir = 1
 	},
@@ -887,7 +887,7 @@
 	},
 /obj/item/stack/sheet/mineral/plasma,
 /obj/structure/closet/crate,
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/abandoned/cargo)
 "Sx" = (
@@ -966,11 +966,11 @@
 "VD" = (
 /obj/effect/spawner/random/structure/crate,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/pod/dark,
 /area/shuttle/abandoned/cargo)
 "WF" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/machinery/mech_bay_recharge_port,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,

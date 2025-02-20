@@ -54,7 +54,7 @@
 	name = "Zarpo";
 	desc = "This little guy is a survivor, that's for sure."
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -89,7 +89,7 @@
 /obj/item/food/chocolatebar{
 	pixel_y = 6
 	},
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -113,7 +113,7 @@
 "fl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/starkist/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -150,7 +150,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "fZ" = (
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/robust_softdrinks/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -158,7 +158,7 @@
 "go" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -181,7 +181,7 @@
 	pixel_y = -4;
 	pixel_x = -5
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -225,7 +225,7 @@
 /obj/item/food/cornchips/random,
 /obj/item/food/cornchips/random,
 /obj/item/food/cornchips/random,
-/obj/structure/sign/poster/contraband/eat/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -252,7 +252,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/machinery/light/dim/directional/south,
+/obj/machinery/light/dim/directional/north,
 /turf/open/floor/asphalt/lavaland,
 /area/ruin/thelizardsgas_lavaland)
 "lI" = (
@@ -260,7 +260,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "mn" = (
-/obj/structure/sign/poster/official/plasma_effects/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/reagent_dispensers/plumbed/storage{
 	dir = 8;
 	reagent_id = /datum/reagent/toxin/plasma;
@@ -320,7 +320,7 @@
 "nc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
-/obj/structure/sign/poster/fluff/lizards_gas_payment/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -336,7 +336,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "nX" = (
-/obj/structure/sign/poster/contraband/tipper_cream_soda/directional/south,
+/obj/structure/sign/poster/random,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -357,7 +357,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "pp" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -371,7 +371,7 @@
 "qk" = (
 /obj/structure/cable,
 /obj/effect/spawner/random/structure/closet_maintenance,
-/obj/structure/sign/poster/fluff/lizards_gas_power/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -389,7 +389,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/machinery/light/dim/directional/north,
+/obj/machinery/light/dim/directional/south,
 /turf/open/floor/asphalt/lavaland,
 /area/ruin/thelizardsgas_lavaland)
 "rr" = (
@@ -544,7 +544,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "wY" = (
 /obj/structure/table,
-/obj/structure/sign/poster/official/festive/directional/south,
+/obj/structure/sign/poster/random,
 /obj/item/wrench,
 /obj/item/universal_scanner{
 	pixel_y = 6;
@@ -660,7 +660,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "BX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -724,13 +724,6 @@
 	dir = 8
 	},
 /turf/open/floor/iron/smooth{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
-	},
-/area/ruin/thelizardsgas_lavaland)
-"El" = (
-/obj/structure/sign/poster/official/pda_ad/directional/south,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
-/turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
 /area/ruin/thelizardsgas_lavaland)
@@ -897,7 +890,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "JX" = (
 /obj/machinery/duct,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/sign/warning/chem_diamond/directional/north,
 /turf/open/floor/asphalt/lavaland,
 /area/ruin/thelizardsgas_lavaland)
@@ -939,7 +932,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "Lh" = (
 /obj/structure/cable,
-/obj/structure/sign/poster/official/fruit_bowl/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -953,7 +946,7 @@
 /obj/effect/spawner/random/entertainment/lighter,
 /obj/effect/spawner/random/entertainment/lighter,
 /obj/effect/spawner/random/entertainment/lighter,
-/obj/structure/sign/poster/contraband/smoke/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -1015,22 +1008,15 @@
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
 /area/ruin/thelizardsgas_lavaland)
-"Qb" = (
-/obj/structure/cable,
-/obj/structure/sign/poster/contraband/moffuchis_pizza/directional/north,
-/turf/open/floor/iron{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
-	},
-/area/ruin/thelizardsgas_lavaland)
 "Qt" = (
-/obj/structure/sign/poster/contraband/jumbo_bar/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
 /area/ruin/thelizardsgas_lavaland)
 "Rq" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/sign/warning/chem_diamond/directional/south,
 /obj/machinery/duct,
 /turf/open/floor/asphalt/lavaland,
@@ -1078,7 +1064,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "SZ" = (
 /obj/structure/cable,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -1515,7 +1501,7 @@ Zf
 xW
 sY
 Ry
-El
+nX
 FA
 WY
 WY
@@ -1554,7 +1540,7 @@ PS
 Eh
 mn
 RA
-Qb
+fZ
 Bz
 vb
 jY

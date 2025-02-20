@@ -104,7 +104,7 @@
 	dir = 9
 	},
 /obj/structure/flora/grass/green/style_random,
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/snow,
 /area/template_noop)
 "w" = (
@@ -116,7 +116,7 @@
 /area/template_noop)
 "y" = (
 /obj/structure/table/reinforced,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/machinery/recharger,
 /turf/open/misc/snow,
 /area/template_noop)
@@ -149,7 +149,7 @@
 /obj/effect/turf_decal/bot_white{
 	color = "#52B4E9"
 	},
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/textured_large,
 /area/template_noop)
 "L" = (
@@ -187,7 +187,7 @@
 /area/template_noop)
 "R" = (
 /obj/structure/flora/grass/brown,
-/obj/structure/flora/bush/snow/style_2,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/snow,
 /area/template_noop)
 "S" = (
@@ -213,7 +213,7 @@
 "V" = (
 /obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /obj/structure/table/reinforced,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/bureaucracy/stamp,
 /turf/open/floor/iron/dark/diagonal,

@@ -55,7 +55,7 @@
 /turf/open/floor/iron/checker/airless,
 /area/ruin)
 "ox" = (
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /obj/structure/closet/preopen,
 /obj/item/clothing/mask/gas/mime,
 /obj/item/clothing/mask/gas/mime,
@@ -77,7 +77,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/gibs,
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /obj/item/ammo_casing/c357/spent,
 /turf/open/floor/iron/checker/airless,
 /area/ruin)
@@ -137,7 +137,7 @@
 /area/ruin)
 "zk" = (
 /obj/machinery/computer/old,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/iron/checker/airless,
 /area/ruin)
 "Al" = (
@@ -225,7 +225,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin)
 "Kh" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/mob_spawn/corpse/human/clown,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -239,26 +239,18 @@
 /turf/open/floor/iron/checker/airless,
 /area/ruin)
 "KI" = (
-/obj/structure/sign/poster/contraband/microwave,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin)
 "Ln" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/airless,
 /area/ruin)
-"Mx" = (
-/obj/structure/sign/poster/contraband/missing_gloves,
-/turf/closed/wall,
-/area/ruin)
 "Pq" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/ammo_casing/c357/spent,
 /turf/open/floor/iron/checker/airless,
-/area/ruin)
-"Qb" = (
-/obj/structure/sign/poster/contraband/masked_men,
-/turf/closed/wall,
 /area/ruin)
 "Sc" = (
 /obj/effect/decal/cleanable/blood/footprints{
@@ -374,7 +366,7 @@ Jz
 Jz
 gZ
 gZ
-Mx
+KI
 Jz
 Jz
 BU
@@ -512,7 +504,7 @@ Fx
 Fx
 gZ
 gZ
-Qb
+KI
 Pq
 Ln
 gV

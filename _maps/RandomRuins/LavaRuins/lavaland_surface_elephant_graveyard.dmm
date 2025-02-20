@@ -31,7 +31,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/powered/graveyard_shuttle)
 "bc" = (
-/obj/structure/sign/poster/ripped,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin/unpowered/elephant_graveyard)
 "bf" = (

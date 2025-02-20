@@ -50,7 +50,7 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "v" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/department/crew_quarters/dorms)
 "x" = (
@@ -68,7 +68,7 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "G" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/crew_quarters/dorms)
 "J" = (

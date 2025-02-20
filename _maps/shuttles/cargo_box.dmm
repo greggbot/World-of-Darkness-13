@@ -66,11 +66,11 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/supply)
 "x" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "C" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "F" = (

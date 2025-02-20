@@ -291,7 +291,7 @@
 /area/shuttle/pirate)
 "aS" = (
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /obj/machinery/iv_drip,
 /obj/structure/closet/crate/secure/freezer/interdyne/blood,
 /turf/open/floor/iron/dark,
@@ -328,7 +328,7 @@
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/storage/box/syndie_kit/tuberculosisgrenade,
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bm" = (
@@ -526,7 +526,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/pirate)
 "iD" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/button/door/directional/south{
 	id = "pirateportexternal";
 	name = "External Bolt Control";
@@ -712,7 +712,7 @@
 "En" = (
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /obj/item/reagent_containers/cup/beaker/meta/salbutamol{
 	list_reagents = list(/datum/reagent/medicine/c2/convermol=180)
 	},
@@ -838,7 +838,7 @@
 /area/shuttle/pirate)
 "Xk" = (
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/mirror/directional/east,
 /turf/open/floor/iron/dark,

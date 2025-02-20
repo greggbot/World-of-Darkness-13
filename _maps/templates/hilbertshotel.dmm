@@ -21,7 +21,7 @@
 "f" = (
 /obj/structure/table/wood,
 /obj/structure/showcase/machinery/tv,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "g" = (
@@ -46,7 +46,7 @@
 /obj/structure/chair/comfy/brown{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "l" = (
@@ -57,7 +57,7 @@
 /obj/structure/chair/comfy/brown{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "n" = (
@@ -91,7 +91,7 @@
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "t" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "u" = (
@@ -157,36 +157,36 @@
 /turf/closed/indestructible/hoteldoor,
 /area/misc/hilbertshotel)
 "J" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "K" = (
 /obj/structure/closet/crate/bin,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "L" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/indestructible/hoteltile,
 /area/misc/hilbertshotel)
 "M" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "N" = (
 /obj/structure/table/reinforced,
 /obj/item/soap/deluxe,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible/hoteltile,
 /area/misc/hilbertshotel)
 "O" = (
 /obj/item/bikehorn/rubberducky,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible/hoteltile,
 /area/misc/hilbertshotel)
 "P" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/indestructible/hoteltile,
 /area/misc/hilbertshotel)
 "Q" = (
@@ -213,7 +213,7 @@
 "U" = (
 /obj/structure/table/reinforced,
 /obj/structure/sink/kitchen/directional/north,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 "V" = (
@@ -223,7 +223,7 @@
 /area/misc/hilbertshotel)
 "Z" = (
 /obj/structure/table/wood/fancy,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/indestructible/hotelwood,
 /area/misc/hilbertshotel)
 

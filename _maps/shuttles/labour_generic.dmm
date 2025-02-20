@@ -35,7 +35,7 @@
 	pixel_y = -26;
 	req_access = list("security")
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/labor)
 "h" = (
@@ -63,7 +63,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/labor)
 "m" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/labor)
 "n" = (

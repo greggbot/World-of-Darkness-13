@@ -104,7 +104,7 @@
 	var/list/family_heirlooms
 
 	/// All values = (JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_BOLD_SELECT_TEXT | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN | JOB_CANNOT_OPEN_SLOTS | JOB_HEAD_OF_STAFF)
-	var/job_flags = NONE
+	var/job_flags = STATION_JOB_FLAGS
 
 	/// Multiplier for general usage of the voice of god.
 	var/voice_of_god_power = 1

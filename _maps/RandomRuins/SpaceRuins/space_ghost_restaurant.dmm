@@ -4,7 +4,7 @@
 /area/ruin/space/space_ghost_restaurant)
 "bY" = (
 /obj/structure/mannequin/wood,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/structure/sign/clock/directional/north,
 /turf/open/floor/iron/cafeteria/airless,
 /area/ruin/space/space_ghost_restaurant)
@@ -97,7 +97,7 @@
 "nT" = (
 /obj/effect/decal/cleanable/food/flour,
 /obj/structure/mannequin/wood,
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken/directional/east,
 /obj/structure/sign/calendar/directional/north,
 /turf/open/floor/iron/cafeteria/airless,
 /area/ruin/space/space_ghost_restaurant)
@@ -181,7 +181,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "Hx" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/ruin/space/space_ghost_restaurant)
 "Im" = (
@@ -252,7 +252,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/space_ghost_restaurant)
 "Oj" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/carpet/donk,
 /area/ruin/space/space_ghost_restaurant)
 "Py" = (

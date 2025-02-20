@@ -8,7 +8,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/dark_blue/corner,
-/obj/machinery/light/small/broken/directional/west,
+/obj/machinery/light/small/broken/directional/east,
 /turf/open/floor/iron/smooth_half{
 	dir = 1
 	},
@@ -134,7 +134,7 @@
 /obj/effect/turf_decal/trimline/dark_blue/corner{
 	dir = 8
 	},
-/obj/machinery/light/small/red/dim/directional/south,
+/obj/machinery/light/small/red/dim/directional/north,
 /turf/open/floor/iron/smooth_corner{
 	dir = 1
 	},

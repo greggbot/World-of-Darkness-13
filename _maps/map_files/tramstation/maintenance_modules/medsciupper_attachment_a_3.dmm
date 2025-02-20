@@ -36,7 +36,7 @@
 /obj/structure/training_machine,
 /obj/item/target/syndicate,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/engine,
 /area/station/maintenance/department/science)

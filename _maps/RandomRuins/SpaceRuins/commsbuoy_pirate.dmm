@@ -32,11 +32,11 @@
 /area/space/nearstation)
 "i" = (
 /obj/structure/lattice,
-/obj/structure/sign/poster/contraband/self_ai_liberation/directional/north,
+/obj/structure/sign/poster/random,
 /turf/template_noop,
 /area/space/nearstation)
 "j" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/west,
+/obj/structure/sign/poster/random,
 /obj/structure/fluff/commsbuoy_broadcaster,
 /turf/open/floor/plating/reinforced/airless,
 /area/space/nearstation)
@@ -64,7 +64,7 @@
 /area/space/nearstation)
 "u" = (
 /obj/structure/lattice/catwalk,
-/obj/structure/sign/poster/contraband/free_key/directional/south,
+/obj/structure/sign/poster/random,
 /turf/template_noop,
 /area/space/nearstation)
 "v" = (

@@ -416,17 +416,6 @@ SUBSYSTEM_DEF(job)
 
 	job_debug("DO: Player count to assign roles to: [initial_players_to_assign]")
 
-	//Scale number of open security officer slots to population
-	setup_officer_positions()
-
-	//Jobs will have fewer access permissions if the number of players exceeds the threshold defined in game_options.txt
-	var/min_access_threshold = CONFIG_GET(number/minimal_access_threshold)
-	if(min_access_threshold)
-		if(min_access_threshold > initial_players_to_assign)
-			CONFIG_SET(flag/jobs_have_minimal_access, FALSE)
-		else
-			CONFIG_SET(flag/jobs_have_minimal_access, TRUE)
-
 	//Shuffle player list.
 	shuffle_inplace(unassigned)
 
@@ -616,31 +605,6 @@ SUBSYSTEM_DEF(job)
 		return C.holder.auto_deadmin()
 	else if((job.auto_deadmin_role_flags & DEADMIN_POSITION_SILICON) && ((CONFIG_GET(flag/auto_deadmin_silicons) && !timegate_expired) || (C.prefs?.toggles & DEADMIN_POSITION_SILICON))) //in the event there's ever psuedo-silicon roles added, ie synths.
 		return C.holder.auto_deadmin()
-
-/datum/controller/subsystem/job/proc/setup_officer_positions()
-	var/datum/job/J = SSjob.get_job(JOB_SECURITY_OFFICER)
-	if(!J)
-		CRASH("setup_officer_positions(): Security officer job is missing")
-
-	var/ssc = CONFIG_GET(number/security_scaling_coeff)
-	if(ssc > 0)
-		if(J.spawn_positions > 0)
-			var/officer_positions = min(12, max(J.spawn_positions, round(unassigned.len / ssc))) //Scale between configured minimum and 12 officers
-			job_debug("SOP: Setting open security officer positions to [officer_positions]")
-			J.total_positions = officer_positions
-			J.spawn_positions = officer_positions
-
-	//Spawn some extra eqipment lockers if we have more than 5 officers
-	var/equip_needed = J.total_positions
-	if(equip_needed < 0) // -1: infinite available slots
-		equip_needed = 12
-	for(var/i=equip_needed-5, i>0, i--)
-		if(GLOB.secequipment.len)
-			var/spawnloc = GLOB.secequipment[1]
-			new /obj/structure/closet/secure_closet/security/sec(spawnloc)
-			GLOB.secequipment -= spawnloc
-		else //We ran out of spare locker spawns!
-			break
 
 /datum/controller/subsystem/job/proc/handle_feedback_gathering()
 	for(var/datum/job/job as anything in joinable_occupations)

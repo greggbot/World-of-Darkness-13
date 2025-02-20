@@ -186,18 +186,10 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/arrival)
 "ax" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/sunny/style_random,
-/obj/structure/window/reinforced/shuttle,
-/turf/open/floor/grass,
-/area/shuttle/arrival)
-"ay" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/grass,
 /area/shuttle/arrival)
@@ -272,7 +264,7 @@
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "aU" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
 	},
@@ -283,7 +275,7 @@
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "aY" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 8
 	},
@@ -300,7 +292,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clipboard,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "he" = (
@@ -349,7 +341,7 @@
 /obj/item/folder,
 /obj/item/storage/dice,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "My" = (
@@ -370,7 +362,7 @@
 	},
 /obj/item/storage/medkit/regular,
 /obj/effect/turf_decal/bot,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "QU" = (
@@ -469,7 +461,7 @@ ap
 DV
 aw
 ax
-ay
+ax
 ax
 af
 uH

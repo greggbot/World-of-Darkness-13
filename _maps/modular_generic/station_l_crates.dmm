@@ -65,7 +65,7 @@
 "k" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/spawner/random/trash/moisture_trap,
 /turf/open/floor/plating/rust,
 /area/template_noop)
@@ -310,8 +310,8 @@
 /obj/effect/spawner/random/structure/closet_empty/crate,
 /obj/effect/spawner/random/maintenance/two,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
-/obj/structure/sign/poster/random/directional/south,
+/obj/machinery/light/small/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/template_noop)
 "M" = (
@@ -349,7 +349,7 @@
 /obj/effect/spawner/random/maintenance/four,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/engineering/vending_restock,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/template_noop)
 "Q" = (
@@ -392,7 +392,7 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/spawner/random/engineering/canister,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/rust,
 /area/template_noop)
 "W" = (
@@ -407,7 +407,7 @@
 /obj/effect/spawner/random/structure/closet_empty/crate,
 /obj/effect/spawner/random/maintenance/four,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/template_noop)
 "Y" = (
@@ -419,7 +419,7 @@
 "Z" = (
 /obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
 	},

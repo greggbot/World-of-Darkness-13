@@ -123,7 +123,7 @@
 /area/shuttle/escape)
 "C" = (
 /obj/machinery/computer/slot_machine,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "D" = (
@@ -154,7 +154,7 @@
 /obj/item/reagent_containers/cup/glass/drinkingglass/shotglass,
 /obj/item/reagent_containers/cup/glass/drinkingglass/shotglass,
 /obj/item/reagent_containers/cup/glass/drinkingglass/shotglass,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/item/coin/plasma,
 /obj/item/coin/plasma,
 /turf/open/floor/wood,

@@ -50,7 +50,7 @@
 /area/station/maintenance/department/cargo)
 "x" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/white,
 /area/station/maintenance/department/cargo)
 "E" = (

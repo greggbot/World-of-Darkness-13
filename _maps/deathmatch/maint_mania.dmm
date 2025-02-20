@@ -51,12 +51,12 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "iC" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/table/reinforced,
 /turf/open/indestructible,
 /area/deathmatch)
 "jX" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/indestructible,
 /area/deathmatch)
 "jY" = (
@@ -112,7 +112,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "nS" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/indestructible,
@@ -123,16 +123,12 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "pZ" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible,
 /area/deathmatch)
 "qK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/pill/maintenance,
-/turf/open/indestructible,
-/area/deathmatch)
-"sk" = (
-/obj/structure/sign/poster/random/directional/east,
 /turf/open/indestructible,
 /area/deathmatch)
 "sl" = (
@@ -153,7 +149,7 @@
 /area/deathmatch)
 "sX" = (
 /obj/structure/rack,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/item/reagent_containers/cup/soda_cans/lemon_lime,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -168,7 +164,7 @@
 /turf/template_noop,
 /area/template_noop)
 "vB" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/indestructible,
 /area/deathmatch)
 "wi" = (
@@ -200,7 +196,7 @@
 /turf/open/space/basic,
 /area/template_noop)
 "Bs" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -230,7 +226,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "EK" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/indestructible,
 /area/deathmatch)
 "EN" = (
@@ -270,18 +266,18 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "GF" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/indestructible,
 /area/deathmatch)
 "Hd" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/item/soap/nanotrasen,
 /obj/structure/table/reinforced,
 /turf/open/indestructible,
 /area/deathmatch)
 "Hp" = (
 /obj/item/reagent_containers/pill/maintenance,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/table/reinforced,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -309,7 +305,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "La" = (
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/item/flashlight/flare,
 /obj/structure/table/reinforced,
 /turf/open/indestructible,
@@ -351,12 +347,12 @@
 /area/deathmatch)
 "Ok" = (
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/indestructible,
 /area/deathmatch)
 "Om" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible,
 /area/deathmatch)
 "OA" = (
@@ -366,7 +362,7 @@
 "OO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible,
 /area/deathmatch)
 "OR" = (
@@ -376,7 +372,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Pp" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -415,7 +411,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Tu" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/table/reinforced,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -456,7 +452,7 @@
 /area/deathmatch)
 "XD" = (
 /obj/item/holosign_creator/security,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/indestructible,
 /area/deathmatch)
 
@@ -636,7 +632,7 @@ zF
 zF
 nQ
 cn
-sk
+pZ
 nQ
 mS
 cn
@@ -750,7 +746,7 @@ qK
 mS
 Mt
 nQ
-sk
+pZ
 cn
 mZ
 GA
@@ -935,7 +931,7 @@ hB
 kx
 mZ
 cn
-sk
+pZ
 cn
 Bs
 cn
@@ -1196,7 +1192,7 @@ nQ
 cn
 qK
 cn
-sk
+pZ
 XD
 aD
 ur

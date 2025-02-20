@@ -165,7 +165,7 @@
 /area/virtual_domain/fullbright)
 "ch" = (
 /obj/machinery/recharge_station,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/cyan,
 /area/virtual_domain)
 "cp" = (
@@ -333,7 +333,7 @@
 /area/virtual_domain)
 "dS" = (
 /obj/structure/table/bronze,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/item/table_clock{
 	pixel_y = 4
 	},
@@ -769,7 +769,7 @@
 /area/virtual_domain)
 "jm" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/landmark/bitrunning/curiosity_spawn,
 /turf/open/floor/plating,
 /area/virtual_domain)
@@ -1174,7 +1174,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain)
 "pv" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "py" = (
@@ -1340,7 +1340,7 @@
 /obj/item/wirecutters{
 	pixel_y = 9
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark/diagonal,
 /area/virtual_domain)
 "rI" = (
@@ -1389,7 +1389,7 @@
 	dir = 1;
 	anchored = 1
 	},
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/virtual_domain)
 "si" = (
@@ -1418,7 +1418,7 @@
 /area/virtual_domain/fullbright)
 "st" = (
 /obj/structure/table/bronze,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/machinery/button/door/directional/south{
 	id = "beach_room_8";
 	normaldoorcontrol = 1;
@@ -1570,7 +1570,7 @@
 	pixel_y = 8;
 	pixel_x = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "up" = (
@@ -1746,7 +1746,7 @@
 /area/virtual_domain/fullbright)
 "wO" = (
 /obj/structure/dresser,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/virtual_domain)
 "wT" = (
@@ -1817,7 +1817,7 @@
 /area/virtual_domain/fullbright)
 "xO" = (
 /obj/structure/chair/stool/directional/south,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/freezer,
 /area/virtual_domain)
 "xP" = (
@@ -1845,7 +1845,7 @@
 /turf/open/floor/plastic,
 /area/virtual_domain)
 "yg" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "yy" = (
@@ -1896,7 +1896,7 @@
 /area/virtual_domain/fullbright)
 "yQ" = (
 /obj/structure/table/bronze,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/machinery/button/door/directional/south{
 	id = "beach_room_10";
 	normaldoorcontrol = 1;
@@ -2014,7 +2014,7 @@
 /area/virtual_domain)
 "Ae" = (
 /obj/machinery/space_heater,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/virtual_domain)
 "Ag" = (
@@ -2022,7 +2022,7 @@
 /obj/item/kirbyplants/organic/plant8{
 	pixel_y = 6
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/eighties,
 /area/virtual_domain)
 "Ai" = (
@@ -2119,7 +2119,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/virtual_domain)
 "Bq" = (
@@ -2205,7 +2205,7 @@
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "Cw" = (
-/obj/structure/sign/poster/official/fruit_bowl/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/carpet,
 /area/virtual_domain)
 "CA" = (
@@ -2216,7 +2216,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "CH" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/virtual_domain)
 "CP" = (
@@ -2290,7 +2290,7 @@
 /area/virtual_domain/fullbright)
 "Dx" = (
 /obj/structure/chair/stool/bar/directional/west,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "DA" = (
@@ -2395,7 +2395,7 @@
 	pixel_y = 8
 	},
 /obj/structure/sink/directional/west,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/mob_spawn/ghost_role/human/virtual_domain/islander,
 /obj/effect/baseturf_helper/virtual_domain,
 /turf/open/floor/iron/white,
@@ -2434,7 +2434,7 @@
 	pixel_y = 9;
 	anchored = 1
 	},
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/virtual_domain)
 "Fk" = (
@@ -2474,7 +2474,7 @@
 /area/virtual_domain)
 "FE" = (
 /obj/machinery/washing_machine,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plastic,
 /area/virtual_domain)
 "FO" = (
@@ -2551,7 +2551,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "GX" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet,
 /area/virtual_domain)
 "GY" = (
@@ -2610,7 +2610,7 @@
 /obj/structure/closet/crate/bin,
 /obj/effect/spawner/random/trash/cigbutt,
 /obj/effect/spawner/random/trash/food_packaging,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/diagonal,
 /area/virtual_domain)
 "HO" = (
@@ -2627,7 +2627,7 @@
 /turf/open/water/beach,
 /area/virtual_domain)
 "HR" = (
-/obj/structure/sign/poster/official/tactical_game_cards/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/mob_spawn/ghost_role/human/virtual_domain/islander,
 /turf/open/floor/eighties,
 /area/virtual_domain)
@@ -2774,7 +2774,7 @@
 /obj/item/table_clock{
 	pixel_y = 13
 	},
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/virtual_domain)
 "Jp" = (
@@ -2807,7 +2807,7 @@
 /turf/open/floor/wood/large,
 /area/virtual_domain/fullbright)
 "JG" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "JH" = (
@@ -2917,7 +2917,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "La" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/virtual_domain)
 "Ld" = (
@@ -3035,7 +3035,7 @@
 	pixel_y = 3;
 	pixel_x = -3
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/white/textured_large,
 /area/virtual_domain)
 "MA" = (
@@ -3118,7 +3118,7 @@
 /turf/open/floor/wood/large,
 /area/virtual_domain/fullbright)
 "Ne" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
@@ -3251,7 +3251,7 @@
 	pixel_y = 14;
 	pixel_x = 5
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "PD" = (
@@ -3330,7 +3330,7 @@
 	pixel_y = 8
 	},
 /obj/structure/sink/directional/west,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/mob_spawn/ghost_role/human/virtual_domain/islander,
 /turf/open/floor/iron/white,
 /area/virtual_domain)
@@ -3665,7 +3665,7 @@
 /turf/closed/indestructible/binary,
 /area/virtual_domain/fullbright)
 "Ta" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/carpet,
 /area/virtual_domain)
 "Tb" = (
@@ -3673,7 +3673,7 @@
 /turf/open/floor/iron/dark/herringbone,
 /area/virtual_domain)
 "Tq" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark/herringbone,
 /area/virtual_domain)
 "Tr" = (
@@ -3755,7 +3755,7 @@
 	pixel_y = 7;
 	pixel_x = -3
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/parquet,
 /area/virtual_domain/fullbright)
 "TY" = (
@@ -3772,7 +3772,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Ub" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/parquet,
 /area/virtual_domain)
 "Ud" = (
@@ -3941,7 +3941,7 @@
 /area/virtual_domain/fullbright)
 "Xe" = (
 /obj/structure/table/bronze,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/item/camera{
 	pixel_y = 5
 	},
@@ -3990,11 +3990,11 @@
 /obj/structure/mop_bucket/janitorialcart{
 	dir = 8
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "XT" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/cyan,
 /area/virtual_domain)
 "XW" = (
@@ -4002,7 +4002,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Yb" = (
-/obj/structure/sign/poster/contraband/pwr_game/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/eighties,
 /area/virtual_domain)
 "Yd" = (
@@ -4048,7 +4048,7 @@
 	pixel_y = 8
 	},
 /obj/structure/sink/directional/west,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/white,
 /area/virtual_domain)
 "YM" = (
@@ -4158,7 +4158,7 @@
 	pixel_y = -7;
 	pixel_x = -13
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/baseturf_helper/virtual_domain,
 /turf/open/floor/iron/white,
 /area/virtual_domain)

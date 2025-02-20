@@ -64,7 +64,7 @@
 /turf/open/floor/light/colour_cycle/dancefloor_a,
 /area/vtm/sewer)
 "gM" = (
-/obj/effect/mob_spawn/human/corpse/ciz1,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz1,
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "floor7-old"
 	},
@@ -83,7 +83,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/mob_spawn/human/corpse/ciz2,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz2,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "jx" = (
@@ -91,7 +91,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "mq" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "ny" = (
@@ -120,7 +120,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/mob_spawn/human/corpse/ciz4,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz4,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "ol" = (
@@ -151,7 +151,7 @@
 	alpha = 125;
 	dir = 1
 	},
-/obj/effect/mob_spawn/human/corpse/ciz4,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz4,
 /obj/effect/decal/cleanable/blood/old{
 	dir = 1
 	},
@@ -164,7 +164,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/mob_spawn/human/corpse/ciz3,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz3,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "sB" = (
@@ -239,12 +239,12 @@
 	pixel_x = 5;
 	pixel_y = 3
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "CY" = (
 /obj/effect/decal/cleanable/oil/slippery,
-/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/north,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "DA" = (
@@ -252,7 +252,7 @@
 	dir = 4;
 	icon_state = "corp_sofamiddle"
 	},
-/obj/effect/mob_spawn/human/corpse/ciz2,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz2,
 /obj/effect/decal/cleanable/blood/old{
 	dir = 1
 	},
@@ -299,7 +299,7 @@
 "KB" = (
 /obj/effect/decal/litter,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "KK" = (
@@ -308,7 +308,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Lc" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Ln" = (
@@ -326,7 +326,7 @@
 /area/vtm/sewer)
 "Mj" = (
 /obj/structure/chair/sofa/corp/left,
-/obj/effect/mob_spawn/human/corpse/ciz2,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz2,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "MG" = (
@@ -382,7 +382,7 @@
 /turf/open/floor/plating/vampcanalplating,
 /area/vtm/sewer)
 "Ru" = (
-/obj/machinery/light/warm/directional/north,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Sc" = (
@@ -474,7 +474,7 @@
 	pixel_x = -13;
 	pixel_y = -5
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/vampcanalplating,
 /area/vtm/sewer)
 "YG" = (

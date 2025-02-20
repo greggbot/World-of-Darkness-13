@@ -89,7 +89,7 @@
 /obj/item/storage/backpack/duffelbag/syndie/x4,
 /obj/item/storage/backpack/duffelbag/syndie/x4,
 /obj/item/assembly/signaler,
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/ruin/comms_agent)
 "P" = (
@@ -100,14 +100,14 @@
 /obj/machinery/computer/message_monitor{
 	dir = 1
 	},
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/ruin/comms_agent)
 "T" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/plating,
 /area/ruin/comms_agent)
 "U" = (

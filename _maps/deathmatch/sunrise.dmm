@@ -7,7 +7,7 @@
 	dir = 4
 	},
 /obj/item/spear/bamboospear,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
 "ch" = (
@@ -47,7 +47,7 @@
 /obj/structure/closet/crate/wooden,
 /obj/item/throwing_star,
 /obj/item/stack/medical/suture,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "dy" = (
@@ -62,7 +62,7 @@
 /turf/open/water,
 /area/deathmatch)
 "el" = (
-/obj/structure/flora/bush/flowers_yw,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass,
 /area/deathmatch)
 "fk" = (
@@ -78,19 +78,15 @@
 	dir = 4
 	},
 /obj/item/gun/syringe/blowgun,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/misc/grass/jungle,
-/area/deathmatch)
-"fD" = (
-/obj/structure/flora/bush/stalky/style_random,
-/turf/open/misc/grass,
 /area/deathmatch)
 "gH" = (
 /turf/open/floor/engine/cult,
 /area/deathmatch)
 "ha" = (
 /obj/item/kirbyplants/organic/plant10,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/bamboo/tatami/purple,
 /area/deathmatch)
 "iq" = (
@@ -102,10 +98,6 @@
 /obj/item/pestle,
 /turf/open/floor/wood/large,
 /area/deathmatch)
-"iL" = (
-/obj/structure/flora/bush/leavy/style_2,
-/turf/open/misc/grass,
-/area/deathmatch)
 "jc" = (
 /obj/structure/table/wood,
 /obj/item/food/fishmeat/carp{
@@ -114,12 +106,8 @@
 /obj/item/food/fishmeat/carp,
 /turf/open/floor/stone,
 /area/deathmatch)
-"kY" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/misc/grass,
-/area/deathmatch)
 "lr" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "lA" = (
@@ -145,20 +133,12 @@
 	},
 /turf/open/floor/wood/tile,
 /area/deathmatch)
-"lO" = (
-/obj/structure/flora/bush/generic,
-/turf/open/misc/grass,
-/area/deathmatch)
 "ma" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible/hotelwood,
-/area/deathmatch)
-"mb" = (
-/obj/structure/flora/bush/sparsegrass,
-/turf/open/misc/grass,
 /area/deathmatch)
 "mf" = (
 /obj/structure/flora/tree/jungle/style_3,
@@ -216,7 +196,7 @@
 /obj/item/nullrod/claymore/bostaff,
 /obj/structure/window/spawner/directional/south,
 /obj/structure/window/spawner/directional/west,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/stone,
 /area/deathmatch)
 "oX" = (
@@ -250,7 +230,7 @@
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "qo" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/misc/grass,
 /area/deathmatch)
 "qu" = (
@@ -276,7 +256,7 @@
 /obj/item/flashlight/lantern{
 	light_on = 1
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/stone,
 /area/deathmatch)
 "rU" = (
@@ -295,22 +275,14 @@
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "so" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/bamboo,
-/area/deathmatch)
-"tM" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/misc/grass,
 /area/deathmatch)
 "tT" = (
 /obj/structure/chair/stool/bamboo{
 	dir = 4
 	},
 /turf/open/floor/bamboo/tatami,
-/area/deathmatch)
-"uc" = (
-/obj/structure/flora/bush/leafy,
-/turf/open/misc/grass,
 /area/deathmatch)
 "ui" = (
 /turf/open/floor/bamboo/tatami,
@@ -322,23 +294,19 @@
 /area/deathmatch)
 "uP" = (
 /mob/living/basic/cow,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/misc/dirt/station,
 /area/deathmatch)
 "vC" = (
 /obj/structure/mineral_door/paperframe,
 /turf/open/floor/wood/large,
 /area/deathmatch)
-"wF" = (
-/obj/structure/flora/bush/flowers_yw/style_2,
-/turf/open/misc/grass,
-/area/deathmatch)
 "xk" = (
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/floor/bamboo,
 /area/deathmatch)
 "xm" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/water,
 /area/deathmatch)
 "xz" = (
@@ -359,7 +327,7 @@
 	pixel_x = -10;
 	pixel_y = 12
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/bamboo,
 /area/deathmatch)
 "yl" = (
@@ -378,7 +346,7 @@
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
 "yz" = (
-/obj/structure/flora/bush/flowers_pp,
+/obj/structure/flora/bush/style_random,
 /obj/item/food/pie/cream,
 /obj/item/clothing/mask/gas/clown_hat,
 /turf/open/misc/grass,
@@ -408,7 +376,7 @@
 	pixel_x = -9;
 	pixel_y = 3
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/stone,
 /area/deathmatch)
 "zb" = (
@@ -437,7 +405,7 @@
 /turf/open/floor/bamboo,
 /area/deathmatch)
 "zG" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/bamboo,
 /area/deathmatch)
 "zV" = (
@@ -447,7 +415,7 @@
 /turf/open/indestructible/hotelwood,
 /area/deathmatch)
 "Az" = (
-/obj/structure/flora/bush/reed,
+/obj/structure/flora/bush/style_random,
 /turf/open/water,
 /area/deathmatch)
 "Bn" = (
@@ -477,8 +445,8 @@
 /turf/open/floor/stone,
 /area/deathmatch)
 "EJ" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/machinery/light/directional/south,
+/obj/structure/flora/bush/style_random,
+/obj/machinery/light/directional/north,
 /turf/open/misc/grass,
 /area/deathmatch)
 "Fl" = (
@@ -488,7 +456,7 @@
 /turf/open/water,
 /area/deathmatch)
 "Fu" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "FV" = (
@@ -499,10 +467,6 @@
 	},
 /obj/item/food/nigiri_sushi,
 /turf/open/floor/wood/tile,
-/area/deathmatch)
-"Gf" = (
-/obj/structure/flora/bush/flowers_pp,
-/turf/open/misc/grass,
 /area/deathmatch)
 "Gv" = (
 /obj/structure/chair/stool/bamboo{
@@ -535,7 +499,7 @@
 /area/deathmatch)
 "Kx" = (
 /obj/structure/fermenting_barrel/gunpowder,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "KM" = (
@@ -543,7 +507,7 @@
 	light_on = 1
 	},
 /obj/structure/table/bronze,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/stone,
 /area/deathmatch)
 "KN" = (
@@ -557,15 +521,15 @@
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "MN" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/machinery/light/directional/north,
+/obj/structure/flora/bush/style_random,
+/obj/machinery/light/directional/south,
 /turf/open/misc/grass,
 /area/deathmatch)
 "Na" = (
 /turf/open/misc/dirt/station,
 /area/deathmatch)
 "Nn" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/item/cultivator/rake,
 /turf/open/misc/grass,
 /area/deathmatch)
@@ -594,10 +558,6 @@
 	},
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/floor/bamboo/tatami,
-/area/deathmatch)
-"Pk" = (
-/obj/structure/flora/bush/leavy/style_random,
-/turf/open/misc/grass,
 /area/deathmatch)
 "Py" = (
 /obj/structure/flora/rock/pile/jungle/style_random{
@@ -631,10 +591,6 @@
 /area/deathmatch)
 "Qb" = (
 /turf/open/floor/stone,
-/area/deathmatch)
-"Qp" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/misc/grass,
 /area/deathmatch)
 "QC" = (
 /turf/open/floor/wood/tile,
@@ -670,7 +626,7 @@
 /area/deathmatch)
 "SJ" = (
 /obj/item/kirbyplants/organic/plant10,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/bamboo/tatami/purple,
 /area/deathmatch)
 "SO" = (
@@ -682,7 +638,7 @@
 /obj/item/flashlight/lantern{
 	light_on = 1
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/stone,
 /area/deathmatch)
 "Uk" = (
@@ -699,10 +655,6 @@
 "UU" = (
 /obj/item/kirbyplants/organic/plant10,
 /turf/open/floor/wood/tile,
-/area/deathmatch)
-"UY" = (
-/obj/structure/flora/bush/leavy,
-/turf/open/misc/grass,
 /area/deathmatch)
 "Vi" = (
 /obj/item/food/grown/wheat{
@@ -989,23 +941,23 @@ Vt
 Vt
 MN
 PP
-wF
-Gf
+el
+el
 PP
-tM
-PP
-PP
+el
 PP
 PP
-Gf
+PP
+PP
+el
 PP
 cr
 PP
-Qp
+el
 PP
 PP
 PP
-mb
+el
 PP
 Nn
 Vi
@@ -1018,12 +970,12 @@ Vt
 No
 No
 PP
-tM
+el
 fn
-fD
+el
 zV
 KN
-mb
+el
 Az
 No
 No
@@ -1033,8 +985,8 @@ cr
 el
 zV
 KN
-lO
-kY
+el
+el
 oY
 No
 No
@@ -1071,8 +1023,8 @@ Vt
 "}
 (12,1,1) = {"
 Vt
-fD
-tM
+el
+el
 Az
 dI
 No
@@ -1081,7 +1033,7 @@ zV
 KN
 No
 No
-kY
+el
 No
 No
 yA
@@ -1100,7 +1052,7 @@ Vt
 (13,1,1) = {"
 Vt
 el
-UY
+el
 PP
 No
 Py
@@ -1108,13 +1060,13 @@ No
 zV
 KN
 PP
-Gf
-Gf
+el
+el
 mt
 No
 No
 No
-mb
+el
 zV
 KN
 PP
@@ -1129,27 +1081,27 @@ Vt
 Vt
 qo
 PP
-Qp
-iL
+el
+el
 cr
-mb
+el
 PP
 PP
 PP
 PP
 PP
 PP
-uc
-Pk
+el
+el
 PP
-kY
-PP
-PP
+el
 PP
 PP
 PP
 PP
-kY
+PP
+PP
+el
 PP
 Vt
 "}

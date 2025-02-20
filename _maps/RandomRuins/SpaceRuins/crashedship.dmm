@@ -103,7 +103,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/textured,
 /area/ruin/space/has_grav/crashedship/aft)
 "eU" = (
@@ -125,7 +125,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/space/has_grav/crashedship/midship)
 "fA" = (
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/fore)
@@ -173,11 +173,11 @@
 	dir = 1
 	},
 /obj/effect/spawner/random/maintenance/two,
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/crashedship/aft)
 "ip" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/crashedship/aft)
 "iI" = (
@@ -193,7 +193,7 @@
 "iW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/structure/cable,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating/airless,
@@ -229,7 +229,7 @@
 /area/space)
 "lf" = (
 /obj/structure/cable,
-/obj/machinery/light/warm/directional/west,
+/obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/white/side{
 	dir = 4
 	},
@@ -326,7 +326,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/brown/line,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/aft)
 "oT" = (
@@ -414,7 +414,7 @@
 /obj/effect/turf_decal/trimline/brown/line{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "qB" = (
@@ -558,7 +558,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/cold/directional/north,
+/obj/machinery/light/cold/directional/south,
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
 /turf/open/floor/iron/dark/side/airless{
 	dir = 1
@@ -569,7 +569,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/brown/line,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "xy" = (
@@ -1068,7 +1068,7 @@
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/shrink_ccw,
 /obj/structure/cable,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "Mg" = (
@@ -1210,7 +1210,7 @@
 "Tj" = (
 /obj/effect/turf_decal/trimline/neutral/filled/shrink_ccw,
 /obj/structure/cable,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/crashedship/aft)
 "To" = (
@@ -1266,7 +1266,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "US" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/midship)
@@ -1294,7 +1294,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "Wi" = (
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /obj/effect/turf_decal/trimline/red/filled/line,
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 1

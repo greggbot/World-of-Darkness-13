@@ -19,59 +19,19 @@
 /turf/open/floor/grass,
 /area/ruin/space/has_grav)
 "f" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
-"g" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav)
 "h" = (
 /mob/living/basic/pet/gondola,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav)
-"i" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
 "j" = (
 /obj/structure/flora/coconuts,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav)
-"l" = (
-/obj/structure/flora/bush/stalky/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
-"m" = (
-/obj/structure/flora/bush/grassy/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
-"n" = (
-/obj/structure/flora/bush/reed/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
-"o" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
-"p" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
-"q" = (
-/obj/structure/flora/bush/ferny/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
 "r" = (
 /obj/structure/flora/tree/palm,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
-"s" = (
-/obj/structure/flora/bush/large/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav)
-"t" = (
-/obj/structure/flora/bush/sunny/style_random,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav)
 "u" = (
@@ -308,7 +268,7 @@ d
 d
 d
 d
-g
+f
 d
 d
 d
@@ -343,7 +303,7 @@ d
 d
 d
 d
-o
+f
 d
 r
 d
@@ -409,7 +369,7 @@ d
 r
 d
 d
-q
+f
 d
 d
 j
@@ -420,7 +380,7 @@ d
 d
 d
 d
-m
+f
 d
 d
 b
@@ -449,14 +409,14 @@ d
 d
 d
 d
-s
+f
 d
 d
 d
 d
 d
 d
-i
+f
 d
 d
 d
@@ -481,9 +441,9 @@ b
 b
 b
 d
-i
-n
-g
+f
+f
+f
 d
 d
 e
@@ -493,7 +453,7 @@ j
 d
 h
 d
-l
+f
 d
 e
 d
@@ -519,8 +479,8 @@ d
 d
 d
 d
-o
-o
+f
+f
 d
 h
 d
@@ -530,8 +490,8 @@ d
 d
 d
 d
-i
-o
+f
+f
 d
 d
 b
@@ -556,16 +516,16 @@ d
 d
 u
 d
-i
+f
 d
-q
-d
-d
+f
 d
 d
 d
 d
-s
+d
+d
+f
 d
 d
 d
@@ -593,12 +553,12 @@ d
 d
 d
 d
-l
+f
 d
 d
 d
-m
-i
+f
+f
 d
 d
 d
@@ -634,8 +594,8 @@ d
 d
 d
 d
-i
-o
+f
+f
 d
 d
 d
@@ -671,8 +631,8 @@ b
 d
 d
 d
-o
-p
+f
+f
 d
 d
 d
@@ -708,7 +668,7 @@ b
 b
 d
 f
-n
+f
 d
 d
 d
@@ -749,12 +709,12 @@ d
 d
 d
 d
-i
-t
+f
+f
 d
 d
 d
-i
+f
 d
 d
 b
@@ -787,7 +747,7 @@ j
 d
 d
 d
-g
+f
 d
 d
 d
@@ -850,11 +810,11 @@ d
 d
 r
 d
-i
-i
+f
+f
 d
 d
-q
+f
 d
 d
 d
@@ -888,7 +848,7 @@ d
 d
 d
 d
-l
+f
 d
 d
 d
@@ -932,11 +892,11 @@ d
 u
 d
 h
-s
+f
 d
 d
 d
-s
+f
 d
 d
 d
@@ -971,7 +931,7 @@ d
 d
 d
 d
-m
+f
 d
 d
 d
@@ -1000,16 +960,16 @@ d
 d
 d
 d
-i
-l
+f
+f
 d
 d
 d
 d
 d
 d
-n
-m
+f
+f
 d
 d
 d
@@ -1036,11 +996,11 @@ d
 d
 d
 d
-m
-p
-i
+f
+f
+f
 d
-g
+f
 d
 d
 d
@@ -1078,8 +1038,8 @@ d
 d
 d
 e
-m
-i
+f
+f
 d
 d
 d
@@ -1115,9 +1075,9 @@ d
 d
 d
 d
-i
-l
-p
+f
+f
+f
 d
 d
 d
@@ -1157,7 +1117,7 @@ d
 d
 d
 d
-i
+f
 d
 d
 d
@@ -1177,9 +1137,9 @@ b
 b
 d
 e
-g
+f
 d
-i
+f
 d
 d
 d

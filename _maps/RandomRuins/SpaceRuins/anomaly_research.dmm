@@ -16,7 +16,7 @@
 /turf/open/lava/plasma/ice_moon,
 /area/misc/anomaly_research)
 "aX" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -67,7 +67,7 @@
 "dj" = (
 /obj/structure/window/spawner/directional/north,
 /obj/structure/window/spawner/directional/east,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/misc/anomaly_research)
 "dr" = (
@@ -99,7 +99,7 @@
 /turf/open/floor/iron/white,
 /area/misc/anomaly_research)
 "ev" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -226,7 +226,7 @@
 /obj/item/raw_anomaly_core/random{
 	pixel_x = -7
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/white,
@@ -519,7 +519,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/turf_decal/box,
 /turf/open/floor/iron/dark,
 /area/misc/anomaly_research)
@@ -574,7 +574,7 @@
 /area/misc/anomaly_research)
 "pu" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/engine,
 /area/misc/anomaly_research)
 "qr" = (
@@ -682,7 +682,7 @@
 /turf/open/floor/iron/white,
 /area/misc/anomaly_research)
 "sX" = (
-/obj/machinery/light/small/built/directional/north,
+/obj/machinery/light/small/built/directional/south,
 /obj/effect/spawner/random/environmentally_safe_anomaly/bioscramblerless,
 /obj/item/reagent_containers/cup/bottle/wittel,
 /obj/effect/spawner/random/trash/grime,
@@ -776,7 +776,7 @@
 /obj/item/clothing/shoes/winterboots,
 /obj/item/clothing/suit/hooded/wintercoat/science,
 /obj/item/flashlight,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -1286,7 +1286,7 @@
 /area/misc/anomaly_research)
 "Is" = (
 /obj/machinery/duct,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/freezer,
 /area/misc/anomaly_research)
 "Iw" = (
@@ -1392,7 +1392,7 @@
 	dir = 4
 	},
 /obj/structure/closet/bombcloset,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/smooth,
 /area/misc/anomaly_research)
 "LH" = (
@@ -1436,7 +1436,7 @@
 /turf/open/lava/plasma/ice_moon,
 /area/misc/anomaly_research)
 "Mt" = (
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/misc/anomaly_research)
 "MG" = (
@@ -1515,8 +1515,8 @@
 /area/misc/anomaly_research)
 "Ox" = (
 /obj/structure/window/spawner/directional/north,
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/machinery/light/broken/directional/south,
+/obj/structure/flora/bush/style_random,
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/grass,
 /area/misc/anomaly_research)
 "OL" = (
@@ -1557,7 +1557,7 @@
 /turf/open/floor/engine,
 /area/misc/anomaly_research)
 "Qu" = (
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
 /turf/open/floor/iron/white,
@@ -1753,7 +1753,7 @@
 /turf/open/floor/wood,
 /area/misc/anomaly_research)
 "Wz" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/smooth,
 /area/misc/anomaly_research)
 "WB" = (
@@ -1807,7 +1807,7 @@
 /turf/closed/mineral/snowmountain/cavern,
 /area/misc/anomaly_research)
 "Yo" = (
-/obj/machinery/light/small/built/directional/east,
+/obj/machinery/light/small/built/directional/west,
 /obj/effect/spawner/random/trash/garbage,
 /obj/effect/spawner/random/trash/mopbucket,
 /obj/effect/decal/cleanable/dirt,
@@ -1816,7 +1816,7 @@
 "YA" = (
 /obj/structure/window/spawner/directional/north,
 /obj/structure/window/spawner/directional/west,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/misc/anomaly_research)
 "YU" = (

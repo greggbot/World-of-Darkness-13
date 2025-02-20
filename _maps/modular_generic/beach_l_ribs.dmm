@@ -338,7 +338,7 @@
 	pixel_y = 24
 	},
 /obj/structure/water_source/puddle,
-/obj/structure/flora/bush/reed/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 6
 	},
 /turf/open/misc/asteroid{

@@ -7,7 +7,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "bD" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/closet/cardboard,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
@@ -16,7 +16,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "dm" = (
-/obj/effect/mob_spawn/human/corpse/ciz1,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz1,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "is" = (
@@ -101,7 +101,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "td" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "tP" = (
@@ -121,7 +121,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Ag" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/closet/cardboard,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
@@ -144,10 +144,10 @@
 "EH" = (
 /obj/item/gas_can/full,
 /obj/structure/table,
-/obj/machinery/light/small/directional/south,
-/obj/machinery/light/small/directional/south,
-/obj/machinery/light/small/directional/south,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "EZ" = (
@@ -156,21 +156,21 @@
 /obj/item/reagent_containers/cup/glass/bottle/vodka,
 /obj/item/reagent_containers/cup/glass/bottle/vodka,
 /obj/structure/table,
-/obj/machinery/light/small/directional/south,
-/obj/machinery/light/small/directional/south,
-/obj/machinery/light/small/directional/south,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "IS" = (
-/obj/effect/mob_spawn/human/corpse/ciz3,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz3,
 /obj/effect/decal/cleanable/blood/footprints{
 	icon_state = "armorblood"
 	},
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Kf" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /mob/living/simple_animal/hostile/fister/hostile{
 	maxHealth = 300;
 	name = "Boba"
@@ -191,7 +191,7 @@
 /turf/open/floor/plating/vampcanalplating,
 /area/vtm/sewer)
 "Mn" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "NZ" = (
@@ -212,7 +212,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "PV" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/closet/cardboard,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
@@ -228,7 +228,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "Tb" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/item/stack/dollar,
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 8;
@@ -271,7 +271,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "ZI" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 

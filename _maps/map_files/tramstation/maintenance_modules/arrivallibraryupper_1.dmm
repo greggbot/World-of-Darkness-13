@@ -145,7 +145,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/port/aft)
 "F" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/effect/spawner/random/engineering/material_cheap,

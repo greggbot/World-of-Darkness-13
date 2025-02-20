@@ -97,7 +97,7 @@
 /turf/open/floor/plating,
 /area/awaymission/cabin)
 "ay" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/storage/backpack/bannerpack{
 	pixel_y = 7
 	},
@@ -116,7 +116,7 @@
 /obj/structure/toilet{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/computer/security/telescreen/entertainment/directional/west,
 /turf/open/floor/iron/freezer,
 /area/awaymission/cabin)
@@ -124,7 +124,7 @@
 /obj/structure/toilet{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/computer/security/telescreen/entertainment/directional/east,
 /turf/open/floor/iron/freezer,
 /area/awaymission/cabin)
@@ -295,7 +295,7 @@
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
 "bf" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/cable,
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
@@ -306,7 +306,7 @@
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
 "bh" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "bi" = (
@@ -324,7 +324,7 @@
 /turf/open/floor/iron/freezer,
 /area/awaymission/cabin)
 "bk" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/freezer,
 /area/awaymission/cabin)
 "bl" = (
@@ -340,7 +340,7 @@
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "bn" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "bo" = (
@@ -482,7 +482,7 @@
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "bT" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/item/instrument/guitar,
 /obj/item/instrument/violin,
 /obj/item/instrument/accordion,
@@ -546,19 +546,19 @@
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "ct" = (
-/obj/structure/sign/poster/official/soft_cap_pop_art/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "cv" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/cabin)
 "cx" = (
 /turf/closed/indestructible/riveted,
 /area/awaymission/cabin/caves/mountain)
 "cy" = (
-/obj/structure/sign/poster/contraband/fun_police,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/riveted,
 /area/awaymission/cabin/caves/mountain)
 "cA" = (
@@ -634,7 +634,7 @@
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "cL" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -1170,7 +1170,7 @@
 /area/awaymission/cabin/snowforest)
 "gl" = (
 /obj/structure/cable,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "gm" = (
@@ -1184,7 +1184,7 @@
 /turf/open/misc/ice/smooth,
 /area/awaymission/cabin/snowforest)
 "gp" = (
-/obj/structure/sign/poster/contraband/pwr_game/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/engine,
 /area/awaymission/cabin/caves/mountain)
@@ -1392,7 +1392,7 @@
 /turf/open/floor/plating,
 /area/awaymission/cabin)
 "hh" = (
-/obj/structure/sign/poster/official/fruit_bowl/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "hi" = (
@@ -1400,17 +1400,13 @@
 /turf/open/floor/iron/freezer,
 /area/awaymission/cabin)
 "hj" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/cabin)
-"hk" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/east,
-/turf/open/floor/wood,
-/area/awaymission/cabin)
 "hl" = (
-/obj/structure/sign/poster/official/here_for_your_safety/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
 "hm" = (
@@ -1418,10 +1414,6 @@
 /obj/machinery/door/airlock/wood{
 	name = "Gateway"
 	},
-/turf/open/floor/wood,
-/area/awaymission/cabin)
-"hn" = (
-/obj/structure/sign/poster/official/high_class_martini/directional/north,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "ho" = (
@@ -1446,12 +1438,12 @@
 /area/awaymission/cabin)
 "hs" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/missing_gloves/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/cabin)
 "ht" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/cable,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
@@ -1979,7 +1971,7 @@
 /area/awaymission/cabin/caves/mountain)
 "jN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/mineral/plastitanium/red{
 	name = "soviet floor"
 	},
@@ -2180,14 +2172,14 @@
 /area/awaymission/cabin/caves/sovietcave)
 "kG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red{
 	name = "soviet floor"
 	},
 /area/awaymission/cabin/caves/sovietcave)
 "kH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium/red{
 	name = "soviet floor"
 	},
@@ -2218,7 +2210,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/head/helmet/rus_ushanka,
 /obj/structure/table/reinforced,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/plastitanium/red{
 	name = "soviet floor"
 	},
@@ -2318,11 +2310,11 @@
 /area/awaymission/cabin/caves/sovietcave)
 "ll" = (
 /obj/structure/cable,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "lz" = (
-/obj/structure/sign/poster/official/cleanliness/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/white,
 /area/awaymission/cabin)
 "lB" = (
@@ -2402,7 +2394,7 @@
 /area/awaymission/cabin/caves/sovietcave)
 "mI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/mineral/plastitanium/red{
 	name = "soviet floor"
 	},
@@ -2432,7 +2424,7 @@
 	},
 /area/awaymission/cabin/caves/sovietcave)
 "mO" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red{
 	name = "soviet floor"
@@ -2599,7 +2591,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/cabin)
 "nN" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "nR" = (
@@ -2687,7 +2679,7 @@
 /area/awaymission/cabin/snowforest/sovietsurface)
 "oP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating,
 /area/awaymission/cabin)
 "pj" = (
@@ -2801,7 +2793,7 @@
 /area/awaymission/cabin/caves)
 "pH" = (
 /obj/machinery/space_heater,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood/freezing,
 /area/awaymission/cabin/lumbermill)
 "qg" = (
@@ -2903,9 +2895,9 @@
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin/snowforest)
 "rk" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/landmark/awaystart/snowcabin,
-/obj/structure/sign/poster/official/report_crimes/directional/south,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
@@ -3051,7 +3043,7 @@
 	set_luminosity = 6;
 	light_color = "#9bbbff"
 	},
-/obj/structure/sign/poster/official/space_cops/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
@@ -3185,7 +3177,7 @@
 /turf/open/misc/ice/smooth,
 /area/awaymission/cabin/caves)
 "uo" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/misc/asteroid/snow/snow_cabin{
 	floor_variance = 0;
 	icon_state = "snow_dug";
@@ -3605,7 +3597,7 @@
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin/snowforest/sovietsurface)
 "yJ" = (
-/obj/structure/sign/poster/contraband/free_drone{
+/obj/structure/sign/poster/random{
 	desc = "This poster seems to be meant for a bunch of machines that used to be deployed on space stations."
 	},
 /obj/effect/turf_decal/tile/blue/fourcorners,
@@ -3646,7 +3638,7 @@
 "yW" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/cabin)
 "ze" = (
@@ -3754,7 +3746,7 @@
 /turf/open/floor/plating/snowed/snow_cabin,
 /area/awaymission/cabin/snowforest/sovietsurface)
 "Ag" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/light_emitter{
 	set_cap = 3;
 	set_luminosity = 6;
@@ -3779,7 +3771,7 @@
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/caves)
 "At" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/misc/asteroid/snow/snow_cabin{
 	floor_variance = 0;
 	icon_state = "snow_dug";
@@ -3798,7 +3790,7 @@
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
 "AC" = (
-/obj/structure/sign/poster/official/no_erp/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
@@ -4059,7 +4051,7 @@
 /turf/open/floor/plating/snowed,
 /area/awaymission/cabin/snowforest)
 "EL" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red{
 	name = "soviet floor"
@@ -4149,7 +4141,7 @@
 /area/awaymission/cabin/caves)
 "Gk" = (
 /obj/structure/closet/crate/bin,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "GB" = (
@@ -4230,7 +4222,7 @@
 /area/awaymission/cabin/caves)
 "Ic" = (
 /obj/machinery/processor,
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/freezer,
 /area/awaymission/cabin)
 "Id" = (
@@ -4438,7 +4430,7 @@
 /area/awaymission/cabin/caves)
 "Kl" = (
 /obj/structure/cable,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "KA" = (
@@ -4525,7 +4517,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/white,
 /area/awaymission/cabin)
 "LR" = (
@@ -4781,7 +4773,7 @@
 /area/awaymission/cabin)
 "Qh" = (
 /obj/machinery/vending/boozeomat,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "Qi" = (
@@ -4934,11 +4926,6 @@
 	},
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/snowforest)
-"RY" = (
-/obj/structure/sign/poster/official/do_not_question/directional/east,
-/obj/effect/turf_decal/tile/blue/fourcorners,
-/turf/open/floor/iron/dark,
-/area/awaymission/cabin/caves/mountain)
 "Sb" = (
 /obj/structure/flora/tree/stump{
 	desc = "Breaking it should be easy.";
@@ -5215,7 +5202,7 @@
 /area/awaymission/cabin/caves/mountain)
 "UG" = (
 /obj/machinery/vending/cigarette,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
 "UH" = (
@@ -5223,7 +5210,7 @@
 /obj/item/storage/medkit/regular,
 /obj/item/storage/medkit/brute,
 /obj/item/storage/medkit/fire,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/white,
 /area/awaymission/cabin)
 "UO" = (
@@ -5576,7 +5563,7 @@
 /area/awaymission/cabin/snowforest/sovietsurface)
 "ZI" = (
 /obj/machinery/space_heater,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood/freezing,
 /area/awaymission/cabin/lumbermill)
 
@@ -15365,7 +15352,7 @@ UE
 td
 td
 td
-RY
+AC
 td
 td
 td
@@ -30156,7 +30143,7 @@ an
 aq
 eg
 an
-hn
+hh
 aq
 eg
 eg
@@ -36580,7 +36567,7 @@ aZ
 be
 az
 bi
-hk
+hh
 bL
 an
 aq

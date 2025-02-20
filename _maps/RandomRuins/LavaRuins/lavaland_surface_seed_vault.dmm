@@ -64,11 +64,11 @@
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "am" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "an" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "ao" = (
@@ -177,7 +177,7 @@
 /obj/item/queen_bee/bought,
 /obj/item/clothing/head/utility/beekeeper_head,
 /obj/item/clothing/suit/utility/beekeeper_suit,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/vault,
 /area/ruin/powered/seedvault)
 "aF" = (
@@ -199,7 +199,7 @@
 /turf/open/floor/iron/freezer,
 /area/ruin/powered/seedvault)
 "aI" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/vault,
 /area/ruin/powered/seedvault)
 "aJ" = (
@@ -232,7 +232,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/powered/seedvault)
 "aO" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/reagent_dispensers/watertank/high,
 /obj/effect/turf_decal/trimline/green/line{
 	dir = 6
@@ -284,7 +284,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/powered/seedvault)
 "aU" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/freezer,
 /area/ruin/powered/seedvault)
 "aV" = (
@@ -337,7 +337,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/powered/seedvault)
 "bc" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/green/line{
 	dir = 8
@@ -409,7 +409,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/powered/seedvault)
 "bl" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -427,16 +427,16 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/disposaloutlet,
-/obj/structure/flora/bush/fullgrass/style_random,
-/obj/machinery/light/directional/north,
+/obj/structure/flora/bush/style_random,
+/obj/machinery/light/directional/south,
 /turf/open/misc/grass/lavaland,
 /area/ruin/powered/seedvault)
 "bn" = (
 /obj/structure/window/spawner/directional/east,
-/obj/structure/flora/bush/pale/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/lavaland,
 /area/ruin/powered/seedvault)
 "bo" = (
@@ -460,25 +460,25 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/powered/seedvault)
 "br" = (
-/obj/structure/flora/bush/sunny/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
 /turf/open/misc/grass/lavaland,
 /area/ruin/powered/seedvault)
 "bs" = (
 /obj/structure/window/spawner/directional/east,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/lavaland,
 /area/ruin/powered/seedvault)
 "bu" = (
 /obj/structure/window/spawner/directional/east,
-/obj/structure/flora/bush/ferny/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/glass,
 /turf/open/misc/grass/lavaland,
 /area/ruin/powered/seedvault)
 "bw" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/green/line{
@@ -536,7 +536,7 @@
 "ds" = (
 /obj/effect/mob_spawn/ghost_role/human/seed_vault,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/freezer,
 /area/ruin/powered/seedvault)
 "eq" = (
@@ -549,9 +549,9 @@
 /area/ruin/powered/seedvault)
 "le" = (
 /obj/structure/window/spawner/directional/south,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/generic/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/lavaland,
 /area/ruin/powered/seedvault)
 "og" = (
@@ -636,7 +636,7 @@
 /area/ruin/powered/seedvault)
 "OE" = (
 /obj/effect/mob_spawn/ghost_role/human/seed_vault,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/freezer,
 /area/ruin/powered/seedvault)
 "PH" = (

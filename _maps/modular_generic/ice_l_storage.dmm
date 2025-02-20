@@ -137,7 +137,7 @@
 /obj/vehicle/ridden/atv{
 	dir = 8
 	},
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/plating,
 /area/template_noop)
 "C" = (
@@ -191,7 +191,7 @@
 "K" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/spawner/random/structure/crate_loot,
-/obj/machinery/light/dim/directional/west,
+/obj/machinery/light/dim/directional/east,
 /turf/open/floor/plating,
 /area/template_noop)
 "L" = (
@@ -282,7 +282,7 @@
 /obj/vehicle/ridden/atv{
 	dir = 8
 	},
-/obj/machinery/light/dim/directional/east,
+/obj/machinery/light/dim/directional/west,
 /turf/open/floor/plating,
 /area/template_noop)
 "Z" = (

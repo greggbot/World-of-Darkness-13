@@ -1,10 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "at" = (
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "aw" = (
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/structure/barricade/wooden,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -79,7 +79,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "eS" = (
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/girder/reinforced,
 /turf/open/floor/plating,
 /area/centcom/basketball)
@@ -93,13 +93,13 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "fj" = (
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/structure/closet_empty/crate,
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "fp" = (
-/obj/structure/sign/poster/contraband/grey_tide,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/r_wall,
 /area/centcom/basketball)
 "fu" = (
@@ -184,7 +184,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "kT" = (
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -230,7 +230,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "nE" = (
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/centcom/basketball)
@@ -528,7 +528,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "LV" = (
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/structure/closet,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -718,10 +718,6 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/centcom/basketball)
-"Yp" = (
-/obj/structure/sign/poster/contraband/hacking_guide,
-/turf/closed/wall/r_wall,
-/area/centcom/basketball)
 "YH" = (
 /obj/structure/girder,
 /turf/open/floor/plating,
@@ -789,7 +785,7 @@ WM
 WM
 ju
 WM
-Yp
+fp
 WM
 WM
 WM

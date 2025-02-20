@@ -292,7 +292,7 @@
 /turf/open/floor/plating/airless,
 /area/station/asteroid)
 "Fe" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera{
 	c_tag = "Maintenance - Escape Pod";

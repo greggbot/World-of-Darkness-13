@@ -104,7 +104,7 @@
 /obj/effect/turf_decal/stripes/red/corner{
 	dir = 1
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 8
 	},
@@ -182,7 +182,7 @@
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark/side,
 /area/shuttle/escape)
 "gr" = (
@@ -232,12 +232,12 @@
 	},
 /area/shuttle/escape)
 "hv" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "hz" = (
 /obj/structure/sign/warning/vacuum/external/directional/north,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/trimline/dark_blue/arrow_cw{
 	dir = 1
 	},
@@ -373,7 +373,7 @@
 /obj/machinery/iv_drip,
 /obj/structure/bed/medical/emergency,
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
@@ -556,7 +556,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/shuttle/escape)
@@ -655,7 +655,7 @@
 	dir = 8
 	},
 /obj/structure/sign/warning/electric_shock/directional/east,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "tH" = (
@@ -697,7 +697,7 @@
 /turf/template_noop,
 /area/template_noop)
 "va" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 4
 	},
@@ -710,7 +710,7 @@
 	anchored = 1
 	},
 /obj/effect/turf_decal/bot_white,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "vm" = (
@@ -729,7 +729,7 @@
 	},
 /area/shuttle/escape)
 "vI" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 8
 	},
@@ -777,7 +777,7 @@
 	dir = 4
 	},
 /obj/structure/reagent_dispensers/watertank/high,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "xH" = (
@@ -1085,7 +1085,7 @@
 	},
 /area/shuttle/escape)
 "Iq" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/effect/spawner/random/clothing/wardrobe_closet_colored,
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
@@ -1103,7 +1103,7 @@
 	pixel_y = 9
 	},
 /obj/item/toy/nuke,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/storage/medkit/regular,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
@@ -1260,7 +1260,7 @@
 "MK" = (
 /obj/structure/chair/comfy/shuttle,
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
@@ -1278,7 +1278,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "Nk" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -1309,7 +1309,7 @@
 "Oy" = (
 /obj/structure/table/reinforced,
 /obj/item/toy/redbutton,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/item/restraints/handcuffs{
 	pixel_y = 3
 	},
@@ -1349,7 +1349,7 @@
 	normaldoorcontrol = 1;
 	specialfunctions = 4
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/white/textured_large,
 /area/shuttle/escape)
 "Px" = (
@@ -1421,7 +1421,7 @@
 /area/shuttle/escape)
 "Sy" = (
 /obj/structure/sign/warning/vacuum/external/directional/south,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/turf_decal/trimline/dark_blue/arrow_cw,
 /obj/effect/turf_decal/trimline/dark_blue/arrow_ccw{
@@ -1430,7 +1430,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "SD" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 4
 	},
@@ -1585,7 +1585,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "XY" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron,
 /area/shuttle/escape)

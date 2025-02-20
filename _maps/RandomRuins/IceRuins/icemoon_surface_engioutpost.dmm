@@ -22,7 +22,7 @@
 /area/ruin/planetengi)
 "ao" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/engine/n2,
 /area/ruin/planetengi)
 "aq" = (
@@ -60,7 +60,7 @@
 /turf/open/floor/plating,
 /area/ruin/planetengi)
 "aw" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating,
 /area/ruin/planetengi)
 "ax" = (
@@ -103,7 +103,7 @@
 /area/ruin/planetengi)
 "aD" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/engine/o2,
 /area/ruin/planetengi)
 "aE" = (
@@ -126,7 +126,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 4
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/ruin/planetengi)
 "aI" = (
@@ -238,7 +238,7 @@
 /area/ruin/planetengi)
 "br" = (
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/obj/structure/sign/poster/official/build/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/planetengi)
 "bs" = (
@@ -493,7 +493,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
 	dir = 10
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/ruin/planetengi)
 "cv" = (
@@ -632,7 +632,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/pda_ad/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/planetengi)
 "dg" = (
@@ -748,7 +748,7 @@
 /obj/structure/chair/sofa/bench/left{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/grey_tide/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/icemoon,
 /area/ruin/planetengi)
 "dC" = (
@@ -800,7 +800,7 @@
 /area/ruin/planetengi)
 "tH" = (
 /obj/machinery/portable_atmospherics/canister/air,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/engine/air,
 /area/ruin/planetengi)
 "vD" = (
@@ -808,7 +808,7 @@
 /area/ruin/planetengi)
 "xA" = (
 /obj/machinery/portable_atmospherics/canister,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/engine/vacuum,
 /area/ruin/planetengi)
 "yF" = (
@@ -856,7 +856,7 @@
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/icemoon,
 /area/ruin/planetengi)
 "Wh" = (

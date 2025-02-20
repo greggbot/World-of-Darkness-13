@@ -57,7 +57,7 @@
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "da" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/folder/blue,
@@ -95,7 +95,7 @@
 /area/shuttle/abandoned)
 "hp" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /obj/structure/closet/emcloset,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
@@ -115,7 +115,7 @@
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "iP" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/cell_charger,
@@ -128,7 +128,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/frame/machine,
 /obj/item/stack/cable_coil,
-/obj/machinery/light/broken/directional/east,
+/obj/machinery/light/broken/directional/west,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "jo" = (
@@ -154,7 +154,7 @@
 /area/shuttle/abandoned)
 "kI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/spawner/random/exotic/ripley,
 /turf/open/floor/iron/recharge_floor,
 /area/shuttle/abandoned)
@@ -311,7 +311,7 @@
 /area/shuttle/abandoned)
 "Hs" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/item/stack/sheet/iron,
 /obj/structure/tank_dispenser,
 /turf/open/floor/iron/airless,
@@ -477,7 +477,7 @@
 /area/shuttle/abandoned)
 "YO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/showroomfloor/airless,
 /area/shuttle/abandoned)
 "ZA" = (

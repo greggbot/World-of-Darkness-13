@@ -19,8 +19,8 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/medical)
 "cb" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "ch" = (
@@ -58,7 +58,7 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/science)
 "ff" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "gC" = (
@@ -66,18 +66,9 @@
 /obj/effect/spawner/random/trash/food_packaging,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/medical)
-"gZ" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "hg" = (
 /turf/closed/wall,
 /area/station/maintenance/department/science)
-"hQ" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "iq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate,
@@ -229,10 +220,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
-"wG" = (
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "wP" = (
 /turf/open/floor/grass,
 /area/station/asteroid)
@@ -262,9 +249,9 @@
 /turf/open/openspace,
 /area/station/maintenance/department/medical)
 "zl" = (
-/obj/structure/flora/bush/grassy,
+/obj/structure/flora/bush/style_random,
 /obj/item/stack/rods,
-/obj/structure/flora/bush/flowers_yw/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "zo" = (
@@ -329,7 +316,7 @@
 /area/station/maintenance/department/medical)
 "Dx" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/science)
 "DB" = (
@@ -358,7 +345,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/ladder,
@@ -405,7 +392,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
 "IF" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/item/stack/rods,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/grass,
@@ -420,7 +407,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/medical)
 "JY" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "KG" = (
@@ -446,10 +433,6 @@
 /obj/structure/railing/corner,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/medical)
-"LV" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Mj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -492,11 +475,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
-"Rg" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "RP" = (
 /obj/structure/railing{
 	dir = 4
@@ -1334,7 +1312,7 @@ Pu
 Pu
 Pu
 Pu
-gZ
+ff
 wP
 cs
 cs
@@ -1377,14 +1355,14 @@ Pu
 Pu
 Pu
 Pu
-LV
+ff
 ff
 wP
 cs
 wP
 wP
 wP
-wG
+ff
 cb
 QE
 mN
@@ -1420,13 +1398,13 @@ Pu
 Pu
 Pu
 Pu
-gZ
+ff
 wP
 wP
 wP
 wP
 ff
-Rg
+cb
 wP
 ff
 QE
@@ -1463,12 +1441,12 @@ Pu
 Pu
 Pu
 Pu
-gZ
-hQ
+ff
+cb
 JY
 wP
 wP
-LV
+ff
 wP
 wP
 IF
@@ -1507,8 +1485,8 @@ Pu
 Pu
 Pu
 wP
-Rg
-LV
+cb
+ff
 wP
 ff
 wP
@@ -1592,7 +1570,7 @@ Pu
 Pu
 Pu
 Pu
-wG
+ff
 ff
 wP
 wP
@@ -1641,7 +1619,7 @@ cs
 wP
 wP
 wP
-LV
+ff
 wP
 wP
 TE
@@ -1682,7 +1660,7 @@ hg
 hg
 hg
 hg
-wG
+ff
 wP
 wP
 wP

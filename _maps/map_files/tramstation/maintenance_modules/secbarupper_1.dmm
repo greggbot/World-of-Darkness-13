@@ -127,7 +127,7 @@
 "pF" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/ladder,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -398,7 +398,7 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/security)
 "XI" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security)
@@ -424,10 +424,10 @@
 /area/station/maintenance/department/security)
 "Zs" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/table,
 /obj/item/reagent_containers/cup/bucket,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/security)
 "ZA" = (

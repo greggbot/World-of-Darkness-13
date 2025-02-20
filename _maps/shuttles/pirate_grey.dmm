@@ -123,13 +123,13 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /obj/effect/mob_spawn/ghost_role/human/pirate/grey/shitter,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "ei" = (
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "eU" = (
@@ -243,7 +243,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
 	},
@@ -346,11 +346,11 @@
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance/two,
 /obj/item/storage/toolbox/emergency,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "ox" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/computer/camera_advanced/shuttle_docker/syndicate/pirate{
 	dir = 4;
 	x_offset = -5;
@@ -408,7 +408,7 @@
 	pixel_y = 3
 	},
 /obj/item/stack/cable_coil,
-/obj/structure/sign/poster/official/build/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "pU" = (
@@ -425,7 +425,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/power/port_gen/pacman/pre_loaded,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "qn" = (
@@ -454,7 +454,7 @@
 "rp" = (
 /obj/structure/grille/broken,
 /obj/effect/spawner/random/trash/moisture_trap,
-/obj/structure/sign/poster/contraband/missing_gloves/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "rB" = (
@@ -508,7 +508,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/random/clothing/costume,
 /obj/effect/spawner/random/clothing/costume,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "sN" = (
@@ -516,7 +516,7 @@
 /turf/open/floor/plating/rust,
 /area/shuttle/pirate)
 "sO" = (
-/obj/structure/sign/poster/contraband/missing_gloves/directional/north,
+/obj/structure/sign/poster/random,
 /obj/machinery/computer/piratepad_control,
 /turf/open/floor/plating/rust,
 /area/shuttle/pirate)
@@ -545,7 +545,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
 	},
-/obj/structure/sign/poster/contraband/missing_gloves/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "tU" = (
@@ -653,7 +653,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "xj" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/toilet{
 	dir = 8
 	},
@@ -777,7 +777,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
 	},
@@ -824,7 +824,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/item/reagent_containers/cup/glass/coffee,
 /turf/open/floor/pod/dark,
 /area/shuttle/pirate)
@@ -1032,7 +1032,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "GI" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/mob_spawn/ghost_role/human/pirate/grey/shitter{
 	dir = 4
 	},
@@ -1048,7 +1048,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "Ho" = (
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/spawner/random/maintenance/five,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
@@ -1132,7 +1132,7 @@
 /obj/machinery/computer/atmos_alert,
 /obj/effect/turf_decal/bot,
 /obj/structure/sign/warning/gas_mask/directional/north,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
 	},
@@ -1384,7 +1384,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "Vw" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "VI" = (
@@ -1461,7 +1461,7 @@
 /area/shuttle/pirate)
 "YD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/spawner/random/structure/tank_holder,
 /turf/open/floor/plating,
 /area/shuttle/pirate)

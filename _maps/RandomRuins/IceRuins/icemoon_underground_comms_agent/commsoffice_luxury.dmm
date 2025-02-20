@@ -41,12 +41,12 @@
 /turf/open/floor/carpet/donk,
 /area/ruin/comms_agent)
 "m" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/donk_co/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood/large,
 /area/ruin/comms_agent)
 "n" = (
@@ -132,7 +132,7 @@
 /obj/machinery/computer/camera_advanced/syndie{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/item/reagent_containers/cup/glass/coffee{
 	pixel_x = 8;
 	pixel_y = 11

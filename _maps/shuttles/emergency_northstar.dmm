@@ -22,7 +22,7 @@
 /area/shuttle/escape)
 "cx" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/machinery/light/red/directional/north,
+/obj/machinery/light/red/directional/south,
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron/smooth_edge,
 /area/shuttle/escape)
@@ -107,7 +107,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/machinery/light/red/directional/west,
+/obj/machinery/light/red/directional/east,
 /turf/open/floor/iron/smooth_edge{
 	dir = 4
 	},
@@ -377,7 +377,7 @@
 /area/shuttle/escape)
 "Ir" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/status_display/evac/directional/east,
 /obj/machinery/recharger,
 /turf/open/floor/mineral/plastitanium/red,
@@ -456,7 +456,7 @@
 /area/shuttle/escape)
 "Pa" = (
 /obj/machinery/status_display/evac/directional/east,
-/obj/machinery/light/red/directional/east,
+/obj/machinery/light/red/directional/west,
 /turf/open/floor/pod/dark,
 /area/shuttle/escape)
 "Qo" = (
@@ -512,7 +512,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/machinery/light/red/directional/south,
+/obj/machinery/light/red/directional/north,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -533,7 +533,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/end{
 	dir = 1
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/status_display/evac/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
@@ -590,7 +590,7 @@
 /obj/effect/turf_decal/tile/blue/half{
 	dir = 4
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/machinery/status_display/evac/directional/east,
 /turf/open/floor/iron/white/smooth_half{
 	dir = 1

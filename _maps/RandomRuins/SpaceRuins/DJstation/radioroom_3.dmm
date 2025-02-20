@@ -56,7 +56,7 @@
 /area/template_noop)
 "N" = (
 /obj/modular_map_connector,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/djstation)
 "O" = (

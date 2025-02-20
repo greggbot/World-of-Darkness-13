@@ -83,7 +83,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "m" = (
@@ -233,7 +233,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/sign/warning/deathsposal/directional/east,
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -298,11 +298,11 @@
 /turf/closed/wall/rust,
 /area/template_noop)
 "J" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/tile/purple/half/contrasted,
 /obj/effect/turf_decal/tile/blue,
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/structure/closet/crate/trashcart/filled,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
@@ -321,7 +321,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
@@ -349,7 +349,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 4
 	},
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "O" = (
@@ -363,7 +363,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "Q" = (
@@ -378,7 +378,7 @@
 /obj/item/flashlight{
 	pixel_y = 4
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},

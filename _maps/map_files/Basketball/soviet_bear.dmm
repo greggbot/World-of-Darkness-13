@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "at" = (
 /obj/structure/stairs/west,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/centcom/basketball)
 "aw" = (
@@ -101,7 +101,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "fB" = (
-/obj/structure/sign/poster/contraband/communist_state,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/fakeglass,
 /area/centcom/basketball)
 "gk" = (
@@ -150,7 +150,7 @@
 /area/centcom/basketball)
 "kF" = (
 /obj/structure/stairs/east,
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "kT" = (
@@ -170,7 +170,7 @@
 /area/centcom/basketball)
 "lD" = (
 /obj/structure/stairs/east,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/centcom/basketball)
 "lR" = (
@@ -488,7 +488,7 @@
 /area/centcom/basketball)
 "LV" = (
 /obj/item/kirbyplants/organic/plant22,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/centcom/basketball)
 "Ma" = (
@@ -524,7 +524,7 @@
 /area/centcom/basketball)
 "Oj" = (
 /obj/structure/stairs/west,
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "Om" = (
@@ -568,15 +568,6 @@
 	icon_state = "derelict11"
 	},
 /turf/open/floor/iron/dark/small,
-/area/centcom/basketball)
-"Qi" = (
-/obj/structure/sign/poster/contraband/soviet_propaganda,
-/turf/closed/indestructible/fakeglass,
-/area/centcom/basketball)
-"Ql" = (
-/obj/item/kirbyplants/organic/plant22,
-/obj/structure/sign/poster/random/directional/east,
-/turf/open/floor/iron,
 /area/centcom/basketball)
 "QR" = (
 /obj/structure/stairs/west,
@@ -643,7 +634,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "WM" = (
-/obj/structure/sign/poster/contraband/kss13,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/riveted/plastinum,
 /area/centcom/basketball)
 "Xm" = (
@@ -918,7 +909,7 @@ Cw
 ZM
 Cw
 ly
-Qi
+fB
 mp
 mp
 mp
@@ -1080,7 +1071,7 @@ sb
 Cw
 Nt
 Cw
-Qi
+fB
 mp
 mp
 mp
@@ -1246,7 +1237,7 @@ tX
 jj
 tX
 tX
-Ql
+LV
 tX
 tX
 jj

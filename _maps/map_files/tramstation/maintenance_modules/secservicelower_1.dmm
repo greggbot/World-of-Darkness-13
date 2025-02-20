@@ -35,7 +35,7 @@
 /area/station/maintenance/central/greater)
 "do" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/table,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/central/greater)
@@ -83,7 +83,7 @@
 /area/station/maintenance/central/greater)
 "hK" = (
 /obj/structure/ladder,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -159,7 +159,7 @@
 /area/station/maintenance/port/central)
 "kD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/central/greater)
 "lS" = (
@@ -415,7 +415,7 @@
 /area/station/maintenance/central/greater)
 "Bz" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/port/central)
 "BC" = (

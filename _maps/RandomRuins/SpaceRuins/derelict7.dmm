@@ -176,7 +176,7 @@
 /area/template_noop)
 "tk" = (
 /obj/structure/lattice,
-/obj/machinery/light/broken/directional/north,
+/obj/machinery/light/broken/directional/south,
 /turf/template_noop,
 /area/template_noop)
 "tF" = (
@@ -251,7 +251,7 @@
 /turf/open/floor/iron/white/airless,
 /area/ruin/space/has_grav)
 "Cc" = (
-/obj/machinery/light/broken/directional/west,
+/obj/machinery/light/broken/directional/east,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
@@ -285,7 +285,7 @@
 "Di" = (
 /obj/structure/frame/machine,
 /obj/item/circuitboard/machine/vendor,
-/obj/machinery/light/broken/directional/south,
+/obj/machinery/light/broken/directional/north,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)

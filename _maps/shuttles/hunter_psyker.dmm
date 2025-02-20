@@ -23,7 +23,7 @@
 "aV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/engine,
 /area/shuttle/hunter)
 "bx" = (
@@ -46,7 +46,7 @@
 /area/shuttle/hunter)
 "bX" = (
 /obj/item/reagent_containers/blood,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/engine,
 /area/shuttle/hunter)
 "ch" = (
@@ -95,11 +95,11 @@
 	pixel_y = 3
 	},
 /obj/item/gun/ballistic/revolver/c38,
-/obj/machinery/light/cold/directional/south,
+/obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/white/diagonal,
 /area/shuttle/hunter)
 "eO" = (
-/obj/machinery/light/cold/directional/west,
+/obj/machinery/light/cold/directional/east,
 /turf/open/floor/carpet/black,
 /area/shuttle/hunter)
 "eZ" = (
@@ -120,7 +120,7 @@
 /obj/machinery/power/smes/ship,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/hunter)
 "gj" = (
@@ -322,11 +322,11 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/hunter)
 "nq" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/hunter)
 "oL" = (
@@ -353,13 +353,6 @@
 "pO" = (
 /turf/open/floor/catwalk_floor,
 /area/shuttle/hunter)
-"qa" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/shuttle/hunter)
 "qz" = (
 /obj/structure/curtain/cloth/fancy/mechanical{
 	icon_state = "bounty-open";
@@ -377,7 +370,7 @@
 /turf/open/floor/iron,
 /area/shuttle/hunter)
 "sB" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
@@ -425,7 +418,7 @@
 /turf/open/floor/iron/grimy,
 /area/shuttle/hunter)
 "uH" = (
-/obj/machinery/light/cold/directional/east,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/carpet/black,
 /area/shuttle/hunter)
 "vv" = (
@@ -501,7 +494,7 @@
 /turf/open/floor/glass,
 /area/shuttle/hunter)
 "xF" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/kitchen/small,
 /area/shuttle/hunter)
 "yd" = (
@@ -627,7 +620,7 @@
 /obj/machinery/suit_storage_unit/pirate,
 /obj/effect/turf_decal/box/white,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/hunter)
 "Fc" = (
@@ -642,7 +635,7 @@
 /obj/item/storage/pill_bottle,
 /obj/structure/closet/crate/bin,
 /obj/effect/decal/cleanable/plastic,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/grimy,
 /area/shuttle/hunter)
 "Gj" = (
@@ -680,7 +673,7 @@
 /area/shuttle/hunter)
 "Hd" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/plating,
 /area/shuttle/hunter)
@@ -778,10 +771,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/shuttle/hunter)
-"Me" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/shuttle/hunter)
 "Mk" = (
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/freezer,
@@ -791,7 +780,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/box/white,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/hunter)
 "Ne" = (
@@ -825,7 +814,7 @@
 /area/shuttle/hunter)
 "Oc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/item/reagent_containers/syringe/contraband,
 /turf/open/floor/plating,
 /area/shuttle/hunter)
@@ -890,7 +879,7 @@
 /area/shuttle/hunter)
 "QI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/freezer,
 /area/shuttle/hunter)
 "Rs" = (
@@ -1438,7 +1427,7 @@ Nw
 CW
 Nn
 wG
-qa
+no
 nq
 Nn
 na
@@ -1466,7 +1455,7 @@ CW
 Nn
 JZ
 RK
-Me
+nq
 Nn
 na
 Hd

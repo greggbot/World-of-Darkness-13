@@ -32,7 +32,7 @@
 "ah" = (
 /obj/structure/fluff/hedge,
 /obj/effect/turf_decal/siding/white,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/granite,
 /area/space)
 "ak" = (
@@ -73,7 +73,7 @@
 /turf/open/floor/plating/gummaguts,
 /area/space)
 "at" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/chair/wood{
 	dir = 4;
 	pixel_y = 4
@@ -145,7 +145,7 @@
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "aH" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/chair/wood{
 	dir = 8;
 	icon_state = "wooden_chair"
@@ -283,7 +283,7 @@
 /obj/effect/decal/bordur{
 	dir = 4
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "bd" = (
@@ -313,7 +313,7 @@
 	pixel_y = 32
 	},
 /obj/structure/sink/directional/south,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/toilet,
 /area/space)
 "bj" = (
@@ -416,7 +416,7 @@
 /turf/open/floor/carpet,
 /area/space)
 "bz" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/vampipe{
 	pixel_x = 0;
 	pixel_y = 32
@@ -475,7 +475,7 @@
 /area/space)
 "bI" = (
 /obj/structure/fluff/hedge,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/vampplating,
@@ -527,7 +527,7 @@
 	dir = 8;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/granite,
 /area/space)
 "bY" = (
@@ -645,7 +645,7 @@
 /area/space)
 "cA" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "cC" = (
@@ -746,7 +746,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "cZ" = (
@@ -805,7 +805,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "di" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/vampipe{
 	icon_state = "piping35"
 	},
@@ -854,7 +854,7 @@
 /turf/open/floor/plating/shit,
 /area/space)
 "dB" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/vehicle/ridden/janicart/upgraded,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
@@ -866,7 +866,7 @@
 /area/space)
 "dG" = (
 /obj/structure/chair/sofa/corp/left,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/vampplating/mono,
@@ -924,7 +924,7 @@
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "dT" = (
-/obj/structure/janitorialcart,
+/obj/structure/mop_bucket/janitorialcart,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "dU" = (
@@ -959,7 +959,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "eb" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/vampipe{
 	icon_state = "piping31"
 	},
@@ -972,7 +972,7 @@
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "ed" = (
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating/concrete,
 /area/space)
 "ee" = (
@@ -1001,12 +1001,12 @@
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "ej" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "ek" = (
 /obj/machinery/deepfryer,
-/obj/structure/window/reinforced/indestructable{
+/obj/structure/window/reinforced/fulltile/indestructable{
 	alpha = 0;
 	dir = 8
 	},
@@ -1023,7 +1023,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "em" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 4;
 	icon_state = "bulb";
 	pixel_x = -16
@@ -1082,7 +1082,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "eC" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/vampipe{
 	icon_state = "piping41"
 	},
@@ -1092,7 +1092,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "eE" = (
@@ -1100,7 +1100,7 @@
 /area/space)
 "eG" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/item/gun/ballistic/automatic/vampire/uzi,
 /obj/item/ammo_box/magazine/vamp9mm,
 /obj/effect/turf_decal/siding/red{
@@ -1162,7 +1162,7 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "eV" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 8;
 	icon_state = "bulb";
 	pixel_x = 16
@@ -1170,7 +1170,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "eW" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "eX" = (
@@ -1200,7 +1200,7 @@
 	icon_state = "siding_wood_line"
 	},
 /obj/structure/dresser,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/purple,
 /area/space)
 "fg" = (
@@ -1209,7 +1209,7 @@
 /obj/item/gun/ballistic/automatic/vampire/deagle,
 /obj/item/reagent_containers/cup/glass/beer/vampire,
 /obj/item/melee/vampirearms/baseball,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/item/clothing/suit/vampire/vest,
 /turf/open/floor/plating/vampplating,
 /area/space)
@@ -1240,7 +1240,7 @@
 /turf/open/floor/carpet,
 /area/space)
 "fm" = (
-/obj/structure/window/reinforced/indestructable{
+/obj/structure/window/reinforced/fulltile/indestructable{
 	alpha = 0;
 	dir = 8
 	},
@@ -1253,7 +1253,7 @@
 /area/space)
 "fp" = (
 /obj/manholeup,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/vampipe{
 	icon_state = "piping35"
 	},
@@ -1261,7 +1261,7 @@
 /area/space)
 "fq" = (
 /obj/structure/chair/sofa/corp/right,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/vampplating/mono,
@@ -1340,7 +1340,7 @@
 /area/space)
 "fF" = (
 /obj/item/reagent_containers/cup/bucket,
-/obj/structure/janitorialcart,
+/obj/structure/mop_bucket/janitorialcart,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "fH" = (
@@ -1355,7 +1355,7 @@
 	dir = 5;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/granite,
 /area/space)
 "fK" = (
@@ -1457,7 +1457,7 @@
 /turf/closed/wall/vampwall/rich,
 /area/space)
 "gl" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "gm" = (
@@ -1519,7 +1519,7 @@
 	icon_state = "siding_line"
 	},
 /obj/structure/fluff/hedge,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/granite,
 /area/space)
 "gw" = (
@@ -1569,7 +1569,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "gG" = (
@@ -1577,7 +1577,7 @@
 	dir = 8;
 	icon_state = "siding_wood_line"
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/stellar,
 /area/space)
 "gH" = (
@@ -1603,7 +1603,7 @@
 /turf/open/floor/plating/sidewalk,
 /area/space)
 "gO" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/clothinghanger,
 /turf/open/floor/carpet/orange,
 /area/space)
@@ -1622,7 +1622,7 @@
 	dir = 1;
 	pixel_y = 6
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "gT" = (
@@ -1649,7 +1649,7 @@
 	dir = 8;
 	icon_state = "border"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "gX" = (
@@ -1816,7 +1816,7 @@
 /turf/open/floor/carpet/lone,
 /area/space)
 "hP" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 1;
 	icon_state = "bulb"
 	},
@@ -1879,12 +1879,12 @@
 /turf/open/lava,
 /area/space)
 "id" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "if" = (
 /obj/structure/chair/wood,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "ig" = (
@@ -1897,7 +1897,7 @@
 /turf/open/space/basic,
 /area/space)
 "ij" = (
-/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/bush/style_random,
 /obj/effect/landmark/npcwall,
 /turf/open/floor/plating/vampgrass,
 /area/space)
@@ -1978,7 +1978,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "iA" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/concrete,
 /area/space)
 "iB" = (
@@ -2024,7 +2024,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "iL" = (
-/obj/machinery/light/small/red/directional/south,
+/obj/machinery/light/small/red/directional/north,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "iM" = (
@@ -2033,7 +2033,7 @@
 /area/space)
 "iN" = (
 /obj/structure/railing,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/chair/wood{
 	dir = 8;
 	layer = 2.1
@@ -2042,7 +2042,7 @@
 /area/space)
 "iT" = (
 /obj/effect/decal/cleanable/blood/old,
-/obj/machinery/light/small/red/directional/south,
+/obj/machinery/light/small/red/directional/north,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "iU" = (
@@ -2072,7 +2072,7 @@
 	dir = 4;
 	pixel_x = 3
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/parquetry,
 /area/space)
 "je" = (
@@ -2092,7 +2092,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "jh" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "jl" = (
@@ -2107,7 +2107,7 @@
 /area/space)
 "jo" = (
 /obj/structure/table/wood,
-/obj/effect/mob_spawn/human/corpse/ciz4,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz4,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "jp" = (
@@ -2137,7 +2137,7 @@
 /turf/open/floor/plating/toilet,
 /area/space)
 "ju" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plating/concrete,
 /area/space)
@@ -2146,7 +2146,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/space)
 "jz" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/table/wood,
 /obj/machinery/microwave,
 /turf/open/floor/plating/parquetry/old,
@@ -2184,7 +2184,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "jG" = (
@@ -2204,7 +2204,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "jI" = (
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "jK" = (
@@ -2248,17 +2248,17 @@
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "jR" = (
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "jS" = (
 /obj/structure/chair/sofa/corp/right,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet,
 /area/space)
 "jT" = (
 /obj/manholeup,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/vampipe{
 	pixel_x = 0;
 	pixel_y = 32
@@ -2376,7 +2376,7 @@
 /turf/open/floor/carpet,
 /area/space)
 "kA" = (
-/obj/effect/mob_spawn/human/corpse/ciz4,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz4,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "kB" = (
@@ -2450,12 +2450,12 @@
 /turf/open/floor/carpet/royalblack,
 /area/space)
 "kF" = (
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "kG" = (
 /obj/effect/landmark/start/strip,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 8;
 	icon_state = "bulb";
 	pixel_x = 16
@@ -2596,7 +2596,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "ll" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "lm" = (
@@ -2695,18 +2695,13 @@
 	},
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
-"lJ" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/obj/effect/landmark/npcwall,
-/turf/open/floor/plating/vampgrass,
-/area/space)
 "lM" = (
 /obj/structure/table/wood,
 /obj/item/melee/vampirearms/knife,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "lN" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/toilet,
 /area/space)
 "lO" = (
@@ -2734,7 +2729,7 @@
 	dir = 9;
 	icon_state = "siding_wood_line"
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/royalblack,
 /area/space)
 "lU" = (
@@ -2816,7 +2811,7 @@
 	dir = 8;
 	icon_state = "siding_wood_line"
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/purple,
 /area/space)
 "mm" = (
@@ -2843,7 +2838,7 @@
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "mp" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "mq" = (
@@ -2872,12 +2867,12 @@
 "mx" = (
 /obj/structure/table,
 /obj/machinery/computer/order_console/mining/fastfood/clothing,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/concrete,
 /area/space)
 "mz" = (
 /obj/structure/filingcabinet,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "mA" = (
@@ -2991,7 +2986,7 @@
 	icon_state = "siding_wood_line"
 	},
 /obj/effect/spawner/random/bedsheet/any,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/red,
 /area/space)
 "nf" = (
@@ -3086,7 +3081,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "ny" = (
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/plating/rough,
 /area/space)
 "nA" = (
@@ -3094,7 +3089,7 @@
 /turf/open/floor/plating/vampcanalplating,
 /area/space)
 "nB" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "nC" = (
@@ -3127,7 +3122,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "nG" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/rough,
 /area/space)
 "nH" = (
@@ -3147,7 +3142,7 @@
 	pixel_y = 32
 	},
 /obj/structure/sink/directional/south,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/toilet,
 /area/space)
 "nP" = (
@@ -3230,7 +3225,7 @@
 /turf/open/floor/carpet/red,
 /area/space)
 "oc" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/item/mop,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
@@ -3253,7 +3248,7 @@
 /turf/open/floor/plating/concrete,
 /area/space)
 "of" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/glass/bottle/wine/unlabeled,
 /obj/item/reagent_containers/cup/glass/bottle/wine/unlabeled,
@@ -3314,7 +3309,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "ot" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/chair{
 	dir = 8
 	},
@@ -3345,7 +3340,7 @@
 "oE" = (
 /obj/structure/table/wood,
 /obj/item/lighter,
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/plating/rough,
 /area/space)
 "oF" = (
@@ -3378,11 +3373,11 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "oL" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/toilet,
 /area/space)
 "oN" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/toilet,
 /area/space)
 "oO" = (
@@ -3430,7 +3425,7 @@
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "oV" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/vampipe{
 	pixel_x = 0;
 	pixel_y = 32
@@ -3439,11 +3434,6 @@
 /area/space)
 "oW" = (
 /turf/open/water,
-/area/space)
-"oX" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/obj/effect/landmark/npcwall,
-/turf/open/floor/plating/vampgrass,
 /area/space)
 "oZ" = (
 /obj/effect/decal/bordur{
@@ -3609,11 +3599,11 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "pI" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/rough,
 /area/space)
 "pN" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/carpet,
 /area/space)
 "pP" = (
@@ -3728,7 +3718,7 @@
 	dir = 5;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/granite,
 /area/space)
 "qq" = (
@@ -3739,7 +3729,7 @@
 /area/space)
 "qr" = (
 /obj/item/kirbyplants/random,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/vampplating,
@@ -3804,7 +3794,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "qJ" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "qL" = (
@@ -3869,7 +3859,7 @@
 /area/space)
 "rd" = (
 /obj/structure/chair/sofa/corp/right,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "re" = (
@@ -3951,7 +3941,7 @@
 /turf/open/floor/plating/vampdirt,
 /area/space)
 "rs" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "ru" = (
@@ -4073,7 +4063,7 @@
 /area/space)
 "rU" = (
 /obj/structure/table/wood,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "rV" = (
@@ -4108,7 +4098,7 @@
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "sd" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/vampipe{
 	icon_state = "piping32"
 	},
@@ -4185,7 +4175,7 @@
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "sA" = (
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "sB" = (
@@ -4197,7 +4187,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/granite,
 /area/space)
 "sD" = (
@@ -4252,7 +4242,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "sQ" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/rack,
 /obj/item/wire_cutters,
 /turf/open/floor/plating/vampplating/mono,
@@ -4295,14 +4285,14 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "sZ" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/toilet{
 	pixel_y = 16
 	},
 /turf/open/floor/plating/toilet,
 /area/space)
 "tb" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "tc" = (
@@ -4339,7 +4329,7 @@
 	dir = 5;
 	icon_state = "siding_wood_line"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/carpet/royalblack,
 /area/space)
 "tj" = (
@@ -4367,7 +4357,7 @@
 	dir = 1;
 	icon_state = "siding_corner"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/granite,
 /area/space)
 "tn" = (
@@ -4393,12 +4383,12 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "tr" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/table/wood,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "ts" = (
-/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/bush/style_random,
 /obj/structure/vampfence/rich{
 	dir = 4;
 	icon_state = "fence"
@@ -4474,7 +4464,7 @@
 "tI" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/crude,
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "tJ" = (
@@ -4490,7 +4480,7 @@
 "tL" = (
 /obj/structure/chair/sofa/right/brown,
 /obj/item/masquerade_contract,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/parquetry,
 /area/space)
 "tN" = (
@@ -4585,7 +4575,7 @@
 /turf/open/floor/plating/vampplating,
 /area/space)
 "uf" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/table,
 /obj/item/surgery_tray/full,
 /obj/item/clothing/suit/apron/surgical,
@@ -4664,7 +4654,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "uv" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "ux" = (
@@ -4679,7 +4669,7 @@
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "uz" = (
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /obj/structure/table/wood,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
@@ -4732,7 +4722,7 @@
 /turf/open/floor/plating/gummaguts,
 /area/space)
 "uJ" = (
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /obj/structure/table/wood,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
@@ -4796,7 +4786,7 @@
 /turf/open/floor/plating/parquetry/rich,
 /area/space)
 "uY" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "uZ" = (
@@ -4862,7 +4852,7 @@
 	dir = 8;
 	pixel_x = -3
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/parquetry,
 /area/space)
 "vn" = (
@@ -4888,7 +4878,7 @@
 /area/space)
 "vr" = (
 /obj/structure/table,
-/obj/machinery/light/small/red/directional/south,
+/obj/machinery/light/small/red/directional/north,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "vt" = (
@@ -4906,17 +4896,17 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "vw" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/sidewalk,
 /area/space)
 "vx" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "vy" = (
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
-/obj/effect/mob_spawn/human/citizen,
+/obj/effect/mob_spawn/ghost_role/human/citizen,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "vz" = (
@@ -4958,7 +4948,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "vK" = (
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/plating/concrete,
 /area/space)
 "vL" = (
@@ -4993,7 +4983,7 @@
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "vO" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/parquetry,
 /area/space)
 "vR" = (
@@ -5066,11 +5056,11 @@
 /area/space)
 "wi" = (
 /obj/effect/decal/cleanable/blood/old,
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "wj" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "wk" = (
@@ -5120,7 +5110,7 @@
 /turf/open/floor/carpet,
 /area/space)
 "wu" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/toilet,
 /area/space)
 "wv" = (
@@ -5130,7 +5120,7 @@
 /area/space)
 "wx" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/item/gun/ballistic/automatic/vampire/deagle,
 /obj/item/ammo_box/magazine/m44,
 /obj/item/drinkable_bloodpack,
@@ -5188,7 +5178,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "wG" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/concrete,
@@ -5279,14 +5269,14 @@
 /obj/structure/toilet{
 	pixel_y = 16
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/toilet,
 /area/space)
 "xf" = (
 /obj/structure/showcase/machinery/tv{
 	layer = 2.3
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "xj" = (
@@ -5295,11 +5285,11 @@
 /area/space)
 "xk" = (
 /obj/manholedown,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "xl" = (
-/obj/machinery/light/small/red/directional/east,
+/obj/machinery/light/small/red/directional/west,
 /turf/open/floor/plating/rough,
 /area/space)
 "xm" = (
@@ -5317,7 +5307,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "xn" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/bed/medical/emergency,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
@@ -5344,7 +5334,7 @@
 /turf/open/floor/plating/concrete,
 /area/space)
 "xt" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/table,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
@@ -5385,7 +5375,7 @@
 	dir = 8;
 	icon_state = "siding_wood_line"
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/red,
 /area/space)
 "xJ" = (
@@ -5464,7 +5454,7 @@
 	dir = 8;
 	icon_state = "corp_sofacorner"
 	},
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 8;
 	icon_state = "bulb";
 	pixel_x = 16
@@ -5531,7 +5521,7 @@
 /turf/open/floor/carpet,
 /area/space)
 "yk" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/carpet/green,
 /area/space)
 "yl" = (
@@ -5551,7 +5541,7 @@
 /area/space)
 "yt" = (
 /obj/structure/fluff/hedge,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/granite,
 /area/space)
 "yu" = (
@@ -5571,7 +5561,7 @@
 /turf/open/floor/plating/shit/border,
 /area/space)
 "yy" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/chair{
 	dir = 4
 	},
@@ -5639,7 +5629,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "yH" = (
-/obj/effect/mob_spawn/human/corpse/ciz4,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz4,
 /turf/open/floor/plating/rough,
 /area/space)
 "yI" = (
@@ -5720,7 +5710,7 @@
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "yW" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/toilet,
 /area/space)
 "yY" = (
@@ -5770,12 +5760,12 @@
 "zh" = (
 /obj/effect/turf_decal/siding/white,
 /obj/structure/fluff/hedge,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/granite,
 /area/space)
 "zj" = (
 /obj/structure/weedshit,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 4;
 	icon_state = "bulb";
 	pixel_x = -16
@@ -5820,7 +5810,7 @@
 /area/space)
 "zr" = (
 /obj/structure/bed/maint,
-/obj/machinery/light/small/red/directional/west,
+/obj/machinery/light/small/red/directional/east,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "zv" = (
@@ -5843,7 +5833,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "zC" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/vampipe{
 	icon_state = "piping32"
 	},
@@ -5885,7 +5875,7 @@
 /turf/open/floor/plating/parquetry/rich,
 /area/space)
 "zM" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/asphalt,
 /area/space)
 "zO" = (
@@ -5939,7 +5929,7 @@
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "Ab" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "Ae" = (
@@ -5951,7 +5941,7 @@
 /area/space)
 "Ag" = (
 /obj/structure/table/wood,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/concrete,
@@ -5960,7 +5950,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Aj" = (
@@ -5974,7 +5964,7 @@
 /turf/open/floor/iron/stairs,
 /area/space)
 "Al" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/fluff/hedge,
 /obj/effect/turf_decal/siding/white{
 	dir = 6;
@@ -5983,7 +5973,7 @@
 /turf/open/floor/plating/granite,
 /area/space)
 "Am" = (
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/plating/rough,
 /area/space)
 "An" = (
@@ -6014,7 +6004,7 @@
 /turf/open/floor/plating/circled,
 /area/space)
 "Aw" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/table/wood,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
@@ -6035,7 +6025,7 @@
 /area/space)
 "AB" = (
 /obj/structure/railing,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/chair/wood{
 	dir = 4;
 	layer = 2.1
@@ -6058,7 +6048,7 @@
 "AF" = (
 /obj/structure/table,
 /obj/item/paper_bin,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 1;
 	icon_state = "bulb"
 	},
@@ -6119,7 +6109,7 @@
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "AV" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/structure/vampipe{
 	icon_state = "piping38"
 	},
@@ -6242,7 +6232,7 @@
 	dir = 8;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/concrete,
 /area/space)
 "BB" = (
@@ -6258,7 +6248,7 @@
 /area/space)
 "BD" = (
 /obj/item/kirbyplants/random,
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "BE" = (
@@ -6345,7 +6335,7 @@
 /obj/effect/decal/bordur{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/sidewalk,
 /area/space)
 "Ch" = (
@@ -6356,7 +6346,7 @@
 /turf/open/floor/plating/concrete,
 /area/space)
 "Ci" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/rough,
 /area/space)
 "Cj" = (
@@ -6368,7 +6358,7 @@
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "Ck" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/siding/white{
 	dir = 4;
 	icon_state = "siding_line"
@@ -6407,7 +6397,7 @@
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "Cq" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/chair/wood{
 	dir = 8;
 	icon_state = "wooden_chair"
@@ -6430,16 +6420,16 @@
 /area/space)
 "Cv" = (
 /obj/structure/easel,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Cw" = (
 /obj/effect/decal/cleanable/blood/old,
-/obj/machinery/light/small/red/directional/north,
+/obj/machinery/light/small/red/directional/south,
 /turf/open/floor/plating/rough/cave,
 /area/space)
 "Cz" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/concrete,
 /area/space)
 "CB" = (
@@ -6534,7 +6524,7 @@
 /area/space)
 "CW" = (
 /obj/structure/filingcabinet,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "CZ" = (
@@ -6578,7 +6568,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "Di" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/effect/decal/rugs,
 /obj/item/ammo_box/vampire/c9mm,
 /obj/item/ammo_box/vampire/c556,
@@ -6619,7 +6609,7 @@
 	dir = 1;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/item/melee/vampirearms/knife,
 /turf/open/floor/plating/granite/black,
 /area/space)
@@ -6636,7 +6626,7 @@
 /turf/open/floor/plating/vampplating,
 /area/space)
 "Du" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "Dv" = (
@@ -6686,7 +6676,7 @@
 /area/space)
 "DD" = (
 /obj/structure/dresser,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/holofloor/carpet,
 /area/space)
 "DE" = (
@@ -6713,7 +6703,7 @@
 /turf/open/floor/plating/concrete,
 /area/space)
 "DI" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 1;
 	icon_state = "bulb"
 	},
@@ -6756,7 +6746,7 @@
 	dir = 1;
 	pixel_x = 6
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/toilet,
 /area/space)
 "DR" = (
@@ -6789,7 +6779,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "DW" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/sidewalk,
 /area/space)
 "DY" = (
@@ -6849,7 +6839,7 @@
 /obj/structure/chair/greyscale{
 	dir = 1
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "Ek" = (
@@ -6886,7 +6876,7 @@
 /turf/open/floor/plating/concrete,
 /area/space)
 "Eu" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/vampwood,
 /area/space)
 "Ev" = (
@@ -6913,7 +6903,7 @@
 /turf/open/floor/plating/parquetry/rich,
 /area/space)
 "Ez" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/vampipe{
 	icon_state = "piping31"
 	},
@@ -6940,7 +6930,7 @@
 	dir = 10;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/granite,
 /area/space)
 "EH" = (
@@ -6971,7 +6961,7 @@
 /obj/effect/decal/bordur{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "EN" = (
@@ -7013,12 +7003,12 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/granite,
 /area/space)
 "EV" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/item/gun/ballistic/automatic/vampire/uzi,
 /obj/item/ammo_box/magazine/vamp9mm,
 /turf/open/floor/plating/granite/black,
@@ -7094,7 +7084,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Fn" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/chair/comfy{
 	color = "#9c89b3"
 	},
@@ -7111,7 +7101,7 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "Fr" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "Fs" = (
@@ -7144,7 +7134,7 @@
 /area/space)
 "FD" = (
 /obj/structure/clothinghanger,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "FE" = (
@@ -7179,7 +7169,7 @@
 /area/space)
 "FL" = (
 /obj/manholedown,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "FN" = (
@@ -7296,7 +7286,7 @@
 /area/space)
 "Gm" = (
 /obj/structure/table/wood,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "Gp" = (
@@ -7332,7 +7322,7 @@
 /area/space)
 "Gt" = (
 /obj/structure/clothinghanger,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "Gu" = (
@@ -7351,7 +7341,7 @@
 /turf/closed/wall/vampwall/market,
 /area/space)
 "GD" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/table,
 /obj/item/melee/vampirearms/fireaxe,
 /turf/open/floor/plating/vampplating/mono,
@@ -7410,7 +7400,7 @@
 /area/space)
 "GQ" = (
 /obj/structure/fluff/hedge,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 8;
 	icon_state = "bulb";
 	pixel_x = 16
@@ -7424,7 +7414,7 @@
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "GT" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /obj/structure/toilet,
@@ -7436,7 +7426,7 @@
 	dir = 4;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/granite,
 /area/space)
 "GW" = (
@@ -7475,7 +7465,7 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "He" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/railing{
 	layer = 4
 	},
@@ -7490,7 +7480,7 @@
 /area/space)
 "Hi" = (
 /obj/machinery/vending/boozeomat,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 4;
 	icon_state = "bulb";
 	pixel_x = -16
@@ -7600,7 +7590,7 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "HC" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 4;
 	icon_state = "bulb";
 	pixel_x = -16
@@ -7614,7 +7604,7 @@
 "HF" = (
 /obj/item/reagent_containers/cup/bucket,
 /obj/item/mop,
-/obj/structure/janitorialcart,
+/obj/structure/mop_bucket/janitorialcart,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "HG" = (
@@ -7629,7 +7619,7 @@
 /turf/open/floor/plating/circled,
 /area/space)
 "HJ" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/circled,
 /area/space)
 "HK" = (
@@ -7752,7 +7742,7 @@
 	dir = 4;
 	icon_state = "railing"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "If" = (
@@ -7846,7 +7836,7 @@
 "IG" = (
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet/any,
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/holofloor/carpet,
 /area/space)
 "II" = (
@@ -7889,7 +7879,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "IR" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
@@ -7903,7 +7893,7 @@
 	dir = 8;
 	icon_state = "siding_wood_line"
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/purple,
 /area/space)
 "IW" = (
@@ -7926,14 +7916,14 @@
 /turf/open/floor/plating/granite/black,
 /area/space)
 "Ja" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/machinery/computer/operating{
 	dir = 4
 	},
 /turf/open/floor/plating/circled,
 /area/space)
 "Jb" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/openspace,
 /area/space)
 "Jd" = (
@@ -7950,7 +7940,7 @@
 	dir = 1;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/table,
 /turf/open/floor/plating/parquetry,
 /area/space)
@@ -7979,7 +7969,7 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "Jl" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/clothinghanger,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
@@ -7992,7 +7982,7 @@
 	dir = 8;
 	icon_state = "railing"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Jn" = (
@@ -8006,7 +7996,7 @@
 /turf/open/floor/plating/concrete,
 /area/space)
 "Js" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "Ju" = (
@@ -8048,7 +8038,7 @@
 "JD" = (
 /obj/structure/table/wood,
 /obj/item/lipstick/purple,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/parquetry,
@@ -8096,11 +8086,11 @@
 	dir = 1;
 	icon_state = "border"
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "JM" = (
-/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/bush/style_random,
 /obj/effect/landmark/npcwall,
 /obj/structure/lamppost/sidewalk,
 /turf/open/floor/plating/vampgrass,
@@ -8187,7 +8177,7 @@
 /turf/open/floor/plating/vampplating,
 /area/space)
 "Kh" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "Kl" = (
@@ -8265,7 +8255,7 @@
 /turf/open/floor/plating/vampwood,
 /area/space)
 "Kz" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/vampipe{
 	icon_state = "piping35"
 	},
@@ -8278,17 +8268,12 @@
 "KA" = (
 /obj/structure/chair/sofa/left/brown,
 /obj/item/masquerade_contract,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/parquetry,
 /area/space)
 "KB" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/asphalt,
-/area/space)
-"KC" = (
-/obj/structure/flora/ausbushes,
-/obj/effect/landmark/npcwall,
-/turf/open/floor/plating/vampgrass,
 /area/space)
 "KD" = (
 /obj/structure/railing{
@@ -8303,7 +8288,7 @@
 /obj/item/reagent_containers/cup/glass/beer/vampire{
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 0)
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "KF" = (
@@ -8311,11 +8296,11 @@
 	alpha = 125;
 	dir = 1
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "KH" = (
-/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/bordur,
 /obj/effect/decal/bordur{
 	dir = 1;
@@ -8375,7 +8360,7 @@
 /turf/open/floor/plating/concrete,
 /area/space)
 "Le" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/concrete,
 /area/space)
 "Lf" = (
@@ -8495,7 +8480,7 @@
 	dir = 8;
 	pixel_y = 12
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/toilet,
 /area/space)
 "LF" = (
@@ -8510,7 +8495,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/space)
 "LG" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/openspace,
 /area/space)
 "LL" = (
@@ -8520,7 +8505,7 @@
 /area/space)
 "LS" = (
 /obj/effect/decal/litter,
-/obj/machinery/light/small/broken/directional/north,
+/obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/plating/concrete,
 /area/space)
 "LT" = (
@@ -8554,7 +8539,7 @@
 /area/space)
 "Mc" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "Md" = (
@@ -8569,7 +8554,7 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "Mf" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Mh" = (
@@ -8577,7 +8562,7 @@
 	dir = 1;
 	pixel_y = 6
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "Mi" = (
@@ -8672,18 +8657,12 @@
 /turf/open/floor/carpet/royalblack,
 /area/space)
 "MD" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/chair/wood{
 	dir = 4;
 	icon_state = "wooden_chair"
 	},
 /turf/open/floor/plating/concrete,
-/area/space)
-"ME" = (
-/obj/structure/flora/ausbushes,
-/obj/effect/landmark/npcwall,
-/obj/structure/lamppost/sidewalk,
-/turf/open/floor/plating/vampgrass,
 /area/space)
 "MI" = (
 /obj/structure/vampdoor/simple,
@@ -8708,15 +8687,11 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "MO" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/vampgrass,
-/area/space)
-"MP" = (
-/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "MQ" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/vampgrass,
 /area/space)
 "MR" = (
@@ -8761,10 +8736,6 @@
 	},
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
-"Nd" = (
-/obj/structure/flora/ausbushes,
-/turf/open/floor/plating/vampgrass,
-/area/space)
 "Ne" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 1;
@@ -8785,18 +8756,6 @@
 "Ni" = (
 /obj/structure/coclock,
 /turf/open/floor/carpet/stellar,
-/area/space)
-"Nk" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/plating/vampgrass,
-/area/space)
-"Nl" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/obj/structure/vampfence/rich{
-	dir = 4;
-	icon_state = "fence"
-	},
-/turf/open/floor/plating/vampgrass,
 /area/space)
 "Nn" = (
 /obj/vampire_car/rand/camarilla{
@@ -8824,7 +8783,7 @@
 /area/space)
 "Nq" = (
 /obj/structure/fluff/hedge,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 4;
 	icon_state = "bulb";
 	pixel_x = -16
@@ -8840,11 +8799,11 @@
 	dir = 4;
 	pixel_y = -7
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/toilet,
 /area/space)
 "Ns" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/table,
 /obj/item/clothing/glasses/vampire/perception,
 /obj/item/clothing/glasses/vampire/perception,
@@ -8911,7 +8870,7 @@
 /turf/open/floor/carpet/stellar,
 /area/space)
 "NO" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "NP" = (
@@ -8926,7 +8885,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "NR" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/weapon_showcase,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
@@ -8960,7 +8919,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "NW" = (
-/obj/structure/flora/ausbushes,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/bordur{
 	dir = 1;
 	icon_state = "border"
@@ -8984,11 +8943,11 @@
 /area/space)
 "NZ" = (
 /obj/structure/table,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "Oa" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/structure/clothinghanger,
 /turf/open/floor/carpet/royalblue,
 /area/space)
@@ -9057,7 +9016,7 @@
 /area/space)
 "On" = (
 /obj/structure/table,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "Oo" = (
@@ -9093,7 +9052,7 @@
 /turf/open/floor/plating/toilet,
 /area/space)
 "Oy" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/carpet/green,
 /area/space)
 "Oz" = (
@@ -9112,7 +9071,7 @@
 /area/space)
 "OC" = (
 /obj/effect/decal/bordur,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "OE" = (
@@ -9294,7 +9253,7 @@
 /turf/open/floor/plating/gummaguts,
 /area/space)
 "Pj" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Pm" = (
@@ -9302,7 +9261,7 @@
 /turf/open/floor/plating/granite,
 /area/space)
 "Pn" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "Po" = (
@@ -9321,7 +9280,7 @@
 /area/space)
 "Pr" = (
 /obj/structure/table/reinforced,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/item/vampire_stake,
 /obj/item/gun/ballistic/automatic/vampire/uzi,
 /obj/item/storage/box/handcuffs,
@@ -9330,9 +9289,9 @@
 /area/space)
 "Ps" = (
 /obj/structure/table,
-/obj/item/storage/firstaid/medical,
-/obj/item/storage/firstaid/medical,
-/obj/item/storage/firstaid/medical,
+/obj/item/storage/medkit,
+/obj/item/storage/medkit,
+/obj/item/storage/medkit,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Pu" = (
@@ -9383,16 +9342,16 @@
 /turf/open/floor/carpet/black,
 /area/space)
 "PG" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/chair/office,
 /mob/living/carbon/human/npc/guard,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "PI" = (
 /obj/structure/table,
-/obj/item/storage/firstaid/advanced,
-/obj/item/storage/firstaid/advanced,
-/obj/item/storage/firstaid/advanced,
+/obj/item/storage/medkit/advanced,
+/obj/item/storage/medkit/advanced,
+/obj/item/storage/medkit/advanced,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "PK" = (
@@ -9413,9 +9372,9 @@
 /area/space)
 "PM" = (
 /obj/structure/table,
-/obj/item/storage/firstaid/o2,
-/obj/item/storage/firstaid/o2,
-/obj/item/storage/firstaid/o2,
+/obj/item/storage/medkit/o2,
+/obj/item/storage/medkit/o2,
+/obj/item/storage/medkit/o2,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "PN" = (
@@ -9435,7 +9394,7 @@
 	icon_state = "siding_wood_line"
 	},
 /obj/effect/spawner/random/bedsheet/any,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/purple,
 /area/space)
 "PT" = (
@@ -9453,7 +9412,7 @@
 	icon_state = "siding_wood_line"
 	},
 /obj/effect/spawner/random/bedsheet/any,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/carpet/stellar,
 /area/space)
 "PV" = (
@@ -9462,7 +9421,7 @@
 /turf/open/floor/carpet,
 /area/space)
 "Qb" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/clothingrack/rand{
 	dir = 1;
 	icon_state = "rack2"
@@ -9470,12 +9429,12 @@
 /turf/open/floor/plating/concrete,
 /area/space)
 "Qc" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/table/wood,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "Qd" = (
-/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/bush/style_random,
 /obj/structure/vamptree,
 /turf/open/floor/plating/vampgrass,
 /area/space)
@@ -9487,11 +9446,11 @@
 /turf/open/floor/carpet,
 /area/space)
 "Qg" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/openspace,
 /area/space)
 "Qi" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 8;
 	icon_state = "bulb";
 	pixel_x = 16
@@ -9547,11 +9506,11 @@
 /turf/open/floor/plating/sidewalk/rich,
 /area/space)
 "Qx" = (
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/table,
-/obj/item/storage/firstaid/brute,
-/obj/item/storage/firstaid/brute,
-/obj/item/storage/firstaid/brute,
+/obj/item/storage/medkit/brute,
+/obj/item/storage/medkit/brute,
+/obj/item/storage/medkit/brute,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "QA" = (
@@ -9609,7 +9568,7 @@
 	dir = 8;
 	icon_state = "border"
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/sidewalk,
 /area/space)
 "QO" = (
@@ -9629,7 +9588,7 @@
 /area/space)
 "QQ" = (
 /obj/structure/chair/greyscale,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "QR" = (
@@ -9644,7 +9603,7 @@
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "QS" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/chair{
 	dir = 4
 	},
@@ -9703,7 +9662,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Rg" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "Ri" = (
@@ -9791,7 +9750,7 @@
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Rw" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/table,
 /obj/machinery/button/door{
 	id = "clinic";
@@ -9821,7 +9780,7 @@
 /obj/item/bodybag,
 /obj/item/bodybag,
 /obj/item/bodybag,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "RD" = (
@@ -9927,11 +9886,11 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "RX" = (
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/structure/table,
-/obj/item/storage/firstaid/fire,
-/obj/item/storage/firstaid/fire,
-/obj/item/storage/firstaid/fire,
+/obj/item/storage/medkit/fire,
+/obj/item/storage/medkit/fire,
+/obj/item/storage/medkit/fire,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "RY" = (
@@ -9951,7 +9910,7 @@
 	dir = 8;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Sd" = (
@@ -9994,7 +9953,7 @@
 	dir = 6;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/fluff/hedge,
 /turf/open/floor/plating/granite,
 /area/space)
@@ -10036,7 +9995,7 @@
 /area/space)
 "St" = (
 /obj/effect/decal/litter,
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "Su" = (
@@ -10054,7 +10013,7 @@
 	dir = 10;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/granite,
 /area/space)
 "Sx" = (
@@ -10127,7 +10086,7 @@
 "SM" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/parquetry,
 /area/space)
 "SN" = (
@@ -10149,7 +10108,7 @@
 /turf/open/floor/bronze,
 /area/space)
 "SP" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/vampipe{
 	pixel_x = 0;
 	pixel_y = 32
@@ -10158,7 +10117,7 @@
 /area/space)
 "SQ" = (
 /obj/manholeup,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/vampipe{
 	pixel_x = 0;
 	pixel_y = 32
@@ -10171,7 +10130,7 @@
 /area/space)
 "SU" = (
 /mob/living/carbon/human/npc/bacotell,
-/obj/structure/window/reinforced/indestructable{
+/obj/structure/window/reinforced/fulltile/indestructable{
 	alpha = 0;
 	dir = 8
 	},
@@ -10224,7 +10183,7 @@
 /turf/open/floor/carpet/purple,
 /area/space)
 "Tl" = (
-/obj/machinery/light/small/broken/directional/south,
+/obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "Tn" = (
@@ -10257,14 +10216,8 @@
 	},
 /turf/open/floor/plating/vampgrass,
 /area/space)
-"Tu" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/obj/effect/landmark/npcwall,
-/obj/structure/lamppost/sidewalk,
-/turf/open/floor/plating/vampgrass,
-/area/space)
 "Tx" = (
-/obj/structure/sign/poster/genitorturers{
+/obj/structure/sign/poster/random{
 	pixel_y = 32
 	},
 /turf/open/floor/carpet,
@@ -10387,12 +10340,12 @@
 	dir = 5;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/granite,
 /area/space)
 "TZ" = (
 /obj/structure/table,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "Ua" = (
@@ -10463,7 +10416,7 @@
 /area/space)
 "Us" = (
 /obj/effect/decal/cardboard,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "Ut" = (
@@ -10550,7 +10503,7 @@
 /area/space)
 "UG" = (
 /obj/effect/decal/trash,
-/obj/machinery/light/small/broken/directional/east,
+/obj/machinery/light/small/broken/directional/west,
 /turf/open/floor/plating/vampcanal,
 /area/space)
 "UI" = (
@@ -10561,7 +10514,7 @@
 /obj/item/clothing/shoes/vampire/heels,
 /obj/item/clothing/shoes/vampire,
 /obj/item/clothing/glasses/vampire/sun,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/parquetry,
 /area/space)
 "UJ" = (
@@ -10573,7 +10526,7 @@
 /area/space)
 "UL" = (
 /obj/machinery/shower/directional/south,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/toilet,
 /area/space)
 "UM" = (
@@ -10581,7 +10534,7 @@
 /turf/open/floor/plating/parquetry,
 /area/space)
 "UQ" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "UR" = (
@@ -10635,7 +10588,7 @@
 /area/space)
 "Vh" = (
 /obj/structure/table,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "Vj" = (
@@ -10734,7 +10687,7 @@
 /obj/item/reagent_containers/cup/glass/beer/vampire{
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer = 0)
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "VH" = (
@@ -10828,7 +10781,7 @@
 /turf/open/floor/carpet,
 /area/space)
 "VW" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/fluff/hedge,
 /obj/effect/turf_decal/siding/white{
 	dir = 10
@@ -10841,7 +10794,7 @@
 	dir = 8;
 	icon_state = "siding_corner"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/granite,
 /area/space)
 "VY" = (
@@ -10875,18 +10828,18 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "Wg" = (
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 1;
 	icon_state = "bulb"
 	},
 /turf/open/floor/plating/concrete,
 /area/space)
 "Wh" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/asphalt,
 /area/space)
 "Wi" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "Wk" = (
@@ -10894,7 +10847,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/vampcanalplating,
 /area/space)
 "Wl" = (
@@ -10983,18 +10936,18 @@
 /area/space)
 "Wz" = (
 /obj/structure/table/wood,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "WB" = (
 /obj/structure/table,
-/obj/item/storage/firstaid/toxin,
-/obj/item/storage/firstaid/toxin,
-/obj/item/storage/firstaid/toxin,
+/obj/item/storage/medkit/toxin,
+/obj/item/storage/medkit/toxin,
+/obj/item/storage/medkit/toxin,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
 "WC" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/sidewalk,
 /area/space)
 "WD" = (
@@ -11054,11 +11007,11 @@
 /obj/item/stocks_license,
 /obj/item/stocks_license,
 /obj/structure/table,
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /turf/open/floor/plating/vampplating,
 /area/space)
 "WR" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "WX" = (
@@ -11129,7 +11082,7 @@
 /area/space)
 "Xl" = (
 /obj/structure/weedshit,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	dir = 8;
 	icon_state = "bulb";
 	pixel_x = 16
@@ -11148,7 +11101,7 @@
 	dir = 8;
 	icon_state = "corp_sofaend_right"
 	},
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/concrete,
@@ -11189,7 +11142,7 @@
 /area/space)
 "Xv" = (
 /obj/machinery/shower/directional/south,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/toilet,
 /area/space)
 "Xx" = (
@@ -11269,7 +11222,7 @@
 "XT" = (
 /obj/machinery/computer/order_console/mining/fastfood/america,
 /obj/structure/table,
-/obj/structure/window/reinforced/indestructable{
+/obj/structure/window/reinforced/fulltile/indestructable{
 	dir = 1;
 	icon_state = "rwindow"
 	},
@@ -11318,7 +11271,7 @@
 	dir = 1;
 	icon_state = "warningline"
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /obj/item/gun/ballistic/automatic/vampire/uzi,
 /turf/open/floor/plating/rough,
 /area/space)
@@ -11409,7 +11362,7 @@
 /turf/open/floor/plating/vampcanalplating,
 /area/space)
 "Yz" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/chair/wood{
 	dir = 8;
 	icon_state = "wooden_chair"
@@ -11472,13 +11425,13 @@
 	dir = 5;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plating/granite,
 /area/space)
 "YM" = (
 /obj/structure/table,
 /obj/item/food/vampire/burger,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/sidewalk/poor,
 /area/space)
 "YN" = (
@@ -11580,7 +11533,7 @@
 /area/space)
 "Zh" = (
 /obj/structure/table/wood,
-/obj/machinery/light/small/pink{
+/obj/machinery/light/blacklight{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/vampplating,
@@ -11614,7 +11567,7 @@
 	dir = 1;
 	icon_state = "siding_line"
 	},
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/east,
 /obj/structure/table,
 /turf/open/floor/plating/parquetry,
 /area/space)
@@ -11672,7 +11625,7 @@
 	icon_state = "siding_line"
 	},
 /obj/structure/fluff/hedge,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/west,
 /turf/open/floor/plating/granite,
 /area/space)
 "ZA" = (
@@ -11730,7 +11683,7 @@
 /turf/open/floor/plating/granite,
 /area/space)
 "ZP" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/parquetry/old,
 /area/space)
 "ZS" = (
@@ -11753,7 +11706,7 @@
 /turf/open/floor/plating/vampplating,
 /area/space)
 "ZW" = (
-/obj/machinery/light/directional/south,
+/obj/machinery/light/directional/north,
 /obj/structure/table,
 /turf/open/floor/plating/vampplating/mono,
 /area/space)
@@ -106189,7 +106142,7 @@ bh
 bh
 Hd
 MO
-MP
+MO
 OK
 OK
 OK
@@ -106219,7 +106172,7 @@ iD
 bh
 Hd
 ij
-KC
+ij
 hb
 hb
 hb
@@ -106450,11 +106403,11 @@ bh
 bh
 bh
 Hd
-MP
+MO
 OK
 MO
 Qd
-MP
+MO
 Sd
 Tf
 Vg
@@ -106492,9 +106445,9 @@ ox
 hb
 hb
 hb
-lJ
-KC
-KC
+ij
+ij
+ij
 eo
 bh
 ox
@@ -106715,7 +106668,7 @@ HM
 MO
 OK
 MO
-MP
+MO
 OK
 Sd
 TN
@@ -106742,7 +106695,7 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
 hb
 ij
@@ -106974,11 +106927,11 @@ bh
 bh
 bh
 Hd
-Nd
 MO
-MP
 MO
-MP
+MO
+MO
+MO
 Sd
 Uy
 Vg
@@ -107004,11 +106957,11 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
 hb
 ij
-KC
+ij
 wX
 Ho
 bh
@@ -107236,10 +107189,10 @@ bh
 bh
 bh
 Io
-Nk
-MP
+MO
+MO
 OK
-MP
+MO
 OK
 Sd
 UF
@@ -107267,7 +107220,7 @@ iD
 bh
 Hd
 hb
-oX
+ij
 ij
 hb
 hb
@@ -107542,7 +107495,7 @@ ij
 hb
 hb
 yT
-oX
+ij
 eo
 bh
 ox
@@ -107793,7 +107746,7 @@ Hd
 hb
 hb
 yT
-oX
+ij
 hb
 ro
 sS
@@ -107803,8 +107756,8 @@ hb
 hb
 ij
 ij
-oX
-lJ
+ij
+ij
 eo
 bh
 ox
@@ -108066,7 +108019,7 @@ hb
 hb
 hb
 hb
-KC
+ij
 eo
 bh
 ox
@@ -108315,7 +108268,7 @@ iD
 bh
 Hd
 ij
-KC
+ij
 hb
 hb
 hb
@@ -108842,7 +108795,7 @@ hb
 yT
 ij
 ij
-KC
+ij
 hb
 iD
 bh
@@ -109100,7 +109053,7 @@ pq
 iD
 bh
 Hd
-oX
+ij
 hb
 ij
 hb
@@ -109110,10 +109063,10 @@ oJ
 bh
 ox
 AY
-oX
+ij
 hb
 ij
-KC
+ij
 ij
 eo
 bh
@@ -109362,20 +109315,20 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
-KC
+ij
 hb
 yT
 ro
 sS
 bh
 ox
-oX
-KC
+ij
+ij
 hb
-KC
-oX
+ij
+ij
 hb
 eo
 bh
@@ -109624,17 +109577,17 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
 hb
-oX
+ij
 hb
 ij
 iD
 bh
 ox
-KC
-KC
+ij
+ij
 hb
 hb
 hb
@@ -109889,7 +109842,7 @@ Hd
 hb
 hb
 hb
-KC
+ij
 hb
 eN
 iD
@@ -110151,8 +110104,8 @@ Hd
 hb
 yT
 hb
-KC
-KC
+ij
+ij
 wX
 Ho
 bh
@@ -110161,8 +110114,8 @@ pQ
 hb
 yT
 hb
-KC
-oX
+ij
+ij
 eo
 bh
 ox
@@ -110412,19 +110365,19 @@ bh
 Hd
 hb
 hb
-oX
 ij
 ij
-KC
+ij
+ij
 iD
 bh
 ox
 hb
 hb
 hb
-oX
 ij
-KC
+ij
+ij
 eo
 bh
 ox
@@ -110936,7 +110889,7 @@ bh
 Hd
 hb
 hb
-oX
+ij
 hb
 hb
 ro
@@ -110946,7 +110899,7 @@ ox
 hb
 hb
 hb
-oX
+ij
 hb
 hb
 eo
@@ -111197,8 +111150,8 @@ iD
 bh
 Hd
 ij
-KC
-KC
+ij
+ij
 hb
 hb
 eN
@@ -111207,8 +111160,8 @@ bh
 ox
 eN
 ij
-KC
-KC
+ij
+ij
 hb
 yT
 eo
@@ -111469,10 +111422,10 @@ bh
 Jx
 pQ
 ij
-KC
+ij
 hb
-oX
-KC
+ij
+ij
 eo
 bh
 ox
@@ -111722,7 +111675,7 @@ bh
 Hd
 hb
 hb
-oX
+ij
 hb
 hb
 yT
@@ -111733,7 +111686,7 @@ ij
 ij
 ij
 hb
-KC
+ij
 hb
 eo
 bh
@@ -111983,8 +111936,8 @@ iD
 bh
 Hd
 ij
-KC
-KC
+ij
+ij
 hb
 hb
 yT
@@ -111992,7 +111945,7 @@ iD
 bh
 ox
 ij
-KC
+ij
 hb
 hb
 yT
@@ -112247,14 +112200,14 @@ Hd
 hb
 yT
 hb
-KC
-KC
-oX
+ij
+ij
+ij
 iD
 bh
 ox
-KC
-KC
+ij
+ij
 hb
 hb
 hb
@@ -112508,19 +112461,19 @@ bh
 Hd
 hb
 hb
-oX
 ij
 ij
-KC
+ij
+ij
 iD
 bh
 ox
-KC
-hb
-oX
 ij
-KC
-KC
+hb
+ij
+ij
+ij
+ij
 eo
 bh
 ox
@@ -112773,7 +112726,7 @@ hb
 yT
 ij
 ij
-Tu
+JM
 iD
 bh
 ox
@@ -112782,7 +112735,7 @@ hb
 hb
 hb
 hb
-KC
+ij
 eo
 bh
 ox
@@ -113032,7 +112985,7 @@ bh
 yc
 hb
 hb
-oX
+ij
 hb
 hb
 ip
@@ -113044,7 +112997,7 @@ hb
 hb
 hb
 ij
-KC
+ij
 mI
 bh
 ox
@@ -113531,17 +113484,17 @@ bb
 bb
 bb
 OK
-MP
+MO
 OK
-MP
-Nk
+MO
+MO
 MO
 OK
 OK
-Nk
+MO
 MO
 OK
-MP
+MO
 MO
 aQ
 bh
@@ -114343,8 +114296,8 @@ ox
 hb
 Gf
 hb
-oX
-oX
+ij
+ij
 iD
 bh
 bh
@@ -114353,8 +114306,8 @@ gm
 hb
 Gf
 hb
-oX
-oX
+ij
+ij
 iD
 bh
 ox
@@ -114602,7 +114555,7 @@ pq
 iD
 bh
 ox
-oX
+ij
 hb
 hb
 yT
@@ -114612,7 +114565,7 @@ bh
 bh
 bh
 ox
-oX
+ij
 hb
 hb
 yT
@@ -114864,21 +114817,21 @@ pq
 iD
 bh
 ox
-KC
+ij
 hb
 hb
-oX
-oX
+ij
+ij
 iD
 bh
 bh
 bh
 ox
-KC
+ij
 hb
 hb
-oX
-oX
+ij
+ij
 iD
 bh
 ox
@@ -115128,9 +115081,9 @@ bh
 ox
 ij
 ij
-KC
-KC
-KC
+ij
+ij
+ij
 iD
 bh
 bh
@@ -115138,9 +115091,9 @@ bh
 gm
 ij
 ij
-KC
-KC
-KC
+ij
+ij
+ij
 iD
 bh
 ox
@@ -116436,7 +116389,7 @@ pq
 iD
 bh
 TX
-oX
+ij
 hb
 ij
 ij
@@ -116447,7 +116400,7 @@ bh
 kW
 fh
 hb
-KC
+ij
 hb
 ij
 hb
@@ -116698,11 +116651,11 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
-KC
-KC
-oX
+ij
+ij
+ij
 pU
 iD
 bh
@@ -116960,7 +116913,7 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
 hb
 hb
@@ -116970,7 +116923,7 @@ iD
 bh
 ox
 hb
-oX
+ij
 hb
 hb
 hb
@@ -117232,8 +117185,8 @@ iD
 bh
 ox
 hb
-KC
-KC
+ij
+ij
 hb
 hb
 hb
@@ -117488,8 +117441,8 @@ hb
 yT
 hb
 hb
-KC
-oX
+ij
+ij
 iD
 bh
 ox
@@ -117748,19 +117701,19 @@ bh
 Hd
 hb
 hb
-oX
-oX
 ij
-ME
+ij
+ij
+JM
 iD
 bh
 ox
-ME
+JM
 hb
-oX
 ij
-KC
-KC
+ij
+ij
+ij
 eo
 bh
 ox
@@ -118022,7 +117975,7 @@ hb
 hb
 hb
 hb
-KC
+ij
 eo
 bh
 ox
@@ -118272,8 +118225,8 @@ bh
 Hd
 hb
 hb
-oX
-oX
+ij
+ij
 hb
 hb
 iD
@@ -118533,9 +118486,9 @@ iD
 bh
 Hd
 ij
-KC
-KC
-KC
+ij
+ij
+ij
 hb
 jA
 oJ
@@ -118546,7 +118499,7 @@ ij
 hb
 hb
 hb
-KC
+ij
 eo
 bh
 ox
@@ -118805,9 +118758,9 @@ bh
 ox
 ij
 ij
-KC
+ij
 hb
-KC
+ij
 hb
 eo
 bh
@@ -119056,11 +119009,11 @@ pq
 iD
 bh
 Hd
-oX
+ij
 hb
 ij
 ij
-KC
+ij
 eN
 iD
 bh
@@ -119318,21 +119271,21 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
-KC
-KC
-oX
+ij
+ij
+ij
 Kt
 Ho
 bh
 Jx
 pQ
 ij
-KC
+ij
 hb
-oX
-KC
+ij
+ij
 eo
 bh
 ox
@@ -119580,7 +119533,7 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
 hb
 hb
@@ -119591,10 +119544,10 @@ bh
 ox
 ij
 ij
-KC
+ij
 hb
-oX
-KC
+ij
+ij
 eo
 bh
 ox
@@ -119855,7 +119808,7 @@ ij
 ij
 ij
 hb
-KC
+ij
 hb
 eo
 bh
@@ -120108,13 +120061,13 @@ hb
 yT
 hb
 hb
-KC
+ij
 ro
 sS
 bh
 ox
 ij
-KC
+ij
 hb
 hb
 yT
@@ -120368,15 +120321,15 @@ bh
 Hd
 hb
 hb
-oX
-oX
+ij
+ij
 ij
 eN
 iD
 bh
 ox
 eN
-KC
+ij
 hb
 hb
 hb
@@ -120639,10 +120592,10 @@ bh
 Jx
 pQ
 hb
-oX
 ij
-KC
-KC
+ij
+ij
+ij
 eo
 bh
 ox
@@ -120892,8 +120845,8 @@ jr
 Hd
 hb
 hb
-oX
-oX
+ij
+ij
 hb
 hb
 iD
@@ -120904,7 +120857,7 @@ hb
 hb
 hb
 hb
-KC
+ij
 eo
 bh
 ox
@@ -121153,9 +121106,9 @@ iD
 bh
 Hd
 ij
-KC
-KC
-KC
+ij
+ij
+ij
 hb
 hb
 iD
@@ -121414,11 +121367,11 @@ pq
 iD
 bh
 Hd
-oX
+ij
 hb
 ij
 ij
-KC
+ij
 jA
 oJ
 bh
@@ -121428,7 +121381,7 @@ ij
 hb
 hb
 hb
-KC
+ij
 eo
 bh
 ox
@@ -121676,20 +121629,20 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
-KC
-KC
-oX
+ij
+ij
+ij
 ro
 sS
 bh
 ox
 ij
 ij
-KC
+ij
 hb
-KC
+ij
 hb
 eo
 bh
@@ -121938,7 +121891,7 @@ pq
 iD
 bh
 Hd
-KC
+ij
 hb
 hb
 hb
@@ -122466,16 +122419,16 @@ hb
 yT
 hb
 hb
-KC
+ij
 hb
 iD
 bh
 ox
 ij
-oX
+ij
 hb
 ij
-KC
+ij
 ij
 eo
 bh
@@ -122726,18 +122679,18 @@ bh
 Hd
 hb
 hb
-oX
-oX
+ij
+ij
 ij
 hb
 iD
 bh
 ox
 ij
-KC
+ij
 hb
-KC
-oX
+ij
+ij
 hb
 eo
 bh
@@ -122995,8 +122948,8 @@ jA
 oJ
 bh
 ox
-KC
-KC
+ij
+ij
 hb
 hb
 hb
@@ -123250,14 +123203,14 @@ bh
 Hd
 hb
 hb
-oX
-oX
+ij
+ij
 hb
 ro
 sS
 bh
 ox
-KC
+ij
 hb
 hb
 hb
@@ -123511,11 +123464,11 @@ iD
 bh
 Hd
 ij
-KC
-KC
-KC
+ij
+ij
+ij
 hb
-ME
+JM
 iD
 bh
 ox
@@ -123523,8 +123476,8 @@ eN
 hb
 yT
 hb
-KC
-oX
+ij
+ij
 eo
 bh
 ox
@@ -123776,7 +123729,7 @@ hb
 yT
 hb
 hb
-KC
+ij
 wX
 Ho
 bh
@@ -123784,9 +123737,9 @@ Jx
 pQ
 hb
 hb
-oX
 ij
-KC
+ij
+ij
 eo
 bh
 ox
@@ -123945,7 +123898,7 @@ CQ
 ln
 kh
 OK
-Nk
+MO
 OK
 OK
 Bu
@@ -124036,8 +123989,8 @@ bh
 Hd
 hb
 hb
-oX
-oX
+ij
+ij
 ij
 hb
 iD
@@ -124208,7 +124161,7 @@ ln
 oP
 OK
 OK
-Nk
+MO
 OK
 Bu
 nV
@@ -124308,7 +124261,7 @@ ox
 ij
 hb
 hb
-oX
+ij
 hb
 hb
 eo
@@ -124469,7 +124422,7 @@ CQ
 CQ
 CQ
 CQ
-Nk
+MO
 OK
 OK
 Bu
@@ -124560,8 +124513,8 @@ bh
 Hd
 hb
 hb
-oX
-oX
+ij
+ij
 hb
 hb
 iD
@@ -124569,8 +124522,8 @@ bh
 ox
 hb
 ij
-KC
-KC
+ij
+ij
 hb
 yT
 eo
@@ -124821,9 +124774,9 @@ iD
 bh
 Hd
 ij
-KC
-KC
-KC
+ij
+ij
+ij
 hb
 hb
 iD
@@ -124831,8 +124784,8 @@ bh
 ox
 ij
 ij
-KC
-KC
+ij
+ij
 hb
 hb
 eo
@@ -126778,7 +126731,7 @@ pq
 Rr
 zF
 OK
-Nk
+MO
 OK
 OK
 OK
@@ -127039,12 +126992,12 @@ Rr
 Dx
 Rr
 Hb
-Nk
+MO
 OK
 OK
 OK
 OK
-Nl
+ts
 OK
 OK
 OK
@@ -128353,7 +128306,7 @@ jr
 jr
 ZK
 OK
-Nk
+MO
 Wb
 iJ
 iJ
@@ -129446,8 +129399,8 @@ bB
 CQ
 ln
 kh
-Nk
-Nk
+MO
+MO
 OK
 OK
 Bu
@@ -129972,7 +129925,7 @@ ln
 kh
 OK
 OK
-Nk
+MO
 OK
 Bu
 nV
@@ -133316,7 +133269,7 @@ OK
 OK
 OK
 OK
-MP
+MO
 OK
 OK
 iD
@@ -133578,9 +133531,9 @@ OK
 OK
 OK
 OK
-MP
-MP
-MP
+MO
+MO
+MO
 iD
 bh
 RH
@@ -135944,7 +135897,7 @@ OK
 OK
 OK
 OK
-MP
+MO
 OK
 OK
 OK

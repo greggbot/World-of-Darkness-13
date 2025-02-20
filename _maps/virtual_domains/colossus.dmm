@@ -37,7 +37,7 @@
 /turf/open/indestructible/binary,
 /area/virtual_domain/fullbright)
 "r" = (
-/obj/machinery/light/small/blacklight/directional/south,
+/obj/machinery/light/small/blacklight/directional/north,
 /obj/effect/baseturf_helper/virtual_domain,
 /turf/open/misc/asteroid/basalt/lava_land_surface/no_ruins,
 /area/virtual_domain)

@@ -37,7 +37,7 @@
 	},
 /obj/item/radio/intercom/directional/east,
 /obj/item/storage/pod/directional/west,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/carpet/executive,
 /area/shuttle/pod_1)
 "Z" = (

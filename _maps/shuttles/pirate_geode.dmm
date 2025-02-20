@@ -5,9 +5,7 @@
 /area/shuttle/pirate)
 "aM" = (
 /obj/structure/table/wood,
-/obj/machinery/light/small/blacklight/directional{
-	dir = 8
-	},
+/obj/machinery/light/small/blacklight/directional/south,
 /obj/item/restraints/legcuffs/beartrap,
 /obj/item/restraints/legcuffs/beartrap,
 /obj/item/restraints/legcuffs/beartrap,
@@ -143,9 +141,7 @@
 /area/shuttle/pirate)
 "jD" = (
 /obj/effect/turf_decal/lunar_sand/plating,
-/obj/machinery/light/small/blacklight/directional{
-	dir = 1
-	},
+/obj/machinery/light/small/blacklight/directional/south,
 /obj/effect/mob_spawn/ghost_role/human/pirate/lustrous/captain{
 	color = "#4f98ff"
 	},
@@ -222,9 +218,7 @@
 /turf/open/misc/dirt/station,
 /area/shuttle/pirate)
 "nD" = (
-/obj/machinery/light/small/blacklight/directional{
-	dir = 1
-	},
+/obj/machinery/light/small/blacklight/directional/south,
 /obj/item/stock_parts/servo/nano,
 /obj/effect/turf_decal/lunar_sand/plating,
 /obj/effect/turf_decal/stripes/white/line,
@@ -386,9 +380,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/blacklight/directional{
-	dir = 8
-	},
+/obj/machinery/light/small/blacklight/directional/south,
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
@@ -474,7 +466,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "xS" = (
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/stack/ore/silver,
 /turf/open/misc/dirt/station,
 /area/shuttle/pirate)
@@ -678,9 +670,7 @@
 /area/shuttle/pirate)
 "IP" = (
 /obj/effect/turf_decal/lunar_sand/plating,
-/obj/machinery/light/small/blacklight/directional{
-	dir = 8
-	},
+/obj/machinery/light/small/blacklight/directional/south,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
 /obj/structure/cable,
@@ -688,7 +678,7 @@
 /area/shuttle/pirate)
 "Js" = (
 /obj/item/coin/gold,
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/lunar_sand/plating,
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -830,7 +820,7 @@
 /turf/closed/wall/mineral/iron,
 /area/shuttle/pirate)
 "OX" = (
-/obj/structure/sign/poster/contraband/bountyhunters,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/mineral/iron,
 /area/shuttle/pirate)
 "Pq" = (
@@ -848,9 +838,7 @@
 /turf/open/misc/dirt/station,
 /area/shuttle/pirate)
 "PB" = (
-/obj/machinery/light/small/blacklight/directional{
-	dir = 4
-	},
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/misc/dirt/station,
 /area/shuttle/pirate)
 "Qo" = (
@@ -879,7 +867,7 @@
 /area/shuttle/pirate)
 "Ss" = (
 /obj/effect/turf_decal/lunar_sand/plating,
-/obj/machinery/light/small/blacklight/directional,
+/obj/machinery/light/small/blacklight/directional/south,
 /obj/machinery/button/door/directional/south{
 	id = "pirateportexternal2";
 	name = "External Bolt Control";
@@ -913,9 +901,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/light/small/blacklight/directional{
-	dir = 8
-	},
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "TC" = (
@@ -994,9 +980,7 @@
 /obj/item/stack/sheet/bluespace_crystal{
 	amount = 2
 	},
-/obj/machinery/light/small/blacklight/directional{
-	dir = 8
-	},
+/obj/machinery/light/small/blacklight/directional/south,
 /turf/open/misc/dirt/station,
 /area/shuttle/pirate)
 

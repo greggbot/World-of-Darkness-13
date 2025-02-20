@@ -162,7 +162,7 @@
 	},
 /area/shuttle/ruin/caravan/freighter1)
 "mb" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
@@ -213,7 +213,7 @@
 /turf/open/floor/iron/airless,
 /area/shuttle/ruin/caravan/freighter1)
 "px" = (
-/obj/machinery/light/directional/north,
+/obj/machinery/light/directional/south,
 /obj/structure/table,
 /obj/item/stack/package_wrap,
 /obj/item/crowbar,
@@ -442,7 +442,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/freighter1)
 "Fb" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/firealarm/directional/east,
 /obj/effect/decal/cleanable/blood,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -505,7 +505,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/shuttle/ruin/caravan/freighter1)
 "HY" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/machinery/firealarm/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -527,7 +527,7 @@
 /turf/open/floor/iron/airless,
 /area/shuttle/ruin/caravan/freighter1)
 "Ix" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/bed{
 	dir = 4
 	},
@@ -636,12 +636,12 @@
 /turf/open/floor/iron/dark/airless,
 /area/shuttle/ruin/caravan/freighter1)
 "Mc" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/structure/sign/warning/vacuum/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/freighter1)
 "Mr" = (
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -658,7 +658,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/shuttle/ruin/caravan/freighter1)
 "Ni" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/structure/bed,
 /obj/item/bedsheet,
 /obj/effect/decal/cleanable/dirt,
@@ -709,7 +709,7 @@
 	},
 /area/shuttle/ruin/caravan/freighter1)
 "Pf" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -727,7 +727,7 @@
 /turf/open/floor/iron/airless,
 /area/shuttle/ruin/caravan/freighter1)
 "Ql" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/box/white/corners,
 /obj/structure/closet/crate,
 /obj/item/stack/sheet/mineral/diamond{
@@ -813,7 +813,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/freighter1)
 "Tx" = (
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/item/storage/medkit/regular,
@@ -836,7 +836,7 @@
 	dir = 4
 	},
 /obj/structure/sink/directional/south,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/showroomfloor{
@@ -892,7 +892,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/ruin/caravan/freighter1)
 "XE" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4

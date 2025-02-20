@@ -28,7 +28,7 @@
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "ew" = (
-/obj/structure/fluff{
+/obj/structure/hedge{
 	name = "telecommunication hub";
 	desc = "A mighty piece of hardware used to send/receive massive amounts of data.";
 	icon = 'icons/obj/machines/telecomms.dmi';
@@ -41,7 +41,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "fx" = (
-/obj/structure/fluff{
+/obj/structure/hedge{
 	icon = 'icons/obj/machines/wallmounts.dmi';
 	icon_state = "pod_off";
 	name = "radio dish controller";
@@ -100,11 +100,11 @@
 	pixel_y = -10;
 	pixel_x = 8
 	},
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/ruin/space/nt_commsbuoy)
 "in" = (
-/obj/structure/fluff{
+/obj/structure/hedge{
 	icon = 'icons/obj/machines/wallmounts.dmi';
 	icon_state = "pod_off";
 	name = "radio dish controller";
@@ -120,7 +120,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/space/nt_commsbuoy)
 "io" = (
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "it" = (
@@ -144,14 +144,14 @@
 /obj/structure/sign/nanotrasen{
 	pixel_y = -32
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "jz" = (
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
 	},
-/obj/machinery/light/small/directional/north,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "kZ" = (
@@ -181,7 +181,7 @@
 /obj/structure/table,
 /obj/structure/noticeboard/directional/north,
 /obj/item/paper/fluff/ruins/nt_commsbuoy/table_of_contents,
-/obj/machinery/light/small/directional/east,
+/obj/machinery/light/small/directional/west,
 /obj/item/gps/spaceruin{
 	pixel_y = 4;
 	pixel_x = 5
@@ -230,7 +230,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "rl" = (
-/obj/structure/fluff{
+/obj/structure/hedge{
 	icon = 'icons/mob/simple/hivebot.dmi';
 	icon_state = "def_radar-off";
 	name = "radio dish component";
@@ -245,14 +245,14 @@
 	},
 /obj/structure/rack,
 /obj/effect/spawner/random/engineering/tool_advanced,
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "tx" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/space/nearstation)
 "tO" = (
-/obj/structure/fluff{
+/obj/structure/hedge{
 	icon = 'icons/obj/machines/wallmounts.dmi';
 	icon_state = "airlock_control_standby";
 	name = "radio dish component";
@@ -467,7 +467,7 @@
 /obj/structure/fluff/fake_camera{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/west,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "Qb" = (
@@ -533,7 +533,7 @@
 /turf/open/floor/plating/reinforced/airless,
 /area/space/nearstation)
 "WI" = (
-/obj/structure/fluff{
+/obj/structure/hedge{
 	name = "comms buoy blackbox recorder";
 	desc = "A recording device that logs recent events and communications in the event of a catastrophic failiure or accident. This one is haphazardly adjusted to print the readout onto the accompanying console.";
 	icon = 'icons/obj/machines/telecomms.dmi';
@@ -549,7 +549,7 @@
 /obj/structure/fluff/fake_camera{
 	dir = 5
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "Yr" = (
@@ -560,7 +560,7 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/ruin/space/nt_commsbuoy)
 "YY" = (
