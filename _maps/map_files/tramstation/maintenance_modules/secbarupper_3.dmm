@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "bE" = (
-/obj/structure/flora/bush/flowers_pp,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "ch" = (
@@ -44,14 +44,14 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/security)
 "dj" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/grassy,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "ds" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/grassy,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "ec" = (
@@ -73,7 +73,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/security)
 "gE" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/station/asteroid)
@@ -153,7 +153,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/security)
 "sF" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/basic/butterfly,
 /turf/open/floor/grass,
 /area/station/asteroid)
@@ -333,13 +333,8 @@
 /obj/machinery/duct,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/security)
-"FO" = (
-/obj/structure/flora/bush/grassy,
-/obj/structure/flora/bush/flowers_pp,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Hi" = (
-/obj/structure/flora/bush/flowers_pp,
+/obj/structure/flora/bush/style_random,
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
 	},
@@ -379,20 +374,12 @@
 /obj/effect/landmark/generic_maintenance_landmark,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/security)
-"JT" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "KS" = (
 /turf/open/misc/asteroid,
 /area/station/asteroid)
 "LI" = (
 /turf/closed/wall/rock/porous,
 /area/station/maintenance/department/security)
-"LX" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Mt" = (
 /obj/modular_map_root/tramstation{
 	key = "secbarupper_attachment_a"
@@ -422,10 +409,6 @@
 "Py" = (
 /turf/template_noop,
 /area/template_noop)
-"Rr" = (
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "RO" = (
 /turf/closed/wall,
 /area/station/maintenance/department/security)
@@ -499,7 +482,7 @@
 /obj/machinery/light/small/directional/south,
 /obj/structure/table,
 /obj/item/reagent_containers/cup/bucket,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/security)
 "Yg" = (
@@ -900,10 +883,10 @@ Sc
 Sc
 Sc
 tn
-JT
+bE
 bE
 tn
-Rr
+bE
 tn
 Py
 Py
@@ -942,8 +925,8 @@ bE
 bE
 tn
 ds
-JT
-LX
+bE
+bE
 tn
 Py
 Py
@@ -977,8 +960,8 @@ Sc
 Sc
 tn
 tn
-Rr
-JT
+bE
+bE
 tn
 tn
 tn
@@ -1021,7 +1004,7 @@ tn
 KS
 Sc
 KS
-JT
+bE
 Py
 Py
 Py
@@ -1096,8 +1079,8 @@ Sc
 KS
 tn
 tn
-JT
-JT
+bE
+bE
 Sc
 Sc
 Sc
@@ -1136,8 +1119,8 @@ Sc
 KS
 tn
 tn
-Rr
-Rr
+bE
+bE
 UC
 BI
 Hi
@@ -1177,11 +1160,11 @@ Sc
 Sc
 tn
 bE
-JT
-JT
-JT
-JT
-JT
+bE
+bE
+bE
+bE
+bE
 Py
 Py
 Py
@@ -1217,11 +1200,11 @@ Sc
 Sc
 LI
 ch
-JT
+bE
 sF
-JT
+bE
 dj
-JT
+bE
 Py
 Py
 Py
@@ -1260,8 +1243,8 @@ Sc
 tn
 tn
 tn
-JT
-JT
+bE
+bE
 Py
 Py
 Py
@@ -1339,7 +1322,7 @@ Sc
 Sc
 Sc
 tn
-JT
+bE
 tn
 Sc
 Py
@@ -1381,7 +1364,7 @@ Sc
 Sc
 tn
 tn
-FO
+dj
 Py
 Py
 Py

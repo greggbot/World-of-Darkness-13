@@ -68,7 +68,7 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "G" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/crew_quarters/dorms)
 "J" = (

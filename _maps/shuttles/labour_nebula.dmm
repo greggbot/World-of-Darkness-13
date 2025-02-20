@@ -202,7 +202,7 @@
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/obey/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/smooth_corner{
 	dir = 4
 	},

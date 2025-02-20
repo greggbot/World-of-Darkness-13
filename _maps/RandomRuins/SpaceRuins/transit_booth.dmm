@@ -105,7 +105,7 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/high_class_martini/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/transit_booth)
 "as" = (
@@ -457,7 +457,7 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/cohiba_robusto_ad/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/transit_booth)
 

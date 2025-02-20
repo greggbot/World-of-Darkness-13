@@ -16,7 +16,7 @@
 	},
 /area/ruin/space/has_grav/spinwardsmoothies)
 "qR" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/basic/butterfly,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/spinwardsmoothies)
@@ -27,7 +27,7 @@
 /area/ruin/space/has_grav/spinwardsmoothies)
 "ri" = (
 /obj/machinery/light/directional/west,
-/obj/structure/flora/bush/flowers_pp/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/spinwardsmoothies)
 "sG" = (
@@ -47,13 +47,8 @@
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/wood/tile,
 /area/ruin/space/has_grav/spinwardsmoothies)
-"wv" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/mob/living/basic/butterfly,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav/spinwardsmoothies)
 "wH" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/directional/north,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/spinwardsmoothies)
@@ -119,13 +114,8 @@
 /obj/effect/turf_decal/siding/thinplating/terracotta/corner,
 /turf/open/floor/bamboo,
 /area/ruin/space/has_grav/spinwardsmoothies)
-"EL" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/mob/living/basic/butterfly,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav/spinwardsmoothies)
 "Gd" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/spinwardsmoothies)
 "Jw" = (
@@ -144,14 +134,6 @@
 	dir = 4
 	},
 /turf/open/floor/bamboo,
-/area/ruin/space/has_grav/spinwardsmoothies)
-"OI" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/ruin/space/has_grav/spinwardsmoothies)
-"Pk" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
 /area/ruin/space/has_grav/spinwardsmoothies)
 "PO" = (
 /obj/structure/rack,
@@ -470,7 +452,7 @@ TE
 AW
 AW
 Gd
-wv
+qR
 AW
 TE
 TE
@@ -488,11 +470,11 @@ Qi
 Qi
 TE
 Ws
-OI
+Gd
 AW
 AW
 AW
-Pk
+Gd
 AW
 Gd
 wH
@@ -534,10 +516,10 @@ Gd
 AW
 AW
 AW
-OI
+Gd
 AW
-OI
-OI
+Gd
+Gd
 AW
 TE
 Qi
@@ -552,11 +534,11 @@ Qi
 TE
 Zs
 AW
-Pk
+Gd
 AW
-OI
+Gd
 AW
-EL
+qR
 AW
 Gd
 AW
@@ -572,13 +554,13 @@ Qi
 Qi
 TE
 Zs
-OI
+Gd
 AW
 Gd
 AW
-Pk
 Gd
-Pk
+Gd
+Gd
 AW
 Gd
 TE
@@ -614,8 +596,8 @@ Qi
 Qi
 TE
 Zs
-OI
-Pk
+Gd
+Gd
 AW
 Ev
 RG
@@ -637,7 +619,7 @@ TE
 TE
 TE
 AW
-OI
+Gd
 JG
 Sz
 Sz

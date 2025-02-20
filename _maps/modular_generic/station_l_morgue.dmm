@@ -163,7 +163,7 @@
 "u" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/mess,
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/textured_half,
 /area/template_noop)
 "v" = (
@@ -199,7 +199,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/textured_large,
 /area/template_noop)
 "A" = (
@@ -246,7 +246,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "E" = (
-/obj/structure/sign/poster/official/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/smooth_large,
 /area/template_noop)
 "F" = (

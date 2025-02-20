@@ -239,26 +239,18 @@
 /turf/open/floor/iron/checker/airless,
 /area/ruin)
 "KI" = (
-/obj/structure/sign/poster/contraband/microwave,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin)
 "Ln" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/airless,
 /area/ruin)
-"Mx" = (
-/obj/structure/sign/poster/contraband/missing_gloves,
-/turf/closed/wall,
-/area/ruin)
 "Pq" = (
 /obj/machinery/light/broken/directional/south,
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/ammo_casing/c357/spent,
 /turf/open/floor/iron/checker/airless,
-/area/ruin)
-"Qb" = (
-/obj/structure/sign/poster/contraband/masked_men,
-/turf/closed/wall,
 /area/ruin)
 "Sc" = (
 /obj/effect/decal/cleanable/blood/footprints{
@@ -374,7 +366,7 @@ Jz
 Jz
 gZ
 gZ
-Mx
+KI
 Jz
 Jz
 BU
@@ -512,7 +504,7 @@ Fx
 Fx
 gZ
 gZ
-Qb
+KI
 Pq
 Ln
 gV

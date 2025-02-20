@@ -823,7 +823,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "kD" = (
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/checker,
 /area/ruin/space/has_grav/hellfactory)
 "lP" = (
@@ -859,7 +859,7 @@
 /area/ruin/space/has_grav/hellfactory)
 "pf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "po" = (
@@ -909,7 +909,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/hellfactory)
 "EJ" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "Fs" = (
@@ -941,7 +941,7 @@
 /area/ruin/space/has_grav/hellfactory)
 "NU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hellfactory)
 "OJ" = (

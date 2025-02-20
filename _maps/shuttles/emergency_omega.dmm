@@ -82,10 +82,10 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "aG" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/sunny/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -169,14 +169,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/shuttle/escape)
-"aI" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/ferny/style_random,
-/obj/structure/window/reinforced/shuttle,
-/turf/open/floor/grass,
-/area/shuttle/escape)
 "aJ" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -185,11 +177,11 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "aO" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/pointy/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "aP" = (
@@ -770,7 +762,7 @@ sY
 aA
 aG
 aZ
-aI
+aG
 aZ
 aG
 aQ
@@ -792,7 +784,7 @@ aB
 aH
 aG
 aO
-aI
+aG
 aH
 Ge
 aZ
@@ -810,11 +802,11 @@ Kj
 NR
 sY
 aA
-aI
+aG
 aZ
 aG
 aZ
-aI
+aG
 aQ
 sY
 ba

@@ -230,7 +230,7 @@
 	dir = 1
 	},
 /obj/structure/table/reinforced,
-/obj/structure/fluff{
+/obj/structure/hedge{
 	density = 1;
 	desc = "Ill-gotten gains of the Space IRS";
 	icon = 'icons/obj/stack_objects.dmi';
@@ -1226,7 +1226,7 @@
 /area/shuttle/pirate)
 "IU" = (
 /obj/structure/table/wood/poker,
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/toy/cards/deck,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
@@ -1732,7 +1732,7 @@
 	dir = 5
 	},
 /obj/structure/table/reinforced,
-/obj/structure/fluff{
+/obj/structure/hedge{
 	density = 1;
 	desc = "Ill-gotten gains of the Space IRS";
 	icon = 'icons/obj/stack_objects.dmi';

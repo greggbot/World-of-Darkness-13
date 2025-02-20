@@ -67,7 +67,7 @@
 "dj" = (
 /obj/structure/window/spawner/directional/north,
 /obj/structure/window/spawner/directional/east,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/misc/anomaly_research)
 "dr" = (
@@ -1436,7 +1436,7 @@
 /turf/open/lava/plasma/ice_moon,
 /area/misc/anomaly_research)
 "Mt" = (
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/misc/anomaly_research)
 "MG" = (
@@ -1515,7 +1515,7 @@
 /area/misc/anomaly_research)
 "Ox" = (
 /obj/structure/window/spawner/directional/north,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/broken/directional/north,
 /turf/open/floor/grass,
 /area/misc/anomaly_research)
@@ -1816,7 +1816,7 @@
 "YA" = (
 /obj/structure/window/spawner/directional/north,
 /obj/structure/window/spawner/directional/west,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/misc/anomaly_research)
 "YU" = (

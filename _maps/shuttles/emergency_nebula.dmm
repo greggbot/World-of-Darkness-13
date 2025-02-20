@@ -64,11 +64,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding,
-/obj/structure/flora/bush/large/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "cQ" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end,
 /turf/open/floor/grass,
@@ -77,13 +77,13 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/flora/bush/sparsegrass/style_2,
-/obj/structure/flora/bush/grassy/style_2,
-/obj/structure/flora/bush/flowers_yw,
-/obj/structure/flora/bush/sunny/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/flora/bush/large/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "cZ" = (
@@ -134,7 +134,7 @@
 	dir = 1
 	},
 /obj/structure/marker_beacon/lime,
-/obj/structure/flora/bush/large,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "fk" = (
@@ -169,10 +169,10 @@
 /turf/open/floor/iron/dark/small,
 /area/shuttle/escape)
 "fD" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -525,7 +525,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 1
 	},
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "mw" = (
@@ -588,14 +588,6 @@
 	},
 /obj/structure/hedge,
 /turf/open/floor/iron/dark/small,
-/area/shuttle/escape)
-"oj" = (
-/obj/effect/turf_decal/siding{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding,
-/obj/structure/flora/bush/large/style_2,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "om" = (
 /obj/effect/turf_decal/stripes/line{
@@ -790,15 +782,6 @@
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
-/area/shuttle/escape)
-"ri" = (
-/obj/effect/turf_decal/siding,
-/obj/effect/turf_decal/siding{
-	dir = 1
-	},
-/obj/structure/marker_beacon/lime,
-/obj/structure/flora/bush/large/style_3,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "rm" = (
 /obj/structure/chair/comfy/shuttle{
@@ -1282,7 +1265,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
 	},
-/obj/structure/flora/bush/large,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "BH" = (
@@ -1313,7 +1296,7 @@
 	},
 /area/shuttle/escape)
 "Ck" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -2205,7 +2188,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
-/obj/structure/flora/bush/large,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "SC" = (
@@ -2239,7 +2222,7 @@
 /turf/open/floor/iron/white/herringbone,
 /area/shuttle/escape)
 "Tt" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -2390,7 +2373,7 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/marker_beacon/lime,
-/obj/structure/flora/bush/large,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "Xl" = (
@@ -2948,7 +2931,7 @@ tl
 sO
 tl
 pU
-oj
+ct
 UU
 bB
 Ig
@@ -2978,7 +2961,7 @@ Jq
 cZ
 lR
 Aq
-ri
+ff
 kZ
 Ba
 Ba

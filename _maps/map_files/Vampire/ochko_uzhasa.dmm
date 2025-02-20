@@ -724,7 +724,7 @@
 /area/space)
 "AS" = (
 /obj/structure/table,
-/obj/structure/window/reinforced/indestructable{
+/obj/structure/window/reinforced/fulltile/indestructable{
 	dir = 1;
 	icon_state = "rwindow"
 	},

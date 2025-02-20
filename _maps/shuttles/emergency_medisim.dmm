@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ai" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass,
 /area/shuttle/escape/simulation)
 "aB" = (
@@ -22,10 +22,6 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
-"be" = (
-/obj/structure/flora/bush/stalky/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "bo" = (
 /obj/structure/punji_sticks/spikes,
 /turf/open/misc/grass,
@@ -366,7 +362,7 @@
 /turf/open/floor/stone,
 /area/shuttle/escape/simulation)
 "mG" = (
-/obj/structure/flora/bush/sunny/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/remains/human,
 /turf/open/misc/grass,
 /area/shuttle/escape/simulation)
@@ -580,10 +576,6 @@
 /obj/structure/grille/indestructible,
 /turf/open/floor/plating,
 /area/shuttle/escape/simulation)
-"yk" = (
-/obj/structure/flora/bush,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "zd" = (
 /obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/sand,
@@ -667,10 +659,6 @@
 /obj/item/radio,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
-"BP" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "Ck" = (
 /obj/machinery/power/shuttle_engine/propulsion{
 	dir = 8
@@ -729,10 +717,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/escape)
-"Dn" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "DI" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular{
@@ -874,10 +858,6 @@
 	},
 /turf/open/floor/circuit/green/anim,
 /area/shuttle/escape)
-"Gy" = (
-/obj/structure/flora/bush/generic/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "Ho" = (
 /turf/open/floor/iron/chapel{
 	dir = 1
@@ -896,14 +876,6 @@
 	},
 /turf/closed/indestructible/iron,
 /area/shuttle/escape/simulation)
-"IS" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
-"Je" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "JC" = (
 /obj/machinery/computer/crew{
 	dir = 4
@@ -916,10 +888,6 @@
 	},
 /turf/open/floor/glass,
 /area/shuttle/escape)
-"JF" = (
-/obj/structure/flora/bush/pointy/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "JU" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing/corner{
@@ -972,10 +940,6 @@
 /obj/item/binoculars,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
-"KK" = (
-/obj/structure/flora/bush/pale/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "LA" = (
 /obj/item/banner/red{
 	anchored = 1
@@ -1002,11 +966,6 @@
 	},
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
-"MD" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/effect/decal/remains/human,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "MK" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing/corner{
@@ -1014,10 +973,6 @@
 	},
 /turf/template_noop,
 /area/shuttle/escape)
-"MX" = (
-/obj/structure/flora/bush/reed/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "Nm" = (
 /turf/open/floor/iron/chapel{
 	dir = 4
@@ -1183,10 +1138,6 @@
 /obj/item/binoculars,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
-"TK" = (
-/obj/structure/flora/bush/ferny/style_random,
-/turf/open/misc/grass,
-/area/shuttle/escape/simulation)
 "TZ" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
@@ -2069,7 +2020,7 @@ bo
 bo
 bo
 YV
-JF
+ai
 pF
 NS
 NS
@@ -2090,13 +2041,13 @@ pF
 pF
 YV
 YV
-be
+ai
 YV
-IS
+ai
 YV
 YV
 mG
-KK
+ai
 hd
 YV
 pF
@@ -2149,7 +2100,7 @@ TE
 Mj
 aE
 YV
-Dn
+ai
 YV
 oO
 pB
@@ -2210,7 +2161,7 @@ YV
 pB
 cy
 Uv
-Je
+ai
 YV
 YV
 uJ
@@ -2263,14 +2214,14 @@ sk
 pF
 pF
 YV
-MD
+mG
 YV
-TK
+ai
 YV
 hd
-MX
+ai
 YV
-BP
+ai
 hd
 YV
 pF
@@ -2291,7 +2242,7 @@ pL
 UH
 sH
 pF
-Gy
+ai
 YV
 bo
 bo
@@ -2301,7 +2252,7 @@ bo
 bo
 em
 YV
-yk
+ai
 pF
 YT
 UH

@@ -116,7 +116,7 @@
 /turf/open/floor/plating,
 /area/virtual_domain)
 "aV" = (
-/obj/structure/flora/bush/large/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
 "aZ" = (
@@ -369,8 +369,8 @@
 /turf/open/misc/dirt/jungle,
 /area/virtual_domain)
 "cH" = (
-/obj/structure/flora/bush/jungle/b/style_random,
-/obj/structure/flora/bush/large/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
 "cI" = (
@@ -526,11 +526,6 @@
 	name = "Gateway Shutter Control"
 	},
 /turf/open/floor/iron,
-/area/virtual_domain)
-"ej" = (
-/obj/structure/flora/bush/jungle/a/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/misc/grass/jungle,
 /area/virtual_domain)
 "ek" = (
 /obj/effect/turf_decal/stripes/line{
@@ -765,7 +760,7 @@
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
 "ge" = (
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/tree/jungle/small/style_4,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
@@ -999,9 +994,9 @@
 /turf/open/floor/iron,
 /area/virtual_domain)
 "iA" = (
-/obj/structure/flora/bush/jungle/a/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/large/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
 "iH" = (
@@ -1528,7 +1523,7 @@
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/computer/records/security/laptop/syndie,
-/obj/structure/sign/poster/official/state_laws/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/virtual_domain)
 "mI" = (
@@ -1545,8 +1540,8 @@
 /turf/open/floor/iron,
 /area/virtual_domain)
 "mO" = (
-/obj/structure/flora/bush/jungle/b/style_random,
-/obj/structure/flora/bush/large/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/spacevine{
 	can_spread = 0
 	},
@@ -1659,8 +1654,8 @@
 /area/virtual_domain)
 "od" = (
 /obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/leafy,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
 "ok" = (
@@ -2468,8 +2463,8 @@
 /turf/open/floor/iron/dark,
 /area/virtual_domain)
 "uq" = (
-/obj/structure/flora/bush/jungle/b/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/tree/jungle/small/style_4,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
@@ -2684,7 +2679,7 @@
 "wl" = (
 /obj/structure/flora/grass/jungle/b/style_random,
 /obj/structure/flora/rock/pile/jungle,
-/obj/structure/flora/bush/leavy/style_3,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/tree/jungle/small/style_2,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
@@ -2972,14 +2967,6 @@
 /obj/effect/mob_spawn/corpse/human/assistant,
 /turf/open/floor/iron,
 /area/virtual_domain)
-"yO" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/spacevine{
-	can_spread = 0
-	},
-/turf/open/misc/grass/jungle,
-/area/virtual_domain)
 "yP" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
@@ -3099,12 +3086,6 @@
 /obj/structure/table/reinforced,
 /turf/template_noop,
 /area/virtual_domain/safehouse)
-"zR" = (
-/obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/misc/grass/jungle,
-/area/virtual_domain)
 "zT" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -3358,11 +3339,11 @@
 /area/virtual_domain)
 "Cc" = (
 /obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/leavy/style_2,
+/obj/structure/flora/bush/style_random,
 /obj/structure/spacevine{
 	can_spread = 0
 	},
-/obj/structure/flora/bush/large/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
 "Cd" = (
@@ -3507,15 +3488,6 @@
 /obj/item/seeds/cocoapod,
 /turf/open/misc/dirt/jungle,
 /area/virtual_domain)
-"DC" = (
-/obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/spacevine{
-	can_spread = 0
-	},
-/obj/structure/flora/bush/large/style_random,
-/turf/open/misc/grass/jungle,
-/area/virtual_domain)
 "DF" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -3571,7 +3543,7 @@
 /area/virtual_domain)
 "Ec" = (
 /obj/structure/flora/grass/jungle/b/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/tree/jungle/small/style_5,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
@@ -4620,10 +4592,6 @@
 /obj/structure/window/spawner/directional/south,
 /turf/open/floor/iron/dark,
 /area/virtual_domain)
-"MN" = (
-/obj/structure/flora/bush/jungle/a/style_random,
-/turf/open/misc/grass/jungle,
-/area/virtual_domain)
 "MP" = (
 /obj/structure/sign/picture_frame/showroom/three{
 	pixel_x = -8;
@@ -5328,8 +5296,8 @@
 /turf/open/floor/plating,
 /area/virtual_domain)
 "SF" = (
-/obj/structure/flora/bush/jungle/b/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/item/flashlight/flare{
 	icon_state = "flare-on";
 	light_on = 1
@@ -5554,7 +5522,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/virtual_domain)
 "UF" = (
-/obj/structure/flora/bush/jungle/a/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/item/banner/science,
 /turf/open/misc/grass/jungle,
 /area/virtual_domain)
@@ -5573,8 +5541,8 @@
 /turf/open/floor/carpet,
 /area/virtual_domain)
 "UT" = (
-/obj/structure/flora/bush/leavy/style_3,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/spacevine{
 	can_spread = 0
 	},
@@ -6088,7 +6056,7 @@
 /turf/open/floor/iron,
 /area/virtual_domain)
 "Zq" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -6102,10 +6070,6 @@
 "Zx" = (
 /obj/machinery/disposal/bin,
 /turf/open/floor/iron/dark,
-/area/virtual_domain)
-"ZC" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/misc/grass/jungle,
 /area/virtual_domain)
 "ZD" = (
 /obj/item/trash/candy,
@@ -7766,7 +7730,7 @@ uS
 Ra
 nq
 Cc
-zR
+od
 ge
 Vs
 HM
@@ -7813,7 +7777,7 @@ dZ
 uS
 PQ
 DV
-ej
+cH
 tw
 Zm
 Vs
@@ -7862,7 +7826,7 @@ uS
 TT
 Gy
 aV
-yO
+mO
 lQ
 Vs
 HM
@@ -7910,7 +7874,7 @@ FC
 mq
 UT
 SF
-MN
+aV
 lQ
 Vs
 HM
@@ -7958,7 +7922,7 @@ FC
 mq
 cH
 gb
-ZC
+aV
 Ec
 Vs
 HM
@@ -8005,7 +7969,7 @@ qr
 FC
 mq
 Gy
-DC
+Cc
 od
 FO
 Vs
@@ -8053,7 +8017,7 @@ uS
 FF
 fr
 DV
-MN
+aV
 EH
 iA
 Vs

@@ -149,7 +149,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/snow_biodome)
 "aI" = (
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow,
 /area/ruin/powered/snow_biodome)
 "aJ" = (
@@ -368,7 +368,7 @@
 /turf/open/misc/asteroid/snow,
 /area/ruin/powered/snow_biodome)
 "Gi" = (
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/small/directional/south,
 /turf/open/misc/asteroid/snow,
 /area/ruin/powered/snow_biodome)

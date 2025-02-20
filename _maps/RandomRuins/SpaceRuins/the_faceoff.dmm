@@ -182,7 +182,7 @@
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
 "fa" = (
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space)
 "fO" = (
@@ -272,11 +272,11 @@
 /area/ruin/space)
 "ij" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space)
 "ja" = (
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/textured/airless,
 /area/ruin/space)
 "je" = (
@@ -449,10 +449,6 @@
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
-"rG" = (
-/obj/structure/sign/poster/official/moth_meth,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space)
 "rU" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/item/ammo_casing/c357/spent{
@@ -500,7 +496,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "sZ" = (
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/stripes/red/full,
 /turf/open/floor/iron/dark/smooth_large/airless,
 /area/ruin/space)
@@ -596,10 +592,6 @@
 	},
 /turf/open/floor/iron/dark/textured/airless,
 /area/ruin/space)
-"xm" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space)
 "xI" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mob_spawn/corpse/human/nanotrasensoldier,
@@ -607,10 +599,6 @@
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /obj/item/gun/energy/e_gun/mini,
 /turf/open/floor/iron/dark/smooth_large/airless,
-/area/ruin/space)
-"xT" = (
-/obj/structure/sign/poster/contraband/soviet_propaganda,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space)
 "ya" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -827,10 +815,6 @@
 /obj/effect/spawner/random/entertainment/lighter,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
-"HG" = (
-/obj/structure/sign/poster/contraband/gorlex_recruitment,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space)
 "HI" = (
 /obj/structure/closet/syndicate,
 /obj/item/clothing/under/syndicate,
@@ -863,7 +847,7 @@
 /area/ruin/space)
 "Jl" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "Ju" = (
@@ -1153,10 +1137,6 @@
 	pixel_y = 2
 	},
 /turf/open/floor/mineral/plastitanium/airless,
-/area/ruin/space)
-"VX" = (
-/obj/structure/sign/poster/contraband/bountyhunters,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space)
 "Xn" = (
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -1630,7 +1610,7 @@ vl
 oe
 Ck
 fR
-xT
+fa
 Er
 bz
 bz
@@ -1651,7 +1631,7 @@ bz
 Er
 Er
 Er
-xT
+fa
 ZS
 az
 UQ
@@ -1688,7 +1668,7 @@ Er
 Er
 ED
 ED
-VX
+fa
 Df
 Pi
 gh
@@ -1702,7 +1682,7 @@ UM
 UM
 gq
 ED
-rG
+fa
 ED
 ED
 Er
@@ -1761,7 +1741,7 @@ Er
 Er
 ED
 lX
-xm
+fa
 ZC
 gN
 ZC
@@ -1775,7 +1755,7 @@ OC
 mC
 gx
 vZ
-xT
+fa
 Er
 Er
 bz
@@ -1963,7 +1943,7 @@ ZO
 ZC
 ZO
 ZC
-HG
+fa
 ED
 Er
 bz
@@ -2252,7 +2232,7 @@ Er
 ED
 ED
 ED
-HG
+fa
 ZO
 ZC
 gN

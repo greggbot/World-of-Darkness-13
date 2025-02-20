@@ -86,7 +86,7 @@
 "eF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/duct,
-/obj/structure/sign/poster/fluff/lizards_gas_power/directional/west,
+/obj/structure/sign/poster/random,
 /obj/item/vending_refill/cigarette,
 /obj/item/vending_refill/cola,
 /obj/item/vending_refill/snack,
@@ -125,7 +125,7 @@
 "gm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
-/obj/structure/sign/poster/official/midtown_slice/directional/east,
+/obj/structure/sign/poster/random,
 /obj/item/food/taco{
 	pixel_x = 5
 	},
@@ -145,7 +145,7 @@
 /turf/open/floor/plating/snowed/icemoon,
 /area/ruin/powered/lizard_gas)
 "ih" = (
-/obj/structure/sign/poster/fluff/lizards_gas_payment/directional/east,
+/obj/structure/sign/poster/random,
 /mob/living/basic/lizard/space,
 /turf/open/floor/iron,
 /area/ruin/powered/lizard_gas)
@@ -290,7 +290,7 @@
 /area/icemoon/underground/unexplored)
 "vA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/jim_nortons/directional/south,
+/obj/structure/sign/poster/random,
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/duct,
 /turf/open/floor/iron,
@@ -502,7 +502,7 @@
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/ruin/powered/lizard_gas)
 "QQ" = (
-/obj/structure/sign/poster/official/fruit_bowl/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/rack,
 /obj/item/grenade/firecracker{
 	pixel_x = 5;

@@ -146,7 +146,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/ruin/pizzeria/kitchen)
 "fV" = (
-/obj/structure/sign/poster/contraband/syndiemoth/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 "gm" = (
@@ -253,7 +253,7 @@
 /obj/item/screwdriver,
 /obj/item/crowbar/red,
 /obj/structure/rack,
-/obj/structure/sign/poster/official/moth_delam/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/ruin/pizzeria)
 "iV" = (
@@ -418,8 +418,8 @@
 /turf/open/floor/iron/cafeteria,
 /area/ruin/pizzeria/kitchen)
 "rZ" = (
-/obj/structure/flora/bush/pointy/style_random,
-/obj/structure/sign/poster/official/moth_piping/directional/north,
+/obj/structure/flora/bush/style_random,
+/obj/structure/sign/poster/random,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 "se" = (
@@ -954,7 +954,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/ruin/pizzeria/kitchen)
 "NK" = (
-/obj/structure/flora/bush/pointy/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 "NL" = (
@@ -1133,7 +1133,7 @@
 "So" = (
 /obj/structure/table,
 /obj/item/plate/small,
-/obj/structure/sign/poster/official/moth_meth/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/reagent_containers/condiment/enzyme{
 	pixel_x = -7
 	},

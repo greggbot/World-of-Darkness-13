@@ -120,7 +120,7 @@
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "hT" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/wizard_station)
 "iG" = (
@@ -227,7 +227,7 @@
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "nV" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/simple_animal/hostile/ooze/gelatinous{
 	name = "Jimmy";
 	faction = list("slime", "Wizard")
@@ -379,10 +379,6 @@
 	},
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
-"sx" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/centcom/wizard_station)
 "tv" = (
 /obj/structure/destructible/cult/item_dispenser/archives/library,
 /turf/open/floor/engine/cult,
@@ -436,10 +432,6 @@
 	pixel_y = 5
 	},
 /turf/open/floor/engine/cult,
-/area/centcom/wizard_station)
-"wk" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
 /area/centcom/wizard_station)
 "wQ" = (
 /obj/structure/mirror/magic{
@@ -535,7 +527,7 @@
 	name = "Jommy";
 	faction = list("gondola", "Wizard")
 	},
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/wizard_station)
 "Cm" = (
@@ -712,10 +704,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/carpet/red,
 /area/centcom/wizard_station)
-"Pz" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/turf/open/floor/grass,
-/area/centcom/wizard_station)
 "PF" = (
 /obj/item/reagent_containers/cup/glass/bottle/beer{
 	pixel_x = 11;
@@ -786,7 +774,7 @@
 /obj/structure/destructible/cult/item_dispenser/altar{
 	desc = "An altar dedicated to the Wizard Federation."
 	},
-/obj/structure/sign/poster/contraband/the_big_gas_giant_truth/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Tl" = (
@@ -859,7 +847,7 @@
 /turf/open/floor/iron,
 /area/centcom/wizard_station)
 "VV" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/floor,
 /turf/open/floor/grass,
 /area/centcom/wizard_station)
@@ -1631,7 +1619,7 @@ tz
 tz
 LU
 TG
-sx
+hT
 Cm
 hT
 VB
@@ -1724,8 +1712,8 @@ tz
 LU
 TG
 Cm
-wk
-Pz
+hT
+hT
 VB
 Xt
 LU

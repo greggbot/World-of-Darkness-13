@@ -143,7 +143,7 @@
 /area/deathmatch)
 "gi" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/structure/flora/bush/jungle/a/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
 "gx" = (
@@ -181,7 +181,7 @@
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
 "hw" = (
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
 "hV" = (
@@ -196,7 +196,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
 "ij" = (
@@ -216,7 +216,7 @@
 /turf/open/water/jungle,
 /area/deathmatch)
 "iO" = (
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/misc/dirt/jungle/dark,
 /area/deathmatch)
@@ -314,10 +314,6 @@
 	},
 /turf/open/floor/cult,
 /area/deathmatch)
-"nO" = (
-/obj/structure/flora/bush/jungle/c/style_random,
-/turf/open/misc/grass/jungle,
-/area/deathmatch)
 "ou" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -351,7 +347,7 @@
 /turf/open/misc/dirt/jungle,
 /area/deathmatch)
 "pr" = (
-/obj/structure/flora/bush/jungle/a/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/ants/fire,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
@@ -767,10 +763,6 @@
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/misc/dirt/jungle/wasteland,
 /area/deathmatch)
-"GD" = (
-/obj/structure/flora/bush/jungle/a/style_random,
-/turf/open/misc/grass/jungle,
-/area/deathmatch)
 "GE" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
@@ -816,7 +808,7 @@
 /turf/closed/indestructible/rock,
 /area/deathmatch)
 "Ik" = (
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
@@ -826,7 +818,7 @@
 /turf/open/floor/bronze/filled,
 /area/deathmatch)
 "IG" = (
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/carbon/human/species/monkey,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
@@ -954,7 +946,7 @@
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "PU" = (
-/obj/structure/flora/bush/jungle/c/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/rock/style_random,
 /turf/open/misc/asteroid/moon,
 /area/deathmatch)
@@ -1035,7 +1027,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "To" = (
-/obj/structure/flora/bush/jungle/c/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/jungle/b/style_random,
 /obj/structure/flora/rock/pile/jungle/large/style_random,
 /turf/open/misc/grass/jungle,
@@ -1063,7 +1055,7 @@
 /turf/open/floor/cult,
 /area/deathmatch)
 "UM" = (
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
@@ -1106,7 +1098,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/structure/flora/bush/jungle/b/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/deathmatch)
 "VP" = (
@@ -1467,7 +1459,7 @@ Ig
 Ig
 Ig
 bI
-nO
+hw
 HN
 qa
 vI
@@ -1558,7 +1550,7 @@ Ig
 Ig
 Ig
 Ig
-GD
+hw
 qa
 LU
 Fn
@@ -1699,11 +1691,11 @@ oO
 FK
 FK
 aR
-GD
+hw
 qa
 jv
 qa
-GD
+hw
 RW
 jL
 Ig
@@ -1713,7 +1705,7 @@ Ig
 Ig
 Ig
 wP
-GD
+hw
 qa
 Wp
 ZY
@@ -1766,7 +1758,7 @@ gJ
 qa
 rm
 jv
-nO
+hw
 Ig
 Ig
 Ig
@@ -1784,7 +1776,7 @@ Ab
 Sf
 Jf
 qa
-GD
+hw
 qa
 qa
 gi
@@ -2034,7 +2026,7 @@ Px
 Ik
 GO
 qa
-nO
+hw
 jL
 Av
 bO

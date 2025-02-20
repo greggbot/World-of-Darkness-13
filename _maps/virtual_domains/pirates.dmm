@@ -4,7 +4,7 @@
 /turf/open/water/beach,
 /area/virtual_domain/protected_space/fullbright)
 "al" = (
-/obj/structure/flora/bush/sunny,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass,
 /area/virtual_domain/fullbright)
 "au" = (
@@ -104,12 +104,8 @@
 /turf/open/misc/dirt/jungle,
 /area/virtual_domain/protected_space)
 "fh" = (
-/obj/structure/flora/bush/sparsegrass,
-/obj/structure/flora/bush/lavendergrass,
-/turf/open/misc/grass,
-/area/virtual_domain/fullbright)
-"fk" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass,
 /area/virtual_domain/fullbright)
 "fw" = (
@@ -134,7 +130,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "gu" = (
-/obj/structure/flora/bush/stalky,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/coast,
 /area/virtual_domain/fullbright)
 "gx" = (
@@ -154,11 +150,6 @@
 "gD" = (
 /obj/item/flashlight/flare/torch,
 /turf/open/misc/beach/sand,
-/area/virtual_domain/fullbright)
-"gK" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/flora/bush/ferny,
-/turf/open/misc/grass,
 /area/virtual_domain/fullbright)
 "hb" = (
 /turf/closed/indestructible/binary,
@@ -187,7 +178,7 @@
 /area/virtual_domain/fullbright)
 "jN" = (
 /obj/structure/flora/tree/jungle,
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass,
 /area/virtual_domain/fullbright)
 "lF" = (
@@ -267,10 +258,6 @@
 "pi" = (
 /obj/structure/flora/rock/style_3,
 /turf/open/water/beach,
-/area/virtual_domain/fullbright)
-"pn" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/misc/grass,
 /area/virtual_domain/fullbright)
 "ps" = (
 /obj/machinery/smartfridge/drying/rack,
@@ -489,10 +476,10 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "zW" = (
-/obj/structure/flora/bush/grassy{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 8
 	},
-/obj/structure/flora/bush/lavendergrass{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -10
 	},
 /turf/open/misc/grass,
@@ -535,7 +522,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "BX" = (
-/obj/structure/flora/bush/sunny/style_3{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 22
 	},
 /turf/open/misc/dirt/jungle,
@@ -629,10 +616,6 @@
 	},
 /turf/open/water/beach,
 /area/virtual_domain/protected_space)
-"Jf" = (
-/obj/structure/flora/bush/sparsegrass,
-/turf/open/misc/grass,
-/area/virtual_domain/fullbright)
 "Jq" = (
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/structure/bed/maint{
@@ -648,7 +631,7 @@
 /turf/open/floor/carpet/blue,
 /area/virtual_domain)
 "JK" = (
-/obj/structure/flora/bush/stalky{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 13;
 	pixel_x = -8
 	},
@@ -725,10 +708,6 @@
 "NE" = (
 /obj/effect/mob_spawn/corpse/human/damaged,
 /turf/open/water/beach,
-/area/virtual_domain/fullbright)
-"NN" = (
-/obj/structure/flora/bush/fullgrass,
-/turf/open/misc/grass,
 /area/virtual_domain/fullbright)
 "NP" = (
 /obj/effect/mapping_helpers/burnt_floor,
@@ -853,10 +832,6 @@
 /obj/structure/flora/tree/palm/style_2,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
-"Sc" = (
-/obj/structure/flora/bush/jungle,
-/turf/open/misc/grass,
-/area/virtual_domain/fullbright)
 "SD" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/turf_decal/weather/sand{
@@ -879,10 +854,6 @@
 	dir = 6
 	},
 /turf/open/floor/wood,
-/area/virtual_domain/fullbright)
-"Ta" = (
-/obj/structure/flora/bush/flowers_pp,
-/turf/open/misc/grass,
 /area/virtual_domain/fullbright)
 "Th" = (
 /obj/effect/turf_decal/weather/sand{
@@ -1216,8 +1187,8 @@ DM
 DM
 DM
 DM
-gK
-Jf
+fh
+al
 sj
 DM
 DM
@@ -1258,7 +1229,7 @@ DM
 DM
 DM
 jN
-fk
+al
 zW
 qS
 eS
@@ -1301,7 +1272,7 @@ DM
 DM
 DM
 fh
-Ta
+al
 al
 eS
 eS
@@ -1342,9 +1313,9 @@ DM
 DM
 DM
 DM
-Sc
-pn
-NN
+al
+al
+al
 LC
 eS
 eS

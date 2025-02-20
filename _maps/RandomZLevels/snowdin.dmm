@@ -230,7 +230,7 @@
 /area/awaymission/snowdin/post/dorm)
 "ba" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
-/obj/structure/sign/poster/contraband/kudzu/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
@@ -1066,7 +1066,7 @@
 /area/awaymission/snowdin/post/dorm)
 "eb" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /turf/open/floor/carpet,
@@ -1398,7 +1398,7 @@
 /turf/open/floor/carpet,
 /area/awaymission/snowdin/post/dorm)
 "ft" = (
-/obj/structure/sign/poster/official/no_erp/directional/west,
+/obj/structure/sign/poster/random,
 /obj/machinery/holopad,
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 8
@@ -2823,7 +2823,7 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/garage)
 "km" = (
-/obj/structure/sign/poster/contraband/tools/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/closet/crate/preopen,
 /obj/item/tank/internals/plasma,
 /obj/item/tank/internals/plasma,
@@ -3730,7 +3730,7 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/engineering)
 "nr" = (
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow,
 /area/awaymission/snowdin/cave)
 "nt" = (
@@ -3973,7 +3973,7 @@
 /area/awaymission/snowdin/post/hydro)
 "ov" = (
 /obj/structure/flora/grass/both/style_random,
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow,
 /area/awaymission/snowdin/outside)
 "ow" = (
@@ -4182,7 +4182,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/do_not_question/directional/south,
+/obj/structure/sign/poster/random,
 /obj/item/wirecutters,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 8
@@ -7362,7 +7362,7 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/awaymission/snowdin/outside)
 "Cu" = (
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow,
 /area/awaymission/snowdin/outside)
 "Cv" = (
@@ -10221,7 +10221,7 @@
 /turf/open/floor/iron,
 /area/awaymission/snowdin/post/mining_main/mechbay)
 "RN" = (
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/light_emitter{
 	name = "outdoor light";
 	set_cap = 3;
@@ -11286,8 +11286,8 @@
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "XX" = (
-/obj/structure/flora/bush/snow/style_random,
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow,
 /area/awaymission/snowdin/outside)
 "XY" = (

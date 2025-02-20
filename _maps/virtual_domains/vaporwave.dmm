@@ -87,7 +87,7 @@
 	},
 /area/ruin/space/virtual_domain)
 "ll" = (
-/obj/structure/sign/poster/contraband/clown/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/vaporwave,
 /area/virtual_domain)
 "lu" = (

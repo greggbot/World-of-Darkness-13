@@ -54,7 +54,7 @@
 		former_captain.equipOutfit(/datum/outfit/plasmaman)
 		former_captain.internal = former_captain.get_item_for_held_index(2)
 	else
-		former_captain.equipOutfit(/datum/outfit/job/assistant)
+		former_captain.equipOutfit(/datum/outfit/job/citizen)
 
 	GLOB.manifest.modify(former_captain.real_name, JOB_CITIZEN, JOB_CITIZEN)
 	var/list/valid_turfs = list()

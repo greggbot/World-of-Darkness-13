@@ -27,7 +27,7 @@
 /turf/open/floor/iron/white,
 /area/centcom/basketball)
 "cz" = (
-/obj/structure/sign/poster/contraband/lusty_xenomorph,
+/obj/structure/sign/poster/random,
 /obj/structure/alien/resin/wall/immovable,
 /turf/open/floor/engine,
 /area/centcom/basketball)
@@ -508,11 +508,6 @@
 	dir = 5
 	},
 /turf/open/floor/iron/white,
-/area/centcom/basketball)
-"Qi" = (
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6,
-/obj/structure/alien/resin/wall/immovable,
-/turf/open/floor/engine,
 /area/centcom/basketball)
 "Ql" = (
 /obj/structure/alien/weeds,
@@ -1180,7 +1175,7 @@ Lu
 Lu
 Lu
 Lu
-Qi
+cz
 Lu
 Lu
 Lu

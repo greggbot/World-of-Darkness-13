@@ -553,7 +553,7 @@
 	dir = 1
 	},
 /obj/effect/spawner/random/trash/mess,
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/item/kirbyplants/random,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/ruin/space/has_grav/infested_frigate)
@@ -1427,7 +1427,7 @@
 	icon_state = "warningline_white";
 	dir = 1
 	},
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /obj/structure/alien/weeds,
 /turf/open/floor/pod/dark,
@@ -1863,7 +1863,7 @@
 	pixel_x = -2;
 	pixel_y = 11
 	},
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/spawner/random/food_or_drink/donkpockets_single{
 	pixel_x = 5
 	},
@@ -1902,7 +1902,7 @@
 /turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/infested_frigate)
 "EQ" = (
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/restraints/handcuffs/cable/zipties/used,
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor7-old"
@@ -2455,7 +2455,7 @@
 	icon_state = "warningline_white";
 	dir = 8
 	},
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/infested_frigate)
 "Ne" = (
@@ -3139,7 +3139,7 @@
 /obj/effect/decal/cleanable/blood{
 	icon_state = "drip3"
 	},
-/obj/structure/sign/poster/contraband/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/mineral/plastitanium,

@@ -2,7 +2,7 @@
 "ah" = (
 /obj/effect/turf_decal/trimline/purple/filled/line,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/ripped/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned)
 "al" = (
@@ -1022,7 +1022,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned)
 "RJ" = (

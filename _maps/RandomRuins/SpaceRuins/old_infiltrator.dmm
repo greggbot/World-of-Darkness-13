@@ -575,7 +575,7 @@
 /area/ruin/space/unpowered)
 "Nv" = (
 /obj/effect/turf_decal/bot_red,
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/machinery/suit_storage_unit/open,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/unpowered)

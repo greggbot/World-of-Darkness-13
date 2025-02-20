@@ -27,7 +27,7 @@
 "ay" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/flashlight/flare/candle{
 	pixel_x = 7;
 	pixel_y = 4
@@ -402,7 +402,7 @@
 "iQ" = (
 /obj/machinery/computer/old,
 /obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "iX" = (
@@ -415,7 +415,7 @@
 /obj/item/food/muffin/moffin{
 	preserved_food = 1
 	},
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/powered/biooutpost/vault)
@@ -721,7 +721,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "oI" = (
 /mob/living/basic/living_floor,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/plating,
 /area/ruin/space/has_grav/powered/biooutpost)
 "oO" = (
@@ -1161,7 +1161,7 @@
 /obj/structure/bed/medical/anchored{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "wj" = (
@@ -1319,7 +1319,7 @@
 "za" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/color/yellow,
-/obj/structure/sign/poster/contraband/missing_gloves/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "zg" = (
@@ -1470,7 +1470,7 @@
 /obj/structure/broken_flooring/side/always_floorplane{
 	dir = 8
 	},
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Cf" = (
@@ -1579,7 +1579,7 @@
 /obj/item/pen{
 	pixel_x = 12
 	},
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "DU" = (
@@ -1644,7 +1644,7 @@
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "EY" = (
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/plating,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Fc" = (
@@ -1842,7 +1842,7 @@
 "JF" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/item/food/grown/carrot{
 	preserved_food = 1
 	},
@@ -1857,7 +1857,7 @@
 "Kc" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /mob/living/basic/rabbit,
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Ki" = (
@@ -1928,7 +1928,7 @@
 /obj/effect/turf_decal/siding/blue{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "LR" = (
@@ -1943,7 +1943,7 @@
 "Mb" = (
 /obj/effect/turf_decal/siding/red,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Mo" = (
@@ -2527,7 +2527,7 @@
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/tile/purple/opposingcorners,
-/obj/structure/sign/poster/official/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)

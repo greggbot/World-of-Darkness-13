@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "at" = (
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "aw" = (
@@ -102,10 +102,6 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/turf/open/floor/wood,
-/area/centcom/basketball)
-"fj" = (
-/obj/structure/sign/poster/official/random/directional/south,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "fu" = (
@@ -249,7 +245,7 @@
 /area/centcom/basketball)
 "nE" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "nW" = (
@@ -576,10 +572,6 @@
 /obj/effect/turf_decal/trimline/red/filled/warning,
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
-"LV" = (
-/obj/structure/sign/poster/official/random/directional/west,
-/turf/open/floor/wood,
-/area/centcom/basketball)
 "Ma" = (
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 8
@@ -679,10 +671,6 @@
 /obj/effect/turf_decal/trimline/red/line{
 	dir = 4
 	},
-/turf/open/floor/wood,
-/area/centcom/basketball)
-"Ql" = (
-/obj/structure/sign/poster/official/random/directional/east,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "Rl" = (
@@ -853,7 +841,7 @@ tX
 WB
 tX
 tX
-LV
+at
 tX
 tX
 WB
@@ -913,7 +901,7 @@ Cw
 Cw
 AI
 tX
-fj
+at
 WM
 WM
 WM
@@ -997,7 +985,7 @@ hf
 tX
 tX
 tX
-fj
+at
 WM
 WM
 Hu
@@ -1213,7 +1201,7 @@ tX
 tX
 tX
 tX
-fj
+at
 WM
 WM
 Hu
@@ -1291,7 +1279,7 @@ Cw
 Cw
 AI
 tX
-fj
+at
 WM
 WM
 WM
@@ -1339,7 +1327,7 @@ tX
 jj
 tX
 tX
-Ql
+at
 tX
 tX
 jj

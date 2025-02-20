@@ -105,7 +105,7 @@
 	pixel_y = 0
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/white/smooth_half,
 /area/ruin/outpost31/medical)
 "ce" = (
@@ -998,7 +998,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
 "tZ" = (
@@ -1385,7 +1385,7 @@
 /area/ruin/outpost31/lab)
 "Bu" = (
 /obj/effect/turf_decal/tile/neutral,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
 "Bz" = (
@@ -1598,7 +1598,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/outpost31)
 "FK" = (
@@ -1778,7 +1778,7 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "IT" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -2207,14 +2207,6 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/outpost31/commander_room)
-"Sy" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/structure/sign/poster/random/directional/west,
-/turf/open/floor/iron,
-/area/ruin/outpost31)
 "SB" = (
 /obj/item/surgery_tray/full/deployed,
 /obj/effect/decal/cleanable/blood/old,
@@ -3575,7 +3567,7 @@ Tx
 cp
 Ht
 cp
-Sy
+FH
 cp
 YK
 Uy

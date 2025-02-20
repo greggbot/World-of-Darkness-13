@@ -15,7 +15,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/museum)
 "ac" = (
-/obj/structure/sign/poster/contraband/fake_bombable/directional/west,
+/obj/structure/sign/poster/random,
 /obj/structure/closet/crate/bin,
 /obj/machinery/light/warm/directional/north,
 /obj/effect/decal/cleanable/dirt,
@@ -1214,7 +1214,7 @@
 /area/awaymission/museum)
 "jO" = (
 /obj/structure/toilet/museum,
-/obj/structure/sign/poster/contraband/fake_bombable/directional/north,
+/obj/structure/sign/poster/random,
 /obj/machinery/button/door/directional/east{
 	name = "Lock Control";
 	id = "museum_toilet6";
@@ -1427,7 +1427,7 @@
 /area/awaymission/museum)
 "lz" = (
 /obj/effect/landmark/awaystart/museum,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/awaymission/museum)
 "lB" = (
@@ -1658,7 +1658,7 @@
 /area/awaymission/museum)
 "nz" = (
 /obj/structure/lattice/catwalk/mining,
-/obj/structure/fluff{
+/obj/structure/hedge{
 	name = "old plasma extractor";
 	icon = 'icons/mob/simple/hivebot.dmi';
 	icon_state = "fab_robot"
@@ -1738,7 +1738,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "nY" = (
-/obj/structure/sign/poster/official/no_erp/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/white/small,
 /area/awaymission/museum)
 "nZ" = (
@@ -1849,7 +1849,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/pda_ad/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "pc" = (
@@ -2643,7 +2643,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "vx" = (
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/museum)
@@ -2784,7 +2784,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/awaymission/museum)
 "wN" = (
@@ -2840,7 +2840,7 @@
 /obj/effect/turf_decal/siding/dark_blue{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "xg" = (
@@ -3261,7 +3261,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/engine,
 /area/awaymission/museum)
 "Ar" = (
@@ -3413,7 +3413,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "BO" = (
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white,
 /area/awaymission/museum)
@@ -4612,7 +4612,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/awaymission/museum)
 "Ma" = (
@@ -5129,7 +5129,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/grass,
 /area/awaymission/museum)
@@ -5152,7 +5152,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "QX" = (
-/obj/structure/sign/poster/party_game/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/side,
 /area/awaymission/museum)
 "Re" = (
@@ -5181,7 +5181,7 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/obj/structure/fluff{
+/obj/structure/hedge{
 	name = "replica prototype autolathe";
 	desc = "A non-functional replica of a prototype Autolathe.";
 	icon = 'icons/obj/machines/lathes.dmi';
@@ -5438,7 +5438,7 @@
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/awaymission/museum)
 "TV" = (
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/grille,
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/museum)
@@ -5734,7 +5734,7 @@
 /area/awaymission/museum)
 "Wf" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/awaymission/museum)
 "Wg" = (
@@ -5827,7 +5827,7 @@
 /turf/open/chasm/true/no_smooth,
 /area/awaymission/museum)
 "WM" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/awaymission/museum)
 "WQ" = (

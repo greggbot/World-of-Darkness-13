@@ -171,7 +171,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "rV" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "sy" = (
@@ -264,10 +264,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/cargo)
-"An" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Bj" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing,
@@ -403,10 +399,6 @@
 "SU" = (
 /turf/closed/wall,
 /area/station/maintenance/department/cargo)
-"SW" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "TQ" = (
 /turf/closed/wall/rust,
 /area/station/maintenance/department/cargo)
@@ -458,10 +450,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
-"Wc" = (
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Wt" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/effect/turf_decal/trimline/yellow/arrow_cw{
@@ -1050,7 +1038,7 @@ SU
 SU
 SU
 SU
-SW
+rV
 Hu
 Hu
 "}
@@ -1195,10 +1183,10 @@ lx
 SU
 cK
 Cc
-SW
+rV
 Cc
 Cc
-An
+rV
 Hu
 Hu
 "}
@@ -1232,10 +1220,10 @@ lx
 SU
 cK
 Cc
-SW
-Wc
-SW
-SW
+rV
+rV
+rV
+rV
 Hu
 Hu
 "}
@@ -1270,8 +1258,8 @@ SU
 Cc
 Cc
 Cc
-An
-An
+rV
+rV
 Cc
 Hu
 Hu
@@ -1305,11 +1293,11 @@ lM
 lx
 SU
 Cc
-SW
-SW
-An
-An
-Wc
+rV
+rV
+rV
+rV
+rV
 Hu
 Hu
 "}
@@ -1379,10 +1367,10 @@ lM
 lx
 SU
 Cc
-An
-SW
-SW
-SW
+rV
+rV
+rV
+rV
 Cc
 Hu
 Hu
@@ -1416,10 +1404,10 @@ Kl
 dB
 SU
 MH
-An
-SW
-SW
-SW
+rV
+rV
+rV
+rV
 Cc
 Hu
 Hu
@@ -1457,7 +1445,7 @@ Cc
 Cc
 Cc
 Cc
-SW
+rV
 Hu
 Hu
 "}
@@ -1490,9 +1478,9 @@ lM
 lx
 SU
 Cc
-SW
-SW
-SW
+rV
+rV
+rV
 Cc
 Cc
 Hu
@@ -1527,10 +1515,10 @@ lM
 lx
 SU
 Cc
-SW
-Wc
+rV
+rV
 Cc
-An
+rV
 rV
 Hu
 Hu
@@ -1565,7 +1553,7 @@ lx
 SU
 Cc
 Cc
-Wc
+rV
 Cc
 Cc
 Cc
@@ -1604,7 +1592,7 @@ cK
 Cc
 cK
 Cc
-SW
+rV
 Cc
 Hu
 Hu

@@ -355,7 +355,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/cargobay)
 "gE" = (
-/obj/structure/sign/poster/contraband/missing_gloves/directional/north,
+/obj/structure/sign/poster/random,
 /obj/machinery/power/smes/super/full,
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
@@ -1327,7 +1327,7 @@
 /obj/effect/turf_decal/siding/green{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/machinery/light/dim/directional/south,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/waystation/dorms)
@@ -1647,7 +1647,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/cargooffice)
 "CY" = (
-/obj/structure/sign/poster/official/here_for_your_safety,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/waystation/securestorage)
 "Dc" = (
@@ -1754,7 +1754,7 @@
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/dorms)
 "Fu" = (
@@ -1915,7 +1915,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/waystation/dorms)
 "Jf" = (
@@ -1957,7 +1957,7 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/cargooffice)
 "Ke" = (
@@ -2813,7 +2813,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/cargobay)
 "XF" = (
@@ -2892,7 +2892,7 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/cargobay)
 "Zc" = (

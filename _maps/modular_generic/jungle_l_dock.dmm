@@ -8,8 +8,8 @@
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "bz" = (
-/obj/structure/flora/bush/ferny/style_random,
-/obj/structure/flora/bush/large/style_random{
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random{
 	pixel_y = -3
 	},
 /turf/open/misc/grass/jungle,
@@ -27,7 +27,7 @@
 /turf/open/water/jungle,
 /area/template_noop)
 "cF" = (
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
@@ -80,26 +80,21 @@
 /turf/open/misc/dirt/jungle/dark,
 /area/template_noop)
 "fE" = (
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "ge" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "gj" = (
-/obj/structure/flora/bush/reed/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/jungle,
 /area/template_noop)
-"gq" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/misc/grass/jungle,
-/area/template_noop)
 "gI" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/vomit/old/black_bile,
 /obj/structure/flora/rock/pile/style_random,
@@ -113,14 +108,14 @@
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "is" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /turf/open/water/jungle,
 /area/template_noop)
 "iL" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/closet/crate/grave/filled,
 /obj/effect/spawner/random/contraband/armory,
 /obj/effect/spawner/random/exotic/antag_gear,
@@ -140,16 +135,16 @@
 /turf/open/water/jungle,
 /area/template_noop)
 "jk" = (
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "kb" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/rock/pile/style_2,
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "ll" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
@@ -160,7 +155,7 @@
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "mF" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
@@ -173,7 +168,7 @@
 /area/template_noop)
 "nl" = (
 /obj/effect/turf_decal/weather/dirt,
-/obj/structure/flora/bush/large/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -3
 	},
 /turf/open/misc/grass/jungle,
@@ -219,7 +214,7 @@
 /area/template_noop)
 "qx" = (
 /obj/effect/decal/cleanable/vomit/old/black_bile,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/punji_sticks/spikes{
 	icon_state = "punji"
 	},
@@ -229,7 +224,7 @@
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "qS" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/rock/pile/jungle/large/style_random{
 	pixel_x = 0;
 	pixel_y = 0
@@ -246,7 +241,7 @@
 /turf/template_noop,
 /area/template_noop)
 "sE" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/punji_sticks/spikes{
 	icon_state = "punji"
 	},
@@ -270,13 +265,13 @@
 /turf/open/floor/wood/large,
 /area/template_noop)
 "ul" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/vomit/old/black_bile,
 /obj/structure/flora/rock/pile/style_3,
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "vl" = (
-/obj/structure/flora/bush/reed/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
@@ -291,7 +286,7 @@
 /turf/open/water/jungle,
 /area/template_noop)
 "xR" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/spawner/random/trash/crushed_can{
 	pixel_x = 8;
 	pixel_y = 13
@@ -305,7 +300,7 @@
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "yN" = (
-/obj/structure/flora/bush/large/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -3
 	},
 /obj/effect/turf_decal/weather/dirt{
@@ -318,17 +313,13 @@
 /obj/structure/flora/rock/pile/jungle/style_random,
 /turf/open/misc/grass/jungle,
 /area/template_noop)
-"zP" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/misc/grass/jungle,
-/area/template_noop)
 "AG" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/misc/dirt/jungle/dark,
 /area/template_noop)
 "AK" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
@@ -348,21 +339,14 @@
 	},
 /turf/open/water/jungle,
 /area/template_noop)
-"Hd" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/obj/structure/flora/bush/large/style_random{
-	pixel_y = -3
-	},
-/turf/open/misc/grass/jungle,
-/area/template_noop)
 "HW" = (
-/obj/structure/flora/bush/large/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -3
 	},
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "Ij" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
@@ -397,7 +381,7 @@
 /turf/open/misc/dirt/jungle/dark,
 /area/template_noop)
 "JF" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/rock/pile/style_2,
 /obj/structure/punji_sticks/spikes{
 	icon_state = "punji"
@@ -408,14 +392,14 @@
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "Kz" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/dirt/jungle/dark,
 /area/template_noop)
 "KW" = (
 /turf/open/water/jungle,
 /area/template_noop)
 "LL" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/spawner/random/trash/crushed_can{
 	pixel_x = 9;
 	pixel_y = 21
@@ -442,7 +426,7 @@
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "NG" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/grave/filled,
 /obj/effect/spawner/random/food_or_drink/booze,
@@ -451,14 +435,14 @@
 /area/template_noop)
 "Pb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/flora/bush/large/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -3
 	},
 /turf/open/misc/grass/jungle,
 /area/template_noop)
 "Qk" = (
 /obj/item/fishing_rod,
-/obj/structure/flora/bush/stalky/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/jungle,
 /area/template_noop)
 "Rn" = (
@@ -472,7 +456,7 @@
 /turf/open/water/jungle,
 /area/template_noop)
 "Sb" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/punji_sticks/spikes{
 	icon_state = "punji"
@@ -534,7 +518,7 @@
 /turf/open/floor/wood/large,
 /area/template_noop)
 "VC" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/misc/grass/jungle,
 /area/template_noop)
@@ -546,20 +530,12 @@
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/water/jungle,
 /area/template_noop)
-"Yf" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/turf/open/water/jungle,
-/area/template_noop)
 "Yt" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/misc/grass/jungle,
-/area/template_noop)
-"Zl" = (
-/obj/structure/flora/bush/stalky/style_random,
-/turf/open/water/jungle,
 /area/template_noop)
 
 (1,1,1) = {"
@@ -577,7 +553,7 @@ vG
 "}
 (2,1,1) = {"
 rJ
-zP
+jk
 xR
 gI
 jk
@@ -619,7 +595,7 @@ rJ
 nl
 Er
 cg
-Zl
+gj
 KW
 de
 KW
@@ -642,13 +618,13 @@ rJ
 "}
 (7,1,1) = {"
 rJ
-Hd
+bz
 Rn
 gj
 UE
 Qk
 tD
-Yf
+gj
 mF
 aC
 rJ
@@ -656,7 +632,7 @@ rJ
 (8,1,1) = {"
 rJ
 qx
-gq
+ge
 is
 JB
 KW
@@ -682,14 +658,14 @@ rJ
 (10,1,1) = {"
 rJ
 kb
-zP
+jk
 Yt
 VC
 sE
 LL
 yO
 Pb
-zP
+jk
 rJ
 "}
 (11,1,1) = {"

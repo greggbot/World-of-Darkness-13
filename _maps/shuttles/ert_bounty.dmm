@@ -39,7 +39,7 @@
 /area/shuttle/hunter)
 "f" = (
 /obj/structure/table,
-/obj/structure/sign/poster/contraband/bountyhunters/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = 8
 	},

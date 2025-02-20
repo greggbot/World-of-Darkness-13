@@ -46,7 +46,7 @@
 /turf/open/floor/engine/cult,
 /area/deathmatch)
 "ct" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/basic/pet/gondola{
 	name = "Jommy";
 	faction = list("gondola", "Wizard")
@@ -186,7 +186,7 @@
 /turf/open/floor/iron,
 /area/deathmatch)
 "kl" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/floor,
 /obj/effect/light_emitter{
 	set_cap = 2;
@@ -292,7 +292,7 @@
 /turf/open/floor/engine/cult,
 /area/deathmatch)
 "pV" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/deathmatch)
 "qx" = (
@@ -325,7 +325,7 @@
 /turf/open/floor/engine/cult,
 /area/deathmatch)
 "tL" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /mob/living/simple_animal/hostile/ooze/gelatinous{
 	name = "Jimmy";
 	faction = list("slime", "Wizard")
@@ -405,17 +405,13 @@
 	},
 /turf/open/floor/plastic,
 /area/deathmatch)
-"xs" = (
-/obj/structure/flora/bush/grassy/style_random,
-/turf/open/floor/grass,
-/area/deathmatch)
 "yA" = (
 /obj/structure/chair/wood/wings,
 /turf/open/floor/engine/cult,
 /area/deathmatch)
 "zN" = (
 /obj/structure/mystery_box/wands,
-/obj/structure/sign/poster/contraband/the_big_gas_giant_truth/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/engine/cult,
 /area/deathmatch)
 "zO" = (
@@ -712,10 +708,6 @@
 "Sa" = (
 /turf/open/floor/grass,
 /area/deathmatch)
-"SK" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/turf/open/floor/grass,
-/area/deathmatch)
 "Th" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/structure/table/reinforced,
@@ -774,10 +766,6 @@
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/engine/cult,
-/area/deathmatch)
-"Zo" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
 /area/deathmatch)
 "ZS" = (
 /obj/structure/railing/corner/end/flip,
@@ -1243,7 +1231,7 @@ ds
 ds
 ph
 Jm
-xs
+pV
 tL
 Jm
 Jm
@@ -1277,9 +1265,9 @@ ds
 ds
 Cq
 GC
-Zo
+pV
 Sa
-xs
+pV
 Jm
 OK
 Cq
@@ -1347,7 +1335,7 @@ Cq
 GC
 Sa
 pV
-SK
+pV
 Jm
 pe
 Cq
@@ -1379,7 +1367,7 @@ ds
 ds
 ph
 Jm
-SK
+pV
 ct
 Jm
 Jm

@@ -16,7 +16,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "dm" = (
-/obj/effect/mob_spawn/human/corpse/ciz1,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz1,
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "is" = (
@@ -163,7 +163,7 @@
 /turf/open/floor/plating/rough,
 /area/vtm/sewer)
 "IS" = (
-/obj/effect/mob_spawn/human/corpse/ciz3,
+/obj/effect/mob_spawn/ghost_role/human/corpse/ciz3,
 /obj/effect/decal/cleanable/blood/footprints{
 	icon_state = "armorblood"
 	},

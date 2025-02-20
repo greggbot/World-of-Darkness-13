@@ -246,7 +246,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/corporate_perks_vacation/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible,
 /area/misc/testroom/gateway_room)
 "Q" = (

@@ -93,7 +93,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/here_for_your_safety/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/template_noop)
 "t" = (
@@ -175,7 +175,7 @@
 /area/template_noop)
 "V" = (
 /obj/machinery/light/directional/west,
-/obj/structure/sign/poster/official/moth_hardhat/directional/east,
+/obj/structure/sign/poster/random,
 /obj/item/clothing/head/utility/hardhat{
 	pixel_y = 11;
 	pixel_x = 1

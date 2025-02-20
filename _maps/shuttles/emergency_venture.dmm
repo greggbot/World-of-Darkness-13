@@ -158,7 +158,7 @@
 "gu" = (
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/flora/bush/jungle/a/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "hn" = (
@@ -253,7 +253,7 @@
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "lW" = (
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "lX" = (
@@ -541,7 +541,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/structure/sign/poster/official/moth_epi/directional/south,
+/obj/structure/sign/poster/random,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /turf/open/floor/iron/white,
@@ -596,7 +596,7 @@
 /obj/structure/table,
 /obj/item/storage/fancy/donut_box,
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/structure/sign/poster/official/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 4
 	},
@@ -628,7 +628,7 @@
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "HA" = (
-/obj/structure/sign/poster/official/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/green/half/contrasted,
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -748,7 +748,7 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/escape)
 "Rq" = (
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
 "Ru" = (

@@ -79,7 +79,7 @@
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
 "y" = (
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/machinery/computer/camera_advanced/syndie{
 	dir = 4
 	},

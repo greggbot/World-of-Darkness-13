@@ -1,18 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
-"b" = (
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "c" = (
 /obj/machinery/hydroponics/soil,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
-"f" = (
-/obj/structure/flora/bush/generic/style_random,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "g" = (
@@ -23,12 +15,8 @@
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
-"l" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
 "p" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/holodeck_effect/mobspawner/pet,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
@@ -37,41 +25,12 @@
 /obj/effect/holodeck_effect/mobspawner/pet,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
-"v" = (
-/obj/structure/flora/bush/pale/style_random,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
 "w" = (
 /obj/effect/holodeck_effect/mobspawner/pet,
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
-"y" = (
-/obj/structure/flora/bush/pointy/style_random,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
-"C" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
-"D" = (
-/obj/structure/flora/bush/reed/style_random,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
-"G" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
-"H" = (
-/obj/effect/holodeck_effect/mobspawner/pet,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "I" = (
-/turf/open/floor/holofloor/grass,
-/area/template_noop)
-"M" = (
-/obj/structure/flora/bush/sunny/style_random,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "N" = (
@@ -80,10 +39,6 @@
 	dir = 1
 	},
 /turf/open/floor/holofloor,
-/area/template_noop)
-"R" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/holofloor/grass,
 /area/template_noop)
 "S" = (
 /obj/item/plate,
@@ -127,32 +82,32 @@ g
 I
 I
 I
-f
+a
 I
 I
-f
+a
 I
 a
 "}
 (2,1,1) = {"
 I
-f
+a
 I
-v
+a
 g
 I
-v
-H
-M
+a
+w
+a
 I
 "}
 (3,1,1) = {"
-M
+a
 g
-R
+a
 I
 k
-l
+a
 I
 c
 c
@@ -160,27 +115,27 @@ I
 "}
 (4,1,1) = {"
 I
-l
-M
+a
+a
 I
 I
-G
-R
+a
+a
 U
 q
 I
 "}
 (5,1,1) = {"
-y
+a
 w
 N
 Z
-D
-M
+a
+a
 X
 q
 c
-f
+a
 "}
 (6,1,1) = {"
 I
@@ -196,26 +151,26 @@ I
 "}
 (7,1,1) = {"
 I
-M
+a
 g
-v
+a
 I
-f
-C
+a
+a
 I
 I
-v
+a
 "}
 (8,1,1) = {"
-f
-C
-f
+a
+a
+a
 I
 I
 I
 g
 I
-b
+a
 I
 "}
 (9,1,1) = {"
@@ -224,7 +179,7 @@ I
 I
 I
 I
-R
+a
 I
 I
 I

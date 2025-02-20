@@ -39,7 +39,7 @@
 	},
 /area/ruin/space/has_grav/powered/clownplanet)
 "ak" = (
-/obj/structure/flora/bush/pale/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass{
 	color = "#1eff00"
 	},
@@ -56,33 +56,9 @@
 	color = "#1eff00"
 	},
 /area/ruin/space/has_grav/powered/clownplanet)
-"an" = (
-/obj/structure/flora/bush/reed/style_random,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
-/area/ruin/space/has_grav/powered/clownplanet)
 "ao" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/banana,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
-/area/ruin/space/has_grav/powered/clownplanet)
-"ap" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
-/area/ruin/space/has_grav/powered/clownplanet)
-"aq" = (
-/obj/structure/flora/bush/grassy/style_random,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
-/area/ruin/space/has_grav/powered/clownplanet)
-"ar" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass{
 	color = "#1eff00"
 	},
@@ -95,12 +71,6 @@
 /area/ruin/space/has_grav/powered/clownplanet)
 "at" = (
 /turf/open/floor/iron/bluespace,
-/area/ruin/space/has_grav/powered/clownplanet)
-"au" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
 /area/ruin/space/has_grav/powered/clownplanet)
 "av" = (
 /turf/open/floor/mineral/bananium,
@@ -125,12 +95,6 @@
 /area/ruin/space/has_grav/powered/clownplanet)
 "aA" = (
 /obj/structure/flora/rock/style_random,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
-/area/ruin/space/has_grav/powered/clownplanet)
-"aB" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass{
 	color = "#1eff00"
 	},
@@ -176,12 +140,6 @@
 /obj/item/flashlight/lamp/bananalamp,
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/powered/clownplanet)
-"aK" = (
-/obj/structure/flora/bush/sunny/style_random,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
-/area/ruin/space/has_grav/powered/clownplanet)
 "aL" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -221,14 +179,8 @@
 	color = "#1eff00"
 	},
 /area/ruin/space/has_grav/powered/clownplanet)
-"aQ" = (
-/obj/structure/flora/bush/pointy/style_random,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
-/area/ruin/space/has_grav/powered/clownplanet)
 "aR" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -243,7 +195,7 @@
 	},
 /area/ruin/space/has_grav/powered/clownplanet)
 "aT" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/grass{
 	color = "#1eff00"
@@ -280,7 +232,7 @@
 	},
 /area/ruin/space/has_grav/powered/clownplanet)
 "aY" = (
-/obj/structure/flora/bush/lavendergrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
@@ -290,13 +242,6 @@
 /area/ruin/space/has_grav/powered/clownplanet)
 "aZ" = (
 /obj/structure/flora/rock/style_random,
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/grass{
-	color = "#1eff00"
-	},
-/area/ruin/space/has_grav/powered/clownplanet)
-"ba" = (
-/obj/structure/flora/bush/reed/style_random,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/grass{
 	color = "#1eff00"
@@ -328,7 +273,7 @@
 	},
 /area/ruin/space/has_grav/powered/clownplanet)
 "be" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
@@ -439,7 +384,7 @@ ae
 ao
 aj
 aj
-ba
+aT
 at
 at
 aL
@@ -470,7 +415,7 @@ at
 at
 bc
 aE
-aB
+ak
 aj
 aA
 ab
@@ -486,9 +431,9 @@ aa
 ae
 ae
 aj
-ap
+ak
 aj
-au
+ak
 aj
 aU
 av
@@ -541,14 +486,14 @@ ak
 aj
 aj
 aj
-ar
+ak
 aU
 av
 av
 av
 av
 aL
-aK
+ak
 bi
 ab
 ab
@@ -564,8 +509,8 @@ ae
 am
 am
 aE
-aq
-ap
+ak
+ak
 aj
 aS
 aW
@@ -627,7 +572,7 @@ ay
 av
 at
 aL
-au
+ak
 ab
 aD
 ab
@@ -670,7 +615,7 @@ ag
 aN
 aL
 aj
-an
+ak
 aU
 at
 at
@@ -706,7 +651,7 @@ av
 at
 aL
 aj
-aq
+ak
 ab
 aD
 ab
@@ -721,7 +666,7 @@ ac
 af
 al
 aL
-au
+ak
 aj
 aU
 at
@@ -748,7 +693,7 @@ ai
 aO
 aP
 aj
-ar
+ak
 aU
 at
 at
@@ -758,7 +703,7 @@ at
 at
 aL
 aj
-aQ
+ak
 ab
 aD
 ab
@@ -783,7 +728,7 @@ av
 av
 at
 aL
-aB
+ak
 ab
 ab
 aD
@@ -799,7 +744,7 @@ aC
 aC
 aP
 aj
-ap
+ak
 aj
 aV
 aX
@@ -823,11 +768,11 @@ aa
 ae
 ae
 aj
-an
+ak
 aj
-aq
+ak
 aj
-an
+ak
 aU
 av
 av
@@ -860,7 +805,7 @@ av
 at
 at
 aL
-aK
+ak
 aj
 ab
 aG
@@ -876,7 +821,7 @@ aa
 ae
 ae
 aj
-ar
+ak
 aj
 ak
 aj

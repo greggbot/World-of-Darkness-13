@@ -498,7 +498,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/structure/fluff{
+/obj/structure/hedge{
 	density = 1;
 	desc = "Ha ha ha, you fool!";
 	icon = 'icons/obj/stack_objects.dmi';
@@ -584,7 +584,7 @@
 	dir = 6
 	},
 /obj/machinery/light/floor,
-/obj/structure/fluff{
+/obj/structure/hedge{
 	density = 1;
 	desc = "Ha ha ha, you fool!";
 	icon = 'icons/obj/stack_objects.dmi';

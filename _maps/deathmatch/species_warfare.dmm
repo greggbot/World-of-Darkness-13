@@ -4,7 +4,7 @@
 	dir = 4
 	},
 /obj/machinery/medical_kiosk,
-/obj/structure/sign/poster/official/moth_meth/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "aD" = (

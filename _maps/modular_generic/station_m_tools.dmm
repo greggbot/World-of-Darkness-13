@@ -31,7 +31,7 @@
 	pixel_x = 3;
 	pixel_y = -2
 	},
-/obj/structure/sign/poster/official/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/edge{
 	dir = 4
 	},
@@ -170,7 +170,7 @@
 /area/template_noop)
 "J" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/template_noop)
 "M" = (
@@ -218,7 +218,7 @@
 "V" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/template_noop)
 

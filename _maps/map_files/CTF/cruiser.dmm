@@ -74,7 +74,7 @@
 /obj/structure/window/reinforced/spawner/directional/south{
 	resistance_flags = 64
 	},
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/ctf)
 "dS" = (
@@ -543,7 +543,7 @@
 /obj/structure/window/reinforced/spawner/directional/south{
 	resistance_flags = 64
 	},
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/ctf)
 "HM" = (
@@ -562,7 +562,7 @@
 /obj/structure/window/reinforced/spawner/directional/south{
 	resistance_flags = 64
 	},
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/ctf)
 "HZ" = (

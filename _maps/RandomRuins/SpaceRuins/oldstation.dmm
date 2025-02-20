@@ -148,7 +148,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/bridge)
 "aS" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/bridge)
 "aT" = (
@@ -195,7 +195,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/bridge)
 "bb" = (
-/obj/structure/sign/poster/contraband/pwr_game,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/hall)
 "be" = (
@@ -293,7 +293,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation/charlie/hall)
 "by" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/rust,
 /area/ruin/space/ancientstation/charlie/bridge)
 "bz" = (
@@ -405,7 +405,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/rnd)
 "cb" = (
-/obj/structure/sign/poster/official/science,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/rust,
 /area/ruin/space/ancientstation/delta/hall)
 "cd" = (
@@ -537,7 +537,7 @@
 	},
 /area/ruin/space/ancientstation/delta/hall)
 "ct" = (
-/obj/structure/sign/poster/official/science,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/delta/hall)
 "cw" = (
@@ -1188,7 +1188,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/engie)
 "fd" = (
-/obj/structure/sign/poster/contraband/donut_corp,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/sec)
 "fe" = (
@@ -1238,7 +1238,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/hall)
 "fp" = (
-/obj/structure/sign/poster/official/here_for_your_safety,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/rust,
 /area/ruin/space/ancientstation/charlie/sec)
 "fq" = (
@@ -1539,7 +1539,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/hall)
 "gX" = (
-/obj/structure/sign/poster/official/build,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/engie)
 "gY" = (
@@ -2449,7 +2449,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/beta/atmos)
 "kM" = (
-/obj/structure/sign/poster/official/work_for_a_future,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/rust,
 /area/ruin/space/ancientstation/charlie/dorms)
 "kN" = (
@@ -5776,7 +5776,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 6
 	},
-/obj/structure/sign/poster/official/no_erp/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/white,
 /area/ruin/space/ancientstation/charlie/hall)
 "Gi" = (
@@ -6421,7 +6421,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/periodic_table/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/rnd)
 "Kd" = (
@@ -6906,7 +6906,7 @@
 /area/ruin/space/ancientstation/beta/supermatter)
 "Ni" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/safety_internals/directional/north,
+/obj/structure/sign/poster/random,
 /obj/machinery/atmospherics/components/unary/airlock_pump{
 	dir = 4
 	},
@@ -8378,8 +8378,8 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/hall)
 "XN" = (
-/obj/structure/sign/poster/contraband/space_cola,
-/obj/structure/sign/poster/contraband/space_cola,
+/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/sec)
 "XO" = (
@@ -8462,7 +8462,7 @@
 "Yk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/south,
-/obj/structure/sign/poster/official/cleanliness/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Yl" = (
@@ -8653,7 +8653,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation/beta/atmos)
 "Zj" = (
-/obj/structure/sign/poster/contraband/lamarr,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/delta/biolab)
 "Zl" = (

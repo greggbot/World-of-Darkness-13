@@ -195,7 +195,7 @@
 /obj/effect/turf_decal/trimline/yellow/line{
 	dir = 5
 	},
-/obj/structure/sign/poster/official/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/virtual_domain)
 "fZ" = (
@@ -395,7 +395,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/safety_internals/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/virtual_domain)
 "nz" = (
@@ -527,7 +527,7 @@
 /area/virtual_domain)
 "rc" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/landmark/bitrunning/cache_spawn,
 /turf/open/floor/iron,
 /area/virtual_domain)
@@ -1026,9 +1026,9 @@
 /turf/open/floor/iron,
 /area/virtual_domain)
 "Fw" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/rock/pile/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
 /turf/open/floor/grass,
@@ -1159,7 +1159,7 @@
 /obj/structure/broken_flooring/pile{
 	dir = 1
 	},
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/virtual_domain)
 "JE" = (
@@ -1326,7 +1326,7 @@
 /area/virtual_domain)
 "OQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/ripped/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/carpet/orange,
 /area/virtual_domain)
 "OR" = (
@@ -1347,7 +1347,7 @@
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/virtual_domain)
 "PH" = (
@@ -1422,7 +1422,7 @@
 /turf/open/floor/plating,
 /area/virtual_domain)
 "QP" = (
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating,
 /area/virtual_domain)
@@ -1538,7 +1538,7 @@
 "Ue" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light/small/red/dim/directional/east,
-/obj/structure/sign/poster/official/cleanliness/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/virtual_domain)
 "Uw" = (
@@ -1737,7 +1737,7 @@
 	pixel_y = 4
 	},
 /obj/machinery/light/small/dim/directional/south,
-/obj/structure/sign/poster/official/moth_hardhat/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/virtual_domain)
 "Yt" = (

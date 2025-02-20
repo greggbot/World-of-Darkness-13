@@ -158,7 +158,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "aH" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "aI" = (
@@ -173,7 +173,7 @@
 "aK" = (
 /obj/structure/closet/emcloset,
 /obj/item/clothing/mask/breath,
-/obj/structure/sign/poster/official/safety_internals/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/awaymission/undergroundoutpost45/central)
 "aL" = (
@@ -424,13 +424,13 @@
 /turf/open/floor/iron/freezer,
 /area/awaymission/undergroundoutpost45/central)
 "bK" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/random,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "bN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/random,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
@@ -1006,11 +1006,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "eA" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/awaymission/undergroundoutpost45/central)
-"eB" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/awaymission/undergroundoutpost45/central)
 "eC" = (
@@ -1057,10 +1053,6 @@
 	},
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
-"eO" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
-/area/awaymission/undergroundoutpost45/central)
 "eP" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 4
@@ -1105,7 +1097,7 @@
 /obj/item/screwdriver{
 	pixel_y = 10
 	},
-/obj/structure/sign/poster/official/safety_report/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/red/half/contrasted,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
@@ -1314,7 +1306,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/eat/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/green{
 	dir = 4
 	},
@@ -2337,7 +2329,7 @@
 "jR" = (
 /obj/structure/closet/emcloset,
 /obj/item/clothing/mask/breath,
-/obj/structure/sign/poster/official/safety_internals/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/iron{
 	dir = 8
@@ -3472,7 +3464,7 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "nz" = (
 /obj/machinery/vending/cigarette,
-/obj/structure/sign/poster/contraband/smoke/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "nB" = (
@@ -5874,7 +5866,7 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "vV" = (
 /obj/machinery/vending/tool,
-/obj/structure/sign/poster/official/build/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/iron{
 	dir = 8
@@ -38841,7 +38833,7 @@ IV
 dT
 el
 eA
-eB
+eA
 el
 fq
 Ai
@@ -39097,8 +39089,8 @@ zJ
 IV
 dT
 el
-eB
-eO
+eA
+eA
 el
 fq
 Ai

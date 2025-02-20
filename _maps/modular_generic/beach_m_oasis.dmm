@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/obj/structure/flora/bush/sparsegrass{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 9;
 	pixel_x = -3
 	},
@@ -13,7 +13,7 @@
 /area/template_noop)
 "c" = (
 /obj/structure/flora/tree/palm,
-/obj/structure/flora/bush/fullgrass/style_3,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/template_noop)
 "d" = (
@@ -25,7 +25,7 @@
 /turf/open/misc/beach/sand,
 /area/template_noop)
 "f" = (
-/obj/structure/flora/bush/sparsegrass/style_2{
+/obj/structure/flora/bush/style_random{
 	pixel_x = 6;
 	pixel_y = -14
 	},
@@ -52,13 +52,13 @@
 /turf/open/misc/beach/sand,
 /area/template_noop)
 "l" = (
-/obj/structure/flora/bush/grassy,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/coast/corner{
 	dir = 8
 	},
 /area/template_noop)
 "m" = (
-/obj/structure/flora/bush/sparsegrass/style_3{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -6;
 	pixel_x = -6
 	},
@@ -73,7 +73,7 @@
 	},
 /area/template_noop)
 "q" = (
-/obj/structure/flora/bush/stalky/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_x = -7
 	},
 /turf/open/misc/beach/coast{
@@ -81,7 +81,7 @@
 	},
 /area/template_noop)
 "s" = (
-/obj/structure/flora/bush/grassy/style_4{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 11;
 	pixel_x = 5
 	},
@@ -93,7 +93,7 @@
 	},
 /area/template_noop)
 "u" = (
-/obj/structure/flora/bush/sparsegrass/style_2{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 3;
 	pixel_x = 4
 	},
@@ -108,7 +108,7 @@
 	},
 /area/template_noop)
 "z" = (
-/obj/structure/flora/bush/reed/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_x = -2;
 	pixel_y = 6
 	},
@@ -134,13 +134,13 @@
 /turf/open/misc/beach/sand,
 /area/template_noop)
 "G" = (
-/obj/structure/flora/bush/stalky/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 6
 	},
 /turf/open/misc/beach/coast,
 /area/template_noop)
 "H" = (
-/obj/structure/flora/bush/sparsegrass{
+/obj/structure/flora/bush/style_random{
 	pixel_x = 12;
 	pixel_y = -4
 	},
@@ -160,7 +160,7 @@
 /turf/open/misc/beach/sand,
 /area/template_noop)
 "M" = (
-/obj/structure/flora/bush/sparsegrass/style_3{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 1;
 	pixel_x = 1
 	},
@@ -181,7 +181,7 @@
 /turf/open/floor/carpet/cyan,
 /area/template_noop)
 "O" = (
-/obj/structure/flora/bush/sparsegrass/style_2{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 9;
 	pixel_x = -4
 	},
@@ -192,7 +192,7 @@
 /turf/open/misc/beach/sand,
 /area/template_noop)
 "Q" = (
-/obj/structure/flora/bush/fullgrass/style_2,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/template_noop)
 "R" = (
@@ -206,16 +206,12 @@
 /turf/open/floor/carpet/cyan,
 /area/template_noop)
 "T" = (
-/obj/structure/flora/bush/reed/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 8
 	},
 /turf/open/misc/beach/coast{
 	dir = 9
 	},
-/area/template_noop)
-"U" = (
-/obj/structure/flora/bush/sparsegrass/style_2,
-/turf/open/misc/beach/sand,
 /area/template_noop)
 "W" = (
 /obj/effect/decal/cleanable/dirt,
@@ -234,7 +230,7 @@
 	},
 /area/template_noop)
 "Z" = (
-/obj/structure/flora/bush/sparsegrass/style_2{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 2
 	},
 /turf/open/misc/beach/sand,
@@ -258,7 +254,7 @@ F
 E
 K
 F
-U
+Q
 u
 d
 "}

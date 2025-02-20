@@ -247,9 +247,9 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "eu" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/small/directional/north,
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/grass,
@@ -375,7 +375,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "gO" = (
-/obj/structure/flora/bush/leavy/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid,
 /area/shuttle/escape)
 "gW" = (
@@ -422,8 +422,8 @@
 /turf/open/space/basic,
 /area/shuttle/escape)
 "hW" = (
-/obj/structure/flora/bush/leavy/style_random,
-/obj/structure/flora/bush/reed/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/camera/directional/south{
 	c_tag = "Monastery Asteroid Primary Entrance";
 	network = list("ss13","monastery")
@@ -463,8 +463,8 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "it" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "iw" = (
@@ -484,7 +484,7 @@
 	},
 /obj/item/storage/crayons,
 /obj/structure/table/wood,
-/obj/structure/sign/poster/official/soft_cap_pop_art/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "iI" = (
@@ -615,7 +615,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "ka" = (
-/obj/structure/flora/bush/ferny/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/camera/directional/south{
 	c_tag = "Monastery Asteroid Starboard Aft";
 	network = list("ss13","monastery")
@@ -1555,7 +1555,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "yC" = (
-/obj/structure/flora/bush,
+/obj/structure/flora/bush/style_random,
 /obj/effect/turf_decal/sand,
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -1642,11 +1642,6 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plating,
 /area/shuttle/escape)
-"zB" = (
-/obj/structure/flora/bush/pointy/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/shuttle/escape)
 "zE" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -1674,11 +1669,6 @@
 	pixel_y = 28
 	},
 /turf/open/floor/iron/grimy,
-/area/shuttle/escape)
-"zX" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/pointy/style_random,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "Ab" = (
 /obj/structure/closet{
@@ -1780,8 +1770,8 @@
 /turf/open/floor/carpet,
 /area/shuttle/escape)
 "Bp" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/beebox,
 /obj/item/queen_bee/bought,
 /turf/open/floor/grass,
@@ -1899,11 +1889,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
-"CN" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/shuttle/escape)
 "CR" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/item/storage/fancy/candle_box,
@@ -1913,7 +1898,7 @@
 "Dc" = (
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/machinery/light/small/directional/east,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/cable,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -1929,7 +1914,7 @@
 	},
 /obj/structure/table/wood,
 /obj/item/soap/nanotrasen,
-/obj/structure/sign/poster/official/fruit_bowl/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Dr" = (
@@ -1943,10 +1928,6 @@
 /obj/machinery/holopad,
 /obj/item/flashlight/lantern,
 /turf/open/floor/iron/chapel,
-/area/shuttle/escape)
-"Dt" = (
-/obj/structure/flora/bush,
-/turf/open/misc/asteroid,
 /area/shuttle/escape)
 "Dw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2006,7 +1987,7 @@
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "En" = (
-/obj/structure/flora/bush/sunny/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "Ep" = (
@@ -2053,9 +2034,9 @@
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "ET" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "EU" = (
@@ -2071,7 +2052,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Ff" = (
-/obj/structure/flora/bush/generic/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -2129,11 +2110,6 @@
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
-/area/shuttle/escape)
-"FK" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "FO" = (
 /obj/machinery/door/airlock/grunge{
@@ -2202,16 +2178,6 @@
 /obj/structure/chair,
 /turf/open/misc/asteroid,
 /area/shuttle/escape)
-"GN" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
-/area/shuttle/escape)
-"GU" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/shuttle/escape)
 "Hc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2253,11 +2219,6 @@
 "HL" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/seeds/poppy,
-/turf/open/floor/grass,
-/area/shuttle/escape)
-"HS" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "Ig" = (
@@ -2330,12 +2291,6 @@
 /obj/structure/window/reinforced/spawner/directional/west,
 /turf/open/space/basic,
 /area/shuttle/escape)
-"IR" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/pale/style_random,
-/turf/open/floor/grass,
-/area/shuttle/escape)
 "IT" = (
 /obj/machinery/light/small/directional/west,
 /obj/machinery/camera/directional/east{
@@ -2381,8 +2336,8 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Jv" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/camera/directional/north{
 	c_tag = "Monastery Garden";
 	network = list("ss13","monastery")
@@ -2475,8 +2430,8 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Kn" = (
-/obj/structure/flora/bush/leavy/style_random,
-/obj/structure/flora/bush/reed/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid,
 /area/shuttle/escape)
 "KE" = (
@@ -2819,10 +2774,6 @@
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/plating,
 /area/shuttle/escape)
-"Pe" = (
-/obj/structure/flora/bush/ferny/style_random,
-/turf/open/misc/asteroid,
-/area/shuttle/escape)
 "Pp" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3026,9 +2977,9 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "Rz" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -3466,10 +3417,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
-"Wl" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/shuttle/escape)
 "Wo" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
@@ -3534,10 +3481,6 @@
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
-/area/shuttle/escape)
-"Xm" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "Xs" = (
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -3649,11 +3592,6 @@
 "YC" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark,
-/area/shuttle/escape)
-"YD" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "YE" = (
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
@@ -4846,7 +4784,7 @@ SU
 Zn
 jc
 jc
-Pe
+gO
 jc
 Kg
 mK
@@ -5009,9 +4947,9 @@ jc
 jc
 jc
 jc
-Dt
+gO
 jc
-Pe
+gO
 Kg
 GB
 Kg
@@ -5244,7 +5182,7 @@ zE
 zE
 qx
 zE
-Dt
+gO
 jc
 jc
 jc
@@ -5252,7 +5190,7 @@ jc
 jc
 jc
 jc
-Pe
+gO
 nr
 mn
 nK
@@ -5429,7 +5367,7 @@ yc
 vX
 oc
 Kg
-zB
+it
 it
 Dc
 DY
@@ -5513,10 +5451,10 @@ oc
 Kg
 it
 Bp
-Wl
+En
 Vi
 Vi
-Xm
+En
 it
 Kg
 oc
@@ -5595,7 +5533,7 @@ oc
 nr
 Rz
 AM
-GN
+En
 Vi
 UC
 Gk
@@ -5677,11 +5615,11 @@ oc
 Kg
 Jv
 Bp
-Xm
+En
 Eb
 Vi
 Vi
-HS
+it
 Kg
 oc
 ZM
@@ -5757,12 +5695,12 @@ vJ
 Hc
 oc
 Kg
-CN
-YD
+it
+it
 Zj
 En
-Wl
-FK
+En
+it
 it
 Kg
 oc
@@ -5844,7 +5782,7 @@ EL
 Py
 OM
 Vi
-GU
+ET
 eu
 nr
 oc
@@ -5921,13 +5859,13 @@ yc
 rj
 oc
 Kg
-YD
+it
 Vi
 Vi
 Vi
-GN
-YD
-IR
+En
+it
+ET
 Kg
 oc
 vb
@@ -6008,7 +5946,7 @@ EL
 RZ
 Vi
 Ff
-zX
+it
 ET
 Kg
 oc
@@ -6065,7 +6003,7 @@ fh
 jc
 jc
 jc
-Dt
+gO
 jc
 jc
 jc
@@ -6239,7 +6177,7 @@ jc
 jc
 jc
 jc
-Pe
+gO
 jc
 qj
 ru
@@ -6480,7 +6418,7 @@ fm
 zE
 zE
 zE
-Pe
+gO
 jc
 kv
 lc
@@ -6733,12 +6671,12 @@ mm
 zE
 jc
 jc
-Pe
+gO
 jc
 jc
 jc
 jc
-Pe
+gO
 yC
 yc
 KV

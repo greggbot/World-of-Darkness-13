@@ -1390,7 +1390,7 @@
 			for(var/obj/structure/pole/P in range(1, src))
 				if(P)
 					drop_all_held_items()
-					INVOKE_ASYNC(P, PROC_REF(ClickOn))
+					INVOKE_ASYNC(P, PROC_REF(attack_hand))
 
 /mob/living/carbon/human/npc/incel
 	staying = TRUE

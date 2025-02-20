@@ -509,7 +509,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/turretedoutpost)
 "GN" = (
-/obj/structure/sign/poster/contraband/c20r/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood/parquet,
 /area/ruin/space/has_grav/turretedoutpost)
 "Hi" = (

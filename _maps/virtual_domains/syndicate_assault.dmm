@@ -376,7 +376,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/virtual_domain)
 "nU" = (
-/obj/structure/sign/poster/contraband/syndicate_pistol,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/r_wall/syndicate,
 /area/virtual_domain)
 "og" = (
@@ -436,7 +436,7 @@
 /turf/open/space/basic,
 /area/space/virtual_domain)
 "qU" = (
-/obj/structure/sign/poster/contraband/c20r,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/r_wall/syndicate,
 /area/virtual_domain/protected_space)
 "qY" = (
@@ -1109,10 +1109,6 @@
 "TB" = (
 /turf/closed/indestructible/syndicate,
 /area/virtual_domain/protected_space)
-"UQ" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
-/turf/closed/wall/r_wall/syndicate,
-/area/virtual_domain)
 "Vg" = (
 /turf/open/space/basic,
 /area/virtual_domain/protected_space)
@@ -1131,10 +1127,6 @@
 	},
 /turf/template_noop,
 /area/virtual_domain/safehouse)
-"Wd" = (
-/obj/structure/sign/poster/contraband/tools,
-/turf/closed/wall/r_wall/syndicate,
-/area/virtual_domain/protected_space)
 "Wy" = (
 /obj/structure/closet/crate/secure/gear{
 	req_access = list("syndicate")
@@ -2876,7 +2868,7 @@ qx
 qx
 qx
 qx
-Wd
+qU
 OH
 LB
 dp
@@ -3203,7 +3195,7 @@ qx
 qx
 qx
 qx
-UQ
+nU
 rM
 xJ
 Kz

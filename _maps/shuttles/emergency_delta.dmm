@@ -237,10 +237,10 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "ax" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/flora/bush/leavy/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/grass,
 /area/shuttle/escape)
@@ -288,14 +288,6 @@
 /obj/item/radio/intercom/directional/west,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
-/area/shuttle/escape)
-"aI" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/generic/style_random,
-/obj/structure/window/reinforced/shuttle,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "aJ" = (
 /obj/machinery/shower/directional/west{
@@ -377,14 +369,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/escape)
-"aX" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/sunny/style_random,
-/obj/structure/window/reinforced/shuttle,
-/turf/open/floor/grass,
-/area/shuttle/escape)
 "aY" = (
 /obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/shieldgen,
@@ -425,14 +409,6 @@
 	dir = 5
 	},
 /turf/open/floor/iron,
-/area/shuttle/escape)
-"be" = (
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/ferny/style_random,
-/obj/structure/window/reinforced/shuttle,
-/turf/open/floor/grass,
 /area/shuttle/escape)
 "bf" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -1222,15 +1198,15 @@ ai
 nD
 ax
 ae
-aI
+ax
 ae
 ax
 nD
-aX
+ax
 ae
-be
+ax
 ae
-aX
+ax
 nD
 bo
 hB
@@ -1346,15 +1322,15 @@ ai
 nD
 ax
 ae
-aI
+ax
 ae
 ax
 nD
-aX
+ax
 ae
-be
+ax
 ae
-aX
+ax
 nD
 bo
 bu

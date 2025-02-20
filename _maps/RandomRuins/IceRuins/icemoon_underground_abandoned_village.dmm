@@ -11,7 +11,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered)
 "aZ" = (
-/obj/structure/sign/poster/ripped,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/rust,
 /area/icemoon/underground/explored)
 "bR" = (
@@ -93,7 +93,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "kl" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/random,
 /turf/closed/wall,
 /area/icemoon/underground/explored)
 "ks" = (
@@ -143,7 +143,7 @@
 /turf/open/floor/engine/cult,
 /area/ruin/powered)
 "mI" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/both/style_random,
 /obj/structure/fence{
 	dir = 8
@@ -169,11 +169,11 @@
 /turf/open/misc/asteroid/snow/ice/icemoon,
 /area/icemoon/underground/explored)
 "pj" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "pH" = (
-/obj/structure/sign/poster/official/work_for_a_future,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/mineral/wood,
 /area/ruin/powered)
 "pI" = (
@@ -344,10 +344,6 @@
 /obj/item/flashlight/lantern,
 /turf/open/floor/iron/freezer,
 /area/ruin/powered)
-"DM" = (
-/obj/structure/flora/bush/snow/style_random,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
 "Ed" = (
 /obj/machinery/door/airlock/wood,
 /obj/effect/mapping_helpers/airlock/locked,
@@ -502,12 +498,8 @@
 /obj/machinery/door/airlock/wood,
 /turf/open/floor/wood,
 /area/ruin/powered)
-"Tc" = (
-/obj/structure/flora/bush/fullgrass/style_random,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
 "TW" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/grass/both/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
@@ -669,7 +661,7 @@ Ei
 Ei
 Ei
 Ei
-Tc
+pj
 pc
 pc
 Og
@@ -851,7 +843,7 @@ QR
 pV
 wQ
 Og
-Tc
+pj
 Ei
 Ei
 Og
@@ -904,8 +896,8 @@ zT
 Og
 Bq
 zT
-Tc
-DM
+pj
+pj
 zT
 zT
 zT
@@ -1022,7 +1014,7 @@ ZG
 Vn
 Og
 zT
-Tc
+pj
 Og
 Og
 Og
@@ -1180,7 +1172,7 @@ pc
 pj
 Og
 Og
-DM
+pj
 Ei
 Ei
 Ei
@@ -1228,8 +1220,8 @@ Ei
 Ei
 Ei
 Ei
-DM
-Tc
+pj
+pj
 pc
 pc
 xc
@@ -1360,7 +1352,7 @@ Og
 Og
 Og
 bY
-Tc
+pj
 pc
 tN
 tN

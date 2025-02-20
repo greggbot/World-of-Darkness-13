@@ -16,7 +16,7 @@
 "af" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/effect/spawner/surgery_tray/full,
-/obj/structure/sign/poster/contraband/hacking_guide/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/circuit/red/off,
 /area/shuttle/hunter/mi13_foodtruck)
 "ag" = (
@@ -45,7 +45,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/hunter/mi13_foodtruck)
 "ao" = (
-/obj/structure/sign/poster/contraband/bountyhunters/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/hunter/mi13_foodtruck)
 "bY" = (
@@ -96,7 +96,7 @@
 /area/shuttle/hunter/mi13_foodtruck)
 "dB" = (
 /obj/machinery/vending/clothing,
-/obj/structure/sign/poster/official/high_class_martini/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/circuit/red/off,
 /area/shuttle/hunter/mi13_foodtruck)
 "dC" = (
@@ -314,7 +314,7 @@
 /area/shuttle/hunter/mi13_foodtruck)
 "lX" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/structure/sign/poster/contraband/kss13/directional/north,
+/obj/structure/sign/poster/random,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/circuit/red/off,
 /area/shuttle/hunter/mi13_foodtruck)
@@ -326,10 +326,6 @@
 	},
 /obj/structure/cable/layer1,
 /turf/open/floor/circuit/red,
-/area/shuttle/hunter/mi13_foodtruck)
-"nh" = (
-/obj/structure/sign/poster/ripped/directional/south,
-/turf/open/floor/mineral/titanium,
 /area/shuttle/hunter/mi13_foodtruck)
 "oA" = (
 /obj/structure/railing{
@@ -422,10 +418,6 @@
 /obj/structure/table/optable,
 /turf/open/floor/circuit/red/off,
 /area/shuttle/hunter/mi13_foodtruck)
-"ua" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/south,
-/turf/open/floor/mineral/titanium,
-/area/shuttle/hunter/mi13_foodtruck)
 "ui" = (
 /obj/structure/table/reinforced,
 /obj/item/food/classic_hard_shell_taco{
@@ -450,7 +442,7 @@
 /obj/item/food/classic_hard_shell_taco{
 	pixel_x = -8
 	},
-/obj/structure/sign/poster/contraband/eat/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/kitchen/small,
 /area/shuttle/hunter/mi13_foodtruck)
 "uq" = (
@@ -796,7 +788,7 @@ Xc
 al
 al
 Dp
-ua
+ao
 ku
 IG
 Pq
@@ -813,7 +805,7 @@ xG
 oA
 AP
 pZ
-nh
+ao
 ku
 aj
 hB

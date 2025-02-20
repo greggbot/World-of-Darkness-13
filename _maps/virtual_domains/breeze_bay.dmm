@@ -68,7 +68,7 @@
 /turf/template_noop,
 /area/virtual_domain/safehouse)
 "y" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "z" = (
@@ -88,10 +88,6 @@
 /area/virtual_domain/fullbright)
 "F" = (
 /obj/structure/fluff/beach_umbrella/engine,
-/turf/open/misc/beach/sand,
-/area/virtual_domain/fullbright)
-"G" = (
-/obj/structure/flora/bush/jungle/a/style_random,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "H" = (
@@ -131,7 +127,7 @@
 /turf/open/misc/beach/coast,
 /area/virtual_domain/fullbright)
 "Q" = (
-/obj/structure/flora/bush/stalky/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/virtual_domain/fullbright)
 "R" = (
@@ -209,7 +205,7 @@ a
 (2,1,1) = {"
 a
 K
-G
+y
 y
 J
 T
@@ -343,8 +339,8 @@ a
 "}
 (7,1,1) = {"
 a
-G
-G
+y
+y
 J
 J
 I
@@ -397,7 +393,7 @@ a
 "}
 (9,1,1) = {"
 a
-G
+y
 y
 J
 h
@@ -613,7 +609,7 @@ a
 "}
 (17,1,1) = {"
 a
-G
+y
 J
 J
 J
@@ -641,7 +637,7 @@ a
 (18,1,1) = {"
 a
 S
-G
+y
 J
 J
 D
@@ -776,7 +772,7 @@ a
 (23,1,1) = {"
 a
 J
-G
+y
 J
 J
 J

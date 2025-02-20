@@ -47,7 +47,7 @@
 "aN" = (
 /obj/machinery/vending/cigarette/beach,
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/have_a_puff/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/ruin/powered/beach)
 "aP" = (
@@ -159,7 +159,7 @@
 /turf/open/floor/sepia,
 /area/ruin/powered/beach)
 "cP" = (
-/obj/structure/flora/bush/stalky/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/ruin/powered/beach)
 "cV" = (
@@ -338,8 +338,8 @@
 /turf/open/floor/pod/dark,
 /area/ruin/powered/beach)
 "iH" = (
-/obj/structure/flora/bush/stalky/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/ruin/powered/beach)
 "jc" = (
@@ -372,7 +372,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "ks" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/item/toy/seashell,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
@@ -500,7 +500,7 @@
 /turf/open/floor/pod/light,
 /area/ruin/powered/beach)
 "qg" = (
-/obj/structure/flora/bush/large/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "qt" = (
@@ -621,7 +621,7 @@
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "ww" = (
-/obj/structure/sign/poster/official/fruit_bowl,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/ruin/powered/beach)
 "wL" = (
@@ -646,7 +646,7 @@
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/ruin/powered/beach)
 "xg" = (
-/obj/structure/sign/poster/official/cohiba_robusto_ad/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "xn" = (
@@ -679,10 +679,6 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
-"yO" = (
-/obj/structure/flora/bush/jungle/a/style_random,
-/turf/open/misc/beach/sand,
-/area/ruin/powered/beach)
 "yT" = (
 /turf/open/misc/beach/coast,
 /area/ruin/powered/beach)
@@ -712,7 +708,7 @@
 /area/ruin/powered/beach)
 "zK" = (
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/starkist/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "zT" = (
@@ -849,10 +845,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
-"Eu" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/water/beach,
-/area/ruin/powered/beach)
 "EE" = (
 /obj/structure/dresser,
 /turf/open/floor/wood,
@@ -890,7 +882,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "FD" = (
-/obj/structure/sign/poster/contraband/ambrosia_vulgaris/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/grimy,
 /area/ruin/powered/beach)
 "FH" = (
@@ -905,10 +897,6 @@
 /obj/structure/chair/sofa/left/brown,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
-"FZ" = (
-/obj/structure/sign/poster/contraband/space_up/directional/west,
-/turf/open/floor/wood,
-/area/ruin/powered/beach)
 "Ga" = (
 /obj/structure/table/wood,
 /obj/item/book/manual/wiki/cooking_to_serve_man,
@@ -917,7 +905,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Gf" = (
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "GA" = (
@@ -1019,8 +1007,8 @@
 /turf/open/floor/pod/light,
 /area/ruin/powered/beach)
 "Kn" = (
-/obj/structure/flora/bush/large/style_random,
-/obj/structure/flora/bush/jungle/a/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "Ky" = (
@@ -1288,10 +1276,6 @@
 /obj/structure/noticeboard/staff,
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/ruin/powered/beach)
-"UT" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/misc/beach/sand,
-/area/ruin/powered/beach)
 "UZ" = (
 /obj/item/stack/sheet/iron/fifty,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -1411,7 +1395,7 @@
 /turf/open/floor/carpet/blue,
 /area/ruin/powered/beach)
 "Zq" = (
-/obj/structure/sign/poster/official/high_class_martini/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/mob_spawn/ghost_role/human/bartender{
 	dir = 4
 	},
@@ -1481,7 +1465,7 @@ BE
 Mf
 Iy
 fS
-UT
+qg
 aj
 oQ
 Zq
@@ -1512,7 +1496,7 @@ Mf
 FO
 IG
 VI
-UT
+qg
 SY
 aj
 HW
@@ -1606,7 +1590,7 @@ aj
 aj
 hj
 VI
-UT
+qg
 AC
 VI
 VI
@@ -1641,7 +1625,7 @@ VI
 VI
 Ri
 PJ
-UT
+qg
 VI
 fB
 lq
@@ -1671,7 +1655,7 @@ VI
 rK
 VI
 VI
-UT
+qg
 VI
 VI
 VI
@@ -1697,7 +1681,7 @@ Mf
 Gf
 VI
 VI
-UT
+qg
 VI
 qg
 VI
@@ -1785,7 +1769,7 @@ aa
 MZ
 VI
 VI
-UT
+qg
 VI
 VI
 xe
@@ -1808,7 +1792,7 @@ cP
 pz
 pz
 pz
-Eu
+cP
 Ro
 MZ
 "}
@@ -1976,7 +1960,7 @@ MZ
 Bp
 Zi
 Mf
-UT
+qg
 VI
 VI
 VI
@@ -1997,7 +1981,7 @@ VI
 VI
 mv
 pz
-Eu
+cP
 pz
 pz
 cP
@@ -2010,7 +1994,7 @@ MZ
 bd
 VI
 VI
-UT
+qg
 VI
 rv
 Lm
@@ -2113,9 +2097,9 @@ qF
 ZA
 Vt
 yc
-yO
+qg
 VI
-UT
+qg
 VI
 VI
 VI
@@ -2215,7 +2199,7 @@ OP
 MZ
 VI
 VI
-UT
+qg
 VI
 dc
 hX
@@ -2270,7 +2254,7 @@ aC
 aC
 aC
 aC
-FZ
+xg
 aC
 aj
 aj

@@ -2,7 +2,7 @@
 "ab" = (
 /obj/machinery/vending/cigarette/beach,
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/have_a_puff/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/virtual_domain/fullbright)
 "ag" = (
@@ -80,7 +80,7 @@
 /turf/open/floor/sepia,
 /area/virtual_domain/fullbright)
 "cG" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/virtual_domain/fullbright)
 "db" = (
@@ -140,8 +140,8 @@
 /turf/open/floor/pod/light,
 /area/virtual_domain/fullbright)
 "gh" = (
-/obj/structure/flora/bush/stalky/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/virtual_domain/fullbright)
 "gl" = (
@@ -306,7 +306,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "qg" = (
-/obj/structure/sign/poster/contraband/space_up/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "qR" = (
@@ -326,7 +326,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "ri" = (
-/obj/structure/sign/poster/official/fruit_bowl,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/virtual_domain/fullbright)
 "rm" = (
@@ -615,7 +615,7 @@
 	},
 /area/virtual_domain/fullbright)
 "Bw" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "BD" = (
@@ -728,7 +728,7 @@
 /area/virtual_domain/fullbright)
 "Gh" = (
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/starkist/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Gz" = (
@@ -814,10 +814,6 @@
 	name = "Croupier's Booth"
 	},
 /turf/open/floor/wood,
-/area/virtual_domain/fullbright)
-"KZ" = (
-/obj/structure/flora/bush/stalky/style_random,
-/turf/open/water/beach,
 /area/virtual_domain/fullbright)
 "LD" = (
 /turf/open/floor/plating,
@@ -905,7 +901,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Pg" = (
-/obj/structure/sign/poster/official/high_class_martini/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/mob_spawn/ghost_role/human/bartender{
 	dir = 4
 	},
@@ -981,7 +977,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "TX" = (
-/obj/structure/sign/poster/contraband/ambrosia_vulgaris/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/grimy,
 /area/virtual_domain/fullbright)
 "Ud" = (
@@ -996,8 +992,8 @@
 /turf/open/floor/pod/dark,
 /area/virtual_domain/fullbright)
 "UU" = (
-/obj/structure/flora/bush/large/style_random,
-/obj/structure/flora/bush/jungle/a/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Ve" = (
@@ -1016,10 +1012,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
-"VX" = (
-/obj/structure/flora/bush/large/style_random,
-/turf/open/misc/beach/sand,
-/area/virtual_domain/fullbright)
 "We" = (
 /obj/structure/table/wood,
 /obj/item/book/manual/wiki/cooking_to_serve_man,
@@ -1037,10 +1029,6 @@
 "WL" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood,
-/area/virtual_domain/fullbright)
-"WO" = (
-/obj/structure/flora/bush/jungle/a/style_random,
-/turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "WW" = (
 /obj/effect/turf_decal/sand,
@@ -1079,7 +1067,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Yi" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/item/toy/seashell,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
@@ -1101,12 +1089,8 @@
 /obj/machinery/light/directional/east,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
-"Zb" = (
-/obj/structure/sign/poster/official/cohiba_robusto_ad/directional/west,
-/turf/open/floor/wood,
-/area/virtual_domain/fullbright)
 "Zd" = (
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Zg" = (
@@ -1686,7 +1670,7 @@ Al
 Fn
 VA
 kT
-Zb
+qg
 TG
 Fn
 Fn
@@ -1868,7 +1852,7 @@ wD
 wD
 Bw
 wD
-VX
+Bw
 wD
 UU
 wD
@@ -2006,7 +1990,7 @@ ag
 wD
 wD
 XM
-KZ
+cG
 Ww
 Ww
 Ww
@@ -2137,8 +2121,8 @@ wD
 XM
 Ww
 Ww
-KZ
-KZ
+cG
+cG
 Ww
 pZ
 Fn
@@ -2178,9 +2162,9 @@ yB
 wD
 wD
 XM
-KZ
+cG
 Ww
-KZ
+cG
 gh
 Ww
 dj
@@ -2268,7 +2252,7 @@ Ww
 cG
 Ww
 Ww
-KZ
+cG
 dj
 Fn
 Al
@@ -2375,7 +2359,7 @@ Fn
 Ds
 Ds
 Fn
-VX
+Bw
 wD
 wD
 wD
@@ -2425,7 +2409,7 @@ Fn
 qR
 Fn
 Fn
-WO
+Bw
 wD
 Bw
 wD

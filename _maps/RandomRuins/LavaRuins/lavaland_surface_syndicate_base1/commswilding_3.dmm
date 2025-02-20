@@ -78,7 +78,7 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/telecomms)
 "t" = (
-/obj/structure/sign/poster/contraband/syndiemoth/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/cobweb,
 /obj/machinery/computer/message_monitor{
 	dir = 4

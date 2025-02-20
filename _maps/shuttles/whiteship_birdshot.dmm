@@ -7,7 +7,7 @@
 "aF" = (
 /obj/machinery/griddle,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/cafeteria,
 /area/shuttle/abandoned/bar)
 "aX" = (
@@ -320,7 +320,7 @@
 "ll" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/grimy,
 /area/shuttle/abandoned/crew)
 "lq" = (
@@ -588,7 +588,7 @@
 /area/shuttle/abandoned/crew)
 "uj" = (
 /obj/structure/closet/emcloset/anchored,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/catwalk_floor,
 /area/shuttle/abandoned/engine)
 "ur" = (
@@ -640,7 +640,7 @@
 /area/shuttle/abandoned/bar)
 "vZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /turf/open/floor/iron/smooth_large,
 /area/shuttle/abandoned/cargo)
@@ -704,7 +704,7 @@
 "xG" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/grimy,
 /area/shuttle/abandoned/crew)
 "xT" = (
@@ -817,7 +817,7 @@
 /turf/open/floor/iron/dark/small,
 /area/shuttle/abandoned/bridge)
 "Bt" = (
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
@@ -931,7 +931,7 @@
 /area/shuttle/abandoned/engine)
 "Fr" = (
 /obj/structure/cable,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/catwalk_floor,
 /area/shuttle/abandoned/crew)
 "FK" = (
@@ -1097,12 +1097,12 @@
 "JR" = (
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/textured,
 /area/shuttle/abandoned/cargo)
 "Kf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
@@ -1223,7 +1223,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/west,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/bar)
 "OH" = (
@@ -1261,7 +1261,7 @@
 /area/shuttle/abandoned/bridge)
 "Ql" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /mob/living/simple_animal/hostile/ooze/gelatinous{
 	desc = "Father of Cubie";
 	melee_damage_upper = 30;
@@ -1446,7 +1446,7 @@
 "Xu" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/carpet/green,
 /area/shuttle/abandoned/bar)
 "XB" = (

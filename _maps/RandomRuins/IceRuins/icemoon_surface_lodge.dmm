@@ -2313,7 +2313,7 @@
 "Jk" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/noticeboard/directional/north,
-/obj/structure/sign/poster/contraband/blood_geometer/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/table/wood,
 /obj/item/paper{
 	pixel_x = 3;

@@ -1580,7 +1580,7 @@
 /area/awaymission/moonoutpost19/arrivals/shed)
 "kP" = (
 /obj/machinery/vending/cigarette,
-/obj/structure/sign/poster/contraband/smoke/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/awaymission/moonoutpost19/arrivals)
 "kX" = (
@@ -1735,7 +1735,7 @@
 "lK" = (
 /obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/space_cube/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -2164,7 +2164,7 @@
 /area/awaymission/moonoutpost19/main)
 "of" = (
 /obj/machinery/vending/snack,
-/obj/structure/sign/poster/contraband/eat/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "ol" = (
@@ -3041,7 +3041,7 @@
 /area/awaymission/moonoutpost19/mines)
 "to" = (
 /obj/machinery/vending/cigarette,
-/obj/structure/sign/poster/contraband/smoke/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/awaymission/moonoutpost19/syndicate)
 "tv" = (
@@ -3164,7 +3164,7 @@
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "uq" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/loading_area{
 	dir = 8
 	},
@@ -4767,7 +4767,7 @@
 /obj/structure/table/wood,
 /obj/item/pen,
 /obj/item/paper/fluff/awaymissions/moonoutpost19/log/personal_2,
-/obj/structure/sign/poster/contraband/c20r/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood{
 	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
 	},
@@ -5594,7 +5594,7 @@
 	},
 /area/awaymission/moonoutpost19/main)
 "LL" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
@@ -6453,7 +6453,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/hacking_guide/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/plating,
 /area/awaymission/moonoutpost19/syndicate)
 "Re" = (
@@ -6888,7 +6888,7 @@
 "Uh" = (
 /obj/machinery/space_heater,
 /obj/machinery/light/small/directional/south,
-/obj/structure/sign/poster/official/build/directional/north,
+/obj/structure/sign/poster/random,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/moonoutpost19/research)
@@ -7297,7 +7297,7 @@
 /area/awaymission/moonoutpost19/research)
 "WW" = (
 /obj/item/radio/off,
-/obj/structure/sign/poster/official/safety_report/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 4
 	},

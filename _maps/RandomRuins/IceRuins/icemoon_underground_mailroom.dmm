@@ -259,7 +259,7 @@
 /turf/open/floor/plating,
 /area/ruin/powered/mailroom)
 "CW" = (
-/obj/structure/sign/poster/official/obey,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/reinforced,
 /area/ruin/powered/mailroom)
 "DR" = (
@@ -280,10 +280,6 @@
 "FC" = (
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/carpet/royalblack,
-/area/ruin/powered/mailroom)
-"Gn" = (
-/obj/structure/sign/poster/ripped,
-/turf/closed/indestructible/reinforced,
 /area/ruin/powered/mailroom)
 "HH" = (
 /turf/open/floor/iron/smooth_corner{
@@ -395,7 +391,7 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/mailroom)
 "Qx" = (
-/obj/structure/sign/poster/official/obey,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/r_wall,
 /area/ruin/powered/mailroom)
 "QU" = (
@@ -668,7 +664,7 @@ iV
 ms
 ms
 ms
-Gn
+CW
 ms
 ms
 ms
@@ -946,13 +942,13 @@ ms
 CW
 ms
 ms
-Gn
-ms
-ms
-ms
-Gn
 CW
-Gn
+ms
+ms
+ms
+CW
+CW
+CW
 CW
 CW
 ms

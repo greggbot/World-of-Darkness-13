@@ -749,7 +749,7 @@
 	},
 /area/centcom/central_command_areas/holding)
 "qF" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/holding)
 "qH" = (
@@ -807,8 +807,8 @@
 /turf/open/floor/carpet/black,
 /area/centcom/central_command_areas/holding)
 "rz" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/holding)
 "rQ" = (
@@ -1050,9 +1050,9 @@
 /turf/open/floor/carpet/black,
 /area/centcom/central_command_areas/holding)
 "zN" = (
-/obj/structure/flora/bush/ferny/style_random,
-/obj/structure/flora/bush/flowers_pp/style_random,
-/obj/structure/flora/bush/pale/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/holding)
@@ -1095,7 +1095,7 @@
 /turf/open/floor/catwalk_floor,
 /area/centcom/central_command_areas/holding)
 "AA" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/directional/south,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/holding)
@@ -1249,8 +1249,8 @@
 /area/centcom/central_command_areas/holding)
 "Ez" = (
 /obj/structure/flora/rock/pile/style_random,
-/obj/structure/flora/bush/grassy/style_random,
-/obj/structure/flora/bush/lavendergrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/railing{
 	dir = 8
 	},
@@ -1772,12 +1772,12 @@
 /turf/open/floor/carpet/black,
 /area/centcom/central_command_areas/holding)
 "Pl" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/holding)
 "PB" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood/large,
 /area/centcom/central_command_areas/holding)
 "PH" = (
@@ -2208,10 +2208,6 @@
 	name = "Shrine"
 	},
 /turf/open/floor/iron/sepia,
-/area/centcom/central_command_areas/holding)
-"ZU" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
 /area/centcom/central_command_areas/holding)
 "ZV" = (
 /obj/effect/turf_decal/siding/wood{
@@ -3880,7 +3876,7 @@ dg
 AA
 aC
 aC
-ZU
+qF
 qi
 TP
 qi
@@ -3952,7 +3948,7 @@ wU
 oh
 dg
 qi
-ZU
+qF
 aC
 Al
 aC

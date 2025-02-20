@@ -166,7 +166,7 @@
 /area/icemoon/underground/explored)
 "kB" = (
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
@@ -287,7 +287,7 @@
 /obj/effect/decal/cleanable/blood/splatter/over_window{
 	pixel_y = 32
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood/parquet,
 /area/ruin/comms_agent)
 "sB" = (
@@ -400,7 +400,7 @@
 /area/ruin/comms_agent)
 "xD" = (
 /obj/structure/table,
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/item/food/pizzaslice/moldy,
 /obj/structure/closet/mini_fridge/grimy,
 /obj/effect/mapping_helpers/broken_floor,
@@ -458,7 +458,7 @@
 "BZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/south,
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/milk,

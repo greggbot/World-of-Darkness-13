@@ -45,7 +45,7 @@
 /obj/structure/table,
 /obj/effect/spawner/random/contraband/narcotics,
 /obj/machinery/light/small/directional/south,
-/obj/structure/sign/poster/contraband/random/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/central/greater)
 "G" = (

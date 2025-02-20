@@ -16,7 +16,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "bP" = (
-/obj/structure/sign/poster/official/report_crimes,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain/protected_space/fullbright)
 "bR" = (
@@ -49,12 +49,12 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "cY" = (
-/obj/structure/sign/poster/official/no_erp/directional/north,
-/obj/structure/sign/poster/official/no_erp/directional/north,
+/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain)
 "dl" = (
-/obj/structure/sign/poster/contraband/blood_geometer/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/landmark/bitrunning/cache_spawn,
 /turf/open/floor/wood,
 /area/virtual_domain)
@@ -73,7 +73,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "ex" = (
-/obj/structure/sign/poster/contraband/bountyhunters/directional/south,
+/obj/structure/sign/poster/random,
 /turf/template_noop,
 /area/virtual_domain)
 "eE" = (
@@ -121,7 +121,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "gl" = (
-/obj/structure/sign/poster/contraband/blasto_detergent,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain)
 "gL" = (
@@ -163,8 +163,8 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "jE" = (
-/obj/structure/sign/poster/abductor/ayy_over_tizira,
-/obj/structure/sign/poster/official/the_owl,
+/obj/structure/sign/poster/random,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain/protected_space/fullbright)
 "jZ" = (
@@ -367,7 +367,7 @@
 /area/virtual_domain)
 "sl" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "sR" = (
@@ -502,7 +502,7 @@
 "xv" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/structure/sign/poster/official/moth_hardhat/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "xY" = (
@@ -725,10 +725,6 @@
 	},
 /turf/template_noop,
 /area/virtual_domain/safehouse)
-"JW" = (
-/obj/structure/sign/poster/official/the_owl,
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain/protected_space/fullbright)
 "Ke" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -779,10 +775,6 @@
 /obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
-"Mq" = (
-/obj/structure/sign/poster/contraband/ambrosia_vulgaris/directional/west,
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain)
 "ML" = (
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
@@ -804,27 +796,15 @@
 "Ne" = (
 /turf/closed/indestructible/binary,
 /area/virtual_domain/fullbright)
-"Nz" = (
-/obj/structure/sign/poster/official/pda_ad/directional/north,
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain)
 "NA" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
-"NE" = (
-/obj/structure/sign/poster/abductor/ayy_cops/directional/north,
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain)
 "Od" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck,
 /turf/open/floor/iron/kitchen,
-/area/virtual_domain)
-"Ox" = (
-/obj/structure/sign/poster/official/the_owl,
-/turf/closed/indestructible/reinforced,
 /area/virtual_domain)
 "OB" = (
 /turf/open/floor/wood,
@@ -892,10 +872,6 @@
 	},
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
-"Tp" = (
-/obj/structure/sign/poster/official/soft_cap_pop_art,
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain)
 "Tq" = (
 /turf/open/misc/dirt/jungle,
 /area/virtual_domain/fullbright)
@@ -931,10 +907,6 @@
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
-"UW" = (
-/obj/structure/sign/poster/official/no_erp/directional/north,
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain)
 "Vd" = (
 /turf/open/floor/iron/cafeteria,
 /area/virtual_domain/protected_space/fullbright)
@@ -959,10 +931,6 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
-"Wj" = (
-/obj/structure/sign/poster/contraband/free_key/directional,
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain/protected_space/fullbright)
 "Wy" = (
 /obj/effect/decal/cleanable/molten_object/large,
 /turf/open/floor/iron/kitchen,
@@ -1296,7 +1264,7 @@ ve
 ve
 ve
 ve
-Ox
+gl
 ve
 ve
 ve
@@ -1494,7 +1462,7 @@ Ke
 re
 re
 Ux
-Tp
+gl
 Cm
 Cm
 ve
@@ -1582,7 +1550,7 @@ Ux
 Wy
 ve
 ve
-NE
+gl
 Ux
 Ux
 Ux
@@ -1598,10 +1566,10 @@ ve
 ve
 ve
 ve
-UW
-UW
+gl
+gl
 cY
-UW
+gl
 ve
 ve
 Cm
@@ -1741,7 +1709,7 @@ Fc
 sl
 SW
 Fc
-Wj
+bP
 Fc
 ve
 ve
@@ -1877,7 +1845,7 @@ ve
 sg
 sg
 sg
-JW
+bP
 ql
 BU
 ud
@@ -2067,7 +2035,7 @@ ve
 qK
 ve
 ve
-Nz
+gl
 ve
 ve
 ve
@@ -2230,7 +2198,7 @@ Cm
 Cm
 Cm
 Cm
-Mq
+gl
 bR
 Ux
 Ux

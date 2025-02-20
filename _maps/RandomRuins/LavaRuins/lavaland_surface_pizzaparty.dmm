@@ -101,7 +101,7 @@
 /area/ruin/unpowered)
 "ff" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/structure/fluff{
+/obj/structure/hedge{
 	icon = 'icons/obj/machines/computer.dmi';
 	icon_state = "television";
 	name = "old tv";
@@ -574,7 +574,7 @@
 /obj/structure/glowshroom/single,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken/directional/south,
-/obj/structure/sign/poster/party_game/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/tail_pin,
 /turf/open/floor/carpet/blue/lavaland,
 /area/ruin/unpowered)

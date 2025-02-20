@@ -73,11 +73,11 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "ci" = (
-/obj/structure/flora/bush/pointy/style_3{
+/obj/structure/flora/bush/style_random{
 	pixel_y = -4;
 	pixel_x = 6
 	},
-/obj/structure/flora/bush/ferny/style_2{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 6;
 	pixel_x = -3
 	},
@@ -134,11 +134,11 @@
 	pixel_x = -14;
 	pixel_y = 5
 	},
-/obj/structure/flora/bush/sunny{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 12;
 	pixel_x = 12
 	},
-/obj/structure/flora/bush/fullgrass/style_2,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass{
 	initial_gas_mix = "o2=1000;n2=1100;TEMP=280"
 	},
@@ -201,7 +201,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "mi" = (
-/obj/structure/sign/poster/contraband/cybersun_six_hundred/directional/west,
+/obj/structure/sign/poster/random,
 /obj/item/vending_refill/donksoft{
 	pixel_x = 2;
 	pixel_y = 8
@@ -225,7 +225,7 @@
 	pixel_x = -3
 	},
 /obj/structure/closet/crate/preopen,
-/obj/structure/sign/poster/contraband/gorlex_recruitment/directional/west,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/plastic,
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
@@ -345,7 +345,7 @@
 /turf/open/floor/carpet/red,
 /area/ruin/syndielab)
 "uX" = (
-/obj/structure/flora/bush/ferny{
+/obj/structure/flora/bush/style_random{
 	pixel_y = 2;
 	pixel_x = -2
 	},
@@ -357,7 +357,7 @@
 	},
 /area/ruin/syndielab)
 "vr" = (
-/obj/structure/sign/poster/contraband/revolver/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/syndielab)
 "vE" = (
@@ -390,7 +390,7 @@
 /obj/item/trash/ready_donk{
 	pixel_x = 6
 	},
-/obj/structure/sign/poster/contraband/eat/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
 "wj" = (
@@ -590,7 +590,7 @@
 	pixel_x = 12;
 	pixel_y = 1
 	},
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
@@ -616,7 +616,7 @@
 /area/ruin/syndielab)
 "JF" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/structure/sign/poster/contraband/hacking_guide/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/assembly/signaler/cyborg{
 	pixel_y = 5;
 	pixel_x = 6
@@ -661,16 +661,16 @@
 /turf/template_noop,
 /area/template_noop)
 "NM" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/east,
+/obj/structure/sign/poster/random,
 /obj/structure/cable/layer1,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/syndielab)
 "Qj" = (
-/obj/structure/flora/bush/grassy{
+/obj/structure/flora/bush/style_random{
 	pixel_x = 15;
 	pixel_y = 3
 	},
-/obj/structure/flora/bush,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/oxygen_output{
 	dir = 1;
 	chamber_id = "syndielab_biodome"
@@ -743,7 +743,7 @@
 /area/ruin/syndielab)
 "Ts" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/structure/sign/poster/contraband/c20r/directional/north,
+/obj/structure/sign/poster/random,
 /obj/item/anomaly_releaser{
 	pixel_y = 6
 	},
@@ -838,7 +838,7 @@
 	pixel_x = 8
 	},
 /obj/item/mod/paint,
-/obj/structure/sign/poster/contraband/energy_swords/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "Xm" = (
@@ -865,7 +865,7 @@
 /area/icemoon/underground/explored)
 "YH" = (
 /obj/item/storage/medkit,
-/obj/structure/sign/poster/contraband/free_key/directional/south,
+/obj/structure/sign/poster/random,
 /obj/structure/rack,
 /obj/item/stack/medical/suture,
 /obj/item/clothing/neck/stethoscope,

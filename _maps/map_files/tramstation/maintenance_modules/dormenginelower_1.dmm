@@ -799,10 +799,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/template_noop)
-"UQ" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/template_noop)
 "Vf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/west,
@@ -2741,7 +2737,7 @@ mg
 AN
 AN
 AN
-UQ
+Ad
 zv
 AN
 AN
@@ -2814,7 +2810,7 @@ AN
 AN
 AN
 Ws
-UQ
+Ad
 Ws
 zv
 oa

@@ -217,7 +217,7 @@
 "vv" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
 /obj/structure/table/reinforced,
-/obj/structure/sign/poster/contraband/donut_corp/directional/south,
+/obj/structure/sign/poster/random,
 /obj/item/storage/fancy/donut_box,
 /turf/open/floor/iron/dark,
 /area/template_noop)
@@ -364,7 +364,7 @@
 /obj/structure/table/reinforced,
 /obj/item/modular_computer/laptop/preset/civilian,
 /obj/machinery/coffeemaker,
-/obj/structure/sign/poster/contraband/fun_police/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "Wn" = (

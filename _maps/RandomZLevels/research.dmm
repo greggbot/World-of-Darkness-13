@@ -2703,19 +2703,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mK" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/window/reinforced/spawner/directional/north,
-/turf/open/floor/grass,
-/area/awaymission/research/interior/escapepods)
-"mL" = (
-/obj/structure/flora/bush/ferny/style_random,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/window/reinforced/spawner/directional/north,
-/turf/open/floor/grass,
-/area/awaymission/research/interior/escapepods)
-"mM" = (
-/obj/structure/flora/bush/grassy/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/grass,
@@ -40234,7 +40222,7 @@ mi
 OH
 OH
 mF
-mL
+mK
 mP
 OH
 OH
@@ -41005,7 +40993,7 @@ Zk
 OH
 OH
 mF
-mM
+mK
 mP
 OH
 OH
@@ -41262,7 +41250,7 @@ mi
 OH
 OH
 mF
-mL
+mK
 mP
 OH
 OH

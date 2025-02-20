@@ -64,7 +64,7 @@
 /turf/template_noop,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "aq" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/r_wall/syndicate,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "ar" = (
@@ -249,10 +249,6 @@
 /obj/item/storage/box/beakers,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_cargopod)
-"bg" = (
-/obj/structure/sign/poster/contraband/syndicate_pistol,
-/turf/closed/wall/r_wall/syndicate,
-/area/ruin/space/has_grav/syndicate_forgotten_ship)
 "bh" = (
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
@@ -457,7 +453,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "bR" = (
-/obj/structure/sign/poster/contraband/tools,
+/obj/structure/sign/poster/random,
 /turf/closed/wall/r_wall/syndicate,
 /area/ruin/space/has_grav/syndicate_forgotten_cargopod)
 "bS" = (
@@ -471,10 +467,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
-"bX" = (
-/obj/structure/sign/poster/contraband/c20r,
-/turf/closed/wall/r_wall/syndicate,
-/area/ruin/space/has_grav/syndicate_forgotten_cargopod)
 "bY" = (
 /obj/structure/closet/syndicate{
 	anchored = 1;
@@ -2059,7 +2051,7 @@ co
 bZ
 VF
 ah
-bg
+aq
 aD
 cF
 Ji
@@ -2265,7 +2257,7 @@ aY
 aY
 ba
 ba
-bX
+bR
 bj
 bj
 bj

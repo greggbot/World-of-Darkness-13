@@ -19,7 +19,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
 "cn" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "cp" = (
@@ -53,8 +53,8 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/science)
 "fc" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "fP" = (
@@ -166,11 +166,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical)
 "tD" = (
-/turf/open/floor/grass,
-/area/station/asteroid)
-"vr" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/obj/structure/flora/bush/grassy,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "vu" = (
@@ -328,15 +323,6 @@
 /obj/effect/mapping_helpers/airlock/access/any/science/robotics,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/medical)
-"Mf" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
-"Ol" = (
-/obj/structure/flora/bush/grassy,
-/obj/structure/flora/bush/flowers_br/style_3,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "OH" = (
 /obj/structure/cable/multilayer/multiz,
 /obj/effect/turf_decal/stripes/end{
@@ -377,24 +363,11 @@
 "Sz" = (
 /turf/closed/wall,
 /area/station/maintenance/department/medical)
-"Ts" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
-"Uc" = (
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Ui" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/moisture_trap,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
-"UL" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Vh" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
@@ -1211,8 +1184,8 @@ nm
 nm
 nm
 nm
-Ts
-Mf
+cn
+cn
 kq
 kq
 Vs
@@ -1259,9 +1232,9 @@ tD
 tD
 tD
 tD
-Ol
+fc
 tD
-Mf
+cn
 fc
 WT
 cK
@@ -1298,14 +1271,14 @@ nm
 nm
 nm
 cn
-vr
+fc
 Vh
 tD
 tD
 tD
-Mf
-Mf
-Mf
+cn
+cn
+cn
 WT
 Qx
 vu
@@ -1341,13 +1314,13 @@ nm
 nm
 nm
 tD
-UL
-Ts
+fc
+cn
 tD
 tD
 tD
 tD
-UL
+fc
 tD
 WT
 DM
@@ -1384,14 +1357,14 @@ nm
 nm
 nm
 tD
-Mf
-tD
-tD
-tD
-Mf
 cn
 tD
-Uc
+tD
+tD
+cn
+cn
+tD
+cn
 WT
 Kw
 Kw
@@ -1426,8 +1399,8 @@ nm
 nm
 nm
 nm
-Uc
-Mf
+cn
+cn
 Vs
 kq
 tD

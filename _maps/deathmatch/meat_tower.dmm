@@ -108,7 +108,7 @@
 /turf/open/indestructible/necropolis/air,
 /area/deathmatch)
 "jZ" = (
-/obj/structure/sign/poster/contraband/moffuchis_pizza,
+/obj/structure/sign/poster/random,
 /turf/closed/indestructible/necropolis,
 /area/deathmatch)
 "kn" = (
@@ -394,10 +394,6 @@
 	pixel_x = 7
 	},
 /turf/open/indestructible/kitchen,
-/area/deathmatch)
-"KW" = (
-/obj/structure/sign/poster/contraband/pizza_imperator,
-/turf/closed/indestructible/necropolis,
 /area/deathmatch)
 "KZ" = (
 /obj/machinery/griddle,
@@ -773,7 +769,7 @@ Oq
 gS
 Oq
 gS
-KW
+jZ
 Lg
 Oq
 gS

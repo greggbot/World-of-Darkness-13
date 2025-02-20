@@ -322,11 +322,11 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/structure/flora/bush/flowers_yw/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/hunter)
 "nq" = (
-/obj/structure/flora/bush/fullgrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/shuttle/hunter)
 "oL" = (
@@ -352,13 +352,6 @@
 /area/shuttle/hunter)
 "pO" = (
 /turf/open/floor/catwalk_floor,
-/area/shuttle/hunter)
-"qa" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
-	dir = 1
-	},
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
 /area/shuttle/hunter)
 "qz" = (
 /obj/structure/curtain/cloth/fancy/mechanical{
@@ -777,10 +770,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating/airless,
-/area/shuttle/hunter)
-"Me" = (
-/obj/structure/flora/bush/flowers_br/style_random,
-/turf/open/floor/grass,
 /area/shuttle/hunter)
 "Mk" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -1438,7 +1427,7 @@ Nw
 CW
 Nn
 wG
-qa
+no
 nq
 Nn
 na
@@ -1466,7 +1455,7 @@ CW
 Nn
 JZ
 RK
-Me
+nq
 Nn
 na
 Hd

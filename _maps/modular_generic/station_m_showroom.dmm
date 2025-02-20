@@ -101,13 +101,13 @@
 /obj/structure/chair/sofa/bench/tram/right{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/south,
+/obj/structure/sign/poster/random,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
 "y" = (
 /obj/effect/spawner/random/decoration/showcase,
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/box,
 /turf/open/floor/iron/dark,
 /area/template_noop)
@@ -121,7 +121,7 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "B" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/structure/sign/poster/random,
 /obj/structure/broken_flooring/corner/directional/west,
 /obj/effect/spawner/random/trash/cigbutt,
 /obj/structure/railing,
@@ -151,7 +151,7 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "H" = (
-/obj/structure/sign/poster/random/directional/north,
+/obj/structure/sign/poster/random,
 /obj/effect/spawner/random/structure/crate,
 /obj/effect/turf_decal/box,
 /turf/open/floor/iron/dark,

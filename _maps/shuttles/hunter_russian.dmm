@@ -94,7 +94,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/soviet_propaganda/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/hunter/russian)
 "hm" = (
@@ -102,7 +102,7 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/fugitive_capture,
-/obj/structure/sign/poster/contraband/bountyhunters/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)
 "ho" = (
@@ -598,7 +598,7 @@
 	},
 /obj/effect/turf_decal/bot_red,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/kss13/directional/south,
+/obj/structure/sign/poster/random,
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)
 "Uu" = (
@@ -650,7 +650,7 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/structure/sign/poster/contraband/communist_state/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)
 "WG" = (

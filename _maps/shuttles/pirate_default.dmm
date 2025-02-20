@@ -692,7 +692,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/structure/sign/poster/contraband/revolver/directional/east,
+/obj/structure/sign/poster/random,
 /obj/item/storage/backpack/duffelbag/syndie/x4{
 	pixel_y = 8
 	},
@@ -702,7 +702,7 @@
 /obj/item/grenade/smokebomb{
 	pixel_x = 5
 	},
-/obj/structure/sign/poster/contraband/bountyhunters/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/pod/light,
 /area/shuttle/pirate)
 "ep" = (
@@ -935,7 +935,7 @@
 "OD" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
-/obj/structure/sign/poster/contraband/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
@@ -952,7 +952,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/random/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/shuttle/pirate)
 "TU" = (

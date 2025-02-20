@@ -4,7 +4,7 @@
 /turf/open/floor/holofloor/snow,
 /area/template_noop)
 "c" = (
-/obj/structure/flora/bush/snow/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_x = -2;
 	pixel_y = 3
 	},
@@ -57,7 +57,7 @@
 /turf/open/floor/holofloor/snow,
 /area/template_noop)
 "A" = (
-/obj/structure/flora/bush/snow/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/holofloor/snow,
 /area/template_noop)
 "D" = (
@@ -89,7 +89,7 @@
 /turf/open/floor/holofloor/snow,
 /area/template_noop)
 "O" = (
-/obj/structure/flora/bush/snow/style_random{
+/obj/structure/flora/bush/style_random{
 	pixel_x = 5;
 	pixel_y = 7
 	},

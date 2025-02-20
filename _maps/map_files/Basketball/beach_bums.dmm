@@ -18,13 +18,8 @@
 /turf/open/misc/beach/sand,
 /area/centcom/basketball)
 "bA" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/sign/poster/contraband/have_a_puff/directional/east,
-/turf/open/water/beach,
-/area/centcom/basketball)
-"cc" = (
-/obj/structure/flora/bush/stalky/style_random,
-/obj/structure/sign/poster/contraband/have_a_puff/directional/west,
+/obj/structure/flora/bush/style_random,
+/obj/structure/sign/poster/random,
 /turf/open/water/beach,
 /area/centcom/basketball)
 "cw" = (
@@ -32,7 +27,7 @@
 	desc = "A volcanic rock.";
 	name = "coastal rock"
 	},
-/obj/structure/flora/bush/stalky/style_random{
+/obj/structure/flora/bush/style_random{
 	desc = "It can't be smoked.";
 	name = "sea weed"
 	},
@@ -47,7 +42,7 @@
 /turf/open/misc/beach/sand,
 /area/centcom/basketball)
 "eC" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/centcom/basketball)
 "eM" = (
@@ -121,7 +116,7 @@
 /area/centcom/basketball)
 "lQ" = (
 /obj/item/toy/seashell,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/centcom/basketball)
 "nE" = (
@@ -222,11 +217,6 @@
 	dir = 1
 	},
 /area/centcom/basketball)
-"zU" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/sign/poster/contraband/have_a_puff/directional/west,
-/turf/open/water/beach,
-/area/centcom/basketball)
 "zZ" = (
 /obj/structure/fence,
 /turf/open/misc/beach/sand,
@@ -240,8 +230,8 @@
 	},
 /area/centcom/basketball)
 "BD" = (
-/obj/structure/flora/bush/stalky/style_random,
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/water/beach,
 /area/centcom/basketball)
 "BM" = (
@@ -272,7 +262,7 @@
 /turf/open/misc/beach/sand,
 /area/centcom/basketball)
 "CI" = (
-/obj/structure/flora/bush/stalky/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/structure/sign/picture_frame{
 	pixel_y = 32
 	},
@@ -287,7 +277,7 @@
 /turf/open/misc/beach/sand,
 /area/centcom/basketball)
 "DN" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/coast,
 /area/centcom/basketball)
 "DP" = (
@@ -335,7 +325,7 @@
 /turf/open/floor/vault/sandstone,
 /area/centcom/basketball)
 "HA" = (
-/obj/structure/flora/bush/stalky/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/coast{
 	dir = 1
 	},
@@ -414,10 +404,6 @@
 /obj/item/reagent_containers/cup/soda_cans/tonic,
 /turf/open/misc/beach/sand,
 /area/centcom/basketball)
-"OF" = (
-/obj/structure/flora/bush/stalky/style_random,
-/turf/open/water/beach,
-/area/centcom/basketball)
 "OG" = (
 /obj/structure/closet/crate/freezer{
 	name = "Cooler"
@@ -473,7 +459,7 @@
 	desc = "A volcanic rock.";
 	name = "coastal rock"
 	},
-/obj/structure/flora/bush/stalky/style_random{
+/obj/structure/flora/bush/style_random{
 	desc = "It can't be smoked.";
 	name = "sea weed"
 	},
@@ -494,7 +480,7 @@
 /turf/open/misc/beach/sand,
 /area/centcom/basketball)
 "Ul" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/misc/beach/sand,
 /area/centcom/basketball)
 "Uv" = (
@@ -656,13 +642,13 @@ BM
 Aj
 Ql
 Aj
-cc
+bA
 Aj
 Aj
 LV
 Aj
 Aj
-zU
+bA
 Aj
 Aj
 Aj
@@ -776,7 +762,7 @@ wg
 Nc
 XQ
 WH
-OF
+eC
 BM
 gY
 Hu
@@ -1072,7 +1058,7 @@ lD
 wg
 Aj
 Aj
-OF
+eC
 Aj
 BM
 gY
@@ -1097,7 +1083,7 @@ jq
 zZ
 EX
 wg
-OF
+eC
 BM
 BM
 BM
@@ -1139,7 +1125,7 @@ gY
 gY
 gY
 BM
-OF
+eC
 Aj
 Aj
 bA

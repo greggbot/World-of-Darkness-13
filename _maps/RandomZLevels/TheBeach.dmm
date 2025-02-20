@@ -565,7 +565,7 @@
 /area/awaymission/beach)
 "hp" = (
 /obj/structure/table/bronze,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/machinery/button/door/directional/south{
 	id = "beach_room_10";
 	normaldoorcontrol = 1;
@@ -612,7 +612,7 @@
 /area/awaymission/beach)
 "im" = (
 /obj/structure/table/bronze,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/item/table_clock{
 	pixel_y = 4
 	},
@@ -630,11 +630,11 @@
 /turf/open/floor/plastic,
 /area/awaymission/beach)
 "iw" = (
-/obj/structure/sign/poster/official/fruit_bowl/directional/north,
+/obj/structure/sign/poster/random,
 /turf/open/floor/carpet,
 /area/awaymission/beach)
 "iy" = (
-/obj/structure/sign/poster/contraband/pwr_game/directional/west,
+/obj/structure/sign/poster/random,
 /turf/open/floor/eighties,
 /area/awaymission/beach)
 "iA" = (
@@ -1702,7 +1702,7 @@
 /area/awaymission/beach)
 "vF" = (
 /obj/structure/table/bronze,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/machinery/button/door/directional/south{
 	id = "beach_room_8";
 	normaldoorcontrol = 1;
@@ -1816,10 +1816,6 @@
 	},
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/white,
-/area/awaymission/beach)
-"xp" = (
-/obj/structure/sign/poster/official/tactical_game_cards/directional/west,
-/turf/open/floor/eighties,
 /area/awaymission/beach)
 "xr" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2095,7 +2091,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "Bl" = (
@@ -2104,7 +2100,7 @@
 	pixel_y = 9;
 	anchored = 1
 	},
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/awaymission/beach)
 "Bm" = (
@@ -2407,7 +2403,7 @@
 /obj/item/table_clock{
 	pixel_y = 13
 	},
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "EB" = (
@@ -3078,7 +3074,7 @@
 	dir = 1;
 	anchored = 1
 	},
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/awaymission/beach)
 "Mr" = (
@@ -3147,7 +3143,7 @@
 /area/awaymission/beach)
 "MP" = (
 /obj/structure/table/bronze,
-/obj/structure/sign/poster/random/directional/east,
+/obj/structure/sign/poster/random,
 /obj/item/camera{
 	pixel_y = 5
 	},
@@ -14804,7 +14800,7 @@ kZ
 MO
 iy
 kZ
-xp
+iy
 Dy
 yc
 MN

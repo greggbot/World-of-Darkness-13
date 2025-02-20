@@ -48,8 +48,8 @@
 /turf/open/floor/grass,
 /area/station/asteroid)
 "jc" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/structure/flora/bush/grassy,
+/obj/structure/flora/bush/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "lC" = (
@@ -57,11 +57,7 @@
 /turf/open/openspace,
 /area/station/maintenance/department/crew_quarters/dorms)
 "lM" = (
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
-"mg" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /turf/open/floor/grass,
 /area/station/asteroid)
 "mG" = (
@@ -74,10 +70,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/crew_quarters/dorms)
-"mW" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "np" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -123,10 +115,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/crew_quarters/dorms)
-"oj" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "pY" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
@@ -343,10 +331,6 @@
 "Me" = (
 /turf/closed/mineral/random/stationside/asteroid/porus,
 /area/station/asteroid)
-"Nw" = (
-/obj/structure/flora/bush/grassy,
-/turf/open/floor/grass,
-/area/station/asteroid)
 "Ny" = (
 /turf/closed/wall,
 /area/station/hallway/primary/tram/center)
@@ -385,7 +369,7 @@
 /turf/template_noop,
 /area/template_noop)
 "SQ" = (
-/obj/structure/flora/bush/flowers_br/style_random,
+/obj/structure/flora/bush/style_random,
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
 /area/station/asteroid)
@@ -706,7 +690,7 @@ BZ
 BZ
 "}
 (9,1,1) = {"
-oj
+lM
 BZ
 BZ
 BZ
@@ -811,7 +795,7 @@ BZ
 BZ
 "}
 (12,1,1) = {"
-oj
+lM
 BZ
 BZ
 BZ
@@ -846,7 +830,7 @@ BZ
 BZ
 "}
 (13,1,1) = {"
-mg
+lM
 BZ
 BZ
 BZ
@@ -916,7 +900,7 @@ BZ
 BZ
 "}
 (15,1,1) = {"
-oj
+lM
 im
 im
 BZ
@@ -953,7 +937,7 @@ BZ
 (16,1,1) = {"
 im
 lM
-oj
+lM
 BZ
 BZ
 BZ
@@ -986,9 +970,9 @@ BZ
 BZ
 "}
 (17,1,1) = {"
-Nw
+lM
 im
-oj
+lM
 BZ
 BZ
 BZ
@@ -1021,9 +1005,9 @@ BZ
 BZ
 "}
 (18,1,1) = {"
-mg
+lM
 im
-Nw
+lM
 im
 BZ
 CJ
@@ -1056,14 +1040,14 @@ BZ
 BZ
 "}
 (19,1,1) = {"
-oj
+lM
 im
-mg
+lM
 Me
 im
 im
 im
-mW
+lM
 im
 im
 Me
@@ -1097,9 +1081,9 @@ SQ
 Ny
 im
 jc
-oj
+lM
 im
-oj
+lM
 im
 Me
 Me
@@ -1127,15 +1111,15 @@ BZ
 "}
 (21,1,1) = {"
 lM
-oj
-mg
+lM
+lM
 im
 im
-oj
+lM
 im
 im
 Me
-oj
+lM
 Me
 Me
 CH
@@ -1161,14 +1145,14 @@ BZ
 BZ
 "}
 (22,1,1) = {"
-Nw
-oj
+lM
+lM
 im
 lM
 im
 im
 im
-oj
+lM
 Me
 im
 Me
@@ -1196,16 +1180,16 @@ BZ
 BZ
 "}
 (23,1,1) = {"
-Nw
+lM
 im
-oj
+lM
 im
-oj
+lM
 im
-Nw
+lM
 im
-oj
-mW
+lM
+lM
 im
 Me
 CH
@@ -1266,19 +1250,19 @@ BZ
 BZ
 "}
 (25,1,1) = {"
-mg
+lM
 im
 Ha
 Ha
 Ha
-Nw
-oj
-mW
+lM
+lM
+lM
 Ha
 Ha
 im
 jc
-mW
+lM
 Me
 Me
 CH
@@ -1301,7 +1285,7 @@ BZ
 BZ
 "}
 (26,1,1) = {"
-Nw
+lM
 im
 Ha
 Me
@@ -1336,7 +1320,7 @@ BZ
 BZ
 "}
 (27,1,1) = {"
-Nw
+lM
 Ha
 Me
 Me
