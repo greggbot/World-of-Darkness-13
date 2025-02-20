@@ -1,6 +1,6 @@
 #define SPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_SPLAT_APPLIED_TO, M, S)
 #define UNSPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_SPLAT_REMOVED_FROM, M, S)
-
+// weird
 /datum/species
 	var/animation_goes_up = FALSE	//PSEUDO_M i have no idea what this does
 
