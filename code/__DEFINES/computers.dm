@@ -11,6 +11,16 @@
 #define CATEGORY_BEPIS "Bepis Tech"
 #define CATEGORY_BITRUNNING_FLAIR "Misc"
 #define CATEGORY_BITRUNNING_TECH "Tech"
+#define CATEGORY_FASTFOOD "Fast Food"
+#define CATEGORY_CLOTHING "Clothing"
+#define CATEGORY_MASKS "Masks"
+#define CATEGORY_AMERICAN "American"
+#define CATEGORY_ILLEGAL "Illegal"
+#define CATEGORY_MEDICAL "Medical"
+#define CATEGORY_SMOKING "Smoking"
+#define CATEGORY_GAS "Gas"
+#define CATEGORY_LIBRARY "Library"
+#define CATEGORY_POLICE "Police"
 
 ///Helper macro for record computers' preview views, used to ensure consistency in all use cases.
 #define USER_PREVIEW_ASSIGNED_VIEW(user_ckey) "preview_[user_ckey]_[REF(src)]_records"
