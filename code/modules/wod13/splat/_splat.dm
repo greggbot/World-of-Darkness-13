@@ -17,7 +17,17 @@
 	var/power_stat_current = 0
 	///Traits to apply/remove in their respective instances
 	var/list/splat_traits = null
-	///Signals and PROC_REFs to register for, respectively. Defined here for organization
+	/*
+	 * PROC_REFs and signal(s) to listen for, respectively. Defined here for organization
+	 * list(
+	 *		proc_ref1 = signal_name1,
+	 *		proc_ref2 = list(signal_name2,signal_name3),
+	 *	...)
+	 * Will always register to listen to our character for the signal; this is NOT for boilerplate signals like splat_applied_to
+	 * RegisterSignal(my_character, signal_name(s), PROC_REF(proc_ref))
+	 * It's not exactly the most optimized way to do this, but I'm trading optimization for
+	 * readability and ease of use. Supports TYPE_PROC and GLOBAL_PROC refs.
+	 */
 	var/list/splat_signals = null
 	var/integrity_name = "Integrity"
 	var/integrity_level = 7
@@ -77,7 +87,6 @@
 
 /datum/splat/proc/splat_response(datum/source)
 	SIGNAL_HANDLER
-	SHOULD_CALL_PARENT(TRUE)
 
 	return splat_flag
 
