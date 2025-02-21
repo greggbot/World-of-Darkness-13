@@ -23,7 +23,8 @@ SUBSYSTEM_DEF(splats)
 	RegisterSignal(src, COMSIG_SPLAT_SPLAT_REMOVED_FROM, PROC_REF(untrack_splat_assignment))
 	return ..()
 
-/datum/controller/subsystem/splats/proc/give_new_splat(mob/living/target, splat_type)
+/datum/controller/subsystem/splats/proc/give_new_splat(mob/living/target, splat_index)
+	var/splat_type = splat_types[splat_index]
 	var/datum/splat/new_splat = new splat_type()
 	new_splat.Apply(target)
 

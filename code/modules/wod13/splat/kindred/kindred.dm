@@ -721,7 +721,7 @@
 	desc ="Teach a Discipline to a those capable of learning."
 	//PSEUDO_M need button icon state
 
-/datum/species/kindred/handle_fire(mob/living/carbon/human/H, no_protection)
+/datum/splat/supernatural/kindred/handle_fire(mob/living/carbon/human/H, no_protection)
 	if(!..())
 		H.adjustFireLoss(H.maxHealth * 0.02)
 
@@ -918,14 +918,14 @@
  *
  * This handles vampire bite sleep immunity and any future special interactions.
  */
-/datum/species/kindred/proc/on_vampire_bitten(datum/source, mob/living/carbon/being_bitten)
+/datum/splat/supernatural/kindred/proc/on_vampire_bitten(datum/source, mob/living/carbon/being_bitten)
 	SIGNAL_HANDLER
 
 	if(iskindred(being_bitten))
 		return COMPONENT_RESIST_VAMPIRE_KISS
 
 
-/datum/species/kindred/proc/initialize_generation(mob/living/carbon/human/vampire)
+/datum/splat/supernatural/kindred/proc/initialize_generation(mob/living/carbon/human/vampire)
 	if (iskindred(vampire) && vampire.generation)
 		var/old_max_bloodpool = vampire.maxbloodpool
 		switch(vampire.generation)
@@ -980,24 +980,24 @@
 		if (bloodheal)
 			bloodheal.set_level(clamp(spend_blood_per_turn, 1, 10))
 
-/datum/species/kindred/proc/can_spend_blood(mob/living/carbon/human/vampire, amount)
+/datum/splat/supernatural/kindred/proc/can_spend_blood(mob/living/carbon/human/vampire, amount)
 	if ((spent_blood_turn + amount) > spend_blood_per_turn)
 		return FALSE
 	if (!vampire.can_adjust_blood_points(-amount))
 		return FALSE
 	return TRUE
 
-/datum/species/kindred/proc/spend_blood(mob/living/carbon/human/vampire, amount)
+/datum/splat/supernatural/kindred/proc/spend_blood(mob/living/carbon/human/vampire, amount)
 	spent_blood_turn += amount
 	vampire.adjust_blood_points(-amount)
 	//one decisecond shorter than a turn to allow powers to refresh on a full turn basis
 	addtimer(CALLBACK(src, PROC_REF(refresh_spent_blood), amount), DURATION_TURN - 1)
 
-/datum/species/kindred/proc/try_spend_blood(mob/living/carbon/human/vampire, amount)
+/datum/splat/supernatural/kindred/proc/try_spend_blood(mob/living/carbon/human/vampire, amount)
 	if (can_spend_blood(vampire, amount))
 		spend_blood(vampire, amount)
 		return TRUE
 	return FALSE
 
-/datum/species/kindred/proc/refresh_spent_blood(amount)
+/datum/splat/supernatural/kindred/proc/refresh_spent_blood(amount)
 	spent_blood_turn -= amount

@@ -42,7 +42,7 @@
 			else if(yin_chi < max_yin_chi)
 				yin_chi = min(yin_chi+1, max_yin_chi)
 
-/datum/species/kuei_jin
+/datum/splat/supernatural/kuei_jin
 	name = "Kuei-Jin"
 	id = "kuei-jin"
 	default_color = "FFFFFF"
@@ -244,7 +244,7 @@
 		host << browse(dat, "window=vampire;size=400x450;border=1;can_resize=1;can_minimize=0")
 		onclose(host, "vampire", src)
 
-/datum/species/kuei_jin/on_species_gain(mob/living/carbon/human/C)
+/datum/splat/supernatural/kuei_jin/on_species_gain(mob/living/carbon/human/C)
 	. = ..()
 	C.update_body(0)
 	C.last_experience = world.time + 5 MINUTES
@@ -259,7 +259,7 @@
 	//Kuei-jin resist vampire bites better than mortals
 	RegisterSignal(C, COMSIG_MOB_VAMPIRE_SUCKED, PROC_REF(on_kuei_jin_bitten))
 
-/datum/species/kuei_jin/on_species_loss(mob/living/carbon/human/C, datum/species/new_species, pref_load)
+/datum/splat/supernatural/kuei_jin/on_species_loss(mob/living/carbon/human/C, datum/species/new_species, pref_load)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_VAMPIRE_SUCKED)
 	for(var/datum/action/kueijininfo/VI in C.actions)
@@ -284,7 +284,7 @@
 		if(A)
 			A.Remove(C)
 
-/datum/species/kuei_jin/spec_life(mob/living/carbon/human/H)
+/datum/splat/supernatural/kuei_jin/spec_life(mob/living/carbon/human/H)
 	. = ..()
 	if(istype(get_area(H), /area/vtm))
 		var/area/vtm/V = get_area(H)
@@ -685,7 +685,7 @@
  *
  * This handles vampire bite sleep immunity and any future special interactions.
  */
-/datum/species/kuei_jin/proc/on_kuei_jin_bitten(datum/source, mob/living/carbon/being_bitten)
+/datum/splat/supernatural/kuei_jin/proc/on_kuei_jin_bitten(datum/source, mob/living/carbon/being_bitten)
 	SIGNAL_HANDLER
 
 	if(iscathayan(being_bitten))
