@@ -223,7 +223,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
 	//[Lucia] TODO: make this good what the fuck is wrong with the previous thing
 	GLOB.roundstart_races = list("human", "kindred", "ghoul")
 	GLOB.selectable_races = list("human", "kindred", "ghoul", "garou", "kuei-jin")
-
+#warn tgui will be the dragon you slay to let people pick splats in chargen
 /**
  * Checks if a species is eligible to be picked at roundstart.
  *

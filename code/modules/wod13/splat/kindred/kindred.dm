@@ -309,7 +309,7 @@
 			BD.athletics = BD.athletics+2
 			BD.update_blood_hud()
 			addtimer(100+BD.discipline_time_plus+BD.bloodpower_time_plus)
-				end_bloodpower()
+			end_bloodpower()
 		else
 			SEND_SOUND(BD, sound('code/modules/wod13/sounds/need_blood.ogg', 0, 0, 75))
 			to_chat(BD, "<span class='warning'>You don't have enough <b>BLOOD</b> to become more powerful.</span>")
@@ -779,47 +779,45 @@
 	. = ..()
 
 	check_witnesses(WITNESSED_HUMAN_DEATH)
-		if(in_frenzy)
-			exit_frenzymod()
-		SEND_SOUND(src, sound('code/modules/wod13/sounds/final_death.ogg', 0, 0, 50))
-
-		//annoying code that depends on clan doesn't work for Kuei-jin
-		if (iskuejin(src))
+	if(in_frenzy)
+		exit_frenzymod()
+	SEND_SOUND(src, sound('code/modules/wod13/sounds/final_death.ogg', 0, 0, 50))
+	//annoying code that depends on clan doesn't work for Kuei-jin
+	if (iskuejin(src))
+		return
+	var/years_undead = chronological_age - age
+	switch (years_undead)
+		if (-INFINITY to 10) //normal corpse
 			return
-
-		var/years_undead = chronological_age - age
-		switch (years_undead)
-			if (-INFINITY to 10) //normal corpse
-				return
-			if (10 to 50)
-				clane.rot_body(1) //skin takes on a weird colouration
-				visible_message("<span class='notice'>[src]'s skin loses some of its colour.</span>")
-				update_body()
-				update_body() //this seems to be necessary due to stuff being set on update_body() and then only refreshing with a new call
-			if (50 to 100)
-				clane.rot_body(2) //looks slightly decayed
-				visible_message("<span class='notice'>[src]'s skin rapidly decays.</span>")
-				update_body()
-				update_body()
-			if (100 to 150)
-				clane.rot_body(3) //looks very decayed
-				visible_message("<span class='warning'>[src]'s body rapidly decomposes!</span>")
-				update_body()
-				update_body()
-			if (150 to 200)
-				clane.rot_body(4) //mummified skeletonised corpse
-				visible_message("<span class='warning'>[src]'s body rapidly skeletonises!</span>")
-				update_body()
-				update_body()
-			if (200 to INFINITY)
-				if (iskindred(src))
-					playsound(src, 'code/modules/wod13/sounds/burning_death.ogg', 80, TRUE)
-				else if (iskuejin(src))
-					playsound(src, 'code/modules/wod13/sounds/vicissitude.ogg', 80, TRUE)
-				lying_fix()
-				dir = SOUTH
-				spawn(1 SECONDS)
-					dust(TRUE, TRUE) //turn to ash
+		if (10 to 50)
+			clane.rot_body(1) //skin takes on a weird colouration
+			visible_message("<span class='notice'>[src]'s skin loses some of its colour.</span>")
+			update_body()
+			update_body() //this seems to be necessary due to stuff being set on update_body() and then only refreshing with a new call
+		if (50 to 100)
+			clane.rot_body(2) //looks slightly decayed
+			visible_message("<span class='notice'>[src]'s skin rapidly decays.</span>")
+			update_body()
+			update_body()
+		if (100 to 150)
+			clane.rot_body(3) //looks very decayed
+			visible_message("<span class='warning'>[src]'s body rapidly decomposes!</span>")
+			update_body()
+			update_body()
+		if (150 to 200)
+			clane.rot_body(4) //mummified skeletonised corpse
+			visible_message("<span class='warning'>[src]'s body rapidly skeletonises!</span>")
+			update_body()
+			update_body()
+		if (200 to INFINITY)
+			if (iskindred(src))
+				playsound(src, 'code/modules/wod13/sounds/burning_death.ogg', 80, TRUE)
+			else if (iskuejin(src))
+				playsound(src, 'code/modules/wod13/sounds/vicissitude.ogg', 80, TRUE)
+			lying_fix()
+			dir = SOUTH
+			spawn(1 SECONDS)
+				dust(TRUE, TRUE) //turn to ash
 
 /datum/keybinding/human/bite // PSEUDO_M_K need to add vampire section to controls
 	hotkey_keys = list("F")
