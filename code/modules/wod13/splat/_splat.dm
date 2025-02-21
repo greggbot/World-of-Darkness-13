@@ -2,10 +2,6 @@
 #define SPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_SPLAT_APPLIED_TO, M, S)
 #define UNSPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_SPLAT_REMOVED_FROM, M, S)
 
-
-/datum/species
-	var/animation_goes_up = FALSE	//PSEUDO_M i have no idea what this does
-
 /datum/splat
 	///We change this when applied to track people's splat assignments
 	var/name = null
@@ -38,8 +34,22 @@
 	///Our very special lady, gentleman, theydie, gentlethem, or horrifying monstrosity that should not be
 	var/mob/living/my_character = null
 	///Artifacts of migrating splats from species, pending a rework of our damage system
-	var/brutemod = null
-	var/burnmod = null
+	var/damage_mods = list(
+		"brute" = 1
+		"burn" = 1
+		"tox" = 1
+		"oxy" = 1
+		"clone" = 1
+		"stamina" = 1
+		"brain" = 1
+		"pressure" = 1
+		"heat" = 1
+		"cold" = 1
+		"stun" = 1
+		"bleed" = 1
+		"hunger" = 1
+	)
+	///refer to code\modules\mob\living\carbon\human\physiology.dm
 
 /* Primarily for signal registration and a handle for SSsplats to make and apply a new splat, we want to do most of the effect
  * work of a splat application using my_character since it SHOULD be getting assigned.
@@ -70,6 +80,9 @@
 	name = "[my_character]'s [splat_id] splat"
 	for(var/trait in splat_traits)
 		ADD_TRAIT(my_character, trait, splat_id)
+	for(var/mod in list(brutemod, burnmod))
+		if(mod != 1)
+
 	SEND_SIGNAL(my_character, COMSIG_SPLAT_SPLAT_APPLIED_TO, src)
 	SPLATTED(my_character, src)
 

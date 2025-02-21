@@ -3578,6 +3578,8 @@
 #include "code\modules\wod13\npcs\bouncer_mob.dm"
 #include "code\modules\wod13\objects\fusebox.dm"
 #include "code\modules\wod13\objects\generator.dm"
+#include "code\modules\wod13\splat\kue_jin\kue_jin.dm"
+#include "code\modules\wod13\splat\kuei_jin\kuei_jin.dm"
 #include "code\modules\wod13\structures\hydroponics.dm"
 #include "code\modules\wod13\structures\methlab.dm"
 #include "code\modules\wod13\subsystems\ssBouncerBarrier.dm"
