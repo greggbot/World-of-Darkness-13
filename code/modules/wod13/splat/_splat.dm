@@ -1,7 +1,8 @@
 
 #define SPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_SPLAT_APPLIED_TO, M, S)
 #define UNSPLATTED(M, S) SEND_SIGNAL(SSsplats, COMSIG_SPLAT_SPLAT_REMOVED_FROM, M, S)
-// weird
+
+
 /datum/species
 	var/animation_goes_up = FALSE	//PSEUDO_M i have no idea what this does
 
@@ -20,6 +21,8 @@
 	var/list/splat_signals = null
 	var/integrity_name = "Integrity"
 	var/integrity_level = 7
+	/// Some things can cause your max integrity to be lower than 10, so let's make sure we track it
+	var/integrity_max = 10
 	///A bitflag that this splat will return in response to anything that splat checks us, which will usually be the helpers.
 	var/splat_flag = null
 	///Our very special lady, gentleman, theydie, gentlethem, or horrifying monstrosity that should not be
@@ -64,8 +67,8 @@
 /datum/splat/proc/on_remove()
 	SHOULD_CALL_PARENT(TRUE)
 	for(var/trait in splat_traits)
-		REMOVE_TRAIT(my_character, trait)
-	SEND_SIGNAL(character, COMSIG_SPLAT_SPLAT_REMOVED, src)
+		REMOVE_TRAIT(my_character, trait, splat_id)
+	SEND_SIGNAL(my_character, COMSIG_SPLAT_SPLAT_REMOVED_FROM, src)
 	UNSPLATTED(my_character, src)
 	my_character = null
 	qdel(src)
@@ -74,6 +77,7 @@
 
 /datum/splat/proc/splat_response(datum/source)
 	SIGNAL_HANDLER
+	SHOULD_CALL_PARENT(TRUE)
 
 	return splat_flag
 
@@ -92,7 +96,7 @@
 	Remove(my_character)
 
 /datum/splat/human/on_remove()
-	UnregisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED)
+	UnregisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED_TO)
 	..()
 
 /*
@@ -105,13 +109,32 @@
 /datum/splat/proc/_adjust_integrity(value, associated_level, admin_override = FALSE)
 	if(!value)
 		return
-	if(!isnum(violation_level))
+	if(!isnum(associated_level))
 		if(!admin_override)
 			CRASH("[src]/adjust_integrity needs to be called with a level correlated to a given sinful or virtuous act.")
-		LOG_ADMIN("[usr] adjusted [my_character]'s [integrity_name] by [value].")
+		log_admin("[usr] adjusted [my_character]'s [integrity_name] by [value].")
 	if(value > 1 || value < -1)
-		LOG_ADMIN("[my_character]'s [integrity_name] was adjusted by more than one level.")
-	value > 0 ? _try_increase_integrity(value, associated_level) : _try_decrease_integrity(value, associated_level)
+		log_admin("[my_character]'s [integrity_name] was adjusted by more than one level.")
+	log_admin("[my_character]'s [integrity_name] was adjusted by [value].")
+
+/datum/splat/proc/_try_increase_integrity(value, associated_level)
+	if(integrity_level < integrity_max)
+		if(integrity_level < associated_level)
+			integrity_level = min(integrity_level + value, associated_level)
+		else
+			integrity_level = min(integrity_level + value, integrity_max)
+		SEND_SIGNAL(my_character, COMSIG_SPLAT_INTEGRITY_INCREASED, src, value, integrity_level)
+		SEND_SIGNAL(src, COMSIG_SPLAT_INTEGRITY_INCREASED, my_character, value, integrity_level)
+
+/datum/splat/proc/_try_decrease_integrity(value, associated_level)
+	if(integrity_level > 0)
+		if(integrity_level > associated_level)
+			integrity_level = max(integrity_level + value, associated_level) //Remember, value is negative here.
+		else
+			integrity_level = max(integrity_level + value, 0)
+		SEND_SIGNAL(my_character, COMSIG_SPLAT_INTEGRITY_DECREASED, src, value, integrity_level)
+		SEND_SIGNAL(src, COMSIG_SPLAT_INTEGRITY_DECREASED, my_character, value, integrity_level)
+
 
 /// It seems an arbitrary distinction but these will be splats or splat-likes that don't render you technically not human while still giving
 /// more(or less?) than human abilities or characteristics; Hunters, Immortals from CofD, Slashers, etc
@@ -119,7 +142,7 @@
 
 /datum/splat/metahuman/on_apply()
 	. = ..()
-	RegisterSignal(my_character, COMSIG_SPLAT_SPLAT_REMOVED, PROC_REF(exclusive_to_humans))
+	RegisterSignal(my_character, COMSIG_SPLAT_SPLAT_REMOVED_FROM, PROC_REF(exclusive_to_humans))
 
 /datum/splat/metahuman/proc/exclusive_to_humans(datum/source, datum/splat/removing_splat)
 	SIGNAL_HANDLER
@@ -130,7 +153,7 @@
 	Remove(my_character)
 
 /datum/splat/metahuman/on_remove()
-	UnregisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED)
+	UnregisterSignal(my_character, COMSIG_SPLAT_SPLAT_APPLIED_TO)
 	..()
 
 
