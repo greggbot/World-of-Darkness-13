@@ -3916,11 +3916,6 @@
 /obj/structure/vampstatue,
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/theatre)
-"aoY" = (
-/obj/structure/table,
-/obj/machinery/computer/order_console/mining/fastfood/products,
-/turf/open/floor/plating/concrete,
-/area/vtm/interior/shop)
 "aoZ" = (
 /obj/item/gas_can{
 	anchored = 1
@@ -9376,7 +9371,6 @@
 /obj/structure/window/reinforced/fulltile/indestructable{
 	dir = 1
 	},
-/obj/machinery/computer/order_console/mining/fastfood/products,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/shop)
 "aIr" = (
@@ -45588,11 +45582,6 @@
 	},
 /turf/open/lava,
 /area/vtm/interior)
-"orB" = (
-/obj/structure/table/wood,
-/obj/machinery/computer/order_console/mining/fastfood/products,
-/turf/closed/wall/vampwall/brick/low,
-/area/vtm/financialdistrict)
 "orO" = (
 /obj/structure/glowshroom/single,
 /obj/item/vtm_artifact/rand,
@@ -137039,7 +137028,7 @@ aGd
 aqm
 aoh
 aHl
-aoY
+aoB
 aoy
 aoy
 apA
@@ -137822,7 +137811,7 @@ aqm
 aqm
 auu
 aKM
-aoY
+aoB
 aoy
 aoy
 aFy
@@ -149938,7 +149927,7 @@ aGC
 sXo
 gWc
 mPD
-orB
+mlv
 sXo
 aNv
 aGX
@@ -152951,7 +152940,7 @@ aoy
 aoy
 aoy
 aoB
-aoY
+aoB
 aoB
 aoB
 aTq
@@ -163060,7 +163049,7 @@ beX
 aoy
 aoy
 aoy
-aoY
+aoB
 avr
 bgA
 aqm
