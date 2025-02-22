@@ -509,12 +509,7 @@
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "AQ" = (
 /obj/item/food/spidereggs,
-/obj/effect/mob_spawn/corpse/human{
-	brute_damage = 200;
-	mob_type = /mob/living/carbon/human/species/moth;
-	outfit = /datum/outfit/abductorcorpse;
-	oxy_damage = 200
-	},
+/obj/effect/mob_spawn/corpse/human,
 /obj/structure/spider/cocoon{
 	pixel_x = -2;
 	pixel_y = 4

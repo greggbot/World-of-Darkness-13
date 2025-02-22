@@ -9,6 +9,12 @@
 	var/last_vitae = 0
 	var/list/datum/discipline/disciplines = list()
 
+/datum/species/ghoul/get_species_description()
+	return "Vampiren't."
+
+/datum/species/ghoul/get_species_lore()
+	return "Vampiren't."
+
 /datum/action/ghoulinfo
 	name = "About Me"
 	desc = "Check assigned role, master, humanity, masquerade, known contacts etc."

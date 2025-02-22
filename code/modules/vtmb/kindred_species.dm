@@ -25,6 +25,12 @@
 	var/list/datum/discipline/disciplines = list()
 	COOLDOWN_DECLARE(torpor_timer)
 
+/datum/species/kindred/get_species_description()
+	return "Vampires."
+
+/datum/species/kindred/get_species_lore()
+	return "Vampires."
+
 /datum/action/vampireinfo
 	name = "About Me"
 	desc = "Check assigned role, clan, generation, humanity, masquerade, known disciplines, known contacts etc."

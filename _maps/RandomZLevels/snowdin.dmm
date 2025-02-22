@@ -6024,12 +6024,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/mob_spawn/corpse/human/nanotrasensoldier{
-	brute_damage = 145;
-	mob_name = "James Reed";
-	name = "James Reed";
-	oxy_damage = 55
-	},
+/obj/effect/mob_spawn/corpse/human/nanotrasensoldier,
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 4
 	},
@@ -11368,10 +11363,7 @@
 /turf/open/floor/plating/elevatorshaft,
 /area/awaymission/snowdin/post/mining_dock)
 "Yt" = (
-/obj/effect/mob_spawn/corpse/human/assistant{
-	brute_damage = 150;
-	oxy_damage = 50
-	},
+/obj/effect/mob_spawn/corpse/human/assistant,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/misc/asteroid/snow,
 /area/awaymission/snowdin/outside)

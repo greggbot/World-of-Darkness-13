@@ -959,6 +959,9 @@
 	plane = GAME_PLANE
 	layer = ABOVE_NORMAL_TURF_LAYER	//WALLPAPER_LAYER dont work
 
+/obj/effect/decal/wallpaper/NeverShouldHaveComeHere(turf/here_turf)
+	return isopenturf(here_turf) //Fuck this shit.
+
 /obj/effect/decal/wallpaper/Initialize()
 	..()
 	if(isclosedturf(loc))

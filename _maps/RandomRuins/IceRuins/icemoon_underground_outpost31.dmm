@@ -73,11 +73,7 @@
 /area/ruin/outpost31/commander_room)
 "bE" = (
 /obj/structure/cable,
-/obj/effect/mob_spawn/corpse/human/damaged{
-	husk = 1;
-	burn_damage = 1000;
-	brute_damage = 0
-	},
+/obj/effect/mob_spawn/corpse/human/damaged,
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/light_switch/directional/south,
 /obj/effect/turf_decal/siding/white,

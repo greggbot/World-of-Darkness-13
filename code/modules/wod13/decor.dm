@@ -1011,8 +1011,6 @@
 	. = ..()
 	if(.)
 		return
-	if(user.dancing)
-		return
 	user.setDir(SOUTH)
 	user.Stun(100)
 	user.forceMove(src.loc)

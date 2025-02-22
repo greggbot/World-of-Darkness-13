@@ -2822,8 +2822,7 @@
 "mo" = (
 /obj/structure/vampipe{
 	icon_state = "piping31";
-	layer = 1;
-	renamedByPlayer = 3
+	layer = 1
 	},
 /obj/structure/vampipe{
 	icon_state = "piping35"
@@ -7384,8 +7383,7 @@
 "GO" = (
 /obj/structure/vampipe{
 	icon_state = "piping31";
-	layer = 1;
-	renamedByPlayer = 3
+	layer = 1
 	},
 /obj/structure/vampipe{
 	icon_state = "piping32"

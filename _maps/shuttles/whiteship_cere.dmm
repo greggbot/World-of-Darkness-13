@@ -142,9 +142,7 @@
 /obj/structure/cable/layer1,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/mob_spawn/corpse/human/engineer{
-	brute_damage = 200
-	},
+/obj/effect/mob_spawn/corpse/human/engineer,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/shuttle/abandoned/cargo)
@@ -242,9 +240,7 @@
 /obj/structure/cable,
 /obj/structure/cable/layer1,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/mob_spawn/corpse/human/miner{
-	brute_damage = 200
-	},
+/obj/effect/mob_spawn/corpse/human/miner,
 /obj/item/knife/combat/survival,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/firealarm/directional/east,

@@ -1,4 +1,11 @@
 
+/datum/job/vamp
+	title = "Default job, you should not use this"
+	paycheck_department = ACCOUNT_CIV
+	department_for_prefs = DEPARTMENT_ASSISTANT
+	job_flags = STATION_JOB_FLAGS
+	description = "This is a placeholder job. You should not be seeing this."
+
 /datum/job/vamp/citizen
 	title = "Citizen"
 	faction = "Vampire"

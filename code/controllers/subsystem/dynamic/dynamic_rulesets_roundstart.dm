@@ -578,7 +578,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 	antag_leader_datum = /datum/antagonist/nukeop/leader/clownop
 	requirements = list(101,101,101,101,101,101,101,101,101,101)
 	required_role = ROLE_CLOWN_OPERATIVE
-	job_type = /datum/job/vamp/citizen_operative
+	job_type = /datum/job/vamp/citizen
 
 /datum/dynamic_ruleset/roundstart/nuclear/clown_ops/pre_execute()
 	. = ..()

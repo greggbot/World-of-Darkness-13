@@ -802,10 +802,7 @@
 	icon_state = "floor1-old"
 	},
 /obj/structure/sink/directional/south,
-/obj/effect/mob_spawn/corpse/human{
-	mob_name = "captive";
-	brute_damage = 200
-	},
+/obj/effect/mob_spawn/corpse/human,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/infested_frigate)
 "nk" = (

@@ -298,15 +298,6 @@
 /obj/effect/decal/wallpaper/gold/alt,
 /turf/closed/wall/vampwall/junk/alt,
 /area/vtm/sewer/nosferatu_town)
-"abi" = (
-/obj/effect/decal/wallpaper/gold/alt,
-/obj/effect/decal/wallpaper/gold/alt,
-/turf/closed/wall/vampwall/junk/alt,
-/area/vtm/sewer/nosferatu_town)
-"abj" = (
-/obj/effect/decal/wallpaper/gold,
-/turf/closed/wall/vampwall/junk/alt,
-/area/vtm/sewer/nosferatu_town)
 "abk" = (
 /obj/structure/vampipe{
 	icon_state = "piping32"
@@ -765,7 +756,7 @@
 /area/vtm/sewer/nosferatu_town)
 "acH" = (
 /obj/item/paper/guides/conveyor{
-	info = "YOU ARE NOW THE KING OF SHIT";
+	default_raw_text = "YOU ARE NOW THE KING OF SHIT";
 	name = "Note"
 	},
 /turf/open/floor/plating/rough/cave,
@@ -838,10 +829,6 @@
 	},
 /turf/open/floor/plating/vampcanalplating,
 /area/vtm/interior)
-"acU" = (
-/obj/effect/decal/wallpaper/paper/darkred,
-/turf/closed/wall/vampwall/junk/alt,
-/area/vtm/sewer/nosferatu_town)
 "acV" = (
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/sewer/nosferatu_town)
@@ -5208,8 +5195,7 @@
 /obj/structure/table,
 /obj/machinery/button/door{
 	id = "clinic";
-	name = "Parking Shutters Control";
-	req_one_access_txt = "5"
+	name = "Parking Shutters Control"
 	},
 /turf/open/floor/plating/asphalt,
 /area/vtm/clinic)
@@ -5372,10 +5358,6 @@
 /obj/structure/coclock,
 /turf/open/floor/plating/parquetry/old,
 /area/vtm/interior)
-"aug" = (
-/obj/modular_map_root/sewernortheast1,
-/turf/open/space/basic,
-/area/space)
 "auh" = (
 /obj/effect/decal/shadow,
 /turf/open/floor/plating/vampocean,
@@ -18456,10 +18438,6 @@
 /obj/structure/roadsign/noparking,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/pacificheights)
-"bpp" = (
-/obj/effect/decal/wallpaper/light,
-/turf/closed/wall/vampwall/junk,
-/area/vtm/sewer/nosferatu_town)
 "bpq" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 10
@@ -19171,8 +19149,7 @@
 	cost = 700;
 	desc = "This rifle has an official hunting license and 'supposed' modifications. The underclass should keep their heads down.";
 	masquerade_violating = 0;
-	name = "Licensed AR-15 Carbine";
-	renamedByPlayer = 1
+	name = "Licensed AR-15 Carbine"
 	},
 /turf/open/floor/carpet/green,
 /area/vtm/cabinet)
@@ -21208,10 +21185,6 @@
 	},
 /turf/open/floor/plating/vampplating,
 /area/vtm/camarilla)
-"byV" = (
-/obj/effect/decal/wallpaper/paper/darkgreen,
-/turf/closed/wall/vampwall/junk/alt,
-/area/vtm/sewer/nosferatu_town)
 "byW" = (
 /obj/effect/turf_decal/siding/white,
 /obj/structure/vampdoor/camarilla,
@@ -25609,7 +25582,7 @@
 "crx" = (
 /obj/structure/table,
 /obj/item/paper/guides/conveyor{
-	info = "Communicate with your friends and your boss. Stay in a group, turn radio on, call Prince or Sheriff and ask for recommendations. If none of this is available - go to Clerk office nearby and look for him. In that case wait for anyone from upper Camarilla to appear in the city...";
+	default_raw_text = "Communicate with your friends and your boss. Stay in a group, turn radio on, call Prince or Sheriff and ask for recommendations. If none of this is available - go to Clerk office nearby and look for him. In that case wait for anyone from upper Camarilla to appear in the city...";
 	name = "COMMUNICATE GUIDE'"
 	},
 /obj/fusebox,
@@ -32700,8 +32673,7 @@
 	},
 /obj/structure/vampipe{
 	icon_state = "piping31";
-	layer = 1;
-	renamedByPlayer = 3
+	layer = 1
 	},
 /obj/effect/decal/stock{
 	dir = 1
@@ -39010,10 +38982,6 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/fishermanswharf)
-"kkr" = (
-/obj/effect/decal/wallpaper/paper/green,
-/turf/closed/wall/vampwall/junk/alt,
-/area/vtm/sewer/nosferatu_town)
 "kky" = (
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /turf/open/floor/plating/vampdirt,
@@ -58538,11 +58506,6 @@
 /obj/structure/rack,
 /turf/open/floor/plating/vampplating,
 /area/vtm/interior/techshop)
-"wiv" = (
-/obj/effect/decal/bordur,
-/obj/effect/decal/wallpaper/paper/stripe,
-/turf/closed/wall/vampwall/junk,
-/area/vtm/sewer/nosferatu_town)
 "wiE" = (
 /obj/transfer_point_vamp{
 	id = 88
@@ -58922,8 +58885,7 @@
 	cost = 1000;
 	desc = "As perfectly cared for as the day you met her. The pride of the family, with antique ownership license and a polished sheen. No one can stop you out walking with your wife.";
 	masquerade_violating = 0;
-	name = "The Dontessa";
-	renamedByPlayer = 1
+	name = "The Dontessa"
 	},
 /turf/open/floor/plating/parquetry,
 /area/vtm/interior/giovanni)
@@ -59628,8 +59590,7 @@
 /area/vtm/interior/mansion)
 "wMZ" = (
 /obj/machinery/computer/security{
-	id_tag = "bank";
-	network_id = "bank"
+	id_tag = "bank"
 	},
 /turf/open/floor/carpet/black,
 /area/vtm/interior/bianchiBank)
@@ -68101,7 +68062,7 @@ adh
 adh
 adh
 adh
-kkr
+adh
 jOn
 adD
 cai
@@ -68347,18 +68308,18 @@ aab
 aab
 aab
 aab
-acU
+adh
 sYK
 bGD
 adD
 adh
 aab
 aab
-kkr
+adh
 riP
 sYK
 tBl
-kkr
+adh
 tJj
 uel
 adL
@@ -68604,14 +68565,14 @@ aaj
 aaj
 aaj
 aaj
-acU
+adh
 tsv
 jaZ
 adD
 adh
 aaj
 aaj
-kkr
+adh
 oxK
 adD
 adD
@@ -68861,18 +68822,18 @@ aak
 aak
 aak
 aak
-acU
+adh
 tJj
 adL
 adL
 adh
 aak
 aak
-kkr
+adh
 riP
 sYK
 tBl
-kkr
+adh
 adD
 adD
 xNH
@@ -69129,7 +69090,7 @@ adh
 abP
 abP
 abP
-kkr
+adh
 mxs
 adD
 adD
@@ -69367,14 +69328,14 @@ aak
 aak
 aak
 adh
-byV
+adh
 adc
 bzU
 adc
 adh
 adh
 aak
-acU
+adh
 kpM
 adD
 adD
@@ -69386,7 +69347,7 @@ aak
 aak
 aak
 cqR
-kkr
+adh
 iPM
 adD
 adD
@@ -69608,11 +69569,11 @@ aaa
 aaa
 aan
 adh
-abj
+adh
 aca
 ack
 acd
-abj
+adh
 adc
 acd
 fEz
@@ -69623,7 +69584,7 @@ adh
 aak
 aak
 aak
-byV
+adh
 bzb
 acd
 acd
@@ -69631,7 +69592,7 @@ acd
 bAJ
 adh
 aak
-acU
+adh
 kFJ
 adD
 adD
@@ -69864,12 +69825,12 @@ aaa
 aaa
 aaa
 aan
-abh
+adh
 abn
 acd
 acd
 acd
-abh
+adh
 add
 ady
 agU
@@ -69880,7 +69841,7 @@ adh
 ant
 aRd
 aak
-byV
+adh
 bzc
 bzf
 acd
@@ -69888,7 +69849,7 @@ acd
 adW
 adh
 aak
-acU
+adh
 kJb
 adD
 adD
@@ -69900,7 +69861,7 @@ aak
 rmQ
 bvy
 dEU
-kkr
+adh
 mYc
 aGB
 adL
@@ -70121,7 +70082,7 @@ aaa
 aaa
 aaa
 aan
-abh
+adh
 abp
 aci
 acd
@@ -70137,7 +70098,7 @@ ana
 atr
 aUG
 bjY
-byV
+adh
 bzd
 acd
 acd
@@ -70145,7 +70106,7 @@ aio
 bAK
 adh
 aak
-acU
+adh
 adL
 uuv
 adD
@@ -70378,12 +70339,12 @@ aaa
 aaa
 aaa
 aan
-abi
+abh
 abr
 acd
 acd
 acd
-abh
+adh
 acd
 adM
 agU
@@ -70394,7 +70355,7 @@ adh
 auV
 aVf
 acm
-byV
+adh
 adc
 amv
 acd
@@ -70402,7 +70363,7 @@ acd
 acn
 adh
 aak
-acU
+adh
 les
 adD
 adD
@@ -70414,7 +70375,7 @@ ljS
 bvy
 wXc
 aak
-adz
+adh
 jOn
 gNc
 dGf
@@ -70636,11 +70597,11 @@ aaa
 aaa
 aan
 adh
-abj
+adh
 acj
 ftw
 aco
-abj
+adh
 adq
 acd
 acd
@@ -70671,7 +70632,7 @@ xac
 bvy
 hpz
 aak
-adz
+adh
 lmp
 hmt
 adD
@@ -70928,7 +70889,7 @@ aal
 bMB
 aak
 aak
-adz
+adh
 pgz
 adD
 adD
@@ -71185,7 +71146,7 @@ aal
 qyL
 aak
 aak
-adz
+adh
 fLd
 adD
 adD
@@ -71442,7 +71403,7 @@ aal
 aaj
 aaj
 aak
-adz
+adh
 jOn
 adD
 kuJ
@@ -71955,7 +71916,7 @@ aal
 abK
 aal
 aal
-adz
+adh
 tCV
 adD
 adD
@@ -72212,7 +72173,7 @@ adh
 abF
 aal
 aal
-adz
+adh
 ikr
 adD
 adD
@@ -72462,14 +72423,14 @@ aak
 aak
 aak
 aak
-adz
+adh
 fKe
 wZp
 iam
 abF
 aal
 aal
-adz
+adh
 kJb
 adD
 adD
@@ -72719,7 +72680,7 @@ aak
 aak
 aak
 aak
-adz
+adh
 adL
 wgd
 adh
@@ -72983,7 +72944,7 @@ adh
 adh
 uWg
 aal
-adz
+adh
 rgW
 adD
 adD
@@ -73240,7 +73201,7 @@ aan
 adh
 aal
 abZ
-adz
+adh
 tJj
 rVJ
 adD
@@ -73497,7 +73458,7 @@ aan
 aaj
 aal
 aal
-adz
+adh
 tCV
 adD
 adD
@@ -74012,7 +73973,7 @@ aaj
 tZA
 aaj
 aab
-adz
+adh
 vIw
 iFr
 adh
@@ -74269,7 +74230,7 @@ adx
 adx
 adB
 aab
-adz
+adh
 wzo
 qbW
 adh
@@ -76578,7 +76539,7 @@ acV
 acA
 adj
 acK
-bpp
+hWY
 vIw
 fvf
 gmW
@@ -76835,7 +76796,7 @@ acX
 acD
 abt
 acK
-bpp
+hWY
 bxi
 iFr
 grI
@@ -77348,7 +77309,7 @@ acV
 acV
 acD
 abx
-wiv
+woe
 sYK
 adD
 bGD
@@ -77605,7 +77566,7 @@ acV
 acV
 acG
 abt
-wiv
+woe
 tJj
 adD
 ozd
@@ -77862,7 +77823,7 @@ acV
 acV
 acC
 abt
-wiv
+woe
 adD
 adD
 adL
@@ -78376,7 +78337,7 @@ acX
 acZ
 acD
 abt
-wiv
+woe
 ozd
 adD
 adD
@@ -78633,7 +78594,7 @@ acV
 acX
 acA
 abA
-wiv
+woe
 adL
 nWC
 adD
@@ -78890,7 +78851,7 @@ acV
 acX
 acA
 abt
-wiv
+woe
 les
 nWC
 adD
@@ -79147,7 +79108,7 @@ acV
 acV
 acG
 abt
-wiv
+woe
 bvm
 adD
 adD
@@ -102811,9 +102772,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aug
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -103068,9 +103029,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -103325,9 +103286,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -103582,9 +103543,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -103839,9 +103800,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -104096,9 +104057,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -104353,9 +104314,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -104610,9 +104571,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -104867,9 +104828,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -105124,9 +105085,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -105381,9 +105342,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -105638,9 +105599,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -105895,9 +105856,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek
@@ -106152,9 +106113,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+aab
+aag
+aec
 aaV
 aaf
 aek

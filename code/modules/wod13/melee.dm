@@ -210,20 +210,18 @@
 /obj/item/storage/belt/vampire/sheathe/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/update_icon_updates_onmob)
-	var/datum/storage/STR = GetComponent(/datum/storage)
-	STR.max_slots = 1
-	STR.rustle_sound = FALSE
-	STR.max_specific_storage = WEIGHT_CLASS_BULKY
+	atom_storage.max_specific_storage = WEIGHT_CLASS_BULKY
+	atom_storage.max_total_storage = 1
 	if(istype(src, /obj/item/storage/belt/vampire/sheathe/longsword))
-		STR.set_holdable(list(
+		atom_storage.set_holdable(list(
 		/obj/item/melee/vampirearms/longsword
 		))
 	else if(istype(src, /obj/item/storage/belt/vampire/sheathe/rapier))
-		STR.set_holdable(list(
+		atom_storage.set_holdable(list(
 		/obj/item/melee/vampirearms/rapier
 		))
 	else if(istype(src, /obj/item/storage/belt/vampire/sheathe/sabre))
-		STR.set_holdable(list(
+		atom_storage.set_holdable(list(
 		/obj/item/melee/vampirearms/sabre
 		))
 

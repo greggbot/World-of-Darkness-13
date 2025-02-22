@@ -30,9 +30,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/ruin/space/has_grav)
 "k" = (
-/obj/item/stack/sheet/mineral/bananium{
-	amount = 15
-	},
+/obj/item/stack/sheet/mineral/bananium,
 /turf/closed/wall/mineral/titanium,
 /area/ruin/space/has_grav)
 "m" = (
@@ -40,14 +38,9 @@
 	dir = 1
 	},
 /obj/item/shard,
-/obj/effect/mob_spawn/corpse/human/clown{
-	brute_damage = 120;
-	oxy_damage = 75
-	},
+/obj/effect/mob_spawn/corpse/human/clown,
 /obj/item/paper/fluff/ruins/asteroid4/extraction,
-/obj/item/stack/sheet/mineral/bananium{
-	amount = 15
-	},
+/obj/item/stack/sheet/mineral/bananium,
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/space/has_grav)
 "n" = (

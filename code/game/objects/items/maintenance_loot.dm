@@ -49,9 +49,6 @@
 	var/initial_percent = rand(40, 60) / 100 // 250kJ to 350kJ
 	charge = initial_percent * maxcharge
 	ADD_TRAIT(src, TRAIT_FISHING_BAIT, INNATE_TRAIT)
-	AddComponent(/datum/component/loads_avatar_gear, \
-		load_callback = CALLBACK(src, PROC_REF(shockingly_improve_avatar)), \
-	)
 
 // Give our owner shock touch when entering the digital realm
 /obj/item/stock_parts/power_store/cell/lead/proc/shockingly_improve_avatar(mob/living/carbon/human/neo, mob/living/carbon/human/avatar, external_load_flags)

@@ -72,11 +72,7 @@
 "io" = (
 /obj/structure/closet/body_bag,
 /obj/structure/table/optable,
-/obj/effect/mob_spawn/corpse/human{
-	brute_damage = 35;
-	mob_type = /mob/living/carbon/human/species/fly;
-	oxy_damage = 65
-	},
+/obj/effect/mob_spawn/corpse/human,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "iw" = (
@@ -141,10 +137,7 @@
 /obj/structure/closet/body_bag,
 /obj/structure/table/optable,
 /obj/item/surgical_drapes,
-/obj/effect/mob_spawn/corpse/human{
-	brute_damage = 50;
-	burn_damage = 50
-	},
+/obj/effect/mob_spawn/corpse/human,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "pD" = (
@@ -618,10 +611,7 @@
 /obj/structure/closet/body_bag,
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/mob_spawn/corpse/human{
-	brute_damage = 200;
-	mob_type = /mob/living/carbon/human/species/lizard
-	},
+/obj/effect/mob_spawn/corpse/human,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "Ua" = (
