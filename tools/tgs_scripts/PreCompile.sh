@@ -32,6 +32,7 @@ env PKG_CONFIG_ALLOW_CROSS=1 ~/.cargo/bin/cargo build --ignore-rust-version --re
 mv target/i686-unknown-linux-gnu/release/librust_g.so "$1/librust_g.so"
 cd ..
 
+<<<<<<< HEAD
 #
 cd "$original_dir"
 # update dreamluau
@@ -57,4 +58,9 @@ cd "$original_dir"
 echo "Compiling tgui..."
 cd "$1"
 chmod +x tools/bootstrap/node  # Workaround for https://github.com/tgstation/tgstation-server/issues/1167
+=======
+# compile tgui
+echo "Compiling tgui..."
+cd "$1"
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 env TG_BOOTSTRAP_CACHE="$original_dir" TG_BOOTSTRAP_NODE_LINUX=1 CBT_BUILD_MODE="TGS" tools/bootstrap/node tools/build/build.js

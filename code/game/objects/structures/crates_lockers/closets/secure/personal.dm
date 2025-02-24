@@ -1,8 +1,23 @@
 /obj/structure/closet/secure_closet/personal
-	desc = "It's a secure locker for personnel. The first card swiped gains control."
+	desc = "It's a secure locker for personnel. The first person to swipe their ID gains control."
 	name = "personal closet"
 	req_access = list(ACCESS_ALL_PERSONAL_LOCKERS)
-	var/registered_name = null
+	card_reader_installed = TRUE
+
+/obj/structure/closet/secure_closet/personal/Initialize(mapload)
+	. = ..()
+	var/static/list/choices
+	if(isnull(choices))
+		choices = list("Personal")
+	access_choices = choices
+
+/obj/structure/closet/secure_closet/personal/can_unlock(mob/living/user, obj/item/card/id/player_id, obj/item/card/id/registered_id)
+	if(isnull(registered_id)) //first time anyone can unlock
+		return TRUE
+	else
+		if(allowed(user)) //players with ACCESS_ALL_PERSONAL_LOCKERS can override your ID
+			return TRUE
+		return player_id == registered_id
 
 /obj/structure/closet/secure_closet/personal/PopulateContents()
 	..()
@@ -29,7 +44,9 @@
 	close_sound = 'sound/machines/wooden_closet_close.ogg'
 	open_sound_volume = 25
 	close_sound_volume = 50
+	door_anim_time = 0 // no animation
 
+<<<<<<< HEAD
 /obj/structure/closet/secure_closet/personal/attackby(obj/item/W, mob/user, params)
 	var/obj/item/card/id/I = W.GetID()
 	if(istype(I))
@@ -50,3 +67,9 @@
 			to_chat(user, "<span class='danger'>Access Denied.</span>")
 	else
 		return ..()
+=======
+/obj/structure/closet/secure_closet/personal/cabinet/PopulateContents()
+	new /obj/item/storage/backpack/satchel/leather/withwallet( src )
+	new /obj/item/instrument/piano_synth(src)
+	new /obj/item/radio/headset( src )
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441

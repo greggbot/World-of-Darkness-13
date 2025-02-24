@@ -1,19 +1,12 @@
-#define MAX_EMAG_ROCKETS 5
-#define BEACON_COST 500
-#define SP_LINKED 1
-#define SP_READY 2
-#define SP_LAUNCH 3
-#define SP_UNLINK 4
-#define SP_UNREADY 5
-
 /obj/machinery/computer/cargo/express
 	name = "Cargo Computer" //was named express supply console
 	desc = "A computer used by the cargo staff to order supplies via a train."
 	icon_screen = "supply_express"
 	circuit = /obj/item/circuitboard/computer/cargo/express
 	blockade_warning = "Bluespace instability detected. Delivery impossible."
-	req_access = list(ACCESS_QM)
+	req_access = list(ACCESS_CARGO)
 	is_express = TRUE
+	interface_type = "CargoExpress"
 
 	var/list/order_queue = list()
 	var/message
@@ -21,15 +14,20 @@
 	var/list/meme_pack_data
 	var/list/supply_packs = list()
 	var/obj/item/supplypod_beacon/beacon //the linked supplypod beacon
+<<<<<<< HEAD
 	var/area/landingzone = /area/quartermaster/storage //where we droppin boys
 	var/podType = /obj/structure/closet/supplypod/centcompod
+=======
+	var/area/landingzone = /area/station/cargo/storage //where we droppin boys
+	var/podType = /obj/structure/closet/supplypod
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 	var/cooldown = 0 //cooldown to prevent printing supplypod beacon spam
 	var/locked = FALSE //is the console locked? unlock with ID
 	var/usingBeacon = TRUE //is the console in beacon mode? exists to let beacon know when a pod may come in
 	var/account_balance = 100
 	var/max_orders = 10
 
-/obj/machinery/computer/cargo/express/Initialize()
+/obj/machinery/computer/cargo/express/Initialize(mapload)
 	. = ..()
 	packin_up()
 	for(var/obj/item/supplypod_beacon/sb in range(20, src))
@@ -38,7 +36,7 @@
 				sb.altlink_console(src)
 				sb.anchored = TRUE
 
-/obj/machinery/computer/cargo/express/on_construction()
+/obj/machinery/computer/cargo/express/on_construction(mob/user)
 	. = ..()
 	packin_up()
 
@@ -55,7 +53,7 @@
 /obj/machinery/computer/cargo/express/attackby(obj/item/W, mob/living/user, params)
 	if(W.GetID() && allowed(user))
 		locked = !locked
-		to_chat(user, "<span class='notice'>You [locked ? "lock" : "unlock"] the interface.</span>")
+		to_chat(user, span_notice("You [locked ? "lock" : "unlock"] the interface."))
 		return
 	else if(istype(W, /obj/item/stack/dollar))
 		var/obj/item/stack/dollar/D = W
@@ -66,7 +64,7 @@
 			to_chat(user, "[src]'s balance now contains [account_balance] credits.")
 	else if(istype(W, /obj/item/disk/cargo/bluespace_pod))
 		podType = /obj/structure/closet/supplypod/bluespacepod//doesnt effect circuit board, making reversal possible
-		to_chat(user, "<span class='notice'>You insert the disk into [src], allowing for advanced supply delivery vehicles.</span>")
+		to_chat(user, span_notice("You insert the disk into [src], allowing for advanced supply delivery vehicles."))
 		qdel(W)
 		return TRUE
 	else if(istype(W, /obj/item/supplypod_beacon))
@@ -75,15 +73,16 @@
 			sb.link_console(src, user)
 			return TRUE
 		else
-			to_chat(user, "<span class='alert'>[src] is already linked to [sb].</span>")
+			to_chat(user, span_alert("[src] is already linked to [sb]."))
 	..()
 
-/obj/machinery/computer/cargo/express/emag_act(mob/living/user)
+/obj/machinery/computer/cargo/express/emag_act(mob/user, obj/item/card/emag/emag_card)
 	if(obj_flags & EMAGGED)
-		return
+		return FALSE
 	if(user)
-		user.visible_message("<span class='warning'>[user] swipes a suspicious card through [src]!</span>",
-		"<span class='notice'>You change the routing protocols, allowing the Supply Pod to land anywhere on the station.</span>")
+		if (emag_card)
+			user.visible_message(span_warning("[user] swipes [emag_card] through [src]!"))
+		to_chat(user, span_notice("You change the routing protocols, allowing the Supply Pod to land anywhere on the station."))
 	obj_flags |= EMAGGED
 	contraband = TRUE
 	// This also sets this on the circuit board
@@ -91,6 +90,7 @@
 	board.obj_flags |= EMAGGED
 	board.contraband = TRUE
 	packin_up()
+	return TRUE
 
 /obj/machinery/computer/cargo/express/proc/packin_up() // oh shit, I'm sorry
 	meme_pack_data = list() // sorry for what?
@@ -108,11 +108,12 @@
 			) // see, my quartermaster taught me a few things too
 		meme_pack_data[P.group]["packs"] += list(list(
 			"name" = P.name,
-			"cost" = P.cost,
+			"cost" = P.get_cost(),
 			"id" = pack,
 			"desc" = P.desc || P.name // If there is a description, use it. Otherwise use the pack's name.
 		))
 
+<<<<<<< HEAD
 /obj/machinery/computer/cargo/express/ui_interact(mob/living/user, datum/tgui/ui)
 	if(iskindred(user))
 		var/mob/living/carbon/human/H = user
@@ -135,8 +136,16 @@
 	)
 
 	data["points"] = account_balance
+=======
+/obj/machinery/computer/cargo/express/ui_data(mob/user)
+	var/canBeacon = beacon && (isturf(beacon.loc) || ismob(beacon.loc))//is the beacon in a valid location?
+	var/list/data = list()
+	var/datum/bank_account/D = SSeconomy.get_dep_account(cargo_account)
+	if(D)
+		data["points"] = D.account_balance
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 	data["locked"] = locked//swipe an ID to unlock
-	data["siliconUser"] = user.has_unlimited_silicon_privilege
+	data["siliconUser"] = HAS_SILICON_ACCESS(user)
 	data["beaconzone"] = beacon ? get_area(beacon) : ""//where is the beacon located? outputs in the tgui
 	data["usingBeacon"] = usingBeacon //is the mode set to deliver to the beacon or the cargobay?
 	data["canBeacon"] = !usingBeacon || canBeacon //is the mode set to beacon delivery, and is the beacon in a valid location?
@@ -149,7 +158,7 @@
 	data["total_order_cost"] = total_order_cost()
 	data["order_queue"] = json_encode(serialized_order_queue)
 	message = "Sales are near-instantaneous - please choose carefully."
-	if(SSshuttle.supplyBlocked)
+	if(SSshuttle.supply_blocked)
 		message = blockade_warning
 	if(usingBeacon && !beacon)
 		message = "BEACON ERROR: BEACON MISSING"//beacon was destroyed
@@ -245,6 +254,7 @@
 			usingBeacon = TRUE
 			if (beacon)
 				beacon.update_status(SP_READY) //turns on the beacon's ready light
+<<<<<<< HEAD
 //		if("printBeacon")
 //			var/datum/bank_account/D = SSeconomy.get_dep_account(ACCOUNT_CAR)
 //			if(D)
@@ -254,16 +264,33 @@
 //					C.link_console(src, usr)//rather than in beacon's Initialize(), we can assign the computer to the beacon by reusing this proc)
 //					printed_beacons++//printed_beacons starts at 0, so the first one out will be called beacon # 1
 //					beacon.name = "Supply Pod Beacon #[printed_beacons]"
+=======
+		if("printBeacon")
+			var/datum/bank_account/D = SSeconomy.get_dep_account(cargo_account)
+			if(D)
+				if(D.adjust_money(-BEACON_COST))
+					cooldown = 10//a ~ten second cooldown for printing beacons to prevent spam
+					var/obj/item/supplypod_beacon/C = new /obj/item/supplypod_beacon(drop_location())
+					C.link_console(src, usr)//rather than in beacon's Initialize(), we can assign the computer to the beacon by reusing this proc)
+					printed_beacons++//printed_beacons starts at 0, so the first one out will be called beacon # 1
+					beacon.name = "Supply Pod Beacon #[printed_beacons]"
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 
 		if("add")//Generate Supply Order first
-			if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_EXPRESSPOD_CONSOLE))
+			if(TIMER_COOLDOWN_RUNNING(src, COOLDOWN_EXPRESSPOD_CONSOLE))
 				say("Railgun recalibrating. Stand by.")
 				return
+<<<<<<< HEAD
 			var/id = text2path(params["id"])
 			var/datum/supply_pack/vampire/pack = supply_packs[id]
+=======
+			var/id = params["id"]
+			id = text2path(id) || id
+			var/datum/supply_pack/pack = SSshuttle.supply_packs[id]
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 			if(!istype(pack))
-				return
+				CRASH("Unknown supply pack id given by express order console ui. ID: [params["id"]]")
 			var/name = "*None Provided*"
 			var/rank = "*None Provided*"
 			var/ckey = usr.ckey
@@ -271,19 +298,27 @@
 				var/mob/living/carbon/human/H = usr
 				name = H.get_authentification_name()
 				rank = H.get_assignment(hand_first = TRUE)
-			else if(issilicon(usr))
+			else if(HAS_SILICON_ACCESS(usr))
 				name = usr.real_name
 				rank = "Silicon"
 			var/reason = ""
 			var/list/empty_turfs
 			var/datum/supply_order/SO = new(pack, name, rank, ckey, reason)
+<<<<<<< HEAD
 			var/points_to_check = account_balance
+=======
+			var/points_to_check
+			var/datum/bank_account/D = SSeconomy.get_dep_account(cargo_account)
+			if(D)
+				points_to_check = D.account_balance
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 			if(!(obj_flags & EMAGGED))
-				if(SO.pack.cost <= points_to_check)
+				if(SO.pack.get_cost() <= points_to_check)
 					var/LZ
 					if (istype(beacon) && usingBeacon)//prioritize beacons over landing in cargobay
 						LZ = get_turf(beacon)
 						beacon.update_status(SP_LAUNCH)
+<<<<<<< HEAD
 //					else if (!usingBeacon)//find a suitable supplypod landing zone in cargobay
 //						landingzone = GLOB.areas_by_type[/area/vtm/supply]
 //						if (!landingzone)
@@ -315,19 +350,44 @@
 //							new /obj/effect/pod_landingzone(LZ, pack.special_pod, SO)
 //						else
 //							new /obj/effect/pod_landingzone(LZ, podType, SO)
+=======
+					else if (!usingBeacon)//find a suitable supplypod landing zone in cargobay
+						landingzone = GLOB.areas_by_type[/area/station/cargo/storage]
+						if (!landingzone)
+							WARNING("[src] couldnt find a Quartermaster/Storage (aka cargobay) area on the station, and as such it has set the supplypod landingzone to the area it resides in.")
+							landingzone = get_area(src)
+						for(var/turf/open/floor/T in landingzone.get_turfs_from_all_zlevels())//uses default landing zone
+							if(T.is_blocked_turf())
+								continue
+							LAZYADD(empty_turfs, T)
+							CHECK_TICK
+						if(empty_turfs?.len)
+							LZ = pick(empty_turfs)
+					if (SO.pack.get_cost() <= points_to_check && LZ)//we need to call the cost check again because of the CHECK_TICK call
+						TIMER_COOLDOWN_START(src, COOLDOWN_EXPRESSPOD_CONSOLE, 5 SECONDS)
+						D.adjust_money(-SO.pack.get_cost())
+						if(pack.special_pod)
+							new /obj/effect/pod_landingzone(LZ, pack.special_pod, SO)
+						else
+							new /obj/effect/pod_landingzone(LZ, podType, SO)
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 						. = TRUE
-						update_icon()
+						update_appearance()
 			else
-				if(SO.pack.cost * (0.72*MAX_EMAG_ROCKETS) <= points_to_check) // bulk discount :^)
+				if(SO.pack.get_cost() * (0.72*MAX_EMAG_ROCKETS) <= points_to_check) // bulk discount :^)
 					landingzone = GLOB.areas_by_type[pick(GLOB.the_station_areas)]  //override default landing zone
-					for(var/turf/open/floor/T in landingzone.contents)
+					for(var/turf/open/floor/T in landingzone.get_turfs_from_all_zlevels())
 						if(T.is_blocked_turf())
 							continue
 						LAZYADD(empty_turfs, T)
 						CHECK_TICK
 					if(empty_turfs?.len)
 						TIMER_COOLDOWN_START(src, COOLDOWN_EXPRESSPOD_CONSOLE, 10 SECONDS)
+<<<<<<< HEAD
 						account_balance = max(0, account_balance-(SO.pack.cost*(0.72*MAX_EMAG_ROCKETS)))
+=======
+						D.adjust_money(-(SO.pack.get_cost() * (0.72*MAX_EMAG_ROCKETS)))
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 						SO.generateRequisition(get_turf(src))
 						for(var/i in 1 to MAX_EMAG_ROCKETS)
@@ -350,6 +410,10 @@
 //							else
 //								new /obj/effect/pod_landingzone(LZ, podType, SO)
 							. = TRUE
-							update_icon()
+							update_appearance()
 							CHECK_TICK
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441

@@ -30,14 +30,15 @@
 	species = "stobacco"
 	plantname = "Space Tobacco Plant"
 	product = /obj/item/food/grown/tobacco/space
-	mutatelist = list()
+	mutatelist = null
 	reagents_add = list(/datum/reagent/medicine/salbutamol = 0.05, /datum/reagent/drug/nicotine = 0.08, /datum/reagent/consumable/nutriment = 0.03)
-	rarity = 20
+	rarity = PLANT_MODERATELY_RARE
 
 /obj/item/food/grown/tobacco/space
 	seed = /obj/item/seeds/tobacco/space
 	name = "space tobacco leaves"
 	desc = "Dry them out to make some space-smokes."
 	icon_state = "stobacco_leaves"
+	bite_consumption_mod = 2
 	distill_reagent = null
 	wine_power = 50

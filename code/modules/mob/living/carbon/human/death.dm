@@ -8,8 +8,10 @@ GLOBAL_LIST_EMPTY(dead_players_during_shift)
 	else
 		new /obj/effect/temp_visual/dust_animation(loc, "dust-h")
 
-/mob/living/carbon/human/spawn_gibs(with_bodyparts)
-	if(with_bodyparts)
+/mob/living/carbon/human/spawn_gibs(drop_bitflags=NONE)
+	if(flags_1 & HOLOGRAM_1)
+		return
+	if(drop_bitflags & DROP_BODYPARTS)
 		new /obj/effect/gibspawner/human(drop_location(), src, get_static_viruses())
 	else
 		new /obj/effect/gibspawner/human/bodypartless(drop_location(), src, get_static_viruses())
@@ -24,25 +26,27 @@ GLOBAL_LIST_EMPTY(dead_players_during_shift)
 	if(stat == DEAD)
 		return
 	stop_sound_channel(CHANNEL_HEARTBEAT)
-	var/obj/item/organ/heart/H = getorganslot(ORGAN_SLOT_HEART)
-	if(H)
-		H.beat = BEAT_NONE
+	var/obj/item/organ/internal/heart/human_heart = get_organ_slot(ORGAN_SLOT_HEART)
+	human_heart?.beat = BEAT_NONE
+	human_heart?.Stop()
 
 	. = ..()
 
-	dizziness = 0
-	jitteriness = 0
-	if(client && !suiciding && !(client in GLOB.dead_players_during_shift))
+	if(client && !HAS_TRAIT(src, TRAIT_SUICIDED) && !(client in GLOB.dead_players_during_shift))
 		GLOB.dead_players_during_shift += client
-		GLOB.deaths_during_shift++
-
-	if(!QDELETED(dna)) //The gibbed param is bit redundant here since dna won't exist at this point if they got deleted.
-		dna.species.spec_death(gibbed, src)
 
 	if(SSticker.HasRoundStarted())
 		SSblackbox.ReportDeath(src)
-		log_message("has died (BRUTE: [src.getBruteLoss()], BURN: [src.getFireLoss()], TOX: [src.getToxLoss()], OXY: [src.getOxyLoss()], CLONE: [src.getCloneLoss()])", LOG_ATTACK)
+		log_message("has died (BRUTE: [src.getBruteLoss()], BURN: [src.getFireLoss()], TOX: [src.getToxLoss()], OXY: [src.getOxyLoss()]", LOG_ATTACK)
+		if(key) // Prevents log spamming of keyless mob deaths (like xenobio monkeys)
+			investigate_log("has died at [loc_name(src)].<br>\
+				BRUTE: [src.getBruteLoss()] BURN: [src.getFireLoss()] TOX: [src.getToxLoss()] OXY: [src.getOxyLoss()] STAM: [src.getStaminaLoss()]<br>\
+				<b>Brain damage</b>: [src.get_organ_loss(ORGAN_SLOT_BRAIN) || "0"]<br>\
+				<b>Blood volume</b>: [src.blood_volume]cl ([round((src.blood_volume / BLOOD_VOLUME_NORMAL) * 100, 0.1)]%)<br>\
+				<b>Reagents</b>:<br>[reagents_readout()]", INVESTIGATE_DEATHS)
+	to_chat(src, span_warning("You have died. Barring complete bodyloss, you can in most cases be revived by other players. If you do not wish to be brought back, use the \"Do Not Resuscitate\" verb in the ghost tab."))
 
+<<<<<<< HEAD
 	for(var/mob/living/carbon/human/U in viewers(7, src))
 		if(iscathayan(U) && U != src)
 			if(U.real_name == lastattacker && !iscathayan(src) && !iskindred(src) && !isgarou(src))
@@ -55,20 +59,28 @@ GLOBAL_LIST_EMPTY(dead_players_during_shift)
 			if(!(real_name in U.mind?.dharma?.deserving) && U.real_name == lastattacker)
 				call_dharma("killfirst", U)
 	to_chat(src, "<span class='warning'>You have died. Barring complete bodyloss, you can in most cases be revived by other players. If you do not wish to be brought back, use the \"Do Not Resuscitate\" verb in the ghost tab.</span>")
+=======
+/mob/living/carbon/human/proc/reagents_readout()
+	var/readout = "Blood:"
+	for(var/datum/reagent/reagent in reagents?.reagent_list)
+		readout += "<br>[round(reagent.volume, 0.001)] units of [reagent.name]"
+
+	readout += "<br>Stomach:"
+	var/obj/item/organ/internal/stomach/belly = get_organ_slot(ORGAN_SLOT_STOMACH)
+	for(var/datum/reagent/bile in belly?.reagents?.reagent_list)
+		if(!belly.food_reagents[bile.type])
+			readout += "<br>[round(bile.volume, 0.001)] units of [bile.name]"
+
+	return readout
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /mob/living/carbon/human/proc/makeSkeleton()
 	ADD_TRAIT(src, TRAIT_DISFIGURED, TRAIT_GENERIC)
 	set_species(/datum/species/skeleton)
 	return TRUE
 
-
 /mob/living/carbon/proc/Drain()
 	become_husk(CHANGELING_DRAIN)
 	ADD_TRAIT(src, TRAIT_BADDNA, CHANGELING_DRAIN)
-	blood_volume = 0
-	return TRUE
-
-/mob/living/carbon/proc/makeUncloneable()
-	ADD_TRAIT(src, TRAIT_BADDNA, MADE_UNCLONEABLE)
 	blood_volume = 0
 	return TRUE

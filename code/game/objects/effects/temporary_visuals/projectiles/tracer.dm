@@ -1,4 +1,4 @@
-/proc/generate_tracer_between_points(datum/point/starting, datum/point/ending, beam_type, color, qdel_in = 5, light_range = 2, light_color_override, light_intensity = 1, instance_key)		//Do not pass z-crossing points as that will not be properly (and likely will never be properly until it's absolutely needed) supported!
+/proc/generate_tracer_between_points(datum/point/starting, datum/point/ending, beam_type, color, qdel_in = 5, light_range = 2, light_color_override, light_intensity = 1, instance_key) //Do not pass z-crossing points as that will not be properly (and likely will never be properly until it's absolutely needed) supported!
 	if(!istype(starting) || !istype(ending) || !ispath(beam_type))
 		return
 	var/datum/point/midpoint = point_midpoint_points(starting, ending)
@@ -9,7 +9,7 @@
 	. = PB
 	/*
 	if(light_range > 0 && light_intensity > 0)
-		var/list/turf/line = getline(starting.return_turf(), ending.return_turf())
+		var/list/turf/line = get_line(starting.return_turf(), ending.return_turf())
 		tracing_line:
 			for(var/i in line)
 				var/turf/T = i
@@ -24,7 +24,7 @@
 
 /obj/effect/projectile/tracer
 	name = "beam"
-	icon = 'icons/obj/projectiles_tracer.dmi'
+	icon = 'icons/obj/weapons/guns/projectiles_tracer.dmi'
 
 /obj/effect/projectile/tracer/laser
 	name = "laser"
@@ -57,6 +57,16 @@
 	name = "heavy laser"
 	icon_state = "beam_heavy"
 
+/obj/effect/projectile/tracer/solar
+	name = "solar beam"
+	icon_state = "solar"
+
+/obj/effect/projectile/tracer/solar/thin
+	icon_state = "solar_thin"
+
+/obj/effect/projectile/tracer/solar/thinnest
+	icon_state = "solar_thinnest"
+
 //BEAM RIFLE
 /obj/effect/projectile/tracer/tracer/beam_rifle
 	icon_state = "tracer_beam"
@@ -66,7 +76,6 @@
 
 /obj/effect/projectile/tracer/tracer/aiming
 	icon_state = "pixelbeam_greyscale"
-	layer = ABOVE_LIGHTING_LAYER
 	plane = ABOVE_LIGHTING_PLANE
 
 /obj/effect/projectile/tracer/wormhole
@@ -75,3 +84,6 @@
 /obj/effect/projectile/tracer/laser/emitter
 	name = "emitter beam"
 	icon_state = "emitter"
+
+/obj/effect/projectile/tracer/sniper
+	icon_state = "sniper"

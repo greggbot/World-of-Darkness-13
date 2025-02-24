@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 GLOBAL_LIST_INIT(leader_positions, list(
 	"Prince",
 	"Baron",
@@ -136,13 +137,38 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 ))
 
+=======
+// TO DO: Replace this with job datum flags instead.
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 GLOBAL_LIST_INIT(exp_specialmap, list(
 	EXP_TYPE_LIVING = list(), // all living mobs
 	EXP_TYPE_ANTAG = list(),
-	EXP_TYPE_SPECIAL = list("Lifebringer","Ash Walker","Exile","Servant Golem","Free Golem","Hermit","Translocated Vet","Escaped Prisoner","Hotel Staff","SuperFriend","Space Syndicate","Ancient Crew","Space Doctor","Space Bartender","Beach Bum","Skeleton","Zombie","Space Bar Patron","Lavaland Syndicate","Ghost Role"), // Ghost roles
+	EXP_TYPE_SPECIAL = list(
+		ROLE_LIFEBRINGER,
+		ROLE_ASHWALKER,
+		ROLE_EXILE,
+		ROLE_SERVANT_GOLEM,
+		ROLE_FREE_GOLEM,
+		ROLE_HERMIT,
+		ROLE_ESCAPED_PRISONER,
+		ROLE_HOTEL_STAFF,
+		ROLE_SPACE_SYNDICATE,
+		ROLE_ANCIENT_CREW,
+		ROLE_SPACE_DOCTOR,
+		ROLE_SPACE_BARTENDER,
+		ROLE_BEACH_BUM,
+		ROLE_SKELETON,
+		ROLE_ZOMBIE,
+		ROLE_SPACE_BAR_PATRON,
+		ROLE_LAVALAND_SYNDICATE,
+		ROLE_MAINTENANCE_DRONE,
+		ROLE_DERELICT_DRONE,
+		ROLE_SYNDICATE_DRONE,
+		ROLE_VENUSHUMANTRAP,
+		ROLE_GHOST_ROLE,
+		), // Ghost roles
 	EXP_TYPE_GHOST = list() // dead people, observers
 ))
-GLOBAL_PROTECT(exp_jobsmap)
 GLOBAL_PROTECT(exp_specialmap)
 
 //this is necessary because antags happen before job datums are handed out, but NOT before they come into existence
@@ -151,9 +177,9 @@ GLOBAL_PROTECT(exp_specialmap)
 	if(!job_title)
 		return list()
 
-	for(var/datum/job/J in SSjob.occupations)
-		if(J.title == job_title)
-			return J.department_head //this is a list
+	for(var/datum/job/job as anything in SSjob.joinable_occupations)
+		if(job.title == job_title)
+			return job.department_head //this is a list
 
 /proc/get_full_job_name(job)
 	var/static/regex/cap_expand = new("cap(?!tain)")
@@ -171,7 +197,7 @@ GLOBAL_PROTECT(exp_specialmap)
 	var/static/regex/chef_expand = new("chef")
 	var/static/regex/borg_expand = new("(?<!cy)borg")
 
-	job = lowertext(job)
+	job = LOWER_TEXT(job)
 	job = cap_expand.Replace(job, "captain")
 	job = cmo_expand.Replace(job, "chief medical officer")
 	job = hos_expand.Replace(job, "head of security")

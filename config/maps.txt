@@ -13,11 +13,18 @@ Format:
 	votable (is this map votable)
 endmap
 
-map metastation
+# Production-level maps.
+
+map birdshot
 	#default
+<<<<<<< HEAD
 	minplayers 25
 	#voteweight 0.5
 	disabled
+=======
+	maxplayers 66
+	votable
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 endmap
 
 map deltastation
@@ -25,10 +32,13 @@ map deltastation
 	disabled
 endmap
 
+<<<<<<< HEAD
 map kilostation
 	disabled
 endmap
 
+=======
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 map icebox
 	minplayers 25
 	disabled
@@ -39,14 +49,44 @@ map kindredcity
 	default
 endmap
 
+<<<<<<< HEAD
 map runtimestation
 	disabled
 endmap
 
 map runtimetown
 
+=======
+map metastation
+	minplayers 25
+	#voteweight 0.5
+	votable
+endmap
+
+map northstar
+	minplayers 50
+	votable
+endmap
+
+map tramstation
+	minplayers 35
+	votable
+endmap
+
+map wawastation
+	votable
+	minplayers 40
+endmap
+
+# Debug-only maps.
+
+map gateway_test
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 endmap
 
 map multiz_debug
 	disabled
+endmap
+
+map runtimestation
 endmap

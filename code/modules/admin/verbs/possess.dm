@@ -1,20 +1,19 @@
-/proc/possess(obj/O in world)
-	set name = "Possess Obj"
-	set category = "Object"
 
-	if((O.obj_flags & DANGEROUS_POSSESSION) && CONFIG_GET(flag/forbid_singulo_possession))
-		to_chat(usr, "[O] is too powerful for you to possess.", confidential = TRUE)
+ADMIN_VERB_AND_CONTEXT_MENU(possess, R_POSSESS, "Possess Obj", "Possess an object.", ADMIN_CATEGORY_OBJECT, obj/target in world)
+	var/result = user.mob.AddComponent(/datum/component/object_possession, target)
+
+	if(isnull(result)) // trigger a safety movement just in case we yonk
+		user.mob.forceMove(get_turf(user.mob))
 		return
 
-	var/turf/T = get_turf(O)
+	var/turf/target_turf = get_turf(target)
+	var/message = "[key_name(user)] has possessed [target] ([target.type]) at [AREACOORD(target_turf)]"
+	message_admins(message)
+	log_admin(message)
 
-	if(T)
-		log_admin("[key_name(usr)] has possessed [O] ([O.type]) at [AREACOORD(T)]")
-		message_admins("[key_name(usr)] has possessed [O] ([O.type]) at [AREACOORD(T)]")
-	else
-		log_admin("[key_name(usr)] has possessed [O] ([O.type]) at an unknown location")
-		message_admins("[key_name(usr)] has possessed [O] ([O.type]) at an unknown location")
+	BLACKBOX_LOG_ADMIN_VERB("Possess Object")
 
+<<<<<<< HEAD
 	if(!usr.control_object) //If you're not already possessing something...
 		usr.name_archive = usr.real_name
 
@@ -51,3 +50,10 @@
 	add_verb(M, GLOBAL_PROC_REF(possess))
 	add_verb(M, GLOBAL_PROC_REF(release))
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Give Possessing Verbs") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+=======
+ADMIN_VERB(release, R_POSSESS, "Release Object", "Stop possessing an object.", ADMIN_CATEGORY_OBJECT)
+	var/possess_component = user.mob.GetComponent(/datum/component/object_possession)
+	if(!isnull(possess_component))
+		qdel(possess_component)
+	BLACKBOX_LOG_ADMIN_VERB("Release Object")
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441

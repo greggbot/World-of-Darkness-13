@@ -10,16 +10,29 @@
 	caliber = CALIBER_357
 	projectile_type = /obj/projectile/bullet/a357
 
+<<<<<<< HEAD
 /obj/item/ammo_casing/a357/c44
 	name = ".44 bullet casing"
 	desc = "A .44 bullet casing."
 	caliber = CALIBER_44
 	projectile_type = /obj/projectile/bullet/a357
+=======
+/obj/item/ammo_casing/a357/spent
+	projectile_type = null
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /obj/item/ammo_casing/a357/match
 	name = ".357 match bullet casing"
 	desc = "A .357 bullet casing, manufactured to exceedingly high standards."
 	projectile_type = /obj/projectile/bullet/a357/match
+
+/obj/item/ammo_casing/a357/phasic
+	name = ".357 phasic bullet casing"
+	projectile_type = /obj/projectile/bullet/a357/phasic
+
+/obj/item/ammo_casing/a357/heartseeker
+	name = ".357 heartseeker bullet casing"
+	projectile_type = /obj/projectile/bullet/a357/heartseeker
 
 // 7.62x38mmR (Nagant Revolver)
 

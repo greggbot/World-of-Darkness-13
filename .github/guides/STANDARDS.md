@@ -68,6 +68,11 @@ var/path_type = "/obj/item/baseball_bat"
 
 * You are expected to help maintain the code that you add, meaning that if there is a problem then you are likely to be approached in order to fix any issues, runtimes, or bugs.
 
+<<<<<<< HEAD
+=======
+* Do not divide when you can easily convert it to multiplication. (ie `4/2` should be done as `4*0.5`)
+
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 * Separating single lines into more readable blocks is not banned, however you should use it only where it makes new information more accessible, or aids maintainability. We do not have a column limit, and mass conversions will not be received well.
 
 * If you used regex to replace code during development of your code, post the regex in your PR for the benefit of future developers and downstream users.
@@ -511,6 +516,7 @@ The following is a list of procs, and their safe replacements.
 * Move away from something, taking turf density into account `walk_away()` -> `SSmove_manager.move_away()`
 * Move to a random place nearby. NOT random walk `walk_rand()` -> `SSmove_manager.move_rand()` is random walk, `SSmove_manager.move_to_rand()` is walk to a random place
 
+<<<<<<< HEAD
 ### Avoid pointer use
 
 BYOND has a variable type called pointers, which allow you to reference a variable rather then its value. As an example of how this works:
@@ -535,6 +541,8 @@ The problem with this is twofold.
 
 For these reasons and with the hope of avoiding pointers entering general use, be very careful using them, if you use them at all.
 
+=======
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 ### BYOND hellspawn
 
 What follows is documentation of inconsistent or strange behavior found in our engine, BYOND.

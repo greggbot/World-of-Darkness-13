@@ -172,7 +172,7 @@ CREATE TABLE `death` (
   `fireloss` smallint(5) unsigned NOT NULL,
   `oxyloss` smallint(5) unsigned NOT NULL,
   `toxloss` smallint(5) unsigned NOT NULL,
-  `cloneloss` smallint(5) unsigned NOT NULL,
+  `cloneloss` smallint(5) unsigned DEFAULT '0',
   `staminaloss` smallint(5) unsigned NOT NULL,
   `last_words` varchar(255) DEFAULT NULL,
   `suicide` tinyint(1) NOT NULL DEFAULT '0',
@@ -212,6 +212,20 @@ CREATE TABLE `ipintel` (
   `intel` double NOT NULL DEFAULT '0',
   PRIMARY KEY (`ip`),
   KEY `idx_ipintel` (`ip`,`intel`,`date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `ipintel_whitelist`
+--
+
+DROP TABLE IF EXISTS `ipintel_whitelist`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ipintel_whitelist` (
+	`ckey` varchar(32) NOT NULL,
+	`admin_ckey` varchar(32) NOT NULL,
+	PRIMARY KEY (`ckey`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -270,10 +284,17 @@ CREATE TABLE `library_action` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `book` int(10) unsigned NOT NULL,
   `reason` longtext DEFAULT NULL,
+<<<<<<< HEAD
   `ckey` varchar(11) NOT NULL DEFAULT '',
   `datetime` datetime NOT NULL DEFAULT current_timestamp(),
   `action` varchar(11) NOT NULL DEFAULT '',
   `ip_addr` int(11) NOT NULL,
+=======
+  `ckey` varchar(32) NOT NULL DEFAULT '',
+  `datetime` datetime NOT NULL DEFAULT current_timestamp(),
+  `action` varchar(11) NOT NULL DEFAULT '',
+  `ip_addr` int(10) unsigned NOT NULL,
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -638,6 +659,7 @@ CREATE TABLE `discord_links` (
 ) ENGINE=InnoDB;
 
 --
+<<<<<<< HEAD
 -- Table structure for table `text_adventures`
 --
 DROP TABLE IF EXISTS `text_adventures`;
@@ -651,6 +673,8 @@ CREATE TABLE `text_adventures` (
 ) ENGINE=InnoDB;
 
 --
+=======
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 -- Table structure for table `admin_connections`
 --
 DROP TABLE IF EXISTS `admin_connections`;
@@ -693,6 +717,7 @@ CREATE TABLE `telemetry_connections` (
     UNIQUE INDEX `unique_constraints` (`ckey` , `telemetry_ckey` , `address` , `computer_id`)
 );
 
+<<<<<<< HEAD
 --
 -- Table structure for table `whitelist`
 --
@@ -707,6 +732,15 @@ CREATE TABLE `whitelist` (
     `date_whitelisted` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (`id`)
 );
+=======
+DROP TABLE IF EXISTS `tutorial_completions`;
+CREATE TABLE `tutorial_completions` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `ckey` VARCHAR(32) NOT NULL,
+  `tutorial_key` VARCHAR(64) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `ckey_tutorial_unique` (`ckey`, `tutorial_key`));
+>>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

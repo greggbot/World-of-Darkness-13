@@ -2,6 +2,7 @@
 	name = "critter crate"
 	desc = "A crate designed for safe transport of animals. It has an oxygen tank for safe transport in space."
 	icon_state = "crittercrate"
+	base_icon_state = "crittercrate"
 	horizontal = FALSE
 	allow_objects = FALSE
 	breakout_time = 600
@@ -12,9 +13,14 @@
 	close_sound = 'sound/machines/wooden_closet_close.ogg'
 	open_sound_volume = 25
 	close_sound_volume = 50
+	contents_pressure_protection = 0.8
+	can_install_electronics = FALSE
+	elevation = 21
+	elevation_open = 0
+
 	var/obj/item/tank/internals/emergency_oxygen/tank
 
-/obj/structure/closet/crate/critter/Initialize()
+/obj/structure/closet/crate/critter/Initialize(mapload)
 	. = ..()
 	tank = new
 
@@ -27,20 +33,22 @@
 	return ..()
 
 /obj/structure/closet/crate/critter/update_icon_state()
+	SHOULD_CALL_PARENT(FALSE)
 	return
 
 /obj/structure/closet/crate/critter/update_overlays()
 	. = ..()
 	if(opened)
 		. += "crittercrate_door_open"
-	else
-		. += "crittercrate_door"
-		if(manifest)
-			. += "manifest"
+		return
+
+	. += "crittercrate_door"
+	if(manifest)
+		. += "manifest"
 
 /obj/structure/closet/crate/critter/return_air()
 	if(tank)
-		return tank.air_contents
+		return tank.return_air()
 	else
 		return loc.return_air()
 
