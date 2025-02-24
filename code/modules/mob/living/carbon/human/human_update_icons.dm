@@ -331,8 +331,7 @@ There are several things that need to be remembered:
 
 	if(client && hud_used)
 		var/atom/movable/screen/inventory/inv = hud_used.inv_slots[TOBITSHIFT(ITEM_SLOT_SUITSTORE) + 1]
-		if (inv) //inv can be null when joining, causing runtimes
-			inv.update_icon()
+		inv.update_icon()
 
 	if(s_store)
 		s_store.screen_loc = ui_sstore1
