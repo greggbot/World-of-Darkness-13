@@ -35,6 +35,7 @@
 	var/original_facialhair
 	var/original_haircolor
 	var/original_facialhaircolor
+	var/original_eyecolor
 	var/original_body_mod
 	var/original_alt_sprite
 	var/original_alt_sprite_greyscale
@@ -46,6 +47,7 @@
 	var/impersonating_facialhair
 	var/impersonating_haircolor
 	var/impersonating_facialhaircolor
+	var/impersonating_eyecolor
 	var/impersonating_body_mod
 	var/impersonating_alt_sprite
 	var/impersonating_alt_sprite_greyscale
@@ -89,6 +91,7 @@
 	impersonating_facialhair = victim.facial_hairstyle
 	impersonating_haircolor = victim.hair_color
 	impersonating_facialhaircolor = victim.facial_hair_color
+	impersonating_eyecolor = victim.eye_color
 	impersonating_body_mod = victim.base_body_mod
 	if (victim.clane)
 		impersonating_alt_sprite = victim.clane.alt_sprite
@@ -108,6 +111,7 @@
 	original_facialhair = owner.facial_hairstyle
 	original_haircolor = owner.hair_color
 	original_facialhaircolor = owner.facial_hair_color
+	original_eyecolor = owner.eye_color
 	original_body_mod = owner.base_body_mod
 	original_alt_sprite = owner.clane?.alt_sprite
 	original_alt_sprite_greyscale = owner.clane?.alt_sprite_greyscale
@@ -137,9 +141,10 @@
 		owner.facial_hairstyle = original_facialhair
 		owner.hair_color = original_haircolor
 		owner.facial_hair_color = original_facialhaircolor
+		owner.eye_color = original_eyecolor
 		owner.base_body_mod = original_body_mod
-		owner.clane.alt_sprite = original_alt_sprite
-		owner.clane.alt_sprite_greyscale = original_alt_sprite_greyscale
+		owner.clane?.alt_sprite = original_alt_sprite
+		owner.clane?.alt_sprite_greyscale = original_alt_sprite_greyscale
 		is_shapeshifted = FALSE
 		QDEL_NULL(impersonating_dna)
 	else
@@ -153,9 +158,10 @@
 		owner.facial_hairstyle = impersonating_facialhair
 		owner.hair_color = impersonating_haircolor
 		owner.facial_hair_color = impersonating_facialhaircolor
+		owner.eye_color = impersonating_eyecolor
 		owner.base_body_mod = impersonating_body_mod
-		owner.clane.alt_sprite = impersonating_alt_sprite
-		owner.clane.alt_sprite_greyscale = impersonating_alt_sprite_greyscale
+		owner.clane?.alt_sprite = impersonating_alt_sprite
+		owner.clane?.alt_sprite_greyscale = impersonating_alt_sprite_greyscale
 		is_shapeshifted = TRUE
 
 	owner.update_body()

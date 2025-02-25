@@ -6,6 +6,7 @@
 
 // Takes care blood loss and regeneration
 /mob/living/carbon/human/handle_blood()
+	update_blood_values()
 
 	if((NOBLOOD in dna.species.species_traits) || HAS_TRAIT(src, TRAIT_NOBLEED) || (HAS_TRAIT(src, TRAIT_FAKEDEATH)))
 		return
@@ -70,8 +71,6 @@
 		if(temp_bleed)
 			bleed(temp_bleed)
 			bleed_warn(temp_bleed)
-
-	update_blood_values()
 
 //Makes a blood drop, leaking amt units of blood from the mob
 /mob/living/carbon/proc/bleed(amt)

@@ -16,6 +16,7 @@
 	check_flags = DISC_CHECK_CAPABLE|DISC_CHECK_SPEAK
 	vitae_cost = 2
 	target_type = TARGET_LIVING
+	range = 7
 
 	activate_sound = 'code/modules/wod13/sounds/insanity.ogg'
 

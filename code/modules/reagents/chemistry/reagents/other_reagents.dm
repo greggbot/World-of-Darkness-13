@@ -37,7 +37,7 @@
 			if(!data || !(data["blood_type"] in get_safe_blood(exposed_carbon.dna.blood_type)))
 				exposed_carbon.reagents.add_reagent(/datum/reagent/toxin, reac_volume * 0.5)
 			else
-				exposed_carbon.set_blood_volume(round(reac_volume, 0.1))
+				exposed_carbon.adjust_blood_volume(round(reac_volume, 0.1))
 
 
 /datum/reagent/blood/on_new(list/data)
