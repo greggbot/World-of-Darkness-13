@@ -3456,6 +3456,7 @@
 #include "code\modules\vtmb\werewolf\gifts.dm"
 #include "code\modules\vtmb\werewolf\totems.dm"
 #include "code\modules\vtmb\werewolf\tribes.dm"
+#include "code\modules\wod13\blood.dm"
 #include "code\modules\wod13\emote.dm"
 #include "code\modules\wod13\datums\crafting_recipes\weed\weed_blunt.dm"
 #include "code\modules\wod13\datums\vip_barrier_perm.dm"

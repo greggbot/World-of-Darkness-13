@@ -14,7 +14,7 @@
 	desc = "Dementation power description"
 
 	check_flags = DISC_CHECK_CAPABLE|DISC_CHECK_SPEAK
-	vitae_cost = 2
+	vitae_cost = 1
 	target_type = TARGET_LIVING
 	range = 7
 

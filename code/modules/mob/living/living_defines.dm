@@ -256,7 +256,6 @@
 
 	var/bloodpool = 5
 	var/maxbloodpool = 5
-	var/blood_per_point = 0
 	var/generation = 13
 	var/humanity = 7
 	var/masquerade = 5
