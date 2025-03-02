@@ -53,7 +53,7 @@
 	else //activate
 		if (power.target_type == NONE) //self activation
 			power.try_activate()
-		else if (power.range > 0) //ranged targeted activation
+		else //ranged targeted activation
 			begin_targeting()
 
 	UpdateButtonIcon()
@@ -103,17 +103,20 @@
 	owner.discipline_targeting = FALSE
 	client.mouse_pointer_icon = initial(client.mouse_pointer_icon)
 
-/datum/action/discipline/proc/handle_click(mob/source, atom/target)
+/datum/action/discipline/proc/handle_click(mob/source, atom/target, click_parameters)
 	SIGNAL_HANDLER
 
 	//ensure we actually need a target
 	if (!targeting)
 		end_targeting()
 		return
+
 	//actually try to use the Discipline on the target
 	spawn()
 		if (discipline.try_activate(target))
 			end_targeting()
+
+	return COMSIG_MOB_CANCEL_CLICKON
 
 /datum/action/discipline/proc/begin_targeting()
 	var/client/client = owner?.client
