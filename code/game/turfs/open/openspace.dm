@@ -3,7 +3,7 @@
 	desc = "Watch your step!"
 	// We don't actually draw openspace, but it needs to have color
 	// In its icon state so we can count it as a "non black" tile
-	icon_state = MAP_SWITCH("pure_white", "invisible")
+	icon_state = "open space"
 	baseturfs = /turf/open/openspace
 	overfloor_placed = FALSE
 	underfloor_accessibility = UNDERFLOOR_INTERACTABLE

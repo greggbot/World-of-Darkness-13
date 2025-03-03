@@ -52,6 +52,12 @@
 		bloodiness = 0
 		color = COLOR_GRAY //not all blood splatters have their own sprites... It still looks pretty nice
 		STOP_PROCESSING(SSobj, src)
+		if(istype(get_area(src), /area/vtm))
+			var/area/vtm/V = get_area(src)
+			if(V.upper)
+				animate(src, alpha = 0, time = 1200)
+				spawn(1200)
+					qdel(src)
 		return TRUE
 
 /obj/effect/decal/cleanable/blood/replace_decal(obj/effect/decal/cleanable/blood/C)
@@ -238,8 +244,8 @@
 /obj/effect/decal/cleanable/blood/footprints
 	name = "footprints"
 	desc = "WHOSE FOOTPRINTS ARE THESE?"
-	icon = 'icons/effects/footprints.dmi'
-	icon_state = "blood_shoes_enter"
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "blood1"
 	random_icon_states = null
 	blood_state = BLOOD_STATE_HUMAN //the icon state to load images from
 	var/entered_dirs = 0
