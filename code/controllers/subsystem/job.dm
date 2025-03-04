@@ -715,59 +715,7 @@ SUBSYSTEM_DEF(job)
 		else
 			handle_auto_deadmin_roles(player_client, job.title)
 
-<<<<<<< HEAD
-
-	if(living_mob.mind)
-		living_mob.mind.assigned_role = rank
-
-	to_chat(M, "<b>You are the [rank].</b>")
-	if(job)
-		var/new_mob = job.equip(living_mob, null, null, joined_late , null, M.client)//silicons override this proc to return a mob
-		if(ismob(new_mob))
-			living_mob = new_mob
-			if(!joined_late)
-				newplayer.new_character = living_mob
-			else
-				M = living_mob
-
-		SSpersistence.antag_rep_change[M.client.ckey] += job.GetAntagRep()
-
-		if(M.client.holder)
-			if(CONFIG_GET(flag/auto_deadmin_players) || (M.client.prefs?.toggles & DEADMIN_ALWAYS))
-				M.client.holder.auto_deadmin()
-			else
-				handle_auto_deadmin_roles(M.client, rank)
-
-		to_chat(M, "<b>As the [rank] you answer directly to [job.supervisors]. Special circumstances may change this.</b>")
-		var/mob/living/carbon/human/human = living_mob
-		if((iskindred(human) && human.clane) || iscathayan(human) || isgarou(human))
-			if(job.v_duty && job.v_duty != "")
-				to_chat(M, "<span class='notice'><b>[job.v_duty]</b></span>")
-			if(job.title != "Prince")
-				to_chat(M, "<span class='notice' style='color:red;'><b>The Camarilla rule the city. You should obey them, their laws and the Prince, at least in public.</b></span>")
-			if(job.title == "Chantry Archivist")
-				to_chat(M, "<span class='notice'><b>As a member of the Chantry, you are part of the Tremere Pyramid and are blood bonded to the Regent. Always be loyal.</b></span>")
-		else if(job.duty && job.duty != "")
-			to_chat(M, "<span class='notice'><b>[job.duty]</b></span>")
-//		job.radio_help_message(M)
-		if(job.req_admin_notify)
-			to_chat(M, "<b>You are playing a job that is important for Game Progression. If you have to disconnect, please notify the admins via adminhelp.</b>")
-//		if(CONFIG_GET(number/minimal_access_threshold))
-//			to_chat(M, "<span class='notice'><B>As this station was initially staffed with a [CONFIG_GET(flag/jobs_have_minimal_access) ? "full crew, only your job's necessities" : "skeleton crew, additional access may"] have been added to your ID card.</B></span>")
-
-//	var/related_policy = get_policy(rank)
-//	if(related_policy)
-//		to_chat(M,related_policy)
-//	if(ishuman(living_mob))
-//		var/mob/living/carbon/human/wageslave = living_mob
-//		living_mob.add_memory("Your account ID is [wageslave.account_id].")
-	if(job && living_mob)
-		job.after_spawn(living_mob, M, joined_late) // note: this happens before the mob has a key! M will always have a client, H might not.
-
-	return living_mob
-=======
 	job.after_spawn(equipping, player_client)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /datum/controller/subsystem/job/proc/handle_auto_deadmin_roles(client/C, rank)
 	if(!C?.holder)
@@ -876,17 +824,10 @@ SUBSYSTEM_DEF(job)
 
 /datum/controller/subsystem/job/Recover()
 	set waitfor = FALSE
-<<<<<<< HEAD
-	var/oldjobs = SSjob.occupations
-	sleep(20)
-	for (var/datum/job/J in oldjobs)
-		INVOKE_ASYNC(src, PROC_REF(RecoverJob), J)
-=======
 	var/oldjobs = SSjob.all_occupations
 	sleep(2 SECONDS)
 	for (var/datum/job/job as anything in oldjobs)
 		INVOKE_ASYNC(src, PROC_REF(RecoverJob), job)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /datum/controller/subsystem/job/proc/RecoverJob(datum/job/J)
 	var/datum/job/newjob = GetJob(J.title)
@@ -898,13 +839,9 @@ SUBSYSTEM_DEF(job)
 
 /atom/proc/JoinPlayerHere(mob/joining_mob, buckle)
 	// By default, just place the mob on the same turf as the marker or whatever.
-<<<<<<< HEAD
-	M.forceMove(get_turf(src))
-	if(M.taxist)
-		new /obj/vampire_car/taxi(M.loc)
-=======
 	joining_mob.forceMove(get_turf(src))
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
+	if(joining_mob.taxist)
+		new /obj/vampire_car/taxi(joining_mob.loc)
 
 /obj/structure/chair/JoinPlayerHere(mob/joining_mob, buckle)
 	. = ..()
