@@ -64,9 +64,6 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = /obj/item/clothing/suit/armor/vest/hop
 
-<<<<<<< HEAD
-	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/hop)
-=======
 	chameleon_extras = list(
 		/obj/item/gun/energy/e_gun,
 		/obj/item/stamp/head/hop,
@@ -107,4 +104,3 @@
 <li>Don't forget to set a custom occupation! SecHUDs now interface direct with the ID card's trim and display the trim's job icon even when a custom assignment is set.</li>
 </ol>
 	"}
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441

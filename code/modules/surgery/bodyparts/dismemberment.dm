@@ -79,17 +79,10 @@
 		var/org_zone = check_zone(organ.zone)
 		if(org_zone != BODY_ZONE_CHEST)
 			continue
-<<<<<<< HEAD
-		O.Remove(C)
-		O.forceMove(T)
-		O.damage = rand(round(O.maxHealth/2), O.maxHealth)
-		. += X
-=======
 		organ.Remove(chest_owner)
 		organ.forceMove(chest_owner.loc)
 		. += organ
 
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 	if(cavity_item)
 		cavity_item.forceMove(chest_owner.loc)
 		. += cavity_item

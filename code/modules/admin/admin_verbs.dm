@@ -128,13 +128,7 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 				valid_found = FALSE
 				break
 
-<<<<<<< HEAD
-/client/proc/toggle_canon()
-	set name = "Toggle Canon"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
-
+ADMIN_VERB(toggle_canon, R_ADMIN, "Toggle Canon", "Toggle whether the round is canon or not.", ADMIN_CATEGORY_MAIN)
 	GLOB.canon_event = !GLOB.canon_event
 	SEND_SOUND(world, sound('code/modules/wod13/sounds/canon.ogg'))
 	if(GLOB.canon_event)
@@ -145,13 +139,7 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 	log_admin("[key_name(usr)] toggled the round's canonicity. The round is [GLOB.canon_event ? "now canon." : "no longer canon."]")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Toggle Canon") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/cmd_admin_global_adjust_masquerade()
-	set name = "Adjust Global Masquerade"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
-
-
+ADMIN_VERB(cmd_admin_global_adjust_masquerade, R_ADMIN, "Adjust Global Masquerade", "Change the level of the Masquerade.", ADMIN_CATEGORY_MAIN)
 	var/last_global_mask = SSmasquerade.total_level
 
 	var/value = input(usr, "Enter the Global Masquerade adjustment values(- will decrease, + will increase) :", "Global Masquerade Adjustment", 0) as num|null
@@ -169,41 +157,8 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 	message_admins(msg)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Global Adjust Masquerade")
 
-
-
-
-
-/client/proc/cmd_admin_adjust_masquerade(mob/living/carbon/human/M in GLOB.player_list)
-	set name = "Adjust Masquerade"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
-
+ADMIN_VERB(cmd_admin_adjust_humanity, R_ADMIN, "Adjust Humanity", "Adjust the humanity level for a single mob.", ADMIN_CATEGORY_MAIN)
 	if(!ismob(M))
-		return
-	if(!check_rights(R_ADMIN))
-		return
-
-	var/value = input(usr, "Enter the Masquerade adjustment value for [key_name(M)]:", "Masquerade Adjustment", 0) as num|null
-	if(!value)
-		return
-
-	M.AdjustMasquerade(value, TRUE)
-	var/msg = "<span class='adminnotice'><b>Masquerade Adjustment: [key_name_admin(usr)] adjusted [key_name_admin(M)]'s masquerade by [value] to [M.masquerade]</b></span>"
-	log_admin("MasqAdjust: [key_name(usr)] has adjusted [key_name(M)]'s masquerade by [value] to [M.masquerade]")
-	message_admins(msg)
-	admin_ticket_log(M, msg)
-	SSblackbox.record_feedback("tally", "admin_verb", 1, "Adjust Masquerade")
-
-/client/proc/cmd_admin_adjust_humanity(mob/living/carbon/human/M in GLOB.player_list)
-	set name = "Adjust Humanity"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
-
-	if(!ismob(M))
-		return
-	if(!check_rights(R_ADMIN))
 		return
 
 	var/is_enlightenment = FALSE
@@ -224,12 +179,7 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 	admin_ticket_log(M, msg)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Adjust Humanity")
 
-/client/proc/reward_exp()
-	set name = "Reward Experience"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
-
+ADMIN_VERB(reward_exp, R_ADMIN, "Reward Experience", "Reward experience for a single mob.", ADMIN_CATEGORY_MAIN)
 	var/list/explist = list()
 	for(var/client/C in GLOB.clients)
 		explist |= "[C.ckey]"
@@ -250,12 +200,7 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 						log_admin("[key_name(usr)] rewarded [key_name(exper)] with [amount] experience points. Reason: [reason]")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Reward Experience") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/grant_whitelist()
-	set name = "Grant Whitelist"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
-
+ADMIN_VERB(grant_whitelist, R_ADMIN, "Grant Whitelist", "Grant whitelist for a single user.", ADMIN_CATEGORY_MAIN)
 	if (!SSwhitelists.whitelists_enabled)
 		to_chat(usr, "<span class='warning'>Whitelisting isn't enabled!</span>")
 		return
@@ -278,12 +223,7 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 					log_admin("[key_name(usr)] gave [whitelistee] the [whitelist] whitelist. Reason: [approval_reason]")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Grant Whitelist") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/grant_discipline()
-	set name = "Grant Discipline"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
-
+ADMIN_VERB(grant_discipline, R_ADMIN, "Grant Discipline", "Grant discipline for a single mob.", ADMIN_CATEGORY_MAIN)
 	var/client/player = input("What player do you want to give a Discipline?") as null|anything in GLOB.clients
 	if (player)
 		if (!player.prefs)
@@ -323,12 +263,7 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Grant Discipline") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/remove_discipline()
-	set name = "Remove Discipline"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
-
+ADMIN_VERB(remove_discipline, R_ADMIN, "Remove Discipline", "Remove discipline from a single mob.", ADMIN_CATEGORY_MAIN)
 	var/client/player = input("What player do you want to remove a Discipline from?") as null|anything in GLOB.clients
 	if (player)
 		if (!player.prefs)
@@ -356,19 +291,11 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Remove Discipline") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/whitelist_panel()
-	set name = "Whitelist Management"
-	set category = "Admin"
-	if (!check_rights(R_ADMIN))
-		return
+ADMIN_VERB(whitelist_panel, R_ADMIN, "Whitelist Management", "Open the whitelist management panel.", ADMIN_CATEGORY_MAIN)
 	holder.whitelist_panel()
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Whitelist Management") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/poll_panel()
-	set name = "Server Poll Management"
-	set category = "Admin"
-	if(!check_rights(R_POLL))
-		return
+ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "Open the server poll panel.", ADMIN_CATEGORY_MAIN)
 	holder.poll_list_panel()
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Server Poll Management") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
@@ -379,9 +306,6 @@ ADMIN_VERB(poll_panel, R_POLL, "Server Poll Management", "View and manage polls.
 				return P
 	txt = GLOB.stealthminID[ckey]
 	return txt
-=======
-	return text_guess
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /client/proc/createStealthKey()
 	GLOB.stealthminID["[ckey]"] = generateStealthCkey()
@@ -695,11 +619,7 @@ ADMIN_VERB(build_mode_self, R_BUILD, "Toggle Build Mode Self", "Toggle build mod
 	togglebuildmode(user.mob) // why is this a global proc???
 	BLACKBOX_LOG_ADMIN_VERB("Toggle Build Mode")
 
-<<<<<<< HEAD
-/client/proc/set_late_party()
-	set name = "Set Late Party"
-	set category = "Admin.Game"
-
+ADMIN_VERB(set_late_party, R_ADMIN, "Set Late Party", "Select the late party type.", ADMIN_CATEGORY_GAME)
 	var/setting = input(usr, "Choose the bad guys party setting:", "Set Late Party") in list("caitiff", "sabbat", "hunter", "random")
 	if(setting == "random")
 		SSbad_guys_party.setting = null
@@ -752,20 +672,6 @@ ADMIN_VERB(build_mode_self, R_BUILD, "Toggle Build Mode Self", "Toggle build mod
 			var/msg = " is trying to readmin but they have no deadmin entry"
 			message_admins("[key_name_admin(src)][msg]")
 			log_admin_private("[key_name(src)][msg]")
-=======
-ADMIN_VERB(check_ai_laws, R_ADMIN, "Check AI Laws", "View the current AI laws.", ADMIN_CATEGORY_GAME)
-	user.holder.output_ai_laws()
-
-ADMIN_VERB(manage_sect, R_ADMIN, "Manage Religious Sect", "Manages the chaplain's religion.", ADMIN_CATEGORY_GAME)
-	if (!isnull(GLOB.religious_sect))
-		var/you_sure = tgui_alert(
-			user,
-			"The Chaplain has already chosen [GLOB.religious_sect.name], override their selection?",
-			"Replace God?",
-			list("Yes", "Cancel"),
-		)
-		if (you_sure != "Yes")
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 			return
 
 	var/static/list/choices = list()

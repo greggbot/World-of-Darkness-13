@@ -1777,4 +1777,4 @@
 /obj/item/proc/get_proxy_attacker_for(atom/target, mob/user)
 	RETURN_TYPE(/obj/item)
 
-	return src
+	return src */

@@ -15,7 +15,6 @@
 	decal_reagent = /datum/reagent/ash
 	reagent_amount = 30
 
-<<<<<<< HEAD
 /obj/effect/decal/cleanable/fire_ash
 	name = "ashes"
 	desc = "Ashes to ashes, dust to dust, and into space."
@@ -25,10 +24,7 @@
 	beauty = -75
 	color = "#000000"
 
-/obj/effect/decal/cleanable/ash/Initialize()
-=======
 /obj/effect/decal/cleanable/ash/Initialize(mapload)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 	. = ..()
 	pixel_x = base_pixel_x + rand(-5, 5)
 	pixel_y = base_pixel_y + rand(-5, 5)

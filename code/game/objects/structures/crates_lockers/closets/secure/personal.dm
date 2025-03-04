@@ -46,7 +46,6 @@
 	close_sound_volume = 50
 	door_anim_time = 0 // no animation
 
-<<<<<<< HEAD
 /obj/structure/closet/secure_closet/personal/attackby(obj/item/W, mob/user, params)
 	var/obj/item/card/id/I = W.GetID()
 	if(istype(I))
@@ -67,9 +66,3 @@
 			to_chat(user, "<span class='danger'>Access Denied.</span>")
 	else
 		return ..()
-=======
-/obj/structure/closet/secure_closet/personal/cabinet/PopulateContents()
-	new /obj/item/storage/backpack/satchel/leather/withwallet( src )
-	new /obj/item/instrument/piano_synth(src)
-	new /obj/item/radio/headset( src )
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441

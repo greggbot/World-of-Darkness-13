@@ -1,9 +1,9 @@
-import { Window } from "../layouts";
-import { WinXP } from "./WindowsXP/index";
-import { useBackend } from "../backend";
-import { Component } from 'inferno';
+import { Window } from '../layouts';
+import { WinXP } from './WindowsXP/index';
+import { useBackend } from '../backend';
+import React from 'react';
 
-export class WindowsXP extends Component {
+export class WindowsXP extends React.Component {
   render() {
     const { act, data } = useBackend(this.context);
     return (
@@ -11,5 +11,5 @@ export class WindowsXP extends Component {
         <WinXP data={data} act={act} />
       </Window>
     );
-  };
-};
+  }
+}

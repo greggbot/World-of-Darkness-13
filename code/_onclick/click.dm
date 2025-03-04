@@ -195,7 +195,6 @@
 			W.melee_attack_chain(src, A, params)
 		else
 			if(ismob(A))
-<<<<<<< HEAD
 				if(isliving(src))
 					var/mob/living/L = src
 					if(L.melee_professional)
@@ -205,11 +204,6 @@
 				else
 					changeNext_move(CLICK_CD_MELEE)
 			UnarmedAttack(A)
-=======
-				changeNext_move(CLICK_CD_MELEE)
-
-			UnarmedAttack(A, TRUE, modifiers)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 		return
 
 	//Can't reach anything else in lockers or other weirdness
@@ -225,7 +219,6 @@
 	if(!loc.AllowClick() && !last_locc)
 		return
 
-<<<<<<< HEAD
 	if(iscrinos(src))
 		if(!W)
 			var/mob/living/carbon/werewolf/wolf = src
@@ -309,30 +302,6 @@
 
 	if(last_locc)
 		forceMove(last_locc)
-=======
-	// In a storage item with a disassociated storage parent
-	var/obj/item/item_atom = A
-	if(istype(item_atom))
-		if((item_atom.item_flags & IN_STORAGE) && (item_atom.loc.flags_1 & HAS_DISASSOCIATED_STORAGE_1))
-			UnarmedAttack(item_atom, TRUE, modifiers)
-
-	//Standard reach turf to turf or reaching inside storage
-	if(CanReach(A,W))
-		if(W)
-			W.melee_attack_chain(src, A, params)
-		else
-			if(ismob(A))
-				changeNext_move(CLICK_CD_MELEE)
-			UnarmedAttack(A, TRUE, modifiers)
-	else
-		if(W)
-			A.base_ranged_item_interaction(src, W, modifiers)
-		else
-			if(LAZYACCESS(modifiers, RIGHT_CLICK))
-				ranged_secondary_attack(A, modifiers)
-			else
-				RangedAttack(A, modifiers)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /// Is the atom obscured by a PREVENT_CLICK_UNDER_1 object above it
 /atom/proc/IsObscured()
@@ -506,7 +475,6 @@
 	if(user.client && (user.client.eye == user || user.client.eye == user.loc || flags & COMPONENT_ALLOW_EXAMINATE))
 		user.examinate(src)
 
-<<<<<<< HEAD
 /**
  * Ctrl click
  * For most objects, pull
@@ -574,10 +542,6 @@
 /mob/proc/CtrlShiftClickOn(atom/A)
 	src.pointed(A)
 	return
-=======
-/mob/proc/TurfAdjacent(turf/tile)
-	return tile.Adjacent(src)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /mob/proc/ShiftMiddleClickOn(atom/A)
 	A.CtrlShiftClick(src)

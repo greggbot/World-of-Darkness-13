@@ -28,14 +28,10 @@
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SCI
 
-<<<<<<< HEAD
-//	display_order = JOB_DISPLAY_ORDER_RESEARCH_DIRECTOR
-=======
 	mind_traits = list(HEAD_OF_STAFF_MIND_TRAITS)
 	liver_traits = list(TRAIT_ROYAL_METABOLISM, TRAIT_BALLMER_SCIENTIST)
 
 	display_order = JOB_DISPLAY_ORDER_RESEARCH_DIRECTOR
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 	bounty_types = CIV_JOB_SCI
 
 	mail_goodies = list(

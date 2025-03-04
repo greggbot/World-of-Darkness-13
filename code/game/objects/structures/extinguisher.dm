@@ -141,11 +141,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/extinguisher_cabinet, 29)
 		update_appearance(UPDATE_ICON)
 
 /obj/structure/extinguisher_cabinet/update_icon_state()
-<<<<<<< HEAD
 	icon_state = "firehouse"
-=======
-	icon_state = "extinguisher"
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 	if(isnull(stored_extinguisher))
 		icon_state += ""

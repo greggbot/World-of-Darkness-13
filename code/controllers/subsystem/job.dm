@@ -924,19 +924,12 @@ SUBSYSTEM_DEF(job)
 /// Returns a list of minds of all security members who are alive
 /datum/controller/subsystem/job/proc/get_living_sec()
 	. = list()
-<<<<<<< HEAD
-	for(var/i in GLOB.human_list)
-		var/mob/living/carbon/human/player = i
-		if(player.stat != DEAD && player.mind && (player.mind.assigned_role in GLOB.ss13))
-			. |= player.mind
-=======
 	for(var/datum/mind/sec as anything in get_crewmember_minds())
 		if(!(sec.assigned_role.departments_bitflags & DEPARTMENT_BITFLAG_SECURITY))
 			continue
 		if(isnull(sec.current) || sec.current.stat == DEAD)
 			continue
 		. += sec
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /// Returns a list of minds of all security members
 /datum/controller/subsystem/job/proc/get_all_sec()

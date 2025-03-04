@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 GLOBAL_LIST_INIT(leader_positions, list(
 	"Prince",
 	"Baron",
@@ -137,9 +136,6 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 
 ))
 
-=======
-// TO DO: Replace this with job datum flags instead.
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 GLOBAL_LIST_INIT(exp_specialmap, list(
 	EXP_TYPE_LIVING = list(), // all living mobs
 	EXP_TYPE_ANTAG = list(),

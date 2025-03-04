@@ -26,15 +26,11 @@
 	mind_traits = list(HEAD_OF_STAFF_MIND_TRAITS)
 	liver_traits = list(TRAIT_ROYAL_METABOLISM)
 
-<<<<<<< HEAD
-//	display_order = JOB_DISPLAY_ORDER_CAPTAIN
-=======
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN
 	department_for_prefs = /datum/job_department/captain
 	departments_list = list(
 		/datum/job_department/command,
 	)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 	family_heirlooms = list(/obj/item/reagent_containers/cup/glass/flask/gold, /obj/item/toy/captainsaid/collector)
 

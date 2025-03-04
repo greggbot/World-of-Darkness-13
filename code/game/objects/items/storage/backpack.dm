@@ -22,38 +22,15 @@
 	slot_flags = ITEM_SLOT_BACK //ERROOOOO
 	resistance_flags = NONE
 	max_integrity = 300
-<<<<<<< HEAD
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 	worn_icon = 'code/modules/wod13/worn.dmi'
 	component_type = /datum/component/storage/concrete/vtm/backpack
 	body_worn = TRUE
 
-//obj/item/storage/backpack/ComponentInitialize()
-//	. = ..()
-//	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-//	STR.max_combined_w_class = 21
-//	STR.max_w_class = WEIGHT_CLASS_NORMAL
-//	STR.max_items = 21
-=======
-	storage_type = /datum/storage/backpack
-
 /obj/item/storage/backpack/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/attack_equip)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
-/*
- * Backpack Types
- */
-
-<<<<<<< HEAD
-//obj/item/storage/backpack/old/ComponentInitialize()
-//	. = ..()
-//	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-//	STR.max_combined_w_class = 12
-
-=======
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 /obj/item/bag_of_holding_inert
 	name = "inert bag of holding"
 	desc = "What is currently a just an unwieldly block of metal with a slot ready to accept a bluespace anomaly core."
@@ -441,19 +418,10 @@
 	desc = "A large duffel bag for holding extra things."
 	icon_state = "duffel"
 	inhand_icon_state = "duffel"
-<<<<<<< HEAD
-	onflooricon = 'code/modules/wod13/onfloor.dmi'
-	slowdown = 1
-	component_type = /datum/component/storage/concrete/vtm/duffel
-
-//obj/item/storage/backpack/duffelbag/ComponentInitialize()
-//	. = ..()
-//	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-//	STR.max_w_class = WEIGHT_CLASS_BULKY
-//	STR.max_combined_w_class = 30
-=======
 	actions_types = list(/datum/action/item_action/zipper)
 	storage_type = /datum/storage/duffel
+	onflooricon = 'code/modules/wod13/onfloor.dmi'
+	component_type = /datum/component/storage/concrete/vtm/duffel
 	// How much to slow you down if your bag isn't zipped up
 	var/zip_slowdown = 1
 	/// If this bag is zipped (contents hidden) up or not
@@ -549,7 +517,6 @@
 		var/mob/living/wearer = loc
 		wearer.update_equipment_speed_mods()
 	update_appearance()
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /obj/item/storage/backpack/duffelbag/cursed
 	name = "living duffel bag"
@@ -563,66 +530,7 @@
 
 /obj/item/storage/backpack/duffelbag/cursed/Initialize(mapload)
 	. = ..()
-<<<<<<< HEAD
-
-	if(hunger > 25)
-		. += "<span class='danger'>The bag is growling for food...</span>"
-
-/obj/item/storage/backpack/duffelbag/cursed/equipped(mob/living/carbon/human/user, slot)
-	. = ..()
-	START_PROCESSING(SSobj,src)
-	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
-	ADD_TRAIT(user, TRAIT_CLUMSY, CURSED_ITEM_TRAIT)
-	ADD_TRAIT(user, TRAIT_PACIFISM, CURSED_ITEM_TRAIT)
-	ADD_TRAIT(user, TRAIT_DUFFEL_CURSED, CURSED_ITEM_TRAIT)
-
-/obj/item/storage/backpack/duffelbag/cursed/dropped(mob/living/carbon/human/user)
-	REMOVE_TRAIT(user, TRAIT_DUFFEL_CURSED, CURSED_ITEM_TRAIT)
-	REMOVE_TRAIT(user, TRAIT_CLUMSY, CURSED_ITEM_TRAIT)
-	REMOVE_TRAIT(user, TRAIT_PACIFISM, CURSED_ITEM_TRAIT)
-	STOP_PROCESSING(SSobj,src)
-
-	var/turf/T = get_turf(user)
-	playsound(T, 'sound/effects/splat.ogg', 50, TRUE)
-	new /obj/effect/decal/cleanable/vomit(T)
-
-	. = ..()
-
-/obj/item/storage/backpack/duffelbag/cursed/process()
-	///don't process if it's somehow on the floor
-	if(!iscarbon(src.loc))
-		return
-	var/mob/living/carbon/user = src.loc
-	///check hp
-	if(obj_integrity == 0)
-		user.dropItemToGround(src, TRUE)
-	hunger++
-	///check hunger
-	if((hunger > 50) && prob(20))
-		for(var/obj/item/I in contents)
-			if(IS_EDIBLE(I))
-				var/obj/item/food/F = I
-				F.forceMove(user.loc)
-				playsound(src, 'sound/items/eatfood.ogg', 20, TRUE)
-				///poisoned food damages it
-				if(istype(F, /obj/item/food/badrecipe))
-					to_chat(user, "<span class='warning'>The [name] grumbles!</span>")
-					obj_integrity -= 50
-				else
-					to_chat(user, "<span class='notice'>The [name] eats your [F]!</span>")
-				qdel(F)
-				hunger = 0
-				return
-		///no food found: it bites you and loses some hp
-		var/affecting = user.get_bodypart(BODY_ZONE_CHEST)
-		user.apply_damage(60, BRUTE, affecting)
-		hunger = initial(hunger)
-		playsound(src, 'sound/items/eatfood.ogg', 20, TRUE)
-		to_chat(user, "<span class='warning'>The [name] eats your back!</span>")
-		obj_integrity -= 25
-=======
 	AddComponent(/datum/component/curse_of_hunger, add_dropdel = TRUE)
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /obj/item/storage/backpack/duffelbag/captain
 	name = "captain's duffel bag"
@@ -637,19 +545,10 @@
 	inhand_icon_state = "duffel-med"
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
 
-
-<<<<<<< HEAD
 /obj/item/storage/backpack/duffelbag/med/surgery
 	name = "surgical duffel bag"
 	desc = "A large duffel bag for holding extra medical supplies - this one seems to be designed for holding surgical tools."
 	onflooricon = 'code/modules/wod13/onfloor.dmi'
-=======
-/obj/item/storage/backpack/duffelbag/coroner
-	name = "coroner duffel bag"
-	desc = "A large duffel bag for holding large amounts of organs at once."
-	icon_state = "duffel-coroner"
-	inhand_icon_state = "duffel-coroner"
->>>>>>> d1ccb530b21a3c41ef5ec37ef5f9330d6e562441
 
 /obj/item/storage/backpack/duffelbag/explorer
 	name = "explorer duffel bag"
