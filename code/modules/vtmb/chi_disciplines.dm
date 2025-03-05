@@ -1172,7 +1172,7 @@
 /datum/chi_discipline/hellweaving/activate(mob/living/target, mob/living/carbon/human/caster)
 	..()
 	var/mypower = caster.get_total_social()
-	var/theirpower = caster.get_total_mentality()
+	var/theirpower = target.get_total_mentality()
 	if(theirpower >= mypower)
 		to_chat(caster, "<span class='warning'>[target]'s mind is too powerful to cause flashbacks for!</span>")
 		return
